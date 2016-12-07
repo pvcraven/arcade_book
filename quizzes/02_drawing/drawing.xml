@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<quiz>
+
+<question type="category">
+    <category>
+        <text>$course$/Chapter 2 - Drawing</text>
+    </category>
+</question>
+
+<question type="shortanswer">
+    <name>
+        <text>How to use a library</text>
+    </name>
+     <questiontext format="html">
+         <text>
+            In order to use the "arcade" library, what exact code needs to be
+            included in your program before any arcade commands can be called?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>1</usecase>
+
+    <answer fraction="100">
+        <text>import arcade</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Where import statements go.</text>
+    </name>
+     <questiontext format="html">
+         <text>
+            Where do import statements go?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>1</usecase>
+
+    <answer fraction="100">
+        <text>At the top of the program.</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>Right before you use them.</text>
+        <feedback>
+            <text>
+                No, they go at the very top. No other code should go
+                before the import statement, except maybe comments.
+            </text>
+        </feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>At the end of the program.</text>
+        <feedback>
+            <text>
+                No, they go at the very top. No other code should go
+                before the import statement, except maybe comments.
+            </text>
+        </feedback>
+    </answer>
+
+</question>
+
+
+<question type="multichoice">
+    <name>
+        <text>Opening a window</text>
+    </name>
+     <questiontext format="html">
+         <text>
+            Which command will correctly open a window?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>1</usecase>
+
+    <answer fraction="100">
+        <text>
+<![CDATA[
+<code>arcade.open_window("Barn Scene", 1024, 600)</code>
+]]>
+        </text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>
+<![CDATA[
+<code>open_window("Barn Scene", 1024, 600)</code>
+]]>
+        </text>
+        <feedback>
+            <text>
+                Incorrect.
+            </text>
+        </feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>
+<![CDATA[
+<code>arcade.open_window(1024, 600, "Barn Scene")</code>
+]]>
+        </text>
+        <feedback>
+            <text>
+                Incorrect.
+            </text>
+        </feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>
+<![CDATA[
+<code>arcade.open_window(1024, 600, Barn Scene)</code>
+]]>
+        </text>
+        <feedback>
+            <text>
+                Incorrect.
+            </text>
+        </feedback>
+    </answer>
+
+    <answer fraction="0">
+        <text>
+<![CDATA[
+<code>open_window(Barn Scene, 1024, 600)</code>
+]]>
+        </text>
+        <feedback>
+            <text>
+                Incorrect.
+            </text>
+        </feedback>
+    </answer>
+
+</question>
+
+<!-- Sample short answer question with a code sample.
+See: https://docs.moodle.org/31/en/Moodle_XML_format for more details.
+-->
+<question type="shortanswer">
+    <name>
+        <text>Test question</text>
+    </name>
+     <questiontext format="html">
+         <text>Look at the following code:
+<![CDATA[
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<pre><code class="python"># Code Sample
+def test_function():
+   print("Hi")
+
+test_function()
+</code></pre>
+]]>
+What does the program print when it runs?
+         </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>1</usecase>
+
+    <answer fraction="100">
+        <text>Hi</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+    <answer fraction="0">
+        <text>hi</text>
+        <feedback><text>Sorry, but case matters!</text></feedback>
+    </answer>
+</question>
+
+</quiz>
