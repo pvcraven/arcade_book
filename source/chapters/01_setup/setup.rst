@@ -26,13 +26,21 @@ So some numbers were data, and some were computer instructions.
 
 In the early days of computing, this is how people coded programs.
 
+Machine Code
+^^^^^^^^^^^^
+
 We call these numbers that are instructions **machine code**. Note that not
 all numbers are machine code, but machine code is made of numbers.
 Machine code is also called a **First Generation Language** (1GL).
 
 Computers still
 run on machine code. You can still code this way if you want, although you'd
-be crazy because hand-coding these numbers is tedious. In order to make things
+be crazy because hand-coding these numbers is tedious.
+
+Assembly Language
+^^^^^^^^^^^^^^^^^
+
+In order to make things
 easier, computer scientists came up with something called **assembly language**.
 Assembly language is a **second generation language** (2GL).
 
@@ -47,6 +55,23 @@ into a **source file**. We call the commands **source code**. The computer
 can't run the source code as-is. The programmer runs a **compiler** that
 simply translates the computer commands like ``LDA`` into the number of the
 machine language instruction.
+
+Once I compile the code, I can run the compiled code. I can give the compiled
+code to someone else,
+
+Assembly language is an improvement. But it isn't *that* much of an improvement.
+Why? Assembly language instructions are very low-level. There are no commands like
+"draw a building here." There are commands that move bits from one spot
+to another, add them, and shift them.
+
+Third Generation Languages
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Third Generation Languages (3GL) started with Grace Hopper creating the
+language COBOL. There are many, many different third generation languages now.
+These languages often specialize at certain tasks. For example, the language
+"C" is great at creating small, fast programs that can run on minimal hardware.
+"PHP" is an easy-to-use language that can build websites.
 
 What is so great about Python?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
