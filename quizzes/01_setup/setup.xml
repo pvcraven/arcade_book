@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<quiz>
+
+<question type="category">
+    <category>
+        <text>$course$/Chapter 1 - Setup</text>
+    </category>
+</question>
+
+<question type="shortanswer">
+    <name>
+        <text>What is the name of the native language that the CPU on the
+            computer uses?
+        </text>
+    </name>
+     <questiontext format="html">
+         <text>
+            What is the name of the native language that the CPU on the
+            computer uses?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>0</usecase>
+
+    <answer fraction="100">
+        <text>machine language</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+    <answer fraction="100">
+        <text>machine</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+</question>
+
+<question type="shortanswer">
+    <name>
+        <text>What is the name of the second generation language (2GL) designed
+            to make coding easier?
+        </text>
+    </name>
+     <questiontext format="html">
+         <text>
+            What is the name of the second generation language (2GL) designed
+            to make coding easier?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>0</usecase>
+
+    <answer fraction="100">
+        <text>assembly language</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+    <answer fraction="100">
+        <text>assembly </text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+</question>
+
+<question type="shortanswer">
+    <name>
+        <text>What is the name of the second generation language (2GL) designed
+            to make coding easier?
+        </text>
+    </name>
+     <questiontext format="html">
+         <text>
+            What is the name of the second generation language (2GL) designed
+            to make coding easier?
+        </text>
+    </questiontext>
+
+    <!-- Case sensitive flag -->
+    <usecase>0</usecase>
+
+    <answer fraction="100">
+        <text>assembly language</text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+    <answer fraction="100">
+        <text>assembly </text>
+        <feedback><text>Correct!</text></feedback>
+    </answer>
+</question>
+
+</quiz>
