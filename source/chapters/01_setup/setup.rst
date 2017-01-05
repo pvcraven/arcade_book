@@ -1,6 +1,6 @@
 .. sectnum::
 
-Understanding and Setting up Your System
+Understanding and Setting Up Your System
 ========================================
 
 Before you begin, you need to install a few things on the computer.
@@ -109,7 +109,8 @@ Third Generation Languages
 .. figure:: Grace_Hopper_and_UNIVAC.jpg
     :width: 400px
 
-    Source: `Wikipedia <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
+    Source:
+    `Wikipedia <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
 
 **Third Generation Languages** (3GL) started with `Grace Hopper`_ creating the
 language COBOL. There are many, many different third generation languages now.
@@ -229,4 +230,7 @@ When going through the tutorial:
 
 * For your "project name" use "CMSC_150".
 * There won't be teams in this for this class, so each person needs to set up a repository.
+
+First Program
+-------------
 
