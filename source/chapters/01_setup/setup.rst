@@ -1,25 +1,41 @@
 .. sectnum::
 
-Understanding and setting up your system
+Understanding and Setting up Your System
 ========================================
 
 Before you begin, you need to install a few things on the computer.
 Using a school computer? You may have these already installed. Yay!
-Regardless, you still need to understand how the computer
-is set up. Why? When something goes wrong, you'll be stuck without
-that understanding. Frustrating. Let's avoid that.
+Still, read through this part. Make sure you know how the computer
+is setup up.
 
-You will need:
+When something goes wrong, you need to understand how your system is set up.
+Avoid frustration later. Learn it now.
 
-* The Python programming language
-* The Arcade code library
-* An editor to type in your programs
-* A version control system to track and turn in your work
+Your development computer will need:
+
+* The Python_ programming language
+* The Arcade_ code library
+* An editor to type in your programs (IntelliJ_)
+* A version control system to track and turn in your work (Git/SourceTree_/GitHub_)
+
+.. _Python: https://www.python.org/
+.. _Arcade: http://arcade.academy/
+.. _IntelliJ: https://www.jetbrains.com/idea/
+.. _SourceTree: https://www.sourcetreeapp.com/
+.. _GitHub: https://github.com/
 
 The Python programming language
 -------------------------------
 
-We will be using the "Python" computer programming language. What is a
+.. image:: python-logo.svg
+    :width: 300px
+
+We will be using the "Python_" computer programming language.
+The creator of Python was a fan of `Monty Python`_, hence the name.
+
+.. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python
+
+What is a
 programming language? We could skip that explanation, and get to the fun
 part, but this wouldn't be much of a programming course if you left without
 even knowing what a programming language was. So let's get that out of the way.
@@ -27,15 +43,17 @@ even knowing what a programming language was. So let's get that out of the way.
 What is a programming language?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Computers have a Central Processing Unit (CPU) that are the main "brains" of the
-computer.
+Computers have a Central Processing Unit (CPU_) that are the main "brains" of the
+computer. For example, you might have an Intel i7 or an AMD-FX in your computer.
 
 The CPU gets its instructions by reading a set of numbers. For example
 the number "04" might be an instruction to add two other numbers together.
 
-In fact, everything stored on the computer is in the form of numbers.
+Everything stored on the computer is in the form of numbers.
 Some numbers computers store are for data (text, photos, movies),
 and some are computer instructions.
+
+.. _CPU: https://en.wikipedia.org/wiki/Central_processing_unit
 
 Machine Code
 ^^^^^^^^^^^^
@@ -58,11 +76,12 @@ Assembly Language
 In order to make things
 easier, computer scientists came up with something called **assembly language**.
 Assembly language is a **Second Generation Language** (2GL). Assembly language
-looks like this sample I got from Wikipedia:
+looks like this:
 
-.. image:: Motorola_6800_Assembly_Language.png
+.. figure:: Motorola_6800_Assembly_Language.png
     :width: 400px
-    :alt: Source: https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png
+
+    Source: `Wikipedia <https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png>`_
 
 Don't worry! We aren't coding in assembly language for this class.
 
@@ -87,11 +106,18 @@ to another, add them, and shift them.
 Third Generation Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Third Generation Languages** (3GL) started with Grace Hopper creating the
+.. figure:: Grace_Hopper_and_UNIVAC.jpg
+    :width: 400px
+
+    Source: `Wikipedia <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
+
+**Third Generation Languages** (3GL) started with `Grace Hopper`_ creating the
 language COBOL. There are many, many different third generation languages now.
 These languages often specialize at certain tasks. For example, the language
 "C" is great at creating small, fast programs that can run on minimal hardware.
 "PHP" is an easy-to-use language that can build websites.
+
+.. _Grace Hopper: https://en.wikipedia.org/wiki/Grace_Hopper
 
 Third generation languages usually fall into one of three categories.
 
@@ -127,54 +153,80 @@ Using a runtime environment is hard to explain in human terms. It is a hybrid
 of the two system. You need source code. You need a compiler. Instead of the compiler
 making machine code, it makes for for a **virtual machine**.
 
-
-
 What is so great about Python?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Python is a great language to s
+Python is a great language to start programming in.
+Python is a Top-5 language in popularity according to the
+`TIOBE Index <http://www.tiobe.com/tiobe-index/>`_.
+While may be less popular
+than Java, it is easier to read and learn. Less work is required to
+do graphics. And everything you learn in Python you can also apply when you
+learn `C#`_ or Java_.
 
-Python 2.7 vs. Python 3.5
+.. _Java: https://en.wikipedia.org/wiki/Java_(programming_language)
+.. _TIOBE Index: http://www.tiobe.com/tiobe-index/
+.. _C#: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+
+Python a great language for people interested in doing data processing
+and `automating boring things <https://automatetheboringstuff.com/>`_.
+
+Python 2.7 vs. Python 3.6
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Windows setup
--------------
+There are two main versions of Python. When Python moved to version 3,
+there were changes that didn't work with all the currently written Python 2
+programs. So both Python 2 and Python 3 were being developed simultaneously.
+Some people don't want to move to Python 3 at all.
 
-Install Python
-^^^^^^^^^^^^^^
+We use Python 3. Why are you going to care?
 
-Installing the Arcade library
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* If you search up examples you will find both Python 2 and Python 3 examples.
+* Systems such as the Mac and Linux have Python 2 installed by default.
 
-Installing the development environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you see a Python example on the web that has a print statement that looks
+like::
 
-Linux setup
------------
+  print "Hi"
 
-Install Python
-^^^^^^^^^^^^^^
+Instead of::
 
-Installing the Arcade library
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  print("Hi")
 
-Installing the development environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Then you have a Python 2 example and it won't run with what we install and use
+in this class.
 
-Mac setup
----------
+In the case of the Mac and Linux, it will be important to use Python 3 and
+not Python 2.
 
-Install Python
-^^^^^^^^^^^^^^
+Setup
+-----
 
-Installing the Arcade library
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You can use a Windows computer, a Mac, or even a Linux computer for this course.
+Installation instructions are available below:
 
-Installing the development environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* `Windows Installation <http://arcade.academy/installation_windows.html>`_
+* `Mac Installation <http://arcade.academy/installation_mac.html>`_
+* `Linux Installation <http://arcade.academy/installation_linux.html>`_
+
+We also need an editor. We will use PyCharm_. You'll need a license to use
+PyCharm. They are free for educational use. See your instructor for how to
+get a PyCharm license. It can be used on a school computer, or on your own
+computer.
+
+.. _PyCharm: https://www.jetbrains.com/pycharm/
 
 Version control
 ---------------
 
-First program
--------------
+We will be using version control to manage your assignments. See the two
+links below.
+
+* `What is version control? <http://web-development-class.readthedocs.io/en/latest/theory/dvcs/dvcs.html>`_
+* `Version control tutorial <http://web-development-class.readthedocs.io/en/latest/tutorials/dvcs/dvcs.html>`_
+
+When going through the tutorial:
+
+* For your "project name" use "CMSC_150".
+* There won't be teams in this for this class, so each person needs to set up a repository.
+

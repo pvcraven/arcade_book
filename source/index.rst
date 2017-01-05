@@ -2,8 +2,7 @@ Learn Python with Arcade Academy
 ================================
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
    chapters/index
-   worksheets/index
    labs/index

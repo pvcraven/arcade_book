@@ -2,14 +2,14 @@ Labs
 ====
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
    chapter_01_setup
    chapter_01_clone
 
 
 * Lab 1 - Setup
-* Lab - Create a picture
+* Lab 2 - Create a picture
 * Lab 2 - Repeating images
 * Lab 3 - Creating your own drawing functions
 * Lab 4 - Adding animation
