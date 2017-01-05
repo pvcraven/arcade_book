@@ -7,4 +7,3 @@ Learn Python with Arcade Academy
    chapters/index
    worksheets/index
    labs/index
-   example_code/index
