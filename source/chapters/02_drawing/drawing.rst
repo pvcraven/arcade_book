@@ -142,6 +142,5 @@ Drawing a rectangle
 Drawing primitives
 ------------------
 
-
-
-For a program showing all the drawing primitives, see the :ref:`example-drawing-primitives`.
+For a program showing all the drawing primitives, see
+the :ref:`example-drawing-primitives`.
