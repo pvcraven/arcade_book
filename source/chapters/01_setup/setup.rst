@@ -81,7 +81,7 @@ looks like this:
 .. figure:: Motorola_6800_Assembly_Language.png
     :width: 400px
 
-    Source: `Wikipedia <https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png>`_
+    Source: `Wikipedia Motorola 6800 Assembly Language <https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png>`_
 
 Don't worry! We aren't coding in assembly language for this class.
 
@@ -109,8 +109,7 @@ Third Generation Languages
 .. figure:: Grace_Hopper_and_UNIVAC.jpg
     :width: 400px
 
-    Source:
-    `Wikipedia <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
+    Source: `Wikipedia Grace Hopper and UNIVAC <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
 
 **Third Generation Languages** (3GL) started with `Grace Hopper`_ creating the
 language COBOL. There are many, many different third generation languages now.
@@ -234,3 +233,21 @@ When going through the tutorial:
 First Program
 -------------
 
+* Start PyCharm
+* Create a "Pure Python" project. Select a project name like "CMSC 150"
+* Create a new directory. Call it ``Lab 01 - First Program``
+
+.. image:: new_directory.png
+
+* Right click on the directory. Create a new "Python File". Call it "lab_01.py"
+
+.. image:: new_python_file.png
+
+* Type in your program. It will look something like::
+
+    print("Hello there")
+
+* Right-click on the program and select "Run 'lab_01.py"
+* See the output of your program at the bottom of the screen.
+
+.. image:: pycharm_window.png
