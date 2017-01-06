@@ -16,13 +16,14 @@ Your development computer will need:
 * The Python_ programming language
 * The Arcade_ code library
 * An editor to type in your programs (IntelliJ_)
-* A version control system to track and turn in your work (Git/SourceTree_/GitHub_)
+* A version control system to track and turn in your work (Git/SourceTree_/BitBucket_)
 
 .. _Python: https://www.python.org/
 .. _Arcade: http://arcade.academy/
 .. _IntelliJ: https://www.jetbrains.com/idea/
 .. _SourceTree: https://www.sourcetreeapp.com/
 .. _GitHub: https://github.com/
+.. _BitBucket: https://bitbucket.org/
 
 The Python programming language
 -------------------------------
@@ -197,7 +198,8 @@ Then you have a Python 2 example and it won't run with what we install and use
 in this class.
 
 In the case of the Mac and Linux, it will be important to use Python 3 and
-not Python 2.
+not Python 2. Since Python 2 is installed by default, it can be a bit of a
+hassle to make sure they use Python 3.
 
 Setup
 -----
@@ -236,38 +238,44 @@ known file types.""
 For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
 Then click the “view” tab and make sure “File name extensions” has been checked.
 
-Version control
----------------
+Distributed Version Control Systems
+-----------------------------------
 
-We will be using version control to manage your assignments. See the two
-links below.
+No serious development should be done without version control. In fact, version
+control is so important, many developers would argue that almost no development
+should be done without version control. Even all my notes for class I keep in
+version control.
 
-* `What is version control? <http://web-development-class.readthedocs.io/en/latest/theory/dvcs/dvcs.html>`_
-* `Version control tutorial <http://web-development-class.readthedocs.io/en/latest/tutorials/dvcs/dvcs.html>`_
+Version control allows developers to:
 
-When going through the tutorial:
+* Get any prior version of a project.
 
-* For your "project name" use "CMSC_150".
-* There won't be teams in this for this class, so each person needs to set up a repository.
+  * Released version 1.5 of your program, and now it is crashing? Quick! Go
+    back to version 1.4.
+  * Did the 'new guy' mess up the project? Revert back!
 
-First Program
--------------
+* Know exactly what changed in the code, when, and by who. See who is actually
+  doing the work. If a mistake gets added in, see when it was added and by whom.
+* Easily share code between developers.
+* Easily work independently of other developers.
+* Recover an accidentally deleted or overwritten file.
+* Go back and create a bug-fix release on prior versions of a program.
+* Work on multiple computers and keep files in sync.
 
-* Start PyCharm
-* Create a "Pure Python" project. Select a project name like "CMSC 150"
-* Create a new directory. Call it ``Lab 01 - First Program``
+Version control saves untold time and headaches. It used to be that version
+control had enough of a learning curve that some developers refused to use it.
+Thankfully today's version control tools are so easy to use there's no excuse not to.
 
-.. image:: new_directory.png
+There are two main types of version control. The original version control
+systems were "centralized." Subversion_ (SVN) is a very popular piece of software
+that supports this type of version control. The other type is a "Distributed
+Version Control Systems" (DVCS). There are two popular versions of DVCS in use
+today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
+is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
+standardize on Git.
 
-* Right click on the directory. Create a new "Python File". Call it "lab_01.py"
+.. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
+.. _Git: http://en.wikipedia.org/wiki/Git_(software)
+.. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
-.. image:: new_python_file.png
-
-* Type in your program. It will look something like::
-
-    print("Hello there")
-
-* Right-click on the program and select "Run 'lab_01.py"
-* See the output of your program at the bottom of the screen.
-
-.. image:: pycharm_window.png
+Great! Now let's make our first program with :ref:`lab-01`.

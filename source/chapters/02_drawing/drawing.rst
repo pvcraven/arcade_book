@@ -143,4 +143,4 @@ Drawing primitives
 ------------------
 
 For a program showing all the drawing primitives, see
-the :ref:`example-drawing-primitives`.
+the example `Drawing Primitives <http://arcade.academy/examples/drawing_primitives.html>`_.
