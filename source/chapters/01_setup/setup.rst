@@ -201,45 +201,30 @@ In the case of the Mac and Linux, it will be important to use Python 3 and
 not Python 2. Since Python 2 is installed by default, it can be a bit of a
 hassle to make sure they use Python 3.
 
-Setup
------
+Setup the Programming Environment
+---------------------------------
 
-You can use a Windows computer, a Mac, or even a Linux computer for this course.
-Installation instructions are available below:
+Installation for installing Python and Arcade are available below:
 
 * `Windows Installation <http://arcade.academy/installation_windows.html>`_
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
 
-We also need an editor. We will use PyCharm_. You'll need a license to use
+We also need an editor. Download and install PyCharm_.
+You'll need a license to use
 PyCharm. They are free for educational use. See your instructor for how to
-get a PyCharm license. It can be used on a school computer, or on your own
+get a PyCharm license, or if you have an e-mail that ends in ``.edu`` you can
+ask for a free one. It can be used on a school computer, or on your own
 computer.
 
 .. _PyCharm: https://www.jetbrains.com/pycharm/
 
-Viewing File Extensions
------------------------
-It is a great idea to change your windows configuration to show file extensions.
-A file usually has a name like Book ``report.docx`` where the ``.docx`` tells the
-computer it is a Microsoft Word compatible document. By default Windows
-hides the ``.docx`` extension if there is a program installed to handle it.
-If you are programming, this hiding part of the file name can be annoying.
+Setup the Distributed Version Control System
+--------------------------------------------
 
-.. raw:: html
+Download and install SourceTree_.
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/LukHWurpjAc" frameborder="0" allowfullscreen></iframe>
-
-For Windows 7, to show file extensions,
-open up your computer's control panel. Find the selection for "Folder Options.""
-Click the "View" tab, and then unselect the option for "Hide extensions for
-known file types.""
-
-For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
-Then click the “view” tab and make sure “File name extensions” has been checked.
-
-Distributed Version Control Systems
------------------------------------
+.. _SourceTree: https://www.sourcetreeapp.com/
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
@@ -278,4 +263,25 @@ standardize on Git.
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
+Viewing File Extensions
+-----------------------
+It is a great idea to change your windows configuration to show file extensions.
+A file usually has a name like Book ``report.docx`` where the ``.docx`` tells the
+computer it is a Microsoft Word compatible document. By default Windows
+hides the ``.docx`` extension if there is a program installed to handle it.
+If you are programming, this hiding part of the file name can be annoying.
+
+.. raw:: html
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/LukHWurpjAc" frameborder="0" allowfullscreen></iframe>
+
+For Windows 7, to show file extensions,
+open up your computer's control panel. Find the selection for "Folder Options.""
+Click the "View" tab, and then unselect the option for "Hide extensions for
+known file types.""
+
+For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
+Then click the “view” tab and make sure “File name extensions” has been checked.
+
 Great! Now let's make our first program with :ref:`lab-01`.
+
