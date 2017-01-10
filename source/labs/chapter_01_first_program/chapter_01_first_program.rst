@@ -11,27 +11,39 @@ you will create after following this tutorial.
 
 This lab/tutorial has three parts:
 
-* Part 1: Write your first program (easy)
-* Part 2: Put your first program in version control, and upload it to the server
-  (medium)
-* Part 3: Learn to update and merge changes to your program (hard)
+* Part 1: Write your first program. (easy)
+* Part 2: Put your first program in version control, and upload it to the
+  server. (medium)
+* Part 3: Learn to update and merge changes to your program. (hard)
 
 Part 1: First Program
 ---------------------
 
-* Start PyCharm. If you've got it installed, just hit the "Window" key and
-  start typing in "PyCharm".
-* Create a "Pure Python" project. Select a project name like "CMSC 150". We'll
-  use the same project for everything we do in class. Don't create any other
-  projects. **Important:** Figure out where you want to save your project. If
+* Figure out where you want to save your project. If
   you've got your own computer you'll be hauling around, great. If you've got
   a flash drive, use that. You might want to try a network drive. (Simpson uses
   the drive H:) If you store it on a lab computer, you'll have more headaches
   later.
+* If you don't have PyCharm and Python installed, then you'll need
+  to `download Python`_ 3.6, and `download PyCharm`_. You can download the free
+  community version, or the professional version.
+* If you downloaded or are using the professional PyCharm version, you'll need
+  to get a license. If you have a .edu address
+  and are a student, you can get a `student license`_ for the professional version for free.
+  Or your instructor might have a link to check out a license with.
+* Start PyCharm. If you've got it installed, just hit the "Window" key and
+  start typing in "PyCharm".
+* Create a "Pure Python" project. Select a project name like "CMSC 150". We'll
+  use the same project for everything we do in class. Don't create any other
+  projects.
 * Create a new directory. Call it ``Lab 01 - First Program``. We'll have a new
   directory for each lab. If you want to create a "scratch" program to play
   around with, put it in a new directory. Give your directory a good name,
   so you can go back and find the code easier.
+
+.. _download Python: https://www.python.org/downloads/
+.. _download PyCharm: https://www.jetbrains.com/pycharm/download/#section=windows
+.. _student license: https://www.jetbrains.com/student/
 
 .. image:: new_directory.png
 	:width: 150px
