@@ -4,6 +4,7 @@ Chapters
 .. toctree::
    :maxdepth: 3
 
+   00_foreword/foreword
    01_setup/setup
    02_drawing/drawing
    variables

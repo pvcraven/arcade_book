@@ -13,19 +13,21 @@ Avoid frustration later. Learn it now.
 
 Your development computer will need:
 
-* The Python_ programming language
-* The Arcade_ code library
-* An editor to type in your programs (IntelliJ_)
-* A version control system to track and turn in your work (Git/SourceTree_/BitBucket_)
+* The Python_ programming language and the Arcade_ code library.
+* An editor to type in your programs. (We'll use a programm called PyCharm_.)
+* A version control system to track and turn in your work. (Git/SourceTree_/BitBucket_)
+* A minor configuration tweak so we can see file extensions.
+
+Let's go through these four items in detail.
 
 .. _Python: https://www.python.org/
 .. _Arcade: http://arcade.academy/
-.. _IntelliJ: https://www.jetbrains.com/idea/
+.. _PyCharm: https://www.jetbrains.com/pycharm/
 .. _SourceTree: https://www.sourcetreeapp.com/
 .. _GitHub: https://github.com/
 .. _BitBucket: https://bitbucket.org/
 
-The Python programming language
+The Python Programming Language
 -------------------------------
 
 .. image:: python-logo.svg
@@ -36,12 +38,11 @@ The creator of Python was a fan of `Monty Python`_, hence the name.
 
 .. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python
 
-What is a
-programming language? We could skip that explanation, and get to the fun
-part, but this wouldn't be much of a programming course if you left without
-even knowing what a programming language was. So let's get that out of the way.
-
 What is a programming language?
+This wouldn't be much of a programming course if you left without
+even knowing what a programming language was! So let's get that out of the way.
+
+What is a Programming Language?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Computers have a Central Processing Unit (CPU_) that are the main "brains" of the
@@ -60,25 +61,31 @@ Machine Code
 ^^^^^^^^^^^^
 
 In the early days of computing, this is how people coded programs. Just punch
-in numbers that represent computer instructions.
+in numbers that represent computer instructions. Then punch in data.
 
-We call these numbers that are instructions **machine code**. Note that not
-all numbers on the computer are machine code (might just be data),
+We call these numbers that are instructions `machine code`_. Note that not
+all numbers on the computer are machine code (they might just be data),
 but all machine code is made of numbers.
-Machine code is also called a **First Generation Language** (1GL).
+Machine code is also called a `First Generation Language`_ (1GL).
 
-Computers still
-run on machine code. You can still code this way if you want, although you'd
-be crazy because hand-coding these numbers is tedious. There's something better:
+Computers *still* run on machine code.
+You can still code by punching in numbers if you want. But you'd
+be crazy because hand-coding these numbers is *so* tedious.
+There's something better. Assembly Language.
+
+.. _First Generation Language: https://en.wikipedia.org/wiki/First-generation_programming_language
+.. _machine code: https://en.wikipedia.org/wiki/Machine_code
 
 Assembly Language
 ^^^^^^^^^^^^^^^^^
 
 In order to make things
-easier, computer scientists came up with something called **assembly language**.
-Assembly language is a **Second Generation Language** (2GL). Assembly language
+easier, computer scientists came up with something called `assembly language`_.
+Assembly language is a `Second Generation Language`_ (2GL). Assembly language
 looks like this:
 
+.. _assembly language: https://en.wikipedia.org/wiki/Assembly_language
+.. _Second Generation Language: https://en.wikipedia.org/wiki/Second-generation_programming_language
 .. figure:: Motorola_6800_Assembly_Language.png
     :width: 400px
 
@@ -89,20 +96,25 @@ Don't worry! We aren't coding in assembly language for this class.
 Assembly language allows a programmer to edit a file and type in codes like
 ``LDA`` which
 stands for "Load Accumulator Immediate." The programmer types these commands
-into a **source file**. We call the commands **source code**. The computer
-can't run the source code as-is. The programmer runs a **compiler** that
-simply translates the computer commands like ``LDA`` into the number of the
-machine language instruction.
+into a **source file**. We call the commands `source code`_. The computer
+can't run the source code as-is. The programmer runs a `compiler`_ that
+simply translates the computer commands like ``LDA`` into the corresponding
+number of the machine language instruction.
 
-Once I compile the code, I can run the compiled code. I can give the compiled
+.. _source code: https://en.wikipedia.org/wiki/Source_code
+.. _compiler: https://en.wikipedia.org/wiki/Compiler
+
+After I compile the source code into compiled code,
+I can run the compiled code. I can give the compiled
 code to someone else and they can run it. They do not need the source code
 or the compiler.
 
 Assembly language is an improvement over machine language.
 But it isn't *that* much of an improvement.
 Why? Assembly language instructions are very low-level. There are no commands like
-"draw a building here." There are commands that move bits from one spot
-to another, add them, and shift them.
+"draw a building here." Or even "print hi." There are only mind-numbingly simple
+commands that move bits from one spot to another, add them, and shift them.
+
 
 Third Generation Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -112,13 +124,17 @@ Third Generation Languages
 
     Source: `Wikipedia Grace Hopper and UNIVAC <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
 
-**Third Generation Languages** (3GL) started with `Grace Hopper`_ creating the
-language COBOL. There are many, many different third generation languages now.
+`Third Generation Languages`_ (3GL) started with `Grace Hopper`_ creating the
+language COBOL_. There are many, many different third generation languages now.
 These languages often specialize at certain tasks. For example, the language
-"C" is great at creating small, fast programs that can run on minimal hardware.
-"PHP" is an easy-to-use language that can build websites.
+C_ is great at creating small, fast programs that can run on minimal hardware.
+PHP_ is an easy-to-use language that can build websites.
 
 .. _Grace Hopper: https://en.wikipedia.org/wiki/Grace_Hopper
+.. _Third Generation Languages: https://en.wikipedia.org/wiki/Third-generation_programming_language
+.. _COBOL: https://en.wikipedia.org/wiki/COBOL
+.. _C: https://en.wikipedia.org/wiki/C_(programming_language)
+.. _PHP: https://en.wikipedia.org/wiki/PHP
 
 Third generation languages usually fall into one of three categories.
 
