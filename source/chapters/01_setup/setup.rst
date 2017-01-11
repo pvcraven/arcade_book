@@ -76,6 +76,9 @@ There's something better. Assembly Language.
 .. _First Generation Language: https://en.wikipedia.org/wiki/First-generation_programming_language
 .. _machine code: https://en.wikipedia.org/wiki/Machine_code
 
+.. https://cdn.instructables.com/FZB/49H4/FXK6ASMS/FZB49H4FXK6ASMS.MEDIUM.jpg?width=614
+.. http://www.altairkit.com/images/061119-completed_altair_1974.jpg
+
 Assembly Language
 ^^^^^^^^^^^^^^^^^
 
@@ -230,9 +233,10 @@ We also need an editor. Download and install PyCharm_.
 You'll need a license to use
 PyCharm. They are free for educational use. See your instructor for how to
 get a PyCharm license, or if you have an e-mail that ends in ``.edu`` you can
-ask for a free one. It can be used on a school computer, or on your own
+ask for a `student license`_. It can be used on a school computer, or on your own
 computer.
 
+.. _student license: https://www.jetbrains.com/student/
 .. _PyCharm: https://www.jetbrains.com/pycharm/
 
 Setup the Distributed Version Control System
