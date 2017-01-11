@@ -68,6 +68,20 @@ all numbers on the computer are machine code (they might just be data),
 but all machine code is made of numbers.
 Machine code is also called a `First Generation Language`_ (1GL).
 
+Below is an image of the `Altair 8800`_, the first personal computer that regular
+people could buy. Notice that it is missing a monitor and a keyboard! The first
+computers loaded the instructions by flipping switches. A pattern of switches
+represented a machine instruction. So you'd flip lots of switches, then flip
+the "Run" switch. And the lights would blink.
+
+.. figure:: Altair_8800.jpg
+    :width: 400px
+
+    Source: `Wikipedia: Altair 8800 <https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg>`_
+
+While this may not seem very useful (and quite frankly, it wasn't) it was very
+popular in the hobbyist community. Those people saw the potential.
+
 Computers *still* run on machine code.
 You can still code by punching in numbers if you want. But you'd
 be crazy because hand-coding these numbers is *so* tedious.
@@ -75,9 +89,7 @@ There's something better. Assembly Language.
 
 .. _First Generation Language: https://en.wikipedia.org/wiki/First-generation_programming_language
 .. _machine code: https://en.wikipedia.org/wiki/Machine_code
-
-.. https://cdn.instructables.com/FZB/49H4/FXK6ASMS/FZB49H4FXK6ASMS.MEDIUM.jpg?width=614
-.. http://www.altairkit.com/images/061119-completed_altair_1974.jpg
+.. _Altair 8800: https://en.wikipedia.org/wiki/Altair_8800
 
 Assembly Language
 ^^^^^^^^^^^^^^^^^
@@ -89,10 +101,11 @@ looks like this:
 
 .. _assembly language: https://en.wikipedia.org/wiki/Assembly_language
 .. _Second Generation Language: https://en.wikipedia.org/wiki/Second-generation_programming_language
+
 .. figure:: Motorola_6800_Assembly_Language.png
     :width: 400px
 
-    Source: `Wikipedia Motorola 6800 Assembly Language <https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png>`_
+    Source: `Wikipedia: Motorola 6800 Assembly Language <https://en.wikipedia.org/wiki/File:Motorola_6800_Assembly_Language.png>`_
 
 Don't worry! We aren't coding in assembly language for this class.
 
@@ -223,13 +236,19 @@ hassle to make sure they use Python 3.
 Setup the Programming Environment
 ---------------------------------
 
-Installation for installing Python and Arcade are available below:
+In addition to the Python language, we are going to use a library of commands
+for drawing on the screen. This is called the "Arcade" library.
+
+Installation for installing Python and the Arcade library are available below:
 
 * `Windows Installation <http://arcade.academy/installation_windows.html>`_
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
 
-We also need an editor. Download and install PyCharm_.
+We also need an editor. Python comes with an editor called IDLE, but it is
+awful and not worth using. We'll use an editor called PyCharm.
+
+Download and install PyCharm_.
 You'll need a license to use
 PyCharm. They are free for educational use. See your instructor for how to
 get a PyCharm license, or if you have an e-mail that ends in ``.edu`` you can

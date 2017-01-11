@@ -1,15 +1,34 @@
 .. sectnum::
     :start: 2
 
-How to draw with your computer
+How to Draw with Your Computer
 ==============================
+
+By the end of this chapter, you should know how to write programs that will
+draw images on the screen. Below is an example of what one student did:
+
+.. image:: simpson_map.png
+
+Creating a New Program
+----------------------
+
+Open up PyCharm to the same ``CMSC 150`` project we created earlier. We'll use
+it for all our work this semester.
+
+We are going to create a lot of code samples as we go through the chapters.
+Let's create a directory in our project for these samples, away from the labs.
+Call it ``Code Samples``. Then create a Python source file for this chapter
+called ``drawing_samples.py``. Your system should look like this:
+
+.. image:: create_drawing_source_file.png
 
 Comments
 --------
 
+Before we begin learning to draw, we need to learn about **comments** in code.
 When typing in computer code, sometimes we want to be able to write things
-that the computer ignores. We want to comment our code. In fact, we do that
-a lot with the code examples to explain them.
+that the computer ignores. We call this "commenting our code."
+You will see a lot of comments in my code examples to explain how they work.
 
 Below are two ways of adding comments to code in the Python computer language:
 
@@ -17,11 +36,24 @@ Below are two ways of adding comments to code in the Python computer language:
     :language: python
     :linenos:
 
-If we run the program above, nothing will happen. Since the only code that
-we wrote were "comments," there was nothing for the computer to do.
+Go ahead and try it. Multi-line comments usually start each source file
+and explain what it does.
 
-How to open up a window
------------------------
+Let's try running the program. But before we run the program, we need to make
+sure we are running the *right* program. Look at the image below. If I select
+"run" with the green arrow, I will run ``lab_01.py``, *not* the program I
+want to run. You need to right-click on our program and select
+"Run 'drawing_sample.py'" instead.
+
+.. image:: running_the_right_program.png
+
+If when we run the program, nothing will happen. The only code that
+we wrote were "comments." Comments are ignored.
+There was nothing for the computer to do.
+
+
+How to Open a Window for Drawing
+--------------------------------
 
 Before we can draw anything, we need to import a "library" of code that has
 commands for drawing.
@@ -30,11 +62,14 @@ Computer languages come with a set of built-in commands. Most programs will
 require more commands than what the computer language loads by default. These
 sets of commands are called **libraries**. Some languages have their own special
 term for these libraries. In the case of Python, they are called **modules**.
-Thankfully, this is easy. If we want to use they "arcade" library, all we need
+
+Thankfully, it is easy to import a library of code.
+If we want to use they "arcade" library, all we need
 to do is add ``import arcade`` at the top of our program.
 
 .. attention::
     Libraries should always be imported at the **top** of your program.
+    Only comments should appear ahead of an ``import`` statement.
 
 Technically,
 you can import libraries elsewhere in your code, as long as they occur before
@@ -43,17 +78,21 @@ program. The only thing that could be ahead of an ``import`` statement would be
 comments.
 
 In the code below, we've imported the arcade library. If you run the code,
-nothing will happen. We've gone to the library and checked out the arcade
-book, but we haven't done anything with it yet.
+nothing will happen. We've asked to load the arcade
+library, but we haven't done anything with it yet.
 
 .. literalinclude:: import_arcade.py
     :language: python
     :linenos:
     :emphasize-lines: 7
 
-Now it is time to open the window. To begin, we select the arcade library
-with ``arcade``. Then we separate the library from the command we want to
-call with a period: ``.`` Next, we put in the command. Which happens to be
+Now it is time to open the window. See the command below:
+
+.. image:: open_window.svg
+
+How does this command work? To begin, we select the arcade library
+with ``arcade``. Then we separate the library from the function we want to
+call with a period: ``.`` Next, we put in the function. Which happens to be
 ``open_window``. Commands that we can run are called **functions**.
 
 .. note::
@@ -79,11 +118,14 @@ Below is an example that will open up a window:
     :linenos:
     :emphasize-lines: 13
 
-Try running the code above. It kind-of works. If you have fast eyes, you might
-see the window pop open. But then our program is done! We've run out of code
-to execute. So the window closes.
+Try running the code above. It kind-of works. If you have fast eyes, and a slow
+computer you might see the window pop open, then immediately close.
+If your computer is fast, you won't see anything at all because the window
+closes too fast.
+Why does it close? Because our program is done! We've ran out of code
+to execute.
 
-For us to keep the window open, we need to pause until the user hits the
+To keep the window open, we need to pause until the user hits the
 close button. To do this, we'll use the ``run`` command in the Arcade library.
 The ``run`` command takes no parameters, but even if a function doesn't take
 parameters, you still need to use parenthesis.
@@ -121,13 +163,13 @@ How did we know what color to pick? I looked at the
 
 .. _arcade.color API documentation: http://arcade.academy/arcade.color.html
 
-Specifying colors
+Specifying Colors
 -----------------
 
-The coordinate system
+The Coordinate System
 ---------------------
 
-Drawing a rectangle
+Drawing a Rectangle
 -------------------
 
 .. literalinclude:: draw_grass.py

@@ -6,15 +6,17 @@ Lab 1: First Program
 For this lab you will turn in via Scholar a BitBucket URL to the program that
 you will create after following this tutorial.
 
-.. image:: copy_url.png
-	:width: 400px
-
 This lab/tutorial has three parts:
 
 * Part 1: Write your first program. (easy)
 * Part 2: Put your first program in version control, and upload it to the
   server. (medium)
 * Part 3: Learn to update and merge changes to your program. (hard)
+
+Parts 2 and 3 are complex, and you'll probably have questions. Don't hesitate
+to ask. The labs are designed to be done with help and not by yourself. Have
+someone help you through those parts so you don't get really frustrated and
+waste a lot of time.
 
 Part 1: First Program
 ---------------------
@@ -33,9 +35,22 @@ Part 1: First Program
   Or your instructor might have a link to check out a license with.
 * Start PyCharm. If you've got it installed, just hit the "Window" key and
   start typing in "PyCharm".
-* Create a "Pure Python" project. Select a project name like "CMSC 150". We'll
+* Create a "Pure Python" project. But wait! Don't just hit "Create" when you get
+  to this page. There are two more steps.
+
+.. image:: untitled_pycharm.png
+
+* Step 1: Change where you want to save the file. If you are developing on your own
+  computer, save to the C: drive. If you are developing on a lab computer, save
+  to your flash drive, or to a network drive. Don't save to the C: drive.
+  Ask if you deed help.
+* Step 2: Change "untitled" to a name like "CMSC 150". We'll
   use the same project for everything we do in class. Don't create any other
   projects.
+* Now you can create the project.
+
+.. image:: titled_new_project.png
+
 * Create a new directory. Call it ``Lab 01 - First Program``. We'll have a new
   directory for each lab. If you want to create a "scratch" program to play
   around with, put it in a new directory. Give your directory a good name,
@@ -92,9 +107,12 @@ Part 2: Checking the Program into Version Control
 In this section we will:
 
 * Install SourceTree
-* Create your project on the Bitbucket server
+* Create your project on the BitBucket server
 * Create your project on your local computer
 * Link the two together
+
+Once we get the version control set up, we'll use that same setup for the
+rest of class.
 
 Installing SourceTree
 ^^^^^^^^^^^^^^^^^^^^^
@@ -116,7 +134,12 @@ commands. They have no menus.
 You can do a lot more by manually typing in commands on the command line,
 but that is beyond the scope of this tutorial. And so we use SourceTree.
 
-You will need to `create an account with Atlassian`_. Accounts ending in ``.edu``
+SourceTree is made by a company called Atlassian. Atlassian also makes a
+website called BitBucket that we will use with SourceTree.
+SourceTree licenses are free, but you still have to
+`create an account with Atlassian`_ to get that free license. This is
+also the same account we'll use on BitBucket.
+Accounts ending in ``.edu``
 can get extra features, so I recommend signing up with your school e-mail.
 
 Installation of SourceTree should be straight-forward. However, when your first
@@ -152,10 +175,10 @@ Then do the same thing with Mercurial:
 .. image:: source_tree_setup_6.png
     :width: 350px
 
-Creating Your Project in Bitbucket
+Creating Your Project in BitBucket
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Go to Bitbucket, select "Repositories" and "Create repository"
+* Go to BitBucket, select "Repositories" and "Create repository"
 
 .. image:: new_bitbucket_repository.png
 
@@ -181,7 +204,6 @@ Create Your Project in SourceTree
   stored your project. Select the "CMSC 150" folder, not the folder with
   Lab 01. We want *all* the labs to be part of this project, not just one.
 
-
 .. image:: create_repository.png
 
 * Now we need to commit our files. Once we do this, we can always go back and
@@ -205,7 +227,7 @@ Create Your Project in SourceTree
 .. image:: add_remote_1.png
 
 * Check the "Default remote" box.
-* Paste that address we copied from Bitbucket into the next field
+* Paste that address we copied from BitBucket into the next field
 * Hit "OK"
 
 .. image:: add_remote_2.png
@@ -215,7 +237,7 @@ Create Your Project in SourceTree
 
 .. image:: push.png
 
-* Refresh the page on Bitbucket, and you can see that your code went to the
+* Refresh the page on BitBucket, and you can see that your code went to the
   server. But I can't see it yet. Please invite me to see your repository:
 
 .. image:: invite.png
@@ -262,7 +284,7 @@ button later.)
 
 Editing Elsewhere
 ^^^^^^^^^^^^^^^^^
-Find this file on the Bitbucket website. Hit the "Source" icon, and then
+Find this file on the BitBucket website. Hit the "Source" icon, and then
 browse to the file. Let's try editing this on-line. We could just as easily
 edit this on a different computer. Like if you had a home computer and a
 work computer. Or two different people working on the same program.
@@ -310,10 +332,10 @@ homework. And now they can't What to do?
 .. image:: conflict.png
 
 * After that, select "Commit" so that you commit your merge. (Easy to forget
-  this ste.)
+  this step.)
 * Then you can push to the server.
 
-Go ahead and try this out. I'll look for it online when I'm grading. It should
+Go ahead and try this out. I'll look for it on-line when I'm grading. It should
 look like this:
 
 .. image:: see_merge_online.png
@@ -341,8 +363,16 @@ several print statements. Try these features out:
 	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
 
 Now make your *own* program. Don't just copy mine. Commit it. Push it. Copy
-the URL. Turn it in via Scholar.
+the URL from BitBucket. You'll click on the buttons and copy the URL as shown
+below:
 
-.. _Bitbucket: https://bitbucket.org/
+
+.. image:: copy_url.png
+  :width: 400px
+
+Copy the URL and turn it in via Scholar and you are done!
+
+
+.. _BitBucket: https://bitbucket.org/
 .. _SourceTree: https://www.sourcetreeapp.com/
 .. _create an account with Atlassian: https://id.atlassian.com/signup?application=mac&continue=https%3A%2F%2Fmy.atlassian.com%2Fproducts%2Findex
