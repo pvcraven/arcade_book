@@ -37,7 +37,7 @@ Below are two ways of adding comments to code in the Python computer language:
     :linenos:
 
 Go ahead and try it. Multi-line comments usually start each source file
-and explain what it does.
+and explain what the code does.
 
 Let's try running the program. But before we run the program, we need to make
 sure we are running the *right* program. Look at the image below. If I select
@@ -47,13 +47,12 @@ want to run. You need to right-click on our program and select
 
 .. image:: running_the_right_program.png
 
-If when we run the program, nothing will happen. The only code that
-we wrote were "comments." Comments are ignored.
-There was nothing for the computer to do.
+Hey! When we run the program, nothing happens. That's because
+the only code that we wrote were "comments." Comments are ignored.
+Therefore, there was nothing for the computer to do.
 
-
-How to Open a Window for Drawing
---------------------------------
+Import the Arcade Library
+-------------------------
 
 Before we can draw anything, we need to import a "library" of code that has
 commands for drawing.
@@ -64,7 +63,7 @@ sets of commands are called **libraries**. Some languages have their own special
 term for these libraries. In the case of Python, they are called **modules**.
 
 Thankfully, it is easy to import a library of code.
-If we want to use they "arcade" library, all we need
+If we want to use the "arcade" library, all we need
 to do is add ``import arcade`` at the top of our program.
 
 .. attention::
@@ -86,6 +85,9 @@ library, but we haven't done anything with it yet.
     :linenos:
     :emphasize-lines: 7
 
+How to Open a Window for Drawing
+--------------------------------
+
 Now it is time to open the window. See the command below:
 
 .. image:: open_window.svg
@@ -102,16 +104,21 @@ call with a period: ``.`` Next, we put in the function. Which happens to be
 Just like the sine and cosine functions in math, we surround the function
 **parameters** with parenthesis. ``my_function(parameters)`` The data we need
 to pass the function are the parameters. In this case, we want to give the command
-the text that will appear on the title bar, and the width and height of the window.
+the text that will appear on the title bar. There are two more parameters
+that specify the width and height of the window drawing surface in pixels.
+Since the numbers specify the part of the window you can draw on, the actual
+window is larger to accomidate the title bar and borders. So a 600x600 window
+is really 602x632 if you count the title bar and borders.
 
 Wait, how do we know that it was the ``open_window`` function to call? How did
 we know what parameters to use? The names of the functions, the order of the
 parameters, is the **Application Program Interface** or "API" for short. You can
-click here for the `Arcade API`_.
+click here for the `Arcade API`_. Any decent code library will have an API and
+documentation you can find on the web.
 
 .. _Arcade API: http://arcade.academy/quick_index.html
 
-Below is an example that will open up a window:
+Below is an example program that will open up a window:
 
 .. literalinclude:: open_window.py
     :language: python
@@ -158,19 +165,163 @@ See below:
     :linenos:
     :emphasize-lines: 16, 19, 24
 
-How did we know what color to pick? I looked at the
-`arcade.color API documentation`_.
-
-.. _arcade.color API documentation: http://arcade.academy/arcade.color.html
 
 Specifying Colors
 -----------------
 
+Wait, where did ``AIR_SUPERIORITY_BLUE`` come from? How do I get to choose
+the color I want? There are two ways to specify colors:
+
+* Look at the `arcade.color API documentation`_ and specify by name.
+* Specify the RGB or RGBA color.
+
+To specify colors by name, you can look at the color API documentation and
+use something like ``arcade.color.AQUAMARINE`` in your program. Then color
+names come from the ColorPicker `color chart`_.
+
+If the color you want isn't in the chart, or you just don't want to use
+that chart, you can specify colors by "RGB". RGB stands for Red, Green, and
+Blue.
+
+Computers, TVs, color changing LEDs, all
+work by having three small lights close together. A red light, a green light,
+and a blue light. Turn all three lights off and you get black. Turn all three
+lights on and you get white. Just turn on the red, and you get red. Turn on
+both red and green to get yellow.
+
+RGB based monitors work on an *additive* process. You start with black and
+add light to get color.
+
+This is different than
+paint or ink, which works on a *subtractive* process. You start with white and
+add to get darker colors.
+
+Therefore, keep separate in your mind how light-based RGB color works from how
+paint and ink works.
+
+We specify how much red, green, and blue to use using numbers. No light is zero.
+Turn the light on all the way and it is 255. So ``(0, 0, 0)`` means no red,
+no green, no blue. Black. Here are some other examples:
+
+===== ======= ====== ===========
+Red   Green   Blue   Color
+===== ======= ====== ===========
+0     0       0      Black
+255   255     255    White
+127   127     127    Gray
+255   0       0      Red
+0     255     0      Green
+0     0       255    Blue
+255   255     0      Yellow
+===== ======= ====== ===========
+
+There are tools that let you easily find a color, and then get the RGB values.
+One I really like, because it is easy to remember is
+"`colorpicker.com <http://www.colorpicker.com>`_". You can select the color,
+and then get the numbers to use when specifying a color. See the image below:
+
+.. image:: colorpicker.png
+
+After getting the number, specify the color as a set of three numbers surrounded
+by parenthesis, like this:
+
+.. codeblock:: python
+
+    arcade.set_background_color((189, 55, 180))
+
+In addition to RGB, you can also specify "Alpha." The "Alpha Channel" controls
+how transparent the color is. If you draw a square with an alpha of 255, it will
+be solid and hide everything behind it. An alpha of 127 will be in the middle,
+you will see some of the items behind the square. An alpha of 0 is completely
+transparent and you'll see nothing of the square.
+
+.. _color chart: http://www.colorpicker.com/color-chart/
+.. _arcade.color API documentation: http://arcade.academy/arcade.color.html
+
+Wait, What Is Up With 255?
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Notice how the color values go between 0 and 255? That's strange. Why 255? Why
+not 100? Why not 1000?
+
+The reason is important to understand how computers work. Remember how everything
+is stored in numbers? They are not just stored in numbers, they are stored in
+1's and 0's.
+
+Everything to the compute is a switch. If there is electricity, we have a 1. If
+there is no electricity we have a 0. We can store those 1's and 0's in memory.
+We call these 1's and 0's **binary numbers**.
+
+How do we go from 1's and 0's to numbers we normally use? For example, a
+number like 758? We do that with a combination of 1's and 0's. Like this:
+
+=========== ===========
+Binary      Base 10
+=========== ===========
+0000        0
+0001        1
+0010        2
+0011        3
+0100        4
+0101        5
+0110        6
+0111        7
+1000        8
+=========== ===========
+
+See the pattern? It is the same pattern we use when we count as a kid.
+As a kid we learned to go 0 to 9,
+then when we hit 9 we go back to 0 and add one to the ten's place. Here we only
+have 0 to 1 instead of 0 to 9. And instead of a "ten's place" we have a "two's
+place."
+
+You might have used "bases" in math class long ago. Computers work in Base-2
+because they only have two ways to count, on or off.
+Humans think in Base-10 because we have 10 fingers.
+
+Numbers are stored in **bytes**. A byte is a set of eight binary numbers.
+If we were to follow the pattern we started above, the largest number we
+could store with eight 1's and 0's is::
+
+    1111 1111
+
+In Base-10 this is 255.
+
+Let's use some math. We have 8 ones and zeros. That give us 2 :sup:`8` = 256
+possible numbers. Since zero is a combination, that makes the biggest number 255.
+
+If we had 16 bits, then we'd have 2 :sup:`16` = 65,536 possible combinations. Or a
+number from 0-65535. A 32-bit computer can hold numbers up
+to 2 :sup:`32` = 4,294,967,296. A 64-bit computer can hold really large numbers!
+
+So because a computer holds colors with one byte for red, one for green, and one
+for blue, each color has a value range from 0 - 255.
+
 The Coordinate System
 ---------------------
 
+In your math classes, you've learned about the Cartesian coordinate system,
+which looks like this:
+
+.. figure:: cartesian_coordinate_system.svg
+    :width: 350px
+
+    Source: `Wikipedia: Cartesian coordinate system <https://commons.wikimedia.org/wiki/File:Cartesian_coordinate_system_(comma).svg>`_
+
+Our graphics will be drawn using this same system. But there are additional
+things to keep in mind:
+
+* We will only draw in the upper right quadrant. So 0,0 will be in the
+  lower left of the screen, and all negative coordinates will be off-screen.
+* Each "Point" will be a pixel. So a window that is 800 pixels wide, will have
+  x-coordinates that run from 0 to 800.
+
 Drawing a Rectangle
 -------------------
+
+Let's start drawing with a program to draw a rectangle. The function
+we will use is ``draw_lrtb_rectangle_filled``. It stands for "draw
+left-right-top-bottom rectangle"
 
 .. literalinclude:: draw_grass.py
     :language: python
