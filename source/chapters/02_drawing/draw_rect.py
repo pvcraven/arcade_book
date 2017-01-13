@@ -18,8 +18,10 @@ arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 # Get ready to draw
 arcade.start_render()
 
-# Draw the grass
-arcade.draw_lrtb_rectangle_filled(0, 600, 200, 0, arcade.color.BITTER_LIME)
+# Draw a rectangle
+# Left of 5, right of 35
+# Top of 590, bottom of 570
+arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color.BITTER_LIME)
 
 # Finish drawing
 arcade.finish_render()

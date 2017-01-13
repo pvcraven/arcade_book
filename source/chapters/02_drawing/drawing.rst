@@ -155,7 +155,7 @@ Right now we just have a default white as our background.
 How do we get a different color? Use the ``set_background_color`` command.
 
 But by itself, the function doesn't work. You need a two more commands. These
-tell the Arcade library when you are about to start drawing (`start_render`),
+tell the Arcade library when you are about to start drawing (``start_render``),
 and when you are done drawing (``finish_render``).
 
 See below:
@@ -225,7 +225,7 @@ and then get the numbers to use when specifying a color. See the image below:
 After getting the number, specify the color as a set of three numbers surrounded
 by parenthesis, like this:
 
-.. codeblock:: python
+.. code-block:: python
 
     arcade.set_background_color((189, 55, 180))
 
@@ -321,19 +321,26 @@ Drawing a Rectangle
 
 Let's start drawing with a program to draw a rectangle. The function
 we will use is ``draw_lrtb_rectangle_filled``. It stands for "draw
-left-right-top-bottom rectangle"
+left-right-top-bottom rectangle".
 
-.. literalinclude:: draw_grass.py
+We'll use this program to draw a green rectangle:
+
+.. literalinclude:: draw_rect.py
     :language: python
     :linenos:
-    :emphasize-lines: 22
+    :emphasize-lines: 24
 
-.. literalinclude:: final_program.py
+There are a lot of shapes we can draw. Try running the program below:
+
+.. literalinclude:: draw_shapes.py
     :language: python
     :linenos:
 
 Drawing primitives
 ------------------
 
-For a program showing all the drawing primitives, see
-the example `Drawing Primitives <http://arcade.academy/examples/drawing_primitives.html>`_.
+For a program showing all the drawing primitives, see the example
+`Drawing Primitives`_. Also, see the API documentation's `Quick Index`_.
+
+.. _Drawing Primitives: http://arcade.academy/examples/drawing_primitives.html
+.. _Quick Index: http://arcade.academy/quick_index.html
