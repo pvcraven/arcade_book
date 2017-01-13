@@ -73,13 +73,11 @@ arcade.draw_rectangle_filled(590, 105, 90, 40, arcade.color.BLACK)
 # Draw the smoke stack
 arcade.draw_rectangle_filled(580, 175, 10, 40, arcade.color.BLACK)
 
-
 # Back wheel
 arcade.draw_circle_filled(490, 110, 50, arcade.color.BLACK)
 arcade.draw_circle_filled(490, 110, 45, arcade.color.BLACK_OLIVE)
 arcade.draw_circle_filled(490, 110, 35, arcade.color.OLD_LACE)
 arcade.draw_circle_filled(490, 110, 10, arcade.color.RED)
-
 
 # Front wheel
 arcade.draw_circle_filled(650, 90, 30, arcade.color.BLACK)

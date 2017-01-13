@@ -343,4 +343,4 @@ For a program showing all the drawing primitives, see the example
 `Drawing Primitives`_. Also, see the API documentation's `Quick Index`_.
 
 .. _Drawing Primitives: http://arcade.academy/examples/drawing_primitives.html
-.. _Quick Index: http://arcade.academy/quick_index.html
+.. _Quick Index: http://arcade.academy/quick_index.html#id1
