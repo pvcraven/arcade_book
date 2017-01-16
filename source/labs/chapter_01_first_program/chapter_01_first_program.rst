@@ -370,6 +370,14 @@ below:
 .. image:: copy_url.png
   :width: 400px
 
+Before turning in your program, double check:
+
+* Did you remove the sample prints shown above, and make up your own print
+  statements? At least four lines?
+* Did you invite your instructor to the repository?
+* Did you use proper spelling, capitalization, and grammar in the text that
+  you printed to the screen?
+
 Copy the URL and turn it in via Scholar and you are done!
 
 
