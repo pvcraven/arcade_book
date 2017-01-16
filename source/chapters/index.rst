@@ -7,11 +7,10 @@ Chapters
    00_foreword/foreword
    01_setup/setup
    02_drawing/drawing
-   variables
-   functions
-   animation
+   03_drawing_with_functions/drawing_with_functions
    loops
    nested_loops
+   animation
    lists
    object_oriented_programming
    user_control

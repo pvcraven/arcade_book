@@ -255,19 +255,19 @@ We call these 1's and 0's **binary numbers**.
 How do we go from 1's and 0's to numbers we normally use? For example, a
 number like 758? We do that with a combination of 1's and 0's. Like this:
 
-=========== ===========
-Binary      Base 10
-=========== ===========
-0000        0
-0001        1
-0010        2
-0011        3
-0100        4
-0101        5
-0110        6
-0111        7
-1000        8
-=========== ===========
+================ ===========
+Binary - Base 2  Base 10
+================ ===========
+0000             0
+0001             1
+0010             2
+0011             3
+0100             4
+0101             5
+0110             6
+0111             7
+1000             8
+================ ===========
 
 See the pattern? It is the same pattern we use when we count as a kid.
 As a kid we learned to go 0 to 9,
