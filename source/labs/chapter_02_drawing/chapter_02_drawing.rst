@@ -38,3 +38,17 @@ Also, here is an example program that shows you what I'm looking for:
 .. literalinclude:: final_program.py
     :language: python
     :linenos:
+
+Here are some images from prior years:
+
+.. image:: fall.png
+
+.. image:: batman.png
+
+.. image:: big_ben.png
+
+.. image:: basketball.png
+
+.. image:: game_boy.png
+
+.. image:: guy.png
