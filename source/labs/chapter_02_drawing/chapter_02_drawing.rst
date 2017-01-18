@@ -13,6 +13,10 @@ To get full credit:
   I am not interested in abstract art with random shapes.
 * You must use multiple types of graphic functions
   (e.g. circles, rectangles, lines, etc.)
+* Use blank lines in the code to break up sections. For example, when drawing
+  a tree, put a blank line ahead of, and after.
+* Use comments effectively. For example, when drawing a tree, put a comment at
+  the start of those drawing commands that says ``# Draw a tree``
 
 To select new colors use:
 
