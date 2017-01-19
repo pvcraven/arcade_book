@@ -8,6 +8,9 @@ using functions to draw, and introduce computer graphics.
 
 To get full credit:
 
+* Use the same project and repository that you used for Lab 01. Create a new
+  folder called ``Lab 02 - Draw a picture``. Don't put the Lab 02 folder in the
+  Lab 01 folder.
 * You must use multiple colors.
 * You must have a coherent picture.
   I am not interested in abstract art with random shapes.

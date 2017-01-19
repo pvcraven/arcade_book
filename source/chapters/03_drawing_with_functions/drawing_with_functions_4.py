@@ -37,13 +37,25 @@ def draw_pine_tree(position_x, position_y):
     # Draw the origin point, just for reference.
     arcade.draw_point(position_x, position_y, arcade.color.RED, 4)
 
-arcade.open_window("Drawing with Functions", 800, 600)
-arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
-arcade.start_render()
 
-# Draw our pretty landscape
-draw_grass()
-draw_pine_tree(70, 90)
+def main():
+    """
+    This is the main function that we call to run our program.
+    """
+    arcade.open_window("Drawing with Functions", 800, 600)
+    arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
+    arcade.start_render()
 
-arcade.finish_render()
-arcade.run()
+    # Draw our pretty landscape
+    draw_grass()
+    draw_pine_tree(70, 90)
+    draw_pine_tree(150, 200)
+    draw_pine_tree(320, 180)
+    draw_pine_tree(520, 190)
+    draw_pine_tree(750, 80)
+
+    arcade.finish_render()
+    arcade.run()
+
+# Call the main function to get the program started.
+main()

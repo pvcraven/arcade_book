@@ -143,7 +143,7 @@ which is short for "string of characters." We don't call it "text."
 
 The following code won't print at all:
 
-.. code-block:: python
+::
 
     print(Have a great day!)
 
@@ -188,6 +188,27 @@ the only variables that use upper-case. For example:
     PI = 3.14159
     SCREEN_WIDTH = 600
     RED = (255, 0 ,0)
+
+Good variable names help make code *readable*. Note the example below that
+calculates miles-per-gallon. It isn't easy to understand.
+
+.. code-block:: python
+
+    # Calculate mpg using confusing variable names
+    m = 294
+    g = 10.5
+    m2 = m / g
+    print(m2)
+
+But the code below that uses descriptive variable names *is* easy to understand.
+
+.. code-block:: python
+
+    # Calculate mpg using good variable names
+    miles_driven = 294
+    gallons_used = 10.5
+    mpg = miles_driven / gallons_used
+    print(mpg)
 
 How to Create Expressions
 -------------------------
@@ -307,12 +328,632 @@ We can use that math when we call our function to draw:
                                 center_x, center_y + width / 2,
                                 arcade.color.FOREST_GREEN)
 
+Order of Operations
+^^^^^^^^^^^^^^^^^^^
+
+Python will evaluate expressions using the same order of operations that
+are expected in standard mathematical expressions. For example this
+equation does not correctly calculate the average:
+
+.. code-block:: python
+
+    average = 90 + 86 + 71 + 100 + 98 / 5
+
+The first operation done is 98/5. The computer calculates:
+
+.. math::
+
+   90+86+71+100+\frac{98}{5}
+
+rather than the desired:
+
+.. math::
+
+   \dfrac{90+86+71+100+98}{5}
+
+By using parentheses this problem can be fixed:
+
+.. code-block:: python
+
+    average = (90 + 86 + 71 + 100 + 98) / 5
+
 How to Create a Custom Drawing Function
 ---------------------------------------
 
-We can call functions with **parameters**.
+We can call functions with **parameters**. When we declare a function we
+can put new variables between the parenthesis. See line 15 below. The two
+variables ``position_x`` and ``position_y`` will take whatever value is passed
+in when the function is called.
+
+On line 46, we call ``draw_pine_tree`` with two numbers, ``70`` and ``90``.
+The variable ``position_x`` will be assigned ``70``, and the
+variable ``position_y`` will be assigned ``90``.
 
 .. literalinclude:: drawing_with_functions_3.py
     :language: python
     :linenos:
     :emphasize-lines: 15, 46
+
+We can use the variables from the parameters, and some mathematical expressions
+to draw a tree. Line 38 draws a small red point where the "origin" of the tree
+is. That is, I draw the point at ``(position_x, position_y)``. From there you
+can get an idea of how the other shapes relate in position.
+
+.. image:: pine_tree2.png
+
+Spend some time matching the math to the origin and how it gets there.
+
+We can use the function several times:
+
+.. code-block:: python
+
+    draw_pine_tree(70, 90)
+    draw_pine_tree(150, 200)
+    draw_pine_tree(320, 180)
+    draw_pine_tree(520, 190)
+    draw_pine_tree(750, 80)
+
+.. image:: pine_tree3.png
+
+Make Everything a Function
+--------------------------
+
+Code is easier to maintain and visualize if it is broken down into parts. Now
+that we know how to use functions, it is better programming practice to put
+*everything* into a function.
+
+Below is the same program we had before, but the main code has been moved into
+a ``main`` function.
+
+.. literalinclude:: drawing_with_functions_4.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 41, 61
+
+This is much better design-wise. However it isn't perfect. Later on we will show
+you how to make your own code libraries. And if you import this file as a code
+library, you will not only get the ``draw_pine_tree`` function to use in your
+own game, the import statement will actually run the program and display a
+window!
+
+We don't want to run the main program if we are importing this as a library.
+We'll explain this more later, but to get into good habits now, use the code
+on lines 61 and 62 to call the main function instead.
+
+.. literalinclude:: drawing_with_functions_5.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 61-62
+
+Returning and Capturing Values
+------------------------------
+
+Functions can not only take in values, functions can return values.
+
+Returning values
+^^^^^^^^^^^^^^^^
+
+For example:
+
+Function that returns two numbers added together
+
+.. code-block:: python
+
+    # Add two numbers and return the results
+    def sum_two_numbers(a, b):
+        result = a + b
+        return result
+
+Note: Return is not a function, and does not use parentheses. Don't do
+``return(result)``.
+
+This only gets us half-way there. Because if we call the function now, not
+much happens. The numbers get added. They get returned to us. But we do
+nothing with the result.
+
+.. code-block:: python
+
+    # This doesn't do much, because we don't capture the result
+    sum_two_numbers(22, 15)
+
+Capturing Returned Values
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We need to capture the result. We do that by setting a variable equal to
+the value the function returned:
+
+.. code-block:: python
+
+    # Store the function's result into a variable
+    my_result = sum_two_numbers(22, 15)
+    print(my_result)
+
+Now the result isn't lost. It is stored in my_result which we can print or use some other way.
+
+Volume Cylinder Example
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Function that returns the volume of a cylinder
+
+.. code-block:: python
+
+    def volume_cylinder(radius, height):
+        pi = 3.141592653589
+        volume = pi * radius ** 2 * height
+        return volume
+
+Because of the return, this function could be used later on as part of an
+equation to calculate the volume of a six-pack like this:
+
+.. code-block:: python
+
+six_pack_volume = volume_cylinder(2.5, 5) * 6
+
+The value returned from volume_cylinder goes into the equation and is
+multiplied by six.
+
+There is a big difference between a function that prints a value and a
+function that returns a value. Look at the code below and try it out.
+
+.. code-block:: python
+
+    # Function that prints the result
+    def sum_print(a, b):
+        result = a + b
+        print(result)
+
+    # Function that returns the results
+    def sum_return(a, b):
+        result = a + b
+        return result
+
+    # This prints the sum of 4+4
+    sum_print(4, 4)
+
+    # This does not
+    sum_return(4, 4)
+
+    # This will not set x1 to the sum
+    # It actually gets a value of 'None'
+    x1 = sum_print(4, 4)
+
+    # This will
+    x2 = sum_return(4, 4)
+
+
+When first working with functions it is not unusual to get stuck looking at
+code like this:
+
+.. code-block:: python
+
+    def calculate_average(a, b):
+        """ Calculate an average of two numbers """
+        result = (a + b) / 2
+        return result
+
+    # Pretend you have some code here
+    x = 45
+    y = 56
+
+    # Wait, how do I print the result of this?
+    calculate_average(x, y)
+
+How do we print the result of calculate_average? The program can't print
+result because that variable only exists inside the function. Instead, use
+a variable to capture the result:
+
+.. code-block:: python
+
+    def calculate_average(a, b):
+        """ Calculate an average of two numbers """
+        result = (a + b) / 2
+        return result
+
+    # Pretend you have some code here
+    x = 45
+    y = 56
+
+    average = calculate_average(x, y)
+    print(average)
+
+Documenting Functions
+---------------------
+
+Functions in Python typically have a comment as the first statement of the
+function. This comment is delimited using three double quotes, and is called a
+docstring. A function may look like:
+
+.. code-block:: python
+
+    def volume_cylinder(radius, height):
+        """Returns volume of a cylinder given radius, height."""
+        pi = 3.141592653589
+        volume = pi * radius ** 2 * height
+        return volume
+
+The great thing about using docstrings in functions is that the comment can be
+pulled out and put into a website documenting your code using a tool like
+Sphinx. Most languages have similar tools that can help make documenting your
+code a breeze. This can save a lot of time as you start working on larger
+programs.
+
+Variable Scope
+--------------
+
+The use of functions introduces the concept of scope. Scope is where in the
+code a variable is “alive” and can be accessed. For example, look at the code
+below:
+
+.. code-block:: python
+
+    # Define a simple function that sets
+    # x equal to 22
+    def f():
+        x = 22
+
+    # Call the function
+    f()
+    # This fails, x only exists in f()
+    print(x)
+
+The last line will generate an error because x only exists inside of the f()
+function. The variable is created when f() is called and the memory it uses is
+freed as soon as f() finishes.
+
+Here's where it gets complicated.
+A more confusing rule is accessing variables created outside of the f()
+function. In the following code, x is created before the f() function, and
+thus can be read from inside the f() function.
+
+.. code-block:: python
+
+    # Create the x variable and set to 44
+    x = 44
+
+    # Define a simple function that prints x
+    def f():
+        print(x)
+
+    # Call the function
+    f()
+
+Variables created ahead of a function may be read inside of the function only
+if the function does not change the value. This code, very similar to the code
+above, will fail. The computer will claim it doesn't know what x is.
+
+.. code-block:: python
+
+    # Create the x variable and set to 44
+    x = 44
+
+    # Define a simple function that prints x
+    def f():
+        x += 1
+        print(x)
+
+    # Call the function
+    f()
+
+Other languages have more complex rules around the creation of variables and
+scope than Python does. Because Python is straight-forward it is a good
+introductory language.
+
+Pass-by-Copy
+------------
+
+Functions pass their values by creating a copy of the original. For example:
+
+.. code-block:: python
+
+    # Define a simple function that prints x
+    def f(x):
+        x += 1
+        print(x)
+
+    # Set y
+    y = 10
+    # Call the function
+    f(y)
+    # Print y to see if it changed
+    print(y)
+
+The value of y does not change, even though the f() function increases the
+value passed to it. Each of the variables listed as a parameter in a function
+is a brand new variable. The value of that variable is copied from where it is
+called.
+
+This is reasonably straight forward in the prior example. Where it gets
+confusing is if both the code that calls the function and the function itself
+have variables named the same. The code below is identical to the prior listing,
+but rather than use y it uses x.
+
+.. code-block:: python
+
+    # Define a simple function that prints x
+    def f(x):
+        x += 1
+        print(x)
+
+    # Set x
+    x = 10
+    # Call the function
+    f(x)
+    # Print x to see if it changed
+    print(x)
+
+The output is the same as the program that uses y. Even though both the
+function and the surrounding code use x for a variable name, there are
+actually two different variables. There is the variable x that exists
+inside of the function, and a different variable x that exists outside
+the function.
+
+Functions Calling Functions
+---------------------------
+
+For each of the examples below, think about what would print. Check to see
+if you are right. If you didn't guess correctly, spend to the time to
+understand why.
+
+Example 1
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 1
+    def a():
+        print("A")
+
+    def b():
+        print("B")
+
+    def c():
+        print("C")
+
+    a()
+
+Example 2
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 2
+    def a():
+        b()
+        print("A")
+
+    def b():
+        c()
+        print("B")
+
+    def c():
+        print("C")
+
+    a()
+
+
+Example 3
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 3
+    def a():
+        print("A")
+        b()
+
+    def b():
+        print("B")
+        c()
+
+    def c():
+        print("C")
+
+    a()
+
+Example 4
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 4
+    def a():
+        print("A start")
+        b()
+        print("A end")
+
+    def b():
+        print("B start")
+        c()
+        print("B end")
+
+    def c():
+        print("C start and end")
+
+    a()
+
+
+Example 5
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 5
+    def a(x):
+        print("A start, x =",x)
+        b(x + 1)
+        print("A end, x =",x)
+
+    def b(x):
+        print("B start, x =",x)
+        c(x + 1)
+        print("B end, x =",x)
+
+    def c(x):
+        print("C start and end, x =",x)
+
+    a(5)
+
+Example 6
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 6
+    def a(x):
+        x = x + 1
+
+    x = 3
+    a(x)
+
+    print(x)
+
+Example 7
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 7
+    def a(x):
+        x = x + 1
+        return x
+
+    x = 3
+    a(x)
+
+    print(x)
+
+Example 8
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 8
+    def a(x):
+        x = x + 1
+        return x
+
+    x = 3
+    x = a(x)
+
+    print(x)
+
+Example 9
+^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 9
+    def a(x, y):
+        x = x + 1
+        y = y + 1
+        print(x, y)
+
+    x = 10
+    y = 20
+    a(y, x)
+
+Example 10
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 10
+    def a(x, y):
+        x = x + 1
+        y = y + 1
+        return x
+        return y
+
+    x = 10
+    y = 20
+    z = a(x, y)
+
+    print(z)
+
+Example 11
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 11
+    def a(x, y):
+        x = x + 1
+        y = y + 1
+        return x, y
+
+    x = 10
+    y = 20
+    z = a(x, y)
+
+    print(z)
+
+Example 12
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 12
+    def a(x, y):
+        x = x + 1
+        y = y + 1
+        return x, y
+
+    x = 10
+    y = 20
+    x2, y2 = a(x, y) # Most computer languages don't support this
+
+    print(x2)
+    print(y2)
+
+Example 13
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 13
+    def a(my_data):
+        print("function a, my_data =  ", my_data)
+        my_data = 20
+        print("function a, my_data =  ", my_data)
+
+    my_data = 10
+
+    print("global scope, my_data =", my_data)
+    a(my_data)
+    print("global scope, my_data =", my_data)
+
+Example 14
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 14
+    def a(my_list):
+        print("function a, list =  ", my_list)
+        my_list = [10, 20, 30]
+        print("function a, list =  ", my_list)
+
+    my_list = [5, 2, 4]
+
+    print("global scope, list =", my_list)
+    a(my_list)
+    print("global scope, list =", my_list)
+
+Example 15
+^^^^^^^^^^
+
+.. code-block:: python
+
+    # Example 15
+    # New concept!
+    # Covered in more detail in a later chapter
+    def a(my_list):
+        print("function a, list =  ", my_list)
+        my_list[0] = 1000
+        print("function a, list =  ", my_list)
+
+    my_list = [5, 2, 4]
+
+    print("global scope, list =", my_list)
+    a(my_list)
+    print("global scope, list =", my_list)
