@@ -487,7 +487,7 @@ equation to calculate the volume of a six-pack like this:
 
 .. code-block:: python
 
-six_pack_volume = volume_cylinder(2.5, 5) * 6
+    six_pack_volume = volume_cylinder(2.5, 5) * 6
 
 The value returned from volume_cylinder goes into the equation and is
 multiplied by six.
@@ -581,7 +581,7 @@ Variable Scope
 --------------
 
 The use of functions introduces the concept of scope. Scope is where in the
-code a variable is “alive” and can be accessed. For example, look at the code
+code a variable is "alive" and can be accessed. For example, look at the code
 below:
 
 .. code-block:: python
@@ -597,13 +597,13 @@ below:
     print(x)
 
 The last line will generate an error because x only exists inside of the f()
-function. The variable is created when f() is called and the memory it uses is
-freed as soon as f() finishes.
+function. The variable is created when ``f()`` is called and the memory it uses is
+freed as soon as ``f()`` finishes.
 
 Here's where it gets complicated.
-A more confusing rule is accessing variables created outside of the f()
-function. In the following code, x is created before the f() function, and
-thus can be read from inside the f() function.
+A more confusing rule is accessing variables created outside of the ``f()``
+function. In the following code, x is created before the ``f()`` function, and
+thus can be read from inside the ``f()`` function.
 
 .. code-block:: python
 
@@ -957,3 +957,13 @@ Example 15
     print("global scope, list =", my_list)
     a(my_list)
     print("global scope, list =", my_list)
+
+Mudball Example
+^^^^^^^^^^^^^^^
+
+This is a fun text-only game that two players can play. It uses a few concepts
+we haven't covered yet.
+
+.. literalinclude:: mudball.py
+    :language: python
+    :linenos:
