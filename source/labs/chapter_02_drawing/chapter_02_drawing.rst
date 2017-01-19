@@ -33,6 +33,9 @@ If you have 5 lines that draw a robot, group them together with blank lines
 above and below. Then add a comment at the top telling the reader what you
 are drawing.
 
+Keep in mind the order of code. Shapes drawn first will be at the "back."
+Shapes drawn later will be drawn on top of the other shapes.
+
 Looking for ideas? At the page below, each time you refresh the page I show
 various images created by students from prior years:
 
