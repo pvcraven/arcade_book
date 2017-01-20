@@ -14,7 +14,8 @@ Avoid frustration later. Learn it now.
 Your development computer will need:
 
 * The Python_ programming language and the Arcade_ code library.
-* An editor to type in your programs. (We'll use a programm called PyCharm_.)
+* An editor to type in your programs. (We'll use a programm called PyCharm_.
+  You can get a `student license`_ for free.)
 * A version control system to track and turn in your work. (Git/SourceTree_/BitBucket_)
 * A minor configuration tweak so we can see file extensions.
 
@@ -242,6 +243,8 @@ for drawing on the screen. This is called the "Arcade" library.
 Installation for installing Python and the Arcade library are available below:
 
 * `Windows Installation <http://arcade.academy/installation_windows.html>`_
+  (Make sure to read the instructions carefully. Do not skip the "Add Python
+  to Path" step. This seems to be the most frequent issue.)
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
 
