@@ -395,6 +395,8 @@ We can use the function several times:
 
 .. image:: pine_tree3.png
 
+.. _make-everything-a-function:
+
 Make Everything a Function
 --------------------------
 
@@ -958,12 +960,3 @@ Example 15
     a(my_list)
     print("global scope, list =", my_list)
 
-Mudball Example
-^^^^^^^^^^^^^^^
-
-This is a fun text-only game that two players can play. It uses a few concepts
-we haven't covered yet.
-
-.. literalinclude:: mudball.py
-    :language: python
-    :linenos:
