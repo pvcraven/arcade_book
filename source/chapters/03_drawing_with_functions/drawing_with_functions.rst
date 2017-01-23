@@ -395,6 +395,8 @@ We can use the function several times:
 
 .. image:: pine_tree3.png
 
+.. _make-everything-a-function:
+
 Make Everything a Function
 --------------------------
 
