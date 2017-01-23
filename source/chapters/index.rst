@@ -8,6 +8,8 @@ Chapters
    01_setup/setup
    02_drawing/drawing
    03_drawing_with_functions/drawing_with_functions
+   04_if_statements/if_statements
+   05_loops_and_random_numbers/loops_and_random_numbers
    xx_selecting_python/selecting_python
    loops
    nested_loops
