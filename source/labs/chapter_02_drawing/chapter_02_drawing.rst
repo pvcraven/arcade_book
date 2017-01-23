@@ -19,7 +19,9 @@ To get full credit:
 * Use blank lines in the code to break up sections. For example, when drawing
   a tree, put a blank line ahead of, and after.
 * Use comments effectively. For example, when drawing a tree, put a comment at
-  the start of those drawing commands that says ``# Draw a tree``
+  the start of those drawing commands that says ``# Draw a tree``. Remember
+  to put one space after the ``#`` sign.
+* Put spaces after commas for proper "style."
 
 To select new colors use:
 

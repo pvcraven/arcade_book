@@ -377,6 +377,8 @@ Before turning in your program, double check:
 * Did you invite your instructor to the repository?
 * Did you use proper spelling, capitalization, and grammar in the text that
   you printed to the screen?
+* Hover over the PyCharm "hints" that are on the right side of your editor to
+  see if there are suggestions on how to make your code better.
 
 Copy the URL and turn it in via Scholar and you are done!
 
