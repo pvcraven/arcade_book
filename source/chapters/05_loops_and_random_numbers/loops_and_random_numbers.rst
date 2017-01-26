@@ -81,8 +81,10 @@ For Loops
 
 The ``for`` loop example below runs the print statement five times. It could just as easily run 100 or 1,000,000 times just by changing the 5 to the desired number of times to loop. Note the similarities of how the ``for`` loop is written to the if statement. Both end in a colon, and both use indentation to specify which lines are affected by the statement.
 
-Loop to print five times
+
+
 .. code-block:: python
+    :caption: Loop to print five times
 
     for i in range(5):
         print("I will not chew gum in class.")
@@ -104,41 +106,48 @@ The range function controls how many times the code in the loop is run. In this 
 
 The next example code will print "Please," five times and "Can I go to the mall?" only once. "Can I go to the mall?" is not indented so it is not part of the for loop and will not print until the for loop completes.
 
-1
-2
-3
-for i in range(5):
-    print("Please,")
-print("Can I go to the mall?")
-Step
-Output:
-Please,
-Please,
-Please,
-Please,
-Please,
-Can I go to the mall?
-This next code example takes the prior example and indents line 3. This change will cause the program to print "Please," and "Can I go to the mall?" five times. Since the statement has been indented "Can I go to the mall?" is now part of the for loop and will repeat five times just like the word "Please,".
+.. code-block:: python
 
-1
-2
-3
-for i in range(5):
-    print("Please,")
+    for i in range(5):
+        print("Please,")
     print("Can I go to the mall?")
-Step
-Output:
-Please,
-Can I go to the mall?
-Please,
-Can I go to the mall?
-Please,
-Can I go to the mall?
-Please,
-Can I go to the mall?
-Please,
-Can I go to the mall?
-The code below will print the numbers 0 to 9. Notice that the loop starts at 0 and does not include the number 10. It is natural to assume that range(10) would include 10, but it stops just short of it.
+
+Output::
+
+    Please,
+    Please,
+    Please,
+    Please,
+    Please,
+    Can I go to the mall?
+
+This next code example takes the prior example and indents line 3. This change
+will cause the program to print "Please," and "Can I go to the mall?" five
+times. Since the statement has been indented "Can I go to the mall?" is now
+part of the for loop and will repeat five times just like the word "Please,".
+
+.. code-block:: python
+
+    for i in range(5):
+        print("Please,")
+        print("Can I go to the mall?")
+
+Output::
+
+    Please,
+    Can I go to the mall?
+    Please,
+    Can I go to the mall?
+    Please,
+    Can I go to the mall?
+    Please,
+    Can I go to the mall?
+    Please,
+    Can I go to the mall?
+
+The code below will print the numbers 0 to 9. Notice that the loop starts at
+0 and does not include the number 10. It is natural to assume that
+``range(10)`` would include 10, but it stops just short of it.
 
 Print the numbers 0 to 9
 1
