@@ -109,9 +109,10 @@ Programming Guide
 Here are the steps to complete this lab. Feel free to modify and add to the lab.
 Try the game with friends and family.
 
-1. Create a new program and print the instructions to the screen. Do this with
-   multiple ``print`` statements. Don't use one ``print`` statement and multiple ``\n``
-   characters to jam everything on one line.
+1. Create a new ``main`` function and program. Have it print the instructions
+   to the screen. Do this with multiple ``print`` statements. Don't use one
+   ``print`` statement and multiple ``\n`` characters to jam everything on one
+   line.
 
 ::
 
