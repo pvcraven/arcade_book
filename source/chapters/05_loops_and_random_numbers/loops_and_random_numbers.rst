@@ -4,6 +4,10 @@
 Guessing Games with Random Numbers and Loops
 ============================================
 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t3MgBTHndpE" frameborder="0" allowfullscreen></iframe>
+
 Our next step is how to loop a section of code. Most games "loop." They
 repeat the same code over and over. For example the number guessing
 game below loops for each guess that the user makes:
@@ -226,6 +230,7 @@ Either method works just fine.
 
 Counting By Numbers Other Than One
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If the program needs to count by 2's or use some other increment, that is easy.
 Just like before there are two ways to do it. The easiest is to supply a third
 number to the ``range`` function that tells it to count by 2's. The second way to
@@ -309,6 +314,10 @@ This prints::
 Nesting Loops
 ^^^^^^^^^^^^^
 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fyP4SXpkYG4" frameborder="0" allowfullscreen></iframe>
+
 Try to predict what the code below will print. Then enter the code and see
 if you are correct.
 
@@ -320,8 +329,6 @@ if you are correct.
         print("a")
     for j in range(3):
         print("b")
-
-Video: Nesting for loops
 
 This next block of code is almost identical to the one above. The second for
 loop has been indented one tab stop so that it is now nested inside of the
@@ -340,11 +347,16 @@ first for loop. This changes how the code runs significantly. Try it and see.
 
 I'm not going to tell you what the code does, go to a computer and see.
 
+.. raw:: html
 
-Video: for loop animation
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x4GXflaroPc" frameborder="0" allowfullscreen></iframe>
 
 Keeping a Running Total
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/prNzO_vtPvA" frameborder="0" allowfullscreen></iframe>
 
 A common operation in working with loops is to keep a running total. This
 "running total" code pattern is used a lot in this book. Keep a running total
@@ -362,8 +374,6 @@ numbers and the code totals up their values.
         new_number = int(input("Enter a number: " ))
         total += new_number
     print("The total is: ", total)
-
-Video: Using a loop to keep a running total
 
 Note that line 1 creates the variable total, and sets it to an initial amount
 of zero. It is easy to forget the need to create and initialize the variable to
