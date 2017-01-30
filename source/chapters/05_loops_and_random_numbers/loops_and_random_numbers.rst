@@ -387,10 +387,16 @@ total of the current loop count.
 Speaking of the current loop count, we can use the loop count value to solve
 some mathematical operations. For example:
 
+.. math::
+
+    s=\sum\limits_{n=1}^{100}n
 
 If you aren't familiar with this type of formula, it is just a fancy way of
 stating:
 
+.. math::
+
+    s=1+2+3+4+5 \ldots 98+99+100
 
 The code below adds all the numbers from 1 to 100. It demonstrates a common
 pattern where a running total is kept inside of a loop. This also uses a
@@ -464,7 +470,9 @@ This example code covers common for loops and shows how they work.
 While Loops
 -----------
 
-Video: The while loop
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Z2pH0Ls9Ew" frameborder="0" allowfullscreen></iframe>
 
 A ``for`` loop is used when a program knows it needs to repeat a block of code for
 a certain number of times. A ``while`` loop is used when a program needs to loop
@@ -657,7 +665,9 @@ games or simulations.
 The ``randrange`` Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Video: Random Numbers
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F20ho-PkcA4" frameborder="0" allowfullscreen></iframe>
 
 By default, Python does not know how to make random numbers. It is necessary
 to have Python import a code library that can create random numbers. So to use
