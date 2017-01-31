@@ -109,7 +109,9 @@ Programming Guide
 Here are the steps to complete this lab. Feel free to modify and add to the lab.
 Try the game with friends and family.
 
-1. Create a new ``main`` function and program. Have it print the instructions
+1. Create a new directory in your project for ``Lab 04 - Camel`` and a file
+   called ``main.py`` in that folder.
+2. In that file create a new ``main`` function. Have it print the instructions
    to the screen. Do this with multiple ``print`` statements. Don't use one
    ``print`` statement and multiple ``\n`` characters to jam everything on one
    line.
@@ -121,9 +123,10 @@ Try the game with friends and family.
 	The natives want their camel back and are chasing you down! Survive your
 	desert trek and out run the natives.
 
-2. Create a Boolean variable called ``done`` and set to ``False``.
-3. Create a ``while`` loop that will keep looping while ``done`` is ``False``.
-4. Inside the loop, print out the following::
+3. Continue from the prior step and create a Boolean variable called ``done``
+   and set to ``False``.
+4. Create a ``while`` loop that will keep looping while ``done`` is ``False``.
+5. Inside the loop, print out the following::
 
 	A. Drink from your canteen.
 	B. Ahead moderate speed.
@@ -132,7 +135,7 @@ Try the game with friends and family.
 	E. Status check.
 	Q. Quit.
 
-5. Ask the user for their choice. Make sure to add a space before the quote so
+6. Ask the user for their choice. Make sure to add a space before the quote so
    the user input doesn't run into your text. That is, it should look like:
 
 ::
@@ -144,20 +147,20 @@ And not::
    What is your choice?Q
 
 
-6. If the user's choice is ``Q``, then set ``done`` to ``True``. By doing
+7. If the user's choice is ``Q``, then set ``done`` to ``True``. By doing
    something like ``user_choice.upper()`` instead of just ``user_choice`` in
    your ``if`` statement you can make it case-insensitive.
-7. Test and make sure that you can quit out of the game, and that case doesn't
+8. Test and make sure that you can quit out of the game, and that case doesn't
    matter.
-8. Before your main program loop, create variables for miles traveled, thirst,
+9. Before your main program loop, create variables for miles traveled, thirst,
    camel tiredness. Set these to zero.
-9. Create a variable for the distance the natives have traveled and set it to
-   -20. (Twenty miles back.) Understanding how we track the player's distance,
-   the native's distance, and the difference between the two tends to confuse
-   some people. See the videos at the end of this lab for some hints.
+10. Create a variable for the distance the natives have traveled and set it to
+    -20. (Twenty miles back.) Understanding how we track the player's distance,
+    the native's distance, and the difference between the two tends to confuse
+    some people. See the videos at the end of this lab for some hints.
 
-10. Create and set an initial number of drinks in the canteen.
-11. Add an ``elif`` in your main program loop and see if the user is asking
+11. Create and set an initial number of drinks in the canteen.
+12. Add an ``elif`` in your main program loop and see if the user is asking
     for status. If so, print out the miles traveled, the drinks in the canteen,
     and how far the natives are behind you. If you aren't sure how to calculate
     that, see the videos at the end of this lab.
@@ -169,45 +172,45 @@ And not::
 	The natives are 10 miles behind you.
 
 
-12. Add an ``elif`` in your main program loop and handle if the user wants to
+13. Add an ``elif`` in your main program loop and handle if the user wants to
     stop for the night. If the user does, reset the camel's tiredness to zero.
     Print that the camel is happy, and move the natives up a random amount from
     7 to 14 or so.
-13. Add an ``elif`` in your main program loop and handle if the user wants to
+14. Add an ``elif`` in your main program loop and handle if the user wants to
     go ahead full speed. If the user does, go forward a random amount between
     10 and 20 inclusive. Print how many miles the user traveled. Add 1 to
     thirst. Add a random 1 to 3 to camel tiredness. Move the natives up 7 to
     14 miles.
-14. Add an ``elif`` in your main program loop and handle if the user wants to
+15. Add an ``elif`` in your main program loop and handle if the user wants to
     go ahead moderate speed. If the user does, go forward a random amount
     between 5 and 12 inclusive. Print how many miles the user traveled. Add 1
     to thirst. Add 1 to camel tiredness. Move the natives up 7 to 14 miles.
-15. Add an ``elif`` in your main program loop and handle if the user wants to go
+16. Add an ``elif`` in your main program loop and handle if the user wants to go
     ahead drink from the canteen. If the user does, make sure there are drinks
     in the canteen. If there are, subtract one drink and set the player's
     thirst to zero. Otherwise print an error.
-16. In the loop, print "You are thirsty." if the user's thirst is above 4.
-17. Print "You died of thirst!"" if the user's thirst is above 6. Set ``done``
+17. In the loop, print "You are thirsty." if the user's thirst is above 4.
+18. Print "You died of thirst!"" if the user's thirst is above 6. Set ``done``
     to ``True``. Make sure you create your code so that the program doesn't
     print both "Your are thirsty" and "You died of thirst!" Use ``elif``
     as appropriate.
-18. Print "Your camel is getting tired." if the camel's tiredness is above 5.
-19. Print "Your camel is dead." if the camel's tiredness is above 8. Like the
+19. Print "Your camel is getting tired." if the camel's tiredness is above 5.
+20. Print "Your camel is dead." if the camel's tiredness is above 8. Like the
     prior steps, print one or the other. It is a good idea to include a check
     with the done variable so t hat you don't print that your camel is getting
     tired after you died of thirst.
-20. If the natives have caught up, print that they caught the player and end
+21. If the natives have caught up, print that they caught the player and end
     the game.
-21. Else if the natives are less than 15 miles behind, print "The natives are
+22. Else if the natives are less than 15 miles behind, print "The natives are
     getting close!"
-22. If the user has traveled 200 miles across the desert, print that they won
+23. If the user has traveled 200 miles across the desert, print that they won
     and end the game. Make sure they aren't dead before declaring them a winner.
     If they land on mile marker 201 instead of 200, make sure they still win
     the game. See the videos below.
-23. Add a one-in-twenty chance of finding an oasis. Print that the user found
+24. Add a one-in-twenty chance of finding an oasis. Print that the user found
     it, refill the canteen, reset player thirst, and rest the camel.
     Make sure a person can't find the oasis unless they are traveling.
-24. Play the game and tune the numbers so it is challenging but not impossible.
+25. Play the game and tune the numbers so it is challenging but not impossible.
     Fix any bugs you find.
 
 Hints
