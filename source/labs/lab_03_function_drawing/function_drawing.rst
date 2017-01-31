@@ -4,10 +4,13 @@ Lab 3: Drawing with Functions
 =============================
 
 Draw and animate an image.
-Update your program from Lab 2, or create a new program.
-Incorporate the following items: (20 pts)
+Update your program from Lab 2, or create a new program. Lab is worth
+20 points, see the breakdown below.
 
-* Create three functions that draw something. (15 pts total)
+Incorporate the following items:
+
+* Create three functions that draw something. (15 pts total, up to 5 pts
+  per function)
 
   * Define the function and successfully call it. (1 pt)
   * Make your drawing function complex. 0 points for a one-line function that
@@ -17,7 +20,7 @@ Incorporate the following items: (20 pts)
 
 * Properly use the ``main`` function for your main program as shown
   in :ref:`make-everything-a-function`. (1 pt)
-* For up to four points, animate the object as shown in this
-  `bouncing rectangle example`_.
+* Animate the object as shown in this
+  `bouncing rectangle example`_. (4 pts)
 
 .. _bouncing rectangle example: http://arcade.academy/examples/bouncing_rectangle.html
