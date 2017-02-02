@@ -9,6 +9,11 @@ Update your program from Lab 2, or create a new program. Lab is worth
 
 Incorporate the following items:
 
+* Start with the same PyCharm project you used for Lab 01 and Lab 02. Create a
+  new folder for Lab 03. Feel free to use any code from Lab 02 you want, just
+  copy it across. Do not create a new repository. Do not create a new code
+  branch. Just create a directory for Lab 3. Make sure it is not inside of th
+  folders for Lab 01 or Lab 02.
 * Create three functions that draw something. (15 pts total, up to 5 pts
   per function)
 
