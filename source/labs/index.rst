@@ -9,3 +9,4 @@ Labs
    lab_03_function_drawing/function_drawing
    lab_04_camel/camel
    lab_05_loopy_lab/loopy_lab
+   lab_06_text_adventure/adventure

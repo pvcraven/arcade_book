@@ -124,7 +124,8 @@ Try the game with friends and family.
 	desert trek and out run the natives.
 
 3. Continue from the prior step and create a Boolean variable called ``done``
-   and set to ``False``.
+   and set to ``False``. Make sure this, and everything else, is in the
+   ``main`` function.
 4. Create a ``while`` loop that will keep looping while ``done`` is ``False``.
 5. Inside the loop, print out the following::
 

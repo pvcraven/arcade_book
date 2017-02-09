@@ -45,8 +45,15 @@ Hints
 -----
 
 * Each little square is a 5x5 pixel square.
+* If the center of each square is 5 apart, you won't see an edge and it will
+  look like one big square.
+* Remember, row controls up and down, so it corresponds to y. Column corresponds
+  to x.
+* When working on sections 2-8, you can simple add to the x and/or y values
+  to shift everything over. For example, just add 300 to all the x values in
+  section 2, to put it in the second box.
 * Each section is 300x300 pixels.
-* Remember that the ``%`` sign is the modulus It calculates the remainder. So::
+* Remember that the ``%`` sign is the modulus. It calculates the remainder. So::
 
     0 % 3 = 0
     1 % 3 = 1
