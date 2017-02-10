@@ -13,6 +13,7 @@ Chapters
    06_advanced_looping/advanced_looping
    07_lists/lists
    08_classes/classes
+   09_user_control/user_control
    xx_selecting_python/selecting_python
    animation
    user_control
