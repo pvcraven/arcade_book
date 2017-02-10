@@ -10,7 +10,7 @@ To get full credit:
 
 * Use the same project and repository that you used for Lab 01. Create a new
   folder called ``Lab 02 - Draw a picture``. Don't put the Lab 02 folder in the
-  Lab 01 folder.
+  Lab 01 folder. Do not create a new project or a new repository.
 * You must use multiple colors.
 * You must have a coherent picture.
   I am not interested in abstract art with random shapes.
@@ -53,14 +53,24 @@ Also, here is an example program that shows you what I'm looking for:
 
 Here are some images from prior years:
 
-.. image:: fall.png
+.. raw:: html
 
-.. image:: batman.png
 
-.. image:: big_ben.png
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
 
-.. image:: basketball.png
+      <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider();
+        });
+      </script>
 
-.. image:: game_boy.png
 
-.. image:: guy.png
+    <ul class="bxslider">
+      <li><img src="../../_static/lab_02_images/001.png" /></li>
+      <li><img src="../../_static/lab_02_images/002.png" /></li>
+      <li><img src="../../_static/lab_02_images/003.png" /></li>
+      <li><img src="../../_static/lab_02_images/004.png" /></li>
+    </ul>
+
+

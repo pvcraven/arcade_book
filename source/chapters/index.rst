@@ -10,12 +10,11 @@ Chapters
    03_drawing_with_functions/drawing_with_functions
    04_if_statements/if_statements
    05_loops_and_random_numbers/loops_and_random_numbers
+   06_advanced_looping/advanced_looping
+   07_lists/lists
+   08_classes/classes
    xx_selecting_python/selecting_python
-   loops
-   nested_loops
    animation
-   lists
-   object_oriented_programming
    user_control
    sprites
    files
