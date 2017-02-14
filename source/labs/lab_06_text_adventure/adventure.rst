@@ -82,6 +82,10 @@ and west.
 Step-by-step Instructions
 -------------------------
 
+As a reminder, at the end of the year I do scan for duplicate homework. I keep
+all homework assignments from prior semesters, and assignments from non-Simpson
+students that I find on-line. Make sure your work is your own.
+
 1.  Create an empty array called ``room_list``.
 2.  Create a variable called ``room``. Set it equal to an array with five elements.
     For the first element, create a string with a description of your first room.
