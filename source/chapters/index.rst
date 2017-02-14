@@ -14,10 +14,8 @@ Chapters
    07_lists/lists
    08_classes/classes
    09_user_control/user_control
+   10_sprites/sprites
    xx_selecting_python/selecting_python
-   animation
-   user_control
-   sprites
    files
    libraries
    recursion
