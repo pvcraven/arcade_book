@@ -133,6 +133,22 @@ With a list! This takes our previous example and animates three balls at once.
 
 .. image:: ball_list_example.gif
 
+Move with the Mouse
+-------------------
+
+.. literalinclude:: move_with_mouse.py
+    :caption: move_with_mouse.py
+    :language: python
+    :linenos:
+
+Move with the Keyboard
+----------------------
+
+.. literalinclude:: move_with_keyboard.py
+    :caption: move_with_keyboard.py
+    :language: python
+    :linenos:
+
 Starting Template
 -----------------
 
