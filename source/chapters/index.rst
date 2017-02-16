@@ -15,6 +15,7 @@ Chapters
    08_classes/classes
    09_user_control/user_control
    10_sprites/sprites
+   11_sounds/sounds
    xx_selecting_python/selecting_python
    files
    libraries
