@@ -39,7 +39,7 @@ class MyApplication(arcade.Window):
         arcade.start_render()
         self.ball.draw()
 
-    def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
+    def on_mouse_motion(self, x, y, dx, dy):
         """ Called to update our objects. Happens approximately 60 times per second."""
         self.ball.position_x = x
         self.ball.position_y = y
