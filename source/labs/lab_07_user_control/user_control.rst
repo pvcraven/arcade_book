@@ -25,5 +25,7 @@ Create one program that does/implements the following:
   different items on the screen that are drawn by the functions you just made.
 * In the case of the game controller and the keyboard, make sure to add checks
   so that your object does not move off-screen and get lost.
+* Add a sound effect for when the user clicks the mouse button.
+* Add a sound effect for when the user bumps into the edge of the screen.
 
 .. _Arcade Starting Template: http://arcade.academy/examples/starting_template.html
