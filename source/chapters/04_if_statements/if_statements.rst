@@ -404,6 +404,8 @@ If you can't figure it out, see the video.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/uLJ7wxeaBbE" frameborder="0" allowfullscreen></iframe>
 
+.. _text-comparisons:
+
 Text Comparisons
 ----------------
 
@@ -432,6 +434,8 @@ A common mistake is to forget the quotes around the string being compared. In th
         print("You have a nice name.")
     else:
         print("Your name is ok.")
+
+.. _multi-text-comparisons:
 
 Multiple Text Possibilities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

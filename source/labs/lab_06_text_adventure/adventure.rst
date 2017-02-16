@@ -123,7 +123,8 @@ students that I find on-line. Make sure your work is your own.
     will make it visually separate each turn when playing the game.
 12. After printing the room description, add a line of code that asks the user
     what they want to do.
-13. Add an ``if`` statement to see if the user wants to go north.
+13. Add an ``if`` statement to see if the user wants to go north. You may need
+    to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`.
 14. If the user wants to go north, create a variable called ``next_room`` and
     get it equal to ``room_list[current_room][1]``, which should be the number
     for what room is to the north.
@@ -142,7 +143,8 @@ students that I find on-line. Make sure your work is your own.
     kitchen." Instead say "You are in the kitchen. There is a door to the north."
 21. Add a quit command that ends the game.
 22. Make sure that the program works for upper and lower case commands.
-23. Have the program work if the user types in "north" or "n".
+23. Have the program work if the user types in "north" or "n". Review
+    :ref:`multi-text-comparisons` if needed.
 
 Spend a little time to make this game interesting. Don't simply create an
 "East room" and a "West room." That's boring.

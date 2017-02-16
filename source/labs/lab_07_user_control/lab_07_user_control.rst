@@ -25,12 +25,5 @@ Create one program that does/implements the following:
   different items on the screen that are drawn by the functions you just made.
 * In the case of the game controller and the keyboard, make sure to add checks
   so that your object does not move off-screen and get lost.
-  Don't just reverse the direction like the bouncing rectangle, actually reset
-  the position. Like:
-
-.. code-block:: python
-
-    if position_x < 0:
-        position_x = 0
 
 .. _Arcade Starting Template: http://arcade.academy/examples/starting_template.html
