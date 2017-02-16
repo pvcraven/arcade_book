@@ -139,7 +139,7 @@ students that I find on-line. Make sure your work is your own.
     lines in the code. That way you visually group the code into sections.
 19. It is a great idea to add comments too, to each section.
 20. Test your program. Make sure you have enough of a description that someone
-    running the program will no what direction to go. Don't say "You are in the
+    running the program will know what direction to go. Don't say "You are in the
     kitchen." Instead say "You are in the kitchen. There is a door to the north."
 21. Add a quit command that ends the game.
 22. Make sure that the program works for upper and lower case commands.
