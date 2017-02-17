@@ -1,5 +1,5 @@
 .. sectnum::
-    :start: 10
+    :start: 11
 
 .. _sprites:
 
@@ -20,7 +20,10 @@ frog, or little plumber guy.
 
 Originally, video game consoles had built-in hardware support for sprites. 
 Now this specialized hardware support is no longer needed, but we still use 
-the term "sprite."
+the term "sprite." The `history of sprites`_ is interesting, if you want to
+read up more about it.
+
+.. _history of sprites: https://en.wikipedia.org/wiki/Sprite_(computer_graphics)
 
 Basic Sprites and Collisions
 ----------------------------
@@ -32,6 +35,8 @@ controlled by the mouse as shown in the figure below. The program keeps "score"
 on how many coins have been collected. The code for this example may be found at: 
 
 http://arcade.academy/examples/sprite_collect_coins.html
+
+In this chapter, we'll step through that example.
 
 .. figure:: sprite_collect_coins.png
 
@@ -117,7 +122,7 @@ code that calls this function near the end: ``window.setup()``.
 
 This setup code
 could be moved into the ``__init__`` method. Why is it separate? Later on
-if we want to add the ability to "play again", we can just call the setup 
+if we want to add the ability to "play again", we can just call the ``setup`` 
 function. If the code to set up the window is mixed with the code to set 
 up the game, then it is more difficult to program that functionality. Here
 we start by keeping them separate.
@@ -201,6 +206,13 @@ using, and how big to scale it.
 
     self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)    
 
+Ok, so if you are following along, you'll need to download the images. You
+can right-click on the two images below and save them. The images come from
+`kenney.nl`_ who has a lot of free and cheap game image assets that you can
+use in your games.
+
+.. _kenney.nl: http://kenney.nl/
+
 .. figure:: character.png
     
     character.png
@@ -209,11 +221,141 @@ using, and how big to scale it.
     
     coin_01.png
     
+Where should you save them? It depends. If you load your sprite with the code
+below, the computer will look for the ``character.png`` image in the same 
+directory as your Python file. Save the image anywhere else, and it won't
+be found.
+
+.. code-block:: Python
+
+    self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)    
+
+I don't like putting my images with my code. By the time I finish a game there's
+a lot of images, sounds, and other files all mixed together. Instead I like
+to create subdirectories for images and sounds. You can do this by creating
+a subdirectory called "images" and them prepending "images/" to your filename.
+
+.. code-block:: Python
+
+    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)        
+
 The On Draw Method
 ^^^^^^^^^^^^^^^^^^
+
+How do we draw all our sprites? Really easy. We just override the ``on_draw``
+method and call the ``draw`` method in our sprites list. That method will
+loop throug all our sprites for us, and draw them.
+
+.. code-block:: Python
+
+    def on_draw(self):
+
+            arcade.start_render()
+
+            # Draw all the sprites.
+            self.all_sprites_list.draw()
+
+Woohoo! That was easy. 
+
+In addition to drawing the sprites, let's go ahead and
+put the score on the screen:
+
+.. code-block:: Python
+
+    # Put the text on the screen.
+    output = "Score: " + str(self.score)
+    arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+
+Rather than do that ``"Score: " + str(self.score)`` it is possible to do
+print formatting if you are using Python 3.6 or later. We'll talk more about
+print formatting later, but that code would look like:
+
+.. code-block:: Python
+
+    # Put the text on the screen.
+    output = f"Score: {self.score}"
+    arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+
+There are three standards for how to format strings in Python, so that whole
+subject is a bit confusing.
 
 The On Mouse Motion Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Moving the player sprite with the mouse is easy. All sprites have instance 
+variables ``center_x`` and ``center_y``. Just change those values to the mouse's
+x and y location to move the sprite.
+
+.. code-block:: Python
+
+    def on_mouse_motion(self, x, y, dx, dy):
+
+        self.player_sprite.center_x = x
+        self.player_sprite.center_y = y
+
 The Animate Method
 ^^^^^^^^^^^^^^^^^^
+
+Our ``animate`` method needs to do three things:
+
+1. Update the sprites
+2. Check to see if the player is touching any coins
+3. Remove any coins colliding with the player, and update the score.
+
+Each sprite has its own ``update`` method. This allows sprites to move and 
+animate its images. Right now, our sprite does not have this method. But we
+will soon. Rather than call the ``update`` method of each sprite we have, 
+there is an ``update`` method in each sprite list that will call ``update``
+on each sprite in the list. Therefore, just calling ``update`` with our
+``all_sprites_list`` will cause all sprites to update.
+
+.. code-block:: Python
+
+    self.all_sprites_list.update()
+
+How do we detect what coins are touching the player? We call the
+``check_for_collision_with_list`` method. Pass it in our player sprite,
+along with a list of all the coins. That function will return a list of
+all colliding sprites. If no sprites collide, the list will be empty.
+
+.. code-block:: Python
+
+    # Generate a list of all sprites that collided with the player.
+    hit_list = arcade.check_for_collision_with_list(self.player_sprite,
+                                                    self.coin_list)
+
+What do we do with this ``hit_list`` we get back? We loop through it. We add one
+to the score for each sprite hit.
+
+We also need to get rid of the sprite. The sprite class has a method called
+``kill``. This method will remove the sprite from existance.
+
+.. code-block:: Python
+
+    # Loop through each colliding sprite, remove it, and add to the score.
+    for coin in hit_list:
+        coin.kill()
+        self.score += 1
+
+Here's the whole ``animate`` method put together:
+
+.. code-block:: Python
+
+    def animate(self, delta_time):
+        """ Movement and game logic """
+
+        # Call update on all sprites (The sprites don't do much in this
+        # example though.)
+        self.all_sprites_list.update()
+
+        # Generate a list of all sprites that collided with the player.
+        hit_list = arcade.check_for_collision_with_list(self.player_sprite,
+                                                        self.coin_list)
+
+        # Loop through each colliding sprite, remove it, and add to the score.
+        for coin in hit_list:
+            coin.kill()
+            self.score += 1
+
+Moving Sprites
+--------------
