@@ -6,20 +6,20 @@
 Sprites
 =======
 
-Our games need support for handling objects that collide. Balls bouncing off 
-paddles, laser beams hitting aliens, or our favorite character collecting a 
+Our games need support for handling objects that collide. Balls bouncing off
+paddles, laser beams hitting aliens, or our favorite character collecting a
 coin. All these examples require collision detection.
 
-The Arcade library has support for sprites. A sprite is a two dimensional 
-image that is part of the larger graphical scene. Typically a sprite will 
-be some kind of object in the scene that will be interacted with like a car, 
+The Arcade library has support for sprites. A sprite is a two dimensional
+image that is part of the larger graphical scene. Typically a sprite will
+be some kind of object in the scene that will be interacted with like a car,
 frog, or little plumber guy.
 
 .. image:: sprite.png
 	:width: 250px
 
-Originally, video game consoles had built-in hardware support for sprites. 
-Now this specialized hardware support is no longer needed, but we still use 
+Originally, video game consoles had built-in hardware support for sprites.
+Now this specialized hardware support is no longer needed, but we still use
 the term "sprite." The `history of sprites`_ is interesting, if you want to
 read up more about it.
 
@@ -28,24 +28,24 @@ read up more about it.
 Basic Sprites and Collisions
 ----------------------------
 
-Let's step through an example program that uses sprites. This example shows how 
-to create a screen of sprites that are coins, and collect them using a sprite 
-that is a character image 
-controlled by the mouse as shown in the figure below. The program keeps "score" 
-on how many coins have been collected. The code for this example may be found at: 
+Let's step through an example program that uses sprites. This example shows how
+to create a screen of sprites that are coins, and collect them using a sprite
+that is a character image
+controlled by the mouse as shown in the figure below. The program keeps "score"
+on how many coins have been collected. The code for this example may be found at:
 
 http://arcade.academy/examples/sprite_collect_coins.html
 
 In this chapter, we'll step through that example.
 
-.. figure:: sprite_collect_coins.png
+.. figure:: collect_coins.gif
 
 	Example Sprite Game
 
 Getting the Application Started
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first few lines of our program start off like other games we've done. We 
+The first few lines of our program start off like other games we've done. We
 import a couple libraries. Set a couple constants for the size of the screen,
 and a new constant that we will use to scale our graphics to half their original
 size.
@@ -73,8 +73,8 @@ size.
 The Constructor
 ^^^^^^^^^^^^^^^
 
-What's next? We need to add our methods to the ``MyApplication`` class. 
-We'll start with our ``__init__`` method. This is the method we use to 
+What's next? We need to add our methods to the ``MyApplication`` class.
+We'll start with our ``__init__`` method. This is the method we use to
 initialize our variables. Here it is:
 
 .. code-block:: Python
@@ -102,28 +102,28 @@ initialize our variables. Here it is:
 The variables we are creating:
 
 * ``all_sprites_list``:  This is a special list that we will add all our sprites
-  to. By having all the sprites in a single list, we can draw them all in a 
+  to. By having all the sprites in a single list, we can draw them all in a
   single command.
 * ``coin_list``: This is a list of all the coins. We wille be checking if the
   player touches any sprite in this list.
 * ``player_sprite``: This points to our player's sprite. It is the sprite
-  we will move, and we'll check to see if it 
+  we will move, and we'll check to see if it
 * ``score``: This keeps track of our score.
 
 We use a command built into the parent ``Window`` class called
-``set_mouse_visible`` to make the mouse not visible. Finally we set the 
+``set_mouse_visible`` to make the mouse not visible. Finally we set the
 background color.
 
 The Setup Function
 ^^^^^^^^^^^^^^^^^^
 
 Next up, we have a ``setup`` method. In the first code example, we have the
-code that calls this function near the end: ``window.setup()``. 
+code that calls this function near the end: ``window.setup()``.
 
 This setup code
 could be moved into the ``__init__`` method. Why is it separate? Later on
-if we want to add the ability to "play again", we can just call the ``setup`` 
-function. If the code to set up the window is mixed with the code to set 
+if we want to add the ability to "play again", we can just call the ``setup``
+function. If the code to set up the window is mixed with the code to set
 up the game, then it is more difficult to program that functionality. Here
 we start by keeping them separate.
 
@@ -204,7 +204,7 @@ using, and how big to scale it.
 
 .. code-block:: Python
 
-    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)    
+    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)
 
 Ok, so if you are following along, you'll need to download the images. You
 can right-click on the two images below and save them. The images come from
@@ -214,21 +214,21 @@ use in your games.
 .. _kenney.nl: http://kenney.nl/
 
 .. figure:: character.png
-    
+
     character.png
 
 .. figure:: coin_01.png
-    
+
     coin_01.png
-    
+
 Where should you save them? It depends. If you load your sprite with the code
-below, the computer will look for the ``character.png`` image in the same 
+below, the computer will look for the ``character.png`` image in the same
 directory as your Python file. Save the image anywhere else, and it won't
 be found.
 
 .. code-block:: Python
 
-    self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)    
+    self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
 
 I don't like putting my images with my code. By the time I finish a game there's
 a lot of images, sounds, and other files all mixed together. Instead I like
@@ -237,7 +237,7 @@ a subdirectory called "images" and them prepending "images/" to your filename.
 
 .. code-block:: Python
 
-    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)        
+    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)
 
 The On Draw Method
 ^^^^^^^^^^^^^^^^^^
@@ -255,7 +255,7 @@ loop throug all our sprites for us, and draw them.
             # Draw all the sprites.
             self.all_sprites_list.draw()
 
-Woohoo! That was easy. 
+Woohoo! That was easy.
 
 In addition to drawing the sprites, let's go ahead and
 put the score on the screen:
@@ -282,7 +282,7 @@ subject is a bit confusing.
 The On Mouse Motion Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Moving the player sprite with the mouse is easy. All sprites have instance 
+Moving the player sprite with the mouse is easy. All sprites have instance
 variables ``center_x`` and ``center_y``. Just change those values to the mouse's
 x and y location to move the sprite.
 
@@ -302,9 +302,9 @@ Our ``animate`` method needs to do three things:
 2. Check to see if the player is touching any coins
 3. Remove any coins colliding with the player, and update the score.
 
-Each sprite has its own ``update`` method. This allows sprites to move and 
+Each sprite has its own ``update`` method. This allows sprites to move and
 animate its images. Right now, our sprite does not have this method. But we
-will soon. Rather than call the ``update`` method of each sprite we have, 
+will soon. Rather than call the ``update`` method of each sprite we have,
 there is an ``update`` method in each sprite list that will call ``update``
 on each sprite in the list. Therefore, just calling ``update`` with our
 ``all_sprites_list`` will cause all sprites to update.
@@ -359,3 +359,63 @@ Here's the whole ``animate`` method put together:
 
 Moving Sprites
 --------------
+
+How do we get sprites to move?
+Start the examples from our original example here:
+
+http://arcade.academy/examples/sprite_collect_coins.html
+
+To customize our sprite's behavior, we need to subclass the ``Sprite`` class
+with our own child class. This is easy:
+
+.. code-block:: Python
+
+    class Coin(arcade.Sprite):
+
+We need to provide each sprite with a
+``update`` method. The ``update`` method is automatically called to update
+the sprite's position.
+
+.. code-block:: Python
+
+    class Coin(arcade.Sprite):
+
+        def update(self):
+            # Code to move goes here
+
+Wait! We have a new class called Coin, but we aren't using it. Find in our
+original code this line:
+
+.. code-block:: Python
+
+    coin = arcade.Sprite("images/coin_01.png", SPRITE_SCALING / 3)
+
+See how it is creating an instance of ``Sprite``? We want to create an instance
+of our new ``Coin`` class instead:
+
+.. code-block:: Python
+
+    coin = Coin("images/coin_01.png", SPRITE_SCALING / 3)
+
+Now, how do we get the coin to move?
+
+Moving down
+^^^^^^^^^^^
+
+To get the sprites to "fall" down the screen, we need to make their y location
+smaller. This is easy. Over-ride ``update`` in the sprite and subtract from
+y each frame:
+
+.. code-block:: Python
+
+    class Coin(arcade.Sprite):
+
+        def update(self):
+            self.center_y -= 1
+
+This causes the coins to move down. But once they move off the screen they
+keep going into negative-coordinate land. We can't see them any more. Sad.
+
+.. figure:: coins_down_1.gif
+
+    Coins moving down
