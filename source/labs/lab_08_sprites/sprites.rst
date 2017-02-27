@@ -17,4 +17,5 @@ Lab 8: Sprites
 * If the length of the good sprite list is zero, then don't move any of the
   sprites or the character. "Freeze" the game.
 * If the length of the good sprite list is zero, draw "Game Over" on the screen.
-
+* Turn in a GitHub URL to your project.
+* Double-check on-line that the images for your sprites uploaded.

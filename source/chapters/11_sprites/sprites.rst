@@ -551,6 +551,28 @@ Circles
     :language: python
     :linenos:
 
+Rotating Sprites
+----------------
+
+Sprites can easily be rotated by setting their ``angle`` attribute. Angles are
+in degrees. So the following will flip the player upside down:
+
+.. code-block:: Python
+
+    self.player_sprite.angle = 180
+
+If you put this in the coin's ``animate`` method, it would cause the coins to
+spin:
+
+.. code-block:: Python
+
+    self.angle += 1
+
+    # If we rotate past 360, reset it back a turn.
+    if self.angle > 359:
+        self.angle -= 360
+
+
 Using Sprites to Shoot
 ----------------------
 
