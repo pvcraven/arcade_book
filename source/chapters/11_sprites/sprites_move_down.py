@@ -8,39 +8,38 @@ SCREEN_HEIGHT = 600
 
 
 class Coin(arcade.Sprite):
+    """
+    This class represents the coins on our screen. It is a child class of
+    the arcade library's "Sprite" class.
+    """
 
-    def __init__(self, filename, sprite_scaling):
+    def reset_pos(self):
 
-        super().__init__(filename, sprite_scaling)
-
-        self.change_x = 0
-        self.change_y = 0
+        # Reset the coin to a random spot above the screen
+        self.center_y = random.randrange(SCREEN_HEIGHT + 20,
+                                         SCREEN_HEIGHT + 100)
+        self.center_x = random.randrange(SCREEN_WIDTH)
 
     def update(self):
 
         # Move the coin
-        self.center_x += self.change_x
-        self.center_y += self.change_y
+        self.center_y -= 1
 
-        # If we are out-of-bounds, then 'bounce'
-        if self.left < 0:
-            self.change_x *= -1
-
-        if self.right > SCREEN_WIDTH:
-            self.change_x *= -1
-
-        if self.bottom < 0:
-            self.change_y *= -1
-
-        if self.top > SCREEN_HEIGHT:
-            self.change_y *= -1
+        # See if the coin has fallen off the bottom of the screen.
+        # If so, reset it.
+        if self.top < 0:
+            self.reset_pos()
 
 
 class MyAppWindow(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
-
+        """
+        Initializer
+        :param width:
+        :param height:
+        """
         super().__init__(width, height)
         # Sprite lists
         self.all_sprites_list = None
@@ -73,8 +72,6 @@ class MyAppWindow(arcade.Window):
             # Position the coin
             coin.center_x = random.randrange(SCREEN_WIDTH)
             coin.center_y = random.randrange(SCREEN_HEIGHT)
-            coin.change_x = random.randrange(-3, 4)
-            coin.change_y = random.randrange(-3, 4)
 
             # Add the coin to the lists
             self.all_sprites_list.append(coin)
@@ -87,6 +84,9 @@ class MyAppWindow(arcade.Window):
         arcade.set_background_color(arcade.color.AMAZON)
 
     def on_draw(self):
+        """
+        Render the screen.
+        """
 
         # This command has to happen before we start drawing
         arcade.start_render()
@@ -95,10 +95,13 @@ class MyAppWindow(arcade.Window):
         self.all_sprites_list.draw()
 
         # Put the text on the screen.
-        output = "Score: " + str(self.score)
+        output = "Score: {}".format(self.score)
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
     def on_mouse_motion(self, x, y, dx, dy):
+        """
+        Called whenever the mouse moves.
+        """
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
 
@@ -115,8 +118,9 @@ class MyAppWindow(arcade.Window):
 
         # Loop through each colliding sprite, remove it, and add to the score.
         for coin in hit_list:
+            coin.reset_pos()
             self.score += 1
-            coin.kill()
+
 
 def main():
     window = MyAppWindow(SCREEN_WIDTH, SCREEN_HEIGHT)

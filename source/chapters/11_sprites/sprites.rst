@@ -361,7 +361,7 @@ Moving Sprites
 --------------
 
 How do we get sprites to move?
-Start the examples from our original example here:
+Start the code from our original example here:
 
 http://arcade.academy/examples/sprite_collect_coins.html
 
@@ -399,8 +399,8 @@ of our new ``Coin`` class instead:
 
 Now, how do we get the coin to move?
 
-Moving down
-^^^^^^^^^^^
+Moving Sprites Down
+^^^^^^^^^^^^^^^^^^^
 
 To get the sprites to "fall" down the screen, we need to make their y location
 smaller. This is easy. Over-ride ``update`` in the sprite and subtract from
@@ -420,129 +420,257 @@ keep going into negative-coordinate land. We can't see them any more. Sad.
 
     Coins moving down
 
-We can get the coins to reset to the top with this code:
-
-.. code-block:: Python
-
-        def update(self):
-            self.center_y -= 1
-            if self.center_y < 0:
-                self.center_y = SCREEN_HEIGHT
-
-This code is a start. But it isn't great. If you have sharp eyes, the coins
-don't slide off or slide on smoothly. That's because we aren't accounting for the
-fact that coordinate is at the center. It isn't sliding all the way off before
-we reset it.
-We need to let the object center slide
-into the negative, and we need to create the new object just above the screen:
-
-If the object was 40 pixels high, then we could go 20 pixels above and below the
-center:
-
-.. code-block:: Python
-
-    def update(self):
-        self.center_y -= 1
-        if self.center_y < -20:
-            self.center_y = SCREEN_HEIGHT + 20
-
-That works if our sprite is 40 high. But that's just a guess. Is there an
-easier way? There is! Not only does a sprite have a ``center_y`` value, it also
-has a ``top``, ``bottom``, ``left``, and ``right`` that we can set. So I can
-check to see if the top of the sprite slides off the screen, and set the
-sprite bottom to be at the top of the screen when it slides off:
-
-.. code-block:: Python
-
-    def update(self):
-        self.center_y -= 1
-        if self.top < 0:
-            self.bottom = SCREEN_HEIGHT
-
-The only problem with just resetting the coins to the top, is that they end up
-in a repeating pattern. See the image below:
-
-.. figure:: pattern.gif
-
-    Coins in a repeating pattern
-
-We can get rid of that pattern by randomizing a bit where the coins reappear:
-
-.. code-block:: Python
-
-    def update(self):
-        self.center_y -= 1
-        if self.top < 0:
-            self.bottom = SCREEN_HEIGHT
-            self.center_x = random.randrange(SCREEN_WIDTH)
-
-Great! But when we collect all our coins, then we are just left with an empty
-screen. How do we get more coins? Well, instead of killing the coin, we could
-just move it above the screen so it appears again:
-
-.. code-block:: Python
-
-    for coin in hit_list:
-        self.score += 1
-        # coin.kill()
-        coin.bottom = SCREEN_HEIGHT
-        coin.center_x = random.randrange(SCREEN_WIDTH)
-
-Although, now we've got the same code in two different spots. And because we
-are only randomizing x, the coins tend to clump. So we can make this better
-by creating a reset function and using it:
+We can get around this by resetting the coins up to the top. Here's how its
+done:
 
 .. code-block:: Python
 
     class Coin(arcade.Sprite):
 
-        def reset(self):
-            self.bottom = SCREEN_HEIGHT + random.randrange(SCREEN_HEIGHT)
-            self.center_x = random.randrange(SCREEN_WIDTH)
-
         def update(self):
             self.center_y -= 1
-            if self.top < 0:
-                self.reset
 
-And then later:
+            # See if we went off-screen
+            if self.center_y < 0:
+                self.center_y = SCREEN_HEIGHT
+
+But this isn't perfect. Because if your eyes are fast, you can see the coin
+'pop' in and out of existence at the edge. It doesn't smoothly slide off. This is
+because we move it when the *center* of the coin is at the edge. Not the top of
+the coin has slid off.
+
+There are a couple ways we can do this. Here's one. We'll check at -20 instead
+of 0. As long as the coin radius is 20 or less, we are good.
 
 .. code-block:: Python
 
+    class Coin(arcade.Sprite):
+
+        def update(self):
+            self.center_y -= 1
+
+            # See if we went off-screen
+            if self.center_y < -20:
+                self.center_y = SCREEN_HEIGHT + 20
+
+There's another way. In addition to ``center_y``, sprites have other
+members that are useful in these cases. They are ``top``, ``bottom``,
+``left`` and ``right``. So we can do this:
+
+.. code-block:: Python
+
+    class Coin(arcade.Sprite):
+
+        def update(self):
+            self.center_y -= 1
+
+            # See if we went off-screen
+            if self.top < 0:
+                self.bottom = SCREEN_HEIGHT
+
+Doing this allows the coins to smoothly slide on and off the screen. But since
+they reappear at the top, we get repeating patters. See the image below:
+
+.. figure:: pattern.gif
+
+    Coins repeating in a pattern
+
+Instead we can randomize it a bit:
+
+.. code-block:: Python
+
+    def update(self):
+
+        # Move the coin
+        self.center_y -= 1
+
+        # See if the coin has fallen off the bottom of the screen.
+        # If so, reset it.
+        if self.top < 0:
+            # Reset the coin to a random spot above the screen
+            self.center_y = random.randrange(SCREEN_HEIGHT + 20,
+                                             SCREEN_HEIGHT + 100)
+            self.center_x = random.randrange(SCREEN_WIDTH)
+
+This works, but when we we collect all the coins we are done. What if it was
+a never-ending set of coins? Instead of "killing" the coin, let's reset it to
+the top of the screen.
+
+.. code-block:: Python
+
+    def animate(self, delta_time):
+        """ Movement and game logic """
+
+        self.all_sprites_list.update()
+
+        hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
+
         for coin in hit_list:
             self.score += 1
-            coin.reset()
 
-Bouncing Movement
------------------
+            # Reset the coin to a random spot above the screen
+            coin.center_y = random.randrange(SCREEN_HEIGHT + 20,
+                                             SCREEN_HEIGHT + 100)
+            coin.center_x = random.randrange(SCREEN_WIDTH)
+
+We can even take that common code, and move it to a method. Here's a full example:
+
+.. literalinclude:: sprites_move_down.py
+    :caption: sprites_move_down.py
+    :language: python
+    :linenos:
+
+Bouncing
+^^^^^^^^
 
 .. figure:: sprites_bouncing.gif
 
-    Sprites Bouncing
+    Coins bouncing around
 
 .. literalinclude:: sprites_bouncing.py
     :caption: sprites_bouncing.py
     :language: python
     :linenos:
 
-Circle Movement
----------------
+Take what you've learned from the example above, and see if you can replicate
+this:
+
+.. figure:: Test_Pattern.gif
+
+    Test Pattern
+
+Circles
+^^^^^^^
 
 .. figure:: sprites_circle.gif
 
-    Sprites Moving in a Circle
+    Coins moving in a circle
 
 .. literalinclude:: sprites_circle.py
     :caption: sprites_circle.py
     :language: python
     :linenos:
 
-Bullets
--------
+Rotating Sprites
+----------------
+
+Sprites can easily be rotated by setting their ``angle`` attribute. Angles are
+in degrees. So the following will flip the player upside down:
+
+.. code-block:: Python
+
+    self.player_sprite.angle = 180
+
+If you put this in the coin's ``animate`` method, it would cause the coins to
+spin:
+
+.. code-block:: Python
+
+    self.angle += 1
+
+    # If we rotate past 360, reset it back a turn.
+    if self.angle > 359:
+        self.angle -= 360
+
+
+Using Sprites to Shoot
+----------------------
+
+How do we get sprites that we can shoot?
+
+First, we need a 'shooting' image:
+
+.. figure:: laserBlue01.png
+
+    laserBlue01.png
 
 .. figure:: sprites_bullet.gif
 
-    Shooting Sprites
+    Coins shooting
+
+To start with, we need a sprite to represent the bullet. It will be a
+moving sprite:
+
+.. code-block:: Python
+
+    class Bullet(arcade.Sprite):
+        def update(self):
+            self.center_y += BULLET_SPEED
+
+This gets the bullets to move up. But we don't have any bullets. We need to
+create bullets when the user presses the mouse button. We can add an
+``on_mouse_press`` method to do something when the user presses the mouse button:
+
+.. code-block:: Python
+
+    def on_mouse_press(self, x, y, button, modifiers):
+
+        # Create a bullet
+        bullet = Bullet("laserBlue01.png", SPRITE_SCALING * 1.5)
+
+        # The image points to the right, and we want it to point up. So
+        # rotate it.
+        bullet.angle = 90
+
+        # Position the bullet
+        bullet.center_x = self.player_sprite.center_x
+        bullet.bottom = self.player_sprite.top
+
+        # Add the bullet to the appropriate lists
+        self.all_sprites_list.append(bullet)
+        self.bullet_list.append(bullet)
+
+The two key points with the code above is that 1.) We position the bullet right
+above the player that spawned it:
+
+.. code-block:: Python
+
+    bullet.center_x = self.player_sprite.center_x
+    bullet.bottom = self.player_sprite.top
+
+And two, we can rotate a sprite! Since the bullet image has the bullet going
+sideways, that's no good. There is an attribute with any sprite  that you can
+set called ``angle``. So we just set the angle to 90 to rotate it.
+
+.. code-block:: Python
+
+    bullet.angle = 90
+
+Now that we have bullets, how do we get them to collide with the coins?
+We add the following to our applications ``animate`` method:
+
+.. code-block:: Python
+
+    # Loop through each bullet
+    for bullet in self.bullet_list:
+
+        # Check this bullet to see if it hit a coin
+        hit_list = arcade.check_for_collision_with_list(bullet,
+                                                        self.coin_list)
+
+        # If it did, get rid of the bullet
+        if len(hit_list) > 0:
+            bullet.kill()
+
+        # For every coin we hit, add to the score and remove the coin
+        for coin in hit_list:
+            coin.kill()
+            self.score += 1
+
+        # If the bullet flies off-screen, remove it.
+        if bullet.bottom > SCREEN_HEIGHT:
+            bullet.kill()
+
+We loop through each bullet with a ``for`` loop. Then we check to see if the
+bullet is hitting any of the coins. If it is, we get rid of the coin. We get
+rid of the bullet.
+
+We also check to see if the bullet flies off the top of the screen. If it does,
+we get rid of the bullet. This is easy to forget, but if you do, it will cause
+the computer to slow down because you are tracking thousands of bullets that
+have long ago left the space we care about.
+
+Here's the full example:
 
 .. literalinclude:: sprites_bullet.py
     :caption: sprites_bullet.py

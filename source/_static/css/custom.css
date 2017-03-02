@@ -1,0 +1,7 @@
+code, .rst-content tt, .rst-content code {
+	border: none;
+	font-size: 90%;
+	color: black;
+	font-weight: heavy;
+}
+
