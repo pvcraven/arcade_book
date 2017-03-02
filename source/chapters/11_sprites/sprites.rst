@@ -419,3 +419,132 @@ keep going into negative-coordinate land. We can't see them any more. Sad.
 .. figure:: coins_down_1.gif
 
     Coins moving down
+
+We can get the coins to reset to the top with this code:
+
+.. code-block:: Python
+
+        def update(self):
+            self.center_y -= 1
+            if self.center_y < 0:
+                self.center_y = SCREEN_HEIGHT
+
+This code is a start. But it isn't great. If you have sharp eyes, the coins
+don't slide off or slide on smoothly. That's because we aren't accounting for the
+fact that coordinate is at the center. It isn't sliding all the way off before
+we reset it.
+We need to let the object center slide
+into the negative, and we need to create the new object just above the screen:
+
+If the object was 40 pixels high, then we could go 20 pixels above and below the
+center:
+
+.. code-block:: Python
+
+    def update(self):
+        self.center_y -= 1
+        if self.center_y < -20:
+            self.center_y = SCREEN_HEIGHT + 20
+
+That works if our sprite is 40 high. But that's just a guess. Is there an
+easier way? There is! Not only does a sprite have a ``center_y`` value, it also
+has a ``top``, ``bottom``, ``left``, and ``right`` that we can set. So I can
+check to see if the top of the sprite slides off the screen, and set the
+sprite bottom to be at the top of the screen when it slides off:
+
+.. code-block:: Python
+
+    def update(self):
+        self.center_y -= 1
+        if self.top < 0:
+            self.bottom = SCREEN_HEIGHT
+
+The only problem with just resetting the coins to the top, is that they end up
+in a repeating pattern. See the image below:
+
+.. figure:: pattern.gif
+
+    Coins in a repeating pattern
+
+We can get rid of that pattern by randomizing a bit where the coins reappear:
+
+.. code-block:: Python
+
+    def update(self):
+        self.center_y -= 1
+        if self.top < 0:
+            self.bottom = SCREEN_HEIGHT
+            self.center_x = random.randrange(SCREEN_WIDTH)
+
+Great! But when we collect all our coins, then we are just left with an empty
+screen. How do we get more coins? Well, instead of killing the coin, we could
+just move it above the screen so it appears again:
+
+.. code-block:: Python
+
+    for coin in hit_list:
+        self.score += 1
+        # coin.kill()
+        coin.bottom = SCREEN_HEIGHT
+        coin.center_x = random.randrange(SCREEN_WIDTH)
+
+Although, now we've got the same code in two different spots. And because we
+are only randomizing x, the coins tend to clump. So we can make this better
+by creating a reset function and using it:
+
+.. code-block:: Python
+
+    class Coin(arcade.Sprite):
+
+        def reset(self):
+            self.bottom = SCREEN_HEIGHT + random.randrange(SCREEN_HEIGHT)
+            self.center_x = random.randrange(SCREEN_WIDTH)
+
+        def update(self):
+            self.center_y -= 1
+            if self.top < 0:
+                self.reset
+
+And then later:
+
+.. code-block:: Python
+
+        for coin in hit_list:
+            self.score += 1
+            coin.reset()
+
+Bouncing Movement
+-----------------
+
+.. figure:: sprites_bouncing.gif
+
+    Sprites Bouncing
+
+.. literalinclude:: sprites_bouncing.py
+    :caption: sprites_bouncing.py
+    :language: python
+    :linenos:
+
+Circle Movement
+---------------
+
+.. figure:: sprites_circle.gif
+
+    Sprites Moving in a Circle
+
+.. literalinclude:: sprites_circle.py
+    :caption: sprites_circle.py
+    :language: python
+    :linenos:
+
+Bullets
+-------
+
+.. figure:: sprites_bullet.gif
+
+    Shooting Sprites
+
+.. literalinclude:: sprites_bullet.py
+    :caption: sprites_bullet.py
+    :language: python
+    :linenos:

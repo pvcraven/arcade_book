@@ -16,6 +16,7 @@ Chapters
    09_user_control/user_control
    10_sounds/sounds
    11_sprites/sprites
+   12_review/review
    xx_selecting_python/selecting_python
    files
    libraries
