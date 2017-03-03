@@ -1,5 +1,7 @@
 # Write a function called how_is_the_temperature that returns a string based
 # on the temperature passed into it.
+# Try to get this to work based on temperature ranges, rather than exact
+# temperatures.
 
 
 
@@ -26,7 +28,7 @@ if how_is_the_temperature(50) == "Cool":
 else:
     print("Test 4 failed")
 
-if how_is_the_temperature(50) == "Cold":
+if how_is_the_temperature(30) == "Cold":
     print("Test 5 passed")
 else:
     print("Test 5 failed")

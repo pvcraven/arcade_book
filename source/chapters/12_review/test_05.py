@@ -1,5 +1,5 @@
-# Write a function called how_is_the_temperature that returns a string based
-# on the temperature passed into it.
+# Write a function that figures out if a number is even or odd.
+# Make it work for every number, not just the ones we test here.
 
 
 

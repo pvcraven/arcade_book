@@ -21,7 +21,7 @@ if f(-20, 10) == -10:
 else:
     print("Test 3 failed")
 
-if f(0.5, 0.5) == -10:
+if f(0.5, 0.5) == 1:
     print("Test 4 passed")
 else:
     print("Test 4 failed")
