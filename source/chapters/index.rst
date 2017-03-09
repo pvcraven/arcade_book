@@ -26,3 +26,13 @@ Chapters
    array_backed_grids
    exceptions
    string_formatting
+
+Moving with Walls
+Libraries and Modules
+Array backed grids
+Searching
+Files
+Sorting
+Recursion
+String formatting
+Exceptions
