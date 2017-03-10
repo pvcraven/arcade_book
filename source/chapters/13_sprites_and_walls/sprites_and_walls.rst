@@ -97,3 +97,11 @@ Here's the full example:
 
 Using a View Port for Scrolling
 -------------------------------
+
+What if one screen isn't enough to hold your maze of walls? We can have a
+world that is larger than just our window. We do this by adjusting the
+*viewport*. Normally coordinate (0, 0) is the lower left corner of our screen.
+We can change that! We could have an entire world stretch from (0, 0) to
+(3000, 3000), and have a smaller view port that was 800x640 that scrolled
+around that.
+

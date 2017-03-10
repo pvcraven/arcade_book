@@ -44,7 +44,7 @@ show how to compare the variables to see if one is greater than the other.
 
     print("Done")
 
-.. code-block:: plain
+.. code-block:: text
     :caption: Output
 
     a is less than b
@@ -89,7 +89,7 @@ space between them. For example, ``=<`` will not work, nor will ``< =``.
 When writing these statements out on a test, some students like to use the ``≤``
 symbol. For example:
 
-.. code-block:: python
+.. code-block:: text
 
     if a ≤ b:
 
