@@ -26,8 +26,8 @@ import sphinx.environment
 from docutils.utils import get_source_line
 
 def setup(app):
-    app.add_stylesheet('css/custom.css') 
-    
+    app.add_stylesheet('css/custom.css')
+
 def _warn_node(self, msg, node):
     if not msg.startswith('nonlocal image URI found:'):
         self._warnfunc(msg, '%s:%s' % get_source_line(node))
@@ -69,7 +69,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Arcade'
-copyright = '2016, Paul Vincent Craven'
+copyright = '2017, Paul Vincent Craven'
 author = 'Paul Vincent Craven'
 
 # The version info for the project you're documenting, acts as replacement for

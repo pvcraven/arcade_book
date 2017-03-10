@@ -17,6 +17,7 @@ Chapters
    10_sounds/sounds
    11_sprites/sprites
    12_review/review
+   13_sprites_and_walls/sprites_and_walls
    xx_selecting_python/selecting_python
    files
    libraries

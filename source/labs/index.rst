@@ -12,3 +12,4 @@ Labs
    lab_06_text_adventure/adventure
    lab_07_user_control/user_control
    lab_08_sprites/sprites
+   lab_09_sprites_and_walls/sprites_and_walls
