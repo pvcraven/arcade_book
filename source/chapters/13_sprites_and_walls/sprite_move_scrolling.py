@@ -73,7 +73,7 @@ class MyApplication(arcade.Window):
         # Set the background color
         arcade.set_background_color(arcade.color.AMAZON)
 
-        # Set the viewport boundaries
+        # Set the view port boundaries
         # These numbers set where we have 'scrolled' to.
         self.view_left = 0
         self.view_bottom = 0
@@ -159,9 +159,9 @@ class MyApplication(arcade.Window):
 
         if changed:
             arcade.set_viewport(self.view_left,
-                                SCREEN_WIDTH + self.view_left,
+                                SCREEN_WIDTH + self.view_left - 1,
                                 self.view_bottom,
-                                SCREEN_HEIGHT + self.view_bottom)
+                                SCREEN_HEIGHT + self.view_bottom - 1)
 
 
 window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)

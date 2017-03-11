@@ -100,8 +100,99 @@ Using a View Port for Scrolling
 
 What if one screen isn't enough to hold your maze of walls? We can have a
 world that is larger than just our window. We do this by adjusting the
-*viewport*. Normally coordinate (0, 0) is the lower left corner of our screen.
+*view port*. Normally coordinate (0, 0) is the lower left corner of our screen.
 We can change that! We could have an entire world stretch from (0, 0) to
 (3000, 3000), and have a smaller view port that was 800x640 that scrolled
 around that.
 
+The command for using the view port is ``set_viewport``. This command takes
+four arguments. The first two are the left and bottom boundaries of the window.
+By default these are zero. That is why (0, 0) is in the lower left of the
+screen. The next two commands are the top and right coordinates of the screen.
+By default these are the screen width and height, minus one. So an 800
+pixel-wide window would have x-coordinates from 0 - 799.
+
+A command like this would shift the whole "view" of the window 200 pixels to
+the right:
+
+.. code-block: python
+
+    arcade.set_viewport(200, 0, 200 + SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1)
+
+So with a 800 wide pixel window, we would show x-coordinates 200 - 999 instead
+of 0 - 799.
+
+Instead of hard-coding the shift at 200 pixels, we need to use a variable
+and have rules around when to shift the view. In our next example, we will
+create two new instance variables in our application class that hold the left
+and bottom coordinates for our view port. We'll default to zero.
+
+.. code-block: python
+
+    self.view_left = 0
+    self.view_bottom = 0
+
+
+We are also going to create two new constants. We don't want the player to
+reach the edge of the screen before we start scrolling. Because then the player
+would have no idea where she is going. In our example we will set a "margin" of
+40 pixels. When the player is 40 pixels from the edge of the screen, we'll move
+the view port so she can see at least 40 pixels around her.
+
+.. code-block: python
+
+    VIEWPORT_MARGIN = 40
+
+Next, in our update method, we need to see if the user has moved too close to
+the edge of the screen and we need to update the boundaries.
+
+.. code-block: python
+
+    # Keep track of if we changed the boundary. We don't want to call the
+    # set_viewport command if we didn't change the view port.
+    changed = False
+
+    # Scroll left
+    left_bndry = self.view_left + VIEWPORT_MARGIN
+    if self.player_sprite.left < left_bndry:
+        self.view_left -= left_bndry - self.player_sprite.left
+        changed = True
+
+    # Scroll right
+    right_bndry = self.view_left + SCREEN_WIDTH - VIEWPORT_MARGIN
+    if self.player_sprite.right > right_bndry:
+        self.view_left += self.player_sprite.right - right_bndry
+        changed = True
+
+    # Scroll up
+    top_bndry = self.view_bottom + SCREEN_HEIGHT - VIEWPORT_MARGIN
+    if self.player_sprite.top > top_bndry:
+        self.view_bottom += self.player_sprite.top - top_bndry
+        changed = True
+
+    # Scroll down
+    bottom_bndry = self.view_bottom + VIEWPORT_MARGIN
+    if self.player_sprite.bottom < bottom_bndry:
+        self.view_bottom -= bottom_bndry - self.player_sprite.bottom
+        changed = True
+
+    # Make sure our boundaries are integer values. While the view port does
+    # support floating point numbers, for this application we want every pixel
+    # in the view port to map directly onto a pixel on the screen. We don't want
+    # any rounding errors.
+    self.view_left = int(self.view_left)
+    self.view_bottom = int(self.view_bottom)
+
+    # If we changed the boundary values, update the view port to match
+    if changed:
+        arcade.set_viewport(self.view_left,
+                            SCREEN_WIDTH + self.view_left - 1,
+                            self.view_bottom,
+                            SCREEN_HEIGHT + self.view_bottom - 1)
+
+The full example is below:
+
+.. literalinclude:: sprite_move_scrolling.py
+    :caption: sprite_move_scrolling.py
+    :language: python
+    :linenos:
