@@ -109,8 +109,7 @@ class MyApplication(arcade.Window):
     def animate(self, delta_time):
         """ Movement and game logic """
 
-        # Call update on all sprites (The sprites don't do much in this
-        # example though.)
+        # Call update on the player, using the physics engine.
         self.physics_engine.update()
 
 

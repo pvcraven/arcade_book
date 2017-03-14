@@ -18,6 +18,7 @@ Chapters
    11_sprites/sprites
    12_review/review
    13_sprites_and_walls/sprites_and_walls
+   14_libraries_and_modules/libraries_and_modules
    xx_selecting_python/selecting_python
    files
    libraries
