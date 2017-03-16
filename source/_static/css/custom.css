@@ -1,7 +1,36 @@
 code, .rst-content tt, .rst-content code {
 	border: none;
 	font-size: 90%;
-	color: black;
-	font-weight: heavy;
+    color: black;
+    font-weight: heavy;
+    padding: 0px;
+    border: none;
+    background: #fff;
 }
 
+.rst-content code.literal {
+	color: black;
+}
+
+.wy-nav-content-wrap {
+    background: #fff;
+}
+
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
+}
+
+body {
+    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
+}
+
+.wy-side-nav-search {
+    background-color: #931a2a;
+}
+.wy-side-nav-search > div.version {
+    color: #FFF;
+}
+
+.wy-menu-vertical {
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+}

@@ -2,7 +2,7 @@ Chapters
 ========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    00_foreword/foreword
    01_setup/setup
@@ -19,11 +19,9 @@ Chapters
    12_review/review
    13_sprites_and_walls/sprites_and_walls
    14_libraries_and_modules/libraries_and_modules
+   15_searching/searching
    xx_selecting_python/selecting_python
-   files
-   libraries
    recursion
-   searching
    sorting
    array_backed_grids
    exceptions
