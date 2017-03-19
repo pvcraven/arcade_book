@@ -309,10 +309,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
+epub_title = 'Learn to Program with Arcade'
+epub_author = 'Paul Vincent Craven'
+epub_publisher = 'Paul Vincent Craven'
+epub_copyright = 'Copyright 2017 by Paul Vincent Craven'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project

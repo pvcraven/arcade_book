@@ -31,6 +31,8 @@ class MyApplication(arcade.Window):
         self.score = 0
         self.player_sprite = None
         self.wall_list = None
+
+        # This variable holds our simple "physics engine"
         self.physics_engine = None
 
     def setup(self):
@@ -65,6 +67,8 @@ class MyApplication(arcade.Window):
             self.all_sprites_list.append(wall)
             self.wall_list.append(wall)
 
+        # Create the physics engine. Give it a reference to the player, and
+        # the walls we can't run into.
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite,
                                                          self.wall_list)
 
@@ -105,8 +109,7 @@ class MyApplication(arcade.Window):
     def animate(self, delta_time):
         """ Movement and game logic """
 
-        # Call update on all sprites (The sprites don't do much in this
-        # example though.)
+        # Call update on the player, using the physics engine.
         self.physics_engine.update()
 
 
