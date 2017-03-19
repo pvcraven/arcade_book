@@ -59,8 +59,6 @@ data is in it.
 
     More than one coin to collect? Use a list!
 
-.. code-block:: text
-
 The two new types of data introduced in this chapter are Lists and Tuples.
 Lists are similar to another data structure called an array. A list can be
 resized, but an array can not. A course in data structures will teach you the
@@ -108,7 +106,9 @@ Think of a list as an ice cube tray that holds numbers, as shown in Figure 7.2.
 The values are stored inside each tray spot, and written on the side of the tray
 are numbers starting at zero that identify the location of each spot.
 
-Don't mix the index and the value!
+.. attention::
+
+    Don't mix the index and the value!
 
 Remember, there are two sets of numbers to consider when working with a list of
 numbers: the position and the value. The position, also known as index, refers
@@ -120,8 +120,9 @@ It is easy to get the value given the location, but it is harder to get the
 location given the value. Chapter 15 is dedicated to answering how to find the
 location of a particular value.
 
-fig.ice_cube_tray
-Figure 7.2: Lists are like ice cube trays
+.. figure:: ice_cube_tray.png
+
+    Lists are like ice cube trays
 
 A program can assign new values to an individual element in a list. In the case
 below, the first spot at location zero (not one) is assigned the number 22.
@@ -159,7 +160,10 @@ change, therefore an immutable tuple is a better choice.
 Iterating (Looping) Through a List
 ----------------------------------
 
-Video: Iterating Through a List
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t8isonIrfRM?ecver=1" frameborder="0" allowfullscreen></iframe>
+
 If a program needs to iterate through each item in a list, such as to print it
 out, there are two types of for loops that can do this.
 
@@ -170,13 +174,13 @@ processing.
 
 The format of the command:
 
-.. code-block:: text
+.. code-block:: python
 
 	for item_variable in list_name:
 
 Here are some examples:
 
-.. code-block:: text
+.. code-block:: python
 
 	my_list = [101, 20, 10, 50, 60]
 	for item in my_list:
@@ -266,11 +270,13 @@ For example:
     [2, 4, 5, 6]
     [2, 4, 5, 6, 9]
 
-Video: Appending to a list
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L0FnUlifwWQ?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Side note: If performance while appending is a concern, it is very important to
 understand how a list is being implemented. For example, if a list is
-implemented as an array data type, then appending an item to the list is a lot
+implemented as an *array data type*, then appending an item to the list is a lot
 like adding a new egg to a full egg carton. A new egg carton must be built with
 thirteen spots. Then twelve eggs are moved over. Then the thirteenth egg is
 added. Finally the old egg carton is recycled. Because this can happen behind
@@ -320,7 +326,9 @@ value, a simple trick is to use the following code:
 Summing or Modifying a List
 ---------------------------
 
-Video: Summing a List
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JKiW4K4Dm0c?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Creating a running total of an array is a common operation. Here's how it is done:
 
@@ -343,7 +351,7 @@ Creating a running total of an array is a common operation. Here's how it is don
     # Print the result
     print(list_total)
 
-The same thing can be done by using a for loop to iterate the array, rather
+The same thing can be done by using a ``for`` loop to iterate the array, rather
 than count through a range:
 
 .. code-block:: python
@@ -365,7 +373,7 @@ than count through a range:
     # Print the result
     print(list_total)
 
-Numbers in an array can also be changed by using a for loop:
+Numbers in an array can also be changed by using a ``for`` loop:
 
 .. code-block:: python
     :linenos:
@@ -384,7 +392,7 @@ Numbers in an array can also be changed by using a for loop:
     print(my_list)
 
 However version 2 does not work at doubling the values in an array. Why?
-Because item is a copy of an element in the array. The code below doubles the
+Because ``item`` is a *copy* of an element in the array. The code below doubles the
 copy, not the original array element.
 
 .. code-block:: python
@@ -406,7 +414,9 @@ copy, not the original array element.
 Slicing Strings
 ---------------
 
-Video: Splitting Strings
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/06hozIAwNc4?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Strings are actually lists of characters. They can be treated like lists with
 each letter a separate item. Run the following code with both versions of x:
@@ -496,13 +506,15 @@ This code prints out every letter of a string individually:
     for c in plain_text:
         print(c, end=" ")
 
-Video: Secret Codes
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sxFIxD8Gd3A?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Computers do not actually store letters of a string in memory; computers store
 a series of numbers. Each number represents a letter. The system that computers
-use to translate numbers to letters is called Unicode. The full name for the
+use to translate numbers to letters is called *Unicode*. The full name for the
 encoding is Universal Character Set Transformation Format 8-bit, usually
-abbreviated UTF-8.
+abbreviated ``UTF-8``.
 
 The Unicode chart covers the Western alphabet using the numbers 0-127. Each
 Western letter is represented by one byte of memory. Other alphabets, like
@@ -591,8 +603,7 @@ new UTF-8 value, then converts the value back to a letter.
 The next code listing takes each UTF-8 value and adds one to it, then converts
 the value back to a letter.
 
-fig.encryption
-
+.. image:: encrypt.png
 
 .. code-block:: python
     :linenos:
@@ -619,8 +630,7 @@ Finally, the last code takes each UTF-8 value and subtracts one from it, then
 converts the value back to a letter. By feeding this program the output of the
 previous program, it serves as a decoder for text encoded by the prior example.
 
-fig.decryption
-
+.. image:: decrypt.png
 
 .. code-block:: python
     :linenos:
