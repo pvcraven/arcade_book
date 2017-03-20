@@ -237,48 +237,22 @@ If you are on the Mac or a Linux machine, you can type ``sudo pip3 install openp
     :language: python
     :linenos:
 
+The output of this program is an Excel file:
+
+.. image:: excel_example.png
+
 Examples: Beautiful Soup Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This example grabs information off a web page.
-You can install Beautiful Soup from the Windows command prompt by typing pip
-install bs4. If you are on the Mac or a Linux machine, you can type
-pip3 install bs4.
+You can install Beautiful Soup from the Windows command prompt by typing
+``pip install bs4``. If you are on the Mac or a Linux machine, you can type
+``sudo pip3 install bs4``.
 
-.. code-block:: python
+.. literalinclude:: bs4_example.py
+    :caption: bs4_example.py
+    :language: python
     :linenos:
-    :caption: Beautiful Soup (bs4) Example
-
-    """
-    Example showing how to read in from a web page
-    """
-
-    from bs4 import BeautifulSoup
-    import urllib.request
-
-    # Read in the file
-    url= "http://www.espnfc.com/spi/rankings/_/view/fifa/teamId/203/mexico?cc=5901"
-    page = urllib.request.urlopen(url)
-    soup = BeautifulSoup(page.read(), "html.parser")
-
-    # Find the table with the data
-    rank = soup.find("table").tbody
-
-    # Get a list of rows in the table
-    rows = rank.findAll("tr")
-
-    # Loop through each row
-    for row in rows:
-
-        # Get a list of cells in the row
-        cells = row.findAll("td")
-
-        # Loop through each cell
-        for cell in cells:
-            print(cell.text, end=", ")
-
-        # Ok, done with that row. Print a blank line so we go to the next.
-        print()
 
 Examples: Matplotlib Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -288,361 +262,156 @@ You can install Matplotlib from the Windows command prompt by typing
 type ``pip3 install matplotlib``.
 To start with, here is the code to create a simple line chart with four values:
 
-Figure 14.1: Simple Line Graph
+.. figure:: matplotlib_01.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Simple Line Graph
+
+.. literalinclude:: matplotlib_01.py
     :caption: Example 1
-
-    """
-    Line chart with four values.
-    The x-axis defaults to start at zero.
-    """
-    import matplotlib.pyplot as plt
-
-    y = [1, 3, 8, 4]
-
-    plt.plot(y)
-    plt.ylabel('Element Value')
-    plt.xlabel('Element Number')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 Note that you can zoom in, pan, and save the graph. You can even save the graph
 in vector formats like ps and svg that import into documents without loss of
 quality like raster graphics would have.
 
-The x value for Example 1, Figure 14.1 defaults to start at zero. You can
+The x value for Example 1, defaults to start at zero. You can
 change this default and specify your own x values to go with the y values.
 See Example 2 below.
 
-Figure 14.2: Specifying the x values
+.. figure:: matplotlib_02.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Specifying the x values
+
+.. literalinclude:: matplotlib_02.py
     :caption: Example 2
-
-
-    """
-    Line chart with four values.
-    The x-axis values are specified as well.
-    """
-    import matplotlib.pyplot as plt
-
-    x = [1, 2, 3, 4]
-    y = [1, 3, 8, 4]
-
-    plt.plot(x, y)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 It is trivial to add another data series to the graph.
 
-Figure 14.3: Graphing two data series
+.. figure:: matplotlib_03.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Graphing two data series
+
+.. literalinclude:: matplotlib_03.py
     :caption: Example 3
-
-    """
-    This example shows graphing two different series
-    on the same graph.
-    """
-    import matplotlib.pyplot as plt
-
-    x =  [1, 2, 3, 4]
-    y1 = [1, 3, 8, 4]
-    y2 = [2, 2, 3, 3]
-
-    plt.plot(x, y1)
-    plt.plot(x, y2)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can add a legend to the graph:
 
-Figure 14.4: Adding a legend
+.. figure:: matplotlib_04.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Adding a legend
+
+.. literalinclude:: matplotlib_04.py
     :caption: Example 4
-
-    import matplotlib.pyplot as plt
-
-    x =  [1, 2, 3, 4]
-    y1 = [1, 3, 8, 4]
-    y2 = [2, 2, 3, 3]
-
-    plt.plot(x, y1, label = "Series 1")
-    plt.plot(x, y2, label = "Series 2")
-
-    legend = plt.legend(loc='upper center', shadow=True, fontsize='x-large')
-    legend.get_frame().set_facecolor('#00FFCC')
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can add annotations to a graph:
 
-Figure 14.5: Adding annotations
+.. figure:: matplotlib_05.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Adding annotations
+
+.. literalinclude:: matplotlib_05.py
     :caption: Example 5
-
-    """
-    Annotating a graph
-    """
-    import matplotlib.pyplot as plt
-
-    x = [1, 2, 3, 4]
-    y = [1, 3, 8, 4]
-
-    plt.annotate('Here',
-                 xy = (2, 3),
-                 xycoords = 'data',
-                 xytext = (-40, 20),
-                 textcoords = 'offset points',
-                 arrowprops = dict(arrowstyle="->",
-                                   connectionstyle="arc,angleA=0,armA=30,rad=10"),
-                 )
-
-    plt.plot(x, y)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 Don't like the default lines styles for the graph? That can be changed by
 adding a third parameter to the plot command.
 
-Figure 14.6: Specifying the line style
+.. figure:: matplotlib_06.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Specifying the line style
+
+.. literalinclude:: matplotlib_06.py
     :caption: Example 6
-
-    """
-    This shows how to set line style and markers.
-    """
-    import matplotlib.pyplot as plt
-
-    x =  [1, 2, 3, 4]
-    y1 = [1, 3, 8, 4]
-    y2 = [2, 2, 3, 3]
-
-    # First character: Line style
-    # One of '-', '--',  '-.', ':', 'None', ' ', "
-
-    # Second character: color
-    # http://matplotlib.org/1.4.2/api/colors_api.html
-
-    # Third character: marker shape
-    # http://matplotlib.org/1.4.2/api/markers_api.html
-
-    plt.plot(x, y1, '-ro')
-    plt.plot(x, y2, '--g^')
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 A bar chart is as easy as changing plot to bar.
 
-Figure 14.7: Bar chart
+.. figure:: matplotlib_07.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Bar chart
+
+.. literalinclude:: matplotlib_07.py
     :caption: Example 7
-
-    """
-    How to do a bar chart.
-    """
-    import matplotlib.pyplot as plt
-
-    x = [1, 2, 3, 4]
-    y = [1, 3, 8, 4]
-
-    plt.bar(x, y)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can add labels to axis values.
 
-Figure 14.8: X-axis labels
+.. figure:: matplotlib_08.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    X-axis labels
+
+.. literalinclude:: matplotlib_08.py
     :caption: Example 8
-
-    """
-    How to add x axis value labels.
-    """
-    import matplotlib.pyplot as plt
-
-    x = [1, 2, 3, 4]
-    y = [1, 3, 8, 4]
-
-    plt.plot(x, y)
-
-    labels = ['Frogs', 'Hogs', 'Bogs', 'Slogs']
-    plt.xticks(x, labels)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can graph functions as well. This uses a different package called
 numpy to graph a sine function.
 
-Figure 14.9: Graphing a sine function
+.. figure:: matplotlib_09.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Graphing a sine function
+
+.. literalinclude:: matplotlib_09.py
     :caption: Example 9
-
-    """
-    Using the numpy package to graph a function over
-    a range of values.
-    """
-    import numpy
-    import matplotlib.pyplot as plt
-
-    x = numpy.arange(0.0, 2.0, 0.001)
-    y = numpy.sin(2 * numpy.pi * x)
-
-    plt.plot(x, y)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can fill in a graph if you like.
 
-Figure 14.10: Filling in a graph
+.. figure:: matplotlib_10.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Filling in a graph
+
+.. literalinclude:: matplotlib_10.py
     :caption: Example 10
-
-    """
-    Using 'fill' to fill in a graph
-    """
-    import numpy
-    import matplotlib.pyplot as plt
-
-    x = numpy.arange(0.0, 2.0, 0.001)
-    y = numpy.sin(2 * numpy.pi * x)
-
-    plt.plot(x, y)
-
-    # 'b' means blue. 'alpha' is the transparency.
-    plt.fill(x, y, 'b', alpha=0.3)
-
-    plt.ylabel('Element Value')
-    plt.xlabel('Element')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 Create a pie chart.
 
-Figure 14.11: Pie chart
+.. figure:: matplotlib_11.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Pie chart
+
+.. literalinclude:: matplotlib_11.py
     :caption: Example 11
-
-    """
-    Create a pie chart
-    """
-    import matplotlib.pyplot as plt
-
-    # Labels for the pie chart
-    labels = ['C', 'Java', 'Objective-C', 'C++', 'C#', 'PHP', 'Python']
-
-    # Sizes for each label. We use this to make a percent
-    sizes = [17, 14, 9, 6, 5, 3, 2.5]
-
-    # For list of colors, see:
-    # https://github.com/matplotlib/matplotlib/blob/master/lib/matplotlib/colors.py
-    colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', 'darkcyan', 'darksage', 'rosybrown']
-
-    # How far out to pull a slice. Normally zero.
-    explode = (0, 0.0, 0, 0, 0, 0, 0.2)
-
-    # Set aspect ratio to be equal so that pie is drawn as a circle.
-    plt.axis('equal')
-
-    # Finally, plot the chart
-    plt.pie(sizes, explode=explode, labels=labels, colors=colors,
-            autopct='%1.1f%%', shadow=True, startangle=90)
-
-    plt.show()
+    :language: python
+    :linenos:
 
 You can do really fancy things, like pull stock data from the web and create a
 candlestick graph for Apple Computer:
 
-Figure 14.12: Candlestick chart
+.. figure:: matplotlib_12.png
+    :width: 300px
 
-.. code-block:: python
-    :linenos:
+    Candlestick chart
+
+.. literalinclude:: matplotlib_12.py
     :caption: Example 12
-
-    """
-    Create a candlestick chart for a stock
-    """
-    import matplotlib.pyplot as plt
-    from matplotlib.dates import DateFormatter, WeekdayLocator,\
-         DayLocator, MONDAY
-    from matplotlib.finance import quotes_historical_yahoo_ohlc, candlestick_ohlc
-
-    # Grab the stock data between these dates
-    date1 = (2014, 10, 13)
-    date2 = (2014, 11, 13)
-
-    # Go to the web and pull the stock info
-    quotes = quotes_historical_yahoo_ohlc('AAPL', date1, date2)
-    if len(quotes) == 0:
-        raise SystemExit
-
-    # Set up the graph
-    fig, ax = plt.subplots()
-    fig.subplots_adjust(bottom=0.2)
-
-    # Major ticks on Mondays
-    mondays = WeekdayLocator(MONDAY)
-    ax.xaxis.set_major_locator(mondays)
-
-    # Minor ticks on all days
-    alldays = DayLocator()
-    ax.xaxis.set_minor_locator(alldays)
-
-    # Format the days
-    weekFormatter = DateFormatter('%b %d')  # e.g., Jan 12
-    ax.xaxis.set_major_formatter(weekFormatter)
-    ax.xaxis_date()
-
-    candlestick_ohlc(ax, quotes, width=0.6)
-
-    ax.autoscale_view()
-    plt.setp(plt.gca().get_xticklabels(), rotation=45, horizontalalignment='right')
-
-    plt.show()
+    :language: python
+    :linenos:
 
 There are many more things that can be done with matplotlib. Take a look at
 the thumbnail gallery:

@@ -1,6 +1,8 @@
 .. sectnum::
     :start: 13
 
+.. _sprites-and-walls:
+
 Sprites and Walls
 =================
 
@@ -117,7 +119,7 @@ pixel-wide window would have x-coordinates from 0 - 799.
 A command like this would shift the whole "view" of the window 200 pixels to
 the right:
 
-.. code-block: python
+.. code-block:: python
 
     arcade.set_viewport(200, 0, 200 + SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1)
 
@@ -129,7 +131,7 @@ and have rules around when to shift the view. In our next example, we will
 create two new instance variables in our application class that hold the left
 and bottom coordinates for our view port. We'll default to zero.
 
-.. code-block: python
+.. code-block:: python
 
     self.view_left = 0
     self.view_bottom = 0
@@ -141,14 +143,14 @@ would have no idea where she is going. In our example we will set a "margin" of
 40 pixels. When the player is 40 pixels from the edge of the screen, we'll move
 the view port so she can see at least 40 pixels around her.
 
-.. code-block: python
+.. code-block:: python
 
     VIEWPORT_MARGIN = 40
 
 Next, in our update method, we need to see if the user has moved too close to
 the edge of the screen and we need to update the boundaries.
 
-.. code-block: python
+.. code-block:: python
 
     # Keep track of if we changed the boundary. We don't want to call the
     # set_viewport command if we didn't change the view port.
