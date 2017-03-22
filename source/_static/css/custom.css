@@ -5,7 +5,7 @@ code, .rst-content tt, .rst-content code {
     font-weight: heavy;
     padding: 0px;
     border: none;
-    background: #fcfcfc;
+    background: transparent;
 }
 .rst-content code.literal {
 	color: black;

@@ -1,4 +1,4 @@
-.. _lab-09:
+.. _lab-10:
 
 Lab 10: Spell Check
 ===================
@@ -105,7 +105,7 @@ http://regexone.com/
 
 15.3 Example Run
 
-.. code-block:: plaintext
+.. code-block:: text
 
     --- Linear Search ---
     Line 3  possible misspelled word: Lewis

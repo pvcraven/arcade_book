@@ -373,7 +373,7 @@ both 1 and 128 are possibilities.
 If a person were to use the linear search as a method to guess the secret
 number, the game would be rather long and boring.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 1
     Too low.
@@ -389,7 +389,7 @@ number, the game would be rather long and boring.
 
 Most people will use a binary search to find the number. Here is an example of playing the game using a binary search:
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 64
     Too low.
@@ -415,7 +415,7 @@ midpoint of those elements. Revisiting the example:
 A lower bound of 1, upper bound of 128, mid point
 of :math:`\frac{128+1}{2}=64.5`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 64
     Too low.
@@ -423,7 +423,7 @@ of :math:`\frac{128+1}{2}=64.5`.
 A lower bound of 65, upper bound of 128, mid point of
 :math:`\frac{65+128}{2}=96.5`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 96
     Too high.
@@ -431,7 +431,7 @@ A lower bound of 65, upper bound of 128, mid point of
 A lower bound of 65, upper bound of 95, mid point of
 :math:`\frac{65+95}{2}=80`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 80
     Too low.
@@ -439,7 +439,7 @@ A lower bound of 65, upper bound of 95, mid point of
 A lower bound of 81, upper bound of 95, mid point of
 :math:`\frac{81+95}{2}=88`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 88
     Too low.
@@ -447,7 +447,7 @@ A lower bound of 81, upper bound of 95, mid point of
 A lower bound of 89, upper bound of 95, mid point of
 :math:`\frac{89+95}{2}=92`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 92
     Too low.
@@ -455,7 +455,7 @@ A lower bound of 89, upper bound of 95, mid point of
 A lower bound of 93, upper bound of 95, mid point of
 :math:`\frac{93+95}{2}=94`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 94
     Correct!

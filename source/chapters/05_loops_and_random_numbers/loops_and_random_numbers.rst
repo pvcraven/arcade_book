@@ -12,7 +12,7 @@ Our next step is how to loop a section of code. Most games "loop." They
 repeat the same code over and over. For example the number guessing
 game below loops for each guess that the user makes:
 
-::
+.. code-block:: text
 
     Hi! I'm thinking of a random number between 1 and 100.
     --- Attempt 1
@@ -96,7 +96,7 @@ The ``for`` loop example below runs the print statement five times. It could jus
 
 Output:
 
-.. code-block:: plain
+.. code-block:: text
 
     I will not chew gum in class.
     I will not chew gum in class.
