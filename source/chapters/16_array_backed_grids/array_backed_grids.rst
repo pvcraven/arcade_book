@@ -1,6 +1,8 @@
 .. sectnum::
     :start: 16
 
+.. _array-backed-grids:
+
 Array-Backed Grids
 ==================
 

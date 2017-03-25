@@ -14,3 +14,4 @@ Labs
    lab_08_sprites/sprites
    lab_09_sprites_and_walls/sprites_and_walls
    lab_10_spell_check/spell_check
+   lab_11_array_backed_grids/array_backed_grids

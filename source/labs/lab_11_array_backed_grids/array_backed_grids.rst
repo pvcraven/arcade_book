@@ -1,0 +1,104 @@
+.. _lab-11:
+
+Lab 11: Array-Backed Grids
+==========================
+
+(Part 1: 10 pts) Start with the program at the end of :ref:`array-backed-grids`.
+Modify it so
+that rather than just changing the block the user clicks on, also change the
+blocks of the squares next to the user's click. If the user clicks on an edge,
+make sure the program doesn't crash and still handles the click appropriately.
+Paste your working program below.
+
+(Part 2: 10 pts) Write a celebrity-finding function.
+Start with a function check_celebrity that takes an ``n`` by ``n`` matrix named grid as
+a parameter.
+The grid location ``grid[i][j] = 1`` if person ``i`` knows person ``j``
+and ``grid[i][j] = 0`` otherwise.
+(Assume that ``grid[i][i] = 1`` for every ``i``, since every person knows him/herself.)
+A celebrity is a person who is known by everyone and does not know anyone besides him/herself.
+Write a function that given the matrix grid, prints all the celebrities.
+
+For example, in the following grid person 2 is a celebrity:
+
+.. code-block:: text
+
+         0  1  2  3
+      --------------
+    0 |  1  1  1  0
+    1 |  0  1  1  0
+    2 |  0  0  1  0
+    3 |  1  0  1  1
+
+In the next example no one is a celebrity:
+
+.. code-block:: text
+
+         0  1  2  3  4
+      ----------------
+    0 |  1  1  1  0  1
+    1 |  0  1  1  0  1
+    2 |  0  0  1  0  0
+    3 |  1  0  1  1  1
+    4 |  1  0  0  1  1
+
+Remember: A matrix can be represented as a list-of-lists, where each sub-list
+is a row of the matrix. For example, the first matrix can be represented as:
+
+.. code-block:: text
+
+    grid = [ [1, 1, 1, 0], [0, 1, 1, 0], [0, 0, 1, 0], [1, 0, 1, 1] ]
+
+Or you can use multiple lines to define the grid:
+
+.. code-block:: text
+
+    grid = [ [1, 1, 1, 0],
+             [0, 1, 1, 0],
+             [0, 0, 1, 0],
+             [1, 0, 1, 1] ]
+
+You can test your function with code like the following test cases:
+
+.. code-block:: text
+
+
+    # Put your "check_celebrity" function below this line
+
+    # The code will test your function
+
+    print("Test 1, Should show #2 is a celebrity.")
+    grid = [ [1, 1, 1, 0],
+             [0, 1, 1, 0],
+             [0, 0, 1, 0],
+             [1, 0, 1, 1] ]
+
+    check_celebrity(grid)
+
+    print("Test 2, Should show no one is a celebrity.")
+    grid = [ [1, 1, 1, 0, 1],
+             [0, 1, 1, 0, 1],
+             [0, 0, 1, 0, 0],
+             [1, 0, 0, 1, 1],
+             [1, 0, 0, 1, 1] ]
+
+    check_celebrity(grid)
+
+    print("Test 3, Should show #2 is a celebrity.")
+    grid = [ [1, 1, 1, 0, 1],
+             [0, 1, 1, 0, 1],
+             [0, 0, 1, 0, 0],
+             [0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1] ]
+
+    check_celebrity(grid)
+
+    print("Test 4, Should show no one is a celebrity.")
+    grid = [ [1, 1, 1, 0, 1],
+             [0, 1, 1, 0, 1],
+             [1, 0, 1, 0, 0],
+             [0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1] ]
+
+    check_celebrity(grid)
+    ﻿
