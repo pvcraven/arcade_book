@@ -20,10 +20,10 @@ Chapters
    13_sprites_and_walls/sprites_and_walls
    14_libraries_and_modules/libraries_and_modules
    15_searching/searching
+   16_array_backed_grids/array_backed_grids
    xx_selecting_python/selecting_python
    recursion
    sorting
-   array_backed_grids
    exceptions
    string_formatting
 

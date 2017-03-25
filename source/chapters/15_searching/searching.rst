@@ -43,22 +43,25 @@ In the same directory as ``super_villains.txt``, create, save, and run the
 following python program:
 
 .. code-block:: python
+    :linenos:
 
     file = open("super_villains.txt")
 
     for line in file:
         print(line)
 
-There is only one new command in this code open. Because it is a built-in
-function like print, there is no need for an import. Full details on this
-function can be found in the Python documentation but at this point the
+There is only one new command in this code: ``open``. Because it is a built-in
+function like ``print``, there is no need for an ``import``. Full details on this
+function can be found in the `Python documentation`_ but at this point the
 documentation for that command is so technical it might not even be worth
 looking at.
 
+.. _Python documentation: http://docs.python.org/py3k/library/functions.html#open
+
 The above program has two problems with it, but it provides a simple example
 of reading in a file. Line 1 opens a file and gets it ready to be read. The
-name of the file is in between the quotes. The new variable file is an object
-that represents the file being read. Line 3 shows how a normal for loop may be
+name of the file is in between the quotes. The new variable ``file`` is an object
+that represents the file being read. Line 3 shows how a normal ``for`` loop may be
 used to read through a file line by line. Think of file as a list of lines,
 and the new variable line will be set to each of those lines as the program
 runs through the loop.
@@ -67,7 +70,7 @@ Try running the program. One of the problems with the it is that the text is
 printed double-spaced. The reason for this is that each line pulled out of the
 file and stored in the variable line includes the carriage return as part of
 the string. Remember the carriage return and line feed introduced back in
-Chapter 1? The print statement adds yet another carriage return and the result
+Chapter 1? The ``print`` statement adds yet another carriage return and the result
 is double-spaced output.
 
 The second problem is that the file is opened, but not closed. This problem
@@ -81,6 +84,7 @@ running, the Windows will automatically close any files left open. But since
 it is a bad habit to program like that, let's update the code:
 
 .. code-block:: python
+    :linenos:
 
     file = open("super_villains.txt")
 
@@ -91,7 +95,7 @@ it is a bad habit to program like that, let's update the code:
     file.close()
 
 The listing above works better. It has two new additions. On line 4 is a call
-to the strip method built into every String class. This function returns a new
+to the ``strip`` method built into every ``String`` class. This function returns a new
 string without the trailing spaces and carriage returns of the original string.
 The method does not alter the original string but instead creates a new one.
 This line of code would not work:
@@ -102,6 +106,7 @@ This line of code would not work:
 
 If the programmer wants the original variable to reference the new string,
 she must assign it to the new returned string as shown on line 4.
+
 The second addition is on line 7. This closes the file so that the operating
 system doesn't have to go around later and clean up open files after the
 program ends.
@@ -113,10 +118,10 @@ It is useful to read in the contents of a file to an array so that the
 program can do processing on it later. This can easily be done in python with
 the following code:
 
-Read in a file from disk and put it in an array
 
 .. code-block:: python
     :linenos:
+    :caption: Read in a file from disk and put it in an array
 
     # Read in a file from disk and put it in an array.
     file = open("super_villains.txt")
@@ -152,12 +157,15 @@ Linear Search
 
 If a program has a set of data in an array, how can it go about finding where
 a specific element is? This can be done one of two ways. The first method is
-to use a linear search. This starts at the first element, and keeps comparing
+to use a *linear search*. This starts at the first element, and keeps comparing
 elements until it finds the desired element (or runs out of elements.)
 
 Linear Search Algorithm
 -----------------------
 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PiexZxsiLT8" frameborder="0" allowfullscreen></iframe>
 
 .. code-block:: python
     :linenos:
@@ -175,11 +183,9 @@ Linear Search Algorithm
     else:
         print( "The name was not in the list." )
 
-Video: Linear Search
-
-The linear search is rather simple. Line 2 sets up an increment variable that
+The linear search is rather simple. Line 4 sets up an increment variable that
 will keep track of exactly where in the list the program needs to check next.
-The first element that needs to be checked is zero, so i is set to zero.
+The first element that needs to be checked is zero, so ``i`` is set to zero.
 
 The next line is a bit more complex. The computer needs to keep looping until
 one of two things happens. It finds the element, or it runs out of elements.
@@ -188,15 +194,15 @@ the length of the list. If so, we can keep looping. The second comparison sees
 if the current element in the name list is equal to the name we are searching
 for.
 
-This check to see if the program has run out of elements must occur first.
+This check to see if the program has run out of elements *must occur first*.
 Otherwise the program will check against a non-existent element which will
 cause an error.
 
-Line 4 simply moves to the next element if the conditions to keep searching
-are met in line 3.
+Line 6 simply moves to the next element if the conditions to keep searching
+are met in line 5.
 
 At the end of the loop, the program checks to see if the end of the list was
-reached on line 6. Remember, a list of n elements is numbered 0 to n-1.
+reached on line 8. Remember, a list of n elements is numbered 0 to n-1.
 Therefore if i is equal to the length of the list, the end has been reached.
 If it is less, we found the element.
 
@@ -262,10 +268,10 @@ check:
             # There is no item with the property
             return False
 
-This could also be done with a for loop. In this case, the loop will exit
-early by using a return once the item has been found. The code is shorter,
+This could also be done with a ``for`` loop. In this case, the loop will exit
+early by using a ``return`` once the item has been found. The code is shorter,
 but not every programmer would prefer it. Some programmers feel that loops
-should not be prematurely ended with a return or break statement. It all goes
+should not be prematurely ended with a ``return`` or ``break`` statement. It all goes
 to personal preference, or the personal preference of the person that is
 footing the bill.
 
@@ -345,7 +351,7 @@ this code to run:
 
 For a full working example see:
 
-programarcadegames.com/python_examples/show_file.php?file=property_check_examples.py
+http://programarcadegames.com/python_examples/show_file.php?file=property_check_examples.py
 
 These common algorithms can be used as part of a solution to a larger problem,
 such as find all the addresses in a list of customers that aren't valid.
@@ -353,7 +359,9 @@ such as find all the addresses in a list of customers that aren't valid.
 Binary Search
 -------------
 
-Video: Reading a File
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IfJIFqAxW9I" frameborder="0" allowfullscreen></iframe>
 
 A faster way to search a list is possible with the binary search. The process
 of a binary search can be described by using the classic number guessing game
@@ -365,7 +373,7 @@ both 1 and 128 are possibilities.
 If a person were to use the linear search as a method to guess the secret
 number, the game would be rather long and boring.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 1
     Too low.
@@ -381,7 +389,7 @@ number, the game would be rather long and boring.
 
 Most people will use a binary search to find the number. Here is an example of playing the game using a binary search:
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 64
     Too low.
@@ -407,7 +415,7 @@ midpoint of those elements. Revisiting the example:
 A lower bound of 1, upper bound of 128, mid point
 of :math:`\frac{128+1}{2}=64.5`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 64
     Too low.
@@ -415,7 +423,7 @@ of :math:`\frac{128+1}{2}=64.5`.
 A lower bound of 65, upper bound of 128, mid point of
 :math:`\frac{65+128}{2}=96.5`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 96
     Too high.
@@ -423,7 +431,7 @@ A lower bound of 65, upper bound of 128, mid point of
 A lower bound of 65, upper bound of 95, mid point of
 :math:`\frac{65+95}{2}=80`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 80
     Too low.
@@ -431,7 +439,7 @@ A lower bound of 65, upper bound of 95, mid point of
 A lower bound of 81, upper bound of 95, mid point of
 :math:`\frac{81+95}{2}=88`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 88
     Too low.
@@ -439,7 +447,7 @@ A lower bound of 81, upper bound of 95, mid point of
 A lower bound of 89, upper bound of 95, mid point of
 :math:`\frac{89+95}{2}=92`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 92
     Too low.
@@ -447,7 +455,7 @@ A lower bound of 89, upper bound of 95, mid point of
 A lower bound of 93, upper bound of 95, mid point of
 :math:`\frac{93+95}{2}=94`.
 
-.. code-block:: plaintext
+.. code-block:: text
 
     Guess a number 1 to 128: 94
     Correct!
@@ -458,152 +466,88 @@ limit to 256. 9 guesses can get a number between 1 and 512. With just 32
 guesses, a person can get a number between 1 and 4.2 billion.
 
 To figure out how large the list can be given a certain number of guesses,
-the formula works out like
-
-
-
-
-where
-
-is the size of the list and
-
-is the number of guesses. For example:
-
-
-
-
-
-
-(7 guesses can handle 128 different numbers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-If you have the problem size, we can figure out the number of guesses using the log function. Specifically, log base 2. If you don't specify a base, most people will assume you mean the natural log with a base of
-
-
-
-
-
-
-
-
-
-which is not what we want. For example, using log base 2 to find how many guesses:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Enough math! Where is the code? The code to do a binary search is more complex than a linear search:
-Binary search
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-# --- Binary search
-key = "Morgiana the Shrew"
-lower_bound = 0
-upper_bound = len(name_list)-1
-found = False
-
-# Loop until we find the item, or our upper/lower bounds meet
-while lower_bound <= upper_bound and not found:
-
-    # Find the middle position
-    middle_pos = (lower_bound + upper_bound) // 2
-
-    # Figure out if we:
-    # move up the lower bound, or
-    # move down the upper bound, or
-    # we found what we are looking for
-    if name_list[middle_pos] < key:
-        lower_bound = middle_pos + 1
-    elif name_list[middle_pos] > key:
-        upper_bound = middle_pos - 1
+the formula works out like :math:`n=x^{g}` where :math:`n` is the size of the
+list and :math:`g` is the number of guesses. For example:
+
+| :math:`2^7=128` (7 guesses can handle 128 different numbers)
+| :math:`2^8=256`
+| :math:`2^9=512`
+| :math:`2^{32}=4,294,967,296`
+|
+
+If you have the problem size, we can figure out the number of guesses using
+the log function. Specifically, *log base 2*. If you don't specify a base,
+most people will assume you mean the natural log with a base of
+:math:`e \approx 2.71828` which is not what we want. For example, using
+log base 2 to find how many guesses:
+
+| :math:`log_2 128 = 7`
+| :math:`log_2 65,536 = 16`
+|
+
+Enough math! Where is the code? The code to do a binary search is more complex
+than a linear search:
+
+.. code-block:: python
+    :caption: Binary search
+    :linenos:
+
+    # --- Binary search
+    key = "Morgiana the Shrew"
+    lower_bound = 0
+    upper_bound = len(name_list)-1
+    found = False
+
+    # Loop until we find the item, or our upper/lower bounds meet
+    while lower_bound <= upper_bound and not found:
+
+        # Find the middle position
+        middle_pos = (lower_bound + upper_bound) // 2
+
+        # Figure out if we:
+        # move up the lower bound, or
+        # move down the upper bound, or
+        # we found what we are looking for
+        if name_list[middle_pos] < key:
+            lower_bound = middle_pos + 1
+        elif name_list[middle_pos] > key:
+            upper_bound = middle_pos - 1
+        else:
+            found = True
+
+    if found:
+        print( "The name is at position", middle_pos)
     else:
-        found = True
+        print( "The name was not in the list." )
 
-if found:
-    print( "The name is at position", middle_pos)
-else:
-    print( "The name was not in the list." )
-Since lists start at element zero, line 3 sets the lower bound to zero. Line 4 sets the upper bound to the length of the list minus one. So for a list of 100 elements the lower bound will be 0 and the upper bound 99.
-The Boolean variable on line 5 will be used to let the while loop know that the element has been found.
-Line 6 checks to see if the element has been found or if we've run out of elements. If we've run out of elements the lower bound will end up equaling the upper bound.
-Line 7 finds the middle position. It is possible to get a middle position of something like 64.5. It isn't possible to look up position 64.5. (Although J.K. Rowling was rather clever in enough coming up with Platform
+Since lists start at element zero, line 3 sets the lower bound to zero.
+Line 4 sets the upper bound to the length of the list minus one. So for a
+list of 100 elements the lower bound will be 0 and the upper bound 99.
 
+The Boolean variable on line 5 will be used to let the while loop know that the
+element has been found.
 
+Line 8 checks to see if the element has been found or if we've run out of
+elements. If we've run out of elements the lower bound will end up equaling
+the upper bound.
 
+Line 11 finds the middle position. It is possible to get a middle position
+of something like 64.5. It isn't possible to look up position 64.5.
+(Although J.K. Rowling was rather clever in enough coming up with Platform
+:math:`9\frac{3}{4}`, that doesn't work here.) The best way of handling
+this is to use the ``//`` operator first introduced way back in Chapter 1.
+This is similar to the ``/`` operator, but will only return integer results.
+For example, ``11 // 2`` would give 5 as an answer, rather than 5.5.
 
-, that doesn't work here.) The best way of handling this is to use the // operator first introduced way back in Chapter 5. This is similar to the / operator, but will only return integer results. For example, 11 // 2 would give 5 as an answer, rather than 5.5.
-Starting at line 8, the program checks to see if the guess is high, low, or correct. If the guess is low, the lower bound is moved up to just past the guess. If the guess is too high, the upper bound is moved just below the guess. If the answer has been found, found is set to True ending the search.
-With the a list of 100 elements, a person can reasonably guess that on average with the linear search, a program will have to check 50 of them before finding the element. With the binary search, on average you'll still need to do about seven guesses. In an advanced algorithms course you can find the exact formula. For this course, just assume average and worst cases are the same.
+Starting at line 17, the program checks to see if the guess is high, low, or
+correct. If the guess is low, the lower bound is moved up to just past the
+guess. If the guess is too high, the upper bound is moved just below
+the guess. If the answer has been found, ``found`` is set to ``True``
+ending the search.
+
+With the a list of 100 elements, a person can reasonably guess that on
+average with the linear search, a program will have to check 50 of them
+before finding the element. With the binary search, on average you'll
+still need to do about seven guesses. In an advanced algorithms course
+you can find the exact formula. For this course, just assume average and
+worst cases are the same.

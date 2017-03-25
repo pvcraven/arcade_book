@@ -30,7 +30,7 @@ Sample Run of Camel
 
 Here is a sample run of the game:
 
-::
+.. code-block:: text
 
 	Welcome to Camel!
 	You have stolen a camel to make your way across the great Mobi desert.
@@ -116,7 +116,7 @@ Try the game with friends and family.
    ``print`` statement and multiple ``\n`` characters to jam everything on one
    line.
 
-::
+.. code-block:: text
 
 	Welcome to Camel!
 	You have stolen a camel to make your way across the great Mobi desert.
@@ -139,7 +139,7 @@ Try the game with friends and family.
 6. Ask the user for their choice. Make sure to add a space before the quote so
    the user input doesn't run into your text. That is, it should look like:
 
-::
+.. code-block:: text
 
    What is your choice? Q
 
@@ -166,7 +166,7 @@ And not::
     and how far the natives are behind you. If you aren't sure how to calculate
     that, see the videos at the end of this lab.
 
-.. code-block:: plain
+.. code-block:: text
 
 	Miles traveled:  0
 	Drinks in canteen:  3

@@ -21,5 +21,16 @@ and position multiple items.
   4 points.
 * Step 6: Add a sound to play each time the user collects a coin. 2 points.
 
+.. warning::
+    Don't move the player twice!
+
+    The command ``self.physics_engine.update()`` moves the player while checking
+    for walls. The command ``self.all_sprites_list.update()`` will move the
+    player WITHOUT checking for walls. Don't do both commands. You'll end up
+    "walking through walls." If you have other
+    sprites to update, update only those sprites. For example:
+    ``self.coin_list.update()``.
+
+
 .. _Move with Walls: http://arcade.academy/examples/sprite_move_walls.html
 .. _Move with a Scrolling Screen: http://arcade.academy/examples/sprite_move_scrolling.html
