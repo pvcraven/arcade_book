@@ -170,6 +170,23 @@ the mouse.
     :language: python
     :linenos:
 
+.. _mouse-click:
+
+Mouse Clicks
+^^^^^^^^^^^^
+
+You can also process mouse clicks by defining an ``on_mouse_press`` method:
+
+.. code-block:: python
+
+    def on_mouse_press(self, x, y, button, modifiers):
+        """ Called when the user presses a mouse button. """
+
+        if button == arcade.MOUSE_BUTTON_LEFT:
+            print("Left mouse button pressed at", x, y)
+        elif button == arcade.MOUSE_BUTTON_RIGHT:
+            print("Right mouse button pressed at", x, y)
+
 Move with the Keyboard
 ^^^^^^^^^^^^^^^^^^^^^^
 
