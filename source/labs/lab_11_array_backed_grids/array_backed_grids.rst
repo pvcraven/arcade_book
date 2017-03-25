@@ -3,14 +3,17 @@
 Lab 11: Array-Backed Grids
 ==========================
 
-(Part 1: 10 pts) Start with the program at the end of :ref:`array-backed-grids`.
+**Part 1: 10 pts.** Start with the program at the end of :ref:`array-backed-grids`.
 Modify it so
 that rather than just changing the block the user clicks on, also change the
 blocks of the squares next to the user's click. If the user clicks on an edge,
 make sure the program doesn't crash and still handles the click appropriately.
-Paste your working program below.
 
-(Part 2: 10 pts) Write a celebrity-finding function.
+.. figure:: lab_11_sample.gif
+
+    Example of working Lab 11
+
+**Part 2: 10 pts.** Write a celebrity-finding function.
 Start with a function check_celebrity that takes an ``n`` by ``n`` matrix named grid as
 a parameter.
 The grid location ``grid[i][j] = 1`` if person ``i`` knows person ``j``
@@ -21,14 +24,8 @@ Write a function that given the matrix grid, prints all the celebrities.
 
 For example, in the following grid person 2 is a celebrity:
 
-.. code-block:: text
-
-         0  1  2  3
-      --------------
-    0 |  1  1  1  0
-    1 |  0  1  1  0
-    2 |  0  0  1  0
-    3 |  1  0  1  1
+.. image:: example_1.png
+    :width: 150px
 
 In the next example no one is a celebrity:
 
