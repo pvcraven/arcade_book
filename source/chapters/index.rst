@@ -21,6 +21,7 @@ Chapters
    14_libraries_and_modules/libraries_and_modules
    15_searching/searching
    16_array_backed_grids/array_backed_grids
+   17_platformers/platformers
    xx_selecting_python/selecting_python
    recursion
    sorting
