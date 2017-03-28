@@ -22,9 +22,9 @@ Chapters
    15_searching/searching
    16_array_backed_grids/array_backed_grids
    17_platformers/platformers
+   18_sorting/sorting
    xx_selecting_python/selecting_python
    recursion
-   sorting
    exceptions
    string_formatting
 

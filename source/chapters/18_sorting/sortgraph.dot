@@ -1,0 +1,36 @@
+
+digraph G
+{
+        node [shape = record];
+node0 [ label = "<f0> 15 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node0:f2 -> node1:f0 [color=red];
+node0:f0 -> node1:f2 [color=blue];
+node1 [ label = "<f0> 14 | <f1> 57 | <f2> 15 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node1:f2 -> node2:f1 [color=red];
+node1:f1 -> node2:f2 [color=blue];
+node2 [ label = "<f0> 14 | <f1> 15 | <f2> 57 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node2:f3 -> node3:f2 [color=red];
+node2:f2 -> node3:f3 [color=blue];
+node3 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 57 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node3:f6 -> node4:f3 [color=red];
+node3:f3 -> node4:f6 [color=blue];
+node4 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 72 | <f5> 79 | <f6> 57 | <f7> 56 | <f8> 42 | <f9> 40"];
+node4:f9 -> node5:f4 [color=red];
+node4:f4 -> node5:f9 [color=blue];
+node5 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 79 | <f6> 57 | <f7> 56 | <f8> 42 | <f9> 72"];
+node5:f8 -> node6:f5 [color=red];
+node5:f5 -> node6:f8 [color=blue];
+node6 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 42 | <f6> 57 | <f7> 56 | <f8> 79 | <f9> 72"];
+node6:f7 -> node7:f6 [color=red];
+node6:f6 -> node7:f7 [color=blue];
+node7 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 42 | <f6> 56 | <f7> 57 | <f8> 79 | <f9> 72"];
+node7:f7 -> node8:f7 [color=red];
+node7:f7 -> node8:f7 [color=blue];
+node8 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 42 | <f6> 56 | <f7> 57 | <f8> 79 | <f9> 72"];
+node8:f9 -> node9:f8 [color=red];
+node8:f8 -> node9:f9 [color=blue];
+node9 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 42 | <f6> 56 | <f7> 57 | <f8> 72 | <f9> 79"];
+node9:f9 -> node10:f9 [color=red];
+node9:f9 -> node10:f9 [color=blue];
+node10 [ label = "<f0> 14 | <f1> 15 | <f2> 22 | <f3> 26 | <f4> 40 | <f5> 42 | <f6> 56 | <f7> 57 | <f8> 72 | <f9> 79"];
+}

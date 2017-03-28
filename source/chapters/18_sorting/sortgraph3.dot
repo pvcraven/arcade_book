@@ -1,0 +1,16 @@
+
+digraph G
+{
+        node [shape = record];
+node0 [ label = "<f0> 15 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node2:f0 -> node3:f0 [label="list[2] = list[0]",color=red];
+node0:f0 -> node1:f0 [style=invisible,arrowhead=none];
+node1:f0 -> node2:f0 [style=invisible,arrowhead=none];
+
+
+node1 [ label = "<f0> 14 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node1:f2 -> node1:f0 [label="list[0] = list[2]",color=blue];
+node2 [ label = "<f0> 14 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+
+node3 [ label = "<f0> 14" ];
+}

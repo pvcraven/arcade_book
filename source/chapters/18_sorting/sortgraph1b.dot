@@ -1,0 +1,29 @@
+
+digraph G
+{
+        node [shape = record];
+		
+node0 [ label = "<f0> 15 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node1 [ label = "<f0> 14 | <f1> 57 | <f2> 14 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+node2 [ label = "<f0> 15"];
+node3 [ label = "<f0> 14 | <f1> 57 | <f2> 15 | <f3> 22 | <f4> 72 | <f5> 79 | <f6> 26 | <f7> 56 | <f8> 42 | <f9> 40"];
+
+node0:f0 -> node2:f0 [color=green,label="Step 1"];
+node0:f2 -> node1:f0 [color=red,label="Step 2"];
+node2:f0 -> node3:f2 [color=blue,label="Step 3"];
+
+node0:f0 -> node1:f0 [style=invis];
+node1:f0 -> node3:f0 [style=invis];
+
+node0:f1 -> node1:f1 [style=invis];
+node1:f1 -> node3:f1 [style=invis];
+
+
+node0:f3 -> node1:f3 [style=invis];
+node1:f3 -> node3:f3 [style=invis];
+
+node0:f9 -> node1:f9 [style=invis];
+node1:f9 -> node3:f9 [style=invis];
+
+
+}
