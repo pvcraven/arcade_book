@@ -1,3 +1,15 @@
+p {
+    font-size: 18px;
+    line-height: 33px;
+}
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
+}
+body {
+    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
+    font-size: 18px;
+    line-height: 33px;
+}
 code, .rst-content tt, .rst-content code {
 	border: none;
 	font-size: 90%;
@@ -7,17 +19,25 @@ code, .rst-content tt, .rst-content code {
     border: none;
     background: transparent;
 }
+div[class^='highlight'] pre {
+    white-space: pre;
+    margin: 0;
+    padding: 12px 12px;
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    overflow: auto;
+    color: #404040;
+}
 .rst-content code.literal {
 	color: black;
 }
+.wy-menu-vertical a {
+    font-size: 75%;
+}
 .wy-nav-content-wrap {
     background: #fff;
-}
-h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
-    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
-}
-body {
-    font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
 }
 .wy-side-nav-search {
     background-color: #931a2a;
@@ -27,4 +47,9 @@ body {
 }
 .wy-menu-vertical {
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+}
+.wy-plain-list-disc, .rst-content .section ul, .rst-content .toctree-wrapper ul, article ul {
+    list-style: disc;
+    line-height: 30px;
+    margin-bottom: 30px;
 }
