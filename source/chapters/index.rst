@@ -28,12 +28,3 @@ Chapters
    exceptions
    string_formatting
 
-Moving with Walls
-Libraries and Modules
-Array backed grids
-Searching
-Files
-Sorting
-Recursion
-String formatting
-Exceptions

@@ -15,3 +15,4 @@ Labs
    lab_09_sprites_and_walls/sprites_and_walls
    lab_10_spell_check/spell_check
    lab_11_array_backed_grids/array_backed_grids
+   lab_12_final_lab/final_lab
