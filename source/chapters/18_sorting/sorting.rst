@@ -42,7 +42,7 @@ program has a list that looks like the following:
 The developer wants to swap positions 0 and 2, which contain the numbers 15
 and 14 respectively. See Figure 18.1.
 
-.. figure:: sortgraph.svg
+.. figure:: sortgraph1.svg
 
     Figure 18.1: Swapping values in an array
 
