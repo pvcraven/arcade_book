@@ -64,6 +64,28 @@ Here are some images from prior years:
         <img data-src="../../_static/lab_02_images/002.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/003.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/004.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/005.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/006.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/007.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/008.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/009.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/010.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/011.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/012.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/013.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/014.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/015.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/016.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/017.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/018.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/019.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/020.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/021.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/022.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/023.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/024.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/025.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/026.png" src="" alt="">
     </div>
 
     <!-- Include slider JS file -->
