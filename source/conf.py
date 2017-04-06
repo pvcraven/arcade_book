@@ -27,6 +27,8 @@ from docutils.utils import get_source_line
 
 def setup(app):
     app.add_stylesheet('css/custom.css')
+    app.add_stylesheet('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.css')
+    app.add_stylesheet('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/themes/default/default.min.css')
 
 def _warn_node(self, msg, node):
     if not msg.startswith('nonlocal image URI found:'):

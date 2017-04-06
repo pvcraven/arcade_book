@@ -55,22 +55,21 @@ Here are some images from prior years:
 
 .. raw:: html
 
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
-
-      <script>
-        $(document).ready(function(){
-          $('.bxslider').bxSlider();
-        });
-      </script>
-
-
-    <ul class="bxslider">
-      <li><img src="../../_static/lab_02_images/001.png" /></li>
-      <li><img src="../../_static/lab_02_images/002.png" /></li>
-      <li><img src="../../_static/lab_02_images/003.png" /></li>
-      <li><img src="../../_static/lab_02_images/004.png" /></li>
-    </ul>
-
-
+    <!-- Create your slider and add images -->
+    <div id="slider">
+        <img src="../../_static/lab_02_images/001.png" alt="">
+        <img data-src="../../_static/lab_02_images/002.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/003.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/004.png" src="" alt="">
+    </div>
+    <!-- Include slider JS file -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.js"></script>
+    <!-- Create your slider -->
+    <script>
+    new IdealImageSlider.Slider({
+      selector: '#slider',
+      onStart: function(){
+        console.log('onStart');
+      }
+    });
+    </script>
