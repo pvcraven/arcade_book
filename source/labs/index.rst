@@ -16,3 +16,4 @@ Labs
    lab_10_spell_check/spell_check
    lab_11_array_backed_grids/array_backed_grids
    lab_12_final_lab/final_lab
+   lab_12_quantitative_reasoning/quantitative_reasoning

@@ -214,9 +214,17 @@ When the loop finds a location smaller than ``key_value``, it stops and
 puts ``key_value`` to the left of it.
 
 The outside loop with an insertion sort will run *n* times. The inside
-loop will run an average of :math:`\frac{n}{2}` times if the loop is randomly shuffled. If
+loop will run an average of :math:`\frac{n}{4}` times if the loop is randomly
+shuffled.
+
+What's really important: If
 the loop is close to a sorted loop already, then the inside loop does
-not run very much, and the sort time is closer to *n*.
+not run very much, and the sort time is closer to *n*. The insertion sort
+is the fastest sort for nearly-sorted lists. If the list is reversted, then
+the insertion sort is terrible.
+
+The selection sort doesn't really care what order the list is in to begin
+with. It performs the same regardless.
 
 .. code-block:: python
     :caption: Insertion sort
