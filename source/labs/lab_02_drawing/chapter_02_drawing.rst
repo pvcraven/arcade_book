@@ -56,20 +56,34 @@ Here are some images from prior years:
 .. raw:: html
 
     <!-- Create your slider and add images -->
+    <button class="btn prev"><span class="fa fa-arrow-circle-left"></span> Prev Image</button>
+    <button class="btn next">Next Image <span class="fa fa-arrow-circle-right"></span></button>
+    <br />
     <div id="slider">
         <img src="../../_static/lab_02_images/001.png" alt="">
         <img data-src="../../_static/lab_02_images/002.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/003.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/004.png" src="" alt="">
     </div>
+
     <!-- Include slider JS file -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.js"></script>
     <!-- Create your slider -->
     <script>
-    new IdealImageSlider.Slider({
+    var slider = new IdealImageSlider.Slider({
       selector: '#slider',
       onStart: function(){
         console.log('onStart');
       }
+    });
+    document.querySelector('.prev').addEventListener('click', function(e){
+        e.preventDefault();
+        // Use the previousSlide() API method
+        slider.previousSlide();
+    });
+    document.querySelector('.next').addEventListener('click', function(e){
+        e.preventDefault();
+        // Use the nextSlide() API method
+        slider.nextSlide();
     });
     </script>
