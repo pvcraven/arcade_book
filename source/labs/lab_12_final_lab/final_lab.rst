@@ -85,7 +85,9 @@ the class.
 Almost every semester I catch someone doing this. Please, just don't.
 
 Requirements for Part 1
-^^^^^^^^^^^^^^^^^^^^^^^* Cite in the code comments what images and sounds you've used. So for every
+^^^^^^^^^^^^^^^^^^^^^^^
+
+* Cite in the code comments what images and sounds you've used. So for every
   image or sound loaded, put a ``#`` tag in the line above with a citation
   on where it came from. I'll expect more than just a URL, give me a name
   of the website as well.

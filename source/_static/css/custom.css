@@ -32,6 +32,7 @@ div[class^='highlight'] pre {
 }
 .rst-content code.literal {
 	color: black;
+    font-weight: bold;
 }
 .wy-menu-vertical a {
     font-size: 75%;

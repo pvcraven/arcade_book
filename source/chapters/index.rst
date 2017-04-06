@@ -23,8 +23,6 @@ Chapters
    16_array_backed_grids/array_backed_grids
    17_platformers/platformers
    18_sorting/sorting
+   19_exceptions/exceptions
    xx_selecting_python/selecting_python
-   recursion
-   exceptions
-   string_formatting
 
