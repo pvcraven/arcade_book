@@ -258,193 +258,45 @@ Can we visually see recursion in action in one of our Pygame programs? Yes! Figu
     :language: python
     :linenos:
 
+
 Fractals
 --------
 
 Fractals are defined recursively. Here is a very simple fractal, showing
 how it changes depending on how "deep" the recursion goes.
 
-.. figure:: fractal_0
-Figure 19.5: Recursive Fractal Level 0
-.. figure:: fractal_1
-Figure 19.6: Recursive Fractal Level 1
-.. figure:: fractal_2
-Figure 19.7: Recursive Fractal Level 2
-.. figure:: fractal_3
-Figure 19.8: Recursive Fractal Level 3
-fractal.py
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-"""
- Sample fractal using recursion.
+.. figure:: recursive_h_00.png
 
- Sample Python/Pygame Programs
- Simpson College Computer Science
- http://programarcadegames.com/
- http://simpson.edu/computer-science/
-"""
+    Figure 20.5: Recursive Fractal Level 0
 
-import pygame
+.. figure:: recursive_h_01.png
 
-# Define some colors
-black = (0, 0, 0)
-white = (255, 255, 255)
-green = (0, 255, 0)
-red = (255, 0, 0)
+    Figure 20.6: Recursive Fractal Level 1
 
+.. figure:: recursive_h_02.png
 
-def recursive_draw(x, y, width, height, count):
-    # Draw the rectangle
-    # pygame.draw.rect(screen,black,[x,y,width,height],1)
-    pygame.draw.line(screen,
-                     black,
-                     [x + width*.25, height // 2 + y],
-                     [x + width*.75, height // 2 + y],
-                     3)
-    pygame.draw.line(screen,
-                     black,
-                     [x + width * .25, (height * .5) // 2 + y],
-                     [x + width * .25,  (height * 1.5) // 2 + y],
-                     3)
-    pygame.draw.line(screen,
-                     black,
-                     [x + width * .75, (height * .5) // 2 + y],
-                     [x + width * .75, (height * 1.5) // 2 + y],
-                     3)
+    Figure 20.7: Recursive Fractal Level 2
 
-    if count > 0:
-        count -= 1
-        # Top left
-        recursive_draw(x, y, width // 2, height // 2, count)
-        # Top right
-        recursive_draw(x + width // 2, y, width // 2, height // 2, count)
-        # Bottom left
-        recursive_draw(x, y + width // 2, width // 2, height // 2, count)
-        # Bottom right
-        recursive_draw(x + width // 2, y + width // 2, width // 2, height // 2, count)
+.. figure:: recursive_h_05.png
 
+    Figure 20.8: Recursive Fractal Level 5
 
-pygame.init()
+.. literalinclude:: recursive_h.py
+    :caption: recursive_h.py
+    :language: python
+    :linenos:
 
-# Set the height and width of the screen
-size = [700, 700]
-screen = pygame.display.set_mode(size)
+You can explore fractals on-line:
 
-pygame.display.set_caption("My Game")
+* https://www.chromeexperiments.com/fractal
+* http://usefuljs.net/fractals/
+* http://hirnsohle.de/test/fractalLab/
 
-# Loop until the user clicks the close button.
-done = False
+If you want to program your own fractals, you can get
+ideas of easy fractals
+by looking at Chapter 8 of `The Nature of Code`_ by Daniel Shiffman.
 
-# Used to manage how fast the screen updates
-clock = pygame.time.Clock()
-
-# -------- Main Program Loop -----------
-while not done:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            done = True
-
-    # Set the screen background
-    screen.fill(white)
-
-    # ALL CODE TO DRAW SHOULD GO BELOW THIS COMMENT
-    fractal_level = 3
-    recursive_draw(0, 0, 700, 700, fractal_level)
-    # ALL CODE TO DRAW SHOULD GO ABOVE THIS COMMENT
-
-    # Go ahead and update the screen with what we've drawn.
-    pygame.display.flip()
-
-    # Limit to 20 frames per second
-    clock.tick(20)
-
-# Be IDLE friendly. If you forget this line, the program will 'hang'
-# on exit.
-pygame.quit()
+.. _The Nature of Code: http://natureofcode.com/book/chapter-8-fractals/
 
 Recursive Binary Search
 -----------------------
