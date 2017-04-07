@@ -89,7 +89,7 @@ Here are some images from prior years:
     </div>
 
     <!-- Include slider JS file -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.js"></script>
     <!-- Create your slider -->
     <script>
     var slider = new IdealImageSlider.Slider({

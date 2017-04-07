@@ -50,8 +50,8 @@ Exception Handling
 The code for handling exceptions is simple. See the example below:
 
 .. code-block:: python
-    :caption: Handling division by zero
     :linenos:
+    :caption: Handling division by zero
 
     # Divide by zero
     try:
@@ -141,7 +141,7 @@ blocks above. The "catch-all" ``except`` must always be last.
     try:
         my_file = open("myfile.txt")
         my_line = my_file.readline()
-        my_int = int(s.strip())
+        my_int = int(my_line.strip())
         my_calculated_value = 101 / my_int
     except IOError:
         print("I/O error")

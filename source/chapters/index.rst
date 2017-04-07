@@ -24,5 +24,6 @@ Chapters
    17_platformers/platformers
    18_sorting/sorting
    19_exceptions/exceptions
+   20_recursion/recursion
    xx_selecting_python/selecting_python
 
