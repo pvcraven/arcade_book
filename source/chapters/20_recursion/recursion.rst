@@ -281,7 +281,9 @@ how it changes depending on how "deep" the recursion goes.
 
     Figure 20.8: Recursive Fractal Level 5
 
-.. literalinclude:: recursive_h.py
+Here is the source code for the "H" fractal:
+
+.. literalinclude:: recursive_h_05.py
     :caption: recursive_h.py
     :language: python
     :linenos:

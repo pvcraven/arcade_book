@@ -10,6 +10,9 @@ body {
     font-size: 18px;
     line-height: 33px;
 }
+.rst-content .highlight>pre {
+    line-height: 1.5;
+}
 code, .rst-content tt, .rst-content code {
 	border: none;
 	font-size: 90%;
