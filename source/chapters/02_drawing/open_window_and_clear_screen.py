@@ -10,7 +10,7 @@ import arcade
 # From the "arcade" library, use a function called "open_window"
 # Set the window title to "Drawing Example"
 # Set the and dimensions (width and height)
-arcade.open_window("Drawing Example", 600, 600)
+arcade.open_window( 600, 600, "Drawing Example")
 
 # Set the background color
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
