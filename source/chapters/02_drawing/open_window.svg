@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="145.78157mm"
-   height="38.621292mm"
-   viewBox="0 0 516.54887 136.8471"
+   width="151.59076mm"
+   height="37.594555mm"
+   viewBox="0 0 537.13261 133.20905"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -372,8 +372,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="329.81403"
-     inkscape:cy="-69.544693"
+     inkscape:cx="220.17114"
+     inkscape:cy="-68.89703"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -383,7 +383,7 @@
      fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -402,7 +402,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-71.464844,-27.885014)">
+     transform="translate(-75.750587,-32.170727)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot4156"
@@ -413,7 +413,7 @@
            height="115"
            x="93.571426"
            y="160.93364" /></flowRegion><flowPara
-         id="flowPara4162"></flowPara></flowRoot>    <text
+         id="flowPara4162" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="74.285713"
@@ -450,36 +450,36 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="313.57141"
-       y="160.21936"
+       x="469.28571"
+       y="159.50508"
        id="text4176"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4178"
-         x="313.57141"
-         y="160.21936">Window Title</tspan></text>
+         x="469.28571"
+         y="159.50508">Window Title</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="463.57144"
-       y="157.36221"
+       x="329.28571"
+       y="158.79079"
        id="text4180"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4182"
-         x="463.57144"
-         y="157.36221">Width</tspan></text>
+         x="329.28571"
+         y="158.79079">Width</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="539.28571"
-       y="157.36221"
+       x="404.99997"
+       y="158.79079"
        id="text4184"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4186"
-         x="539.28571"
-         y="157.36221">Height</tspan></text>
+         x="404.99997"
+         y="158.79079">Height</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
        d="M 138.57142,113.0765 92.142854,148.79077"
@@ -500,19 +500,19 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-6)"
-       d="m 372.46821,114.6884 -14.99999,35.71427"
+       d="M 512.46823,113.25983 497.46824,148.9741"
        id="path4188-6-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-10)"
-       d="m 482.46822,113.25985 -2.85713,30.71427"
+       d="m 348.18249,114.68842 -2.85713,30.71427"
        id="path4188-6-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-9)"
-       d="m 531.03965,113.97412 37.14287,32.14285"
+       d="m 396.75392,115.40269 37.14287,32.14285"
        id="path4188-6-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -523,7 +523,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#SquareM-5);marker-end:url(#marker6206-7)"
-       d="m 186.79887,111.9919 c 60.71428,-0.71429 112.14286,0 112.14286,0"
+       d="m 191.08458,109.13476 c 60.71428,-0.71429 112.14286,0 112.14286,0"
        id="path6068-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -560,8 +560,8 @@
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan11447"
-         style="font-size:18.75000224px"
+         style="font-size:18.75000191px"
          x="118.70901"
-         y="104.99142">arcade.open_window(&quot;Drawing Example&quot;, 600, 600)</tspan></text>
+         y="104.99142">arcade.open_window(600, 600, &quot;Drawing Example&quot;)</tspan></text>
   </g>
 </svg>
