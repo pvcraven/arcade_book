@@ -1,3 +1,6 @@
+
+.. _chapter-setup:
+
 .. sectnum::
 
 Understanding and Setting Up Your System
@@ -14,7 +17,7 @@ Avoid frustration later. Learn it now.
 Your development computer will need:
 
 * The Python_ programming language and the Arcade_ code library.
-* An editor to type in your programs. (We'll use a programm called PyCharm_.
+* An editor to type in your programs. (We'll use a program called PyCharm_.
   You can get a `student license`_ for free.)
 * A version control system to track and turn in your work. (Git/SourceTree_/BitBucket_)
 * A minor configuration tweak so we can see file extensions.
@@ -61,8 +64,9 @@ and some are computer instructions.
 Machine Code
 ^^^^^^^^^^^^
 
-In the early days of computing, this is how people coded programs. Just punch
-in numbers that represent computer instructions. Then punch in data.
+In the early days of computing, programmers punched
+in numbers that represented commands for the CPU.
+Then the programmers punched in the data.
 
 We call these numbers that are instructions `machine code`_. Note that not
 all numbers on the computer are machine code (they might just be data),
@@ -219,12 +223,18 @@ We use Python 3. Why are you going to care?
 * Systems such as the Mac and Linux have Python 2 installed by default.
 
 If you see a Python example on the web that has a print statement that looks
-like::
+like:
 
+.. code-block:: python
+
+  # A "print" statement with Python Version 2.x
   print "Hi"
 
-Instead of::
+Instead of:
 
+.. code-block:: python
+
+  # A "print" statement with Python Version 3.x
   print("Hi")
 
 Then you have a Python 2 example and it won't run with what we install and use
