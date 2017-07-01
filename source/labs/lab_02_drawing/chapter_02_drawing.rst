@@ -109,3 +109,6 @@ Here are some images from prior years:
         slider.nextSlide();
     });
     </script>
+
+To flip through the images, click the prev/next buttons above the image. The
+prev/next buttons below navigate between the different labs.

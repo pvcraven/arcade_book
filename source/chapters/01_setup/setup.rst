@@ -1,7 +1,9 @@
 
-.. _chapter-setup:
 
 .. sectnum::
+    :start: 1
+
+.. _chapter-setup:
 
 Understanding and Setting Up Your System
 ========================================
