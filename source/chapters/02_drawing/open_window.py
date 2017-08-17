@@ -8,6 +8,6 @@ import arcade
 
 # Open up a window.
 # From the "arcade" library, use a function called "open_window"
-# Set the window title to "Drawing Example"
 # Set the and dimensions (width and height)
-arcade.open_window("Drawing Example", 600, 600)
+# Set the window title to "Drawing Example"
+arcade.open_window(600, 600, "Drawing Example")

@@ -160,8 +160,9 @@ Third generation languages usually fall into one of three categories.
   code. The original source code is not needed to run the program. "C" is an
   example of a language that works this way. So is the 2GL assembly language
   we just talked about.
-* **Interpreted:** The computer looks at the source code and immediately
-  translates it to machine code. The compile step is not needed, but the user
+* **Interpreted:** The computer looks at the source code and translates/runs
+  it line-by-line.
+  The compile step is not needed, but the user
   needs both the source code and an interpreter to run the program. Python
   is an example of an interpreted language.
 * **Runtime Environment:** Languages such as Java and C# take source code, and
