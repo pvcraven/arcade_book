@@ -25,5 +25,6 @@ Chapters
    18_sorting/sorting
    19_exceptions/exceptions
    20_recursion/recursion
+   21_print_formatting/print_formatting
    xx_selecting_python/selecting_python
 
