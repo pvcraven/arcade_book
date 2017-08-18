@@ -209,6 +209,11 @@ If it is less, we found the element.
 Variations On The Linear Search
 -------------------------------
 
+.. note::
+
+    (This section needs to be updated to show examples using the text
+    adventure.)
+
 Variations on the linear search can be used to create several common
 algorithms. For example, say we had a list of aliens. We might want to check
 this group of aliens to see if one of the aliens is green. Or are all the

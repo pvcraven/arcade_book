@@ -21,7 +21,7 @@ class Ball:
         """ Draw the balls with the instance variables we have. """
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
-    def animate(self):
+    def update(self):
         # Move the ball
         self.position_y += self.change_y
         self.position_x += self.change_x

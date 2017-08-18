@@ -18,7 +18,7 @@ class MyApplication(arcade.Window):
 
         arcade.draw_circle_filled(self.ball_x, self.ball_y, 15, arcade.color.AUBURN)
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
         self.ball_x += 1
         self.ball_y += 1
