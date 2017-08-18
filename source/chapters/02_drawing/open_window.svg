@@ -394,7 +394,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -535,19 +535,19 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#SquareM-0);marker-end:url(#marker6206-74)"
-       d="m 320.37031,111.99191 c 60.71428,-0.71429 130,0 130,0"
+       d="m 439.65602,110.56334 c 60.71428,-0.71429 130,0 130,0"
        id="path6068-78"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86195254px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#SquareM-0-4);marker-end:url(#marker6206-74-3)"
-       d="m 466.70708,111.10172 c 36.88698,-0.8735 27.33977,-1.74698 27.33977,-1.74698"
+       d="m 332.42137,110.38743 c 36.88698,-0.8735 27.33977,-1.74698 27.33977,-1.74698"
        id="path6068-78-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.84366632px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#SquareM-0-4-5);marker-end:url(#marker6206-74-3-6)"
-       d="m 518.74246,109.03297 c 34.15812,-0.90369 25.3172,-1.80735 25.3172,-1.80735"
+       d="m 379.45675,110.46154 c 34.15812,-0.90369 25.3172,-1.80735 25.3172,-1.80735"
        id="path6068-78-0-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
