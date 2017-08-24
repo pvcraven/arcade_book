@@ -14,8 +14,10 @@ Avoid frustration later. Learn it now.
 Your development computer will need:
 
 * The Python_ programming language and the Arcade_ code library.
-* An editor to type in your programs. (We'll use a programm called PyCharm_.
-  You can get a `student license`_ for free.)
+* An editor to type in your programs. (We'll use a program called PyCharm_.
+  You can use the community edition for free, or if you have an email
+  address that ends in ``.edu`` get can get a free `student license`_ for
+  the professional version.)
 * A version control system to track and turn in your work. (Git/SourceTree_/BitBucket_)
 * A minor configuration tweak so we can see file extensions.
 
@@ -265,9 +267,11 @@ computer.
 Setup the Distributed Version Control System
 --------------------------------------------
 
-Download and install SourceTree_.
+* Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
+* Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to make a free account for download and use.
 
 .. _SourceTree: https://www.sourcetreeapp.com/
+.. _Git DVCS: https://git-scm.com/download/win
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
@@ -305,6 +309,20 @@ standardize on Git.
 .. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
+
+Creating a Repository
+---------------------
+
+(TBD)
+
+
+1. Figure out where you want to store your files
+2. Create an account
+3. Fork the repository https://bitbucket.org/pcraven/arcade-games-work
+4. Clone the repository
+5. Committing
+6. Pushing
+7. Pull/merge
 
 Viewing File Extensions
 -----------------------
