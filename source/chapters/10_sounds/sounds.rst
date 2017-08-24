@@ -61,7 +61,7 @@ a window, and we can solve it the same way:
 
     import arcade
 
-    arcade.open_window("Sound Demo", 300, 300)
+    arcade.open_window(300, 300, "Sound Demo")
     laser_sound = arcade.load_sound("laser.ogg")
     arcade.play_sound(laser_sound)
     arcade.run()
