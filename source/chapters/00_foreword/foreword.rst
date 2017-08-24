@@ -19,6 +19,8 @@ year I'll add your games to the wall of fame:
 
 .. raw:: html
 
+  <figure class='video_float_right'><iframe width="400" height="300" src="https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ub1tPayFjz7w-LCTQ_gYs7V" frameborder="0" allowfullscreen></iframe><figcaption>Video: Spring 2017 Game Projects</figcaption></figure>
+
   <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYp9yKJnGdBN-66di_5G4d2' style='border:none;'></iframe><figcaption>Video: Summer 2015 Game Projects</figcaption></figure>
 
   <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ubHF8yQe0kly1_00sM8S8Pv' style='border:none;'></iframe><figcaption>Video: Spring 2015 Game Projects</figcaption></figure>
