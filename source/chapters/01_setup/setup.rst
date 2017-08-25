@@ -31,7 +31,6 @@ Let's go through these four items in detail.
 .. _Python: https://www.python.org/
 .. _Arcade: http://arcade.academy/
 .. _PyCharm: https://www.jetbrains.com/pycharm/
-.. _SourceTree: https://www.sourcetreeapp.com/
 .. _GitHub: https://github.com/
 .. _BitBucket: https://bitbucket.org/
 
@@ -59,9 +58,9 @@ computer. For example, right now you might have an Intel i7 or an AMD-FX CPU in
 your computer.
 
 .. figure:: Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg
-  width: 500px
+    :width: 300px
 
-  Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`)
+    Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`_)
 
 The CPU gets its instructions by reading a set of numbers. For example
 the number "04" might be an instruction to add two other numbers together.
@@ -259,6 +258,8 @@ hassle to make sure they use Python 3.
 Setup the Programming Environment
 ---------------------------------
 
+To get your computer ready for programming, we need to install Python, some Python libraries, and an editor.
+
 Installing Python
 ^^^^^^^^^^^^^^^^^
 
@@ -294,14 +295,21 @@ If you have an e-mail that ends in ``.edu`` you can
 ask for a `student license`_. It can be used on a school computer, or on your own
 computer.
 
+What is a text editor? What is an IDE? Read more at
+`Understanding and Choosing Text Editors`_.
+
+.. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
-.. _PyCharm: https://www.jetbrains.com/pycharm/
 
 Setup the Distributed Version Control System
 --------------------------------------------
 
+Now we need to set up the computer to manage the code that we type in. This will allow you to upload the code so that
+I can see it and give feedback.
+
 * Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
-* Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to make a free account for download and use.
+* Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
+  make a free account for download and use.
 
 .. _SourceTree: https://www.sourcetreeapp.com/
 .. _Git DVCS: https://git-scm.com/download/win
