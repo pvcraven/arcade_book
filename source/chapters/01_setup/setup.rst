@@ -1,4 +1,9 @@
+
+
 .. sectnum::
+    :start: 1
+
+.. _chapter-setup:
 
 Understanding and Setting Up Your System
 ========================================
@@ -48,8 +53,15 @@ even knowing what a programming language was! So let's get that out of the way.
 What is a Programming Language?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Computers have a Central Processing Unit (CPU_) that are the main "brains" of the
-computer. For example, you might have an Intel i7 or an AMD-FX in your computer.
+Computers have a chip called the Central Processing Unit (CPU_) that functions
+as the main "brain" of the
+computer. For example, right now you might have an Intel i7 or an AMD-FX CPU in
+your computer.
+
+.. figure:: Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg
+  width: 500px
+
+  Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`)
 
 The CPU gets its instructions by reading a set of numbers. For example
 the number "04" might be an instruction to add two other numbers together.
@@ -63,8 +75,9 @@ and some are computer instructions.
 Machine Code
 ^^^^^^^^^^^^
 
-In the early days of computing, this is how people coded programs. Just punch
-in numbers that represent computer instructions. Then punch in data.
+In the early days of computing, programmers punched
+in numbers that represented commands for the CPU.
+Then the programmers punched in the data.
 
 We call these numbers that are instructions `machine code`_. Note that not
 all numbers on the computer are machine code (they might just be data),
@@ -222,12 +235,18 @@ We use Python 3. Why are you going to care?
 * Systems such as the Mac and Linux have Python 2 installed by default.
 
 If you see a Python example on the web that has a print statement that looks
-like::
+like:
 
+.. code-block:: python
+
+  # A "print" statement with Python Version 2.x
   print "Hi"
 
-Instead of::
+Instead of:
 
+.. code-block:: python
+
+  # A "print" statement with Python Version 3.x
   print("Hi")
 
 Then you have a Python 2 example and it won't run with what we install and use
@@ -240,6 +259,9 @@ hassle to make sure they use Python 3.
 Setup the Programming Environment
 ---------------------------------
 
+Installing Python
+^^^^^^^^^^^^^^^^^
+
 In addition to the Python language, we are going to use a library of commands
 for drawing on the screen. This is called the "Arcade" library.
 
@@ -251,13 +273,24 @@ Installation for installing Python and the Arcade library are available below:
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
 
+Installing an IDE
+^^^^^^^^^^^^^^^^^
+
 We also need an editor. Python comes with an editor called IDLE, but it is
 awful and not worth using. We'll use an editor called PyCharm.
 
+PyCharm is a powerful program that lets you do more than just edit the
+program, it also includes a large set of tools that programmers need. This
+type of environment is called an **Integrated Development Environment**, or **IDE**
+for short.
+
 Download and install PyCharm_.
-You'll need a license to use
-PyCharm. They are free for educational use. See your instructor for how to
-get a PyCharm license, or if you have an e-mail that ends in ``.edu`` you can
+You can use their community edition for free. We won't use the
+features in the professional edition. If you decide to
+pick the professional edition anyway,
+you'll need a license to use it.
+But licenses are free for educational use!
+If you have an e-mail that ends in ``.edu`` you can
 ask for a `student license`_. It can be used on a school computer, or on your own
 computer.
 

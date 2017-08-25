@@ -3,7 +3,8 @@
 Lab 1: First Program
 ====================
 
-For this lab you will turn in via Scholar a BitBucket URL to the program that
+This lab assumes you've read through :ref:`chapter-setup`.
+For this lab you will turn in a BitBucket URL to the program that
 you will create after following this tutorial.
 
 This lab/tutorial has three parts:

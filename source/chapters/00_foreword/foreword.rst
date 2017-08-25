@@ -1,21 +1,25 @@
 Foreword - Why Learn Programming?
 =================================
 
-The goal of this class is to take learn how to create 2D video games.
-As a bonus, we'll be learning all the standard topics of first-semester
-college course along the way.
+Hello! My goal is to teach you how to program 2D video games.
+Well, really my goal is to show you how much fun programming can be. I'm also
+supposed to teach the topics of a typical first-semester programming class, but
+none of that matters unless I can show you that programming is
+worth learning.
 
-We'll create our first graphics in Chapter 2. Chapter 1 is about getting your
-system set up, understanding a few important concepts, and learning how to
-manage your code with the same systems that you'll find professional programmers
-using.
+.. attention::
+    Not until Chapter 2 do we show how to create your first graphics.
+    Chapter 1 shows how to get our computers set up for programming.
+    Chapter 1 is also about learning how to
+    manage your code with the same systems that you'll find professional programmers
+    using.
 
 You can earn a lot of money by programming. There are so many cool things
 you can create. It is a fun career, hobby, or passion. It is also a lot of
 fun to get started.
 
-Here are some videos of games students have created in prior semesters. Next
-year I'll add your games to the wall of fame:
+Here are some videos of games students have created in prior semesters. Send me
+a video of your game and I'll add it to the wall.
 
 .. raw:: html
 

@@ -4,16 +4,23 @@
 How to Draw with Your Computer
 ==============================
 
+Finally, time to do start making graphics!
+
 By the end of this chapter, you should know how to write programs that will
 draw images on the screen. Below is an example of what one student did:
 
 .. image:: simpson_map.png
 
+At the end of :ref:`lab-02` you can page through several other examples
+of what students have created for this lab.
+
 Creating a New Program
 ----------------------
 
 Open up PyCharm to the same ``CMSC 150`` project we created earlier. We'll use
-it for all our work this semester.
+it for all our work this semester. Do **not** create new projects for each
+lab or program you create in this class. Just use one project for the entire
+class.
 
 We are going to create a lot of code samples as we go through the chapters.
 Let's create a directory in our project for these samples, away from the labs.
@@ -43,13 +50,13 @@ Let's try running the program. But before we run the program, we need to make
 sure we are running the *right* program. Look at the image below. If I select
 "run" with the green arrow, I will run ``lab_01.py``, *not* the program I
 want to run. You need to right-click on our program and select
-"Run 'drawing_sample.py'" instead.
+"Run ``drawing_sample.py``" instead.
 
 .. image:: running_the_right_program.png
 
-Hey! When we run the program, nothing happens. That's because
+Hey wait! When we finally run our program, nothing happens. That's because
 the only code that we wrote were "comments." Comments are ignored.
-Therefore, there was nothing for the computer to do.
+Therefore, there was nothing for the computer to do. Read on.
 
 Import the Arcade Library
 -------------------------
@@ -58,7 +65,7 @@ Before we can draw anything, we need to import a "library" of code that has
 commands for drawing.
 
 Computer languages come with a set of built-in commands. Most programs will
-require more commands than what the computer language loads by default. These
+require *more* commands than what the computer language loads by default. These
 sets of commands are called **libraries**. Some languages have their own special
 term for these libraries. In the case of Python, they are called **modules**.
 
@@ -69,16 +76,13 @@ to do is add ``import arcade`` at the top of our program.
 .. attention::
     Libraries should always be imported at the **top** of your program.
     Only comments should appear ahead of an ``import`` statement.
-
-Technically,
-you can import libraries elsewhere in your code, as long as they occur before
-the library is called. But don't. Only import the library at the top of your
-program. The only thing that could be ahead of an ``import`` statement would be
-comments.
+    Technically, you *can* put the ``import`` statement somewhere else,
+    just like technically you *can* wear a pair of shorts on your head. But
+    don't. Trust me on this.
 
 In the code below, we've imported the arcade library. If you run the code,
-nothing will happen. We've asked to load the arcade
-library, but we haven't done anything with it yet.
+yet again nothing will happen. We've asked to load the arcade
+library, but we haven't *done* anything with it yet. That's our next step.
 
 .. literalinclude:: import_arcade.py
     :language: python
@@ -93,21 +97,32 @@ Now it is time to open the window. See the command below:
 .. image:: open_window.svg
 
 How does this command work? To begin, we select the arcade library
-with ``arcade``. Then we separate the library from the function we want to
-call with a period: ``.`` Next, we put in the function. Which happens to be
-``open_window``. Commands that we can run are called **functions**.
+with ``arcade``. Then we separate the library from the command we want to
+call with a period: ``.`` Next, we put in the name of the command to run.
+Which happens to be ``open_window``.
 
 .. note::
 
     Commands that we can run are called **functions**.
 
 Just like the sine and cosine functions in math, we surround the function
-**parameters** with parenthesis. ``my_function(parameters)`` The data we need
-to pass the function are the parameters. In this case, we want to give the command
-the text that will appear on the title bar. There are two more parameters
-that specify the width and height of the window drawing surface in pixels.
-Since the numbers specify the part of the window you can draw on, the actual
-window is larger to accomidate the title bar and borders. So a 600x600 window
+**parameters** with parenthesis. For example:
+
+.. code-block:: python
+
+    my_function(parameters)
+
+The data we need
+to pass the function are the parameters. In the case of ``open_window``, we
+need three parameters:
+
+* The window width in pixels.
+* The window height in pixels.
+* The text that will appear on the title bar.
+
+In the case of width and height, the numbers specify the part of the window you
+can draw on. The actual
+window is larger to accommodate the title bar and borders. So a 600x600 window
 is really 602x632 if you count the title bar and borders.
 
 Wait, how do we know that it was the ``open_window`` function to call? How did
