@@ -506,5 +506,63 @@ known file types.""
 For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
 Then click the "view" tab and make sure “File name extensions” has been checked.
 
-Great! Now let's make our first program with :ref:`lab-01`.
+Great! Now let's make our first program with.
 
+.. _print-function:
+
+The Print Function
+------------------
+
+We will use a function called ``print`` to print to the screen.
+``print`` is called a *function*.
+
+You've already used functions
+in mathematics. For example, **sin** and **cos**.
+Functions are followed by parentheses: ``( )``.
+We put the
+function *parameter(s)* inside the parenthesis.
+
+With a sine function, we put in an angle. With
+the ``print`` function, we are going to put the text we want to print. Text must be enclosed in quotes.
+
+::
+
+    print("Hello there")
+
+Note that case matters. The following will not work:
+
+::
+
+    Print("Hello there")
+
+Great! Time to run it.
+Right-click on the program and select "Run 'lab_01.py'"
+
+Ok, now it's time to update our program. Go back to our program and improve
+it by printing multiple lines, while quoting Snoopy's famous story:
+
+::
+
+	print("It was a dark and stormy night.")
+	print("Suddenly a shot rang out!")
+
+Ok, now it is time to make this lab yours. Write program that consists of
+several print statements. Try these features out:
+
+::
+
+	print("You can print a statement surrounded by double quotes.")
+	print('You can print a statement surrounded by single quotes.')
+
+	print("If you want to print a double quote, you can by prepending it with")
+	print("a slash. \"That's great!\" he said.")
+
+	print("If you want to print a backslash, you can by prepending it with")
+	print("a slash. So this \\ prints one backslash, and this \\\\ does two.")
+
+	print("You can print a blank line with a empty print statement.")
+	print()
+
+	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
+
+Now make your *own* program. Don't just copy mine.

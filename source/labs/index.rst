@@ -4,8 +4,8 @@ Labs
 .. toctree::
    :maxdepth: 1
 
-   lab_01_first_program/chapter_01_first_program
-   lab_02_drawing/chapter_02_drawing
+   lab_01_first_program/first_program
+   lab_02_drawing/drawing
    lab_03_function_drawing/function_drawing
    lab_04_camel/camel
    lab_05_loopy_lab/loopy_lab
