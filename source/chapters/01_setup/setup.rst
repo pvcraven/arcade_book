@@ -513,6 +513,11 @@ Great! Now let's make our first program with.
 The Print Function
 ------------------
 
+.. _print-hello-world:
+
+Printing Hello World
+^^^^^^^^^^^^^^^^^^^^
+
 We will use a function called ``print`` to print to the screen.
 ``print`` is called a *function*.
 
@@ -538,13 +543,95 @@ Note that case matters. The following will not work:
 Great! Time to run it.
 Right-click on the program and select "Run 'lab_01.py'"
 
+Before we go on, note how the PyCharm window is put together.
+See the output of your program at the bottom of the screen.
+Click the image below to make it bigger and note the:
+
+* Right margin. You can write code past this point, but don’t.
+* Where you can hover your mouse for "hints" on how to make your code better.
+* Where you can quickly click to run your program again.
+
+.. image:: pycharm_window.png
+
 Ok, now it's time to update our program. Go back to our program and improve
 it by printing multiple lines, while quoting Snoopy's famous story:
+
+.. _first-commit:
+
+First Commit
+^^^^^^^^^^^^
+
+It is time to commit. Wait! You are young and don't want to commit yet?
+
+The cool thing with version control, is that every time you commit, you can go back to the
+code at that point in time. Version control lets you take it all back! It is the best type
+of commitment ever!
+
+Open SourceTree and:
+
+1. Select "Branches"
+2. Select "master" (This is the "master" branch. It will be the only branch we use for this class.)
+3. Select "Uncommitted changes". If you don't have any changes, this line won't appear.
+4. Select the file we want to commit. All the changed files will be listed here. If a file wasn't changed, it won't
+   be listed. Yellow files have been changed, purple files aren't under version control, green files are new, gray
+   files are missing, and red files are set to be deleted.
+5. Go ahead and hit "commit".
+
+.. image:: sourcetree_first_commit_01.png
+
+While we hit "commit" in the prior screen, we haven't committed yet.
+
+1. Type in a message so you can track what this commit was.
+2. Select that you want to push the code to the server after you commit.
+3. Hit the commit button. Not the button in the top left, but the commit button in the lower right. (Confusing, I know.)
+
+.. image:: sourcetree_first_commit_02.png
+
+Go back in SourceTree and see that your commit happened:
+
+.. image:: sourcetree_first_commit_03.png
+
+Did the code get to the BitBucket website? You can go to the website and see the commits:
+
+.. image:: bitbucket_commit_01.png
+
+You can also see the code:
+
+.. image:: bitbucket_commit_02.png
+
+.. _print-multiple-lines:
+
+Multiple Print Lines
+^^^^^^^^^^^^^^^^^^^^
+
+Let's add additional code:
 
 ::
 
 	print("It was a dark and stormy night.")
 	print("Suddenly a shot rang out!")
+
+Go ahead and run it to make sure it outputs as expected.
+
+Once you have that working, let's try committing the change. Flip to SourceTree and select "Uncommitted Changes"
+again:
+
+.. image:: bitbucket_commit_03.png
+
+Note that when you select the file, you see both the new and old text:
+
+.. image:: bitbucket_commit_04.png
+
+The red text represents text that you removed. The green text represents text you added. White text is unchanged.
+Even if you can see the red text, it is not in the file. This sometimes throws people off when they are looking
+at the commit history.
+
+Go ahead and commit the file.
+
+.. _escape-codes:
+
+Escape Codes
+^^^^^^^^^^^^
 
 Ok, now it is time to make this lab yours. Write program that consists of
 several print statements. Try these features out:
@@ -564,5 +651,18 @@ several print statements. Try these features out:
 	print()
 
 	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
+	print("""You can pring
+	on multiple
+	lines using
+	triple
+	quotes. Just in
+	case you wanted to.""")
 
-Now make your *own* program. Don't just copy mine.
+
+Turning In Your Programs
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
+
+.. image:: bitbucket_copy_url.png
+
