@@ -3,6 +3,23 @@
 Lab 1: First Program
 ====================
 
+1. If you are installing on your own computer, install Python and set up the libraries. See :ref:`installing-python`.
+2. If you are installing on your own computer, install PyCharm. See :ref:`installing-pycharm`.
+3. If you are installing on your own computer, install Git. See :ref:`installing-git`.
+4. If you are installing on your own computer, install SourceTree. See :ref:`installing-sourcetree`.
+5. Fork the repository. See :ref:`fork-repository`.
+6. Share the repository. See :ref:`share-repository`.
+7. Clone the repository :ref:`clone-repository`.
+8. Create and run a test program that prints something
+9. Commit and push
+10. Make the lab yours
+11. Commit and push
+12. Find in BitBucket, copy URL, submit for grading.
+
+
+Old
+---
+
 This lab assumes you've read through :ref:`chapter-setup`.
 For this lab you will turn in a BitBucket URL to the program that
 you will create after following this tutorial.

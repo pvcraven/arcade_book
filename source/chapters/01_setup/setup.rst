@@ -260,6 +260,8 @@ Setup the Programming Environment
 
 To get your computer ready for programming, we need to install Python, some Python libraries, and an editor.
 
+.. _installing-python:
+
 Installing Python
 ^^^^^^^^^^^^^^^^^
 
@@ -273,6 +275,8 @@ Installation for installing Python and the Arcade library are available below:
   to Path" step. This seems to be the most frequent issue.)
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
+
+.. _installing-pycharm:
 
 Installing an IDE
 ^^^^^^^^^^^^^^^^^
@@ -307,13 +311,6 @@ What is a Distributed Version Control System
 Now we need to set up the computer to manage the code that we type in. This will allow you to upload the code so that
 I can see it and give feedback.
 
-* Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
-* Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
-  make a free account for download and use.
-
-.. _SourceTree: https://www.sourcetreeapp.com/
-.. _Git DVCS: https://git-scm.com/download/win
-
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
 should be done without version control. Even all my notes for class I keep in
@@ -347,11 +344,30 @@ today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
 is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
 standardize on Git.
 
+.. _installing-git:
+
+Download Git
+^^^^^^^^^^^^
+
+Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
+
+.. _installing-sourcetree:
+
+Download SourceTree
+^^^^^^^^^^^^^^^^^^^
+
+Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
+make a free account for download and use.
+
+.. _SourceTree: https://www.sourcetreeapp.com/
+.. _Git DVCS: https://git-scm.com/download/win
+
+
 .. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
-Worknig With Version Control
+Working With Version Control
 ----------------------------
 
 We are going to create a **repository**. A repository is a set of files
@@ -361,6 +377,8 @@ We will only create one repository for this class. If you create any more than
 one repository, you are doing something wrong. You might have several "clones"
 of the repository. But there will only be one repository. Do **not** repeat
 this process for each assignment.
+
+.. _fork-repository:
 
 Forking the Repository
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -398,13 +416,21 @@ Forking the Repository
     :width: 450px
 
 6. Now you have your own fork. It exists on the BitBucket server only.
-7. Give read permission to the instructor ``pcraven`` for your fork so he can
+
+.. _share-repository:
+
+Share the Repository
+^^^^^^^^^^^^^^^^^^^^
+
+1. Give read permission to the instructor ``pcraven`` for your fork so he can
    grade your assignments.
 
 .. attention::
     Check the feedback on your homework. If the instructor can't get to your
     homework, you'll get a zero. You need to correct this and resubmit
     ASAP.
+
+.. _clone-repository:
 
 Cloning the Repository
 ^^^^^^^^^^^^^^^^^^^^^^
