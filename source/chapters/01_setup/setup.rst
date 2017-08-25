@@ -301,7 +301,7 @@ What is a text editor? What is an IDE? Read more at
 .. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
 
-Setup the Distributed Version Control System
+What is a Distributed Version Control System
 --------------------------------------------
 
 Now we need to set up the computer to manage the code that we type in. This will allow you to upload the code so that
@@ -351,8 +351,8 @@ standardize on Git.
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
-Creating a Repository
----------------------
+Worknig With Version Control
+----------------------------
 
 We are going to create a **repository**. A repository is a set of files
 and directories that will contain all your work for this class.
@@ -362,17 +362,22 @@ one repository, you are doing something wrong. You might have several "clones"
 of the repository. But there will only be one repository. Do **not** repeat
 this process for each assignment.
 
-1. Figure out where you want to store your files. You might want to store
-   the files on your laptop, a flash drive, or a networked drive. I don't
-   recommend saving it onto the lab computer, but that is an option.
-2. We are going to store our programs on-line with a website called BitBucket.
+Forking the Repository
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You should only have to fork the code **once** during class. If you do it more than
+    once, something is wrong.
+
+
+1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called
    Atlassian. They offer enhanced
    accounts for e-mail addresses ending in ``.edu``.
    To use BitBucket, create an account https://bitbucket.org/account/signup/
-3. Go to this web address which has a template for the labs we'll create in
+2. Go to this web address which has a template for the labs we'll create in
    class: https://bitbucket.org/pcraven/arcade-games-work
-4. We need to "fork" the repository. This will create your own copy of the
+3. We need to "fork" the repository. This will create your own copy of the
    repository that will be independent of mine. Changes you make to a "fork"
    aren't automatically sent to the original.
    Fork the repository by clicking on the plus button:
@@ -380,44 +385,78 @@ this process for each assignment.
 .. image:: bitbucket_plus.png
     :width: 400px
 
-5. Then select "Fork":
+4. Then select "Fork":
 
 .. image:: bitbucket_fork_01.png
-    :width: 320px
+    :width: 300px
 
-6. Next, select a name for your fork. Use your last name and first name. Also,
+5. Next, select a name for your fork. Use your last name and first name. Also,
    select that your repository is private, so that you don't share your
    homework answers with the world.
 
 .. image:: bitbucket_fork_02.png
     :width: 450px
 
-7. Now you have your own fork. It exists on the BitBucket server. We want to
+6. Now you have your own fork. It exists on the BitBucket server only.
+7. Give read permission to the instructor ``pcraven`` for your fork so he can
+   grade your assignments.
+
+.. attention::
+    Check the feedback on your homework. If the instructor can't get to your
+    homework, you'll get a zero. You need to correct this and resubmit
+    ASAP.
+
+Cloning the Repository
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You will clone the repository once for each place you want to store your code.
+
+1. Figure out where you want to store your files. You might want to store
+   the files on your laptop, a flash drive, or a networked drive. I don't
+   recommend saving it onto the lab computer, but that is an option.
+2. We want to
    now copy it to your computer. We'll call this a "clone." A "clone" is a copy
    we normally try to keep synced up, which is different than a "fork."
    To clone the repository, hit the "plus" and then select "Clone Repository"
 
 .. image:: bitbucket_clone.png
-    :width: 320px
-
-8. Copy the address that it gives you.
-9. Start SourceTree. Select File...New:
-
-.. image:: sourcetree_clone_01.png
     :width: 300px
 
-10. Paste the address you copied from the website to SourceTree. When you move
-    out of the field you'll be asked for your Atlassian login information.
+3. Copy the address that it gives you.
+4. Start SourceTree. Select File...New:
+
+.. image:: sourcetree_clone_01.png
+    :width: 250px
+
+5. Paste the address you copied from the website to SourceTree. When you move
+   out of the field you'll be asked for your Atlassian login information.
 
 .. image:: sourcetree_clone_02.png
-    :width: 600px
+    :width: 620px
 
-11. Select your directory
-12. Open PyCharm
-13. Create PyCharm Project
+6. Select the directory where you will be saving your files. If you want to save it on your flash drive or network
+   drive, now is the time to select that.
+7. Select "Clone". After the cloning finishes, you have a copy of the template on your computer! Now we just
+   need to open up our editor.
+
+
+Opening in PyCharm
+^^^^^^^^^^^^^^^^^^
+
+1. Open PyCharm.
+2. Select File...Open. Then select the directory that you cloned the repository.
 
 Committing and Pushing Code
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You will do this for each assignment.
+
+Submitting Your Assignment
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Copy the link from BitBucket, and turn it in on Scholar.
 
 Viewing File Extensions
 -----------------------

@@ -85,7 +85,7 @@ Part 1: First Program
 
 ::
 
-	Print("Hello there")
+    Print("Hello there")
 
 * Great! Time to run it.
   Right-click on the program and select "Run 'lab_01.py'"
