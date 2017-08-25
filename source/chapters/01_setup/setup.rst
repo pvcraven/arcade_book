@@ -5,8 +5,8 @@
 
 .. _chapter-setup:
 
-Understanding and Setting Up Your System
-========================================
+Getting Started
+===============
 
 Before you begin, you need to install a few things on the computer.
 Using a school computer? You may have these already installed. Yay!
@@ -346,15 +346,15 @@ standardize on Git.
 
 .. _installing-git:
 
-Download Git
-^^^^^^^^^^^^
+Installing Git
+^^^^^^^^^^^^^^
 
 Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
 
 .. _installing-sourcetree:
 
-Download SourceTree
-^^^^^^^^^^^^^^^^^^^
+Installing SourceTree
+^^^^^^^^^^^^^^^^^^^^^
 
 Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
 make a free account for download and use.
@@ -424,6 +424,8 @@ Share the Repository
 
 1. Give read permission to the instructor ``pcraven`` for your fork so he can
    grade your assignments.
+
+.. image:: invite.png
 
 .. attention::
     Check the feedback on your homework. If the instructor can't get to your
