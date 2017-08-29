@@ -13,8 +13,10 @@ Using a school computer? You may have these already installed. Yay!
 Still, read through this part. Make sure you know how the computer
 is setup up.
 
-When something goes wrong, you need to understand how your system is set up.
-Avoid frustration later. Learn it now.
+Getting a system set up and ready to program can be a bit frustrating. **Don't give up.** Once you've got a system
+set up for programming you don't need to think about it again. You can concentrate on the programming part.
+You may get stuck during the setup, so don't hesitate to reach out and get help.
+
 
 Your development computer will need:
 
