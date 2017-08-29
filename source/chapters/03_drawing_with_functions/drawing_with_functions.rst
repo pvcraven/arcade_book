@@ -1,8 +1,8 @@
 .. sectnum::
     :start: 3
 
-Drawing with Functions
-======================
+Creating Functions
+==================
 
 The goal of this chapter is to learn how to create our own functions to draw.
 We don't want to be stuck with just ``draw_circle`` commands.

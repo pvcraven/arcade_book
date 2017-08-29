@@ -5,8 +5,8 @@
 
 .. _chapter-setup:
 
-Understanding and Setting Up Your System
-========================================
+Getting Started
+===============
 
 Before you begin, you need to install a few things on the computer.
 Using a school computer? You may have these already installed. Yay!
@@ -262,6 +262,8 @@ Setup the Programming Environment
 
 To get your computer ready for programming, we need to install Python, some Python libraries, and an editor.
 
+.. _installing-python:
+
 Installing Python
 ^^^^^^^^^^^^^^^^^
 
@@ -275,6 +277,8 @@ Installation for installing Python and the Arcade library are available below:
   to Path" step. This seems to be the most frequent issue.)
 * `Mac Installation <http://arcade.academy/installation_mac.html>`_
 * `Linux Installation <http://arcade.academy/installation_linux.html>`_
+
+.. _installing-pycharm:
 
 Installing an IDE
 ^^^^^^^^^^^^^^^^^
@@ -303,18 +307,11 @@ What is a text editor? What is an IDE? Read more at
 .. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
 
-Setup the Distributed Version Control System
+What is a Distributed Version Control System
 --------------------------------------------
 
 Now we need to set up the computer to manage the code that we type in. This will allow you to upload the code so that
 I can see it and give feedback.
-
-* Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
-* Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
-  make a free account for download and use.
-
-.. _SourceTree: https://www.sourcetreeapp.com/
-.. _Git DVCS: https://git-scm.com/download/win
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
@@ -349,12 +346,31 @@ today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
 is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
 standardize on Git.
 
+.. _installing-git:
+
+Installing Git
+^^^^^^^^^^^^^^
+
+Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
+
+.. _installing-sourcetree:
+
+Installing SourceTree
+^^^^^^^^^^^^^^^^^^^^^
+
+Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
+make a free account for download and use.
+
+.. _SourceTree: https://www.sourcetreeapp.com/
+.. _Git DVCS: https://git-scm.com/download/win
+
+
 .. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
-Creating a Repository
----------------------
+Working With Version Control
+----------------------------
 
 We are going to create a **repository**. A repository is a set of files
 and directories that will contain all your work for this class.
@@ -364,17 +380,24 @@ one repository, you are doing something wrong. You might have several "clones"
 of the repository. But there will only be one repository. Do **not** repeat
 this process for each assignment.
 
-1. Figure out where you want to store your files. You might want to store
-   the files on your laptop, a flash drive, or a networked drive. I don't
-   recommend saving it onto the lab computer, but that is an option.
-2. We are going to store our programs on-line with a website called BitBucket.
+.. _fork-repository:
+
+Forking the Repository
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You should only have to fork the code **once** during class. If you do it more than
+    once, something is wrong.
+
+
+1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called
    Atlassian. They offer enhanced
    accounts for e-mail addresses ending in ``.edu``.
    To use BitBucket, create an account https://bitbucket.org/account/signup/
-3. Go to this web address which has a template for the labs we'll create in
+2. Go to this web address which has a template for the labs we'll create in
    class: https://bitbucket.org/pcraven/arcade-games-work
-4. We need to "fork" the repository. This will create your own copy of the
+3. We need to "fork" the repository. This will create your own copy of the
    repository that will be independent of mine. Changes you make to a "fork"
    aren't automatically sent to the original.
    Fork the repository by clicking on the plus button:
@@ -382,44 +405,88 @@ this process for each assignment.
 .. image:: bitbucket_plus.png
     :width: 400px
 
-5. Then select "Fork":
+4. Then select "Fork":
 
 .. image:: bitbucket_fork_01.png
-    :width: 320px
+    :width: 300px
 
-6. Next, select a name for your fork. Use your last name and first name. Also,
+5. Next, select a name for your fork. Use your last name and first name. Also,
    select that your repository is private, so that you don't share your
    homework answers with the world.
 
 .. image:: bitbucket_fork_02.png
     :width: 450px
 
-7. Now you have your own fork. It exists on the BitBucket server. We want to
+6. Now you have your own fork. It exists on the BitBucket server only.
+
+.. _share-repository:
+
+Share the Repository
+^^^^^^^^^^^^^^^^^^^^
+
+1. Give read permission to the instructor ``pcraven`` for your fork so he can
+   grade your assignments.
+
+.. image:: invite.png
+
+.. attention::
+    Check the feedback on your homework. If the instructor can't get to your
+    homework, you'll get a zero. You need to correct this and resubmit
+    ASAP.
+
+.. _clone-repository:
+
+Cloning the Repository
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You will clone the repository once for each place you want to store your code.
+
+1. Figure out where you want to store your files. You might want to store
+   the files on your laptop, a flash drive, or a networked drive. I don't
+   recommend saving it onto the lab computer, but that is an option.
+2. We want to
    now copy it to your computer. We'll call this a "clone." A "clone" is a copy
    we normally try to keep synced up, which is different than a "fork."
    To clone the repository, hit the "plus" and then select "Clone Repository"
 
 .. image:: bitbucket_clone.png
-    :width: 320px
-
-8. Copy the address that it gives you.
-9. Start SourceTree. Select File...New:
-
-.. image:: sourcetree_clone_01.png
     :width: 300px
 
-10. Paste the address you copied from the website to SourceTree. When you move
-    out of the field you'll be asked for your Atlassian login information.
+3. Copy the address that it gives you.
+4. Start SourceTree. Select File...New:
+
+.. image:: sourcetree_clone_01.png
+    :width: 250px
+
+5. Paste the address you copied from the website to SourceTree. When you move
+   out of the field you'll be asked for your Atlassian login information.
 
 .. image:: sourcetree_clone_02.png
-    :width: 600px
+    :width: 620px
 
-11. Select your directory
-12. Open PyCharm
-13. Create PyCharm Project
+6. Select the directory where you will be saving your files. If you want to save it on your flash drive or network
+   drive, now is the time to select that.
+7. Select "Clone". After the cloning finishes, you have a copy of the template on your computer! Now we just
+   need to open up our editor.
+
+
+Opening in PyCharm
+^^^^^^^^^^^^^^^^^^
+
+1. Open PyCharm.
+2. Select File...Open. Then select the directory that you cloned the repository.
 
 Committing and Pushing Code
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    You will do this for each assignment.
+
+Submitting Your Assignment
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Copy the link from BitBucket, and turn it in on Scholar.
 
 Viewing File Extensions
 -----------------------
@@ -441,5 +508,163 @@ known file types.""
 For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
 Then click the "view" tab and make sure “File name extensions” has been checked.
 
-Great! Now let's make our first program with :ref:`lab-01`.
+Great! Now let's make our first program with.
+
+.. _print-function:
+
+The Print Function
+------------------
+
+.. _print-hello-world:
+
+Printing Hello World
+^^^^^^^^^^^^^^^^^^^^
+
+We will use a function called ``print`` to print to the screen.
+``print`` is called a *function*.
+
+You've already used functions
+in mathematics. For example, **sin** and **cos**.
+Functions are followed by parentheses: ``( )``.
+We put the
+function *parameter(s)* inside the parenthesis.
+
+With a sine function, we put in an angle. With
+the ``print`` function, we are going to put the text we want to print. Text must be enclosed in quotes.
+
+::
+
+    print("Hello there")
+
+Note that case matters. The following will not work:
+
+::
+
+    Print("Hello there")
+
+Great! Time to run it.
+Right-click on the program and select "Run 'lab_01.py'"
+
+Before we go on, note how the PyCharm window is put together.
+See the output of your program at the bottom of the screen.
+Click the image below to make it bigger and note the:
+
+* Right margin. You can write code past this point, but don’t.
+* Where you can hover your mouse for "hints" on how to make your code better.
+* Where you can quickly click to run your program again.
+
+.. image:: pycharm_window.png
+
+Ok, now it's time to update our program. Go back to our program and improve
+it by printing multiple lines, while quoting Snoopy's famous story:
+
+.. _first-commit:
+
+First Commit
+^^^^^^^^^^^^
+
+It is time to commit. Wait! You are young and don't want to commit yet?
+
+The cool thing with version control, is that every time you commit, you can go back to the
+code at that point in time. Version control lets you take it all back! It is the best type
+of commitment ever!
+
+Open SourceTree and:
+
+1. Select "Branches"
+2. Select "master" (This is the "master" branch. It will be the only branch we use for this class.)
+3. Select "Uncommitted changes". If you don't have any changes, this line won't appear.
+4. Select the file we want to commit. All the changed files will be listed here. If a file wasn't changed, it won't
+   be listed. Yellow files have been changed, purple files aren't under version control, green files are new, gray
+   files are missing, and red files are set to be deleted.
+5. Go ahead and hit "commit".
+
+.. image:: sourcetree_first_commit_01.png
+
+While we hit "commit" in the prior screen, we haven't committed yet.
+
+1. Type in a message so you can track what this commit was.
+2. Select that you want to push the code to the server after you commit.
+3. Hit the commit button. Not the button in the top left, but the commit button in the lower right. (Confusing, I know.)
+
+.. image:: sourcetree_first_commit_02.png
+
+Go back in SourceTree and see that your commit happened:
+
+.. image:: sourcetree_first_commit_03.png
+
+Did the code get to the BitBucket website? You can go to the website and see the commits:
+
+.. image:: bitbucket_commit_01.png
+
+You can also see the code:
+
+.. image:: bitbucket_commit_02.png
+
+.. _print-multiple-lines:
+
+Multiple Print Lines
+^^^^^^^^^^^^^^^^^^^^
+
+Let's add additional code:
+
+::
+
+	print("It was a dark and stormy night.")
+	print("Suddenly a shot rang out!")
+
+Go ahead and run it to make sure it outputs as expected.
+
+Once you have that working, let's try committing the change. Flip to SourceTree and select "Uncommitted Changes"
+again:
+
+.. image:: bitbucket_commit_03.png
+
+Note that when you select the file, you see both the new and old text:
+
+.. image:: bitbucket_commit_04.png
+
+The red text represents text that you removed. The green text represents text you added. White text is unchanged.
+Even if you can see the red text, it is not in the file. This sometimes throws people off when they are looking
+at the commit history.
+
+Go ahead and commit the file.
+
+.. _escape-codes:
+
+Escape Codes
+^^^^^^^^^^^^
+
+Ok, now it is time to make this lab yours. Write program that consists of
+several print statements. Try these features out:
+
+::
+
+	print("You can print a statement surrounded by double quotes.")
+	print('You can print a statement surrounded by single quotes.')
+
+	print("If you want to print a double quote, you can by prepending it with")
+	print("a slash. \"That's great!\" he said.")
+
+	print("If you want to print a backslash, you can by prepending it with")
+	print("a slash. So this \\ prints one backslash, and this \\\\ does two.")
+
+	print("You can print a blank line with a empty print statement.")
+	print()
+
+	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
+	print("""You can pring
+	on multiple
+	lines using
+	triple
+	quotes. Just in
+	case you wanted to.""")
+
+
+Turning In Your Programs
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
+
+.. image:: bitbucket_copy_url.png
 
