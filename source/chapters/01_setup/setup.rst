@@ -726,9 +726,69 @@ several print statements. Here is my example:
 
 
 Turning In Your Programs
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
 
 .. image:: bitbucket_copy_url.png
 
+More Version Control
+--------------------
+
+Editing Elsewhere
+^^^^^^^^^^^^^^^^^
+Find this file on the BitBucket website. Hit the "Source" icon, and then
+browse to the file. Let's try editing this on-line. We could just as easily
+edit this on a different computer. Like if you had a home computer and a
+work computer. Or two different people working on the same program.
+
+.. image:: edit_online_1.png
+
+Now let's edit this, and improve it by quoting
+`A Wrinkle in Time <https://en.wikipedia.org/wiki/A_Wrinkle_in_Time>`_ instead.
+
+.. image:: edit_online_2.png
+
+Commit the change. Add a good comment, don't take the default. Don't create
+a "pull request".
+
+Pulling Changes
+^^^^^^^^^^^^^^^
+
+Next, let's pull those changes onto our computer with SourceTree:
+
+.. image:: pull.png
+
+Great! Now you should see those changes on your local computer.
+
+This works great until the same line of code is changed in two different places.
+Try adding a line 4 on-line first, and a different line 4 on your computer.
+
+When you try to push you get an angry message like this:
+
+.. image:: failed_push.png
+
+Usually students get this message late Sunday night when trying to upload their
+homework. And now they can't What to do?
+
+* Hit "Pull"
+* Look at your "Uncommitted changed"
+* Note the files that have a caution sign.
+* To keep your changes and ignore the other changes, right-click select "Resolve
+  Conflicts" and select "Resolve Using Mine"
+* To keep the changes on the server and remove yours, right-click select
+  "Resolve Conflicts" and select "Resolve Using Theirs"
+* To manually resolve the conflicts, right-click select "Resolve Conflicts"
+  and select "Mark Resolved". Both lines will be there, along with some
+  delimiters that look kind of odd. You can edit the file in PyCharm.
+
+.. image:: conflict.png
+
+* After that, select "Commit" so that you commit your merge. (Easy to forget
+  this step.)
+* Then you can push to the server.
+
+Go ahead and try this out. I'll look for it on-line when I'm grading. It should
+look like this:
+
+.. image:: see_merge_online.png

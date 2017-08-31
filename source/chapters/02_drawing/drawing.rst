@@ -351,7 +351,7 @@ There are a lot of shapes we can draw. Try running the program below:
     :language: python
     :linenos:
 
-Drawing primitives
+Drawing Primitives
 ------------------
 
 For a program showing all the drawing primitives, see the example
