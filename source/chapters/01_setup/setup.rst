@@ -663,11 +663,11 @@ There are a few other important escape codes to know. Here is a table of the imp
 =========== =======================================
 Escape code	Description
 =========== =======================================
-\'	        Single Quote
-\"	        Double Quote
-\t	        Tab
-\r	        CR: Carriage Return (move to the left)
-\n	        LF: Linefeed (move down)
+``\'``      Single Quote
+``\"``	    Double Quote
+``\t``	    Tab
+``\r``	    CR: Carriage Return (move to the left)
+``\n``	    LF: Linefeed (move down)
 =========== =======================================
 
 What is a "Carriage Return" and a "Linefeed"? Try this example:
@@ -679,6 +679,7 @@ What is a "Carriage Return" and a "Linefeed"? Try this example:
 The output from this command is:
 
 ::
+
     This
     is
     my
@@ -692,9 +693,9 @@ To make matters more complex, different operating systems have different standar
 =========== =======================================
 Escape code	Description
 =========== =======================================
-\r\n        CR+LF: Microsoft Windows
-\n          LF: UNIX based systems, and newer Macs.
-\r          CR: Older Mac based systems
+``\r\n``    CR+LF: Microsoft Windows
+``\n``      LF: UNIX based systems, and newer Macs.
+``\r``      CR: Older Mac based systems
 =========== =======================================
 
 
@@ -716,7 +717,7 @@ several print statements. Here is my example:
 	print()
 
 	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
-	print("""You can pring
+	print("""You can print
 	on multiple
 	lines using
 	triple

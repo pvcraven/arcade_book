@@ -57,3 +57,6 @@ div[class^='highlight'] pre {
     line-height: 30px;
     margin-bottom: 30px;
 }
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}
