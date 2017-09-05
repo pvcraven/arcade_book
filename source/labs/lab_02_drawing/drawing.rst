@@ -43,6 +43,10 @@ various images created by students from prior years:
 
 http://programarcadegames.com/
 
+Also, remember you can look up the available commands, called the "API" at:
+
+http://arcade.academy
+
 Also, here is an example program that shows you what I'm looking for:
 
 .. image:: final_program.png
