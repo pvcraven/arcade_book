@@ -17,7 +17,7 @@ of what students have created for this lab.
 Creating a New Program
 ----------------------
 
-Open up PyCharm to the same ``CMSC 150`` project we created earlier. We'll use
+Open up PyCharm to the same project we created earlier. We'll use
 it for all our work this semester. Do **not** create new projects for each
 lab or program you create in this class. Just use one project for the entire
 class.
