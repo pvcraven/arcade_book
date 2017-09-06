@@ -25,7 +25,7 @@ def draw_pine_tree():
     arcade.draw_triangle_filled(50, 255, 150, 255, 100, 360, arcade.color.FOREST_GREEN)
     arcade.draw_triangle_filled(60, 295, 140, 295, 100, 400, arcade.color.FOREST_GREEN)
 
-arcade.open_window("Drawing with Functions", 800, 600)
+arcade.open_window(800, 600, "Drawing with Functions")
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 

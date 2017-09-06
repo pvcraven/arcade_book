@@ -42,7 +42,7 @@ def main():
     """
     This is the main function that we call to run our program.
     """
-    arcade.open_window("Drawing with Functions", 800, 600)
+    arcade.open_window(800, 600, "Drawing with Functions")
     arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
     arcade.start_render()
 

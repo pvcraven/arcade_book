@@ -37,7 +37,7 @@ def draw_pine_tree(position_x, position_y):
     # Draw the origin point, just for reference.
     arcade.draw_point(position_x, position_y, arcade.color.RED, 4)
 
-arcade.open_window("Drawing with Functions", 800, 600)
+arcade.open_window(800, 600, "Drawing with Functions")
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 

@@ -12,7 +12,7 @@ def draw_grass():
     arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
 
 
-arcade.open_window("Drawing with Functions", 800, 600)
+arcade.open_window(800, 600, "Drawing with Functions")
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 
