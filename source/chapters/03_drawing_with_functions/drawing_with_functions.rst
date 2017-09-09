@@ -339,8 +339,6 @@ Operator   Description
     x += 5
     print(x)
 
-
-
 Using Expressions In Function Calls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -122,11 +122,9 @@ else:
 print("Done")
 
 # Comparisons using string/text
-# Note, this example does not work when running under Eclipse
-# because the input will contain an extra carriage return at the
-# end. It works fine under IDLE.
-userName = input("What is your name? ")
-if userName == "Paul":
+# The input statement will ask the user for input and put it in user_name.
+user_name = input("What is your name? ")
+if user_name == "Paul":
     print("You have a nice name.")
 else:
     print("Your name is ok.")
