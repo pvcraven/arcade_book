@@ -83,6 +83,9 @@ We get a variable called ``delta_time`` that holds how long it has been since th
 computer is slowing down, we can keep the movement from slowing down by adjusting for the actual time between function
 calls. The example below tracks how many pixels per second we should travel, then multiplies that by ``delta_time``.
 
+Note that a video walkthrough of the code is at:
+https://vimeo.com/168063840
+
 .. literalinclude:: animate_example_full.py
     :language: python
     :caption: animate_example_full.py
