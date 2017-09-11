@@ -5,8 +5,10 @@ Lab 3: Drawing with Functions
 
 Your goal: Draw and animate an image.
 
+.. image:: lab_03_example_01.gif
+
 You can update your program from Lab 2, or create a new program. This lab is worth
-20 points, see the point breakdown below.
+20 points. See the point breakdown below.
 
 Incorporate the following items:
 
