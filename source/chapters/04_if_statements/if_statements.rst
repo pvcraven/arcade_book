@@ -239,16 +239,8 @@ seconds, then shout "NOT!" Well, even your computer thinks that is lame. If you
 are going to do that, you have to start with the not operator. The following code
 uses the not to flip the value of a between true and false.
 
-.. code-block:: python
-    :linenos:
-    :caption: The not operator example 1
-
-    # How to use the not function
-    if not(a):
-        print("a is false")
-
-Because not is an operator and not a function, the parentheses aren't
-necessary. This is also legal:
+Because not is an operator and not a function, parentheses aren't
+necessary.
 
 .. code-block:: python
     :linenos:

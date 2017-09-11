@@ -229,16 +229,17 @@ you've used in math before. Here's an example:
 As you can probably guess, this will print out ``15``. We call the ``+`` sign
 an **operator**. Here are some other operators:
 
-========== ==============================
+========== =====================================
 Operator   Description
-========== ==============================
-\+         Addition
-\-         Subtraction
-\*         Multiplication
-/          Division
-//         Integer division (rounds down)
-%          Modulus (gives remainder of division)
-========== ==============================
+========== =====================================
+``+``      Addition
+``-``      Subtraction
+``*``      Multiplication
+``**``     Exponentiation (raise to the power)
+``/``      Division
+``//``     Integer division (rounds down)
+``%``      Modulus (gives remainder of division)
+========== =====================================
 
 There are two things that **don't** work like you'd expect. There is no
 "juxtaposition" used to multiply items. And the ``=`` is not an algebraic
@@ -268,8 +269,8 @@ You can rewrite the code above to work by explicitly multiplying:
 
 Easy enough, just remember to use ``*`` any time you want to multiply.
 
-It isn't an Algebraic Inequality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Assignment Operators
+^^^^^^^^^^^^^^^^^^^^
 
 The ``=`` doesn't work the same as in algebra. The ``=`` evaluates what is on
 the right, and puts it in the variable on the left. For example:
@@ -306,6 +307,40 @@ This allows us to do some strange things we can't do in algebra!
     # the result (4) back in x. So we'll print "4".
     x = x + 1
     print(x)
+
+
+The ``=`` sign is also considered an operator. Specifically an "assignment operator."
+Here are some other "assignment" operators:
+
+========== =====================================
+Operator   Description
+========== =====================================
+``=``      Assignment
+``+=``     Increment
+``-=``     Decrement
+``*=``     Multiply/Add
+========== =====================================
+
+.. code-block:: python
+
+    # This works, and prints "3"
+    x = 3
+    print(x)
+
+    # Make x bigger by one
+    x = x + 1
+    print(x)
+
+    # Make x bigger by one, just like before
+    x += 1
+    print(x)
+
+    # Make x smaller by five
+    x += 5
+    print(x)
+
+Using Expressions In Function Calls
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We can use expressions even in the calls that we make. For example, we have
 a ``draw_triangle_filled`` function. It takes three points to draw a triangle.
@@ -701,6 +736,8 @@ understand why.
 Example 1
 ^^^^^^^^^
 
+In this example, note that if you don't use a function, it doesn't run.
+
 .. code-block:: python
 
     # Example 1
@@ -800,6 +837,9 @@ Example 5
 Example 6
 ^^^^^^^^^
 
+While line 3 of this example increases ``x``, the ``x`` variable in the function is a different variable than the
+``x`` that is in the rest of the program. So that ``x`` never changes.
+
 .. code-block:: python
 
     # Example 6
@@ -813,6 +853,9 @@ Example 6
 
 Example 7
 ^^^^^^^^^
+
+This example is similar to the prior example, but we ``return x`` at the end. Turns out, it doesn't matter. Because we
+never do anything with the return value. So the global variable ``x`` still doesn't increase. See the next example.
 
 .. code-block:: python
 
@@ -828,6 +871,9 @@ Example 7
 
 Example 8
 ^^^^^^^^^
+
+This example take the value returned from ``a`` and stores it back into ``x``. How? By doing ``x = a(x)`` instead of
+just ``a(x)``.
 
 .. code-block:: python
 
@@ -859,6 +905,9 @@ Example 9
 Example 10
 ^^^^^^^^^^
 
+While you can have two ``return`` statements in a function, once you hit the first ``return`` the function ends. In
+this case, ``return y`` never runs, because we already returned from the function in the prior line.
+
 .. code-block:: python
 
     # Example 10
@@ -877,6 +926,8 @@ Example 10
 Example 11
 ^^^^^^^^^^
 
+This is not something you can do in every programming language. You can return two values by using a comma and listing them.
+
 .. code-block:: python
 
     # Example 11
@@ -893,6 +944,8 @@ Example 11
 
 Example 12
 ^^^^^^^^^^
+
+If you return two values out of a function, you can capture them this way.
 
 .. code-block:: python
 
@@ -928,6 +981,10 @@ Example 13
 
 Example 14
 ^^^^^^^^^^
+
+We will talk more about these next two examples when we talk about "lists" and "classes" later. These examples don't
+operate like you might expect at first. Take a look and see what is different. We'll explain why it works differently
+later.
 
 .. code-block:: python
 
