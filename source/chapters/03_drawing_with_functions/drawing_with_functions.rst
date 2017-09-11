@@ -357,6 +357,8 @@ By using parentheses this problem can be fixed:
 
     average = (90 + 86 + 71 + 100 + 98) / 5
 
+.. _custom-drawing-function:
+
 How to Create a Custom Drawing Function
 ---------------------------------------
 
