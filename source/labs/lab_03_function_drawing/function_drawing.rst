@@ -9,8 +9,8 @@ Your goal: Draw and animate an image.
 
 .. image:: lab_03_example_01.gif
 
-Drawing
-^^^^^^^
+Requirements for Drawing
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can update your program from Lab 2, or create a new program. This lab is worth
 20 points. See the point breakdown below.
@@ -35,12 +35,13 @@ Incorporate the following items:
 Drawing with functions is worth 16 points. You can get the final 4 points by animating your image.
 
 
-Animation
-^^^^^^^^^
+Requirements for Animation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Animate an object. The movement does not need to be complex.
 
-Tips
-----
+Tips to Make Things Easier
+--------------------------
 
 Putting Code In a Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
