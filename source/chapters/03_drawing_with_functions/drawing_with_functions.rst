@@ -92,8 +92,8 @@ where I want the tree? Like what if I wanted to draw three trees and specify
 (x, y) coordinates of those trees::
 
     draw_pine_tree(45, 92)
-    draw_pint_tree(220, 95)
-    draw_pint_tree(250, 90)
+    draw_pine_tree(220, 95)
+    draw_pine_tree(250, 90)
 
 To be able to do this, I need to learn about variables, expressions, and
 function parameters.
