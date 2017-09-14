@@ -38,7 +38,9 @@ game below loops for each guess that the user makes:
     Too low.
     Aw, you ran out of tries. The number was 11.
 
-Wait, what does this have to do with graphics and video games? A lot. Each
+(Code for this program is below: :ref:`number-guessing-game-code`)
+
+Wait, what does this looping have to do with graphics and video games? A lot. Each
 *frame* the game displays is one time through a loop. You may be familiar with
 the frames-per-second (FPS) statistic that games show. The FPS represents the
 number of times the computer updates the screen each second. The higher the
@@ -736,6 +738,19 @@ Random floating point number between 10 and 15
 .. code-block:: python
 
     my_number = random.random() * 5 + 10
+
+.. _number-guessing-game-code:
+
+Number Guessing Game Example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here is the code for the number guessing game at the start of the chapter.
+
+.. literalinclude:: number_guessing_game.py
+    :emphasize-lines: 11-13, 22-24
+    :language: python
+    :linenos:
+
 
 Mudball Example
 ^^^^^^^^^^^^^^^
