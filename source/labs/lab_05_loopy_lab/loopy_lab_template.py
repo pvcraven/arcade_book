@@ -1,7 +1,7 @@
 import arcade
 
 # Create a window
-arcade.open_window("Lab 05 - Loopy Lab", 1200, 600)
+arcade.open_window(1200, 600, "Lab 05 - Loopy Lab")
 
 arcade.set_background_color(arcade.color.AIR_FORCE_BLUE)
 
