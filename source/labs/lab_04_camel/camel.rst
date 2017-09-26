@@ -224,6 +224,8 @@ Hints
 * To prevent bad message combinations, such as printing "You died of thirst."
   and "You found an oasis!" on the same turn, use the ``and`` operator.
   Such as, ``if not done and thirst > 4:``
+* Make sure you add blank lines to divide up sections of code. Don't double space the
+  code. Add comments ahead of code sections.
 
 Calculating How Far Back the Natives Are
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

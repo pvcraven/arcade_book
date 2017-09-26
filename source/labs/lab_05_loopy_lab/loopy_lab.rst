@@ -53,6 +53,8 @@ Hints
   to shift everything over. For example, just add 300 to all the x values in
   section 2, to put it in the second box.
 * Each section is 300x300 pixels.
+* You will only need two ``for`` loops. Do not use a third nested ``for`` loop.
+* Section 4 only needs one ``if`` statement. The trick is to use an ``and``.
 * Remember that the ``%`` sign is the modulus. It calculates the remainder. So::
 
     0 % 3 = 0
