@@ -226,6 +226,18 @@ Hints
   Such as, ``if not done and thirst > 4:``
 * Make sure you add blank lines to divide up sections of code. Don't double space the
   code. Add comments ahead of code sections.
+* Watch the English and punctuation. Don't say ``you found an Oasis!``, say ``You found an oasis!``
+* Occasionally people get confused about how to set a value back to zero. Study the code below:
+
+.. code-block:: python
+
+   # Yes, these set thirst to zero, but this is NOT the way to do it.
+   thirst *= 0               # No
+   thirst = thirst * 0       # No
+   thirst = thirst - thirst  # No
+
+   # This is the correct way to set thirst to zero
+   thirst = 0                # Yes
 
 Calculating How Far Back the Natives Are
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

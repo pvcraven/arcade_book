@@ -91,12 +91,12 @@ For example, we can *define* a class representing a character in a game:
         """ This is a class that represents the main character in a game. """
         def __init__(self):
             """ This is a method that sets up the variables in the object. """
-            self.name = "Link"
-            self.sex = "Male"
-            self.max_hit_points = 50
-            self.current_hit_points = 50
-            self.max_speed = 10
-            self.armor_amount = 8
+            self.name = ""
+            self.sex = ""
+            self.max_hit_points = 0
+            self.current_hit_points = 0
+            self.max_speed = 0
+            self.armor_amount = 0
 
 Here's another example, we *define* a class to hold all the fields for an address:
 
@@ -190,17 +190,20 @@ about. This is not the case however. See the example below:
             self.state = ""
             self.zip = ""
 
-    # Create an address
-    my_address = Address()
+    def main():
+        # Create an address
+        my_address = Address()
 
-    # Alert! This does not set the address's name!
-    name = "Dr. Craven"
+        # Alert! This does not set the address's name!
+        name = "Dr. Craven"
 
-    # This doesn't set the name for the address either
-    Address.name = "Dr. Craven"
+        # This doesn't set the name for the address either
+        Address.name = "Dr. Craven"
 
-    # This does work:
-    my_address.name = "Dr. Craven"
+        # This does work:
+        my_address.name = "Dr. Craven"
+
+    main()
 
 A second address can be created and fields from both instances may be used.
 See the example below:
@@ -218,30 +221,35 @@ See the example below:
             self.state = ""
             self.zip = ""
 
-    # Create an address
-    home_address = Address()
 
-    # Set the fields in the address
-    home_address.name = "John Smith"
-    home_address.line1 = "701 N. C Street"
-    home_address.line2 = "Carver Science Building"
-    home_address.city = "Indianola"
-    home_address.state = "IA"
-    home_address.zip = "50125"
+    def main():
+        # Create an address
+        home_address = Address()
 
-    # Create another address
-    vacation_home_address = Address()
+        # Set the fields in the address
+        home_address.name = "John Smith"
+        home_address.line1 = "701 N. C Street"
+        home_address.line2 = "Carver Science Building"
+        home_address.city = "Indianola"
+        home_address.state = "IA"
+        home_address.zip = "50125"
 
-    # Set the fields in the address
-    vacation_home_address.name = "John Smith"
-    vacation_home_address.line1 = "1122 Main Street"
-    vacation_home_address.line2 = ""
-    vacation_home_address.city = "Panama City Beach"
-    vacation_home_address.state = "FL"
-    vacation_home_address.zip = "32407"
+        # Create another address
+        vacation_home_address = Address()
 
-    print("The client's main home is in " + home_address.city)
-    print("His vacation home is in " + vacation_home_address.city)
+        # Set the fields in the address
+        vacation_home_address.name = "John Smith"
+        vacation_home_address.line1 = "1122 Main Street"
+        vacation_home_address.line2 = ""
+        vacation_home_address.city = "Panama City Beach"
+        vacation_home_address.state = "FL"
+        vacation_home_address.zip = "32407"
+
+        print("The client's main home is in " + home_address.city)
+        print("His vacation home is in " + vacation_home_address.city)
+
+
+    main()
 
 Line 11 creates the first instance of ``Address``; line 22 creates the second
 instance. The variable ``home_address`` points to the first instance and
@@ -291,9 +299,14 @@ parameters for each field of the address.
             print( address.line2 )
         print(address.city + ", " + address.state + " " + address.zip)
 
-    print_address(home_address)
-    print()
-    print_address(vacation_home_address)
+
+    def main():
+        print_address(home_address)
+        print()
+        print_address(vacation_home_address)
+
+
+    main()
 
 Adding Methods to Classes
 -------------------------
@@ -449,15 +462,18 @@ Understanding class references. Take a look at the following code:
             self.name = ""
             self.money = 0
 
-    bob = Person()
-    bob.name = "Bob"
-    bob.money = 100
+    def main():
+        bob = Person()
+        bob.name = "Bob"
+        bob.money = 100
 
-    nancy = Person()
-    nancy.name = "Nancy"
+        nancy = Person()
+        nancy.name = "Nancy"
 
-    print(bob.name, "has", bob.money, "dollars.")
-    print(nancy.name, "has", nancy.money, "dollars.")
+        print(bob.name, "has", bob.money, "dollars.")
+        print(nancy.name, "has", nancy.money, "dollars.")
+
+    main()
 
 The code above creates two instances of the ``Person()`` class, and
 using `www.pythontutor.com`_ we can `visualize the two classes`_ in the figure.
@@ -478,15 +494,19 @@ The code above has nothing new. But the code below does:
             self.name = ""
             self.money = 0
 
-    bob = Person()
-    bob.name = "Bob"
-    bob.money = 100
 
-    nancy = bob
-    nancy.name = "Nancy"
+    def main():
+        bob = Person()
+        bob.name = "Bob"
+        bob.money = 100
 
-    print(bob.name, "has", bob.money, "dollars.")
-    print(nancy.name, "has", nancy.money, "dollars.")
+        nancy = bob
+        nancy.name = "Nancy"
+
+        print(bob.name, "has", bob.money, "dollars.")
+        print(nancy.name, "has", nancy.money, "dollars.")
+
+    main()
 
 See the difference on line 10?
 
@@ -543,12 +563,15 @@ statement on line 14 prints out 100, and not 200.
             self.name = ""
             self.money = 0
 
-    bob = Person()
-    bob.name = "Bob"
-    bob.money = 100
+    def main():
+        bob = Person()
+        bob.name = "Bob"
+        bob.money = 100
 
-    give_money1(bob.money)
-    print(bob.money)
+        give_money1(bob.money)
+        print(bob.money)
+
+    main()
 
 `Running on PythonTutor`_ we see that there are two instances of the
 ``money`` variable. One is a copy and local to the give_money1 function.
@@ -615,7 +638,10 @@ There's a terrible problem with our class for Dog listed below. When we create a
         def __init__(self):
             self.name = ""
 
-    my_dog = Dog()
+    def main():
+        my_dog = Dog()
+
+    main()
 
 Python doesn't want this to happen. That's why Python classes have a special
 function that is called any time an instance of that class is created. By
@@ -634,8 +660,10 @@ example constructor code below:
             self.name = ""
             print("A new dog is born!")
 
-    # This creates the dog
-    my_dog = Dog()
+
+    def main():
+        # This creates the dog
+        my_dog = Dog()
 
 The constructor starts on line 2. It must be named ``__init__``. There are
 two underscores before the init, and two underscores after.
@@ -697,15 +725,19 @@ function can be used to make this happen. See the code below:
             """ Constructor. """
             self.name = new_name
 
-    # This creates the dog
-    my_dog = Dog("Spot")
 
-    # Print the name to verify it was set
-    print(my_dog.name)
+    def main():
+        # This creates the dog
+        my_dog = Dog("Spot")
 
-    # This line will give an error because
-    # a name is not passed in.
-    her_dog = Dog()
+        # Print the name to verify it was set
+        print(my_dog.name)
+
+        # This line will give an error because
+        # a name is not passed in.
+        her_dog = Dog()
+
+    main()
 
 On line 3 the constructor function now has an additional parameter named
 ``new_name``. The value of this parameter is used to set the name attribute
@@ -859,16 +891,19 @@ The next code example is diagrammed out in the figure below.
             super().__init__()
             self.email = ""
 
-    john_smith = Person()
-    john_smith.name = "John Smith"
+    def main():
+        john_smith = Person()
+        john_smith.name = "John Smith"
 
-    jane_employee = Employee()
-    jane_employee.name = "Jane Employee"
-    jane_employee.job_title = "Web Developer"
+        jane_employee = Employee()
+        jane_employee.name = "Jane Employee"
+        jane_employee.job_title = "Web Developer"
 
-    bob_customer = Customer()
-    bob_customer.name = "Bob Customer"
-    bob_customer.email = "send_me@spam.com"
+        bob_customer = Customer()
+        bob_customer.name = "Bob Customer"
+        bob_customer.email = "send_me@spam.com"
+
+    main()
 
 By placing ``Person`` between the parentheses on lines 5 and 13, the
 programmer has told the computer that Person is a parent class to both
@@ -935,20 +970,23 @@ functionality.
             # Now add our own stuff to the end so we do both
             print("Customer e-mail:", self.email)
 
-    john_smith = Person()
-    john_smith.name = "John Smith"
+    def main():
+        john_smith = Person()
+        john_smith.name = "John Smith"
 
-    jane_employee = Employee()
-    jane_employee.name = "Jane Employee"
-    jane_employee.job_title = "Web Developer"
+        jane_employee = Employee()
+        jane_employee.name = "Jane Employee"
+        jane_employee.job_title = "Web Developer"
 
-    bob_customer = Customer()
-    bob_customer.name = "Bob Customer"
-    bob_customer.email = "send_me@spam.com"
+        bob_customer = Customer()
+        bob_customer.name = "Bob Customer"
+        bob_customer.email = "send_me@spam.com"
 
-    john_smith.report()
-    jane_employee.report()
-    bob_customer.report()
+        john_smith.report()
+        jane_employee.report()
+        bob_customer.report()
+
+    main()
 
 Is-A and Has-A Relationships
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1029,20 +1067,23 @@ creates a static variable.
     class ClassB():
         x = 7
 
-    # Create class instances
-    a = ClassA()
-    b = ClassB()
+    def main():
+        # Create class instances
+        a = ClassA()
+        b = ClassB()
 
-    # Two ways to print the static variable.
-    # The second way is the proper way to do it.
-    print(b.x)
-    print(ClassB.x)
+        # Two ways to print the static variable.
+        # The second way is the proper way to do it.
+        print(b.x)
+        print(ClassB.x)
 
-    # One way to print an instance variable.
-    # The second generates an error, because we don't know what instance
-    # to reference.
-    print(a.y)
-    print(ClassA.y)
+        # One way to print an instance variable.
+        # The second generates an error, because we don't know what instance
+        # to reference.
+        print(a.y)
+        print(ClassA.y)
+
+    main()
 
 In the example above, lines 16 and 17 print out the static variable. Line 17
 is the "proper" way to do so. Unlike before, we can refer to the class name
@@ -1071,38 +1112,41 @@ Look at the example below:
     class ClassB():
         x = 7
 
-    # Create a class instance
-    b = ClassB()
+    def main():
+        # Create a class instance
+        b = ClassB()
 
-    # This prints 7
-    print(b.x)
+        # This prints 7
+        print(b.x)
 
-    # This also prints 7
-    print(ClassB.x)
+        # This also prints 7
+        print(ClassB.x)
 
-    # Set x to a new value using the class name
-    ClassB.x = 8
+        # Set x to a new value using the class name
+        ClassB.x = 8
 
-    # This also prints 8
-    print(b.x)
+        # This also prints 8
+        print(b.x)
 
-    # This prints 8
-    print(ClassB.x)
+        # This prints 8
+        print(ClassB.x)
 
-    # Set x to a new value using the instance.
-    # Wait! Actually, it doesn't set x to a new value!
-    # It creates a brand new variable, x. This x
-    # is an instance variable. The static variable is
-    # also called x. But they are two different
-    # variables. This is super-confusing and is bad
-    # practice.
-    b.x = 9
+        # Set x to a new value using the instance.
+        # Wait! Actually, it doesn't set x to a new value!
+        # It creates a brand new variable, x. This x
+        # is an instance variable. The static variable is
+        # also called x. But they are two different
+        # variables. This is super-confusing and is bad
+        # practice.
+        b.x = 9
 
-    # This prints 9
-    print(b.x)
+        # This prints 9
+        print(b.x)
 
-    # This prints 8. NOT 9!!!
-    print(ClassB.x)
+        # This prints 8. NOT 9!!!
+        print(ClassB.x)
+
+    main()
 
 Allowing instance variables to hide static variable caused confusion for me for
 many years!
