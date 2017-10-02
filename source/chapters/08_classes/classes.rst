@@ -634,7 +634,7 @@ There's a terrible problem with our class for Dog listed below. When we create a
 .. code-block:: python
     :linenos:
 
-    class Dog()
+    class Dog():
         def __init__(self):
             self.name = ""
 
