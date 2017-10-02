@@ -31,16 +31,18 @@ def draw_section_2():
 
 
 def draw_section_3():
-    # Use the modulus operator and an if statement to select the color
+    # Use the modulus operator and an if/else statement to select the color.
+    # Don't use multiple 'if' statements.
     pass
 
 
 def draw_section_4():
-    # Use the modulus operator and an if statement to select the color
+    # Use the modulus operator and just one 'if' statement to select the color.
     pass
 
 
 def draw_section_5():
+    # Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead.
     pass
 
 
