@@ -1,7 +1,7 @@
 import arcade
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -23,6 +23,6 @@ class MyApplication(arcade.Window):
         self.ball_x += 1
         self.ball_y += 1
 
-window = MyApplication(640, 480, "Drawing Example")
+window = MyWindow(640, 480, "Drawing Example")
 
 arcade.run()

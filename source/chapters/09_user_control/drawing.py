@@ -1,7 +1,7 @@
 import arcade
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -14,6 +14,6 @@ class MyApplication(arcade.Window):
 
         arcade.draw_circle_filled(50, 50, 15, arcade.color.AUBURN)
 
-window = MyApplication(640, 480, "Drawing Example")
+window = MyWindow(640, 480, "Drawing Example")
 
 arcade.run()
