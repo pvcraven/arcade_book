@@ -60,8 +60,8 @@ class MyWindow(arcade.Window):
         arcade.start_render()
         self.ball.draw()
 
-    def animate(self, delta_time):
-        self.ball.animate()
+    def update(self, delta_time):
+        self.ball.update()
 
     def on_key_press(self, key, modifiers):
         """ Called whenever the user presses a key. """

@@ -69,7 +69,7 @@ class MyWindow(arcade.Window):
         arcade.start_render()
         self.ball.draw()
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         if self.joystick:
             self.ball.change_x = self.joystick.x * MOVEMENT_MULTIPLIER
             # Set a "dead zone" to prevent drive from a centered joystick
@@ -81,7 +81,7 @@ class MyWindow(arcade.Window):
             if abs(self.ball.change_y) < DEAD_ZONE:
                 self.ball.change_y = 0
 
-        self.ball.animate()
+        self.ball.update()
 
 
 window = MyWindow(640, 480, "Game Controller Example")
