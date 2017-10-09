@@ -1,5 +1,8 @@
 import arcade
 
-arcade.open_window("Drawing Example", 640, 480)
+SCREEN_WIDTH = 640
+SCREEN_HEIGHT = 480
+
+arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
 
 arcade.run()

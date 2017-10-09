@@ -39,7 +39,7 @@ class Ball:
             self.position_y = SCREEN_HEIGHT - self.radius
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -60,8 +60,8 @@ class MyApplication(arcade.Window):
         arcade.start_render()
         self.ball.draw()
 
-    def animate(self, delta_time):
-        self.ball.animate()
+    def update(self, delta_time):
+        self.ball.update()
 
     def on_key_press(self, key, modifiers):
         """ Called whenever the user presses a key. """
@@ -81,6 +81,6 @@ class MyApplication(arcade.Window):
         elif key == arcade.key.UP or key == arcade.key.DOWN:
             self.ball.change_y = 0
 
-window = MyApplication(640, 480, "Mouse Example")
+window = MyWindow(640, 480, "Mouse Example")
 
 arcade.run()

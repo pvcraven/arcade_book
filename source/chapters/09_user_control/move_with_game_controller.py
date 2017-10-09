@@ -40,7 +40,7 @@ class Ball:
             self.position_y = SCREEN_HEIGHT - self.radius
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -56,7 +56,11 @@ class MyApplication(arcade.Window):
         # Create our ball
         self.ball = Ball(50, 50, 0, 0, 15, arcade.color.AUBURN)
 
+        # Get a list of all the game controllers that are plugged in
         joysticks = arcade.get_joysticks()
+
+        # If we have a game controller plugged in, grab it and
+        # make an instance variable out of it.
         if joysticks:
             self.joystick = joysticks[0]
             self.joystick.open()
@@ -65,25 +69,29 @@ class MyApplication(arcade.Window):
             self.joystick = None
 
     def on_draw(self):
+
         """ Called whenever we need to draw the window. """
         arcade.start_render()
         self.ball.draw()
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         if self.joystick:
-            self.ball.change_x = self.joystick.x * MOVEMENT_MULTIPLIER
+
             # Set a "dead zone" to prevent drive from a centered joystick
             if abs(self.ball.change_x) < DEAD_ZONE:
                 self.ball.change_x = 0
+            else:
+                self.ball.change_x = self.joystick.x * MOVEMENT_MULTIPLIER
 
-            self.ball.change_y = -self.joystick.y * MOVEMENT_MULTIPLIER
             # Set a "dead zone" to prevent drive from a centered joystick
             if abs(self.ball.change_y) < DEAD_ZONE:
                 self.ball.change_y = 0
+            else:
+                self.ball.change_y = -self.joystick.y * MOVEMENT_MULTIPLIER
 
-        self.ball.animate()
+        self.ball.update()
 
 
-window = MyApplication(640, 480, "Game Controller Example")
+window = MyWindow(640, 480, "Game Controller Example")
 
 arcade.run()

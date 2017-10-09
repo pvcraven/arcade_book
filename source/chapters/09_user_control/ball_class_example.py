@@ -38,7 +38,7 @@ class Ball:
             self.change_y *= -1
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -58,6 +58,6 @@ class MyApplication(arcade.Window):
         """ Called to update our objects. Happens approximately 60 times per second."""
         self.ball.animate()
 
-window = MyApplication(640, 480, "Drawing Example")
+window = MyWindow(640, 480, "Drawing Example")
 
 arcade.run()

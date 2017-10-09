@@ -18,7 +18,7 @@ class Ball:
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -44,6 +44,6 @@ class MyApplication(arcade.Window):
         self.ball.position_x = x
         self.ball.position_y = y
 
-window = MyApplication(640, 480, "Mouse Example")
+window = MyWindow(640, 480, "Mouse Example")
 
 arcade.run()
