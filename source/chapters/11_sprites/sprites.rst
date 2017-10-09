@@ -47,57 +47,29 @@ Getting the Application Started
 
 The first few lines of our program start off like other games we've done. We
 import a couple libraries. Set a couple constants for the size of the screen,
-and a new constant that we will use to scale our graphics to half their original
-size.
+and a couple new constants that we will use to scale our graphics.
 
-.. code-block:: Python
-    :caption: Start of our sprite example
+The example below should have nothing new, it just creates a window and sets a
+background color. We'll add in the new stuff soon.
 
-	import random
-	import arcade
+.. literalinclude:: sprite_sample_start.py
+    :caption: Sprite Sample Start
+    :language: python
+    :linenos:
 
-	SPRITE_SCALING = 0.5
-
-	SCREEN_WIDTH = 800
-	SCREEN_HEIGHT = 600
-
-
-	class MyApplication(arcade.Window):
-	    # --- Class methods will go here
-
-	window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
-	window.setup()
-
-	arcade.run()
 
 The Constructor
 ^^^^^^^^^^^^^^^
 
-What's next? We need to add our methods to the ``MyApplication`` class.
-We'll start with our ``__init__`` method. This is the method we use to
-initialize our variables. Here it is:
+What's next? We need to add our attributes to the ``MyWindow`` class.
+We add our attributes to the ``__init__`` method. Here is our
+code with the expanded ``__init__``:
 
-.. code-block:: Python
-    :caption: Constructor for MyApplication
-
-    def __init__(self, width, height):
-
-    	# Call the parent class initializer
-        super().__init__(width, height)
-
-        # Variables that will hold sprite lists
-        self.all_sprites_list = None
-        self.coin_list = None
-
-        # Set up the player info
-        self.player_sprite = None
-        self.score = 0
-
-        # Don't show the mouse cursor
-        self.set_mouse_visible(False)
-
-        # Set the background color
-        arcade.set_background_color(arcade.color.AMAZON)
+.. literalinclude:: sprite_sample_expanded_init.py
+    :caption: Expanded Init
+    :language: python
+    :emphasize-lines: 23-34
+    :linenos:
 
 The variables we are creating:
 
@@ -117,45 +89,41 @@ background color.
 The Setup Function
 ^^^^^^^^^^^^^^^^^^
 
-Next up, we have a ``setup`` method. In the first code example, we have the
-code that calls this function near the end: ``window.setup()``.
+Next up, we have a ``setup`` method. This will create our sprites and get
+our game set up. We do this in a different method than ``__init__`` so that
+if we ever want to restart the game, we can just call ``setup`` again.
 
-This setup code
-could be moved into the ``__init__`` method. Why is it separate? Later on
-if we want to add the ability to "play again", we can just call the ``setup``
-function. If the code to set up the window is mixed with the code to set
-up the game, then it is more difficult to program that functionality. Here
-we start by keeping them separate.
+This is the part of the program where we will load the images for our sprites.
+You'll need to download the images before we can do this. You
+can right-click on the two images below and save them. The images come from
+`kenney.nl`_ who has a lot of free and cheap game image assets that you can
+use in your games.
 
-.. code-block:: Python
-    :caption: Setup method for our application
+.. _kenney.nl: http://kenney.nl/
 
-    def setup(self):
-        """ Set up the game and initialize the variables. """
+.. figure:: character.png
 
-        # Sprite lists
-        self.all_sprites_list = arcade.SpriteList()
-        self.coin_list = arcade.SpriteList()
+    character.png
 
-        # Set up the player
-        self.score = 0
-        self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)
-        self.player_sprite.center_x = 50
-        self.player_sprite.center_y = 50
-        self.all_sprites_list.append(self.player_sprite)
+.. figure:: coin_01.png
 
-        for i in range(50):
+    coin_01.png
 
-            # Create the coin instance
-            coin = arcade.Sprite("images/coin_01.png", SPRITE_SCALING / 3)
+Where should you save them? If you load your sprite with the code
+below, the computer will look for the ``character.png`` image in the same
+directory as your Python file. Save the image anywhere else, and it won't
+be found.
 
-            # Position the coin
-            coin.center_x = random.randrange(SCREEN_WIDTH)
-            coin.center_y = random.randrange(SCREEN_HEIGHT)
+In the example below, we have added the
+code that calls the ``setup`` function near the end: ``window.setup()``.
 
-            # Add the coin to the lists
-            self.all_sprites_list.append(coin)
-            self.coin_list.append(coin)
+
+.. literalinclude:: sprite_sample_player.py
+    :caption: Sprite Sample With Player
+    :language: python
+    :emphasize-lines: 36-50, 54, 59
+    :linenos:
+
 
 How does this code work?
 
@@ -199,52 +167,17 @@ need to reset our score to 0.
     self.score = 0
 
 Now we need to create out sprite. The name of the class that represents sprites
-is called ``Sprite``. It takes two paramters. A path to the image we will be
+is called ``Sprite``. It takes two parameters. A path to the image we will be
 using, and how big to scale it.
 
 .. code-block:: Python
 
-    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)
+    self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
 
-Ok, so if you are following along, you'll need to download the images. You
-can right-click on the two images below and save them. The images come from
-`kenney.nl`_ who has a lot of free and cheap game image assets that you can
-use in your games.
 
-.. _kenney.nl: http://kenney.nl/
-
-.. figure:: character.png
-
-    character.png
-
-.. figure:: coin_01.png
-
-    coin_01.png
-
-Where should you save them? It depends. If you load your sprite with the code
-below, the computer will look for the ``character.png`` image in the same
-directory as your Python file. Save the image anywhere else, and it won't
-be found.
-
-.. code-block:: Python
-
-    self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
-
-I don't like putting my images with my code. By the time I finish a game there's
-a lot of images, sounds, and other files all mixed together. Instead I like
-to create subdirectories for images and sounds. You can do this by creating
-a subdirectory called "images" and them prepending "images/" to your filename.
-
-.. code-block:: Python
-
-    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING)
-
-The On Draw Method
-^^^^^^^^^^^^^^^^^^
-
-How do we draw all our sprites? Really easy. We just override the ``on_draw``
-method and call the ``draw`` method in our sprites list. That method will
-loop throug all our sprites for us, and draw them.
+How do we draw all our sprites? Really easy. Just call the ``draw`` method that
+exists for us in the ``SpriteList`` class. We have a list off all sprites with
+``all_sprites_list``, so we'll use that to draw all the sprites:
 
 .. code-block:: Python
 
@@ -255,7 +188,16 @@ loop throug all our sprites for us, and draw them.
             # Draw all the sprites.
             self.all_sprites_list.draw()
 
-Woohoo! That was easy.
+Wait. We don't have many sprites. Just one. Let's add a ``for`` loop to our program and create a bunch more:
+
+.. literalinclude:: sprite_sample_coins.py
+    :caption: Sprite Sample With Player And Coins
+    :language: python
+    :emphasize-lines: 53-64
+    :linenos:
+
+Drawing The Score
+^^^^^^^^^^^^^^^^^
 
 In addition to drawing the sprites, let's go ahead and
 put the score on the screen:
@@ -292,6 +234,15 @@ x and y location to move the sprite.
 
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
+
+
+Now, our whole program looks like:
+
+.. literalinclude:: sprite_sample_with_mouse_motion.py
+    :caption: Sprite Sample With Mouse Motion And Score
+    :language: python
+    :emphasize-lines: 70-72, 74-79
+    :linenos:
 
 The Animate Method
 ^^^^^^^^^^^^^^^^^^
