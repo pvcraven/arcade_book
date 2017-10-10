@@ -251,6 +251,8 @@ This method is more complex, but is also more powerful. Because we are working
 directly with the list elements, rather than a copy, the list can be modified.
 The for-each loop does not allow modification of the original list.
 
+.. _append_to_list:
+
 Adding to a List
 ----------------
 

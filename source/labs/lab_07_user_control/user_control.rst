@@ -8,13 +8,15 @@ and allow the user to control it.
 
 Create one program that does/implements the following:
 
-* Create a folder for Lab 7.
-* Begin your code with the `Arcade Starting Template`_.
-* Adjust the comments, particularly the beginning comment, to match what you are
-  doing.
-* Remove any part of the template that you aren't planning on using. Like
-  ``on_mouse_press``.
-* Create a background in the ``on_draw`` method.
+* Create a ``Lab 07 - User Control`` folder for this lab, or use one that is already set up in your project.
+* Begin your code with the template below:
+
+.. literalinclude:: template.py
+    :caption: Lab 7 Template
+    :language: python
+    :linenos:
+
+* Create a background image of some sort in the ``on_draw`` method.
   (Feel free to use any of *your* code that *you* have written from
   prior labs that you have.)
 * Create at least two different functions that draw an object

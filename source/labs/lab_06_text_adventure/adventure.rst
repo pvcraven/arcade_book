@@ -96,7 +96,7 @@ students that I find on-line. Make sure your work is your own.
     Also, remember that Python is case sensitive so ``none`` won't work either.
     The keyword ``None`` is a special value that represents "nothing." Because
     sometimes you need a value, other than zero, that represents )
-4.  Append this room to the room list.
+4.  Append this room to the room list. See :ref:`append_to_list` if you've forgotten how to do that.
 5.  Repeat the prior two steps for each room you want to create. Just re-use
     the room variable.
 6.  Create a variable called ``current_room``. Set it to zero.
