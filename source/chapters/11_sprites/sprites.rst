@@ -142,8 +142,12 @@ we need to prepend it with ``self.``.
     self.all_sprites_list = []
 
 However, the Arcade library has a class especially for handling sprite lists.
-This class is called ``SpriteList``. So instead of creating an empty list with
+This class is called ``SpriteList``.
+For more information, check out the SpriteList_ documentation.
+So instead of creating an empty list with
 ``[]``, we will create a new instance of the ``SpriteList`` class:
+
+.. _SpriteList: http://arcade.academy/arcade.html#arcade.sprite.SpriteList
 
 .. code-block:: Python
 
@@ -244,12 +248,12 @@ Now, our whole program looks like:
     :emphasize-lines: 70-72, 74-79
     :linenos:
 
-The Animate Method
-^^^^^^^^^^^^^^^^^^
+The Update Method
+^^^^^^^^^^^^^^^^^
 
-Our ``animate`` method needs to do three things:
+Our ``update`` method needs to do three things:
 
-1. Update the sprites
+1. Update each of the sprites
 2. Check to see if the player is touching any coins
 3. Remove any coins colliding with the player, and update the score.
 
@@ -290,31 +294,16 @@ We also need to get rid of the sprite. The sprite class has a method called
 
 Here's the whole ``animate`` method put together:
 
-.. code-block:: Python
-
-    def animate(self, delta_time):
-        """ Movement and game logic """
-
-        # Call update on all sprites (The sprites don't do much in this
-        # example though.)
-        self.all_sprites_list.update()
-
-        # Generate a list of all sprites that collided with the player.
-        hit_list = arcade.check_for_collision_with_list(self.player_sprite,
-                                                        self.coin_list)
-
-        # Loop through each colliding sprite, remove it, and add to the score.
-        for coin in hit_list:
-            coin.kill()
-            self.score += 1
+.. literalinclude:: sprite_sample_with_update.py
+    :caption: Sprite Sample With Update Method
+    :language: python
+    :emphasize-lines: 82-96
+    :linenos:
 
 Moving Sprites
 --------------
 
 How do we get sprites to move?
-Start the code from our original example here:
-
-http://arcade.academy/examples/sprite_collect_coins.html
 
 To customize our sprite's behavior, we need to subclass the ``Sprite`` class
 with our own child class. This is easy:
@@ -339,14 +328,14 @@ original code this line:
 
 .. code-block:: Python
 
-    coin = arcade.Sprite("images/coin_01.png", SPRITE_SCALING / 3)
+    coin = arcade.Sprite("coin_01.png", COIN_SPRITE_SCALING)
 
 See how it is creating an instance of ``Sprite``? We want to create an instance
 of our new ``Coin`` class instead:
 
 .. code-block:: Python
 
-    coin = Coin("images/coin_01.png", SPRITE_SCALING / 3)
+    coin = Coin("coin_01.png", COIN_SPRITE_SCALING)
 
 Now, how do we get the coin to move?
 
@@ -363,6 +352,14 @@ y each frame:
 
         def update(self):
             self.center_y -= 1
+
+Next, create an instance of the ``Coin`` class instead of a ``Sprite`` class.
+
+.. literalinclude:: sprite_sample_move_down.py
+    :caption: Sprite Sample Move Down
+    :language: python
+    :emphasize-lines: 15-18, 62
+    :linenos:
 
 This causes the coins to move down. But once they move off the screen they
 keep going into negative-coordinate land. We can't see them any more. Sad.
@@ -449,7 +446,7 @@ the top of the screen.
 
 .. code-block:: Python
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         """ Movement and game logic """
 
         self.all_sprites_list.update()
@@ -466,10 +463,11 @@ the top of the screen.
 
 We can even take that common code, and move it to a method. Here's a full example:
 
-.. literalinclude:: sprites_move_down.py
-    :caption: sprites_move_down.py
+.. literalinclude:: sprite_sample_move_down_full.py
+    :caption: Full Move Down Sprite Sample
     :language: python
     :linenos:
+    :emphasize-lines: 15-36
 
 Bouncing
 ^^^^^^^^
@@ -478,8 +476,8 @@ Bouncing
 
     Coins bouncing around
 
-.. literalinclude:: sprites_bouncing.py
-    :caption: sprites_bouncing.py
+.. literalinclude:: sprite_sample_move_bouncing.py
+    :caption: sprites_sample_move_bouncing.py
     :language: python
     :linenos:
 

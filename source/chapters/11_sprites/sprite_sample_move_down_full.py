@@ -1,7 +1,12 @@
+""" Sprite Sample Program """
+
 import random
 import arcade
 
-SPRITE_SCALING = 0.5
+# --- Constants ---
+SPRITE_SCALING_PLAYER = 0.5
+SPRITE_SCALING_COIN = 0.2
+COIN_COUNT = 50
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -31,43 +36,48 @@ class Coin(arcade.Sprite):
             self.reset_pos()
 
 
-class MyAppWindow(arcade.Window):
-    """ Main application class. """
+class MyWindow(arcade.Window):
+    """ Our custom Window Class"""
 
-    def __init__(self, width, height):
-        """
-        Initializer
-        :param width:
-        :param height:
-        """
-        super().__init__(width, height)
-        # Sprite lists
+    def __init__(self):
+        """ Initializer """
+        # Call the parent class initializer
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
+
+        # Variables that will hold sprite lists
         self.all_sprites_list = None
         self.coin_list = None
 
-        # Set up the player
-        self.score = 0
+        # Set up the player info
         self.player_sprite = None
+        self.score = 0
 
-    def start_new_game(self):
+        # Don't show the mouse cursor
+        self.set_mouse_visible(False)
+
+        arcade.set_background_color(arcade.color.AMAZON)
+
+    def setup(self):
         """ Set up the game and initialize the variables. """
 
         # Sprite lists
         self.all_sprites_list = arcade.SpriteList()
         self.coin_list = arcade.SpriteList()
 
-        # Set up the player
+        # Score
         self.score = 0
-        self.player_sprite = arcade.Sprite("character.png",
-                                           SPRITE_SCALING)
+
+        # Set up the player
+        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
-        self.player_sprite.center_y = 70
+        self.player_sprite.center_y = 50
         self.all_sprites_list.append(self.player_sprite)
 
-        for i in range(50):
+        # Create the coins
+        for i in range(COIN_COUNT):
 
             # Create the coin instance
-            coin = Coin("coin_01.png", SPRITE_SCALING / 3)
+            coin = Coin("coin_01.png", SPRITE_SCALING_COIN)
 
             # Position the coin
             coin.center_x = random.randrange(SCREEN_WIDTH)
@@ -77,31 +87,19 @@ class MyAppWindow(arcade.Window):
             self.all_sprites_list.append(coin)
             self.coin_list.append(coin)
 
-        # Don't show the mouse cursor
-        self.set_mouse_visible(False)
-
-        # Set the background color
-        arcade.set_background_color(arcade.color.AMAZON)
-
     def on_draw(self):
-        """
-        Render the screen.
-        """
-
-        # This command has to happen before we start drawing
+        """ Draw everything """
         arcade.start_render()
-
-        # Draw all the sprites.
         self.all_sprites_list.draw()
 
         # Put the text on the screen.
-        output = "Score: {}".format(self.score)
+        output = f"Score: {self.score}"
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
     def on_mouse_motion(self, x, y, dx, dy):
-        """
-        Called whenever the mouse moves.
-        """
+        """ Handle Mouse Motion """
+
+        # Move the center of the player sprite to match the mouse x, y
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
 
@@ -118,15 +116,14 @@ class MyAppWindow(arcade.Window):
 
         # Loop through each colliding sprite, remove it, and add to the score.
         for coin in hit_list:
-            coin.reset_pos()
+            coin.kill()
             self.score += 1
 
 
 def main():
-    window = MyAppWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
-    window.start_new_game()
+    window = MyWindow()
+    window.setup()
     arcade.run()
 
 
-if __name__ == "__main__":
-    main()
+main()
