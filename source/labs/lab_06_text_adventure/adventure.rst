@@ -86,8 +86,8 @@ As a reminder, at the end of the year I do scan for duplicate homework. I keep
 all homework assignments from prior semesters, and assignments from non-Simpson
 students that I find on-line. Make sure your work is your own.
 
-1.  Create a main method and call the main method.
-2.  In the main method, create an empty array called ``room_list``.
+1.  Create a ``main`` function and call the ``main`` function.
+2.  In the ``main`` function, create an empty array called ``room_list``.
 3.  Create a variable called ``room``. Set it equal to an array with five elements.
     For the first element, create a string with a description of your first room.
     The last four elements will be the number of the next room if the user goes
@@ -102,8 +102,10 @@ students that I find on-line. Make sure your work is your own.
 6.  Create a variable called ``current_room``. Set it to zero.
 7.  Print the ``room_list`` variable. Run the program. You should see a really long
     list of every room in your adventure.
-8.  Adjust your print statement to only print the first room (element zero) in the list. Run the program and
-    confirm you get output similar to::
+8.  Adjust your print statement to only print the first room (element zero) in the list.
+    Note that at index 0 is the description, 1 is the room to the north, 2
+    is the room to the east, etc.
+    Run the program and confirm you get output similar to::
 
     ['You are in a room. There is a passage to the north.', 1, None, None, None]
 
@@ -129,10 +131,13 @@ students that I find on-line. Make sure your work is your own.
     to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`.
 15. If the user wants to go north, create a variable called ``next_room`` and
     get it equal to ``room_list[current_room][1]``, which should be the number
-    for what room is to the north.
+    for what room is to the north. (Remember, 0 is the description, 1 is north,
+    2 is east, etc.)
 16. Add another ``if`` statement to see if the next room is equal to ``None``. If
     it is, print "You can't go that way." Otherwise set ``current_room``
-    equal to ``next_room``.
+    equal to ``next_room``. Note: This new ``if`` statement is part of the
+    ``if`` statement to go north. So make sure it is indented inside that
+    ``if``.
 17. Test your program. Can you go north to a new room?
 18. Add ``elif`` statements to handle east, south, and west. Add an ``else``
     statement to let the user know the program doesn't understand what she typed.
@@ -152,12 +157,14 @@ Spend a little time to make this game interesting. Don't simply create an
 "East room" and a "West room." That's boring.
 
 Also spend a little time to double check spelling and grammar. Without a word
-processor checking your writing, it is important to be careful. Students often
-capitalize words in this lab that should not be capitalized. In particular,
-see `when do your capitalize directions`_. Do not capitalize room names unless
-the room name is part of a title.
+processor checking your writing, it is important to be careful. Pay particular note to:
 
-.. _when do your capitalize directions: http://www.quickanddirtytips.com/education/grammar/when-do-you-capitalize-directions
+* Students often capitalize words in this lab that should not be capitalized. In particular,
+  see `when do you capitalize directions`_.
+* Do not capitalize room names unless the room name is part of a title. Don't say "You are in the Living Room," because
+  the word "living room" isn't normally capitalized.
+
+.. _when do you capitalize directions: http://www.quickanddirtytips.com/education/grammar/when-do-you-capitalize-directions
 
 Use ``\n`` to add carriage returns in your descriptions so they don't print all on
 one line. Don't put spaces around the ``\n``, or the spaces will print.
