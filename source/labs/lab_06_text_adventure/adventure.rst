@@ -102,13 +102,14 @@ students that I find on-line. Make sure your work is your own.
 6.  Create a variable called ``current_room``. Set it to zero.
 7.  Print the ``room_list`` variable. Run the program. You should see a really long
     list of every room in your adventure.
-8.  Adjust your print statement to only print the first room (element zero) in the list. Run the program and confirm you get output similar to::
+8.  Adjust your print statement to only print the first room (element zero) in the list. Run the program and
+    confirm you get output similar to::
 
     ['You are in a room. There is a passage to the north.', 1, None, None, None]
 
 9.  Using ``current_room`` and ``room_list``, print the current room the user
     is in. Since your first room is zero, the output should be the same as before.
-10.  Change the print statement so that you only print the description of the
+10. Change the print statement so that you only print the description of the
     room, and not the rooms that hook up to it. Remember if you are printing a
     list in a list the index goes after the first index.
     Don't do this: ``[current_room[0]]``, do ``[current_room][0]``
@@ -151,10 +152,15 @@ Spend a little time to make this game interesting. Don't simply create an
 "East room" and a "West room." That's boring.
 
 Also spend a little time to double check spelling and grammar. Without a word
-processor checking your writing, it is important to be careful.
+processor checking your writing, it is important to be careful. Students often
+capitalize words in this lab that should not be capitalized. In particular,
+see `when do your capitalize directions`_. Do not capitalize room names unless
+the room name is part of a title.
 
-Use \n to add carriage returns in your descriptions so they don't print all on
-one line. Don't put spaces around the \n, or the spaces will print.
+.. _when do your capitalize directions: http://www.quickanddirtytips.com/education/grammar/when-do-you-capitalize-directions
+
+Use ``\n`` to add carriage returns in your descriptions so they don't print all on
+one line. Don't put spaces around the ``\n``, or the spaces will print.
 
 What I like about this program is how easy it is to expand into a full game.
 Using all eight cardinal directions (including "NorthWest"), along with "up"
