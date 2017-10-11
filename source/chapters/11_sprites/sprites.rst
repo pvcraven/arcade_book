@@ -171,8 +171,13 @@ need to reset our score to 0.
     self.score = 0
 
 Now we need to create out sprite. The name of the class that represents sprites
-is called ``Sprite``. It takes two parameters. A path to the image we will be
+is called ``Sprite``. You can read more about it by looking at the Sprite_
+documentation.
+The Sprite constructor takes two parameters. A path to the image we will be
 using, and how big to scale it.
+
+.. _Sprite: http://arcade.academy/arcade.html#arcade.sprite.Sprite
+
 
 .. code-block:: Python
 
