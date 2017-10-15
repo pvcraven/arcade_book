@@ -267,14 +267,57 @@ if one exists.
         print("There are no joysticks.")
         self.joystick = None
 
+
+Joystick Values
+~~~~~~~~~~~~~~~
+
 After this, you can get the position of the game controller joystick by calling
 ``self.joystick.x`` and ``self.joystick.y``. The values will be between -1 and +1,
-with 0 being a centered joystick. Kind of.
+with 0 being a centered joystick.
+
+The x-axis numbers will be negative if the stick goes left, positive for right.
+
+The y-axis numbers will be opposite of what you might expect. Negative for up, positive for down.
+
+.. figure:: c.jpg
+
+    Centered (0, 0)
+
+.. figure:: d.jpg
+
+    Down (0, 1)
+
+.. figure:: dl.jpg
+
+    Down/Left (-1, 1)
+
+.. figure:: dr.jpg
+
+    Down/Right (1, 1)
+
+.. figure:: u.jpg
+
+    Up (0, -1)
+
+.. figure:: ul.jpg
+
+    Up/Left (-1, -1)
+
+.. figure:: ur.jpg
+
+    Up/Right (1, -1)
+
+
+Deadzone
+~~~~~~~~
 
 Actually, a centered joystick might have a value not at 0, but at 0.0001 or some
 small number. This will make for a small "drift" on a person's character. We often
 counteract this by having a "dead zone" where if the number is below a certain
 value, we just assume it is zero to eliminate the drift.
+
+Example
+~~~~~~~
 
 If you want to move faster than one pixel per frame, then just multiply the
 ``self.joystick.x`` times five and you'll be going five times faster.
