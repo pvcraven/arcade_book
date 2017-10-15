@@ -44,6 +44,7 @@ class MyWindow(arcade.Window):
         self.score = 0
 
         # Set up the player
+        # Character image from kenney.nl
         self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50

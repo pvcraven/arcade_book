@@ -16,13 +16,13 @@ class Coin(arcade.Sprite):
         super().__init__(filename, sprite_scaling)
 
         # Current angle in radians
-        self.angle = 0
+        self.circle_angle = 0
 
         # How far away from the center to orbit, in pixels
-        self.radius = 0
+        self.circle_radius = 0
 
         # How fast to orbit, in radians per frame
-        self.speed = 0.008
+        self.circle_speed = 0.008
 
         # Set the center of the point we will orbit around
         self.circle_center_x = 0
@@ -32,13 +32,13 @@ class Coin(arcade.Sprite):
 
         """ Update the ball's position. """
         # Calculate a new x, y
-        self.center_x = self.radius * math.sin(self.angle) \
+        self.center_x = self.circle_radius * math.sin(self.circle_angle) \
             + self.circle_center_x
-        self.center_y = self.radius * math.cos(self.angle) \
+        self.center_y = self.circle_radius * math.cos(self.circle_angle) \
             + self.circle_center_y
 
         # Increase the angle in prep for the next round.
-        self.angle += self.speed
+        self.circle_angle += self.circle_speed
 
 
 class MyAppWindow(arcade.Window):
@@ -64,6 +64,7 @@ class MyAppWindow(arcade.Window):
 
         # Set up the player
         self.score = 0
+        # Character image from kenney.nl
         self.player_sprite = arcade.Sprite("character.png",
                                            SPRITE_SCALING)
         self.player_sprite.center_x = 50
@@ -73,6 +74,7 @@ class MyAppWindow(arcade.Window):
         for i in range(50):
 
             # Create the coin instance
+            # Coin image from kenney.nl
             coin = Coin("coin_01.png", SPRITE_SCALING / 3)
 
             # Position the center of the circle the coin will orbit
@@ -80,10 +82,10 @@ class MyAppWindow(arcade.Window):
             coin.circle_center_y = random.randrange(SCREEN_HEIGHT)
 
             # Random radius from 10 to 200
-            coin.radius = random.randrange(10, 200)
+            coin.circle_radius = random.randrange(10, 200)
 
             # Random start angle from 0 to 2pi
-            coin.angle = random.random() * 2 * math.pi
+            coin.circle_angle = random.random() * 2 * math.pi
 
             # Add the coin to the lists
             self.all_sprites_list.append(coin)

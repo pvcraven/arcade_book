@@ -25,6 +25,61 @@ read up more about it.
 
 .. _history of sprites: https://en.wikipedia.org/wiki/Sprite_(computer_graphics)
 
+Finding Images for Sprites
+--------------------------
+
+There are several image formats that computers use:
+
+* ``.png`` - Great patent-free format for line art and clip art. Not great for photos. Can't hold animations.
+* ``.gif`` - Great format for line art and clip art. Has had issues with patents (now expired). Can do animations.
+* ``.jpg`` - Great file format for photos. Terrible for clip-art. Don't use for sprites.
+* ``.svg`` - File format for storing line-art images that can scale to any resolution. Not compatible with the
+  "arcade" library.
+
+If you use Google's `advanced image search`_ you can find images that are "icon" sized, and either png or gif file
+format.
+
+.. _advanced image search: https://www.google.com/advanced_image_search
+
+There's also a great source for images from `kenney.nl`_. He has a lot of free and cheap game image assets.
+That's where the following images come from that we will use in our examples:
+
+.. _kenney.nl: http://kenney.nl/
+
+.. figure:: character.png
+
+    character.png
+
+.. figure:: coin_01.png
+
+    coin_01.png
+
+Where to Save Images
+^^^^^^^^^^^^^^^^^^^^
+
+Where should you save them? If you load your sprite with the code
+below, the computer will look for the ``character.png`` image in the same
+directory as your Python file. Save the image anywhere else, and it won't
+be found.
+
+How to Reference Images
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you create your own game that you publish, you need to:
+
+* Create your own images
+* Hire someone to create your images
+* Buy your own images with a license to use them in your own game
+* Find images that are public domain or licensed for public use
+
+If you are just creating a game for class that won't be used in public, then right
+before you load the image leave a comment with the source. I'll show this in a bit.
+
+.. attention::
+    Do not list "Google" as a source. That's like using "The Library" as a source in your report. Find
+    the source of the image that Google is pointing to.
+
+
 Basic Sprites and Collisions
 ----------------------------
 
@@ -94,25 +149,6 @@ our game set up. We do this in a different method than ``__init__`` so that
 if we ever want to restart the game, we can just call ``setup`` again.
 
 This is the part of the program where we will load the images for our sprites.
-You'll need to download the images before we can do this. You
-can right-click on the two images below and save them. The images come from
-`kenney.nl`_ who has a lot of free and cheap game image assets that you can
-use in your games.
-
-.. _kenney.nl: http://kenney.nl/
-
-.. figure:: character.png
-
-    character.png
-
-.. figure:: coin_01.png
-
-    coin_01.png
-
-Where should you save them? If you load your sprite with the code
-below, the computer will look for the ``character.png`` image in the same
-directory as your Python file. Save the image anywhere else, and it won't
-be found.
 
 In the example below, we have added the
 code that calls the ``setup`` function near the end: ``window.setup()``.
@@ -121,7 +157,7 @@ code that calls the ``setup`` function near the end: ``window.setup()``.
 .. literalinclude:: sprite_sample_player.py
     :caption: Sprite Sample With Player
     :language: python
-    :emphasize-lines: 36-50, 54, 59
+    :emphasize-lines: 36-51, 55, 60
     :linenos:
 
 
@@ -176,11 +212,14 @@ documentation.
 The Sprite constructor takes two parameters. A path to the image we will be
 using, and how big to scale it.
 
+For class, please source the image right before you load it. If you drew your own image, please note that as well.
+
 .. _Sprite: http://arcade.academy/arcade.html#arcade.sprite.Sprite
 
 
 .. code-block:: Python
 
+    # Character image from kenney.nl
     self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
 
 
@@ -202,7 +241,7 @@ Wait. We don't have many sprites. Just one. Let's add a ``for`` loop to our prog
 .. literalinclude:: sprite_sample_coins.py
     :caption: Sprite Sample With Player And Coins
     :language: python
-    :emphasize-lines: 53-64
+    :emphasize-lines: 53-66
     :linenos:
 
 Drawing The Score
@@ -250,7 +289,7 @@ Now, our whole program looks like:
 .. literalinclude:: sprite_sample_with_mouse_motion.py
     :caption: Sprite Sample With Mouse Motion And Score
     :language: python
-    :emphasize-lines: 71-73, 75-80
+    :emphasize-lines: 73-75, 77-82
     :linenos:
 
 The Update Method
@@ -302,7 +341,7 @@ Here's the whole ``animate`` method put together:
 .. literalinclude:: sprite_sample_with_update.py
     :caption: Sprite Sample With Update Method
     :language: python
-    :emphasize-lines: 82-96
+    :emphasize-lines: 84-98
     :linenos:
 
 Moving Sprites
@@ -363,7 +402,7 @@ Next, create an instance of the ``Coin`` class instead of a ``Sprite`` class.
 .. literalinclude:: sprite_sample_move_down.py
     :caption: Sprite Sample Move Down
     :language: python
-    :emphasize-lines: 15-18, 62
+    :emphasize-lines: 15-18, 64
     :linenos:
 
 This causes the coins to move down. But once they move off the screen they

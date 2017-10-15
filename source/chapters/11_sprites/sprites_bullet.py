@@ -29,6 +29,8 @@ class MyAppWindow(arcade.Window):
 
         # Set up the player
         self.score = 0
+
+        # Character image from kenney.nl
         self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 70
@@ -37,6 +39,7 @@ class MyAppWindow(arcade.Window):
         for i in range(50):
 
             # Create the coin instance
+            # Coin image from kenney.nl
             coin = arcade.Sprite("coin_01.png", SPRITE_SCALING / 3)
 
             # Position the coin
@@ -70,6 +73,7 @@ class MyAppWindow(arcade.Window):
     def on_mouse_press(self, x, y, button, modifiers):
 
         # Create a bullet
+        # Laser image from kenney.nl
         bullet = Bullet("laserBlue01.png", SPRITE_SCALING * 1.5)
 
         # The image points to the right, and we want it to point up. So
