@@ -171,8 +171,13 @@ need to reset our score to 0.
     self.score = 0
 
 Now we need to create out sprite. The name of the class that represents sprites
-is called ``Sprite``. It takes two parameters. A path to the image we will be
+is called ``Sprite``. You can read more about it by looking at the Sprite_
+documentation.
+The Sprite constructor takes two parameters. A path to the image we will be
 using, and how big to scale it.
+
+.. _Sprite: http://arcade.academy/arcade.html#arcade.sprite.Sprite
+
 
 .. code-block:: Python
 
@@ -245,7 +250,7 @@ Now, our whole program looks like:
 .. literalinclude:: sprite_sample_with_mouse_motion.py
     :caption: Sprite Sample With Mouse Motion And Score
     :language: python
-    :emphasize-lines: 70-72, 74-79
+    :emphasize-lines: 71-73, 75-80
     :linenos:
 
 The Update Method
@@ -368,6 +373,9 @@ keep going into negative-coordinate land. We can't see them any more. Sad.
 
     Coins moving down
 
+Resetting to the Top
+~~~~~~~~~~~~~~~~~~~~
+
 We can get around this by resetting the coins up to the top. Here's how its
 done:
 
@@ -440,6 +448,9 @@ Instead we can randomize it a bit:
                                              SCREEN_HEIGHT + 100)
             self.center_x = random.randrange(SCREEN_WIDTH)
 
+Never Ending Coins
+~~~~~~~~~~~~~~~~~~
+
 This works, but when we we collect all the coins we are done. What if it was
 a never-ending set of coins? Instead of "killing" the coin, let's reset it to
 the top of the screen.
@@ -469,8 +480,8 @@ We can even take that common code, and move it to a method. Here's a full exampl
     :linenos:
     :emphasize-lines: 15-36
 
-Bouncing
-^^^^^^^^
+Bouncing Coins
+^^^^^^^^^^^^^^
 
 .. figure:: sprites_bouncing.gif
 
@@ -488,8 +499,8 @@ this:
 
     Test Pattern
 
-Circles
-^^^^^^^
+Coins Moving In Circles
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: sprites_circle.gif
 
