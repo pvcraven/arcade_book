@@ -131,3 +131,7 @@ There are several types of `sound file formats`_ that you can find sounds in:
 
 Arcade should be able to play files in either the mp3 or ogg format. If you have issues getting it to work, try
 converting the sound to a raw wav format.
+
+If you need to convert file formats, or trim a sound file, I suggest using the program Audacity_.
+
+.. _Audacity: http://www.audacityteam.org/home/
