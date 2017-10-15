@@ -116,5 +116,18 @@ Great places to find free sounds to use in your program:
 Sound File Formats
 ------------------
 
-Arcade should be able to play files in either the mp3 or ogg format. If you
-need to test or convert file types, use a sound editor program like Audacity.
+There are several types of `sound file formats`_ that you can find sounds in:
+
+.. _sound file formats: https://en.wikipedia.org/wiki/Audio_file_format
+
+* ``.wav`` - This is a raw "wave" format. The sound is not compressed at all. You do not need a special library
+  to decompress the sound, but the sound file itself can be rather large.
+* ``.mp3`` - MPEG Layer III Audio (mp3) is one of the most popular compressed sound file formats. This file format is what enabled on-line
+  music to become popular. However some of the compression algorithms have patents on them, making it not as suitable
+  for free software.
+* ``.m4a`` - Apple's file format for compressed, but unprotected audio.
+* ``.ogg`` - A open-source sound file that uses Ogg-Vorbis for compression. A less popular but patent-free method of sound
+  storage.
+
+Arcade should be able to play files in either the mp3 or ogg format. If you have issues getting it to work, try
+converting the sound to a raw wav format.
