@@ -1,0 +1,2310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Spring 2017\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-11 09:21-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../source/labs/index.rst:2
+msgid "Labs"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:4
+msgid "Lab 1: First Program"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:6
+msgid ""
+"For this lab you will turn in via Scholar a BitBucket URL to the program "
+"that you will create after following this tutorial."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:9
+msgid "This lab/tutorial has three parts:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:11
+msgid "Part 1: Write your first program. (easy)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:12
+msgid ""
+"Part 2: Put your first program in version control, and upload it to the "
+"server. (medium)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:14
+msgid "Part 3: Learn to update and merge changes to your program. (hard)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:16
+msgid ""
+"Parts 2 and 3 are complex, and you'll probably have questions. Don't "
+"hesitate to ask. The labs are designed to be done with help and not by "
+"yourself. Have someone help you through those parts so you don't get "
+"really frustrated and waste a lot of time."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:22
+msgid "Part 1: First Program"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:24
+msgid ""
+"Figure out where you want to save your project. If you've got your own "
+"computer you'll be hauling around, great. If you've got a flash drive, "
+"use that. You might want to try a network drive. (Simpson uses the drive "
+"H:) If you store it on a lab computer, you'll have more headaches later."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:29
+msgid ""
+"If you don't have PyCharm and Python installed, then you'll need to "
+"`download Python`_ 3.6, and `download PyCharm`_. You can download the "
+"free community version, or the professional version."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:32
+msgid ""
+"If you downloaded or are using the professional PyCharm version, you'll "
+"need to get a license. If you have a .edu address and are a student, you "
+"can get a `student license`_ for the professional version for free. Or "
+"your instructor might have a link to check out a license with."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:36
+msgid ""
+"Start PyCharm. If you've got it installed, just hit the \"Window\" key "
+"and start typing in \"PyCharm\"."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:38
+msgid ""
+"Create a \"Pure Python\" project. But wait! Don't just hit \"Create\" "
+"when you get to this page. There are two more steps."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:43
+msgid ""
+"Step 1: Change where you want to save the file. If you are developing on "
+"your own computer, save to the C: drive. If you are developing on a lab "
+"computer, save to your flash drive, or to a network drive. Don't save to "
+"the C: drive. Ask if you deed help."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:47
+msgid ""
+"Step 2: Change \"untitled\" to a name like \"CMSC 150\". We'll use the "
+"same project for everything we do in class. Don't create any other "
+"projects."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:50
+msgid "Now you can create the project."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:54
+msgid ""
+"Create a new directory. Call it ``Lab 01 - First Program``. We'll have a "
+"new directory for each lab. If you want to create a \"scratch\" program "
+"to play around with, put it in a new directory. Give your directory a "
+"good name, so you can go back and find the code easier."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:66
+msgid ""
+"Right click on the directory you just created. Create a new \"Python "
+"File\". Call it ``lab_01.py`` Make sure it appears in the new directory."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:73
+msgid ""
+"Type in your program. We will use a function called ``print`` to print "
+"something to the screen. Like the sine and cosine functions you used in "
+"math, we follow the function name with parentheses. We put the function "
+"parameter inside. With a sine function, we put in an angle. With the "
+"``print`` function, we put what we want to print. It has to be in quotes."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:83
+msgid "Note that case matters. The following will not work"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:89
+msgid ""
+"Great! Time to run it. Right-click on the program and select \"Run "
+"'lab_01.py'\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:91
+msgid ""
+"See the output of your program at the bottom of the screen. Click the "
+"image below to make it better and note the:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:94
+msgid "Right margin. You can write code past this point, but don't."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:95
+msgid ""
+"Where you can hover your mouse for \"hints\" on how to make your code "
+"better."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:96
+msgid "Where you can quickly click to run your program again."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:101
+msgid ""
+"Great! Your first program was the easy part. Now, how do we turn it in? "
+"That takes some work to get set up."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:105
+msgid "Part 2: Checking the Program into Version Control"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:107
+msgid "In this section we will:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:109
+msgid "Install SourceTree"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:110
+msgid "Create your project on the BitBucket server"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:111
+msgid "Create your project on your local computer"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:112
+msgid "Link the two together"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:114
+msgid ""
+"Once we get the version control set up, we'll use that same setup for the"
+" rest of class."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:118
+msgid "Installing SourceTree"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:120
+msgid ""
+"Changes that you and other developers make to the code are stored in "
+"\"code repositories.\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:123
+msgid ""
+"Just like the web can be browsed with different web browsers, code "
+"repositories can be browsed with different clients. We'll use a client "
+"called SourceTree."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:126
+msgid "Download SourceTree from:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:128
+msgid "http://www.sourcetreeapp.com"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:130
+msgid ""
+"SourceTree is a nice GUI application that helps work with our "
+"repositories. It actually works on top of tools like *Git* and "
+"*Mercurial* to make them easier to use. These tools are \"command-line\" "
+"tools that operate only by typing in commands. They have no menus. You "
+"can do a lot more by manually typing in commands on the command line, but"
+" that is beyond the scope of this tutorial. And so we use SourceTree."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:137
+msgid ""
+"SourceTree is made by a company called Atlassian. Atlassian also makes a "
+"website called BitBucket that we will use with SourceTree. SourceTree "
+"licenses are free, but you still have to `create an account with "
+"Atlassian`_ to get that free license. This is also the same account we'll"
+" use on BitBucket. Accounts ending in ``.edu`` can get extra features, so"
+" I recommend signing up with your school e-mail."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:145
+msgid ""
+"Installation of SourceTree should be straight-forward. However, when your"
+" first run SourceTree it wants to do *more* setup. You'll see a screen "
+"like this:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:151
+msgid "Then you will need to log in with that Atlassian account you created:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:156
+msgid "You could hook up Bitbucket here. But don't. Just skip this step:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:161
+msgid ""
+"You probably don't have an SSH key. So skip this step. (I like how the "
+"text says click \"no\" but there is not a button named \"no.\")"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:167
+msgid ""
+"SourceTree is a pretty GUI on top of Git. So we need a copy of Git. Go "
+"ahead and install it:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:173
+msgid "Then do the same thing with Mercurial:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:179
+msgid "Creating Your Project in BitBucket"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:181
+msgid "Go to BitBucket, select \"Repositories\" and \"Create repository\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:185
+msgid ""
+"Call your repository \"CMSC 150 Firstname Lastname\". Obviously, change "
+"the first name and last name to your name."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:187
+msgid ""
+"Make sure the repository is set to \"private\" so that no one else copies"
+" your homework."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:189
+msgid "Change the repository type to \"Git\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:193
+msgid "Copy the repository address from here:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:198
+msgid "Create Your Project in SourceTree"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:200
+msgid "Open the SourceTree program on your computer."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:201
+msgid "Click the Clone/New button."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:202
+msgid "Select the \"Create New Repository\" tab."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:203
+msgid ""
+"Click on the button with three dots, and browse to the folder where you "
+"stored your project. Select the \"CMSC 150\" folder, not the folder with "
+"Lab 01. We want *all* the labs to be part of this project, not just one."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:209
+msgid ""
+"Now we need to commit our files. Once we do this, we can always go back "
+"and get this version again. The purple question mark means these files "
+"aren't being tracked. Click the top check box, and then all the files "
+"will get a checkbox and be set for tracking."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:213
+msgid "Add a comment at the bottom. Don't leave it blank."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:214
+msgid "Hit \"Commit\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:218
+msgid "Now we can see our commit if we click on the \"master\" branch"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:222
+msgid ""
+"Ok. This exists only on our computer. We want to move it to the server so"
+" other people can look at it, and we have a backup if we can't get to "
+"this computer. Select \"Repository\" then \"Repository Settings\". Select"
+" the \"Remotes\" tab, and then \"Add\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:229
+msgid "Check the \"Default remote\" box."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:230
+msgid "Paste that address we copied from BitBucket into the next field"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:231
+msgid "Hit \"OK\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:235
+msgid ""
+"Great, now we've told the computer where the server is. We need to push "
+"it there. How do we do that? Hit the \"Push\" button."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:240
+msgid ""
+"Refresh the page on BitBucket, and you can see that your code went to the"
+" server. But I can't see it yet. Please invite me to see your repository:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:245
+msgid "Great! Aren't you glad we only have to do that once?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:248
+msgid ""
+"If you switch computers, you'll note that when you start SourceTree it "
+"will be blank. If you have your project on a flash drive or network "
+"drive, just select \"File...Open\" and point SourceTree to your project. "
+"If you don't have the files, select \"Clone\"."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:254
+msgid "Part 3: Updating and Merging with Version Control"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:257
+msgid "Updating Locally"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:259
+msgid ""
+"Ok, now it's time to update our program. Go back to our program and "
+"improve it by printing multiple lines, while quoting Snoopy's famous "
+"story:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:267
+msgid ""
+"Flip back to SourceTree. Select the \"master\" branch if you haven't "
+"already. Then select \"Uncommitted changes\". You'll see all the files "
+"that have changed below. Yellow is for files changed. Green is for new "
+"files. Purple for files that haven't been added. Red for files deleted. "
+"Grey for missing files."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:272
+msgid ""
+"I select my Lab 01 file, and I can see the changes on the right. The "
+"lines removed are in red, the new lines are in green. At first, this can "
+"be confusing because you are seeing things that you removed. They are no "
+"longer part of the file if they are in red."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:279
+msgid ""
+"Ok, go ahead and hit the \"Commit\" button. Fill in a comment. Tell the "
+"server to go ahead and push immediately. (If you forget this, just hit "
+"the push button later.)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:286
+msgid "Editing Elsewhere"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:287
+msgid ""
+"Find this file on the BitBucket website. Hit the \"Source\" icon, and "
+"then browse to the file. Let's try editing this on-line. We could just as"
+" easily edit this on a different computer. Like if you had a home "
+"computer and a work computer. Or two different people working on the same"
+" program."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:294
+msgid ""
+"Now let's edit this, and improve it by quoting `A Wrinkle in Time "
+"<https://en.wikipedia.org/wiki/A_Wrinkle_in_Time>`_ instead."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:299
+msgid ""
+"Commit the change. Add a good comment, don't take the default. Don't "
+"create a \"pull request\"."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:303
+msgid "Pulling Changes"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:305
+msgid "Next, let's pull those changes onto our computer with SourceTree:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:309
+msgid "Great! Now you should see those changes on your local computer."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:311
+msgid ""
+"This works great until the same line of code is changed in two different "
+"places. Try adding a line 4 on-line first, and a different line 4 on your"
+" computer."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:314
+msgid "When you try to push you get an angry message like this:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:318
+msgid ""
+"Usually students get this message late Sunday night when trying to upload"
+" their homework. And now they can't What to do?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:321
+msgid "Hit \"Pull\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:322
+msgid "Look at your \"Uncommitted changed\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:323
+msgid "Note the files that have a caution sign."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:324
+msgid ""
+"To keep your changes and ignore the other changes, right-click select "
+"\"Resolve Conflicts\" and select \"Resolve Using Mine\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:326
+msgid ""
+"To keep the changes on the server and remove yours, right-click select "
+"\"Resolve Conflicts\" and select \"Resolve Using Theirs\""
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:328
+msgid ""
+"To manually resolve the conflicts, right-click select \"Resolve "
+"Conflicts\" and select \"Mark Resolved\". Both lines will be there, along"
+" with some delimiters that look kind of odd. You can edit the file in "
+"PyCharm."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:334
+msgid ""
+"After that, select \"Commit\" so that you commit your merge. (Easy to "
+"forget this step.)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:336
+msgid "Then you can push to the server."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:338
+msgid ""
+"Go ahead and try this out. I'll look for it on-line when I'm grading. It "
+"should look like this:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:344
+msgid "Make the Lab Yours"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:346
+msgid ""
+"Ok, now it is time to make this lab yours. Write program that consists of"
+" several print statements. Try these features out:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:365
+msgid ""
+"Now make your *own* program. Don't just copy mine. Commit it. Push it. "
+"Copy the URL from BitBucket. You'll click on the buttons and copy the URL"
+" as shown below:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:373
+msgid "Before turning in your program, double check:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:375
+msgid ""
+"Did you remove the sample prints shown above, and make up your own print "
+"statements? At least four lines?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:377
+msgid "Did you invite your instructor to the repository?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:378
+msgid ""
+"Did you use proper spelling, capitalization, and grammar in the text that"
+" you printed to the screen?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:380
+msgid ""
+"Hover over the PyCharm \"hints\" that are on the right side of your "
+"editor to see if there are suggestions on how to make your code better."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/chapter_01_first_program.rst:383
+msgid "Copy the URL and turn it in via Scholar and you are done!"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:4
+msgid "Lab 2: Draw a Picture"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:6
+msgid ""
+"Your assignment: Draw a pretty picture. The goal of this lab is to get "
+"practice using functions to draw, and introduce computer graphics."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:9
+msgid "To get full credit:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:11
+msgid ""
+"Use the same project and repository that you used for Lab 01. Create a "
+"new folder called ``Lab 02 - Draw a picture``. Don't put the Lab 02 "
+"folder in the Lab 01 folder. Do not create a new project or a new "
+"repository."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:14
+msgid "You must use multiple colors."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:15
+msgid ""
+"You must have a coherent picture. I am not interested in abstract art "
+"with random shapes."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:17
+msgid ""
+"You must use multiple types of graphic functions (e.g. circles, "
+"rectangles, lines, etc.)"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:19
+msgid ""
+"Use blank lines in the code to break up sections. For example, when "
+"drawing a tree, put a blank line ahead of, and after."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:21
+msgid ""
+"Use comments effectively. For example, when drawing a tree, put a comment"
+" at the start of those drawing commands that says ``# Draw a tree``. "
+"Remember to put one space after the ``#`` sign."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:24
+msgid "Put spaces after commas for proper \"style.\""
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:26
+msgid "To select new colors use:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:28
+msgid "http://www.colorpicker.com/"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:30
+msgid ""
+"Copy the values for Red, Green, and Blue. Do not worry about colors for "
+"hue, Saturation, or Brilliance."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:33
+msgid ""
+"Please use comments and blank lines to make it easy to follow your "
+"program. If you have 5 lines that draw a robot, group them together with "
+"blank lines above and below. Then add a comment at the top telling the "
+"reader what you are drawing."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:38
+msgid ""
+"Keep in mind the order of code. Shapes drawn first will be at the "
+"\"back.\" Shapes drawn later will be drawn on top of the other shapes."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:41
+msgid ""
+"Looking for ideas? At the page below, each time you refresh the page I "
+"show various images created by students from prior years:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:44
+msgid "http://programarcadegames.com/"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:46
+msgid "Also, here is an example program that shows you what I'm looking for:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/chapter_02_drawing.rst:54
+msgid "Here are some images from prior years:"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:4
+msgid "Lab 3: Drawing with Functions"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:6
+msgid ""
+"Draw and animate an image. Update your program from Lab 2, or create a "
+"new program. Lab is worth 20 points, see the breakdown below."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:10
+msgid "Incorporate the following items:"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:12
+msgid ""
+"Start with the same PyCharm project you used for Lab 01 and Lab 02. "
+"Create a new folder for Lab 03. Feel free to use any code from Lab 02 you"
+" want, just copy it across. Do not create a new repository. Do not create"
+" a new code branch. Just create a directory for Lab 3. Make sure it is "
+"not inside of th folders for Lab 01 or Lab 02."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:17
+msgid ""
+"Create three functions that draw something. (15 pts total, up to 5 pts "
+"per function)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:20
+msgid "Define the function and successfully call it. (1 pt)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:21
+msgid ""
+"Make your drawing function complex. 0 points for a one-line function that"
+" just draws a rectangle, 0 points for copying the example from the book, "
+"2 points for a cohesive multi-line function. (2 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:24
+msgid ""
+"Pass in ``x`` and ``y`` parameters and successfully position the object. "
+"(2 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:26
+msgid ""
+"Properly use the ``main`` function for your main program as shown in :ref"
+":`make-everything-a-function`. (1 pt)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:28
+msgid "Animate the object as shown in this `bouncing rectangle example`_. (4 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:4
+msgid "Lab 4: Camel"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:9
+msgid "Description of the Camel Game"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:11
+msgid ""
+"The idea for Camel originally came from the Heath Users Group and was "
+"published in `More BASIC Computer Games`_ in 1979."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:16
+msgid ""
+"The idea is to ride your camel across the desert while being chased. You "
+"need to manage your thirst, how tired the camel is, and how far ahead of "
+"the natives you are."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:20
+msgid ""
+"This is one of the first games I programmed on the Apple //e. The game is"
+" flexible. I've had students create Star Wars themed versions of this "
+"game where you need to ride a wampa across Hoth. It is easy to add "
+"sandstorms and other random events to the game to make it more "
+"interesting. Even though it is only a text-based game, I've found some "
+"students really get into playing it. Once I had a professor come and "
+"complain when my students were too loud while playing this game on the "
+"\"big screen.\""
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:29
+msgid "Sample Run of Camel"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:31
+msgid "Here is a sample run of the game:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:108
+msgid "Programming Guide"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:109
+msgid ""
+"Here are the steps to complete this lab. Feel free to modify and add to "
+"the lab. Try the game with friends and family."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:112
+msgid ""
+"Create a new directory in your project for ``Lab 04 - Camel`` and a file "
+"called ``main.py`` in that folder."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:114
+msgid ""
+"In that file create a new ``main`` function. Have it print the "
+"instructions to the screen. Do this with multiple ``print`` statements. "
+"Don't use one ``print`` statement and multiple ``\\n`` characters to jam "
+"everything on one line."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:126
+msgid ""
+"Continue from the prior step and create a Boolean variable called "
+"``done`` and set to ``False``. Make sure this, and everything else, is in"
+" the ``main`` function."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:129
+msgid ""
+"Create a ``while`` loop that will keep looping while ``done`` is "
+"``False``."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:130
+msgid "Inside the loop, print out the following::"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:139
+msgid ""
+"Ask the user for their choice. Make sure to add a space before the quote "
+"so the user input doesn't run into your text. That is, it should look "
+"like:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:146
+msgid "And not::"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:151
+msgid ""
+"If the user's choice is ``Q``, then set ``done`` to ``True``. By doing "
+"something like ``user_choice.upper()`` instead of just ``user_choice`` in"
+" your ``if`` statement you can make it case-insensitive."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:154
+msgid ""
+"Test and make sure that you can quit out of the game, and that case "
+"doesn't matter."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:156
+msgid ""
+"Before your main program loop, create variables for miles traveled, "
+"thirst, camel tiredness. Set these to zero."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:158
+msgid ""
+"Create a variable for the distance the natives have traveled and set it "
+"to -20. (Twenty miles back.) Understanding how we track the player's "
+"distance, the native's distance, and the difference between the two tends"
+" to confuse some people. See the videos at the end of this lab for some "
+"hints."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:163
+msgid "Create and set an initial number of drinks in the canteen."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:164
+msgid ""
+"Add an ``elif`` in your main program loop and see if the user is asking "
+"for status. If so, print out the miles traveled, the drinks in the "
+"canteen, and how far the natives are behind you. If you aren't sure how "
+"to calculate that, see the videos at the end of this lab."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:176
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to"
+" stop for the night. If the user does, reset the camel's tiredness to "
+"zero. Print that the camel is happy, and move the natives up a random "
+"amount from 7 to 14 or so."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:180
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to"
+" go ahead full speed. If the user does, go forward a random amount "
+"between 10 and 20 inclusive. Print how many miles the user traveled. Add "
+"1 to thirst. Add a random 1 to 3 to camel tiredness. Move the natives up "
+"7 to 14 miles."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:185
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to"
+" go ahead moderate speed. If the user does, go forward a random amount "
+"between 5 and 12 inclusive. Print how many miles the user traveled. Add 1"
+" to thirst. Add 1 to camel tiredness. Move the natives up 7 to 14 miles."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:189
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to"
+" go ahead drink from the canteen. If the user does, make sure there are "
+"drinks in the canteen. If there are, subtract one drink and set the "
+"player's thirst to zero. Otherwise print an error."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:193
+msgid "In the loop, print \"You are thirsty.\" if the user's thirst is above 4."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:194
+msgid ""
+"Print \"You died of thirst!\"\" if the user's thirst is above 6. Set "
+"``done`` to ``True``. Make sure you create your code so that the program "
+"doesn't print both \"Your are thirsty\" and \"You died of thirst!\" Use "
+"``elif`` as appropriate."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:198
+msgid ""
+"Print \"Your camel is getting tired.\" if the camel's tiredness is above "
+"5."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:199
+msgid ""
+"Print \"Your camel is dead.\" if the camel's tiredness is above 8. Like "
+"the prior steps, print one or the other. It is a good idea to include a "
+"check with the done variable so t hat you don't print that your camel is "
+"getting tired after you died of thirst."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:203
+msgid ""
+"If the natives have caught up, print that they caught the player and end "
+"the game."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:205
+msgid ""
+"Else if the natives are less than 15 miles behind, print \"The natives "
+"are getting close!\""
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:207
+msgid ""
+"If the user has traveled 200 miles across the desert, print that they won"
+" and end the game. Make sure they aren't dead before declaring them a "
+"winner. If they land on mile marker 201 instead of 200, make sure they "
+"still win the game. See the videos below."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:211
+msgid ""
+"Add a one-in-twenty chance of finding an oasis. Print that the user found"
+" it, refill the canteen, reset player thirst, and rest the camel. Make "
+"sure a person can't find the oasis unless they are traveling."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:214
+msgid ""
+"Play the game and tune the numbers so it is challenging but not "
+"impossible. Fix any bugs you find."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:218
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:45
+msgid "Hints"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:219
+msgid ""
+"Remember that it is good idea to put blank lines between logical "
+"groupings of code in your program. For example, but a blank line after "
+"the instructions, and between each user command. Add comments where "
+"appropriate."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:222
+msgid ""
+"It is considered better style to use ``while not done:`` instead of "
+"``while done == False:``"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:224
+msgid ""
+"To prevent bad message combinations, such as printing \"You died of "
+"thirst.\" and \"You found an oasis!\" on the same turn, use the ``and`` "
+"operator. Such as, ``if not done and thirst > 4:``"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:229
+msgid "Calculating How Far Back the Natives Are"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:236
+msgid "Figuring Out The End of the Game"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:4
+msgid "Lab 5: Loopy Lab"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:6
+msgid ""
+"The goal of this lab is to practice using nested ``for`` loops. We will "
+"create a program that makes the following image:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:11
+msgid ""
+"For sanity's sake, let's give a number to each section. Then when we ask "
+"questions we can say which section we are talking about. Do **not** put "
+"the numbers in the final program. Here are the section numbers:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:17
+msgid "Great! All these items can be created using nested ``for`` loops."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:20
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:22
+msgid ""
+"Below is some code to get you started. Underneath each of the comments, "
+"fill in the code required to make the pattern."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:28
+msgid "Scoring"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:30
+msgid "There are 20 possible points:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:32
+msgid "Section 1: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:33
+msgid "Section 2: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:34
+msgid "Section 3: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:35
+msgid "Section 4: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:36
+msgid "Completing any section 1-4: 1 pt"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:37
+msgid "Section 5: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:38
+msgid "Section 6: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:39
+msgid "Section 7: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:40
+msgid "Section 8: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:41
+msgid "Completing any section 5-8: 1 pt"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:42
+msgid "Code Style: 2 pts (Should have no yellow lines on right side of PyCharm)"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:47
+msgid "Each little square is a 5x5 pixel square."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:48
+msgid ""
+"If the center of each square is 5 apart, you won't see an edge and it "
+"will look like one big square."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:50
+msgid ""
+"Remember, row controls up and down, so it corresponds to y. Column "
+"corresponds to x."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:52
+msgid ""
+"When working on sections 2-8, you can simple add to the x and/or y values"
+" to shift everything over. For example, just add 300 to all the x values "
+"in section 2, to put it in the second box."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:55
+msgid "Each section is 300x300 pixels."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:56
+msgid ""
+"Remember that the ``%`` sign is the modulus. It calculates the remainder."
+" So::"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:66
+msgid "You can count \"backwards\" by subtracting."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:80
+msgid "This prints::"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:4
+msgid "Lab 6: Text Adventure"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:10
+msgid "Description of the Adventure Game"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:11
+msgid ""
+"One of the first games I ever played was a text adventure called "
+"`Colossal Cave Adventure`_. You can play the game on-line here_ to get an"
+" idea what text adventure games are like. Seriously, give it a try. "
+"Otherwise it will be hard to understand what we are trying to do here."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:16
+msgid "Arguably the most famous of this genre of game is the Zork_ series."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:22
+msgid ""
+"The first \"large\" program I created myself was a text adventure. It is "
+"easy to start an adventure like this. It is also a great way to practice "
+"using lists. Our game for this lab will involve a list of rooms that can "
+"be navigated by going north, east, south, or west. Each room will be a "
+"list with the room description, and then what rooms are in each of the "
+"directions. See the section below for a sample run:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:30
+msgid "Sample Run"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:68
+msgid "Creating Your Dungeon"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:69
+msgid ""
+"Before you start, sketch out the dungeon that you want to create. It "
+"might look something like this:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:74
+msgid "Next, number all of the rooms starting at zero."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:78
+msgid ""
+"Use this sketch to figure out how all the rooms connect. For example, "
+"room 0 connects to room 3 to the north, room 1 to the east, and no room "
+"to the south and west."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:83
+msgid "Step-by-step Instructions"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:85
+msgid ""
+"As a reminder, at the end of the year I do scan for duplicate homework. I"
+" keep all homework assignments from prior semesters, and assignments from"
+" non-Simpson students that I find on-line. Make sure your work is your "
+"own."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:89
+msgid "Create an empty array called ``room_list``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:90
+msgid ""
+"Create a variable called ``room``. Set it equal to an array with five "
+"elements. For the first element, create a string with a description of "
+"your first room. The last four elements will be the number of the next "
+"room if the user goes north, east, south, or west. Look at your sketch to"
+" see what numbers to use. Use ``None`` if no room hooks up in that "
+"direction. (Do not put ``None`` in quotes. Also, remember that Python is "
+"case sensitive so ``none`` won't work either. The keyword ``None`` is a "
+"special value that represents \"nothing.\" Because sometimes you need a "
+"value, other than zero, that represents )"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:98
+msgid "Append this room to the room list."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:99
+msgid ""
+"Repeat the prior two steps for each room you want to create. Just re-use "
+"the room variable."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:101
+msgid "Create a variable called ``current_room``. Set it to zero."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:102
+msgid ""
+"Print the ``room_list`` variable. Run the program. You should see a "
+"really long list of every room in your adventure."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:104
+msgid ""
+"Adjust your print statement to only print the first room (element zero) "
+"in the list. Run the program and confirm you get output similar to::"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:108
+msgid ""
+"Using ``current_room`` and ``room_list``, print the current room the user"
+" is in. Since your first room is zero, the output should be the same as "
+"before."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:110
+msgid ""
+"Change the print statement so that you only print the description of the "
+"room, and not the rooms that hook up to it. Remember if you are printing "
+"a list in a list the index goes after the first index. Don't do this: "
+"``[current_room[0]]``, do ``[current_room][0]``"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:119
+msgid ""
+"Create a variable called ``done`` and set it to ``False``. Then put the "
+"printing of the room description in a ``while`` loop that repeats until "
+"``done`` is set to ``True``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:122
+msgid ""
+"Before printing the description, add a code to print a blank line. This "
+"will make it visually separate each turn when playing the game."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:124
+msgid ""
+"After printing the room description, add a line of code that asks the "
+"user what they want to do."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:126
+msgid ""
+"Add an ``if`` statement to see if the user wants to go north. You may "
+"need to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:128
+msgid ""
+"If the user wants to go north, create a variable called ``next_room`` and"
+" get it equal to ``room_list[current_room][1]``, which should be the "
+"number for what room is to the north."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:131
+msgid ""
+"Add another ``if`` statement to see if the next room is equal to "
+"``None``. If it is, print \"You can't go that way.\" Otherwise set "
+"``current_room`` equal to ``next_room``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:134
+msgid "Test your program. Can you go north to a new room?"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:135
+msgid ""
+"Add ``elif`` statements to handle east, south, and west. Add an ``else`` "
+"statement to let the user know the program doesn't understand what she "
+"typed."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:137
+msgid ""
+"It is a great idea to put blank lines between the code that handles each "
+"direction. I don't mean to print a blank line, but actually have blank "
+"lines in the code. That way you visually group the code into sections."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:140
+msgid "It is a great idea to add comments too, to each section."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:141
+msgid ""
+"Test your program. Make sure you have enough of a description that "
+"someone running the program will know what direction to go. Don't say "
+"\"You are in the kitchen.\" Instead say \"You are in the kitchen. There "
+"is a door to the north.\""
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:144
+msgid "Add a quit command that ends the game."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:145
+msgid "Make sure that the program works for upper and lower case commands."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:146
+msgid ""
+"Have the program work if the user types in \"north\" or \"n\". Review "
+":ref:`multi-text-comparisons` if needed."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:149
+msgid ""
+"Spend a little time to make this game interesting. Don't simply create an"
+" \"East room\" and a \"West room.\" That's boring."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:152
+msgid ""
+"Also spend a little time to double check spelling and grammar. Without a "
+"word processor checking your writing, it is important to be careful."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:155
+msgid ""
+"Use \\n to add carriage returns in your descriptions so they don't print "
+"all on one line. Don't put spaces around the \\n, or the spaces will "
+"print."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:158
+msgid ""
+"What I like about this program is how easy it is to expand into a full "
+"game. Using all eight cardinal directions (including \"NorthWest\"), "
+"along with \"up\" and \"down\" is rather easy. Managing an inventory of "
+"objects that can exist in rooms, be picked up, and dropped is also a "
+"matter of keeping lists."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:163
+msgid ""
+"Expanding this program into a full game is one of the two options for the"
+" final lab in this course."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:4
+msgid "Lab 7: User Control"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:6
+msgid ""
+"This lab gives you a chance to practice drawing an object with a function"
+" and allow the user to control it."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:9
+msgid "Create one program that does/implements the following:"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:11
+msgid "Create a folder for Lab 7."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:12
+msgid "Begin your code with the `Arcade Starting Template`_."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:13
+msgid ""
+"Adjust the comments, particularly the beginning comment, to match what "
+"you are doing."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:15
+msgid ""
+"Remove any part of the template that you aren't planning on using. Like "
+"``on_mouse_press``."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:17
+msgid ""
+"Create a background in the ``on_draw`` method. (Feel free to use any of "
+"*your* code that *you* have written from prior labs that you have.)"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:20
+msgid ""
+"Create at least two different functions that draw an object to the screen"
+" given a particular x, y coordinate. Again, feel free to pull from prior "
+"labs."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:23
+msgid ""
+"In :ref:`user-control`, we talked about moving graphics with the "
+"keyboard, a game controller, and the mouse. Pick two of those and use "
+"them to control two different items on the screen that are drawn by the "
+"functions you just made."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:26
+msgid ""
+"In the case of the game controller and the keyboard, make sure to add "
+"checks so that your object does not move off-screen and get lost."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:28
+msgid "Add a sound effect for when the user clicks the mouse button."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:29
+msgid "Add a sound effect for when the user bumps into the edge of the screen."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:4
+msgid "Lab 8: Sprites"
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:6
+msgid ""
+"Create a player-character sprite. Feel free to pick your own image for "
+"the sprite."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:8
+msgid ""
+"Allow the user to move the player move by the keyboard, mouse, or game "
+"pad. Your choice."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:10
+msgid "Create \"good\" sprites. Pick your own image for the sprite."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:11
+msgid "Create \"bad\" sprites. Pick your own image for the sprite."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:12
+msgid "For each good sprite collected, make the score go up."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:13
+msgid "For each bad sprite touched, have the score go down."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:14
+msgid ""
+"Animate/move the good sprites. Pick any of the motions we showed, or make"
+" your one."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:16
+msgid "Move the bad sprites. Move them differently than the good ones."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:17
+msgid ""
+"If the length of the good sprite list is zero, then don't move any of the"
+" sprites or the character. \"Freeze\" the game."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:19
+msgid ""
+"If the length of the good sprite list is zero, draw \"Game Over\" on the "
+"screen."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:20
+msgid "Turn in a GitHub URL to your project."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:21
+msgid "Double-check on-line that the images for your sprites uploaded."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:4
+msgid "Lab 9: Sprites and Walls"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:6
+msgid ""
+"Goal: Create a landscape of wall objects that the user must navigate "
+"around to collect coins. This will help practice using ``for`` loops to "
+"create and position multiple items."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:10
+msgid ""
+"Step 1: Start with one of the move with walls examples. Use either the "
+"`Move with Walls`_ example or the `Move with a Scrolling Screen`_ "
+"example."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:12
+msgid ""
+"Step 2: Create a more complex arrangement of walls. Make sure the walls "
+"don't allow the user to go off-screen. 6 points, based on how complex the"
+" arrangement."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:15
+msgid ""
+"Step 3: Update the graphics. Use multiple types of blocks for the walls. "
+"Maybe change the character. 4 points, one point for each graphic used "
+"that wasn't part of the base example."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:18
+msgid ""
+"Step 4: Add coins (or something) for the user to collect. 4 points, based"
+" on the complexity of the coin layout."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:20
+msgid ""
+"Step 5: Keep score of how many coins were collected, and display on-"
+"screen. 4 points."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:22
+msgid "Step 6: Add a sound to play each time the user collects a coin. 2 points."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:25
+msgid "Don't move the player twice!"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:27
+msgid ""
+"The command ``self.physics_engine.update()`` moves the player while "
+"checking for walls. The command ``self.all_sprites_list.update()`` will "
+"move the player WITHOUT checking for walls. Don't do both commands. "
+"You'll end up \"walking through walls.\" If you have other sprites to "
+"update, update only those sprites. For example: "
+"``self.coin_list.update()``."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:4
+msgid "Lab 10: Spell Check"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:6
+msgid ""
+"This lab shows how to create a spell checker. To prepare for the lab, "
+"download the files listed below."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:9
+msgid "`AliceInWonderLand200.txt`_ - First chapter of \"Alice In Wonderland\""
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:10
+msgid "`dictionary.txt`_ - A list of words"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:16
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:18
+msgid ""
+"Write a single program in Python that checks the spelling of the first "
+"chapter of \"Alice In Wonderland.\" First use a linear search, then use a"
+" binary search. Print the line number along with the word that does not "
+"exist in the dictionary."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:22
+msgid ""
+"Follow the steps below carefully. If you don't know how to accomplish one"
+" step, ask before moving on to the next step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:26
+msgid "Steps to complete"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:28
+msgid "Find or create a directory for your project."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:29
+msgid "Download the dictionary to the directory."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:30
+msgid "Download first 200 lines of Alice In Wonderland to your directory."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:31
+msgid "Start a Python file for your project."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:32
+msgid ""
+"It is necessary to split apart the words in the story so that they may be"
+" checked individually. It is also necessary to remove extra punctuation "
+"and white-space. Unfortunately, there is not any good way of doing this "
+"with what the book has covered so far. The code to do this is short, but "
+"a full explanation is beyond the scope of this class. Include the "
+"following function in your program. Remember, function definitions should"
+" go at the top of your program just after the imports. We'll call this "
+"function in a later step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:41
+msgid "Function to split apart words in a string and return them as a list"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:51
+msgid ""
+"This code uses a *regular expression* to split the text apart. Regular "
+"expressions are very powerful and relatively easy to learn. If you'd like"
+" to know more about regular expressions, see:"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:55
+msgid "http://regexone.com/"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:57
+msgid ""
+"Read the file ``dictionary.txt`` into an array. Go back to the chapter on"
+" Searching, or see the ``searching_example.py`` for example code on how "
+"to do this. This does *not* have anything to do with the ``import`` "
+"command, libraries, or modules. Don't call the dictionary ``word_list`` "
+"or something generic because that will be confusing. Call it "
+"``dictionary_list`` or a different term that is specific."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:63
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:88
+msgid "Close the file."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:64
+msgid "Print ``--- Linear Search ---``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:65
+msgid "Open the file ``AliceInWonderLand200.txt``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:66
+msgid ""
+"We are *not* going to read the story into a list. Do not create a new "
+"list here like you did with the dictionary."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:68
+msgid "Start a ``for`` loop to iterate through each line."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:69
+msgid ""
+"Call the ``split_line`` function to split apart the line of text in the "
+"story that was just read in. Store the list that the function returns in "
+"a new variable named ``words``. Remember, just calling the function won't"
+" do anything useful. You need to assign a variable equal (``words``) to "
+"the result. If you've forgotten now to capture the return value from a "
+"function, flip back to the functions chapter to find it."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:75
+msgid ""
+"Start a nested ``for`` loop to iterate through each word in the words "
+"list. This should be inside the ``for`` loop that runs through each line "
+"in the file. (One loop for each line, another loop for each word in the "
+"line.)"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:78
+msgid ""
+"Using a linear search, check the current word against the words in the "
+"dictionary. Check the chapter on searching or the "
+"``searching_example.py`` for example code on how to do this. The linear "
+"search is just three lines long. When comparing to the word to the other "
+"words in the dictionary, convert the word to uppercase. In your ``while``"
+" loop just use ``word.upper()`` instead of ``word`` for the key. This "
+"linear search will exist inside the ``for`` loop created in the prior "
+"step. We are looping through each word in the dictionary, looking for the"
+" current word in the line that we just read in."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:86
+msgid ""
+"If the word was not found, print the word. Don't print anything if you do"
+" find the word, that would just be annoying."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:89
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:92
+msgid "Make sure the program runs successfully before moving on to the next step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:90
+msgid ""
+"Create a new variable that will track the line number that you are on. "
+"Print this line number along with the misspelled from the prior step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:93
+msgid "Print ``--- Binary Search ---``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:94
+msgid ""
+"The linear search takes quite a while to run. To temporarily disable it, "
+"it may be commented out by using three quotes before and after that block"
+" of code. Ask if you are unsure how to do this."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:97
+msgid ""
+"Repeat the same pattern of code as before, but this time use a binary "
+"search. Much of the code from the linear search may be copied, and it is "
+"only necessary to replace the lines of code that represent the linear "
+"search with the binary search."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:101
+msgid "Note the speed difference between the two searches."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:102
+msgid ""
+"Make sure the linear search is re-enabled, if it was disabled while "
+"working on the binary search."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:104
+msgid "Upload the final program or check in the final program."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:106
+msgid "15.3 Example Run"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:4
+msgid "Lab 11: Array-Backed Grids"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:6
+msgid ""
+"**Part 1: 10 pts.** Start with the program at the end of :ref:`array-"
+"backed-grids`. Modify it so that rather than just changing the block the "
+"user clicks on, also change the blocks of the squares next to the user's "
+"click. If the user clicks on an edge, make sure the program doesn't crash"
+" and still handles the click appropriately."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:14
+msgid "Example of working Lab 11"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:16
+msgid ""
+"**Part 2: 10 pts.** Write a celebrity-finding function. Start with a "
+"function check_celebrity that takes an ``n`` by ``n`` matrix named grid "
+"as a parameter. The grid location ``grid[i][j] = 1`` if person ``i`` "
+"knows person ``j`` and ``grid[i][j] = 0`` otherwise. (Assume that "
+"``grid[i][i] = 1`` for every ``i``, since every person knows "
+"him/herself.) A celebrity is a person who is known by everyone and does "
+"not know anyone besides him/herself. Write a function that given the "
+"matrix grid, prints all the celebrities."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:25
+msgid "For example, in the following grid person 2 is a celebrity:"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:30
+msgid "In the next example no one is a celebrity:"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:42
+msgid ""
+"Remember: A matrix can be represented as a list-of-lists, where each sub-"
+"list is a row of the matrix. For example, the first matrix can be "
+"represented as:"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:49
+msgid "Or you can use multiple lines to define the grid:"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:58
+msgid "You can test your function with code like the following test cases:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:4
+msgid "Lab 12: Final Lab"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:6
+msgid ""
+"This is it! This is your chance to use your creativity and really show "
+"off what you can create in your own game. More than just passing a test, "
+"in this class you actually get to do something, and create something "
+"real."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:10
+msgid ""
+"There are two options for the final lab. A \"video game option\" and a "
+"\"text adventure option.\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:13
+msgid ""
+"Both options are divided into three parts. Each part should take about "
+"one week. The goals of this lab:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:16
+msgid ""
+"Get used to working on longer programs by breaking them into different "
+"functions, classes, and files."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:18
+msgid ""
+"Learn to search for code that does what you want, and adapt it into your "
+"program."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:20
+msgid "Learn to break down large programs into smaller, easier to solve parts."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:21
+msgid "Start creating a portfolio of work that you've done."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:22
+msgid "See that programming can be a fun, creative outlet."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:23
+msgid ""
+"Apply the concepts we learned, such as variables, expressions, if "
+"statements, loops, lists, arrays, and more."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:26
+msgid ""
+"This lab is worth 60 points. Each week, turn in what you have for the lab"
+" so you can \"lock in\" your score and get an idea of how you are "
+"progressing. When you get more done, resubmit the assignment."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:31
+msgid ""
+"You can wait until the end to turn in your work until the end of the "
+"semester, but that is a very risky plan."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:35
+msgid "Video Game Option"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:37
+msgid ""
+"The video game option is the most popular option. Here are some videos of"
+" what students have done in prior years:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:63
+msgid "Using Images or Sounds from Other Sources"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:65
+msgid ""
+"It is ok to use images and sounds from other sources if you cite the "
+"source."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:67
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:90
+msgid ""
+"Cite in the code comments what images and sounds you've used. So for "
+"every image or sound loaded, put a ``#`` tag in the line above with a "
+"citation on where it came from. I'll expect more than just a URL, give me"
+" a name of the website as well."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:72
+msgid ""
+"For a professionally published game this would NOT be enough. You'd need "
+"to make sure you have license to use the work."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:75
+msgid ""
+"If you create your own image or sound, state that in the comments so I "
+"can be properly impressed."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:79
+msgid "Using Code from Other Sources"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:81
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:94
+msgid ""
+"If you find code to use that doesn't come from this website or from "
+"arcade.academy, cite it. Otherwise you'll be plagiarizing, and flunked "
+"from the class."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:85
+msgid "Almost every semester I catch someone doing this. Please, just don't."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:88
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:164
+msgid "Requirements for Part 1"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:98
+msgid ""
+"Each of the three parts for the final lab raises the bar on what your "
+"game needs to be able to do."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:101
+msgid "Open up a screen."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:102
+msgid ""
+"Set up the items to be drawn on the screen. Figure out the images that "
+"you want to use."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:104
+msgid ""
+"Provide some sort of player movement or interaction via mouse, keyboard, "
+"or game controller. Get items on the screen to move, if applicable."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:106
+msgid "Have something that is at least kind-of playable."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:109
+msgid "**Tips:**"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:111
+msgid ""
+"If your program will involve things running into each other, start by "
+"using sprites. Do not start by using drawing commands, and expect to add "
+"in sprites later. It won't work and you'll need start over from scratch. "
+"This will be sad."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:115
+msgid ""
+"If you are coding a program like mine sweeper or connect four, do *not* "
+"use sprites. Since collision detection is not needed, there is no need to"
+" mess with sprites."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:118
+msgid ""
+"While you can start with and use any of the example game code from this "
+"website or `arcade.academy`_, don't just turn these in as Part 1. You'll "
+"need to add a lot before it qualifies."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:121
+msgid ""
+"`OpenGameArt.org`_ has a lot of images and sounds you can use royalty-"
+"free."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:122
+msgid "`Kenney.nl`_ has many images and sounds as well."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:129
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:202
+msgid "Requirements for Part 2"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:131
+msgid ""
+"For Final Lab Part 2, your game should be functional. A person should be "
+"able to sit down and play the game for a few minutes and have it feel "
+"like a real game. Here are some things you might want to add:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:135
+msgid "Be able to collide with objects."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:136
+msgid "Players can lose the game if something bad happens."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:137
+msgid "On-screen score."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:138
+msgid "Sound effects."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:139
+msgid "Movement of other characters in the screen."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:140
+msgid "The ability to click on mines or empty spots."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:143
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:234
+msgid "Requirements for Part 3"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:145
+msgid ""
+"For the final part, add in the last polish for your game. Here are some "
+"things you might want to add:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:148
+msgid "Title and instruction screens"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:149
+msgid "Multiple levels"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:150
+msgid "Lots of Sounds"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:151
+msgid "Multiple \"lives\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:152
+msgid "More types of enemies"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:153
+msgid "Power-ups"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:154
+msgid "Heat seeking missiles"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:155
+msgid "Hidden doors"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:156
+msgid "A \"sweep\" action in a minesweeper game or the ability to place \"flags\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:159
+msgid "Text Adventure Option"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:161
+msgid ""
+"Not interested in a video game? Continue your work from the "
+"\"Adventure!\" game."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:166
+msgid ""
+"Rather than have each room be a list of ``[description, north, east, "
+"south, west]`` create a ``Room`` class. The class should have a "
+"constructor that takes in ``(description, north, east, south, west)`` and"
+" sets fields for the description and all of the directions. Get the "
+"program working with the new class. The program should be able to add "
+"rooms like:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:181
+msgid "Later the program should be able to refer to fields in the room:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:187
+msgid ""
+"Perhaps expand the game so that a person can travel up and down. Also "
+"expand it so the person can travel northwest, southwest, northeast, and "
+"southeast."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:189
+msgid "Add a list of items in your game."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:191
+msgid "Create a class called ``Item``."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:192
+msgid ""
+"Add fields for the item's room number, a long description, and a short "
+"name. The short name should only be one word long. This way the user can "
+"type ``get key`` and the computer will know what object he/she is "
+"referring to. The description will be what is printed out. Like ``There "
+"is a rusty key here.``"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:197
+msgid "Create a list of items, much like you created your list of rooms."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:198
+msgid "If the item is in the user's room, print the item's description."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:199
+msgid "Test, and make sure this works."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:204
+msgid ""
+"Change your command processing, so rather than just allowing the user to "
+"only type in directions, the user will now start having other options. "
+"For example, we want the user to also be able to type in commands such as"
+" get key, inventory or wave wand."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:206
+msgid ""
+"To do this, don't ask the user What direction do you want to go? Instead "
+"ask the user something like What is your command?"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:207
+msgid ""
+"Split the user input. We need a variable that is equal to the first "
+"command they type, such as get and a different variable equal to the "
+"second word, such as key."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:209
+msgid ""
+"Use the split method that's built into Python strings. For example: "
+"``command_words = user_command.split(\" \")`` This will split what the "
+"user types into a list. Each item separated out based on spaces."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:213
+msgid ""
+"Update your code that processes the user typing in directions, to check "
+"command_words[0] instead of whatever you had before."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:216
+msgid "Add a get command."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:218
+msgid ""
+"Add a check for a get command in your if/elif chain that is now just "
+"processing directions."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:220
+msgid ""
+"Search the item list until you find an object that matches what the user "
+"is trying pick up."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:222
+msgid ""
+"If the object isn't found, or if the object isn't in the current room, "
+"print an error."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:224
+msgid ""
+"If the object is found and it is in the current room, then set the "
+"object's room number to -1."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:227
+msgid ""
+"Add a command for \"inventory\" that will print every object who's room "
+"number is equal to -1."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:229
+msgid "Add the ability to drop an object."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:230
+msgid ""
+"Add the ability to use the objects. For example \"use key\" or \"swing "
+"sword\" or \"feed bear.\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:236
+msgid "Expand the game some more. Try some of these ideas:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:238
+msgid ""
+"Create a file format that allows you to load the rooms and objects from a"
+" file rather than write code for it."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:239
+msgid "Have monsters with hit points."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:240
+msgid "Split the code up into multiple files for better organization."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:241
+msgid ""
+"Remove globals using a main function as shown at the end of the chapter "
+"about functions."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:242
+msgid "Have objects with limited use. Like a bow that only has so many arrows."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:243
+msgid ""
+"Have creatures with limited health, and weapons that cause random damage "
+"and have a random chance to hit."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:246
+msgid "Tips"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:248
+msgid ""
+"Commit and push your code often. It is not unusual for something bad to "
+"happen to the code while you are working on this assignment. Anything you"
+" commit and push we can recover. Don't work for more than a couple hours "
+"without doing this."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:252
+msgid ""
+"I give a lot of in-class lab time for this project. Use it. Don't leave "
+"early."
+msgstr ""
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:2
+msgid "Quantitative Reasoning Reflection"
+msgstr ""
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:4
+msgid ""
+"Describe how you used multiple methods to add functionality to your "
+"program. For example, how did you use lists? \"If\" statements? Loops? "
+"Classes? Functions? Sample pieces of code? How did you decide which "
+"methods to apply? (search examples)"
+msgstr ""
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:8
+msgid ""
+"Explain how you communicate your solution (from one programmer to "
+"another) when writing the code. Show how variable names matter, how "
+"function names matter, how comments and structure make your code easier "
+"to read."
+msgstr ""
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:12
+msgid ""
+"How did you test and evaluate the accuracy of your code? When something "
+"didn't work, describe how you figured out what the error was."
+msgstr ""
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:14
+msgid ""
+"What are the limitations to using numerical methods to make decisions? "
+"What limits did you notice when you programmed item placement or non-"
+"player characters?"
+msgstr ""
+

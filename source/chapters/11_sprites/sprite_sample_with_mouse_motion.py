@@ -6,6 +6,7 @@ import arcade
 # --- Constants ---
 SPRITE_SCALING_PLAYER = 0.5
 SPRITE_SCALING_COIN = 0.2
+COIN_COUNT = 50
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -43,15 +44,17 @@ class MyWindow(arcade.Window):
         self.score = 0
 
         # Set up the player
+        # Character image from kenney.nl
         self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
         self.all_sprites_list.append(self.player_sprite)
 
         # Create the coins
-        for i in range(50):
+        for i in range(COIN_COUNT):
 
             # Create the coin instance
+            # Coin image from kenney.nl
             coin = arcade.Sprite("coin_01.png", SPRITE_SCALING_COIN)
 
             # Position the coin
