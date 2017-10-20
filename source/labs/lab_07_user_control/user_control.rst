@@ -39,6 +39,9 @@ Write one program, following these steps:
 * In the case of the game controller and the keyboard, make sure to add checks
   so that your object does not move off-screen and get lost.
 * Add a sound effect for when the user clicks the mouse button.
-* Add a sound effect for when the user bumps into the edge of the screen.
+* Add a different sound effect for when the user bumps into the edge of the screen.
+
+When you are done, make sure you commit your sound effects in what you turn in!
+Otherwise your program can't be graded.
 
 .. _Arcade Starting Template: http://arcade.academy/examples/starting_template.html
