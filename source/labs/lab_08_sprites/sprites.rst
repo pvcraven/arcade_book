@@ -17,7 +17,10 @@ Lab 8: Sprites
   one.
 * Move the bad sprites. Move them differently than the good ones.
 * If the length of the good sprite list is zero, then don't move any of the
-  sprites or the character. "Freeze" the game.
+  sprites or the character. "Freeze" the game. To do this, note what line of
+  the ``update`` method in the main window class causes the sprites to move.
+  Then only run that line if you have sprites. (Check the length of the sprite
+  list.) If you get that to work, the do something similar ``on_mouse_motion``.
 * If the length of the good sprite list is zero, draw "Game Over" on the screen.
 * Double-check on-line that the images for your sprites uploaded. Upload sounds.
 * Triple-check on-line that everything uploaded. If the images and sounds aren't uploaded, it can't be graded.
