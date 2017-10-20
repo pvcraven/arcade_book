@@ -32,7 +32,7 @@ Write one program, following these steps:
 * In the examples, we just moved a ball. Adjust the code so that it draws
   something more interesting than a ball. You can pull from the code you used in
   prior labs where you drew with a function, and move it to the ``on_draw`` method
-  of your class.
+  of your class. But don't have your object be a simple one line of code shape.
 * Rename your class from ``Ball`` to a name that represents what you are really drawing.
 * After you get that object moving, pick a different method of control (keyboard, mouse,
   gamepad.) Create a new class, draw something different, and move it around the screen.
