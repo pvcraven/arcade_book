@@ -62,15 +62,17 @@ code:
 This identifies the player character (``player_sprite``), and a list of sprites
 (``wall_list``) that the player character isn't allowed to pass through.
 
-.. code-block:: python
-
-    self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
-
 Before, we updated all the sprites with a ``self.all_sprites_list.update()``
 command. With the physics engine, we will instead update the sprites by using
 the physics engine's update::
 
     self.physics_engine.update()
+
+.. attention::
+
+    Don't call both ``self.all_sprites_list.update()`` and ``self.physics_engine.update()``.
+    You can update other lists of sprites, but we don't want to update the player
+    sprite using anything but the physics engine.
 
 The simple physics engine follows the following algorithm:
 
