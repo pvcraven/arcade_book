@@ -8,8 +8,8 @@ Sprites and Walls
 
 (Note: Show how to place individual blocks. Blocks in a row, in a column. Use a list.)
 
-The Simple Physics Engine
--------------------------
+Setup
+-----
 
 Many games with sprites often have "walls" that the character can't move
 through. There are rather straight-forward to create.
@@ -29,19 +29,173 @@ act as a blocking wall. Both images are from `kenney.nl`_.
 
     images/boxCrate_double.png
 
+Start with a default file:
+
+.. literalinclude:: start_file.py
+    :caption: sprite_move_walls.py start
+    :language: python
+    :linenos:
+
+In the ``__init__`` method, let's create some variables to hold our sprites:
+
+.. code-block:: python
+
+    # Sprite lists
+    self.all_sprites_list = None
+    self.wall_list = None
+
+    # Set up the player
+    self.player_sprite = None
+
+    # This variable holds our simple "physics engine"
+    self.physics_engine = None
+
+In the ``setup`` method, let's create our sprite lists:
+
+.. code-block:: python
+
+    # Sprite lists
+    self.all_sprites_list = arcade.SpriteList()
+    self.wall_list = arcade.SpriteList()
+
+
+Then reset the score and create the player:
+
+.. code-block:: python
+
+    # Reset the score
+    self.score = 0
+
+    # Create the player
+    self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING_PLAYER)
+    self.player_sprite.center_x = 50
+    self.player_sprite.center_y = 64
+    self.all_sprites_list.append(self.player_sprite)
+
+Then go ahead and draw everything in our ``on_draw``:
+
+.. code-block:: python
+
+    def on_draw(self):
+        arcade.start_render()
+        self.all_sprites_list.draw()
+
+Run the program and make sure it works.
+
+.. image:: just_player.png
+
+Individually Placing Walls
+--------------------------
+In our ``setup`` method, we can position individual boxes to be used as "walls":
+
+.. code-block:: python
+
+    # Manually create and position a box at 300, 200
+    wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+    wall.center_x = 300
+    wall.center_y = 200
+    self.wall_list.append(wall)
+    self.all_sprites_list.append(wall)
+
+    # Manually create and position a box at 364, 200
+    wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+    wall.center_x = 364
+    wall.center_y = 200
+    self.wall_list.append(wall)
+    self.all_sprites_list.append(wall)
+
+Go ahead and try it out. It should look like:
+
+.. image:: with_two_boxes.png
+
+Full listing below:
+
+.. literalinclude:: step_2.py
+    :caption: sprite_move_walls.py Step 2
+    :language: python
+    :linenos:
+
+Placing Walls With A Loop
+-------------------------
+
 In our ``setup`` method, we can create a row of box sprites using a ``for``
-loop. In the code below, our y value is always 200, and we change the x value
+loop. In the code below, our y value is always 350, and we change the x value
 from 173 to 650. We put a box every 64 pixels because each box happens to be
 64 pixels wide.
 
 .. code-block:: python
 
+    # Place boxes inside a loop
     for x in range(173, 650, 64):
-        wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING)
+        wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
         wall.center_x = x
-        wall.center_y = 200
-        self.all_sprites_list.append(wall)
+        wall.center_y = 350
         self.wall_list.append(wall)
+        self.all_sprites_list.append(wall)
+
+
+.. image:: boxes_loop.png
+
+Placing Walls With A List
+-------------------------
+
+You could even create a list of coordinates, and then just loop through that list creating walls:
+
+.. code-block:: python
+
+    # --- Place walls with a list
+    coordinate_list = [[400, 500],
+                       [470, 500],
+                       [400, 570],
+                       [470, 570]]
+
+    # Loop through coordinates
+    for coordinate in coordinate_list:
+        wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+        wall.center_x = coordinate[0]
+        wall.center_y = coordinate[1]
+        self.wall_list.append(wall)
+        self.all_sprites_list.append(wall)
+
+.. image:: list.png
+
+Full listing below:
+
+.. literalinclude:: step_3.py
+    :caption: sprite_move_walls.py Step 3
+    :language: python
+    :linenos:
+
+
+Physics Engine
+--------------
+
+First, we need to hook the keyboard up to the player:
+
+.. code-block:: python
+
+    def on_key_press(self, key, modifiers):
+        """Called whenever a key is pressed. """
+
+        if key == arcade.key.UP:
+            self.player_sprite.change_y = MOVEMENT_SPEED
+        elif key == arcade.key.DOWN:
+            self.player_sprite.change_y = -MOVEMENT_SPEED
+        elif key == arcade.key.LEFT:
+            self.player_sprite.change_x = -MOVEMENT_SPEED
+        elif key == arcade.key.RIGHT:
+            self.player_sprite.change_x = MOVEMENT_SPEED
+
+    def on_key_release(self, key, modifiers):
+        """Called when the user releases a key. """
+
+        if key == arcade.key.UP or key == arcade.key.DOWN:
+            self.player_sprite.change_y = 0
+        elif key == arcade.key.LEFT or key == arcade.key.RIGHT:
+            self.player_sprite.change_x = 0
+
+
+Now, we need to add a way to stop the player from running into walls.
 
 The Arcade Library has a built in "physics engine." A physics engine handles
 the interactions between the virtual physical objects in the game.
@@ -52,7 +206,14 @@ Physics engines have made impressive gains on what they can simulate. For our
 game, we'll just keep things simple and make sure our character can't walk
 through walls.
 
-We can create the physics engine in our ``setup`` method with the following
+We'll create variable to hold our physics engine in the ``__init__``:
+
+.. code-block:: python
+
+    # This variable holds our simple "physics engine"
+    self.physics_engine = None
+
+We can create the actual physics engine in our ``setup`` method with the following
 code:
 
 .. code-block:: python
@@ -62,15 +223,14 @@ code:
 This identifies the player character (``player_sprite``), and a list of sprites
 (``wall_list``) that the player character isn't allowed to pass through.
 
-.. code-block:: python
-
-    self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
-
 Before, we updated all the sprites with a ``self.all_sprites_list.update()``
 command. With the physics engine, we will instead update the sprites by using
-the physics engine's update::
+the physics engine's update:
 
-    self.physics_engine.update()
+.. code-block:: python
+
+    def update(self, delta_time):
+        self.physics_engine.update()
 
 The simple physics engine follows the following algorithm:
 
@@ -92,9 +252,10 @@ You can see the `physics engine source code`_ on GitHub.
 
 .. _physics engine source code: https://github.com/pvcraven/arcade/blob/master/arcade/physics_engines.py
 
+
 Here's the full example:
 
-.. literalinclude:: sprite_move_walls.py
+.. literalinclude:: step_4.py
     :caption: sprite_move_walls.py
     :language: python
     :linenos:
@@ -196,7 +357,7 @@ the edge of the screen and we need to update the boundaries.
 
 The full example is below:
 
-.. literalinclude:: sprite_move_scrolling.py
+.. literalinclude:: step_5.py
     :caption: sprite_move_scrolling.py
     :language: python
     :linenos:
