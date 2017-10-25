@@ -129,6 +129,7 @@ class MyAppWindow(arcade.Window):
             self.score += 1
             coin.kill()
 
+
 def main():
     window = MyAppWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
     window.start_new_game()
