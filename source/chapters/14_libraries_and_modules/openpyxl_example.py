@@ -6,17 +6,17 @@ from openpyxl import Workbook
 import random
 
 # Create an Excel workbook
-wb = Workbook()
+work_book = Workbook()
 
 # Grab the active worksheet
-ws = wb.active
+work_sheet = work_book.active
 
 # Data can be assigned directly to cells
-ws['A1'] = "This is a test"
+work_sheet['A1'] = "This is a test"
 
 # Rows can also be appended
 for i in range(200):
-    ws.append([random.randrange(1000)])
+    work_sheet.append(["Random Number:", random.randrange(1000)])
 
 # Save the file
-wb.save("sample.xlsx")
+work_book.save("sample.xlsx")

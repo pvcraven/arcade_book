@@ -122,7 +122,7 @@ command to import it:
     foo()
 
 That still doesn't work. What are we missing? Just like when we import
-pygame, we have to put the package name in front of the function. Like this:
+arcade, we have to put the package name in front of the function. Like this:
 
 .. code-block:: python
     :linenos:
@@ -231,6 +231,12 @@ easy to read from an Excel file.
 You can install OpenPyXL from the Windows command prompt by typing
 ``pip install openpyxl``.
 If you are on the Mac or a Linux machine, you can type ``sudo pip3 install openpyxl``.
+
+.. note::
+
+    When starting the command prompt, you might need to right-click on it and select "Run as administrator" if
+    you get permission errors when installing.
+    And if you are working on a lab computer, you might not have permission to install libraries.
 
 .. literalinclude:: openpyxl_example.py
     :caption: openpyxl_example.py

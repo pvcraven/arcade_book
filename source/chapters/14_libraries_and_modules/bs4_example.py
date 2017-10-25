@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 # Read in the web page
-url= "http://simpson.edu"
-page = urllib.request.urlopen(url)
+url_address = "http://simpson.edu"
+page = urllib.request.urlopen(url_address)
 
 # Parse the web page
 soup = BeautifulSoup(page.read(), "html.parser")
