@@ -10,8 +10,8 @@ labels = ['C', 'Java', 'Objective-C', 'C++', 'C#', 'PHP', 'Python']
 sizes = [17, 14, 9, 6, 5, 3, 2.5]
 
 # For list of colors, see:
-# https://github.com/matplotlib/matplotlib/blob/master/lib/matplotlib/colors.py
-colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', 'darkcyan', 'darksage', 'rosybrown']
+# https://matplotlib.org/examples/color/named_colors.html
+colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', 'darkcyan', 'aquamarine', 'rosybrown']
 
 # How far out to pull a slice. Normally zero.
 explode = (0, 0.0, 0, 0, 0, 0, 0.2)

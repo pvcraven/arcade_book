@@ -266,6 +266,10 @@ Here is an example of what you can do with the third party library "Matplotlib."
 You can install Matplotlib from the Windows command prompt by typing
 ``pip install matplotlib``. If you are on the Mac or a Linux machine, you can
 type ``pip3 install matplotlib``.
+
+Example 1: Simple Plot
+~~~~~~~~~~~~~~~~~~~~~~
+
 To start with, here is the code to create a simple line chart with four values:
 
 .. figure:: matplotlib_01.png
@@ -282,6 +286,9 @@ Note that you can zoom in, pan, and save the graph. You can even save the graph
 in vector formats like ps and svg that import into documents without loss of
 quality like raster graphics would have.
 
+Example 2: Specify x Values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The x value for Example 1, defaults to start at zero. You can
 change this default and specify your own x values to go with the y values.
 See Example 2 below.
@@ -296,6 +303,9 @@ See Example 2 below.
     :language: python
     :linenos:
 
+Example 3: Add A Second Data Series
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 It is trivial to add another data series to the graph.
 
 .. figure:: matplotlib_03.png
@@ -307,6 +317,9 @@ It is trivial to add another data series to the graph.
     :caption: Example 3
     :language: python
     :linenos:
+
+Example 4: Add A Legend
+~~~~~~~~~~~~~~~~~~~~~~~
 
 You can add a legend to the graph:
 
@@ -320,6 +333,9 @@ You can add a legend to the graph:
     :language: python
     :linenos:
 
+Example 5: Add Annotations
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You can add annotations to a graph:
 
 .. figure:: matplotlib_05.png
@@ -331,6 +347,9 @@ You can add annotations to a graph:
     :caption: Example 5
     :language: python
     :linenos:
+
+Example 6: Change Line Styles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Don't like the default lines styles for the graph? That can be changed by
 adding a third parameter to the plot command.
@@ -345,6 +364,9 @@ adding a third parameter to the plot command.
     :language: python
     :linenos:
 
+Example 7: Bar Chart
+~~~~~~~~~~~~~~~~~~~~
+
 A bar chart is as easy as changing plot to bar.
 
 .. figure:: matplotlib_07.png
@@ -357,6 +379,9 @@ A bar chart is as easy as changing plot to bar.
     :language: python
     :linenos:
 
+Example 8: Axis Labels
+~~~~~~~~~~~~~~~~~~~~~~
+
 You can add labels to axis values.
 
 .. figure:: matplotlib_08.png
@@ -368,6 +393,9 @@ You can add labels to axis values.
     :caption: Example 8
     :language: python
     :linenos:
+
+Example 9: Graph Functions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can graph functions as well. This uses a different package called
 numpy to graph a sine function.
@@ -382,6 +410,9 @@ numpy to graph a sine function.
     :language: python
     :linenos:
 
+Example 10: Graph Functions With Fill
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You can fill in a graph if you like.
 
 .. figure:: matplotlib_10.png
@@ -394,6 +425,9 @@ You can fill in a graph if you like.
     :language: python
     :linenos:
 
+Example 11: Pie Chart
+~~~~~~~~~~~~~~~~~~~~~
+
 Create a pie chart.
 
 .. figure:: matplotlib_11.png
@@ -405,6 +439,9 @@ Create a pie chart.
     :caption: Example 11
     :language: python
     :linenos:
+
+Example 12: Candlestick Chart
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can do really fancy things, like pull stock data from the web and create a
 candlestick graph for Apple Computer:
