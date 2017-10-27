@@ -209,42 +209,41 @@ If it is less, we found the element.
 Variations On The Linear Search
 -------------------------------
 
-.. note::
-
-    (This section needs to be updated to show examples using the text
-    adventure.)
-
 Variations on the linear search can be used to create several common
-algorithms. For example, say we had a list of aliens. We might want to check
-this group of aliens to see if one of the aliens is green. Or are all the
-aliens green? Which aliens are green?
+algorithms. For example, say we had a list of objects for our text adventure.
+We might want to check that list and see if any of the items are in the same
+room as our player. Or if all the items are. Or we might want to build a list
+of items that the user is carrying if they are all in a "special" room that
+represents the player's inventory.
 
-To begin with, we'd need to define our alien:
+To begin with, we'd need to define our adventure object:
 
 .. code-block:: python
     :linenos:
-    :caption: Alien class
+    :caption: Adventure Object class
 
-    class Alien:
+    class AdventureObject:
         """ Class that defines an alien"""
-        def __init__(self, color, weight):
+
+        def __init__(self, description, room):
             """ Constructor. Set name and color"""
-            self.color = color
-            self.weight = weight
+            self.description = description
+            self.room = room
 
 Then we'd need to create a function to check and see if it has the property
-that we are looking for. In this case, is it green? We'll assume the color
-is a text string, and we'll convert it to upper case to eliminate
-case-sensitivity.
+that we are looking for. In this case, is it in a specified room? We'll take in
+``room`` as a parameter and check the object.
 
 .. code-block:: python
     :linenos:
     :caption: Alien class has_property method
 
-    def has_property(my_alien):
-        """ Check to see if an item has a property.
-        In this case, is the alien green? """
-        if my_alien.color.upper() == "GREEN":
+    def has_property(my_object, room):
+        """
+        Check to see if an item has a property.
+        In this case, is the object in the specified room?
+        """
+        if my_object.room == room:
             return True
         else:
             return False
@@ -252,18 +251,19 @@ case-sensitivity.
 Does At Least One Item Have a Property?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Is at least one alien green? We can check. The basic algorithm behind this
-check:
+Is at least one object in the specified room? We can check.
 
 .. code-block:: python
     :linenos:
-    :caption: Check if list has an item that has a property - while loop
+    :caption: Check if list has an item that has a property - ``while`` loop
 
-    def check_if_one_item_has_property_v1(my_list):
-        """ Return true if at least one item has a
-        property. """
+    def check_if_one_item_has_property_v1(my_list, room):
+        """
+        Return true if at least one item has a
+        property.
+        """
         i = 0
-        while i < len(my_list) and not has_property(my_list[i]):
+        while i < len(my_list) and not has_property(my_list[i], room):
             i += 1
 
         if i < len(my_list):
@@ -282,50 +282,56 @@ footing the bill.
 
 .. code-block:: python
     :linenos:
-    :caption: Check if list has an item that has a property - for loop
+    :caption: Check if list has an item that has a property - ``for`` loop
 
-    def check_if_one_item_has_property_v2(my_list):
-        """ Return true if at least one item has a
-        property. Works the same as v1, but less code. """
+    def check_if_one_item_has_property_v2(my_list, room):
+        """
+        Return true if at least one item has a
+        property. Works the same as v1, but less code.
+        """
         for item in my_list:
-            if has_property(item):
+            if has_property(item, room):
                 return True
         return False
 
 Do All Items Have a Property?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Are all aliens green? This code is very similar to the prior example. Spot
+Are all the adventure objects in the same room? This code is very similar to the prior example. Spot
 the difference and see if you can figure out the reason behind the change.
 
 .. code-block:: python
     :linenos:
     :caption: Check if all items have a property
 
-    def check_if_all_items_have_property(my_list):
-        """ Return true if at ALL items have a property. """
+    def check_if_all_items_have_property(my_list, room):
+        """
+        Return true if at ALL items have a property.
+        """
         for item in my_list:
-            if not has_property(item):
+            if not has_property(item, room):
                 return False
         return True
 
 Create a List With All Items Matching a Property
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What if you wanted a list of aliens that are green? This is a combination of
+What if you wanted a list of objects that are in room 5? This is a combination of
 our prior code, and the code to append items to a list that we learned about
-back in Chapter 7.
+back in :ref:`intro-to-lists`.
 
 .. code-block:: python
     :linenos:
     :caption: Create another list with all items matching a property
 
-    def get_matching_items(list):
-        """ Build a brand new list that holds all the items
-        that match our property. """
+    def get_matching_items(my_list, room):
+        """
+        Build a brand new list that holds all the items
+        that match our property.
+        """
         matching_list = []
-        for item in list:
-            if has_property(item):
+        for item in my_list:
+            if has_property(item, room):
                 matching_list.append(item)
         return matching_list
 
@@ -336,27 +342,35 @@ this code to run:
     :linenos:
     :caption: Run Sample Functions
 
-    alien_list = []
-    alien_list.append(Alien("Green", 42))
-    alien_list.append(Alien("Red", 40))
-    alien_list.append(Alien("Blue", 41))
-    alien_list.append(Alien("Purple", 40))
+    def main():
+        object_list = []
+        object_list.append(AdventureObject("Key", 5))
+        object_list.append(AdventureObject("Bear", 5))
+        object_list.append(AdventureObject("Food", 8))
+        object_list.append(AdventureObject("Sword", 2))
+        object_list.append(AdventureObject("Wand", 10))
 
-    result = check_if_one_item_has_property_v1(alien_list)
-    print("Result of test check_if_one_item_has_property_v1:", result)
+        result = check_if_one_item_has_property_v1(object_list, 5)
+        print("Result of test check_if_one_item_has_property_v1:", result)
 
-    result = check_if_one_item_has_property_v2(alien_list)
-    print("Result of test check_if_one_item_has_property_v2:", result)
+        result = check_if_one_item_has_property_v2(object_list, 5)
+        print("Result of test check_if_one_item_has_property_v2:", result)
 
-    result = check_if_all_items_have_property(alien_list)
-    print("Result of test check_if_all_items_have_property:", result)
+        result = check_if_all_items_have_property(object_list, 5)
+        print("Result of test check_if_all_items_have_property:", result)
 
-    result = get_matching_items(alien_list)
-    print("Number of items returned from test get_matching_items:", len(result))
+        result = get_matching_items(object_list, 5)
+        print("Number of items returned from test get_matching_items:", len(result))
 
-For a full working example see:
 
-http://programarcadegames.com/python_examples/show_file.php?file=property_check_examples.py
+    main()
+
+For a full working example:
+
+.. literalinclude:: linear_search_variations.py
+    :caption: linear_search_variations.py
+    :language: python
+    :linenos:
 
 These common algorithms can be used as part of a solution to a larger problem,
 such as find all the addresses in a list of customers that aren't valid.

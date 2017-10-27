@@ -1,6 +1,8 @@
 .. sectnum::
     :start: 7
 
+.. _intro-to-lists:
+
 Introduction to Lists
 =====================
 
