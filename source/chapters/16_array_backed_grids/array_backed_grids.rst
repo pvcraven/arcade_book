@@ -115,7 +115,8 @@ Drawing the Grid
 1. Create variables named ``WIDTH``, ``HEIGHT``, and ``MARGIN``. Set the width
    and height to 20. This will represent how large each grid location is. Set
    the margin to 5. This represents the margin between each grid location and
-   the edges of the screen. Create these variables before the main program loop.
+   the edges of the screen. Create these variables at the top of the program, after
+   the ``import`` statements.
    Also create variables ``ROW_COUNT`` and ``COLUMN_COUNT``. Set them to 10.
    This will control how many rows and columns we will have.
 2. Calculate ``SCREEN_WIDTH`` and ``SCREEN_HEIGHT`` based on the variables we
@@ -123,7 +124,7 @@ Drawing the Grid
    If we have 10 rows, that's also 11 margins. (Nine between the cells and two on
    each edge.) That is 55 more pixels for a total of 255. Write the equation
    so it works with whatever we select in the constants created by step 1.
-3. Draw a white box in the lower-left corner. Draw the box drawn using the
+3. Change the background to black. Draw a white box in the lower-left corner. Draw the box drawn using the
    height and width variables created earlier. (Feel free to adjust the colors.)
    Use the `draw_rectangle_filled`_ function. You will need to center the
    rectangle not at (0, 0) but at a coordinate that takes into account the
@@ -142,7 +143,7 @@ Drawing the Grid
 
     Figure 16.4: Step 4
 
-5. Adjust the drawing of the rectangle to add in the ``margin`` variable. Now
+5. Adjust the drawing of the rectangle to add in the ``MARGIN`` variable. Now
    there should be gaps between the rectangles. See Figure 16.5.
 
 .. figure:: step_05.png
