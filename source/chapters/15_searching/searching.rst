@@ -179,18 +179,18 @@ Linear Search Algorithm
     # --- Linear search
     key = "Morgiana the Shrew"
 
-    i = 0
-    while i < len(name_list) and name_list[i] != key:
-        i += 1
+    list_position = 0
+    while list_position < len(name_list) and name_list[list_position] != key:
+        list_position += 1
 
-    if i < len(name_list):
-        print( "The name is at position", i)
+    if list_position < len(name_list):
+        print("The name is at position", list_position)
     else:
-        print( "The name was not in the list." )
+        print("The name was not in the list.")
 
 The linear search is rather simple. Line 4 sets up an increment variable that
 will keep track of exactly where in the list the program needs to check next.
-The first element that needs to be checked is zero, so ``i`` is set to zero.
+The first element that needs to be checked is zero, so ``list_position`` is set to zero.
 
 The next line is a bit more complex. The computer needs to keep looping until
 one of two things happens. It finds the element, or it runs out of elements.
@@ -267,11 +267,11 @@ Is at least one object in the specified room? We can check.
         Return true if at least one item has a
         property.
         """
-        i = 0
-        while i < len(my_list) and not has_property(my_list[i], room):
-            i += 1
+        list_position = 0
+        while list_position < len(my_list) and not has_property(my_list[list_position], room):
+            list_position += 1
 
-        if i < len(my_list):
+        if list_position < len(my_list):
             # Found an item with the property
             return True
         else:

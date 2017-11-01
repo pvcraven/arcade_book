@@ -68,8 +68,8 @@ http://regexone.com/
 11. Start a ``for`` loop to iterate through each line.
 12. Call the ``split_line`` function to split apart the line of text in the
     story that was just read in. Store the list that the function returns in a
-    new variable named ``words``. Remember, just calling the function won't do
-    anything useful. You need to assign a variable equal (``words``) to the result.
+    new variable named ``word_list``. Remember, just calling the function won't do
+    anything useful. You need to assign a variable equal (``word_list``) to the result.
     If you've forgotten now to capture the return value from a function, flip
     back to the functions chapter to find it.
 13. Start a nested ``for`` loop to iterate through each word in the words list.
