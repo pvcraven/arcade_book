@@ -14,7 +14,6 @@ class MyApplication(arcade.Window):
 
         arcade.set_background_color(arcade.color.WHITE)
 
-
     def on_draw(self):
         """
         Render the screen.
@@ -28,6 +27,8 @@ class MyApplication(arcade.Window):
         """
         pass
 
-window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
 
-arcade.run()
+def main():
+
+    window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
+    arcade.run()
