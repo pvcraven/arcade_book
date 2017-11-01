@@ -32,3 +32,6 @@ def main():
 
     window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
     arcade.run()
+
+
+main()
