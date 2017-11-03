@@ -170,10 +170,12 @@ Drawing the Grid
 Populating the Grid
 ^^^^^^^^^^^^^^^^^^^
 
-8. Now we need to create a two-dimensional array. Creating a two-dimensional array
+8. Now we need to create a two-dimensional array. We need to create this once, at program
+   start-up. So this will go in the program's ``__init__`` method.
+   Creating a two-dimensional array
    in Python is, unfortunately, not as easy as it is in some other computer
    languages. There are some libraries that can be downloaded for Python that make
-   it easy, but for this example they will not be used. To create a two-dimensional
+   it easy (like numpy), but for this example they will not be used. To create a two-dimensional
    array and set an example, use the code below:
 
 .. code-block:: python
@@ -181,16 +183,16 @@ Populating the Grid
 
     # --- Create grid of numbers
     # Create an empty list
-    grid = []
+    self.grid = []
     # Loop for each row
     for row in range(10):
         # For each row, create a list that will
         # represent an entire row
-        grid.append([])
+        self.grid.append([])
         # Loop for each column
         for column in range(10):
             # Add a the number zero to the current row
-            grid[row].append(0)
+            self.grid[row].append(0)
 
 A much shorter example is below, but this example uses some odd parts of
 Python that I don't bother to explain in this book:
@@ -198,7 +200,7 @@ Python that I don't bother to explain in this book:
 .. code-block:: python
     :caption: Create a 10x10 array of numbers
 
-    grid = [[0 for x in range(10)] for y in range(10)]
+    self.grid = [[0 for x in range(10)] for y in range(10)]
 
 Use one of these two examples and place the code to create our array ahead of
 your main program loop.
@@ -213,7 +215,7 @@ MATLAB use column-major storage.
 .. code-block:: python
 
     # Set row 1, column 5 to one
-    grid[1][5] = 1
+    self.grid[1][5] = 1
 
 Place this code somewhere ahead of your main program loop.
 
