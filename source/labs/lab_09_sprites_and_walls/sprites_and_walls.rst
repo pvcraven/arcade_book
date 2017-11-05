@@ -7,6 +7,8 @@ Goal: Create a landscape of wall objects that the user must navigate around to
 collect coins. This will help practice using ``for`` loops to create
 and position multiple items.
 
+.. image:: lab9.gif
+
 * Step 1: Start with one of the move with walls examples.
   Use either the `Move with Walls`_ example or the `Move with a Scrolling Screen`_ example.
 * Step 2: Create a more complex arrangement of walls. Make sure the walls don't
