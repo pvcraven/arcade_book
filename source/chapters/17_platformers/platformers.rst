@@ -81,3 +81,13 @@ Python Program
     :language: python
     :linenos:
 
+Other Examples
+--------------
+
+If you are looking for platforms that move, see `Sprite Moving Platforms`_.
+
+.. _Sprite Moving Platforms: http://arcade.academy/examples/sprite_moving_platforms.html
+
+If you are looking to be able to create ramps you can run up and down, see `Sprite Ramps`_.
+
+.. _Sprite Ramps: http://arcade.academy/examples/sprite_ramps.html#sprite-ramps
