@@ -115,7 +115,8 @@ Drawing the Grid
 1. Create variables named ``WIDTH``, ``HEIGHT``, and ``MARGIN``. Set the width
    and height to 20. This will represent how large each grid location is. Set
    the margin to 5. This represents the margin between each grid location and
-   the edges of the screen. Create these variables before the main program loop.
+   the edges of the screen. Create these variables at the top of the program, after
+   the ``import`` statements.
    Also create variables ``ROW_COUNT`` and ``COLUMN_COUNT``. Set them to 10.
    This will control how many rows and columns we will have.
 2. Calculate ``SCREEN_WIDTH`` and ``SCREEN_HEIGHT`` based on the variables we
@@ -123,7 +124,7 @@ Drawing the Grid
    If we have 10 rows, that's also 11 margins. (Nine between the cells and two on
    each edge.) That is 55 more pixels for a total of 255. Write the equation
    so it works with whatever we select in the constants created by step 1.
-3. Draw a white box in the lower-left corner. Draw the box drawn using the
+3. Change the background to black. Draw a white box in the lower-left corner. Draw the box drawn using the
    height and width variables created earlier. (Feel free to adjust the colors.)
    Use the `draw_rectangle_filled`_ function. You will need to center the
    rectangle not at (0, 0) but at a coordinate that takes into account the
@@ -142,7 +143,7 @@ Drawing the Grid
 
     Figure 16.4: Step 4
 
-5. Adjust the drawing of the rectangle to add in the ``margin`` variable. Now
+5. Adjust the drawing of the rectangle to add in the ``MARGIN`` variable. Now
    there should be gaps between the rectangles. See Figure 16.5.
 
 .. figure:: step_05.png
@@ -169,10 +170,12 @@ Drawing the Grid
 Populating the Grid
 ^^^^^^^^^^^^^^^^^^^
 
-8. Now we need to create a two-dimensional array. Creating a two-dimensional array
+8. Now we need to create a two-dimensional array. We need to create this once, at program
+   start-up. So this will go in the program's ``__init__`` method.
+   Creating a two-dimensional array
    in Python is, unfortunately, not as easy as it is in some other computer
    languages. There are some libraries that can be downloaded for Python that make
-   it easy, but for this example they will not be used. To create a two-dimensional
+   it easy (like numpy), but for this example they will not be used. To create a two-dimensional
    array and set an example, use the code below:
 
 .. code-block:: python
@@ -180,16 +183,16 @@ Populating the Grid
 
     # --- Create grid of numbers
     # Create an empty list
-    grid = []
+    self.grid = []
     # Loop for each row
     for row in range(10):
         # For each row, create a list that will
         # represent an entire row
-        grid.append([])
+        self.grid.append([])
         # Loop for each column
         for column in range(10):
             # Add a the number zero to the current row
-            grid[row].append(0)
+            self.grid[row].append(0)
 
 A much shorter example is below, but this example uses some odd parts of
 Python that I don't bother to explain in this book:
@@ -197,7 +200,7 @@ Python that I don't bother to explain in this book:
 .. code-block:: python
     :caption: Create a 10x10 array of numbers
 
-    grid = [[0 for x in range(10)] for y in range(10)]
+    self.grid = [[0 for x in range(10)] for y in range(10)]
 
 Use one of these two examples and place the code to create our array ahead of
 your main program loop.
@@ -212,7 +215,7 @@ MATLAB use column-major storage.
 .. code-block:: python
 
     # Set row 1, column 5 to one
-    grid[1][5] = 1
+    self.grid[1][5] = 1
 
 Place this code somewhere ahead of your main program loop.
 
