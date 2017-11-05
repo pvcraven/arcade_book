@@ -177,6 +177,8 @@ class MyWindow(arcade.Window):
         Called whenever the mouse moves.
         """
         if key == arcade.key.UP:
+            # This line below is new. It checks to make sure there is a platform underneath
+            # the player. Because you can't jump if there isn't ground beneath your feet.
             if self.physics_engine.can_jump():
                 self.player_sprite.change_y = JUMP_SPEED
         elif key == arcade.key.LEFT:
