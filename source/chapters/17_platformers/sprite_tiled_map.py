@@ -27,36 +27,62 @@ def get_map(filename):
     This function loads an array based on a map stored as a list of
     numbers separated by commas.
     """
+
+    # Open the file
     map_file = open(filename)
+
+    # Create an empty list of rows that will hold our map
     map_array = []
+
+    # Read in a line from the file
     for line in map_file:
+
+        # Strip the whitespace, and \n at the end
         line = line.strip()
+
+        # This creates a list by splitting line everywhere there is a comma.
         map_row = line.split(",")
+
+        # The list currently has all the numbers stored as text, and we want it
+        # as a number. (e.g. We want 1 not "1"). So loop through and convert
+        # to an integer.
         for index, item in enumerate(map_row):
             map_row[index] = int(item)
+
+        # Now that we've completed processing the row, add it to our map array.
         map_array.append(map_row)
+
+    # Done, return the map.
     return map_array
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
         """
         Initializer
         """
+        # Call the parent class
         super().__init__(width, height)
+
         # Sprite lists
         self.all_sprites_list = None
         self.coin_list = None
+        self.wall_list = None
 
         # Set up the player
         self.score = 0
         self.player_sprite = None
-        self.wall_list = None
+
+        # Physics engine
         self.physics_engine = None
+
+        # Used for scrolling map
         self.view_left = 0
         self.view_bottom = 0
+
+        # When the user gets far enough, we'll print "Game Over"
         self.game_over = False
 
     def setup(self):
@@ -68,8 +94,7 @@ class MyApplication(arcade.Window):
 
         # Set up the player
         self.score = 0
-        self.player_sprite = arcade.Sprite("images/character.png",
-                                           SPRITE_SCALING)
+        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
 
         # Starting position of the player
         self.player_sprite.center_x = 64
@@ -79,6 +104,7 @@ class MyApplication(arcade.Window):
         # Get a 2D array made of numbers based on the map
         map_array = get_map("map.csv")
 
+        # Now that we've got the map, loop through and create the sprites
         for row_index, row in enumerate(map_array):
             for column_index, item in enumerate(row):
 
@@ -91,27 +117,25 @@ class MyApplication(arcade.Window):
                 if item == -1:
                     continue
                 elif item == 0:
-                    wall = arcade.Sprite("images/boxCrate_double.png",
-                                         SPRITE_SCALING)
+                    wall = arcade.Sprite("boxCrate_double.png", SPRITE_SCALING)
                 elif item == 1:
-                    wall = arcade.Sprite("images/grassLeft.png",
-                                         SPRITE_SCALING)
+                    wall = arcade.Sprite("grassLeft.png", SPRITE_SCALING)
                 elif item == 2:
-                    wall = arcade.Sprite("images/grassMid.png",
-                                         SPRITE_SCALING)
+                    wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
                 elif item == 3:
-                    wall = arcade.Sprite("images/grassRight.png",
-                                         SPRITE_SCALING)
+                    wall = arcade.Sprite("grassRight.png", SPRITE_SCALING)
 
+                # Calculate where the sprite goes
                 wall.right = column_index * 64
                 wall.top = (7 - row_index) * 64
+
+                # Add the sprite
                 self.all_sprites_list.append(wall)
                 self.wall_list.append(wall)
 
-        self.physics_engine = \
-            arcade.PhysicsEnginePlatformer(self.player_sprite,
-                                           self.wall_list,
-                                           gravity_constant=GRAVITY)
+        self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
+                                                             self.wall_list,
+                                                             gravity_constant=GRAVITY)
 
         # Set the background color
         arcade.set_background_color(arcade.color.AMAZON)
@@ -216,7 +240,11 @@ class MyApplication(arcade.Window):
                                 SCREEN_HEIGHT + self.view_bottom)
 
 
-window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
-window.setup()
+def main():
+    window = MyWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
+    window.setup()
 
-arcade.run()
+    arcade.run()
+
+
+main()
