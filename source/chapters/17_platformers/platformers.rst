@@ -76,8 +76,14 @@ When you are done, you can "Export as" a CSV file.
 Python Program
 --------------
 
+
+.. literalinclude:: sprite_tiled_map_simple.py
+    :caption: Platformer example, simple
+    :language: python
+    :linenos:
+
 .. literalinclude:: sprite_tiled_map.py
-    :caption: sprite_tiled_map.py
+    :caption: Platformer example, slightly more complex and "Pythonic"
     :language: python
     :linenos:
 
