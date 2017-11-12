@@ -29,33 +29,33 @@ as a program; it won't work.)
 
 .. code-block:: python
 
-	type(3)
-	type(3.145)
-	type("Hi there")
-	type(True)
+    type(3)
+    type(3.145)
+    type("Hi there")
+    type(True)
 
 
 .. code-block:: text
 
-	>>> type(3)
-	<class 'int'>
+    >>> type(3)
+    <class 'int'>
 
-	>>> type(3.145)
-	<class 'float'>
+    >>> type(3.145)
+    <class 'float'>
 
-	>>> type("Hi there")
-	<class 'str'>
+    >>> type("Hi there")
+    <class 'str'>
 
-	>>> type(True)
-	<class 'bool'>
+    >>> type(True)
+    <class 'bool'>
 
 It is also possible to use the type function on a variable to see what kind of
 data is in it.
 
 .. code-block:: text
 
-	x = 3
-	type(x)
+    x = 3
+    type(x)
 
 .. note::
 
@@ -69,8 +69,8 @@ commands in the interactive Python shell and see what is displayed:
 
 .. code-block:: python
 
-	type(  (2, 3, 4, 5) )
-	type(  [2, 3, 4, 5] )
+    type(  (2, 3, 4, 5) )
+    type(  [2, 3, 4, 5] )
 
 Working With Lists
 ------------------
@@ -87,16 +87,16 @@ try the following:
 
 .. code-block:: text
 
-	>>> x = [1,2]
-	>>> print(x)
-	[1, 2]
+    >>> x = [1,2]
+    >>> print(x)
+    [1, 2]
 
 To print an individual element in a list:
 
 .. code-block:: text
 
-	>>> print(x[0])
-	1
+    >>> print(x[0])
+    1
 
 This number with the item's location is called the index. Note that list
 locations start at zero. So a list or array with 10 elements does not have an
@@ -131,9 +131,9 @@ below, the first spot at location zero (not one) is assigned the number 22.
 
 .. code-block:: text
 
-	>>> x[0] = 22
-	>>> print(x)
-	[22, 2]
+    >>> x[0] = 22
+    >>> print(x)
+    [22, 2]
 
 Also, a program can create a "tuple." This data type works just like a list, but
 with two differences. First, it is created with parentheses rather than square
@@ -141,17 +141,17 @@ brackets. Second, it is not possible to change the tuple once created. See below
 
 .. code-block:: text
 
-	>>> x = (1, 2)
-	>>> print(x)
-	(1, 2)
-	>>> print(x[0])
-	1
-	>>> x[0] = 22
-	Traceback (most recent call last):
-	  File "<pyshell#18>", line 1, in <module>
-	    x[0] = 22
-	TypeError: 'tuple' object does not support item assignment
-	>>>
+    >>> x = (1, 2)
+    >>> print(x)
+    (1, 2)
+    >>> print(x[0])
+    1
+    >>> x[0] = 22
+    Traceback (most recent call last):
+      File "<pyshell#18>", line 1, in <module>
+        x[0] = 22
+    TypeError: 'tuple' object does not support item assignment
+    >>>
 
 As can be seen from the output of the code above, we can't assign an item in
 the tuple a new value. Why would we want this limitation? First, the computer
@@ -178,54 +178,54 @@ The format of the command:
 
 .. code-block:: python
 
-	for item_variable in list_name:
+    for item_variable in list_name:
 
 Here are some examples:
 
 .. code-block:: python
 
-	my_list = [101, 20, 10, 50, 60]
-	for item in my_list:
-	    print(item)
+    my_list = [101, 20, 10, 50, 60]
+    for item in my_list:
+        print(item)
 
 
 .. code-block:: text
 
-	101
-	20
-	10
-	50
-	60
+    101
+    20
+    10
+    50
+    60
 
 Programs can store strings in lists too:
 
 
 .. code-block:: python
 
-	my_list = ["Spoon", "Fork", "Knife"]
-	for item in my_list:
-	    print(item)
+    my_list = ["Spoon", "Fork", "Knife"]
+    for item in my_list:
+        print(item)
 
 .. code-block:: text
 
-	Spoon
-	Knife
-	Fork
+    Spoon
+    Knife
+    Fork
 
 Lists can even contain other lists. This iterates through each item in the main
 list, but not in sublists.
 
 .. code-block:: python
 
-	my_list = [ [2,3], [4,3], [6,7] ]
-	for item in my_list:
-	    print(item)
+    my_list = [ [2,3], [4,3], [6,7] ]
+    for item in my_list:
+        print(item)
 
 .. code-block:: text
 
-	[2,3]
-	[4,3]
-	[6,7]
+    [2,3]
+    [4,3]
+    [6,7]
 
 The other way to iterate through a list is to use an index variable and
 directly access the list rather than through a copy of each item. To use an
@@ -238,8 +238,8 @@ the range function allows the program to loop through the entire list.
 .. code-block:: python
 
     my_list = [101, 20, 10, 50, 60]
-    for i in range(len(my_list)):
-        print(my_list[i])
+    for index in range(len(my_list)):
+        print(my_list[index])
 
 .. code-block:: text
 
@@ -252,6 +252,17 @@ the range function allows the program to loop through the entire list.
 This method is more complex, but is also more powerful. Because we are working
 directly with the list elements, rather than a copy, the list can be modified.
 The for-each loop does not allow modification of the original list.
+
+Looping With Both An Index And Element
+--------------------------------------
+
+If you want both the index, like a ``for i in range`` gives you, and the element, like a ``for item in my_list``
+gives you, the proper Python-ic way to use the ``enumerate`` function like this:
+
+.. code-block:: python
+
+    for index, value in enumerate(my_list):
+        print(index, value)
 
 .. _append_to_list:
 
@@ -348,9 +359,9 @@ Creating a running total of an array is a common operation. Here's how it is don
 
     # Loop from 0 up to the number of elements
     # in the array:
-    for i in range(len(my_list)):
+    for index in range(len(my_list)):
         # Add element 0, next 1, then 2, etc.
-        list_total += my_list[i]
+        list_total += my_list[index]
 
     # Print the result
     print(list_total)
@@ -388,9 +399,9 @@ Numbers in an array can also be changed by using a ``for`` loop:
 
     # Loop from 0 up to the number of elements
     # in the array:
-    for i in range(len(my_list)):
+    for index in range(len(my_list)):
         # Modify the element by doubling it
-        my_list[i] = my_list[i] * 2
+        my_list[index] = my_list[index] * 2
 
     # Print the result
     print(my_list)

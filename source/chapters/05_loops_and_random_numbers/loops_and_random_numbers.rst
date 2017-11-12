@@ -658,6 +658,30 @@ Here's a program that covers the different uses of the while loop that we just t
     :language: python
     :linenos:
 
+The ``break`` And ``continue`` Statements
+-----------------------------------------
+
+If you are in the middle of a loop, and your code encounters a ``break`` statement, you'll immediately exit the
+loop.
+
+.. code-block:: python
+    :linenos:
+
+    while True: # Loop forever
+        quit = input("Do you want to quit? ")
+        if quit == "y":
+            break
+
+        attack = input("Does your elf attack the dragon? ")
+        if attack == "y":
+            print("Bad choice, you died.")
+            break
+
+If you are in the middle of a loop, and your code encounters a ``continue`` statement, you'll immediately be sent
+back up to the top of the loop.
+
+
+
 Random Numbers
 --------------
 
