@@ -39,6 +39,7 @@ what students have done in prior years:
 
 .. raw:: html
 
+    <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ub1tPayFjz7w-LCTQ_gYs7V' style='border:none;'></iframe><figcaption>Video: Spring 2015 Game Projects</figcaption></figure>
 
     <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ubNGhNeapHNyDfKRPeIBCLO' style='border:none;'></iframe><figcaption>Video: Spring 2015 Game Projects</figcaption></figure>
 
