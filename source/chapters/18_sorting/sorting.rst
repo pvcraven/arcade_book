@@ -107,7 +107,7 @@ in search of the smallest value. When it finds the smallest value, the swap
 takes place.
 
 .. code-block:: python
-    :caption: Selection sort
+    :caption: Selection Sort
     :linenos:
 
     def selection_sort(my_list):
@@ -224,14 +224,14 @@ run :math:`n\cdot\frac{n}{4}` times, or simplified,  :math:`\frac{n^2}{4}` times
 What's really important: If
 the loop is close to a sorted loop already, then the inside loop does
 not run very much, and the sort time is closer to *n*. The insertion sort
-is the fastest sort for nearly-sorted lists. If the list is reversted, then
+is the fastest sort for nearly-sorted lists. If the list is reversed, then
 the insertion sort is terrible.
 
 The selection sort doesn't really care what order the list is in to begin
 with. It performs the same regardless.
 
 .. code-block:: python
-    :caption: Insertion sort
+    :caption: Insertion Sort
     :linenos:
 
     def insertion_sort(my_list):
@@ -277,6 +277,6 @@ Full Sorting Example
 --------------------
 
 .. literalinclude:: sorting_example.py
-    :caption: sorting_example.py
+    :caption: Full Sorting Example
     :language: python
     :linenos:
