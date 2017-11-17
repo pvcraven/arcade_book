@@ -133,8 +133,11 @@ takes place.
             my_list[min_pos] = my_list[cur_pos]
             my_list[cur_pos] = temp
 
-The outside loop will always run  times. The inside loop will
-run :math:`\frac{n}{2}` times.
+The outside loop will always run :math:`n` times. The inside loop will
+run an average of :math:`\frac{n}{2}` times per run of the outside loop.
+Therefore the inside loop will run a total of :math:`n \cdot \frac{n}{2}` or
+:math:`\frac{n^2}{2}` times.
+
 This will be the case regardless if the list is in order or not. The loops'
 efficiency may be improved by checking if ``min_pos`` and ``cur_pos`` are equal
 before line 20. If those variables are equal, there is no need to do the
@@ -213,9 +216,10 @@ that is larger than ``key_value`` gets moved up (to the right) one location.
 When the loop finds a location smaller than ``key_value``, it stops and
 puts ``key_value`` to the left of it.
 
-The outside loop with an insertion sort will run *n* times. The inside
-loop will run an average of :math:`\frac{n}{4}` times if the loop is randomly
-shuffled.
+The outside loop with an insertion sort will run :math:`n` times. For each run of
+the outside loop, the inside loop will run an average of :math:`\frac{n}{4}`
+times if the loop is randomly shuffled. In total, the inside loop would
+run :math:`n\cdot\frac{n}{4}` times, or simplified,  :math:`\frac{n^2}{4}` times.
 
 What's really important: If
 the loop is close to a sorted loop already, then the inside loop does
