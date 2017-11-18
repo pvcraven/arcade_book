@@ -300,6 +300,57 @@ by looking at Chapter 8 of `The Nature of Code`_ by Daniel Shiffman.
 
 .. _The Nature of Code: http://natureofcode.com/book/chapter-8-fractals/
 
+Recursive Mazes
+---------------
+
+There are maze generation algrithms. Wikipedia has a nice `Maze generation algorithm`_ article that details
+some. One way is the *recursive division method*.
+
+The algorithm is described below. Images are from Wikipedia.
+
+.. figure:: chamber.svg
+    :width: 25%
+
+    Begin with the maze's space with just the outside walls. Call this a chamber.
+
+.. figure:: chamber-division.svg
+    :width: 25%
+
+    Divide the chamber with one random horizontal wall, and one random vertical wall.
+
+.. figure:: chamber-divided.svg
+    :width: 25%
+
+    Pick three of the four walls and put a randomly position opening in it.
+
+.. figure:: chamber-subdivision.svg
+    :width: 25%
+
+    Subdivide each of the four sections. Call each a chamber. Recursively call this function. In this image, the
+    top left chamber has been subdivided.
+
+.. figure:: chamber-finished.svg
+    :width: 25%
+
+    Finished maze.
+
+
+This method results in mazes with long straight walls crossing their space, making it easier to see which areas to avoid.
+
+.. figure:: recursive_maze.gif
+
+    Recursive maze generation. Source: Wikipedia `Maze generation algorithm`_.
+
+.. _Maze generation algorithm: https://en.wikipedia.org/wiki/Maze_generation_algorithm
+
+Here is sample Python code that creates a maze using this method:
+
+.. literalinclude:: recursive_maze_example.py
+    :caption: Recursive Maze Example
+    :language: python
+    :linenos:
+
+
 Recursive Binary Search
 -----------------------
 
