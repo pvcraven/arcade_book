@@ -107,7 +107,7 @@ in search of the smallest value. When it finds the smallest value, the swap
 takes place.
 
 .. code-block:: python
-    :caption: Selection sort
+    :caption: Selection Sort
     :linenos:
 
     def selection_sort(my_list):
@@ -133,8 +133,11 @@ takes place.
             my_list[min_pos] = my_list[cur_pos]
             my_list[cur_pos] = temp
 
-The outside loop will always run  times. The inside loop will
-run :math:`\frac{n}{2}` times.
+The outside loop will always run :math:`n` times. The inside loop will
+run an average of :math:`\frac{n}{2}` times per run of the outside loop.
+Therefore the inside loop will run a total of :math:`n \cdot \frac{n}{2}` or
+:math:`\frac{n^2}{2}` times.
+
 This will be the case regardless if the list is in order or not. The loops'
 efficiency may be improved by checking if ``min_pos`` and ``cur_pos`` are equal
 before line 20. If those variables are equal, there is no need to do the
@@ -213,21 +216,22 @@ that is larger than ``key_value`` gets moved up (to the right) one location.
 When the loop finds a location smaller than ``key_value``, it stops and
 puts ``key_value`` to the left of it.
 
-The outside loop with an insertion sort will run *n* times. The inside
-loop will run an average of :math:`\frac{n}{4}` times if the loop is randomly
-shuffled.
+The outside loop with an insertion sort will run :math:`n` times. For each run of
+the outside loop, the inside loop will run an average of :math:`\frac{n}{4}`
+times if the loop is randomly shuffled. In total, the inside loop would
+run :math:`n\cdot\frac{n}{4}` times, or simplified,  :math:`\frac{n^2}{4}` times.
 
 What's really important: If
 the loop is close to a sorted loop already, then the inside loop does
 not run very much, and the sort time is closer to *n*. The insertion sort
-is the fastest sort for nearly-sorted lists. If the list is reversted, then
+is the fastest sort for nearly-sorted lists. If the list is reversed, then
 the insertion sort is terrible.
 
 The selection sort doesn't really care what order the list is in to begin
 with. It performs the same regardless.
 
 .. code-block:: python
-    :caption: Insertion sort
+    :caption: Insertion Sort
     :linenos:
 
     def insertion_sort(my_list):
@@ -266,3 +270,13 @@ http://youtu.be/ROalU379l3U
 You can trace through the code using `Insertion Sort on Python Tutor`_.
 
 .. _Insertion Sort on Python Tutor: http://pythontutor.com/visualize.html#code=import+random%0A%0Adef+insertion_sort(list)%3A%0A+%0A++++%23+Start+at+the+second+element+(pos+1).%0A++++%23+Use+this+element+to+insert+into+the%0A++++%23+list.%0A++++for+key_pos+in+range(1,+len(list))%3A%0A+%0A++++++++%23+Get+the+value+of+the+element+to+insert%0A++++++++key_value+%3D+list%5Bkey_pos%5D%0A+%0A++++++++%23+Scan+from+right+to+the+left+(start+of+list)%0A++++++++scan_pos+%3D+key_pos+-+1%0A+%0A++++++++%23+Loop+each+element,+moving+them+up+until%0A++++++++%23+we+reach+the+position+the%0A++++++++while+(scan_pos+%3E%3D+0)+and+(list%5Bscan_pos%5D+%3E+key_value)%3A%0A++++++++++++list%5Bscan_pos+%2B+1%5D+%3D+list%5Bscan_pos%5D%0A++++++++++++scan_pos+%3D+scan_pos+-+1%0A+%0A++++++++%23+Everything's+been+moved+out+of+the+way,+insert%0A++++++++%23+the+key+into+the+correct+location%0A++++++++list%5Bscan_pos+%2B++1%5D+%3D+key_value%0A+++++++++%0A%23+Create+a+list+of+random+numbers%0Alist+%3D+%5B%5D%0Afor+i+in+range(10)%3A%0A++++list.append(random.randrange(100))%0A+%0A%23+Try+out+the+sort%0Ainsertion_sort(list)%0A&mode=display&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&curInstr=0
+
+.. _full_sorting_example
+
+Full Sorting Example
+--------------------
+
+.. literalinclude:: sorting_example.py
+    :caption: Full Sorting Example
+    :language: python
+    :linenos:

@@ -139,18 +139,30 @@ blocks above. The "catch-all" ``except`` must always be last.
 
     # Multiple errors
     try:
-        my_file = open("myfile.txt")
+        # Open the file
+        filename = "myfile.txt"
+        my_file = open(filename)
+
+        # Read from the file and strip any trailing line feeds
         my_line = my_file.readline()
-        my_int = int(my_line.strip())
+        my_line = my_line.strip()
+
+        # Convert to a number
+        my_int = int(my_line)
+
+        # Do a calculation
         my_calculated_value = 101 / my_int
+
+    except FileNotFoundError:
+        print(f"Could not find the file '{filename}'.")
     except IOError:
-        print("I/O error")
+        print(f"Input/Output error when accessing the file '{filename}'.")
     except ValueError:
         print("Could not convert data to an integer.")
     except ZeroDivisionError:
-        print("Division by zero error")
+        print("Division by zero error.")
     except:
-        print("Unexpected error")
+        print("Unexpected error.")
 
 A list of built-in exceptions is available from this web address:
 
@@ -170,7 +182,6 @@ This shows how to save a high score between games. The score is stored in a file
 
     Sample Python/Pygame Programs
     Simpson College Computer Science
-    http://programarcadegames.com/
     http://simpson.edu/computer-science/
     """
 
