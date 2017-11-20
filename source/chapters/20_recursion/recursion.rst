@@ -140,8 +140,12 @@ to exit once the function has called itself ten times.
     Recursion call, level 9
     Recursion call, level 10
 
+
+Recursion In Mathematics
+------------------------
+
 Recursion Factorial Calculation
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Any code that can be done recursively can be done without using
 recursion. Some programmers feel that the recursive code is easier
@@ -240,8 +244,69 @@ The functions do nothing by themselves. Below is an example where we put it all 
     7 * 720 = 5040
     5040
 
+Recursive Expressions
+~~~~~~~~~~~~~~~~~~~~~
+
+Say you have a mathematical expression like this:
+
+:math:`f_{n} = \begin{cases} 6 & \text{if } n = 1, \\ \frac{1}{2}f_{n-1}+4 & \text{if } n > 1. \end{cases}`
+
+Looks complicated, but it just means that if :math:`n=1` we are working with :math:`f_{1}`. That function returns a 6.
+
+For :math:`f_{2}` we return :math:`\frac{1}{2}f_{1}+4`.
+
+The code would start with:
+
+.. code-block:: python
+    :linenos:
+
+    def f(n):
+
+Then we need to add that first case:
+
+.. code-block:: python
+    :linenos:
+
+    def f(n):
+        if n == 1:
+            return 6
+
+See how closely if follows the mathematical notation? Now for the rest:
+
+.. code-block:: python
+    :linenos:
+
+    def f(n):
+        if n == 1:
+            return 6
+        elif n > 1:
+            return (1 / 2) * f(n - 1) + 4
+
+Converting these types of mathematical expressions to code is straight forward. But we'd better try it out
+in a full example:
+
+.. code-block:: python
+    :linenos:
+
+    def f(n):
+        if n == 1:
+            return 6
+        elif n > 1:
+            return (1 / 2) * f(n - 1) + 4
+
+
+    def main():
+        result = f(10)
+        print(result)
+
+
+    main()
+
+Recursive Graphics
+------------------
+
 Recursive Rectangles
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 Recursion is great to work with structured documents that are themselves recursive. For example, a web document can have a table divided into rows and columns to help with layout. One row might be the header, another row the main body, and finally the footer. Inside a table cell, might be another table. And inside of that can exist yet another table.
 
@@ -260,7 +325,7 @@ Can we visually see recursion in action in one of our Pygame programs? Yes! Figu
 
 
 Fractals
---------
+~~~~~~~~
 
 Fractals are defined recursively. Here is a very simple fractal, showing
 how it changes depending on how "deep" the recursion goes.
@@ -389,21 +454,17 @@ This same binary search written in a recursive manner:
     def binary_search_recursive(search_list, key, lower_bound, upper_bound):
         middle_pos = (lower_bound + upper_bound) // 2
         if search_list[middle_pos] < key:
-            binary_search_recursive(search_list,
-                                    key,
-                                    middle_pos + 1,
-                                    upper_bound)
+            # Recursively search top half
+            binary_search_recursive(search_list, key,
+                                    middle_pos + 1, upper_bound)
         elif search_list[middle_pos] > key:
-            binary_search_recursive(search_list,
-                                    key,
-                                    lower_bound,
-                                    middle_pos )
+            # Recursively search bottom half
+            binary_search_recursive(search_list, key,
+                                    lower_bound, middle_pos )
         else:
             print("Found at position", middle_pos)
 
     lower_bound = 0
     upper_bound = len(name_list) - 1
-    binary_search_recursive(name_list,
-                            "Morgiana the Shrew",
-                            lower_bound,
-                            upper_bound)
+    binary_search_recursive(name_list, "Morgiana the Shrew",
+                            lower_bound, upper_bound)

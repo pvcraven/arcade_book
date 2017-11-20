@@ -19,7 +19,7 @@ def draw_rectangle(x, y, width, height):
         draw_rectangle(x, y, width * .9, height * .9)
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
@@ -39,6 +39,11 @@ class MyApplication(arcade.Window):
         draw_rectangle(center_x, center_y, SCREEN_WIDTH, SCREEN_HEIGHT)
 
 
-window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
+def main():
 
-arcade.run()
+    MyWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
+    arcade.run()
+
+
+if __name__ == "__main__":
+    main()

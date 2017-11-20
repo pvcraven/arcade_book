@@ -6,6 +6,8 @@ import arcade
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 500
 
+RECURSION_DEPTH = 0
+
 
 def draw_h(x, y, width, height, count):
     """ Recursively draw an H, each one a half as big """
@@ -35,7 +37,7 @@ def draw_h(x, y, width, height, count):
         draw_h(x + width / 2, y + height / 2, width / 2, height / 2, count)
 
 
-class MyApplication(arcade.Window):
+class MyWindow(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
@@ -48,9 +50,13 @@ class MyApplication(arcade.Window):
         arcade.start_render()
 
         # Start our recursive calls
-        draw_h(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 1)
+        draw_h(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, RECURSION_DEPTH)
 
 
-window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
+def main():
+    MyWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
+    arcade.run()
 
-arcade.run()
+
+if __name__ == "__main__":
+    main()
