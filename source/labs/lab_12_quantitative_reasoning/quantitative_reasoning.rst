@@ -1,14 +1,33 @@
 Quantitative Reasoning Reflection
 =================================
 
-Answer each question. Use the template that is part of PyCharm project. Commit
-and turn in just like a regular program.
+This is a reflection on quantitative reasoning. However, instead of turning it
+in via a PDF or MS Word document, we'll turn it in as a text document.
+
+Directions
+----------
+
+* Create a directory in your project called ``Quantitative Reasoning Reflection``.
+* Inside that directory, create a new file called ``reflection.txt``. Don't create
+  it as a Python file, because this isn't a Python program.
+* In PyCharm, under the "File" menu, select "Settings...". Then find "Editor"
+  and under that "Code Style." By default you could see a column guide set at
+  120 characters. Set this to 80 for now.
+* Add your name, date, and a title to the document. Failure to do this is a
+  three point penalty.
+* Don't write text beyond the 80 character limit. (Occasionally hitting 85
+  isn't a big deal, but if you write 800 characters on a line, expect to
+  get penalized.
+* Answer each question below. Commit and turn in just like a regular program.
+  Use complete sentences and proper spelling. Label each question. Put a blank
+  line between each question.
+
+Questions
+---------
 
 Each question is worth five points. Make sure you have five good points as part
-of your answer.
-
-You can answer the question correctly, but only give one point worth of
-information, therefore only get one point.
+of your answer. I'd suggest drafting out five points, and then fill in the
+points with proper sentences, grammar, and punctuation. Examples are encouraged.
 
 1. Describe how you used multiple methods to add functionality to your program.
    For example, how did you use lists? "If" statements? Loops? Classes? Functions?
