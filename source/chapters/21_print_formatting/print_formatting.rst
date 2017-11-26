@@ -1,14 +1,32 @@
 .. sectnum::
     :start: 21
 
-Print Formatting
-================
+String Formatting
+=================
 
-Here is a quick table for reference when doing text formatting. For a detailed explanation of how text formatting works, keep reading.
+Looking for an easy way to format variables for display, and mix them with other
+text? Add thousands separators (commas in the US)
+to a large number, and format decimals the way you want them? You need
+"string formatting."
+
+Python has three ways to format strings. The `old string formatting`_ which
+originally came from how older languages such as C did formatting.
+The newer way introduced in Python 3 that was supposed to be better, but
+arguably wasn't. And the new way introduced in Python 3.6 with
+`PEP-498`_ . We'll cover the
+newest way.
+
+.. _old string formatting: https://docs.python.org/3/library/stdtypes.html#old-string-formatting
+.. _PEP-498: https://www.python.org/dev/peps/pep-0498/
+
+Quick Reference
+---------------
+Here is a quick table for reference when doing text formatting. For a detailed
+explanation of how text formatting works, keep reading.
 
 
 .. list-table:: Example Formatting Commands
-   :widths: 15 15 20 40
+   :widths: 15 15 20 60
    :header-rows: 1
 
    * - Number
@@ -637,19 +655,41 @@ digits after the decimal affects the output:
     1230.0
     1200.0
 
-Use in Pygame
--------------
-We don't just have to format strings for print statements. The example timer.py
-uses string formatting and blit's the resulting text to the screen to make an
-on-screen timer:
+Use in Arcade Programs
+----------------------
+We don't just have to format strings for print statements. The example `timer.py`_
+uses string formatting to make an on-screen timer:
+
+.. _timer.py: http://arcade.academy/examples/timer.html
 
 .. code-block:: python
     :linenos:
-    :caption: Specifying a field width character
+    :caption: Code from timer.py
 
-    # Use python string formatting to format in leading zeros
-    output_string = "Time: {0:02}:{1:02}".format(minutes,seconds)
+    def on_draw(self):
+        """ Use this function to draw everything to the screen. """
 
-    # Blit to the screen
-    text = font.render(output_string, True, BLACK)
-    screen.blit(text, [250, 250])
+        # Start the render. This must happen before any drawing
+        # commands. We do NOT need an stop render command.
+        arcade.start_render()
+
+        # Calculate minutes
+        minutes = int(self.total_time) // 60
+
+        # Calculate seconds by using a modulus (remainder)
+        seconds = int(self.total_time) % 60
+
+        # Figure out our output
+        output = f"Time: {minutes:02d}:{seconds:02d}"
+
+        # Output the timer text.
+        arcade.draw_text(output, 300, 300, arcade.color.BLACK, 30)
+
+    def update(self, delta_time):
+        """
+        All the logic to move, and the game logic goes here.
+        """
+        self.total_time += delta_time
+
+You can also use it to display the score, or any other statistics you'd like to
+show the player.
