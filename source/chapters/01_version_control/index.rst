@@ -42,6 +42,12 @@ today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
 is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
 standardize on Git.
 
+Learning Git
+------------
+
+https://try.github.io/
+
+
 .. _installing-git:
 
 Installing Git
@@ -49,32 +55,6 @@ Installing Git
 
 Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
 
-.. _installing-sourcetree:
-
-Installing SourceTree
-^^^^^^^^^^^^^^^^^^^^^
-
-Download and install SourceTree_. This is the visual interface that sits on top of Git. SourceTree requires you to
-make a free account for download and use.
-
-.. _SourceTree: https://www.sourcetreeapp.com/
-.. _Git DVCS: https://git-scm.com/download/win
-
-
-.. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
-.. _Git: http://en.wikipedia.org/wiki/Git_(software)
-.. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
-
-Working With Version Control
-----------------------------
-
-We are going to create a **repository**. A repository is a set of files
-and directories that will contain all your work for this class.
-
-We will only create one repository for this class. If you create any more than
-one repository, you are doing something wrong. You might have several "clones"
-of the repository. But there will only be one repository. Do **not** repeat
-this process for each assignment.
 
 .. _fork-repository:
 
@@ -224,8 +204,6 @@ Even if you can see the red text, it is not in the file. This sometimes throws p
 at the commit history.
 
 Go ahead and commit the file.
-
-
 
 Turning In Your Programs
 ------------------------

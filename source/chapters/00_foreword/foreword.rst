@@ -7,12 +7,9 @@ supposed to teach the topics of a typical first-semester programming class, but
 none of that matters unless I can show you that programming is
 worth learning.
 
-.. attention::
-    Not until Chapter 2 do we show how to create your first graphics.
-    Chapter 1 shows how to get our computers set up for programming.
-    Chapter 1 is also about learning how to
-    manage your code with the same systems that you'll find professional programmers
-    using.
+.. note::
+    In :ref:`how-to-draw` we show how to create your first graphics.
+    These first chapters show how to get your computer set up.
 
 You can earn a lot of money by programming. There are so many cool things
 you can create. It is a fun career, hobby, or passion. It is also a lot of

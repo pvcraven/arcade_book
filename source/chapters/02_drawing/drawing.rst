@@ -1,3 +1,5 @@
+.. _how-to-draw:
+
 How to Draw with Your Computer
 ==============================
 
