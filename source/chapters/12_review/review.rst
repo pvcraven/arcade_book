@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 12
-
 .. review:
 
 Review

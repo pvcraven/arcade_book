@@ -35,12 +35,15 @@ points with proper sentences, grammar, and punctuation. Examples are encouraged.
 1. Describe how you used multiple methods to add functionality to your program,
    and how you decided what method to use.
    For example, how did you use lists? "If" statements? Loops? Classes? Functions?
+   Sample pieces of code?
+   How did you decide which methods to apply? Feel free to give examples.
 2. Explain how you communicate your solution (from one programmer to another)
    when writing the code. Show how
    variable names matter, how function names matter, how comments and structure
    make your code easier to read.
 3. How did you test and evaluate the accuracy of your code? When something didn't
-   work, describe how you figured out what the error was.
+   work, describe how you figured out what the error was. Also, how do you determine
+   if data returned is correct data?
 4. What are the limitations to using numerical methods to make decisions?
    For example, why can't we just replace humans with algorithms? Why can't we just evaluate students
    based solely on test scores? Why can't we evaluate teachers just on how their students

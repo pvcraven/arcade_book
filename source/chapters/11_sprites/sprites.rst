@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 11
-
 .. _sprites:
 
 Sprites

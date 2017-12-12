@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 4
-
 Quiz Games and If Statements
 ============================
 

@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 2
-
 How to Draw with Your Computer
 ==============================
 

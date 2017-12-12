@@ -3,9 +3,12 @@ Chapters
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    00_foreword/foreword
+   01_what_is_a_programming_language/index
    01_setup/setup
+   01_version_control/index
    02_drawing/drawing
    03_drawing_with_functions/drawing_with_functions
    04_if_statements/if_statements

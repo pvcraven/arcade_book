@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 17
-
 .. _platformers:
 
 Platformers
