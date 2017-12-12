@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 10
-
 .. _sounds:
 
 Sound Effects

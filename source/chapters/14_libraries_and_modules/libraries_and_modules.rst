@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 14
-
 Libraries and Modules
 =====================
 

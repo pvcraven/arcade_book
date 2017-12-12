@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 13
-
 .. _sprites-and-walls:
 
 Sprites and Walls

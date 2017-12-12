@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 8
-
 Introduction to Classes
 =======================
 

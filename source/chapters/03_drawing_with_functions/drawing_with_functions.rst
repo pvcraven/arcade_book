@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 3
-
 Creating Functions
 ==================
 

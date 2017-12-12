@@ -1,6 +1,3 @@
-.. sectnum::
-    :start: 9
-
 .. _user-control:
 
 Classes, Animation and User Control
