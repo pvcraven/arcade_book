@@ -519,6 +519,11 @@ We can even take that common code, and move it to a method. Here's a full exampl
 Bouncing Coins
 ^^^^^^^^^^^^^^
 
+TODO: Put in some text about spawning a sprite too close to the edge. Also make a refer to it from the final
+project.
+
+TODO: Show how to do the bounce from a child sprite class, and from the on_draw?
+
 .. figure:: sprites_bouncing.gif
 
     Coins bouncing around
