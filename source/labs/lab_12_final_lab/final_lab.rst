@@ -119,6 +119,12 @@ game needs to be able to do.
 * While you can start with and use any of the example game code from this website
   or `arcade.academy`_, don't just turn these in as Part 1.
   You'll need to add a lot before it qualifies.
+* A very common mistake is to make a call to ``self.all_sprites_list.update()``
+  and ``self.physics_engine.update()``. This will cause you to warp through walls.
+  You want to specifically update lists that don't include the player,
+  like ``self.enemy_list.update()``.
+* Remember that any extra white-space around your image will throw off collision
+  detection. Best to check and trim white space from images you use.
 * `OpenGameArt.org`_ has a lot of images and sounds you can use royalty-free.
 * `Kenney.nl`_ has many images and sounds as well.
 
