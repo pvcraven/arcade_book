@@ -42,8 +42,15 @@ today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
 is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
 standardize on Git.
 
-Learning Git
-------------
+
+.. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
+.. _Git: http://en.wikipedia.org/wiki/Git_(software)
+.. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
+
+The Interactive Git Tutorial
+----------------------------
+
+This is a great interactive tutorial to learn how to use ``git``. Go through it now:
 
 https://try.github.io/
 
@@ -51,10 +58,16 @@ https://try.github.io/
 .. _installing-git:
 
 Installing Git
-^^^^^^^^^^^^^^
+--------------
 
-Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
+Now that you've learned how to use ``git``, let's install it on your computer.
+If you are using a school computer with ``git`` pre-installed, you can skip
+this step.
 
+Click the link below and download and install the 64-bit version of the ``git``.
+
+* `Windows Git DVCS <https://git-scm.com/download/win>`_
+* `MacOS Git DVCS <https://git-scm.com/download/mac>`_
 
 .. _fork-repository:
 
@@ -63,8 +76,8 @@ Forking the Repository
 
 .. attention::
     You should only have to fork the code **once** during class. If you do it more than
-    once, something is wrong.
-
+    once, something is wrong. Stop before you do this and see the instructor.
+    It is a big headache for everyone if your fork more than once.
 
 1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called
@@ -115,37 +128,67 @@ Share the Repository
 Cloning the Repository
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. attention::
-    You will clone the repository once for each place you want to store your code.
+.. note::
+    Every time you start working on a new computer, you'll need to create a clone.
+    (Unless you use a flash drive.)
 
-1. Figure out where you want to store your files. You might want to store
-   the files on your laptop, a flash drive, or a networked drive. I don't
-   recommend saving it onto the lab computer, but that is an option.
-2. We want to
-   now copy it to your computer. We'll call this a "clone." A "clone" is a copy
+1. Run the program "Git Bash" on Windows. Or, if you are on the mac, go under
+   "Applications", find "Utilities" and in that run "Terminal".
+
+.. figure:: git_bash.png
+
+   Git Bash Window
+
+2. Figure out where you want to store your files. You might want to store
+   the files on your laptop, a flash drive, or a networked drive.
+3. Figure out what directory your "Bash" window is in. Do this by typing ``pwd``,
+   which is short for "print working directory".
+
+.. image:: pwd.png
+
+4. You can see what files are in the directory by typing ``ls``, short for
+   "list files".
+5. You can change directories using the ``cd`` command. You should default to
+   your "home" directory, which is a great place to put your files. But if you
+   want them in a different location, change to that location now.
+   There's a lot to the ``cd``
+   command, but there are a few variations you need to know:
+
+   * ``cd`` Change to your "home" directory.
+   * ``cd mydir`` Change to ``mydir`` directory. That directory must be in the
+     same directory you are in now. Also, if you don't want to type the full
+     directory name, you can type the first few letters and hit <tab>.
+   * ``cd ..`` Go up one directory.
+
+
+6. We want to
+   copy the repository you created to your computer. We'll call this a "clone." A "clone" is a copy
    we normally try to keep synced up, which is different than a "fork."
    To clone the repository, hit the "plus" and then select "Clone Repository"
 
 .. image:: bitbucket_clone.png
     :width: 300px
 
-3. Copy the address that it gives you.
-4. Start SourceTree. Select File...New:
 
-.. image:: sourcetree_clone_01.png
-    :width: 250px
+7. Copy the address that it gives you. It should have **your** name, and **not**
+   my name. If you get this wrong, you'll have to restart everything back at
+   the clone section. (Not the fork section.)
 
-5. Paste the address you copied from the website to SourceTree. When you move
-   out of the field you'll be asked for your Atlassian login information.
+.. image:: get_clone_address.png
+   :width: 75%
 
-.. image:: sourcetree_clone_02.png
-    :width: 620px
+8. Paste the command it gives you in your command prompt:
 
-6. Select the directory where you will be saving your files. If you want to save it on your flash drive or network
-   drive, now is the time to select that.
-7. Select "Clone". After the cloning finishes, you have a copy of the template on your computer! Now we just
-   need to open up our editor.
+.. image:: git_clone.png
 
+Then...
+
+.. image:: after_clone.png
+
+9. There you go! You now have a directory set up where you can do your work. Go ahead
+   and start PyCharm, then select "File...Open" and select that directory.
+
+.. image:: open_in_pycharm.png
 
 First Commit
 ^^^^^^^^^^^^
@@ -279,3 +322,11 @@ Turning In Your Programs
 When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
 
 .. image:: bitbucket_copy_url.png
+
+
+Command Review
+
+pwd
+ls
+cd mydir
+cd ..
