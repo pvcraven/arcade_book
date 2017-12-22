@@ -185,13 +185,35 @@ Then...
 
 .. image:: after_clone.png
 
-9. There you go! You now have a directory set up where you can do your work. Go ahead
-   and start PyCharm, then select "File...Open" and select that directory.
+9. There you go! You now have a directory set up where you can do your work.
+
+
+Open in Pycharm
+^^^^^^^^^^^^^^^
+
+Go ahead and start PyCharm, then select "File...Open" and select that directory.
 
 .. image:: open_in_pycharm.png
+    :width: 75%
 
-First Commit
-^^^^^^^^^^^^
+Your project should look like the image below. If this isn't what you have,
+you might have opened the wrong folder. Hit "File...Open" and try again.
+
+.. image:: open_in_pycharm2.png
+    :width: 75%
+
+If you click the arrow next to the folder name, you can see all the folders
+in the project folder.
+
+.. image:: open_in_pycharm3.png
+    :width: 75%
+
+If you move from computer to computer hand have a flash drive, you can
+reopen your project be just doing "File...Open". If you don't have your
+flash drive, you'll need to re-clone your repository.
+
+How to Commit
+^^^^^^^^^^^^^
 
 It is time to commit. Wait! You are young and don't want to commit yet?
 
@@ -199,54 +221,63 @@ The cool thing with version control, is that every time you commit, you can go b
 code at that point in time. Version control lets you take it all back! It is the best type
 of commitment ever!
 
-Open SourceTree and:
+First, open Git Bash, and switch to the directory with your project using the ``cd`` command:
 
-1. Select "Branches"
-2. Select "master" (This is the "master" branch. It will be the only branch we use for this class.)
-3. Select "Uncommitted changes". If you don't have any changes, this line won't appear.
-4. Select the file we want to commit. All the changed files will be listed here. If a file wasn't changed, it won't
-   be listed. Yellow files have been changed, purple files aren't under version control, green files are new, gray
-   files are missing, and red files are set to be deleted.
-5. Go ahead and hit "commit".
+.. code-block:: text
 
-.. image:: sourcetree_first_commit_01.png
+    craven@DESKTOP-RAUFKMA MINGW64 ~
+    $ cd arcade-games-work2/
 
-While we hit "commit" in the prior screen, we haven't committed yet.
+Optionally, we can use ``git status`` to see what files have changed:
 
-1. Type in a message so you can track what this commit was.
-2. Select that you want to push the code to the server after you commit.
-3. Hit the commit button. Not the button in the top left, but the commit button in the lower right. (Confusing, I know.)
+.. code-block:: text
 
-.. image:: sourcetree_first_commit_02.png
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git status
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
 
-Go back in SourceTree and see that your commit happened:
+            modified:   Lab 01 - First Program/lab_01.py
 
-.. image:: sourcetree_first_commit_03.png
+    no changes added to commit (use "git add" and/or "git commit -a")
 
-Did the code get to the BitBucket website? You can go to the website and see the commits:
+Now, add all the files that have changed. The asterisk (``*``) is a wild card character
+that means get all changes. Optionally, we could list out each file, but that's a lot
+of work and we don't want to leave anything behind anyway.
 
-.. image:: bitbucket_commit_01.png
+.. code-block:: text
 
-You can also see the code:
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git add *
 
-.. image:: bitbucket_commit_02.png
+Commit the changes:
 
+.. code-block:: text
 
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git commit -m "Work on lab 1"
+    [master 45028a5] Work on lab 1
+     1 file changed, 1 insertion(+)
 
-Once you have that working, let's try committing the change. Flip to SourceTree and select "Uncommitted Changes"
-again:
+And push them to the server:
 
-.. image:: bitbucket_commit_03.png
+.. code-block:: text
 
-Note that when you select the file, you see both the new and old text:
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git push
+    Counting objects: 4, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (4/4), 329 bytes | 0 bytes/s, done.
+    Total 4 (delta 1), reused 0 (delta 0)
+    To bitbucket.org:pcraven/arcade-games-work2.git
+       519c361..45028a5  master -> master
 
-.. image:: bitbucket_commit_04.png
-
-The red text represents text that you removed. The green text represents text you added. White text is unchanged.
-Even if you can see the red text, it is not in the file. This sometimes throws people off when they are looking
-at the commit history.
-
-Go ahead and commit the file.
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $
 
 Turning In Your Programs
 ------------------------
