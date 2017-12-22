@@ -31,4 +31,5 @@ Chapters
    20_recursion/recursion
    21_print_formatting/print_formatting
    xx_selecting_python/selecting_python
+   xx_flowchart/index.rst
 

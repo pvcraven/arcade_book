@@ -39,10 +39,10 @@ Setup the Programming Environment
 
 To get your computer ready for programming, we need to install Python, some Python libraries, and an editor.
 
-.. _installing-python:
-
 .. image:: python-logo.svg
     :width: 300px
+
+.. _installing-python:
 
 Installing Python and Arcade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

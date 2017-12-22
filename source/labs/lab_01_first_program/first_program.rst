@@ -10,7 +10,7 @@ Lab 1: First Program
 5. Share the repository. See :ref:`share-repository`.
 6. Clone the repository. :ref:`clone-repository`.
 7. Create and run a test program that prints ``Hello``. See :ref:`print-hello-world`.
-8. Commit and push the updated program to BitBucket. See :ref:`first-commit`.
+8. Commit and push the updated program to BitBucket. See :ref:`commit`.
 9. Update your program to print something longer. Commit and push again. See :ref:`print-multiple-lines`.
 10. Examine and try out different **escape codes**. See :ref:`escape-codes`.
 11. Now is the time to work on Lab 01. Make sure you are working in the Lab 01 folder, with the ``lab_01.py`` file.
