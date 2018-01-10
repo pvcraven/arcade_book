@@ -3,24 +3,25 @@
 Lab 1: First Program
 ====================
 
-1. If you are installing on your own computer, install Python and set up the libraries. See :ref:`installing-python`.
-2. If you are installing on your own computer, install PyCharm. See :ref:`installing-pycharm`.
-3. If you are installing on your own computer, install Git. See :ref:`installing-git`.
-4. If you are installing on your own computer, install SourceTree. See :ref:`installing-sourcetree`.
-5. Fork the repository. See :ref:`fork-repository`.
-6. Share the repository. See :ref:`share-repository`.
-7. Clone the repository. :ref:`clone-repository`.
-8. Create and run a test program that prints ``Hello``. See :ref:`print-hello-world`.
-9. Commit and push the updated program to BitBucket. See :ref:`first-commit`.
-10. Update your program to print something longer. Commit and push again. See :ref:`print-multiple-lines`.
-11. Examine and try out different **escape codes**. See :ref:`escape-codes`.
-12. Now is the time to work on Lab 01. Make sure you are working in the Lab 01 folder, with the ``lab_01.py`` file.
-13. Make the lab *yours*. Figure out something of your own to print. Don't just use my examples. Make it longer
+1. Go through the `Git Tutorial <https://try.github.io/>`_.
+2. If you are installing on your own computer, install Python and set up the libraries. See :ref:`installing-python`.
+3. If you are installing on your own computer, install PyCharm. See :ref:`installing-pycharm`.
+4. If you are installing on your own computer, install Git. See :ref:`installing-git`.
+5. If you are installing on your own computer, install SourceTree. See :ref:`installing-sourcetree`.
+6. Fork the repository. See :ref:`fork-repository`.
+7. Share the repository. See :ref:`share-repository`.
+8. Clone the repository. :ref:`clone-repository`.
+9. Create and run a test program that prints ``Hello``. See :ref:`print-hello-world`.
+10. Commit and push the updated program to BitBucket. See :ref:`first-commit`.
+11. Update your program to print something longer. Commit and push again. See :ref:`print-multiple-lines`.
+12. Examine and try out different **escape codes**. See :ref:`escape-codes`.
+13. Now is the time to work on Lab 01. Make sure you are working in the Lab 01 folder, with the ``lab_01.py`` file.
+14. Make the lab *yours*. Figure out something of your own to print. Don't just use my examples. Make it longer
     than one line. At least four. Also include at least one escape code.
-14. Try running your lab. If you see the old "test" program running instead, right click on your program and tell it
+15. Try running your lab. If you see the old "test" program running instead, right click on your program and tell it
     you want it to run ``lab_01.py`` not the other program.
-15. Commit and push your lab.
-16. Find your lab in in BitBucket. Go to "source" and find the directory it is in. Copy the URL, submit for grading.
+16. Commit and push your lab.
+17. Find your lab in in BitBucket. Go to "source" and find the directory it is in. Copy the URL, submit for grading.
 
 Before turning in your program, double-check:
 
