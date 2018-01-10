@@ -42,8 +42,15 @@ today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
 is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
 standardize on Git.
 
-Learning Git
-------------
+
+.. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
+.. _Git: http://en.wikipedia.org/wiki/Git_(software)
+.. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
+
+The Interactive Git Tutorial
+----------------------------
+
+This is a great interactive tutorial to learn how to use ``git``. Go through it now:
 
 https://try.github.io/
 
@@ -51,20 +58,26 @@ https://try.github.io/
 .. _installing-git:
 
 Installing Git
-^^^^^^^^^^^^^^
+--------------
 
-Download and install the 64-bit version of the `Git DVCS`_. This is the version control system.
+Now that you've learned how to use ``git``, let's install it on your computer.
+If you are using a school computer with ``git`` pre-installed, you can skip
+this step.
 
+Click the link below and download and install the 64-bit version of the ``git``.
+
+* `Windows Git DVCS <https://git-scm.com/download/win>`_
+* `MacOS Git DVCS <https://git-scm.com/download/mac>`_
 
 .. _fork-repository:
 
 Forking the Repository
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 .. attention::
     You should only have to fork the code **once** during class. If you do it more than
-    once, something is wrong.
-
+    once, something is wrong. Stop before you do this and see the instructor.
+    It is a big headache for everyone if your fork more than once.
 
 1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called
@@ -98,7 +111,7 @@ Forking the Repository
 .. _share-repository:
 
 Share the Repository
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 1. Give read permission to the instructor ``pcraven`` for your fork so he can
    grade your assignments.
@@ -113,42 +126,97 @@ Share the Repository
 .. _clone-repository:
 
 Cloning the Repository
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
-.. attention::
-    You will clone the repository once for each place you want to store your code.
+.. note::
+    Every time you start working on a new computer, you'll need to create a clone.
+    (Unless you use a flash drive.)
 
-1. Figure out where you want to store your files. You might want to store
-   the files on your laptop, a flash drive, or a networked drive. I don't
-   recommend saving it onto the lab computer, but that is an option.
-2. We want to
-   now copy it to your computer. We'll call this a "clone." A "clone" is a copy
+1. Run the program "Git Bash" on Windows. Or, if you are on the mac, go under
+   "Applications", find "Utilities" and in that run "Terminal".
+
+.. figure:: git_bash.png
+
+   Git Bash Window
+
+2. Figure out where you want to store your files. You might want to store
+   the files on your laptop, a flash drive, or a networked drive.
+3. Figure out what directory your "Bash" window is in. Do this by typing ``pwd``,
+   which is short for "print working directory".
+
+.. image:: pwd.png
+
+4. You can see what files are in the directory by typing ``ls``, short for
+   "list files".
+5. You can change directories using the ``cd`` command. You should default to
+   your "home" directory, which is a great place to put your files. But if you
+   want them in a different location, change to that location now.
+   There's a lot to the ``cd``
+   command, but there are a few variations you need to know:
+
+   * ``cd`` Change to your "home" directory.
+   * ``cd mydir`` Change to ``mydir`` directory. That directory must be in the
+     same directory you are in now. Also, if you don't want to type the full
+     directory name, you can type the first few letters and hit <tab>.
+   * ``cd ..`` Go up one directory.
+
+
+6. We want to
+   copy the repository you created to your computer. We'll call this a "clone." A "clone" is a copy
    we normally try to keep synced up, which is different than a "fork."
    To clone the repository, hit the "plus" and then select "Clone Repository"
 
 .. image:: bitbucket_clone.png
     :width: 300px
 
-3. Copy the address that it gives you.
-4. Start SourceTree. Select File...New:
 
-.. image:: sourcetree_clone_01.png
-    :width: 250px
+7. Copy the address that it gives you. It should have **your** name, and **not**
+   my name. If you get this wrong, you'll have to restart everything back at
+   the clone section. (Not the fork section.)
 
-5. Paste the address you copied from the website to SourceTree. When you move
-   out of the field you'll be asked for your Atlassian login information.
+.. image:: get_clone_address.png
+   :width: 75%
 
-.. image:: sourcetree_clone_02.png
-    :width: 620px
+8. Paste the command it gives you in your command prompt:
 
-6. Select the directory where you will be saving your files. If you want to save it on your flash drive or network
-   drive, now is the time to select that.
-7. Select "Clone". After the cloning finishes, you have a copy of the template on your computer! Now we just
-   need to open up our editor.
+.. image:: git_clone.png
 
+Then...
 
-First Commit
-^^^^^^^^^^^^
+.. image:: after_clone.png
+
+9. There you go! You now have a directory set up where you can do your work.
+
+.. _open-in-pycharm:
+
+Open Project in Pycharm
+-----------------------
+
+Go ahead and start PyCharm, then select "File...Open" and select that directory.
+
+.. image:: open_in_pycharm.png
+    :width: 75%
+
+Your project should look like the image below. If this isn't what you have,
+you might have opened the wrong folder. Hit "File...Open" and try again.
+
+.. image:: open_in_pycharm2.png
+    :width: 75%
+
+If you click the arrow next to the folder name, you can see all the folders
+in the project folder.
+
+.. image:: open_in_pycharm3.png
+    :width: 75%
+
+If you move from computer to computer hand have a flash drive, you can
+reopen your project be just doing "File...Open". If you don't have your
+flash drive, you'll need to re-clone your repository.
+
+.. _commit:
+
+Commit Your Code
+----------------
 
 It is time to commit. Wait! You are young and don't want to commit yet?
 
@@ -156,122 +224,73 @@ The cool thing with version control, is that every time you commit, you can go b
 code at that point in time. Version control lets you take it all back! It is the best type
 of commitment ever!
 
-Open SourceTree and:
+First, open Git Bash, and switch to the directory with your project using the ``cd`` command:
 
-1. Select "Branches"
-2. Select "master" (This is the "master" branch. It will be the only branch we use for this class.)
-3. Select "Uncommitted changes". If you don't have any changes, this line won't appear.
-4. Select the file we want to commit. All the changed files will be listed here. If a file wasn't changed, it won't
-   be listed. Yellow files have been changed, purple files aren't under version control, green files are new, gray
-   files are missing, and red files are set to be deleted.
-5. Go ahead and hit "commit".
+.. code-block:: text
 
-.. image:: sourcetree_first_commit_01.png
+    craven@DESKTOP-RAUFKMA MINGW64 ~
+    $ cd arcade-games-work2/
 
-While we hit "commit" in the prior screen, we haven't committed yet.
+Optionally, we can use ``git status`` to see what files have changed:
 
-1. Type in a message so you can track what this commit was.
-2. Select that you want to push the code to the server after you commit.
-3. Hit the commit button. Not the button in the top left, but the commit button in the lower right. (Confusing, I know.)
+.. code-block:: text
 
-.. image:: sourcetree_first_commit_02.png
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git status
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
 
-Go back in SourceTree and see that your commit happened:
+            modified:   Lab 01 - First Program/lab_01.py
 
-.. image:: sourcetree_first_commit_03.png
+    no changes added to commit (use "git add" and/or "git commit -a")
 
-Did the code get to the BitBucket website? You can go to the website and see the commits:
+Now, add all the files that have changed. The asterisk (``*``) is a wild card character
+that means get all changes. Optionally, we could list out each file, but that's a lot
+of work and we don't want to leave anything behind anyway.
 
-.. image:: bitbucket_commit_01.png
+.. code-block:: text
 
-You can also see the code:
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git add *
 
-.. image:: bitbucket_commit_02.png
+Commit the changes:
 
+.. code-block:: text
 
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git commit -m "Work on lab 1"
+    [master 45028a5] Work on lab 1
+     1 file changed, 1 insertion(+)
 
-Once you have that working, let's try committing the change. Flip to SourceTree and select "Uncommitted Changes"
-again:
+.. _push-code:
 
-.. image:: bitbucket_commit_03.png
+Push Your Code
+--------------
 
-Note that when you select the file, you see both the new and old text:
+And push them to the server:
 
-.. image:: bitbucket_commit_04.png
+.. code-block:: text
 
-The red text represents text that you removed. The green text represents text you added. White text is unchanged.
-Even if you can see the red text, it is not in the file. This sometimes throws people off when they are looking
-at the commit history.
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git push
+    Counting objects: 4, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (4/4), 329 bytes | 0 bytes/s, done.
+    Total 4 (delta 1), reused 0 (delta 0)
+    To bitbucket.org:pcraven/arcade-games-work2.git
+       519c361..45028a5  master -> master
 
-Go ahead and commit the file.
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $
 
-Turning In Your Programs
-------------------------
+If the message doesn't look like this, there may have been an error.
+Skip down to :ref:`cant-push`.
 
-When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
-
-.. image:: bitbucket_copy_url.png
-
-More Version Control
---------------------
-
-Editing Elsewhere
-^^^^^^^^^^^^^^^^^
-Find this file on the BitBucket website. Hit the "Source" icon, and then
-browse to the file. Let's try editing this on-line. We could just as easily
-edit this on a different computer. Like if you had a home computer and a
-work computer. Or two different people working on the same program.
-
-.. image:: edit_online_1.png
-
-Now let's edit this, and improve it by quoting
-`A Wrinkle in Time <https://en.wikipedia.org/wiki/A_Wrinkle_in_Time>`_ instead.
-
-.. image:: edit_online_2.png
-
-Commit the change. Add a good comment, don't take the default. Don't create
-a "pull request".
-
-Pulling Changes
-^^^^^^^^^^^^^^^
-
-Next, let's pull those changes onto our computer with SourceTree:
-
-.. image:: pull.png
-
-Great! Now you should see those changes on your local computer.
-
-This works great until the same line of code is changed in two different places.
-Try adding a line 4 on-line first, and a different line 4 on your computer.
-
-When you try to push you get an angry message like this:
-
-.. image:: failed_push.png
-
-Usually students get this message late Sunday night when trying to upload their
-homework. And now they can't What to do?
-
-* Hit "Pull"
-* Look at your "Uncommitted changed"
-* Note the files that have a caution sign.
-* To keep your changes and ignore the other changes, right-click select "Resolve
-  Conflicts" and select "Resolve Using Mine"
-* To keep the changes on the server and remove yours, right-click select
-  "Resolve Conflicts" and select "Resolve Using Theirs"
-* To manually resolve the conflicts, right-click select "Resolve Conflicts"
-  and select "Mark Resolved". Both lines will be there, along with some
-  delimiters that look kind of odd. You can edit the file in PyCharm.
-
-.. image:: conflict.png
-
-* After that, select "Commit" so that you commit your merge. (Easy to forget
-  this step.)
-* Then you can push to the server.
-
-Go ahead and try this out. I'll look for it on-line when I'm grading. It should
-look like this:
-
-.. image:: see_merge_online.png
+.. _turn-in-program:
 
 Turning In Your Programs
 ------------------------
@@ -279,3 +298,178 @@ Turning In Your Programs
 When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
 
 .. image:: bitbucket_copy_url.png
+
+Now go to Scholar and turn in the link.
+
+.. _cant-push:
+
+What If You Can't Push?
+-----------------------
+
+What happens if you can't push to the server? If you get an error like what's below?
+(See highlighted lines.)
+
+.. code-block:: text
+  :emphasize-lines: 4,5
+
+    $ git push
+    To bitbucket.org:pcraven/arcade-games-work2.git
+     ! [rejected]        master -> master (fetch first)
+    error: failed to push some refs to 'git@bitbucket.org:pcraven/arcade-games-work2.git'
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+Step 1: Make Sure You Have No Pending Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Run a ``git status`` and make sure you have nothing to commit.
+It should look like this:
+
+.. code-block:: text
+
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git status
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    nothing to commit, working tree clean
+
+If you do hove code to commit, jump up to :ref:`commit` and then come back here.
+
+.. _pull-changes:
+
+Step 2: Pull Changes From The Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Pull changes from the server:
+
+.. code-block:: text
+
+    $ git pull
+
+Normally, this will work fine and you'll be done. But if you have other computers
+that you are coding on, the computer will automatically try to merge.
+
+Step 2A: Merging
+~~~~~~~~~~~~~~~~
+
+If you get a screen like the image below, the computer automatically
+merged your code bases. It now wants you to type in a comment for the
+merge. We'll take the default comment.
+Hold down the shift key and type ``ZZ``.
+If that doesn't work, hit escape, and then try again.
+
+(You are in an editor called **vim** and it is asking you for a comment about
+merging the files. Unfortunately vim is really hard to learn. Shift-ZZ is the
+command to save, and all we want to do is get out of it and move on.)
+
+.. image:: vi_merge.png
+
+It should finish with something that looks like:
+
+.. code-block:: text
+
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    Merge made by the 'recursive' strategy.
+     Lab 01 - First Program/lab_01.py | 3 ++-
+     1 file changed, 2 insertions(+), 1 deletion(-)
+
+If instead you get this:
+
+.. code-block: text
+   :emphasize-lines: 9
+
+    $ git pull
+    remote: Counting objects: 4, done.
+    remote: Compressing objects: 100% (4/4), done.
+    remote: Total 4 (delta 1), reused 0 (delta 0)
+    Unpacking objects: 100% (4/4), done.
+    From bitbucket.org:pcraven/arcade-games-work2
+       aeb9cf3..6a8f398  master     -> origin/master
+    Auto-merging Lab 01 - First Program/lab_01.py
+    CONFLICT (content): Merge conflict in Lab 01 - First Program/lab_01.py
+    Automatic merge failed; fix conflicts and then commit the result.
+
+Then we edited the same file in the same spot. We have to tell
+the computer if we want our changes, or the changes on the other
+computer.
+
+Step 2B: Resolving a Merge Conflict
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Do a ``git status``. It should look something like this:
+
+.. code-block:: text
+    :emphasize-lines: 13
+
+    $ git status
+    On branch master
+    Your branch and 'origin/master' have diverged,
+    and have 1 and 1 different commits each, respectively.
+      (use "git pull" to merge the remote branch into yours)
+    You have unmerged paths.
+      (fix conflicts and run "git commit")
+      (use "git merge --abort" to abort the merge)
+
+    Unmerged paths:
+      (use "git add <file>..." to mark resolution)
+
+            both modified:   Lab 01 - First Program/lab_01.py
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+The key thing to look for is any file that says ``both modified``.
+
+If you want **your** copy, type:
+
+.. code-block:: text
+
+    $ git checkout --ours "Lab 01 - First Program/lab_01.py"
+
+If instead you want **their** copy (or the copy on the other computer)
+type
+
+.. code-block:: text
+
+    $ git checkout --theirs "Lab 01 - First Program/lab_01.py"
+
+Then when you are all done with all merges, type:
+
+.. code-block:: text
+
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)
+    $ git add *
+
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)
+    $ git commit -m"Merged"
+    [master e083f36] Merged
+
+    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
+    $ git push
+    Counting objects: 5, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (5/5), done.
+    Writing objects: 100% (5/5), 531 bytes | 0 bytes/s, done.
+    Total 5 (delta 2), reused 0 (delta 0)
+    To bitbucket.org:pcraven/arcade-games-work2.git
+       6a8f398..e083f36  master -> master
+
+
+Step 3: Try Pushing Again
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: text
+
+    $ git push
+    Counting objects: 6, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (6/6), 604 bytes | 0 bytes/s, done.
+    Total 6 (delta 2), reused 0 (delta 0)
+    To bitbucket.org:pcraven/arcade-games-work2.git
+       d66b008..aeb9cf3  master -> master
+
+

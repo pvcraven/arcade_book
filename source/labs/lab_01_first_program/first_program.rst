@@ -14,7 +14,7 @@ Lab 1: First Program
 9. Create and run a test program that prints ``Hello``. See :ref:`print-hello-world`.
 10. Commit and push the updated program to BitBucket. See :ref:`first-commit`.
 11. Update your program to print something longer. Commit and push again. See :ref:`print-multiple-lines`.
-12. Examine and try out different **escape codes**. See :ref:`escape-codes`.
+12. Examine and try out different **escape codes**. See :ref:`escape-codes`. (We'll talk more about this Friday.)
 13. Now is the time to work on Lab 01. Make sure you are working in the Lab 01 folder, with the ``lab_01.py`` file.
 14. Make the lab *yours*. Figure out something of your own to print. Don't just use my examples. Make it longer
     than one line. At least four. Also include at least one escape code.

@@ -9,6 +9,7 @@ Chapters
    01_what_is_a_programming_language/index
    01_setup/setup
    01_version_control/index
+   01_print_statement/print_statement
    02_drawing/drawing
    03_drawing_with_functions/drawing_with_functions
    04_if_statements/if_statements
@@ -30,4 +31,5 @@ Chapters
    20_recursion/recursion
    21_print_formatting/print_formatting
    xx_selecting_python/selecting_python
+   xx_flowchart/index.rst
 

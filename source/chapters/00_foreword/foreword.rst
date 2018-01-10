@@ -1,15 +1,16 @@
 Foreword - Why Learn Programming?
 =================================
 
-Hello! My goal is to teach you how to program 2D video games.
-Well, really my goal is to show you how much fun programming can be. I'm also
-supposed to teach the topics of a typical first-semester programming class, but
+Hello! The goal of this book is to teach you how to program 2D video games.
+
+I also want show you how much fun programming can be.
+In addition we'll teach the topics of a typical first-semester programming class, but
 none of that matters unless I can show you that programming is
 worth learning.
 
 .. note::
     In :ref:`how-to-draw` we show how to create your first graphics.
-    These first chapters show how to get your computer set up.
+    First, we have to get your computer set up.
 
 You can earn a lot of money by programming. There are so many cool things
 you can create. It is a fun career, hobby, or passion. It is also a lot of
