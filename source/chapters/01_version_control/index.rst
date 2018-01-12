@@ -195,7 +195,7 @@ Open Project in Pycharm
 Go ahead and start PyCharm, then select "File...Open" and select that directory.
 
 .. image:: open_in_pycharm.png
-    :width: 75%
+    :width: 60%
 
 Your project should look like the image below. If this isn't what you have,
 you might have opened the wrong folder. Hit "File...Open" and try again.
@@ -212,6 +212,19 @@ in the project folder.
 If you move from computer to computer hand have a flash drive, you can
 reopen your project be just doing "File...Open". If you don't have your
 flash drive, you'll need to re-clone your repository.
+
+.. _change_file:
+
+Change a File
+-------------
+
+Let's practice making a quick change to one of our files. Open your project folder, open the lab 1 folder, then open
+lab one. Type in "Hi" or something similar.
+
+.. image:: select_lab_file.png
+    :width: 60%
+
+Hit Ctrl-S to save.
 
 .. _commit:
 
@@ -287,19 +300,21 @@ And push them to the server:
     craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
     $
 
-If the message doesn't look like this, there may have been an error.
-Skip down to :ref:`cant-push`.
+Look to see if the message says that there is an "error." The message will probably look a little different than what
+you see above, with other objects or threads, but there should not be any errors. If there are errors,
+skip down to :ref:`cant-push`.
 
 .. _turn-in-program:
 
 Turning In Your Programs
 ------------------------
 
-When it comes time to turn in one of your programs, copy the URL and turn it into your instructor:
+When it comes time to turn in one of your programs, go back to BitBucket. Click on "source", find the lab file,
+copy the URL:
 
 .. image:: bitbucket_copy_url.png
 
-Now go to Scholar and turn in the link.
+Now go to Scholar and paste the link into the text field for the lab you are are working on.
 
 .. _cant-push:
 

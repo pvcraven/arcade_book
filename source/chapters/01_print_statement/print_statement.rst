@@ -46,6 +46,8 @@ Click the image below to make it bigger and note the:
 Ok, now it's time to update our program. Go back to our program and improve
 it by printing multiple lines, while quoting Snoopy's famous story:
 
+.. _print-multiple-lines:
+
 Multiple Print Lines
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -64,9 +66,9 @@ Escape Codes
 ^^^^^^^^^^^^
 
 If quotes are used to tell the computer the start and end of the string of text you wish to print, how does a program
-print out a set of double quotes? For example:
+print out a set of double quotes? (This is a double quote ``"`` and this is a single quote ``'``.) For example:
 
-::
+.. code-block:: text
 
     print("I want to print a double quote " for some reason.")
 
@@ -84,6 +86,18 @@ character that terminates a string. For example:
     print("I want to print a double quote \" for some reason.")
 
 This combination of the two characters ``\"`` is called an *escape code*. Almost every language has escape codes.
+Here's another example:
+
+.. code-block:: python
+
+    print("Audrey Hepburn once said \"Nothing is impossible. The word itself says 'I'm Possible!'.\"")
+
+This will print:
+
+.. code-block:: text
+
+    Audrey Hepburn once said "Nothing is impossible. The word itself says 'I'm Possible!'."
+
 Because the backslash is used as part of an escape code, the backslash itself must be escaped if you want to use
 one. For example, this code does not work correctly:
 
