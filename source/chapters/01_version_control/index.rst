@@ -3,6 +3,33 @@
 Version Control Systems
 =======================
 
+.. _git-quick-ref:
+
+Quick Reference
+---------------
+
+Commit and Upload
+^^^^^^^^^^^^^^^^^
+
+Do this whenever you are done with a session of programming:
+
+1. Open "git bash" on Windows, or "terminal" on MacOS.
+2. Type ``cd mydirectoryname`` where the name of the directory will be the same as the name of your repository on
+   BitBucket. You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
+3. Type ``git add *``
+4. Type ``git commit -m "Work on lab 1"`` Update the comment to whatever you did.
+5. Type ``git push``
+
+Turn In Your Work
+^^^^^^^^^^^^^^^^^
+
+1. Go to BitBucket
+2. Click on "Source"
+3. Find the folder with your lab
+4. Copy link
+5. Go to Scholar for the lab
+6. Paste link, and turn in.
+
 What is a Distributed Version Control System
 --------------------------------------------
 
@@ -277,6 +304,17 @@ Commit the changes:
     $ git commit -m "Work on lab 1"
     [master 45028a5] Work on lab 1
      1 file changed, 1 insertion(+)
+
+You might get an error, if the computer doesn't know who you are yet. If you get this error, it will tell you the
+commands you need to run. They will look like:
+
+.. code-block:: text
+
+    git config --global user.email "put.your.email.here@my.simpson.edu"
+    git config --global user.name "Jane Smith"
+
+Then you can re-run your commit command. You can use the "up" arrow to get commands you typed in
+previously so you don't need to retype anything.
 
 .. _push-code:
 

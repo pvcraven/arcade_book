@@ -6,6 +6,9 @@ Lab 2: Draw a Picture
 Your assignment: Draw a pretty picture. The goal of this lab is to get practice
 using functions to draw, and introduce computer graphics.
 
+Requirements
+------------
+
 To get full credit:
 
 * Use the same project and repository that you used for Lab 01. Create a new
@@ -22,6 +25,9 @@ To get full credit:
   the start of those drawing commands that says ``# Draw a tree``. Remember
   to put one space after the ``#`` sign.
 * Put spaces after commas for proper "style."
+
+Tips
+----
 
 To select new colors use:
 
@@ -116,3 +122,8 @@ Here are some images from prior years:
 
 To flip through the images, click the prev/next buttons above the image. The
 prev/next buttons below navigate between the different labs.
+
+Turn In
+-------
+
+Refer back to :ref:`git-quick-ref` for a reminder on how to turn in this lab.
