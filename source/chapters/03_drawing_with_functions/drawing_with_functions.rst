@@ -339,26 +339,33 @@ Operator   Description
 Using Expressions In Function Calls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We can use expressions even in the calls that we make. For example, we have
-a ``draw_triangle_filled`` function. It takes three points to draw a triangle.
-It needs ``x1, y1, x2, y2, x3, y3``. What if we wanted to center a triangle
-around a point, and specify a width and height?
+We can use expressions even in the calls that we make. For example, what if we want
+to draw a circle in the center of the screen?
 
-.. image:: triangle.jpg
-
-We can use that math when we call our function to draw:
+We could do something like:
 
 .. code-block:: python
+    :linenos:
+    :emphasize-lines: 12-15
 
-    center_x = 200
-    center_y = 200
-    width = 30
-    height = 30
+    import arcade
 
-    arcade.draw_triangle_filled(center_x - width / 2, center_y - width / 2,
-                                center_x + width / 2, center_y - width / 2,
-                                center_x, center_y + width / 2,
-                                arcade.color.FOREST_GREEN)
+    SCREEN_WIDTH = 800
+    SCREEN_HEIGHT = 600
+
+    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
+
+    arcade.set_background_color(arcade.color.WHITE)
+
+    arcade.start_render()
+
+    # Instead of this:
+    # arcade.draw_circle_filled(400, 300, 50, arcade.color.FOREST_GREEN)
+    # do this:
+    arcade.draw_circle_filled(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 50, arcade.color.FOREST_GREEN)
+
+    arcade.finish_render()
+    arcade.run()
 
 Order of Operations
 ^^^^^^^^^^^^^^^^^^^
@@ -388,78 +395,6 @@ By using parentheses this problem can be fixed:
 .. code-block:: python
 
     average = (90 + 86 + 71 + 100 + 98) / 5
-
-.. _custom-drawing-function:
-
-How to Create a Custom Drawing Function
----------------------------------------
-
-We can call functions with **parameters**. When we declare a function we
-can put new variables between the parenthesis. See line 15 below. The two
-variables ``position_x`` and ``position_y`` will take whatever value is passed
-in when the function is called.
-
-On line 46, we call ``draw_pine_tree`` with two numbers, ``70`` and ``90``.
-The variable ``position_x`` will be assigned ``70``, and the
-variable ``position_y`` will be assigned ``90``.
-
-.. literalinclude:: drawing_with_functions_3.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 15, 46
-
-We can use the variables from the parameters, and some mathematical expressions
-to draw a tree. Line 38 draws a small red point where the "origin" of the tree
-is. That is, I draw the point at ``(position_x, position_y)``. From there you
-can get an idea of how the other shapes relate in position.
-
-.. image:: pine_tree2.png
-
-Spend some time matching the math to the origin and how it gets there.
-
-We can use the function several times:
-
-.. code-block:: python
-
-    draw_pine_tree(70, 90)
-    draw_pine_tree(150, 200)
-    draw_pine_tree(320, 180)
-    draw_pine_tree(520, 190)
-    draw_pine_tree(750, 80)
-
-.. image:: pine_tree3.png
-
-.. _make-everything-a-function:
-
-Make Everything a Function
---------------------------
-
-Code is easier to maintain and visualize if it is broken down into parts. Now
-that we know how to use functions, it is better programming practice to put
-*everything* into a function.
-
-Below is the same program we had before, but the main code has been moved into
-a ``main`` function.
-
-.. literalinclude:: drawing_with_functions_4.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 41, 61
-
-This is much better design-wise. However it isn't perfect. Later on we will show
-you how to make your own code libraries. And if you import this file as a code
-library, you will not only get the ``draw_pine_tree`` function to use in your
-own game, the import statement will actually run the program and display a
-window!
-
-We don't want to run the main program if we are importing this as a library.
-We'll explain this more later, but to get into good habits now, use the code
-on lines 61 and 62 to call the main function instead.
-
-.. literalinclude:: drawing_with_functions_5.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 61-62
 
 Returning and Capturing Values
 ------------------------------
@@ -1018,3 +953,74 @@ Example 15
     a(my_list)
     print("global scope, list =", my_list)
 
+.. _custom-drawing-function:
+
+How to Create a Custom Drawing Function
+---------------------------------------
+
+We can call functions with **parameters**. When we declare a function we
+can put new variables between the parenthesis. See line 15 below. The two
+variables ``position_x`` and ``position_y`` will take whatever value is passed
+in when the function is called.
+
+On line 46, we call ``draw_pine_tree`` with two numbers, ``70`` and ``90``.
+The variable ``position_x`` will be assigned ``70``, and the
+variable ``position_y`` will be assigned ``90``.
+
+.. literalinclude:: drawing_with_functions_3.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 15, 46
+
+We can use the variables from the parameters, and some mathematical expressions
+to draw a tree. Line 38 draws a small red point where the "origin" of the tree
+is. That is, I draw the point at ``(position_x, position_y)``. From there you
+can get an idea of how the other shapes relate in position.
+
+.. image:: pine_tree2.png
+
+Spend some time matching the math to the origin and how it gets there.
+
+We can use the function several times:
+
+.. code-block:: python
+
+    draw_pine_tree(70, 90)
+    draw_pine_tree(150, 200)
+    draw_pine_tree(320, 180)
+    draw_pine_tree(520, 190)
+    draw_pine_tree(750, 80)
+
+.. image:: pine_tree3.png
+
+.. _make-everything-a-function:
+
+Make Everything a Function
+--------------------------
+
+Code is easier to maintain and visualize if it is broken down into parts. Now
+that we know how to use functions, it is better programming practice to put
+*everything* into a function.
+
+Below is the same program we had before, but the main code has been moved into
+a ``main`` function.
+
+.. literalinclude:: drawing_with_functions_4.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 41, 61
+
+This is much better design-wise. However it isn't perfect. Later on we will show
+you how to make your own code libraries. And if you import this file as a code
+library, you will not only get the ``draw_pine_tree`` function to use in your
+own game, the import statement will actually run the program and display a
+window!
+
+We don't want to run the main program if we are importing this as a library.
+We'll explain this more later, but to get into good habits now, use the code
+on lines 61 and 62 to call the main function instead.
+
+.. literalinclude:: drawing_with_functions_5.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 61-62
