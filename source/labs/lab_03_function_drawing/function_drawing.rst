@@ -19,6 +19,8 @@ Incorporate the following items:
 
 * Find the folder for Lab 03 in PyCharm. Feel free to use any code from Lab 02 you want, just
   copy it across.
+* Follow the instructions in :ref:`make-everything-a-function`.
+* Make sure you have a ``main()`` function
 * Create three functions that draw something. (15 pts total, up to 5 pts
   per function)
 
@@ -29,9 +31,6 @@ Incorporate the following items:
   * Pass in ``x`` and ``y`` parameters and successfully position the object
     as shown in :ref:`custom-drawing-function`. (2 pts)
 
-* Properly use the ``main`` function for your main program as shown
-  in :ref:`make-everything-a-function`. (1 pt)
-
 Drawing with functions is worth 16 points. You can get the final 4 points by animating your image.
 
 
@@ -40,8 +39,8 @@ Requirements for Animation
 
 Animate an object. The movement does not need to be complex.
 
-Tips to Make Things Easier
---------------------------
+Example and Tips to Make Things Easier
+--------------------------------------
 
 Putting Code In a Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

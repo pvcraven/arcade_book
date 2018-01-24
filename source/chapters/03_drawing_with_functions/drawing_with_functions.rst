@@ -958,69 +958,67 @@ Example 15
 How to Create a Custom Drawing Function
 ---------------------------------------
 
-We can call functions with **parameters**. When we declare a function we
-can put new variables between the parenthesis. See line 15 below. The two
-variables ``position_x`` and ``position_y`` will take whatever value is passed
-in when the function is called.
+Here is a set of examples where we take a program that already exists and put
+everything in functions.
 
-On line 46, we call ``draw_pine_tree`` with two numbers, ``70`` and ``90``.
-The variable ``position_x`` will be assigned ``70``, and the
-variable ``position_y`` will be assigned ``90``.
+First the original program:
 
-.. literalinclude:: drawing_with_functions_3.py
+.. image:: snowman1.png
+    :width: 50%
+
+.. literalinclude:: drawing_with_functions_a1.py
     :language: python
     :linenos:
-    :emphasize-lines: 15, 46
 
-We can use the variables from the parameters, and some mathematical expressions
-to draw a tree. Line 38 draws a small red point where the "origin" of the tree
-is. That is, I draw the point at ``(position_x, position_y)``. From there you
-can get an idea of how the other shapes relate in position.
+Next, create a ``main()`` function. Put everything in it, and call the main
+function.
 
-.. image:: pine_tree2.png
-
-Spend some time matching the math to the origin and how it gets there.
-
-We can use the function several times:
-
-.. code-block:: python
-
-    draw_pine_tree(70, 90)
-    draw_pine_tree(150, 200)
-    draw_pine_tree(320, 180)
-    draw_pine_tree(520, 190)
-    draw_pine_tree(750, 80)
-
-.. image:: pine_tree3.png
-
-.. _make-everything-a-function:
-
-Make Everything a Function
---------------------------
-
-Code is easier to maintain and visualize if it is broken down into parts. Now
-that we know how to use functions, it is better programming practice to put
-*everything* into a function.
-
-Below is the same program we had before, but the main code has been moved into
-a ``main`` function.
-
-.. literalinclude:: drawing_with_functions_4.py
+.. literalinclude:: drawing_with_functions_a2.py
     :language: python
     :linenos:
-    :emphasize-lines: 41, 61
 
-This is much better design-wise. However it isn't perfect. Later on we will show
-you how to make your own code libraries. And if you import this file as a code
-library, you will not only get the ``draw_pine_tree`` function to use in your
-own game, the import statement will actually run the program and display a
-window!
+When you do this, run your program and make sure it still works before proceeding.
 
-We don't want to run the main program if we are importing this as a library.
-We'll explain this more later, but to get into good habits now, use the code
-on lines 61 and 62 to call the main function instead.
+Next, pick an item to move to a function. Start with an easy one if you have it.
+I chose grass because it was only one line of code, and I wasn't going to ever try
+to position it with x, y.
 
-.. literalinclude:: drawing_with_functions_5.py
+.. literalinclude:: drawing_with_functions_a3.py
     :language: python
     :linenos:
-    :emphasize-lines: 61-62
+    :emphasize-lines: 7-9, 17
+
+Then, I took a more complex shape and put it in a function.
+
+.. literalinclude:: drawing_with_functions_a4.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 12-22, 31
+
+But this draws the snowman only at one spot. I want to draw lots of snowmen,
+anywhere I put them!
+
+To do this, let's add an x and y:
+
+.. image:: snowman2.png
+    :width: 50%
+
+.. literalinclude:: drawing_with_functions_a5.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 12, 19-21, 24-25, 34
+
+But that's not perfect. If you'll note, I added a dot at the x and y. The
+snowman draws way off from the dot, because originally I didn't try to draw
+it at 0, 0. I need to recenter the snowman on the dot.
+
+We need to re-center the shape onto the spot we are drawing. Typically you'll
+need to subtract from all the x and y values the same amount.
+
+.. image:: snowman3.png
+    :width: 50%
+
+.. literalinclude:: drawing_with_functions_a6.py
+    :language: python
+    :linenos:
+
