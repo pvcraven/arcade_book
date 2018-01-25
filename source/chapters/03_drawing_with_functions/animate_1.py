@@ -25,17 +25,21 @@ def draw_snow_person(x, y):
     arcade.draw_circle_filled(x + 15, 210 + y, 5, arcade.color.BLACK)
 
 
-def main():
-    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing with Functions")
-    arcade.set_background_color(arcade.color.DARK_BLUE)
+def on_draw(delta_time):
+    """ Draw everything """
     arcade.start_render()
 
     draw_grass()
     draw_snow_person(150, 140)
     draw_snow_person(450, 180)
 
-    # Finish and run
-    arcade.finish_render()
+
+def main():
+    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing with Functions")
+    arcade.set_background_color(arcade.color.DARK_BLUE)
+
+    # Call on_draw every 60th of a second.
+    arcade.schedule(on_draw, 1/60)
     arcade.run()
 
 

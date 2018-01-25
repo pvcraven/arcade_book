@@ -29,5 +29,4 @@ def main():
 
 
 # Call the main function to get the program started.
-if __name__ == "__main__":
-    main()
+main()

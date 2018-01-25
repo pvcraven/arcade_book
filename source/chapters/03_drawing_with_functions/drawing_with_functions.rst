@@ -1022,3 +1022,42 @@ need to subtract from all the x and y values the same amount.
     :language: python
     :linenos:
 
+
+.. _animate-drawing:
+
+How To Animate A Drawing Function
+---------------------------------
+
+We can animate our drawing if we want. Here are the steps.
+
+Create An ``on_draw`` Method
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Right now our program only draws our image once. We need to move all the drawing code
+in our ``main`` to an ``on_draw`` function. Then we'll tell the computer to draw
+that over and over.
+
+Continuing from our last example, our program will look like:
+
+.. literalinclude:: animate_1.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 28-34, 41-42
+
+Do this with your own program. Nothing will move, but it should still run.
+
+Add Variable To Control Where We Draw Our Item
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Next, we are going to create a variable inside of the ``on_draw`` function.
+This variable will hold our *x* value.
+Each time we call ``on_draw``, we'll change *x* so that it moves to the right.
+
+.. literalinclude:: animate_2.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 33, 36-42
+
+For more information, see the `Bouncing Rectangle Example`_.
+
+.. _Bouncing Rectangle Example: http://arcade.academy/examples/bouncing_rectangle.html
