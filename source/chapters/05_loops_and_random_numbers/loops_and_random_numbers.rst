@@ -371,7 +371,7 @@ numbers and the code totals up their values.
     total = 0
     for i in range(5):
         new_number = int(input("Enter a number: " ))
-        total += new_number
+        total = total + new_number
     print("The total is: ", total)
 
 Note that line 1 creates the variable total, and sets it to an initial amount
@@ -406,9 +406,9 @@ separate variable sum to track the running total.
     :linenos:
 
     # What is the value of sum?
-    sum = 0
+    total = 0
     for i in range(1, 101):
-        sum = sum + i
+        total = total + i
     print(sum)
 
 Here's a different variation. This takes five numbers from the user and counts
@@ -421,7 +421,6 @@ the number of times the user enters a zero:
     for i in range(5):
         new_number = int(input( "Enter a number: "))
         if new_number == 0:
-            total += 1
     print("You entered a total of", total, "zeros")
 
 A programmer that understands the nested for loops and running totals should be
