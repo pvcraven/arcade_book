@@ -736,6 +736,29 @@ what selecting a random item out of a list would look like, see below:
     random_index = random.randrange(3)
     print(my_list[random_index])
 
+.. _random_chance:
+
+Random Chance
+^^^^^^^^^^^^^
+
+Often in games there is a random chance of something happening. How do we program this? It isn't too hard.
+Here's an example where we have a 1 in 5 chance of meeting a dragon:
+
+.. code-block:: python
+    :caption: Random Chance of Something Happening
+    :linenos:
+
+    import random
+
+
+    for i in range(20):
+        if random.randrange(5) == 0:
+            print("DRAGON!!!")
+        else:
+            print("No dragon.")
+
+This code repeats twenty times. Inside the loop, we "roll the dice" and get a number between 0 and 4. If we
+roll a 0, then we encounter a dragon. Otherwise we don't.
 
 The ``random`` Function
 ^^^^^^^^^^^^^^^^^^^^^^^
