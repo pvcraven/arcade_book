@@ -970,6 +970,11 @@ First the original program:
     :language: python
     :linenos:
 
+.. _make_the_main_function:
+
+Make The Main Function
+^^^^^^^^^^^^^^^^^^^^^^
+
 Next, create a ``main()`` function. Put everything in it, and call the main
 function.
 
@@ -978,6 +983,11 @@ function.
     :linenos:
 
 When you do this, run your program and make sure it still works before proceeding.
+
+.. _make_the_drawing_function:
+
+Make The Drawing Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Next, pick an item to move to a function. Start with an easy one if you have it.
 I chose grass because it was only one line of code, and I wasn't going to ever try
