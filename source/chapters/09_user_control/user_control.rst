@@ -87,7 +87,7 @@ The result of this program just looks like:
 Animating
 ---------
 
-By overriding the ``animate`` method, we can update our ball position and
+By overriding the ``update`` method, we can update our ball position and
 animate our scene:
 
 .. literalinclude:: simple_animation.py
