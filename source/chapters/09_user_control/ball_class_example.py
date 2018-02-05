@@ -54,9 +54,9 @@ class MyWindow(arcade.Window):
         arcade.start_render()
         self.ball.draw()
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
-        self.ball.animate()
+        self.ball.update()
 
 window = MyWindow(640, 480, "Drawing Example")
 
