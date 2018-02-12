@@ -333,7 +333,7 @@ We also need to get rid of the sprite. The sprite class has a method called
         coin.kill()
         self.score += 1
 
-Here's the whole ``animate`` method put together:
+Here's the whole ``update`` method put together:
 
 .. literalinclude:: sprite_sample_with_update.py
     :caption: Sprite Sample With Update Method
@@ -562,7 +562,7 @@ in degrees. So the following will flip the player upside down:
 
     self.player_sprite.angle = 180
 
-If you put this in the coin's ``animate`` method, it would cause the coins to
+If you put this in the coin's ``update`` method, it would cause the coins to
 spin:
 
 .. code-block:: Python
@@ -638,7 +638,7 @@ set called ``angle``. So we just set the angle to 90 to rotate it.
     bullet.angle = 90
 
 Now that we have bullets, how do we get them to collide with the coins?
-We add the following to our applications ``animate`` method:
+We add the following to our applications ``update`` method:
 
 .. code-block:: Python
 

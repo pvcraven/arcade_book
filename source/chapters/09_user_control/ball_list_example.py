@@ -68,13 +68,13 @@ class MyWindow(arcade.Window):
         for ball in self.ball_list:
             ball.draw()
 
-    def animate(self, delta_time):
+    def update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
 
-        # Use a "for" loop to pull each ball from the list, then call the animate
+        # Use a "for" loop to pull each ball from the list, then call the update
         # method on that ball.
         for ball in self.ball_list:
-            ball.animate()
+            ball.update()
 
 window = MyWindow(640, 480, "Drawing Example")
 

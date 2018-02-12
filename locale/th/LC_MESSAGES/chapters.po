@@ -5099,7 +5099,7 @@ msgstr ""
 
 #: ../../source/chapters/09_user_control/user_control.rst:93
 msgid ""
-"By overriding the ``animate`` method, we can update our ball position and"
+"By overriding the ``update`` method, we can update our ball position and"
 " animate our scene:"
 msgstr ""
 
@@ -5728,7 +5728,7 @@ msgid "The Animate Method"
 msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:299
-msgid "Our ``animate`` method needs to do three things:"
+msgid "Our ``update`` method needs to do three things:"
 msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:301
@@ -5775,7 +5775,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:340
-msgid "Here's the whole ``animate`` method put together:"
+msgid "Here's the whole ``update`` method put together:"
 msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:361
@@ -5943,7 +5943,7 @@ msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:564
 msgid ""
-"If you put this in the coin's ``animate`` method, it would cause the "
+"If you put this in the coin's ``update`` method, it would cause the "
 "coins to spin:"
 msgstr ""
 
@@ -5998,7 +5998,7 @@ msgstr ""
 #: ../../source/chapters/11_sprites/sprites.rst:639
 msgid ""
 "Now that we have bullets, how do we get them to collide with the coins? "
-"We add the following to our applications ``animate`` method:"
+"We add the following to our applications ``update`` method:"
 msgstr ""
 
 #: ../../source/chapters/11_sprites/sprites.rst:664
