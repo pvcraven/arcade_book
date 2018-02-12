@@ -22,7 +22,7 @@ There are video explanations for the answers on-line.
 Print Statement End Characters
 ------------------------------
 
-By default, the "print" statement puts a <em>carriage return</em> at
+By default, the "print" statement puts a *carriage return* at
 the end of what is printed out. As we explained back in the first chapter,
 the carriage return is a character that moves the next line of
 output to be printed to the next line. Most of the time this is what we want.
