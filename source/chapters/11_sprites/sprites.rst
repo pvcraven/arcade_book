@@ -154,7 +154,7 @@ code that calls the ``setup`` function near the end: ``window.setup()``.
 .. literalinclude:: sprite_sample_player.py
     :caption: Sprite Sample With Player
     :language: python
-    :emphasize-lines: 36-51, 55, 60
+    :emphasize-lines: 36-51, 55, 61
     :linenos:
 
 
@@ -238,7 +238,7 @@ Wait. We don't have many sprites. Just one. Let's add a ``for`` loop to our prog
 .. literalinclude:: sprite_sample_coins.py
     :caption: Sprite Sample With Player And Coins
     :language: python
-    :emphasize-lines: 53-66
+    :emphasize-lines: 57-70
     :linenos:
 
 Drawing The Score

@@ -1,7 +1,10 @@
 import random
 import arcade
 
-SPRITE_SCALING = 0.5
+SPRITE_SCALING_PLAYER = 0.5
+SPRITE_SCALING_COIN = 0.2
+SPRITE_SCALING_LASER = 0.8
+COIN_COUNT = 50
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -14,11 +17,29 @@ class Bullet(arcade.Sprite):
         self.center_y += BULLET_SPEED
 
 
-class MyAppWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Main application class. """
 
     def __init__(self):
+        """ Initializer """
+        # Call the parent class initializer
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprites and Bullets Demo")
+
+        # Variables that will hold sprite lists
+        self.all_sprites_list = None
+        self.coin_list = None
+        self.bullet_list = None
+
+        # Set up the player info
+        self.player_sprite = None
+        self.score = 0
+
+        # Don't show the mouse cursor
+        self.set_mouse_visible(False)
+
+        arcade.set_background_color(arcade.color.AMAZON)
+
+    def setup(self):
 
         """ Set up the game and initialize the variables. """
 
@@ -30,17 +51,18 @@ class MyAppWindow(arcade.Window):
         # Set up the player
         self.score = 0
 
-        # Character image from kenney.nl
-        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
+        # Image from kenney.nl
+        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 70
         self.all_sprites_list.append(self.player_sprite)
 
-        for i in range(50):
+        # Create the coins
+        for i in range(COIN_COUNT):
 
             # Create the coin instance
             # Coin image from kenney.nl
-            coin = arcade.Sprite("coin_01.png", SPRITE_SCALING / 3)
+            coin = arcade.Sprite("coin_01.png", SPRITE_SCALING_COIN)
 
             # Position the coin
             coin.center_x = random.randrange(SCREEN_WIDTH)
@@ -50,31 +72,38 @@ class MyAppWindow(arcade.Window):
             self.all_sprites_list.append(coin)
             self.coin_list.append(coin)
 
-        # Don't show the mouse cursor
-        self.set_mouse_visible(False)
-
         # Set the background color
         arcade.set_background_color(arcade.color.AMAZON)
 
     def on_draw(self):
+        """
+        Render the screen.
+        """
 
+        # This command has to happen before we start drawing
         arcade.start_render()
 
         # Draw all the sprites.
-        self.all_sprites_list.draw()
+        self.coin_list.draw()
+        self.bullet_list.draw()
+        self.player_sprite.draw()
 
-        # Put the text on the screen.
-        output = "Score: " + str(self.score)
-        arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+        # Render the text
+        arcade.draw_text(f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14)
 
     def on_mouse_motion(self, x, y, dx, dy):
+        """
+        Called whenever the mouse moves.
+        """
         self.player_sprite.center_x = x
 
     def on_mouse_press(self, x, y, button, modifiers):
+        """
+        Called whenever the mouse button is clicked.
+        """
 
         # Create a bullet
-        # Laser image from kenney.nl
-        bullet = Bullet("laserBlue01.png", SPRITE_SCALING * 1.5)
+        bullet = Bullet("laserBlue01.png", SPRITE_SCALING_LASER)
 
         # The image points to the right, and we want it to point up. So
         # rotate it.
@@ -99,8 +128,7 @@ class MyAppWindow(arcade.Window):
         for bullet in self.bullet_list:
 
             # Check this bullet to see if it hit a coin
-            hit_list = arcade.check_for_collision_with_list(bullet,
-                                                            self.coin_list)
+            hit_list = arcade.check_for_collision_with_list(bullet, self.coin_list)
 
             # If it did, get rid of the bullet
             if len(hit_list) > 0:
@@ -117,7 +145,8 @@ class MyAppWindow(arcade.Window):
 
 
 def main():
-    MyAppWindow()
+    window = MyGame()
+    window.setup()
     arcade.run()
 
 

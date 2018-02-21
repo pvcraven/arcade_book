@@ -41,12 +41,13 @@ class Coin(arcade.Sprite):
         self.circle_angle += self.circle_speed
 
 
-class MyAppWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
 
         super().__init__(width, height)
+
         # Sprite lists
         self.all_sprites_list = None
         self.coin_list = None
@@ -65,8 +66,7 @@ class MyAppWindow(arcade.Window):
         # Set up the player
         self.score = 0
         # Character image from kenney.nl
-        self.player_sprite = arcade.Sprite("character.png",
-                                           SPRITE_SCALING)
+        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 70
         self.all_sprites_list.append(self.player_sprite)
@@ -131,7 +131,7 @@ class MyAppWindow(arcade.Window):
 
 
 def main():
-    window = MyAppWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
+    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT)
     window.start_new_game()
     arcade.run()
 

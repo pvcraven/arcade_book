@@ -3,6 +3,10 @@
 import random
 import arcade
 
+import random
+import arcade
+import os
+
 # --- Constants ---
 SPRITE_SCALING_PLAYER = 0.5
 SPRITE_SCALING_COIN = 0.2
@@ -12,7 +16,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 
-class MyWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Our custom Window Class"""
 
     def __init__(self):
@@ -66,14 +70,42 @@ class MyWindow(arcade.Window):
             self.coin_list.append(coin)
 
     def on_draw(self):
+        """ Draw everything """
         arcade.start_render()
         self.all_sprites_list.draw()
 
+        # Put the text on the screen.
+        output = f"Score: {self.score}"
+        arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+
+    def on_mouse_motion(self, x, y, dx, dy):
+        """ Handle Mouse Motion """
+
+        # Move the center of the player sprite to match the mouse x, y
+        self.player_sprite.center_x = x
+        self.player_sprite.center_y = y
+
+    def update(self, delta_time):
+        """ Movement and game logic """
+
+        # Call update on all sprites (The sprites don't do much in this
+        # example though.)
+        self.all_sprites_list.update()
+
+        # Generate a list of all sprites that collided with the player.
+        hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
+
+        # Loop through each colliding sprite, remove it, and add to the score.
+        for coin in hit_list:
+            coin.kill()
+            self.score += 1
+
 
 def main():
-    window = MyWindow()
+    """ Main method """
+    window = MyGame()
     window.setup()
     arcade.run()
 
-
-main()
+if __name__ == "__main__":
+    main()
