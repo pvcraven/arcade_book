@@ -122,7 +122,7 @@ class MyGame(arcade.Window):
         # example though.)
         self.coin_list.update()
         self.bullet_list.update()
-    
+
         # Loop through each bullet
         for bullet in self.bullet_list:
 
