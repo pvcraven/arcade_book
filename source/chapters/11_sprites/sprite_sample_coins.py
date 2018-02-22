@@ -3,10 +3,6 @@
 import random
 import arcade
 
-import random
-import arcade
-import os
-
 # --- Constants ---
 SPRITE_SCALING_PLAYER = 0.5
 SPRITE_SCALING_COIN = 0.2
@@ -81,28 +77,6 @@ class MyGame(arcade.Window):
         # There are many performance improvements to drawing in a layer.
         self.coin_list.draw()
         self.player_list.draw()
-
-        # Put the text on the screen.
-        output = f"Score: {self.score}"
-        arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
-
-    def on_mouse_motion(self, x, y, dx, dy):
-        """ Handle Mouse Motion """
-
-        # Move the center of the player sprite to match the mouse x, y
-        self.player_sprite.center_x = x
-        self.player_sprite.center_y = y
-
-    def update(self, delta_time):
-        """ Movement and game logic """
-
-        # Generate a list of all sprites that collided with the player.
-        hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
-
-        # Loop through each colliding sprite, remove it, and add to the score.
-        for coin in hit_list:
-            coin.kill()
-            self.score += 1
 
 
 def main():

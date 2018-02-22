@@ -20,8 +20,8 @@ class MyGame(arcade.Window):
         # Call the parent class initializer
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
 
-        # Variables that will hold sprite lists
-        self.all_sprites_list = None
+        # Variables that will hold sprite lists.
+        self.player_list = None
         self.coin_list = None
 
         # Set up the player info
@@ -42,6 +42,7 @@ def main():
     window = MyGame()
     window.setup()
     arcade.run()
+
 
 if __name__ == "__main__":
     main()

@@ -13,7 +13,7 @@ screen. We can create our own child class and override functions to handle:
 * Responding to the keyboard
 * Responding to the mouse
 
-One of the best ways of learning to program, is to look at sample code. This
+One of the best ways of learning to program is to look at sample code. This
 chapter has several examples designed to learn how to:
 
 * Open a window using an object-oriented approach
