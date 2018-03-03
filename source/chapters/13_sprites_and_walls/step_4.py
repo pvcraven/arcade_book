@@ -12,8 +12,8 @@ SCREEN_HEIGHT = 600
 MOVEMENT_SPEED = 5
 
 
-class MyWindow(arcade.Window):
-    """ Our custom Window Class"""
+class MyGame(arcade.Window):
+    """ This class represents the main window of the game. """
 
     def __init__(self):
         """ Initializer """
@@ -21,7 +21,7 @@ class MyWindow(arcade.Window):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
 
         # Sprite lists
-        self.all_sprites_list = None
+        self.player_list = None
         self.wall_list = None
 
         # Set up the player
@@ -36,7 +36,7 @@ class MyWindow(arcade.Window):
         arcade.set_background_color(arcade.color.AMAZON)
 
         # Sprite lists
-        self.all_sprites_list = arcade.SpriteList()
+        self.player_list = arcade.SpriteList()
         self.wall_list = arcade.SpriteList()
 
         # Reset the score
@@ -46,7 +46,7 @@ class MyWindow(arcade.Window):
         self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 64
-        self.all_sprites_list.append(self.player_sprite)
+        self.player_list.append(self.player_sprite)
 
         # --- Manually place walls
 
@@ -55,14 +55,12 @@ class MyWindow(arcade.Window):
         wall.center_x = 300
         wall.center_y = 200
         self.wall_list.append(wall)
-        self.all_sprites_list.append(wall)
 
         # Manually create and position a box at 364, 200
         wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
         wall.center_x = 364
         wall.center_y = 200
         self.wall_list.append(wall)
-        self.all_sprites_list.append(wall)
 
         # --- Place boxes inside a loop
         for x in range(173, 650, 64):
@@ -70,7 +68,6 @@ class MyWindow(arcade.Window):
             wall.center_x = x
             wall.center_y = 350
             self.wall_list.append(wall)
-            self.all_sprites_list.append(wall)
 
         # --- Place walls with a list
         coordinate_list = [[400, 500],
@@ -84,7 +81,6 @@ class MyWindow(arcade.Window):
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
-            self.all_sprites_list.append(wall)
 
         # Create the physics engine. Give it a reference to the player, and
         # the walls we can't run into.
@@ -92,7 +88,8 @@ class MyWindow(arcade.Window):
 
     def on_draw(self):
         arcade.start_render()
-        self.all_sprites_list.draw()
+        self.wall_list.draw()
+        self.player_list.draw()
 
     def update(self, delta_time):
         self.physics_engine.update()
@@ -119,9 +116,11 @@ class MyWindow(arcade.Window):
 
 
 def main():
-    window = MyWindow()
+    """ Main method """
+    window = MyGame()
     window.setup()
     arcade.run()
 
 
-main()
+if __name__ == "__main__":
+    main()

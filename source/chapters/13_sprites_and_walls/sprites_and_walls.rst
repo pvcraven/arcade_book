@@ -38,7 +38,7 @@ In the ``__init__`` method, let's create some variables to hold our sprites:
 .. code-block:: python
 
     # Sprite lists
-    self.all_sprites_list = None
+    self.player_list = None
     self.wall_list = None
 
     # Set up the player
@@ -52,7 +52,7 @@ In the ``setup`` method, let's create our sprite lists:
 .. code-block:: python
 
     # Sprite lists
-    self.all_sprites_list = arcade.SpriteList()
+    self.player_list = arcade.SpriteList()
     self.wall_list = arcade.SpriteList()
 
 
@@ -67,7 +67,7 @@ Then reset the score and create the player:
     self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING_PLAYER)
     self.player_sprite.center_x = 50
     self.player_sprite.center_y = 64
-    self.all_sprites_list.append(self.player_sprite)
+    self.player_list.append(self.player_sprite)
 
 Then go ahead and draw everything in our ``on_draw``:
 
@@ -75,7 +75,8 @@ Then go ahead and draw everything in our ``on_draw``:
 
     def on_draw(self):
         arcade.start_render()
-        self.all_sprites_list.draw()
+        self.wall_list.draw()
+        self.player_list.draw()
 
 Run the program and make sure it works.
 
@@ -92,14 +93,12 @@ In our ``setup`` method, we can position individual boxes to be used as "walls":
     wall.center_x = 300
     wall.center_y = 200
     self.wall_list.append(wall)
-    self.all_sprites_list.append(wall)
 
     # Manually create and position a box at 364, 200
     wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
     wall.center_x = 364
     wall.center_y = 200
     self.wall_list.append(wall)
-    self.all_sprites_list.append(wall)
 
 Go ahead and try it out. It should look like:
 
@@ -128,7 +127,6 @@ from 173 to 650. We put a box every 64 pixels because each box happens to be
         wall.center_x = x
         wall.center_y = 350
         self.wall_list.append(wall)
-        self.all_sprites_list.append(wall)
 
 
 .. image:: boxes_loop.png
@@ -152,7 +150,6 @@ You could even create a list of coordinates, and then just loop through that lis
         wall.center_x = coordinate[0]
         wall.center_y = coordinate[1]
         self.wall_list.append(wall)
-        self.all_sprites_list.append(wall)
 
 .. image:: list.png
 

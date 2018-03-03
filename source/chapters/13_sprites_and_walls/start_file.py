@@ -11,13 +11,14 @@ SCREEN_HEIGHT = 600
 
 MOVEMENT_SPEED = 5
 
-class MyWindow(arcade.Window):
-    """ Our custom Window Class"""
+
+class MyGame(arcade.Window):
+    """ This class represents the main window of the game. """
 
     def __init__(self):
         """ Initializer """
         # Call the parent class initializer
-        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprites With Walls Example")
 
 
     def setup(self):
@@ -29,9 +30,10 @@ class MyWindow(arcade.Window):
 
 
 def main():
-    window = MyWindow()
+    window = MyGame()
     window.setup()
     arcade.run()
 
 
-main()
+if __name__ == "__main__":
+    main()
