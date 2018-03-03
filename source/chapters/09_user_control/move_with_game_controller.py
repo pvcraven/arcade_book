@@ -40,7 +40,7 @@ class Ball:
             self.position_y = SCREEN_HEIGHT - self.radius
 
 
-class MyWindow(arcade.Window):
+class MyGame(arcade.Window):
 
     def __init__(self, width, height, title):
 
@@ -92,6 +92,10 @@ class MyWindow(arcade.Window):
         self.ball.update()
 
 
-window = MyWindow(640, 480, "Game Controller Example")
+def main():
+    window = MyGame(640, 480, "Drawing Example")
 
-arcade.run()
+    arcade.run()
+
+
+main()

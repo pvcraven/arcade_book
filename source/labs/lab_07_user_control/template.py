@@ -7,7 +7,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 
-class MyWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Our Custom Window Class"""
 
     def __init__(self):
@@ -21,7 +21,7 @@ class MyWindow(arcade.Window):
 
 
 def main():
-    window = MyWindow()
+    window = MyGame()
     arcade.run()
 
 

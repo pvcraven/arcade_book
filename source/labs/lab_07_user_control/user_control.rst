@@ -40,6 +40,8 @@ Write one program, following these steps:
   so that your object does not move off-screen and get lost.
 * Add a sound effect for when the user clicks the mouse button.
 * Add a different sound effect for when the user bumps into the edge of the screen.
+  Make sure the sound only plays when you are trying to go beyond the edge of the
+  screen, and not when you just sit at the edge of the screen.
 
 When you are done, make sure you commit your sound effects in what you turn in!
 Otherwise your program can't be graded.

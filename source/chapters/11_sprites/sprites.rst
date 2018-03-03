@@ -7,7 +7,7 @@ Our games need support for handling objects that collide. Balls bouncing off
 paddles, laser beams hitting aliens, or our favorite character collecting a
 coin. All these examples require collision detection.
 
-The Arcade library has support for sprites. A sprite is a two dimensional
+The Arcade library has support for sprites. A sprite is a two-dimensional
 image that is part of the larger graphical scene. Typically a sprite will
 be some kind of object in the scene that will be interacted with like a car,
 frog, or little plumber guy.
@@ -27,6 +27,9 @@ Finding Images for Sprites
 
 There are several image formats that computers use:
 
+* ``.bmp`` - Bitmap. This is an uncompressed image that normally uses three bytes to represent each dot in the image.
+  These files can be very large. Because there are so many better options, this format is not used often. It is,
+  however, the simplest format to use.
 * ``.png`` - Great patent-free format for line art and clip art. Not great for photos. Can't hold animations.
 * ``.gif`` - Great format for line art and clip art. Has had issues with patents (now expired). Can do animations.
 * ``.jpg`` - Great file format for photos. Terrible for clip-art. Don't use for sprites.
@@ -113,7 +116,7 @@ background color. We'll add in the new stuff soon.
 The Constructor
 ^^^^^^^^^^^^^^^
 
-What's next? We need to add our attributes to the ``MyWindow`` class.
+What's next? We need to add our attributes to the ``MyGame`` class.
 We add our attributes to the ``__init__`` method. Here is our
 code with the expanded ``__init__``:
 
@@ -125,13 +128,15 @@ code with the expanded ``__init__``:
 
 The variables we are creating:
 
-* ``all_sprites_list``:  This is a special list that we will add all our sprites
-  to. By having all the sprites in a single list, we can draw them all in a
-  single command.
-* ``coin_list``: This is a list of all the coins. We wille be checking if the
+* ``player_list``:  When working with sprites, we normally put them into
+  lists. Other game engines might call these sprite groups, or sprite layers.
+  Our game will have one list for the player, and one list for the coins.
+  Even if there is only one sprite, we should still put it in a list because
+  there is a lot of code in ``SpriteList`` to optimize drawing.
+* ``coin_list``: This is a list of all the coins. We will be checking if the
   player touches any sprite in this list.
 * ``player_sprite``: This points to our player's sprite. It is the sprite
-  we will move, and we'll check to see if it
+  we will move.
 * ``score``: This keeps track of our score.
 
 We use a command built into the parent ``Window`` class called
@@ -141,38 +146,37 @@ background color.
 The Setup Function
 ^^^^^^^^^^^^^^^^^^
 
-Next up, we have a ``setup`` method. This will create our sprites and get
+Next up, we will create a ``setup`` method. This will create our sprites and get
 our game set up. We do this in a different method than ``__init__`` so that
 if we ever want to restart the game, we can just call ``setup`` again.
 
-This is the part of the program where we will load the images for our sprites.
-
-In the example below, we have added the
+The ``setup`` method is not called automatically.
+Therefore in the example below, note we have added the
 code that calls the ``setup`` function near the end: ``window.setup()``.
 
 
 .. literalinclude:: sprite_sample_player.py
     :caption: Sprite Sample With Player
     :language: python
-    :emphasize-lines: 36-51, 55, 60
+    :emphasize-lines: 36-51, 70
     :linenos:
 
 
-How does this code work?
+How does the code above work?
 
-First, we need some lists to hold our sprites. We could do something like
+First, we need some lists to hold our sprites. We could do use a list like
 this:
 
 .. code-block:: Python
 
-    all_sprites_list = []
+    coin_list = []
 
-But wait! ``all_sprites_list`` is an instance variable that's part of our class.
+But wait! ``coin_list`` is an instance variable that's part of our class.
 we need to prepend it with ``self.``.
 
 .. code-block:: Python
 
-    self.all_sprites_list = []
+    self.coin_list = []
 
 However, the Arcade library has a class especially for handling sprite lists.
 This class is called ``SpriteList``.
@@ -184,7 +188,7 @@ So instead of creating an empty list with
 
 .. code-block:: Python
 
-    self.all_sprites_list = SpriteList()
+    self.coin_list = SpriteList()
 
 Except that doesn't work. Why? ``SpriteList`` is in the Arcade library. We
 need to prepend any reference to things in the Arcade library with ``arcade``
@@ -192,7 +196,7 @@ of course, so now we have:
 
 .. code-block:: Python
 
-    self.all_sprites_list = arcade.SpriteList()
+    self.coin_list = arcade.SpriteList()
 
 We need a separate list for just coins. This list won't have the player. We also
 need to reset our score to 0.
@@ -203,7 +207,7 @@ need to reset our score to 0.
 
     self.score = 0
 
-Now we need to create out sprite. The name of the class that represents sprites
+Now we need to create our sprites. The name of the class that represents sprites
 is called ``Sprite``. You can read more about it by looking at the Sprite_
 documentation.
 The Sprite constructor takes two parameters. A path to the image we will be
@@ -221,8 +225,8 @@ For class, please source the image right before you load it. If you drew your ow
 
 
 How do we draw all our sprites? Really easy. Just call the ``draw`` method that
-exists for us in the ``SpriteList`` class. We have a list off all sprites with
-``all_sprites_list``, so we'll use that to draw all the sprites:
+exists for us in the ``SpriteList`` class. We just need to do this for each of
+our sprite lists.
 
 .. code-block:: Python
 
@@ -230,15 +234,17 @@ exists for us in the ``SpriteList`` class. We have a list off all sprites with
 
             arcade.start_render()
 
-            # Draw all the sprites.
-            self.all_sprites_list.draw()
+            # Draw all the sprite lists.
+            self.coin_list.draw()
+            self.player_list.draw()
 
-Wait. We don't have many sprites. Just one. Let's add a ``for`` loop to our program and create a bunch more:
+Wait. We don't have many sprites. There are no coins, and we have just the player.
+Let's add a ``for`` loop to our program and create a bunch of coins:
 
 .. literalinclude:: sprite_sample_coins.py
     :caption: Sprite Sample With Player And Coins
     :language: python
-    :emphasize-lines: 53-66
+    :emphasize-lines: 54-65
     :linenos:
 
 Drawing The Score
@@ -303,11 +309,11 @@ animate its images. Right now, our sprite does not have this method. But we
 will soon. Rather than call the ``update`` method of each sprite we have,
 there is an ``update`` method in each sprite list that will call ``update``
 on each sprite in the list. Therefore, just calling ``update`` with our
-``all_sprites_list`` will cause all sprites to update.
+``coin_list`` will cause all coin sprites to update.
 
 .. code-block:: Python
 
-    self.all_sprites_list.update()
+    self.coin_list.update()
 
 How do we detect what coins are touching the player? We call the
 ``check_for_collision_with_list`` method. Pass it in our player sprite,
@@ -317,8 +323,7 @@ all colliding sprites. If no sprites collide, the list will be empty.
 .. code-block:: Python
 
     # Generate a list of all sprites that collided with the player.
-    hit_list = arcade.check_for_collision_with_list(self.player_sprite,
-                                                    self.coin_list)
+    coins_hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
 
 What do we do with this ``hit_list`` we get back? We loop through it. We add one
 to the score for each sprite hit.
@@ -329,7 +334,7 @@ We also need to get rid of the sprite. The sprite class has a method called
 .. code-block:: Python
 
     # Loop through each colliding sprite, remove it, and add to the score.
-    for coin in hit_list:
+    for coin in coins_hit_list:
         coin.kill()
         self.score += 1
 
@@ -496,7 +501,7 @@ the top of the screen.
     def update(self, delta_time):
         """ Movement and game logic """
 
-        self.all_sprites_list.update()
+        self.coin_list.update()
 
         hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
 
@@ -519,10 +524,9 @@ We can even take that common code, and move it to a method. Here's a full exampl
 Bouncing Coins
 ^^^^^^^^^^^^^^
 
-TODO: Put in some text about spawning a sprite too close to the edge. Also make a refer to it from the final
-project.
-
-TODO: Show how to do the bounce from a child sprite class, and from the on_draw?
+Instead of always adding one to the y-coordinate and have the sprites move
+down, we can keep a vector by using ``change_x`` and ``change_y``. By
+using these, we can have the sprite bounce around the screen:
 
 .. figure:: sprites_bouncing.gif
 
@@ -531,7 +535,12 @@ TODO: Show how to do the bounce from a child sprite class, and from the on_draw?
 .. literalinclude:: sprite_sample_move_bouncing.py
     :caption: sprites_sample_move_bouncing.py
     :language: python
+    :emphasize-lines: 21-22, 24-41, 92-93
     :linenos:
+
+TODO: Put in some text about spawning a sprite too close to the edge. Also make a refer to it from the final
+project.
+
 
 Take what you've learned from the example above, and see if you can replicate
 this:
@@ -617,8 +626,7 @@ create bullets when the user presses the mouse button. We can add an
         bullet.center_x = self.player_sprite.center_x
         bullet.bottom = self.player_sprite.top
 
-        # Add the bullet to the appropriate lists
-        self.all_sprites_list.append(bullet)
+        # Add the bullet to the appropriate list
         self.bullet_list.append(bullet)
 
 The two key points with the code above is that 1.) We position the bullet right

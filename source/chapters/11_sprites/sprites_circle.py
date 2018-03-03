@@ -41,14 +41,15 @@ class Coin(arcade.Sprite):
         self.circle_angle += self.circle_speed
 
 
-class MyAppWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height):
 
         super().__init__(width, height)
+
         # Sprite lists
-        self.all_sprites_list = None
+        self.player_list = None
         self.coin_list = None
 
         # Set up the player
@@ -59,17 +60,17 @@ class MyAppWindow(arcade.Window):
         """ Set up the game and initialize the variables. """
 
         # Sprite lists
-        self.all_sprites_list = arcade.SpriteList()
+        self.player_list = arcade.SpriteList()
         self.coin_list = arcade.SpriteList()
 
         # Set up the player
         self.score = 0
+
         # Character image from kenney.nl
-        self.player_sprite = arcade.Sprite("character.png",
-                                           SPRITE_SCALING)
+        self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 70
-        self.all_sprites_list.append(self.player_sprite)
+        self.player_list.append(self.player_sprite)
 
         for i in range(50):
 
@@ -88,7 +89,6 @@ class MyAppWindow(arcade.Window):
             coin.circle_angle = random.random() * 2 * math.pi
 
             # Add the coin to the lists
-            self.all_sprites_list.append(coin)
             self.coin_list.append(coin)
 
         # Don't show the mouse cursor
@@ -103,7 +103,8 @@ class MyAppWindow(arcade.Window):
         arcade.start_render()
 
         # Draw all the sprites.
-        self.all_sprites_list.draw()
+        self.coin_list.draw()
+        self.player_list.draw()
 
         # Put the text on the screen.
         output = "Score: " + str(self.score)
@@ -118,7 +119,7 @@ class MyAppWindow(arcade.Window):
 
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
-        self.all_sprites_list.update()
+        self.coin_list.update()
 
         # Generate a list of all sprites that collided with the player.
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,
@@ -131,7 +132,7 @@ class MyAppWindow(arcade.Window):
 
 
 def main():
-    window = MyAppWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
+    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT)
     window.start_new_game()
     arcade.run()
 

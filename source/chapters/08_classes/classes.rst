@@ -417,7 +417,7 @@ for the ``Ball`` class is shown in the figure below.
             self.x += self.change_x
             self.y += self.change_y
 
-        def draw(self, screen):
+        def draw(self):
             arcade.draw_circle_filled(self.x, self.y, self.size, self.color )
 
 Below is the code that would go ahead of the main program loop to create a ball
@@ -439,7 +439,7 @@ This code would go inside the main loop to move and draw the ball:
     :linenos:
 
     the_ball.move()
-    the_ball.draw(screen)
+    the_ball.draw()
 
 References
 ----------
@@ -459,6 +459,7 @@ Understanding class references. Take a look at the following code:
             self.name = ""
             self.money = 0
 
+
     def main():
         bob = Person()
         bob.name = "Bob"
@@ -469,6 +470,7 @@ Understanding class references. Take a look at the following code:
 
         print(bob.name, "has", bob.money, "dollars.")
         print(nancy.name, "has", nancy.money, "dollars.")
+
 
     main()
 
@@ -502,6 +504,7 @@ The code above has nothing new. But the code below does:
 
         print(bob.name, "has", bob.money, "dollars.")
         print(nancy.name, "has", nancy.money, "dollars.")
+
 
     main()
 
@@ -555,10 +558,12 @@ statement on line 14 prints out 100, and not 200.
     def give_money1(money):
         money += 100
 
+
     class Person():
         def __init__(self):
             self.name = ""
             self.money = 0
+
 
     def main():
         bob = Person()
@@ -635,8 +640,10 @@ There's a terrible problem with our class for Dog listed below. When we create a
         def __init__(self):
             self.name = ""
 
+
     def main():
         my_dog = Dog()
+
 
     main()
 
@@ -668,6 +675,8 @@ A common mistake is to only use one.
 
 The constructor must take in self as the first parameter just like other
 methods in a class. When the program is run, it will print::
+
+.. code-block:: text
 
     A new dog is born!
 

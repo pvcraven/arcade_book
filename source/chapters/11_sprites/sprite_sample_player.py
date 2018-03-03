@@ -12,7 +12,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 
-class MyWindow(arcade.Window):
+class MyGame(arcade.Window):
     """ Our custom Window Class"""
 
     def __init__(self):
@@ -21,7 +21,7 @@ class MyWindow(arcade.Window):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
 
         # Variables that will hold sprite lists
-        self.all_sprites_list = None
+        self.player_list = None
         self.coin_list = None
 
         # Set up the player info
@@ -37,7 +37,7 @@ class MyWindow(arcade.Window):
         """ Set up the game and initialize the variables. """
 
         # Sprite lists
-        self.all_sprites_list = arcade.SpriteList()
+        self.player_list = arcade.SpriteList()
         self.coin_list = arcade.SpriteList()
 
         # Score
@@ -48,17 +48,28 @@ class MyWindow(arcade.Window):
         self.player_sprite = arcade.Sprite("character.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
-        self.all_sprites_list.append(self.player_sprite)
+        self.player_list.append(self.player_sprite)
 
     def on_draw(self):
         arcade.start_render()
-        self.all_sprites_list.draw()
+
+        # Draw the sprite lists here. Typically sprites are divided into
+        # different groups. Other game engines might call these "sprite layers"
+        # or "sprite groups." Sprites that don't move should be drawn in their
+        # own group for the best performance, as Arcade can tell the graphics
+        # card to just redraw them at the same spot.
+        # Try to avoid drawing sprites on their own, use a SpriteList
+        # because there are many performance improvements in that code.
+        self.coin_list.draw()
+        self.player_list.draw()
 
 
 def main():
-    window = MyWindow()
+    """ Main method """
+    window = MyGame()
     window.setup()
     arcade.run()
 
 
-main()
+if __name__ == "__main__":
+    main()

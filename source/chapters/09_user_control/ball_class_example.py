@@ -5,7 +5,10 @@ SCREEN_HEIGHT = 480
 
 
 class Ball:
+    """ This class manages a ball bouncing on the screen. """
+
     def __init__(self, position_x, position_y, change_x, change_y, radius, color):
+        """ Constructor. """
 
         # Take the parameters of the init function above, and create instance variables out of them.
         self.position_x = position_x
@@ -20,6 +23,8 @@ class Ball:
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
     def update(self):
+        """ Code to control the ball's movement. """
+
         # Move the ball
         self.position_y += self.change_y
         self.position_x += self.change_x
@@ -38,9 +43,11 @@ class Ball:
             self.change_y *= -1
 
 
-class MyWindow(arcade.Window):
+class MyGame(arcade.Window):
+    """ My window class. """
 
     def __init__(self, width, height, title):
+        """ Constructor. """
 
         # Call the parent class's init function
         super().__init__(width, height, title)
@@ -58,6 +65,11 @@ class MyWindow(arcade.Window):
         """ Called to update our objects. Happens approximately 60 times per second."""
         self.ball.update()
 
-window = MyWindow(640, 480, "Drawing Example")
 
-arcade.run()
+def main():
+    window = MyGame(640, 480, "Drawing Example")
+
+    arcade.run()
+
+
+main()
