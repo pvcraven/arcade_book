@@ -207,18 +207,33 @@ http://docs.python.org/3/py-modindex.html
 It is possible to download and install other libraries. There are libraries
 that work with the web, complex numbers, databases, and more.
 
-* Pygame: The library used to create games. http://www.pygame.org/docs/
+* Arcade: The library that this book uses to create games. http://arcade.academy
+* Pygame: Another library used to create games, and the inspiration behind
+  the creation of the Arcade library. http://www.pygame.org/docs/
+* Pymunk: A great library for running 2D physics. Also works with Arcade, see
+  `these examples <http://arcade.academy/examples/index.html#pymunk>`_ http://www.pymunk.org/
 * wxPython: Create GUI programs, with windows, menus, and more. http://www.wxpython.org/
 * pydot: Generate complex directed and non-directed graphs http://code.google.com/p/pydot/
 * NumPy: Sophisticated library for working with matrices. http://numpy.scipy.org/
+* Pandas: A library for data analysis. https://pandas.pydata.org/
+* Pillow: Work with images. https://pillow.readthedocs.io/en/latest/
+* Pyglet: Another graphics library. Arcade uses this library. https://bitbucket.org/pyglet/pyglet/wiki/Home
+
+You can do analysis and create your own interactive notebook using Jupyter:
+
+* Jupyter: http://jupyter.org/
+
+Some libraries we give examples of in this chapter:
+
+* OpenPyXL: A library for reading and writing Excel files. https://openpyxl.readthedocs.io/en/stable/
+* Beautiful Soup: Grab data off websites, and create your own web bots. https://www.crummy.com/software/BeautifulSoup/
+* MatPlotLib: Plot data automatically: https://matplotlib.org/
 
 A wonderful list of Python libraries and links to installers for them is available here:
 
-http://www.lfd.uci.edu/~gohlke/pythonlibs/
-
-Going through lists of libraries that are available can help you brainstorm
-what types of programs you can create. Most programming involves assembling
-large parts, rather than writing everything from scratch.
+You can search up some top packages/libraries and stand alone projects to get an
+idea of what you can do. There are many articles like
+`Top 15 Python Libraries for Data Science in 2017 <https://medium.com/activewizards-machine-learning-company/top-15-python-libraries-for-data-science-in-in-2017-ab61b4f9b4a7>`_.
 
 Examples: OpenPyXL Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
