@@ -25,7 +25,8 @@ Write one program, following these steps:
   Feel free to use any of *your* code that *you* have written from
   prior labs that you have. To do this, put your code in the ``on_draw``
   method. If your code used functions, move those functions as well to
-  this program. Paste them above the ``MyWindow`` class.
+  this program. Paste them above the ``MyGame`` class. Don't turn this in
+  with just a solid color for the background, or you'll lose a couple points.
 * In :ref:`user-control`, we talked about moving graphics with the keyboard, a game
   controller, and the mouse. To start, pick one of these methods, and get that ball
   moving around in your program.
@@ -34,8 +35,8 @@ Write one program, following these steps:
   prior labs where you drew with a function, and move it to the ``on_draw`` method
   of your class. But don't have your object be a simple one line of code shape.
 * Rename your class from ``Ball`` to a name that represents what you are really drawing.
-* After you get that object moving, pick a different method of control (keyboard, mouse,
-  gamepad.) Create a new class, draw something different, and move it around the screen.
+* After you get that object moving, pick a *different* method of control (keyboard, mouse,
+  gamepad.) Create a *new class*, draw something *different*, and move it around the screen.
 * In the case of the game controller and the keyboard, make sure to add checks
   so that your object does not move off-screen and get lost.
 * Add a sound effect for when the user clicks the mouse button.
