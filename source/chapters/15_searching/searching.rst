@@ -42,15 +42,26 @@ random name generators though.
 Save this file and remember which directory you saved it to.
 
 In the same directory as ``super_villains.txt``, create, save, and run the
-following python program:
+following Python program:
 
 .. code-block:: python
     :linenos:
+    :caption: Read in a file
+    :emphasize-lines: 6, 9
 
-    file = open("super_villains.txt")
+    def main():
+        """ Read in lines from a file """
 
-    for line in file:
-        print(line)
+        # Open the file for reading, and store a pointer to it in the new
+        # variable "file"
+        my_file = open("super_villains.txt")
+
+        # Loop through each line in the file like a list
+        for line in my_file:
+            print(line)
+
+
+    main()
 
 There is only one new command in this code: ``open``. Because it is a built-in
 function like ``print``, there is no need for an ``import``. Full details on this
@@ -61,10 +72,10 @@ looking at.
 .. _Python documentation: http://docs.python.org/py3k/library/functions.html#open
 
 The above program has two problems with it, but it provides a simple example
-of reading in a file. Line 1 opens a file and gets it ready to be read. The
-name of the file is in between the quotes. The new variable ``file`` is an object
-that represents the file being read. Line 3 shows how a normal ``for`` loop may be
-used to read through a file line by line. Think of file as a list of lines,
+of reading in a file. Line 6 opens a file and gets it ready to be read. The
+name of the file is in between the quotes. The new variable ``my_file`` is an object
+that represents the file being read. Line 9 shows how a normal ``for`` loop may be
+used to read through a file line by line. Think of the file as a list of lines,
 and the new variable line will be set to each of those lines as the program
 runs through the loop.
 
@@ -87,14 +98,26 @@ it is a bad habit to program like that, let's update the code:
 
 .. code-block:: python
     :linenos:
+    :caption: Read in a file
+    :emphasize-lines: 11, 14
 
-    file = open("super_villains.txt")
+    def main():
+        """ Read in lines from a file """
 
-    for line in file:
-        line = line.strip()
-        print(line)
+        # Open the file for reading, and store a pointer to it in the new
+        # variable "file"
+        my_file = open("super_villains.txt")
 
-    file.close()
+        # Loop through each line in the file like a list
+        for line in my_file:
+            # Remove any line feed, carriage returns or spaces at the end of the line
+            line = line.strip()
+            print(line)
+
+        my_file.close()
+
+
+    main()
 
 The listing above works better. It has two new additions. On line 4 is a call
 to the ``strip`` method built into every ``String`` class. This function returns a new
@@ -124,27 +147,43 @@ the following code:
 .. code-block:: python
     :linenos:
     :caption: Read in a file from disk and put it in an array
+    :emphasize-lines: 8-9, 16-17, 21
 
-    # Read in a file from disk and put it in an array.
-    file = open("super_villains.txt")
+    def main():
+        """ Read in lines from a file """
 
-    name_list = []
-    for line in file:
-        line = line.strip()
-        name_list.append(line)
+        # Open the file for reading, and store a pointer to it in the new
+        # variable "file"
+        my_file = open("super_villains.txt")
 
-    file.close()
+        # Create an empty list to store our names
+        name_list = []
+
+        # Loop through each line in the file like a list
+        for line in my_file:
+            # Remove any line feed, carriage returns or spaces at the end of the line
+            line = line.strip()
+
+            # Add the name to the list
+            name_list.append(line)
+
+        my_file.close()
+
+        print( "There were", len(name_list), "names in the file.")
+
+
+    main()
 
 This combines the new pattern of how to read a file, along with the previously
 learned pattern of how to create an empty array and append to it as new data
-comes in, which was shown back in Chapter 7. To verify the file was read into
+comes in, which was shown back in :ref:`append_to_list`. To verify the file was read into
 the array correctly a programmer could print the length of the array:
 
 .. code-block:: python
 
     print( "There were",len(name_list),"names in the file.")
 
-Or the programmer could bring the entire contents of the array:
+Or the programmer could print the entire contents of the array:
 
 .. code-block:: python
 
@@ -176,18 +215,24 @@ Linear Search Algorithm
     # --- Linear search
     key = "Morgiana the Shrew"
 
-    list_position = 0
-    while list_position < len(name_list) and name_list[list_position] != key:
-        list_position += 1
+    # Start at the beginning of the list
+    current_list_position = 0
 
-    if list_position < len(name_list):
-        print("The name is at position", list_position)
+    # Loop until you reach the end of the list, or the value at the
+    # current position is equal to the key
+    while current_list_position < len(name_list) and name_list[current_list_position] != key:
+
+        # Advance to the next item in the list
+        current_list_position += 1
+
+    if current_list_position < len(name_list):
+        print("The name is at position", current_list_position)
     else:
         print("The name was not in the list.")
 
-The linear search is rather simple. Line 4 sets up an increment variable that
+The linear search is rather simple. Line 5 sets up an increment variable that
 will keep track of exactly where in the list the program needs to check next.
-The first element that needs to be checked is zero, so ``list_position`` is set to zero.
+The first element that needs to be checked is zero, so ``current_list_position`` is set to zero.
 
 The next line is a bit more complex. The computer needs to keep looping until
 one of two things happens. It finds the element, or it runs out of elements.
@@ -200,13 +245,29 @@ This check to see if the program has run out of elements *must occur first*.
 Otherwise the program will check against a non-existent element which will
 cause an error.
 
-Line 6 simply moves to the next element if the conditions to keep searching
-are met in line 5.
+Line 12 simply moves to the next element if the conditions to keep searching
+are met in line 9.
 
 At the end of the loop, the program checks to see if the end of the list was
-reached on line 8. Remember, a list of n elements is numbered 0 to n-1.
+reached on line 14. Remember, a list of n elements is numbered 0 to n-1.
 Therefore if i is equal to the length of the list, the end has been reached.
 If it is less, we found the element.
+
+The full example with both the reading in the file and the search is below:
+
+.. literalinclude:: linear_search.py
+    :linenos:
+    :language: Python
+    :caption: Linear search
+
+
+We can improve on this example by moving both the reading of the file and the
+search into their own functions:
+
+.. literalinclude:: linear_search_with_functions.py
+    :linenos:
+    :language: Python
+    :caption: Linear search
 
 Variations On The Linear Search
 -------------------------------
