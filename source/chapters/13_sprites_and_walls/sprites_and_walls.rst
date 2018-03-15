@@ -82,6 +82,8 @@ Run the program and make sure it works.
 
 .. image:: just_player.png
 
+.. _individual_wall_placement:
+
 Individually Placing Walls
 --------------------------
 In our ``setup`` method, we can position individual boxes to be used as "walls":
@@ -111,6 +113,8 @@ Full listing below:
     :language: python
     :linenos:
 
+.. _loop_wall_placement:
+
 Placing Walls With A Loop
 -------------------------
 
@@ -130,6 +134,8 @@ from 173 to 650. We put a box every 64 pixels because each box happens to be
 
 
 .. image:: boxes_loop.png
+
+.. _list_wall_placement:
 
 Placing Walls With A List
 -------------------------
