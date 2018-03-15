@@ -286,11 +286,15 @@ To begin with, we'd need to define our adventure object:
     :caption: Adventure Object class
 
     class AdventureObject:
-        """ Class that defines an alien"""
+        """ Class that defines an object in a text adventure game """
 
         def __init__(self, description, room):
-            """ Constructor. Set name and color"""
+            """ Constructor."""
+
+            # Description of the object
             self.description = description
+
+            # The number of the room that the object is in
             self.room = room
 
 Then we'd need to create a function to check and see if it has the property
@@ -299,9 +303,9 @@ that we are looking for. In this case, is it in a specified room? We'll take in
 
 .. code-block:: python
     :linenos:
-    :caption: Alien class has_property method
+    :caption: AdventureObject class has_property method
 
-    def has_property(my_object, room):
+    def is_in_room(my_object, room):
         """
         Check to see if an item has a property.
         In this case, is the object in the specified room?
@@ -326,7 +330,7 @@ Is at least one object in the specified room? We can check.
         property.
         """
         list_position = 0
-        while list_position < len(my_list) and not has_property(my_list[list_position], room):
+        while list_position < len(my_list) and not is_in_room(my_list[list_position], room):
             list_position += 1
 
         if list_position < len(my_list):
