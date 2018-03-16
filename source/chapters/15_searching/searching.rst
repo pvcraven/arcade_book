@@ -273,7 +273,117 @@ Variations On The Linear Search
 -------------------------------
 
 Variations on the linear search can be used to create several common
-algorithms. For example, say we had a list of objects for our text adventure.
+algorithms. Specifically, you can use it to see if *any* items in a list
+match a property, or if *all* items match a property. You can also use it to
+pull all matching items out of a list.
+
+Does At Least One Item Have a Property?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For example, here is a function that uses the linear search to see if there
+is an item in ``my_list`` that matches the value in ``key``.
+
+.. code-block:: python
+    :linenos:
+    :caption: check_if_one_item_has_property_v1
+
+    def check_if_one_item_has_property_v1(my_list, key):
+        """
+        Return true if at least one item has a
+        property.
+        """
+        list_position = 0
+        while list_position < len(my_list) and my_list[list_position] != key:
+            list_position += 1
+
+        if list_position < len(my_list):
+            # Found an item with the property
+            return True
+        else:
+            # There is no item with the property
+            return False
+
+
+Using the ``break`` statement, which exits a loop early, we can simplify the
+code:
+
+.. code-block:: python
+    :linenos:
+    :caption: check_if_one_item_has_property_v2
+
+    def check_if_one_item_has_property_v2(my_list, key):
+        """
+        Return true if at least one item has a
+        property.
+        """
+        for item in my_list:
+            if item == key:
+                # Found an item that matched. Return True
+                return True
+
+        # Went through the whole list. Return False.
+        return False
+
+Do All Items Have a Property?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+How would you test to see if *all* items in a list match a property? We just
+need to reverse a few things in the algorithm above.
+
+.. code-block:: python
+    :linenos:
+    :caption: check_if_all_items_have_property
+
+    def check_if_all_items_have_property(my_list, key):
+        """
+        Return true if at ALL items have a property.
+        """
+        for item in my_list:
+            if item != key:
+                # Found an item that didn't match. Return False.
+                return False
+
+        # Got through the entire list. There were no mis-matches.
+        return True
+
+
+
+Create a List With All Items Matching a Property
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Another common operation is to grab all the items out of a list that match:
+
+.. code-block:: python
+    :linenos:
+    :caption: get_matching_items
+
+    def get_matching_items(my_list, key):
+        """
+        Build a brand new list that holds all the items
+        that match our property.
+        """
+        matching_list = []
+        for item in my_list:
+            if item == key:
+                matching_list.append(item)
+        return matching_list
+
+
+Full Example
+^^^^^^^^^^^^
+
+For a full example, see below:
+
+.. literalinclude:: linear_search_variations_2.py
+    :caption: linear_search_variations_2.py
+    :language: python
+    :linenos:
+
+
+Variations On The Linear Search With Objects
+--------------------------------------------
+
+For example, say we had a list of objects for our text adventure.
 We might want to check that list and see if any of the items are in the same
 room as our player. Or if all the items are. Or we might want to build a list
 of items that the user is carrying if they are all in a "special" room that
@@ -297,24 +407,6 @@ To begin with, we'd need to define our adventure object:
             # The number of the room that the object is in
             self.room = room
 
-Then we'd need to create a function to check and see if it has the property
-that we are looking for. In this case, is it in a specified room? We'll take in
-``room`` as a parameter and check the object.
-
-.. code-block:: python
-    :linenos:
-    :caption: AdventureObject class has_property method
-
-    def is_in_room(my_object, room):
-        """
-        Check to see if an item has a property.
-        In this case, is the object in the specified room?
-        """
-        if my_object.room == room:
-            return True
-        else:
-            return False
-
 Does At Least One Item Have a Property?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -324,16 +416,16 @@ Is at least one object in the specified room? We can check.
     :linenos:
     :caption: Check if list has an item that has a property - ``while`` loop
 
-    def check_if_one_item_has_property_v1(my_list, room):
+    def check_if_one_item_is_in_room_v1(my_list, room):
         """
         Return true if at least one item has a
         property.
         """
-        list_position = 0
-        while list_position < len(my_list) and not is_in_room(my_list[list_position], room):
-            list_position += 1
+        i = 0
+        while i < len(my_list) and my_list[i].room != room:
+            i += 1
 
-        if list_position < len(my_list):
+        if i < len(my_list):
             # Found an item with the property
             return True
         else:
@@ -351,13 +443,13 @@ footing the bill.
     :linenos:
     :caption: Check if list has an item that has a property - ``for`` loop
 
-    def check_if_one_item_has_property_v2(my_list, room):
+    def check_if_one_item_is_in_room_v2(my_list, room):
         """
         Return true if at least one item has a
         property. Works the same as v1, but less code.
         """
         for item in my_list:
-            if has_property(item, room):
+            if item.room == room:
                 return True
         return False
 
@@ -371,12 +463,12 @@ the difference and see if you can figure out the reason behind the change.
     :linenos:
     :caption: Check if all items have a property
 
-    def check_if_all_items_have_property(my_list, room):
+    def check_if_all_items_are_in_room(my_list, room):
         """
         Return true if at ALL items have a property.
         """
         for item in my_list:
-            if not has_property(item, room):
+            if item.room != room:
                 return False
         return True
 
@@ -391,14 +483,14 @@ back in :ref:`intro-to-lists`.
     :linenos:
     :caption: Create another list with all items matching a property
 
-    def get_matching_items(my_list, room):
+    def get_items_in_room(my_list, room):
         """
         Build a brand new list that holds all the items
         that match our property.
         """
         matching_list = []
         for item in my_list:
-            if has_property(item, room):
+            if item.room == room:
                 matching_list.append(item)
         return matching_list
 
