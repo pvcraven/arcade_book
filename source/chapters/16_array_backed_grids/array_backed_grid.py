@@ -23,7 +23,7 @@ SCREEN_WIDTH = (WIDTH + MARGIN) * COLUMN_COUNT + MARGIN
 SCREEN_HEIGHT = (HEIGHT + MARGIN) * ROW_COUNT + MARGIN
 
 
-class MyApplication(arcade.Window):
+class MyGame(arcade.Window):
     """
     Main application class.
     """
@@ -93,8 +93,9 @@ class MyApplication(arcade.Window):
 
 def main():
 
-    window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
+    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT)
     arcade.run()
 
 
-main()
+if __name__ == "__main__":
+    main()
