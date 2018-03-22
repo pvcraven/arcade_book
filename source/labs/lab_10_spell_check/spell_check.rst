@@ -70,8 +70,8 @@ http://regexone.com/
     story that was just read in. Store the list that the function returns in a
     new variable named ``word_list``. Remember, just calling the function won't do
     anything useful. You need to assign a variable equal (``word_list``) to the result.
-    If you've forgotten now to capture the return value from a function, flip
-    back to the functions chapter to find it.
+    If you've forgotten now to capture the return value from a function, see
+    :ref:`capturing_returned_values`.
 13. Start a nested ``for`` loop to iterate through each word in the words list.
     This should be inside the ``for`` loop that runs through each line in the file.
     (One loop for each line, another loop for each word in the line.)

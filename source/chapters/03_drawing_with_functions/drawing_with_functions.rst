@@ -429,6 +429,8 @@ nothing with the result.
     # This doesn't do much, because we don't capture the result
     sum_two_numbers(22, 15)
 
+.. _capturing_returned_values:
+
 Capturing Returned Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -437,11 +439,17 @@ the value the function returned:
 
 .. code-block:: python
 
-    # Store the function's result into a variable
+    # Capture the function's result into a variable
+    # by putting "my_result =" in front of it.
+    # (Use whatever variable name best describes the data,
+    # don't blindly use 'my_result' for everything.)
     my_result = sum_two_numbers(22, 15)
+
+    # Now that I captured the result, print it.
     print(my_result)
 
-Now the result isn't lost. It is stored in my_result which we can print or use some other way.
+Now the result isn't lost. It is stored in `my_result`
+which we can print or use some other way.
 
 Volume Cylinder Example
 ^^^^^^^^^^^^^^^^^^^^^^^
