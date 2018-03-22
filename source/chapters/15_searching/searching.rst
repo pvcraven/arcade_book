@@ -136,6 +136,8 @@ The second addition is on line 7. This closes the file so that the operating
 system doesn't have to go around later and clean up open files after the
 program ends.
 
+.. _reading_into_an_array:
+
 Reading Into an Array
 ---------------------
 
@@ -200,6 +202,8 @@ If a program has a set of data in an array, how can it go about finding where
 a specific element is? This can be done one of two ways. The first method is
 to use a *linear search*. This starts at the first element, and keeps comparing
 elements until it finds the desired element (or runs out of elements.)
+
+.. _linear_search:
 
 Linear Search Algorithm
 -----------------------
@@ -533,6 +537,8 @@ For a full working example:
 
 These common algorithms can be used as part of a solution to a larger problem,
 such as find all the addresses in a list of customers that aren't valid.
+
+.. _binary_search:
 
 Binary Search
 -------------

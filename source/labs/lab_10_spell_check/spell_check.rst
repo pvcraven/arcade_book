@@ -54,8 +54,8 @@ know more about regular expressions, see:
 
 http://regexone.com/
 
-6.  Read the file ``dictionary.txt`` into an array. Go back to the chapter on
-    Searching, or see the ``searching_example.py`` for example code on how to do
+6.  Read the file ``dictionary.txt`` into an array. Go back to
+    :ref:`reading_into_an_array` for example code on how to do
     this. This does *not* have anything to do with the ``import`` command, libraries,
     or modules. Don't call the dictionary ``word_list`` or something generic
     because that will be confusing. Call it ``dictionary_list`` or a different
@@ -76,7 +76,7 @@ http://regexone.com/
     This should be inside the ``for`` loop that runs through each line in the file.
     (One loop for each line, another loop for each word in the line.)
 14. Using a linear search, check the current word against the words in the
-    dictionary. Check the chapter on searching or the ``searching_example.py``
+    dictionary. See :ref:`linear_search`
     for example code on how to do this. The linear search is just three lines
     long. When comparing to the word to the other words in the dictionary,
     convert the word to uppercase. In your ``while`` loop just use ``word.upper()``
@@ -95,7 +95,9 @@ http://regexone.com/
     it may be commented out by using three quotes before and after that block
     of code. Ask if you are unsure how to do this.
 22. Repeat the same pattern of code as before, but this time use a binary
-    search. Much of the code from the linear search may be copied, and it is
+    search.
+    For the binary search, go back to :ref:`binary_search`.
+    Much of the code from the linear search may be copied, and it is
     only necessary to replace the lines of code that represent the linear
     search with the binary search.
 23. Note the speed difference between the two searches.
@@ -103,7 +105,8 @@ http://regexone.com/
     working on the binary search.
 25. Upload the final program or check in the final program.
 
-15.3 Example Run
+Example Run
+-----------
 
 .. code-block:: text
 
