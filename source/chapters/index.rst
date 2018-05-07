@@ -5,31 +5,29 @@ Chapters
    :maxdepth: 2
    :numbered:
 
-   00_foreword/foreword
-   01_what_is_a_programming_language/index
-   01_setup/setup
-   01_version_control/index
-   01_print_statement/print_statement
-   02_drawing/drawing
-   03_drawing_with_functions/drawing_with_functions
-   04_if_statements/if_statements
-   05_loops_and_random_numbers/loops_and_random_numbers
-   06_advanced_looping/advanced_looping
-   07_lists/lists
-   08_classes/classes
-   09_user_control/user_control
-   10_sounds/sounds
-   11_sprites/sprites
-   12_review/review
-   13_sprites_and_walls/sprites_and_walls
-   14_libraries_and_modules/libraries_and_modules
-   15_searching/searching
-   16_array_backed_grids/array_backed_grids
-   17_platformers/platformers
-   18_sorting/sorting
-   19_exceptions/exceptions
-   20_recursion/recursion
-   21_print_formatting/print_formatting
-   xx_selecting_python/selecting_python
-   xx_flowchart/index.rst
+   01_foreword/foreword
+   02_what_is_a_programming_language/index
+   03_setup/setup
+   04_version_control/index
+   05_print_statement/print_statement
+   06_drawing/drawing
+   07_drawing_with_functions/drawing_with_functions
+   08_if_statements/if_statements
+   09_loops_and_random_numbers/loops_and_random_numbers
+   10_advanced_looping/advanced_looping
+   11_lists/lists
+   12_classes/classes
+   13_user_control/user_control
+   14_sounds/sounds
+   15_sprites/sprites
+   16_sprites_and_walls/sprites_and_walls
+   17_libraries_and_modules/libraries_and_modules
+   18_searching/searching
+   19_array_backed_grids/array_backed_grids
+   20_platformers/platformers
+   21_sorting/sorting
+   22_exceptions/exceptions
+   23_recursion/recursion
+   24_print_formatting/print_formatting
+
 
