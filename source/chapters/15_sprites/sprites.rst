@@ -329,7 +329,7 @@ What do we do with this ``hit_list`` we get back? We loop through it. We add one
 to the score for each sprite hit.
 
 We also need to get rid of the sprite. The sprite class has a method called
-``kill``. This method will remove the sprite from existance.
+``kill``. This method will remove the sprite from existence.
 
 .. code-block:: Python
 

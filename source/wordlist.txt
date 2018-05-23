@@ -1,0 +1,15 @@
+Pycharm
+ctrl
+Pygame
+namespace
+Matplotlib
+Jupyter
+pts
+kenney
+platformer
+platformers
+Wikipedia
+png
+wav
+ogg
+prepend

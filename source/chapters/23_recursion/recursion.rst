@@ -365,7 +365,7 @@ by looking at Chapter 8 of `The Nature of Code`_ by Daniel Shiffman.
 Recursive Mazes
 ---------------
 
-There are maze generation algrithms. Wikipedia has a nice `Maze generation algorithm`_ article that details
+There are maze generation algorithms. Wikipedia has a nice `Maze generation algorithm`_ article that details
 some. One way is the *recursive division method*.
 
 The algorithm is described below. Images are from Wikipedia.
