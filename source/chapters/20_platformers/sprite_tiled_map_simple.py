@@ -168,7 +168,7 @@ class MyWindow(arcade.Window):
 
     def on_key_release(self, key, modifiers):
         """
-        Called when the user presses a mouse button.
+        Called when the user releases a key.
         """
         if key == arcade.key.LEFT or key == arcade.key.RIGHT:
             self.player_sprite.change_x = 0
