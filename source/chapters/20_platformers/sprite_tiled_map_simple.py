@@ -154,7 +154,7 @@ class MyWindow(arcade.Window):
 
     def on_key_press(self, key, modifiers):
         """
-        Called whenever the mouse moves.
+        Called whenever a key is pressed.
         """
         if key == arcade.key.UP:
             # This line below is new. It checks to make sure there is a platform underneath
