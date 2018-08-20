@@ -3,6 +3,10 @@
 Version Control Systems
 =======================
 
+We will use a `version control system` to track your work, and allow the
+instructor to give feedback. Odds are, this will be the same exact system you'd
+use in a large company.
+
 .. _git-quick-ref:
 
 Quick Reference
@@ -17,8 +21,11 @@ Do this whenever you are done with a session of programming:
 2. Type ``cd mydirectoryname`` where the name of the directory will be the same as the name of your repository on
    BitBucket. You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
 3. Type ``git add *``
-4. Type ``git commit -m "Work on lab 1"`` Update the comment to whatever you did.
+4. Type ``git commit -m "Work on lab 1"`` Update the comment between the quotes
+   to whatever you did.
 5. Type ``git push``
+
+If you get an error while pushing, see :ref:`cant-push`
 
 Turn In Your Work
 ^^^^^^^^^^^^^^^^^
@@ -30,11 +37,10 @@ Turn In Your Work
 5. Go to Scholar for the lab
 6. Paste link, and turn in.
 
+For more commands, see the :ref:`git_command_reference`.
+
 What is a Distributed Version Control System
 --------------------------------------------
-
-Now we need to set up the computer to manage the code that we type in. This will allow you to upload the code so that
-I can see it and give feedback.
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
@@ -74,20 +80,13 @@ standardize on Git.
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
 .. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
 
-The Interactive Git Tutorial
-----------------------------
-
-This is a great interactive tutorial to learn how to use ``git``. Go through it now:
-
-https://try.github.io/
-
 
 .. _installing-git:
 
 Installing Git
 --------------
 
-Now that you've learned how to use ``git``, let's install it on your computer.
+Let's install ``git`` on your computer.
 If you are using a school computer with ``git`` pre-installed, you can skip
 this step.
 
@@ -525,4 +524,46 @@ Step 3: Try Pushing Again
     To bitbucket.org:pcraven/arcade-games-work2.git
        d66b008..aeb9cf3  master -> master
 
+.. _git_command_reference:
 
+Longer Git Command Reference
+----------------------------
+
+In my experience with 300 level group-project classes, these commands seem to
+capture most of what students need to do.
+
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Command                                        | Description                                                                                                             |
++================================================+=========================================================================================================================+
+| ``git status``                                 | See what has changed                                                                                                    |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git fetch``                                  | Grab stuff from the server, but don't merge                                                                             |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git merge --no-commit --no-ff test_branch``  | Merge                                                                                                                   |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git merge --abort``                          | Abort a merge                                                                                                           |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git pull``                                   | Fetch and Merge                                                                                                         |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git add myfile.txt``                         | Add myfile.txt to be committed                                                                                          |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git add .``                                  | Add everything                                                                                                          |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``grep -r "<< HEAD" *``                        | Search all files to see if there is merge error text. Do this before committing                                         |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git checkout --ours "myfile.txt"``           | Toss your changes in a merge, use theirs                                                                                |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git checkout --theirs "myfile.txt"``         | Toss their changes, use yours                                                                                           |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git checkout -- .``                          | Remove all your changes, go back to what was last committed. Untracked files are kept.                                  |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git -f clean``                               | Remove untracked files                                                                                                  |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git checkout 44fd``                          | Find the hash of a check-in, and you can go back to that check in. (Don't use 44fd, but replace with the has you want.) |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git checkout master``                        | Go back to most recent check in on the master branch.                                                                   |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git commit -m "My message"``                 | Commit your work. Use a descriptive message or the other people in the class will be irritated with you.                |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| ``git push``                                   | Push commit up to the server.                                                                                           |
++------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
