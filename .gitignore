@@ -2,3 +2,4 @@
 *.sublime-workspace
 build/
 .idea/
+venv/
