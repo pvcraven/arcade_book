@@ -175,7 +175,7 @@ learn `C#`_ or Java_.
 Python a great language for people interested in doing data processing
 and `automating boring things <https://automatetheboringstuff.com/>`_.
 
-Python 2.7 vs. Python 3.6
+Python 2.7 vs. Python 3.7
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are two main versions of Python. When Python moved to version 3,
