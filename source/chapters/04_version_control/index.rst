@@ -142,7 +142,11 @@ Share the Repository
 1. Give read permission to the instructor ``pcraven`` for your fork so he can
    grade your assignments.
 
-.. image:: invite.png
+.. image:: invite_1.png
+
+Then
+
+.. image:: invite_2.png
 
 .. attention::
     Check the feedback on your homework. If the instructor can't get to your
