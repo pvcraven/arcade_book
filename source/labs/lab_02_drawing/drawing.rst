@@ -11,9 +11,9 @@ Requirements
 
 To get full credit:
 
-* Use the same project and repository that you used for Lab 01. Create a new
-  folder called ``Lab 02 - Draw a picture``. Don't put the Lab 02 folder in the
-  Lab 01 folder. Do not create a new project or a new repository.
+* Use the same project and repository that you used for Lab 01.
+  If you forked your repository from mine, you should already have a folder
+  for lab 2. Use that folder, and the ``lab_02.py`` file inside. Otherwise create one.
 * You must use multiple colors.
 * You must have a coherent picture.
   I am not interested in abstract art with random shapes.
