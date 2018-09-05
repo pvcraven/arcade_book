@@ -31,6 +31,7 @@ Note that case matters. The following will not work:
     Print("Hello there")
 
 Great! Time to run it.
+
 Right-click on the program and select "Run 'lab_01.py'"
 
 Before we go on, note how the PyCharm window is put together.
@@ -176,6 +177,5 @@ several print statements. Here is my example:
 	triple
 	quotes. Just in
 	case you wanted to.""")
-
 
 

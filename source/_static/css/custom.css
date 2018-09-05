@@ -5,22 +5,43 @@ p, li {
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
     font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
 }
+h1 {
+    border-bottom: 3px solid;
+}
+h2 {
+    border-bottom: 2px solid;
+}
 body {
     font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
     font-size: 18px;
     line-height: 33px;
+    counter-reset: listing;
 }
 .rst-content .highlight>pre {
     line-height: 1.5;
+}
+.code-block-caption::before {
+    counter-increment: listing;
+    content: "Listing " counter(listing) ": ";
+}
+.code-block-caption {
+    font-family: 'Consolas', 'courier new', 'courier';
+    font-size: 15px;
 }
 code, .rst-content tt, .rst-content code {
 	border: none;
 	font-size: 90%;
     color: black;
-    font-weight: heavy;
+    font-weight: bold;
     padding: 0px;
     border: none;
     background: transparent;
+}
+
+div[class^='highlight'] {
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    background: #FCFCFC;
 }
 div[class^='highlight'] pre {
     white-space: pre;
@@ -32,6 +53,9 @@ div[class^='highlight'] pre {
     display: block;
     overflow: auto;
     color: #404040;
+}
+.headerlink {
+    visibility: hidden;
 }
 .rst-content code.literal {
 	color: black;
@@ -59,4 +83,10 @@ div[class^='highlight'] pre {
 }
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal;
+}
+.c1 {
+    color: #28811f;
+}
+.bp {
+    color: #004bd7;
 }

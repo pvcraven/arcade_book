@@ -104,7 +104,7 @@ Forking the Repository
 .. attention::
     You should only have to fork the code **once** during class. If you do it more than
     once, something is wrong. Stop before you do this and see the instructor.
-    It is a big headache for everyone if your fork more than once.
+    It is a big headache for everyone if you fork more than once.
 
 1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called

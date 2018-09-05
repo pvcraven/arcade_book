@@ -7,6 +7,8 @@ What is a programming language?
 This wouldn't be much of a programming course if you left without
 even knowing what a programming language was! So let's get that out of the way.
 
+.. note:: The CPU is the "brain" of the computer.
+
 Computers have a chip called the Central Processing Unit (CPU_) that functions
 as the main "brain" of the
 computer. For example, right now you might have an Intel i7 or an AMD-FX CPU in
@@ -33,15 +35,17 @@ In the early days of computing, programmers punched
 in numbers that represented commands for the CPU.
 Then the programmers punched in the data.
 
-We call these numbers that are instructions `machine code`_. Note that not
-all numbers on the computer are machine code (they might just be data),
-but all machine code is made of numbers.
+.. note:: Machine code is the native language of any computer.
+
+We call these numbers that are instructions `machine code`_.
+All machine code is made of numbers, but not all numbers are machine code.
+Some of the numbers might be data to hold text or images.
 Machine code is also called a `First Generation Language`_ (1GL).
 
 Below is an image of the `Altair 8800`_, the first personal computer that regular
 people could buy. Notice that it is missing a monitor and a keyboard! The first
 computers loaded the instructions by flipping switches. A pattern of switches
-represented a machine instruction. So you'd flip lots of switches, then flip
+represented a machine instruction. So you'd flip lots of switches, then hit
 the "Run" switch. And the lights would blink.
 
 .. figure:: Altair_8800.jpg
@@ -90,6 +94,8 @@ number of the machine language instruction.
 .. _source code: https://en.wikipedia.org/wiki/Source_code
 .. _compiler: https://en.wikipedia.org/wiki/Compiler
 
+.. note:: A compiler turns human-readable code into machine code.
+
 After I compile the source code into compiled code,
 I can run the compiled code. I can give the compiled
 code to someone else and they can run it. They do not need the source code
@@ -116,11 +122,21 @@ These languages often specialize at certain tasks. For example, the language
 C_ is great at creating small, fast programs that can run on minimal hardware.
 PHP_ is an easy-to-use language that can build websites.
 
+.. note:: Most of the original computer scientists were female.
+    See `Grace Hopper`_, `Hedy Lamar`_, and `Ada Lovelace`_ for
+    examples. If you want to find other female programmers who code
+    in Python, check out
+    `@PyLadies <https://twitter.com/PyLadies>`_,
+    `@DJangoGirls <https://twitter.com/djangogirls>`_,
+    and `@WomenWhoCode <https://twitter.com/WomenWhoCode>`_.
+
 .. _Grace Hopper: https://en.wikipedia.org/wiki/Grace_Hopper
 .. _Third Generation Languages: https://en.wikipedia.org/wiki/Third-generation_programming_language
 .. _COBOL: https://en.wikipedia.org/wiki/COBOL
 .. _C: https://en.wikipedia.org/wiki/C_(programming_language)
 .. _PHP: https://en.wikipedia.org/wiki/PHP
+.. _Hedy Lamar: https://en.wikipedia.org/wiki/Hedy_Lamarr
+.. _Ada Lovelace: https://en.wikipedia.org/wiki/Ada_Lovelace
 
 Third generation languages usually fall into one of three categories.
 
@@ -172,8 +188,12 @@ learn `C#`_ or Java_.
 .. _TIOBE Index: http://www.tiobe.com/tiobe-index/
 .. _C#: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 
-Python a great language for people interested in doing data processing
-and `automating boring things <https://automatetheboringstuff.com/>`_.
+Python a great language for people interested in
+`automating boring things <https://automatetheboringstuff.com/>`_.
+Python is also extremely popular in data analytics. Typically researchers will
+use the add-ons
+`Pandas <https://pandas.pydata.org/>`_ and
+`Jupyter Notebooks <http://jupyter.org/>`_.
 
 Python 2.7 vs. Python 3.6
 ^^^^^^^^^^^^^^^^^^^^^^^^^
