@@ -47,7 +47,7 @@ is number one.
 `Payscale breaks the engineering degrees out, and puts computer science at #14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors>`_.
 The other top-paid majors, such as engineering and mathematics, all use
 programming extensively.
-=======
+
 In addition we'll teach the topics of a typical first-semester programming class.
 But the most important thing is for you to find out if programming is
 worth your time.

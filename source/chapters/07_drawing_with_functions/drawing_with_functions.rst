@@ -333,7 +333,7 @@ Operator   Description
     print(x)
 
     # Make x smaller by five
-    x += 5
+    x -= 5
     print(x)
 
 Using Expressions In Function Calls
@@ -497,9 +497,12 @@ function that returns a value. Look at the code below and try it out.
     # This will not set x1 to the sum
     # It actually gets a value of 'None'
     x1 = sum_print(4, 4)
+    print("x1 =", x1)
 
-    # This will
+    # This will set x2 to the sum
+    # and print it properly
     x2 = sum_return(4, 4)
+    print("x2 =", x1)
 
 
 When first working with functions it is not unusual to get stuck looking at
