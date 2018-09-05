@@ -47,10 +47,14 @@ is number one.
 `Payscale breaks the engineering degrees out, and puts computer science at #14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors>`_.
 The other top-paid majors, such as engineering and mathematics, all use
 programming extensively.
+=======
+In addition we'll teach the topics of a typical first-semester programming class.
+But the most important thing is for you to find out if programming is
+worth your time.
 
-You can earn a lot of money by programming. There are so many cool things
-you can create. It is a fun career, hobby, or passion. It is also a lot of
-fun to get started.
+.. note::
+    In :ref:`how-to-draw` we show how to create your first graphics.
+    These first chapters we show you how to get your computer set up.
 
 What Other Students Have Made
 -----------------------------
@@ -58,6 +62,11 @@ What Other Students Have Made
 Here are some videos of games students have created in prior semesters.
 Students who didn't know any programming, were able to create these games
 by the time they finished the semester.
+
+.. raw:: html
+
+=======
+Here are some videos of games students have created in prior semesters:
 
 .. raw:: html
 

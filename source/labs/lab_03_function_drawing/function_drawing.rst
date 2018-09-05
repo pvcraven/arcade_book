@@ -17,8 +17,10 @@ You can update your program from Lab 2, or create a new program. This lab is wor
 
 Incorporate the following items:
 
-* Find the folder for Lab 03 in PyCharm. Feel free to use any code from Lab 02 you want, just
-  copy it across.
+* Find the folder for Lab 03 in PyCharm and start entering your code there.
+  Feel free to use any code from Lab 02 you want, just copy it across.
+* Make sure you are putting your program in the Lab 3 folder, and not just
+  changing Lab 2 to have Lab 3 requirements.
 * We are going to be following the instructions/example in :ref:`custom-drawing-function`.
 * Put everything into a function as shown in :ref:`make_the_main_function`.
 * Create three functions that draw something. (15 pts total, up to 5 pts

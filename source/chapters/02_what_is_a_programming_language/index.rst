@@ -195,7 +195,7 @@ use the add-ons
 `Pandas <https://pandas.pydata.org/>`_ and
 `Jupyter Notebooks <http://jupyter.org/>`_.
 
-Python 2.7 vs. Python 3.6
+Python 2.7 vs. Python 3.7
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are two main versions of Python. When Python moved to version 3,
