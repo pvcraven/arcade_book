@@ -483,10 +483,12 @@ function that returns a value. Look at the code below and try it out.
         result = a + b
         print(result)
 
+
     # Function that returns the results
     def sum_return(a, b):
         result = a + b
         return result
+
 
     # This prints the sum of 4+4
     sum_print(4, 4)
@@ -515,6 +517,7 @@ code like this:
         result = (a + b) / 2
         return result
 
+
     # Pretend you have some code here
     x = 45
     y = 56
@@ -532,6 +535,7 @@ a variable to capture the result:
         """ Calculate an average of two numbers """
         result = (a + b) / 2
         return result
+
 
     # Pretend you have some code here
     x = 45
@@ -575,6 +579,7 @@ below:
     def f():
         x = 22
 
+
     # Call the function
     f()
     # This fails, x only exists in f()
@@ -594,9 +599,11 @@ thus can be read from inside the ``f()`` function.
     # Create the x variable and set to 44
     x = 44
 
+
     # Define a simple function that prints x
     def f():
         print(x)
+
 
     # Call the function
     f()
@@ -610,10 +617,12 @@ above, will fail. The computer will claim it doesn't know what x is.
     # Create the x variable and set to 44
     x = 44
 
+
     # Define a simple function that prints x
     def f():
         x += 1
         print(x)
+
 
     # Call the function
     f()
@@ -633,6 +642,7 @@ Functions pass their values by creating a copy of the original. For example:
     def f(x):
         x += 1
         print(x)
+
 
     # Set y
     y = 10
@@ -657,6 +667,7 @@ but rather than use y it uses x.
     def f(x):
         x += 1
         print(x)
+
 
     # Set x
     x = 10
@@ -689,11 +700,14 @@ In this example, note that if you don't use a function, it doesn't run.
     def a():
         print("A")
 
+
     def b():
         print("B")
 
+
     def c():
         print("C")
+
 
     a()
 
@@ -707,12 +721,15 @@ Example 2
         b()
         print("A")
 
+
     def b():
         c()
         print("B")
 
+
     def c():
         print("C")
+
 
     a()
 
@@ -727,12 +744,15 @@ Example 3
         print("A")
         b()
 
+
     def b():
         print("B")
         c()
 
+
     def c():
         print("C")
+
 
     a()
 
@@ -747,13 +767,16 @@ Example 4
         b()
         print("A end")
 
+
     def b():
         print("B start")
         c()
         print("B end")
 
+
     def c():
         print("C start and end")
+
 
     a()
 
@@ -765,17 +788,20 @@ Example 5
 
     # Example 5
     def a(x):
-        print("A start, x =",x)
+        print("A start, x =", x)
         b(x + 1)
-        print("A end, x =",x)
+        print("A end, x =", x)
+
 
     def b(x):
-        print("B start, x =",x)
+        print("B start, x =", x)
         c(x + 1)
-        print("B end, x =",x)
+        print("B end, x =", x)
+
 
     def c(x):
-        print("C start and end, x =",x)
+        print("C start and end, x =", x)
+
 
     a(5)
 
@@ -790,6 +816,7 @@ While line 3 of this example increases ``x``, the ``x`` variable in the function
     # Example 6
     def a(x):
         x = x + 1
+
 
     x = 3
     a(x)
@@ -809,6 +836,7 @@ never do anything with the return value. So the global variable ``x`` still does
         x = x + 1
         return x
 
+
     x = 3
     a(x)
 
@@ -827,6 +855,7 @@ just ``a(x)``.
         x = x + 1
         return x
 
+
     x = 3
     x = a(x)
 
@@ -842,6 +871,7 @@ Example 9
         x = x + 1
         y = y + 1
         print(x, y)
+
 
     x = 10
     y = 20
@@ -862,6 +892,7 @@ this case, ``return y`` never runs, because we already returned from the functio
         return x
         return y
 
+
     x = 10
     y = 20
     z = a(x, y)
@@ -880,6 +911,7 @@ This is not something you can do in every programming language. You can return t
         x = x + 1
         y = y + 1
         return x, y
+
 
     x = 10
     y = 20
@@ -900,6 +932,7 @@ If you return two values out of a function, you can capture them this way.
         y = y + 1
         return x, y
 
+
     x = 10
     y = 20
     x2, y2 = a(x, y) # Most computer languages don't support this
@@ -917,6 +950,7 @@ Example 13
         print("function a, my_data =  ", my_data)
         my_data = 20
         print("function a, my_data =  ", my_data)
+
 
     my_data = 10
 
@@ -939,6 +973,7 @@ later.
         my_list = [10, 20, 30]
         print("function a, list =  ", my_list)
 
+
     my_list = [5, 2, 4]
 
     print("global scope, list =", my_list)
@@ -958,127 +993,9 @@ Example 15
         my_list[0] = 1000
         print("function a, list =  ", my_list)
 
+
     my_list = [5, 2, 4]
 
     print("global scope, list =", my_list)
     a(my_list)
     print("global scope, list =", my_list)
-
-.. _custom-drawing-function:
-
-How to Create a Custom Drawing Function
----------------------------------------
-
-Here is a set of examples where we take a program that already exists and put
-everything in functions.
-
-First the original program:
-
-.. image:: snowman1.png
-    :width: 50%
-
-.. literalinclude:: drawing_with_functions_a1.py
-    :language: python
-    :linenos:
-
-.. _make_the_main_function:
-
-Make The Main Function
-^^^^^^^^^^^^^^^^^^^^^^
-
-Next, create a ``main()`` function. Put everything in it, and call the main
-function.
-
-.. literalinclude:: drawing_with_functions_a2.py
-    :language: python
-    :linenos:
-
-When you do this, run your program and make sure it still works before proceeding.
-
-.. _make_the_drawing_function:
-
-Make The Drawing Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Next, pick an item to move to a function. Start with an easy one if you have it.
-I chose grass because it was only one line of code, and I wasn't going to ever try
-to position it with x, y.
-
-.. literalinclude:: drawing_with_functions_a3.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 7-9, 17
-
-Then, I took a more complex shape and put it in a function.
-
-.. literalinclude:: drawing_with_functions_a4.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 12-22, 31
-
-But this draws the snowman only at one spot. I want to draw lots of snowmen,
-anywhere I put them!
-
-To do this, let's add an x and y:
-
-.. image:: snowman2.png
-    :width: 50%
-
-.. literalinclude:: drawing_with_functions_a5.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 12, 19-21, 24-25, 34
-
-But that's not perfect. If you'll note, I added a dot at the x and y. The
-snowman draws way off from the dot, because originally I didn't try to draw
-it at 0, 0. I need to recenter the snowman on the dot.
-
-We need to re-center the shape onto the spot we are drawing. Typically you'll
-need to subtract from all the x and y values the same amount.
-
-.. image:: snowman3.png
-    :width: 50%
-
-.. literalinclude:: drawing_with_functions_a6.py
-    :language: python
-    :linenos:
-
-
-.. _animate-drawing:
-
-How To Animate A Drawing Function
----------------------------------
-
-We can animate our drawing if we want. Here are the steps.
-
-Create An ``on_draw`` Method
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Right now our program only draws our image once. We need to move all the drawing code
-in our ``main`` to an ``on_draw`` function. Then we'll tell the computer to draw
-that over and over.
-
-Continuing from our last example, our program will look like:
-
-.. literalinclude:: animate_1.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 28-34, 41-42
-
-Do this with your own program. Nothing will move, but it should still run.
-
-Add Variable To Control Where We Draw Our Item
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Next, we are going to create a variable inside of the ``on_draw`` function.
-This variable will hold our *x* value.
-Each time we call ``on_draw``, we'll change *x* so that it moves to the right.
-
-.. literalinclude:: animate_2.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 33, 36-42
-
-For more information, see the `Bouncing Rectangle Example`_.
-
-.. _Bouncing Rectangle Example: http://arcade.academy/examples/bouncing_rectangle.html
