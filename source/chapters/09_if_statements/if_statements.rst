@@ -472,17 +472,6 @@ The next set of example code below runs through all the concepts talked about
 earlier. The on-line video traces through each line of code and explains how it
 works
 
-In the video I use an integrated development editor (IDE) called Eclipse. The
-default version of Eclipse doesn't work with Python, but the PyDev version does.
-The PyDev editor is available for free from:
-
-http://pydev.org/
-
-The editor is complex, but it has many options and can be a powerful environment
-to work in. Some programmers like using environments such as PyDev that can have
-so many plug-ins that will do everything but bring you coffee. Some developers
-prefer a minimalistic environment that doesn't "get in the way."
-
 .. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/pDpNSck2aXQ" frameborder="0" allowfullscreen></iframe>
