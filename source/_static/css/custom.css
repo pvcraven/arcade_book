@@ -38,7 +38,7 @@ code, .rst-content tt, .rst-content code {
     background: transparent;
 }
 
-div[class^='highlight'] {
+.rst-content div[class^='highlight'] {
     border-style: solid;
     border-width: 2px 0px 2px 0px;
     background: #FCFCFC;
@@ -93,9 +93,16 @@ div[class^='highlight'] pre {
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal;
 }
-.c1 {
+.highlight .c1 {
     color: #28811f;
 }
-.bp {
+.highlight .bp {
     color: #004bd7;
 }
+.highlight .sd {
+    font-style: normal;
+    color: #a23030;
+}
+.highlight .k {
+    font-weight: bold;
+    color: black;
