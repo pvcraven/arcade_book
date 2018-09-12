@@ -11,6 +11,7 @@ Chapters
    04_version_control/index
    05_print_statement/print_statement
    06_drawing/drawing
+   07_expressions/expressions
    07_functions/functions
    08_drawing_with_functions/drawing_with_functions
    09_if_statements/if_statements

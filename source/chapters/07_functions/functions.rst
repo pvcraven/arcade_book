@@ -1,30 +1,8 @@
 Creating Functions
 ==================
 
-The goal of this chapter is to learn how to create our own functions to draw.
-We don't want to be stuck with just ``draw_circle`` commands.
-We want to be able to define create our own ``draw_tree`` or ``draw_house``
-commands.
-
-A **function** is a block of code that we can **call** with just one line.
-Functions give us the ability to write:
-
-* Clear, easy-to-read code.
-* The ability to reuse code.
-
-We have already *used* functions. Now we want *define* our own. Defining a
-function is like giving a recipe to computer. Once we give the computer a
-recipe for banana bread, we just have to tell the computer to "make banana
-bread." There's no need to tell it the steps again.
-
-To create our own drawing functions we need to learn three new skills:
-
-* How to define a function
-* How to use variables
-* How to create simple mathematical expressions
-
-About Functions
----------------
+Creating Simple Functions
+-------------------------
 
 Defining a function is rather easy.
 
@@ -44,364 +22,19 @@ Defining a function is rather easy.
 * Usually we start a function with a multi-line comment that explains what
   the function does.
 
-Here is an example of a function:
+.. Note::
 
-.. code-block:: python
+    Function definitions go *below* the ``import`` statements, and *above* the
+    rest of the program. While you can put them somewhere else, you shouldn't.
 
-    def draw_grass():
-        """
-        This function draws the grass.
-        """
-        arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
+Below is a program that defines and uses the function twice.
 
-To call the function, all we need to do is:
-
-.. code-block:: python
-
-    draw_grass()
-
-Below is a full program that defines and uses the function. Notice that
-function definitions go *below* the ``import`` statements, and *above* the
-rest of the program. While you can put them somewhere else, you shouldn't.
-
-.. literalinclude:: drawing_with_functions_1.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 8-12, 20
-
-Great! Let's make this scene a little better. I've created another function
-called ``draw_pine_tree`` which will...you guessed it. Draw a pine tree.
-
-Here's what it will look like:
-
-.. image:: pine_tree.png
-
-And here's the code:
-
-.. literalinclude:: drawing_with_functions_2.py
-    :language: python
-    :linenos:
-    :emphasize-lines: 15-26, 34
-
-Great! But what if I want a forest? I want lots of trees? Do I create a function
-for every tree? That's no fun. How can I create a function that allows me to say
-where I want the tree? Like what if I wanted to draw three trees and specify
-(x, y) coordinates of those trees::
-
-    draw_pine_tree(45, 92)
-    draw_pine_tree(220, 95)
-    draw_pine_tree(250, 90)
-
-To be able to do this, I need to learn about variables, expressions, and
-function parameters.
-
-How to Use Variables
---------------------
-
-A **variable** is a value the computer stores in memory that can change. That
-is, it *varies*.
-
-You've used variables in mathematics before. With computer science, we use
-them a lot. But in math class, you were given the equation and you had to
-solve for the variable. In computer science class, *we* come up with the
-equation and the *computer* solves the variable.
-
-Here is a quick example:
-
-.. code-block:: python
-
-    # What will this print?
-    x = 5
-    print(x)
-
-What will the code above print? It will print ``5``.
-
-The ``=`` is called an **assignment operator**. It assigns the value on the
-right side to the variable on the left.
-
-Here's another example. Very similar, but something is different. What will
-it print?
-
-.. code-block:: python
-
-    # What will this print?
-    x = 5
-    print("x")
-
-The code above prints ``x``. Why not ``5``? Because:
-
-* If there are no quotes, the computer evaluates code like a mathematical
-  expression.
-* If there are quotes, we treat what is between the quotes as a string of
-  characters and don't change it.
-
-In fact, that is what we call the characters between the quotes. A **string**,
-which is short for "string of characters." We don't call it "text."
-
-The following code won't print at all:
-
-::
-
-    print(Have a great day!)
-
-The code above will fail because the computer will think that it should evaluate
-``Have a great day!`` as a mathematical expression. It isn't, so the computer
-gets confused and generates an error. That's why we need quotes:
-
-.. code-block:: python
-
-    print("Have a great day!")
-
-Variable and Function Names
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Variable names and function names follow the same rules. There are
-names you *should* use, names you *shouldn't* use, and
-names you *can't* use.
-
-Good variable name examples:
-    * temperature_in_celsius
-    * tree_position
-    * car_speed
-    * number_of_children
-    * simpson
-
-Legal, but bad variable names:
-    * temperatueInCelsius - Uses capital letters. Keep it lower case and use underscores.
-    * x - Too short, and not descriptive.
-    * Simpson - Starts with a capital letter.
-
-Variable names that won't work:
-    * tree position - Can't use spaces
-    * 4runner - Can't start with a number
-
-Sometimes we want to create a variable that won't change.
-We call these variables **constants**.
-By convention, these variable names are in all upper case. They are
-the only variables that use upper-case. For example:
-
-.. code-block:: python
-
-    PI = 3.14159
-    SCREEN_WIDTH = 600
-    RED = (255, 0 ,0)
-
-Good variable names help make code *readable*. Note the example below that
-calculates miles-per-gallon. It isn't easy to understand.
-
-.. code-block:: python
-
-    # Calculate mpg using confusing variable names
-    m = 294
-    g = 10.5
-    m2 = m / g
-    print(m2)
-
-But the code below that uses descriptive variable names *is* easy to understand.
-
-.. code-block:: python
-
-    # Calculate mpg using good variable names
-    miles_driven = 294
-    gallons_used = 10.5
-    mpg = miles_driven / gallons_used
-    print(mpg)
-
-How to Create Expressions
--------------------------
-
-Using Operators in Expressions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Great! We are part-way there. To really be powerful, variables need to be used
-with **expressions**. An expression is simply a mathematical equation like what
-you've used in math before. Here's an example:
-
-.. code-block:: python
-
-    # What will this print?
-    x = 5 + 10
-    print(x)
-
-As you can probably guess, this will print out ``15``. We call the ``+`` sign
-an **operator**. Here are some other operators:
-
-========== =====================================
-Operator   Description
-========== =====================================
-``+``      Addition
-``-``      Subtraction
-``*``      Multiplication
-``**``     Exponentiation (raise to the power)
-``/``      Division
-``//``     Integer division (rounds down)
-``%``      Modulus (gives remainder of division)
-========== =====================================
-
-There are two things that **don't** work like you'd expect. There is no
-"juxtaposition" used to multiply items. And the ``=`` is not an algebraic
-equality
-
-Juxtaposition Doesn't Work
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Juxtaposition doesn't work for multiplication.
-For example, the following will **not** work:
-
-.. code-block:: python
-
-    # The last two lines will error
-    x = 3
-    y = 2x
-    z = 2(3 + x)
-
-You can rewrite the code above to work by explicitly multiplying:
-
-.. code-block:: python
-
-    # This code works. Although it doesn't print anything.
-    x = 3
-    y = 2 * x
-    z = 2 * (3 + x)
-
-Easy enough, just remember to use ``*`` any time you want to multiply.
-
-Assignment Operators
-^^^^^^^^^^^^^^^^^^^^
-
-The ``=`` doesn't work the same as in algebra. The ``=`` evaluates what is on
-the right, and puts it in the variable on the left. For example:
-
-.. code-block:: python
-
-    # This works
-    x = 3 + 4
-
-    # This doesn't work because the only thing that can be on the left of
-    # the = is one variable.
-    3 + 4 = x
-
-    # This works
-    x = 5
-    y = 6
-    z = x + 2 * y
-
-    # This doesn't
-    x = 5
-    y = 6
-    2 * z = x + y
-
-This allows us to do some strange things we can't do in algebra!
-
-.. code-block:: python
-
-    # This works, and prints "3"
-    x = 3
-    print(x)
-
-    # This works too, even if it is invalid in algebra.
-    # It takes the value of x (which is 3) and adds one. Then stores
-    # the result (4) back in x. So we'll print "4".
-    x = x + 1
-    print(x)
-
-
-The ``=`` sign is also considered an operator. Specifically an "assignment operator."
-Here are some other "assignment" operators:
-
-========== =====================================
-Operator   Description
-========== =====================================
-``=``      Assignment
-``+=``     Increment
-``-=``     Decrement
-``*=``     Multiply/Add
-========== =====================================
-
-.. code-block:: python
-
-    # This works, and prints "3"
-    x = 3
-    print(x)
-
-    # Make x bigger by one
-    x = x + 1
-    print(x)
-
-    # Make x bigger by one, just like before
-    x += 1
-    print(x)
-
-    # Make x smaller by five
-    x -= 5
-    print(x)
-
-Using Expressions In Function Calls
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We can use expressions even in the calls that we make. For example, what if we want
-to draw a circle in the center of the screen?
-
-We could do something like:
 
 .. code-block:: python
     :linenos:
-    :emphasize-lines: 12-15
-
-    import arcade
-
-    SCREEN_WIDTH = 800
-    SCREEN_HEIGHT = 600
-
-    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
-
-    arcade.set_background_color(arcade.color.WHITE)
-
-    arcade.start_render()
-
-    # Instead of this:
-    # arcade.draw_circle_filled(400, 300, 50, arcade.color.FOREST_GREEN)
-    # do this:
-    arcade.draw_circle_filled(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 50, arcade.color.FOREST_GREEN)
-
-    arcade.finish_render()
-    arcade.run()
-
-Order of Operations
-^^^^^^^^^^^^^^^^^^^
-
-Python will evaluate expressions using the same order of operations that
-are expected in standard mathematical expressions. For example this
-equation does not correctly calculate the average:
-
-.. code-block:: python
-
-    average = 90 + 86 + 71 + 100 + 98 / 5
-
-The first operation done is 98/5. The computer calculates:
-
-.. math::
-
-   90+86+71+100+\frac{98}{5}
-
-rather than the desired:
-
-.. math::
-
-   \dfrac{90+86+71+100+98}{5}
-
-By using parentheses this problem can be fixed:
-
-.. code-block:: python
-
-    average = (90 + 86 + 71 + 100 + 98) / 5
-
-Creating Simple Functions
--------------------------
-
-.. code-block:: python
 
     def print_hello():
+        """ This is a comment that describes the function. """
         print("Hello!")
 
 
@@ -409,7 +42,12 @@ Creating Simple Functions
     print_hello()
 
 
+You can define and use multiple functions. But all function definitions should
+go before the main code.
+
+
 .. code-block:: python
+    :linenos:
 
     def print_hello():
         print("Hello!")
@@ -422,7 +60,14 @@ Creating Simple Functions
     print_hello()
     print_goodbye()
 
+
+Actually, almost *all* code should go in a function. It is a good practice
+to put the main starting point of your program in a function called ``main``
+and call it.
+
 .. code-block:: python
+    :emphasize-lines: 9-12, 16
+    :linenos:
 
     def print_hello():
         print("Hello!")
@@ -433,13 +78,24 @@ Creating Simple Functions
 
 
     def main():
+        """ This is my main program function """
         print_hello()
         print_goodbye()
 
 
+    # Run the main program
     main()
 
+
+An even better way of writing this is with a check to make sure we are trying
+to run this file, and not import it. The statement for this looks a little
+weird. In fact, it is weird enough I just look it up and copy/paste it any
+time I want to use it. Don't worry about understanding how it works yet.
+
+
 .. code-block:: python
+    :linenos:
+    :emphasize-lines: 14-17
 
     def print_hello():
         print("Hello!")
@@ -453,6 +109,9 @@ Creating Simple Functions
         print_hello()
         print_goodbye()
 
+
+    # Only run the main function if we are running this file. Don't run it
+    # if we are importing this file.
     if __name__ == "__main__":
         main()
 
@@ -460,15 +119,28 @@ Creating Simple Functions
 Taking In Data
 --------------
 
+Functions are even more powerful if we have them take in data.
+
+Here is a simple example that will take in a number and print it. Notice how
+I've created a new variable ``my_number`` in between the parenthesis. This
+variable will be given whatever value is passed in. In the example below, it
+is given first a ``55``, then ``25``, and finally a ``5``.
+
 .. code-block:: python
+    :linenos:
 
     def print_number(my_number):
         print(my_number)
 
 
     print_number(55)
+    print_number(25)
+    print_number(8)
+
+You can pass in multiple numbers, just separate them with a comma.
 
 .. code-block:: python
+    :linenos:
 
     def add_numbers(a, b):
         print(a, b)
@@ -476,8 +148,13 @@ Taking In Data
 
     print_number(11, 7)
 
+Occasionally, new programmers want to set the number values inside the
+function. This is wrong. Then the function would only work for those values.
+The power is in specifying the numbers outside the function. We don't want
+the function to be limited to only certain data values.
 
 .. code-block:: python
+    :linenos:
 
     # This is wrong
     def add_numbers(a, b):
@@ -505,6 +182,7 @@ For example:
 Function that returns two numbers added together
 
 .. code-block:: python
+    :linenos:
 
     # Add two numbers and return the results
     def sum_two_numbers(a, b):
@@ -551,6 +229,7 @@ Volume Cylinder Example
 Function that returns the volume of a cylinder
 
 .. code-block:: python
+    :linenos:
 
     def volume_cylinder(radius, height):
         pi = 3.141592653589
@@ -571,6 +250,7 @@ There is a big difference between a function that prints a value and a
 function that returns a value. Look at the code below and try it out.
 
 .. code-block:: python
+    :linenos:
 
     # Function that prints the result
     def sum_print(a, b):
