@@ -724,18 +724,6 @@ specify 201.
 
     my_number = random.randrange(100, 201)
 
-What if you don't want a number, but a random item? That requires a list.
-We don't cover lists in detail until a later chapter, but to give you preview of
-what selecting a random item out of a list would look like, see below:
-
-.. code-block:: python
-    :caption: Picking a random item out of a list
-    :linenos:
-
-    my_list = ["rock", "paper", "scissors"]
-    random_index = random.randrange(3)
-    print(my_list[random_index])
-
 .. _random_chance:
 
 Random Chance

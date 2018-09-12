@@ -13,10 +13,6 @@ to make a decision. Is it hot outside? Has the spaceship reached the edge of the
 screen? Has too much money been withdrawn from the account? A program can test
 for these conditions with the ``if`` statement.
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CBjtrmz7cXo" frameborder="0" allowfullscreen></iframe>
-
 Basic Comparisons
 -----------------
 
@@ -306,20 +302,78 @@ considered ``True``.
     if 0:
         print("Zero")
 
-In the code below, the first ``if`` statement appears to work. The problem is
-that it will always trigger as true even ``if`` the variable ``a`` is not equal
-to ``b``. This is because ``b`` by itself is considered ``True``.
+The ``input`` Function
+----------------------
+
+Rather than hard-coding values into our program, we can use the ``input``
+function to ask the user to type something in. The ``input`` function
+is reasonably simple to use:
 
 .. code-block:: python
     :linenos:
 
-    a = "c"
-    if a == "B" or "b":
-        print("a is equal to b. Maybe.")
+    temperature = input("What is the temperature in Fahrenheit? ")
+    print("You said the temperature was " + temperature + ".")
 
-    # This is a better way to do the if statement.
-    if a == "B" or a == "b":
-        print("a is equal to b.")
+As a parameter to ``input``, just give it text to use as a prompt. Whatever
+the user types in, is stored in the variable on the left.
+
+Note that there is a question mark and a space at the end of that string.
+If you didn't have this, what the user types in will run right up next to
+the prompt. That looks terrible. The user is tempted to type a space
+as the first part of their input, which complicates things for us later.
+
+There's one more thing we have to learn. We can't take what the user
+types in and compare it to a number. This program:
+
+.. code-block:: python
+    :linenos:
+
+    temperature = input("What is the temperature in Fahrenheit? ")
+    if temperature > 90:
+        print("It is hot outside.")
+
+...will fail with the error:
+
+.. code-block:: text
+
+    TypeError: '>' not supported between instances of 'str' and 'int'
+
+Whatever the user types in is stored as text. We also call text a "string"
+because to the computer it is just a string of characters. This is different
+than a number, and the computer does not know how to compare them.
+
+Therefore, we need to convert the input into a number. We can do with with
+either the ``int`` for integers, or the ``float`` function for numbers with a
+decimal.
+
+For example:
+
+.. code-block:: python
+    :linenos:
+
+    # Get input from the user
+    temperature = input("What is the temperature in Fahrenheit? ")
+
+    # Convert the input to an integer
+    temperature = int(temperature)
+
+    # Do our comparison
+    if temperature > 90:
+        print("It is hot outside.")
+
+You can also do it in one step by nesting the functions:
+
+.. code-block:: python
+    :linenos:
+
+    # Get input from the user
+    temperature = int(input("What is the temperature in Fahrenheit? "))
+
+    # Do our comparison
+    if temperature > 90:
+        print("It is hot outside.")
+
 
 Else and Else If
 ----------------
@@ -388,10 +442,6 @@ If you can't figure it out, see the video.
     else:
         print("It is ok outside")
     print("Done")
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uLJ7wxeaBbE" frameborder="0" allowfullscreen></iframe>
 
 .. _text-comparisons:
 
@@ -471,21 +521,6 @@ Example if Statements
 The next set of example code below runs through all the concepts talked about
 earlier. The on-line video traces through each line of code and explains how it
 works
-
-In the video I use an integrated development editor (IDE) called Eclipse. The
-default version of Eclipse doesn't work with Python, but the PyDev version does.
-The PyDev editor is available for free from:
-
-http://pydev.org/
-
-The editor is complex, but it has many options and can be a powerful environment
-to work in. Some programmers like using environments such as PyDev that can have
-so many plug-ins that will do everything but bring you coffee. Some developers
-prefer a minimalistic environment that doesn't "get in the way."
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pDpNSck2aXQ" frameborder="0" allowfullscreen></iframe>
 
 .. literalinclude:: if_statement_examples.py
     :language: python

@@ -103,7 +103,7 @@ Forking the Repository
 .. attention::
     You should only have to fork the code **once** during class. If you do it more than
     once, something is wrong. Stop before you do this and see the instructor.
-    It is a big headache for everyone if your fork more than once.
+    It is a big headache for everyone if you fork more than once.
 
 1. We are going to store our programs on-line with a website called BitBucket.
    BitBucket and a program called SourceTree are owned by a company called
@@ -142,7 +142,11 @@ Share the Repository
 1. Give read permission to the instructor ``pcraven`` for your fork so he can
    grade your assignments.
 
-.. image:: invite.png
+.. image:: invite_1.png
+
+Then
+
+.. image:: invite_2.png
 
 .. attention::
     Check the feedback on your homework. If the instructor can't get to your

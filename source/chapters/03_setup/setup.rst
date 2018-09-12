@@ -118,5 +118,8 @@ Windows 8 and 10
 ^^^^^^^^^^^^^^^^
 
 For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
-Then click the "view" tab and make sure “File name extensions” has been checked.
+Then click the "view" tab and make sure "File name extensions" has been checked.
+
+.. image:: win_10.png
+    :width: 650px
 

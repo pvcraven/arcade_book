@@ -324,7 +324,7 @@ texinfo_documents = [
 epub_title = 'Learn to Program with Arcade'
 epub_author = 'Paul Vincent Craven'
 epub_publisher = 'Paul Vincent Craven'
-epub_copyright = 'Copyright 2017 by Paul Vincent Craven'
+epub_copyright = 'Copyright 2018 by Paul Vincent Craven'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project
