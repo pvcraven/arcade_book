@@ -23,8 +23,8 @@ To create our own drawing functions we need to learn three new skills:
 * How to use variables
 * How to create simple mathematical expressions
 
-How to Define a Function
-------------------------
+About Functions
+---------------
 
 Defining a function is rather easy.
 
@@ -395,6 +395,100 @@ By using parentheses this problem can be fixed:
 .. code-block:: python
 
     average = (90 + 86 + 71 + 100 + 98) / 5
+
+Creating Simple Functions
+-------------------------
+
+.. code-block:: python
+
+    def print_hello():
+        print("Hello!")
+
+
+    print_hello()
+    print_hello()
+
+
+.. code-block:: python
+
+    def print_hello():
+        print("Hello!")
+
+
+    def print_goodbye():
+        print("Bye!")
+
+
+    print_hello()
+    print_goodbye()
+
+.. code-block:: python
+
+    def print_hello():
+        print("Hello!")
+
+
+    def print_goodbye():
+        print("Bye!")
+
+
+    def main():
+        print_hello()
+        print_goodbye()
+
+
+    main()
+
+.. code-block:: python
+
+    def print_hello():
+        print("Hello!")
+
+
+    def print_goodbye():
+        print("Bye!")
+
+
+    def main():
+        print_hello()
+        print_goodbye()
+
+    if __name__ == "__main__":
+        main()
+
+
+Taking In Data
+--------------
+
+.. code-block:: python
+
+    def print_number(my_number):
+        print(my_number)
+
+
+    print_number(55)
+
+.. code-block:: python
+
+    def add_numbers(a, b):
+        print(a, b)
+
+
+    print_number(11, 7)
+
+
+.. code-block:: python
+
+    # This is wrong
+    def add_numbers(a, b):
+        a = 11
+        b = 7
+        print(a, b)
+
+
+    print_number(11, 7)
+
+
 
 Returning and Capturing Values
 ------------------------------
