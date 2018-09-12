@@ -17,7 +17,7 @@ code, .rst-content tt, .rst-content code {
 	border: none;
 	font-size: 90%;
     color: black;
-    font-weight: heavy;
+    font-weight: bold;
     padding: 0px;
     border: none;
     background: transparent;
@@ -43,11 +43,20 @@ div[class^='highlight'] pre {
 .wy-nav-content-wrap {
     background: #fff;
 }
-.wy-side-nav-search {
-    background-color: #931a2a;
+.wy-nav-content {
+    padding: 1.5em;
 }
-.wy-side-nav-search > div.version {
-    color: #FFF;
+
+.toctree-wrapper .toctree-l1 {
+    list-style-type: none;
+    margin-left: 18px;
+}
+
+.toctree-wrapper .toctree-l2 {
+    list-style-type: none;
+}
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #931a2a;
 }
 .wy-menu-vertical {
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
