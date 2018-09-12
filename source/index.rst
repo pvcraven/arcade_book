@@ -1,5 +1,5 @@
-Arcade Academy - Learn To Program
-=================================
+Learn Python With Arcade Academy
+================================
 
 .. toctree::
    :maxdepth: 2
