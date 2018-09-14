@@ -409,7 +409,7 @@ separate variable sum to track the running total.
     total = 0
     for i in range(1, 101):
         total = total + i
-    print(sum)
+    print(total)
 
 Here's a different variation. This takes five numbers from the user and counts
 the number of times the user enters a zero:
@@ -421,6 +421,7 @@ the number of times the user enters a zero:
     for i in range(5):
         new_number = int(input( "Enter a number: "))
         if new_number == 0:
+            total += 1
     print("You entered a total of", total, "zeros")
 
 A programmer that understands the nested for loops and running totals should be

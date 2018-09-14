@@ -1,5 +1,5 @@
-Quiz Games and If Statements
-============================
+If Statements
+=============
 
 How do we tell if a player has beat the high score? How can we tell if he has
 run out of lives? How can we tell if she has the key required to open the

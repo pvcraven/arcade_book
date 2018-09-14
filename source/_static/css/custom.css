@@ -25,7 +25,7 @@ body {
     content: "Listing " counter(listing) ": ";
 }
 .code-block-caption {
-    font-family: 'Consolas', 'courier new', 'courier';
+    font-family: 'Consolas', 'courier new', 'courier', monospace;
     font-size: 15px;
 }
 code, .rst-content tt, .rst-content code {
@@ -33,14 +33,13 @@ code, .rst-content tt, .rst-content code {
 	font-size: 90%;
     color: black;
     font-weight: bold;
-    padding: 0px;
-    border: none;
+    padding: 0;
     background: transparent;
 }
 
 .rst-content div[class^='highlight'] {
     border-style: solid;
-    border-width: 2px 0px 2px 0px;
+    border-width: 2px 0 2px 0;
     background: #FCFCFC;
 }
 div[class^='highlight'] pre {
@@ -106,3 +105,4 @@ div[class^='highlight'] pre {
 .highlight .k {
     font-weight: bold;
     color: black;
+}
