@@ -302,6 +302,8 @@ considered ``True``.
     if 0:
         print("Zero")
 
+.. _input-function:
+
 The ``input`` Function
 ----------------------
 

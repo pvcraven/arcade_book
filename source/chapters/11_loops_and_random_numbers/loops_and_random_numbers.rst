@@ -111,6 +111,40 @@ Programmers often use ``i`` as for the variable name, because the ``i`` is short
 The ``range`` function controls how many times the code in the loop is run.
 In this case, five times.
 
+You aren't stuck using a specific number with the ``range`` function. This
+example asks the user how many times to print using the ``input`` function
+we talked about back in :ref:`input-function`.
+
+.. code-block:: python
+    :caption: Loop according to the user input
+    :linenos:
+
+    # Ask the user how many times to print
+    repetitions = int(input("How many times should I repeat? "))
+
+    # Loop that many times
+    for i in range(repetitions):
+        print("I will not chew gum in class.")
+
+Or you could write a function, and take in the value by a parameter:
+
+.. code-block:: python
+    :caption: Loop according to a function parameter
+    :linenos:
+
+    def print_about_gum(repetitions):
+
+        # Loop that many times
+        for i in range(repetitions):
+            print("I will not chew gum in class.")
+
+
+    def main():
+        print_about_gum(10)
+
+
+    main()
+
 The next example code will print "Please," five times and "Can I go to the
 mall?" only once. "Can I go to the mall?" is not indented so it is not part of
 the for loop and will not print until the for loop completes.
@@ -122,7 +156,9 @@ the for loop and will not print until the for loop completes.
         print("Please,")
     print("Can I go to the mall?")
 
-Output::
+Output:
+
+.. code-block:: text
 
     Please,
     Please,
@@ -143,7 +179,9 @@ part of the for loop and will repeat five times just like the word "Please,".
         print("Please,")
         print("Can I go to the mall?")
 
-Output::
+Output:
+
+.. code-block:: text
 
     Please,
     Can I go to the mall?
@@ -167,7 +205,9 @@ The code below will print the numbers 0 to 9. Notice that the loop starts at
     for i in range(10):
         print(i)
 
-Output::
+Output:
+
+.. code-block:: text
 
     0
     1
@@ -180,8 +220,8 @@ Output::
     8
     9
 
-A program does not need to name the variable i, it could be named something
-else. For example a programmer might use lineNumber if she was processing a
+A program does not need to name the variable ``i``, it could be named something
+else. For example a programmer might use ``line_number`` if she was processing a
 text file.
 
 If a programmer wants to go from 1 to 10 instead of 0 to 9, there are a couple
@@ -191,7 +231,7 @@ ending value.
 
 It does take some practice to get used to the idea that the for loop will
 include the first number, but not the second number listed. The example below
-specifies a range of (1,11), and the numbers 1 to 10 are printed. The starting
+specifies a range of (1, 11), and the numbers 1 to 10 are printed. The starting
 number 1 is included, but not the ending number of 11.
 
 .. code-block:: python
@@ -201,7 +241,9 @@ number 1 is included, but not the ending number of 11.
     for i in range(1, 11):
         print(i)
 
-Output::
+Output:
+
+.. code-block:: text
 
     1
     2
