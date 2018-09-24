@@ -111,40 +111,6 @@ Programmers often use ``i`` as for the variable name, because the ``i`` is short
 The ``range`` function controls how many times the code in the loop is run.
 In this case, five times.
 
-You aren't stuck using a specific number with the ``range`` function. This
-example asks the user how many times to print using the ``input`` function
-we talked about back in :ref:`input-function`.
-
-.. code-block:: python
-    :caption: Loop according to the user input
-    :linenos:
-
-    # Ask the user how many times to print
-    repetitions = int(input("How many times should I repeat? "))
-
-    # Loop that many times
-    for i in range(repetitions):
-        print("I will not chew gum in class.")
-
-Or you could write a function, and take in the value by a parameter:
-
-.. code-block:: python
-    :caption: Loop according to a function parameter
-    :linenos:
-
-    def print_about_gum(repetitions):
-
-        # Loop that many times
-        for i in range(repetitions):
-            print("I will not chew gum in class.")
-
-
-    def main():
-        print_about_gum(10)
-
-
-    main()
-
 The next example code will print "Please," five times and "Can I go to the
 mall?" only once. "Can I go to the mall?" is not indented so it is not part of
 the for loop and will not print until the for loop completes.
@@ -193,6 +159,40 @@ Output:
     Can I go to the mall?
     Please,
     Can I go to the mall?
+
+You aren't stuck using a specific number with the ``range`` function. This
+example asks the user how many times to print using the ``input`` function
+we talked about back in :ref:`input-function`.
+
+.. code-block:: python
+    :caption: Loop according to the user input
+    :linenos:
+
+    # Ask the user how many times to print
+    repetitions = int(input("How many times should I repeat? "))
+
+    # Loop that many times
+    for i in range(repetitions):
+        print("I will not chew gum in class.")
+
+Or you could write a function, and take in the value by a parameter:
+
+.. code-block:: python
+    :caption: Loop according to a function parameter
+    :linenos:
+
+    def print_about_gum(repetitions):
+
+        # Loop that many times
+        for i in range(repetitions):
+            print("I will not chew gum in class.")
+
+
+    def main():
+        print_about_gum(10)
+
+
+    main()
 
 The code below will print the numbers 0 to 9. Notice that the loop starts at
 0 and does not include the number 10. It is natural to assume that

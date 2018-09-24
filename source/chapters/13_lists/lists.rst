@@ -17,42 +17,46 @@ So far this book has shown four types of data:
 * Floating point
 * Boolean
 
-Python can display what type of data a value is with the type function.
-
-This type function isn't useful for other programming in this book, but it is
-good to demonstrate the types of data introduced so far. Type the following
-into the interactive IDLE shell. (Don't create a new window and type this in
-as a program; it won't work.)
+Python can display what type of data a value is with the ``type`` function.
+For example, what type of data is a ``3``?
 
 .. code-block:: python
 
-    type(3)
-    type(3.145)
-    type("Hi there")
-    type(True)
-
+    # Print the type of data a 3 is:
+    print(type(3))
 
 .. code-block:: text
 
-    >>> type(3)
-    <class 'int'>
+   <class 'int'>
 
-    >>> type(3.145)
-    <class 'float'>
+This type function isn't useful for other programming in this book, but it is
+good to demonstrate the types of data introduced so far.
 
-    >>> type("Hi there")
-    <class 'str'>
+Here we set x to the four types of data we've used so far, and call the
+``type`` command to see how Python classifies that data:
 
-    >>> type(True)
-    <class 'bool'>
-
-It is also possible to use the type function on a variable to see what kind of
-data is in it.
-
-.. code-block:: text
+.. code-block:: python
 
     x = 3
-    type(x)
+    print("x =", x, "and is of type:", type(x))
+
+    x = 3.145
+    print("x =", x, "and is of type:", type(x))
+
+    x = "Hi there"
+    print("x =", x, "and is of type:", type(x))
+
+    x = True
+    print("x =", x, "and is of type:", type(x))
+
+The output:
+
+.. code-block:: text
+
+    x = 3 and is of type: <class 'int'>
+    x = 3.145 and is of type: <class 'float'>
+    x = Hi there and is of type: <class 'str'>
+    x = True and is of type: <class 'bool'>
 
 .. note::
 
@@ -66,8 +70,18 @@ commands in the interactive Python shell and see what is displayed:
 
 .. code-block:: python
 
-    type(  (2, 3, 4, 5) )
-    type(  [2, 3, 4, 5] )
+    x = (2, 3, 4, 5)
+    print("x =", x, "and is of type:", type(x))
+
+    x = [2, 3, 4, 5]
+    print("x =", x, "and is of type:", type(x))
+
+The output:
+
+.. code-block:: text
+
+    x = (2, 3, 4, 5) and is of type: <class 'tuple'>
+    x = [2, 3, 4, 5] and is of type: <class 'list'>
 
 Working With Lists
 ------------------
@@ -79,20 +93,32 @@ a list on the computer?
 
     Even computers use lists
 
-Try these examples using IDLE's command line. To create a list and print it out,
+To create a list and print it out,
 try the following:
+
+.. code-block:: python
+
+    x = [1, 2]
+    print(x)
+
+The output:
 
 .. code-block:: text
 
-    >>> x = [1,2]
-    >>> print(x)
     [1, 2]
 
 To print an individual element in a list:
 
+
+
+.. code-block:: python
+
+    print(x[0])
+
+The output:
+
 .. code-block:: text
 
-    >>> print(x[0])
     1
 
 This number with the item's location is called the index. Note that list
@@ -126,29 +152,38 @@ location of a particular value.
 A program can assign new values to an individual element in a list. In the case
 below, the first spot at location zero (not one) is assigned the number 22.
 
+
+.. code-block:: python
+    x = [1, 2]
+    print(x)
+
+    x[0] = 22
+    print(x)
+
 .. code-block:: text
 
-    >>> x[0] = 22
-    >>> print(x)
+    [1, 2]
     [22, 2]
 
 Also, a program can create a "tuple." This data type works just like a list, but
 with two differences. First, it is created with parentheses rather than square
 brackets. Second, it is not possible to change the tuple once created. See below:
 
+.. code-block:: python
+
+    x = (1, 2)
+    print(x)
+
+    x[0] = 22
+    print(x)
+
 .. code-block:: text
 
-    >>> x = (1, 2)
-    >>> print(x)
-    (1, 2)
-    >>> print(x[0])
-    1
-    >>> x[0] = 22
+    [1, 2]
     Traceback (most recent call last):
-      File "<pyshell#18>", line 1, in <module>
+      File "<pyshell#18>", line 4, in <module>
         x[0] = 22
     TypeError: 'tuple' object does not support item assignment
-    >>>
 
 As can be seen from the output of the code above, we can't assign an item in
 the tuple a new value. Why would we want this limitation? First, the computer
@@ -214,7 +249,7 @@ list, but not in sublists.
 
 .. code-block:: python
 
-    my_list = [ [2,3], [4,3], [6,7] ]
+    my_list = [[2, 3], [4, 3], [6, 7]]
     for item in my_list:
         print(item)
 
@@ -305,7 +340,9 @@ Creating a list of numbers from user input
 
 .. code-block:: python
 
-    my_list = [] # Empty list
+    # Create an empty list
+    my_list = []
+
     for i in range(5):
         user_input = input( "Enter an integer: ")
         user_input = int(user_input)
@@ -349,7 +386,7 @@ Creating a running total of an array is a common operation. Here's how it is don
     :linenos:
 
     # Copy of the array to sum
-    my_list = [5,76,8,5,3,3,56,5,23]
+    my_list = [5, 76, 8, 5, 3, 3, 56, 5, 23]
 
     # Initial sum should be zero
     list_total = 0
