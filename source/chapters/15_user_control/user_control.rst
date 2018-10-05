@@ -1,4 +1,4 @@
-.. _user-control:
+.. _window-class:
 
 Using the Window Class
 ======================
