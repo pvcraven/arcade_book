@@ -155,12 +155,22 @@ Joystick Values
 ---------------
 
 After this, you can get the position of the game controller joystick by calling
-``self.joystick.x`` and ``self.joystick.y``. The values will be between -1 and +1,
-with 0 being a centered joystick.
+``self.joystick.x`` and ``self.joystick.y``.
 
-The x-axis numbers will be negative if the stick goes left, positive for right.
+Try this, combined with the initialization code from above:
 
-The y-axis numbers will be opposite of what you might expect. Negative for up, positive for down.
+.. literalinclude:: move_with_game_controller_print.py
+    :caption: move_with_game_controller_print.py
+    :language: python
+    :linenos:
+    :emphasize-lines: 62-69, 77-81
+
+Run the program and see the values it prints out for your game controller
+as you move the joystick on it around.
+
+* The values will be between -1 and +1, with 0 being a centered joystick.
+* The x-axis numbers will be negative if the stick goes left, positive for right.
+* The y-axis numbers will be opposite of what you might expect. Negative for up, positive for down.
 
 .. figure:: c.jpg
 
@@ -190,26 +200,60 @@ The y-axis numbers will be opposite of what you might expect. Negative for up, p
 
     Up/Right (1, -1)
 
+We can move the ball by adding the following code to the ``update``:
+
+.. code-block:: python
+    :emphasize-lines: 7-8
+
+    def update(self, delta_time):
+
+        # Update the position according to the game controller
+        if self.joystick:
+            print(self.joystick.x, self.joystick.y)
+
+            self.ball.change_x = self.joystick.x
+            self.ball.change_y = -self.joystick.y
+
+Notice the ``-`` we put in front of setting the y vector. If we don't do this,
+the ball will move opposite of what we expect when going up/down. This is because
+the joystick has y values mapped opposite of how we'd normally expect. There's
+a long story to that, which I will not bore you with now.
+
+But with this code our ball moves *so slow*. How do we speed it up? We can
+make it run five times faster by multiplying by five if we want.
+
+.. code-block:: python
+    :emphasize-lines: 7-8
+
+    def update(self, delta_time):
+
+        # Update the position according to the game controller
+        if self.joystick:
+            print(self.joystick.x, self.joystick.y)
+
+            self.ball.change_x = self.joystick.x * 5
+            self.ball.change_y = -self.joystick.y * 5
+
+Or better
+yet, define a constant variable at the top of your program and use that.
+In our final example below, we'll do just that.
 
 Deadzone
 --------
 
-Actually, a centered joystick might have a value not at 0, but at 0.0001 or some
+What if your ball 'drifts' when you have the joystick centered?
+
+Joysticks are mechanical.
+A centered joystick might have a value not at 0, but at 0.0001 or some
 small number. This will make for a small "drift" on a person's character. We often
 counteract this by having a "dead zone" where if the number is below a certain
 value, we just assume it is zero to eliminate the drift.
 
-Example
--------
-
-If you want to move faster than one pixel per frame, then just multiply the
-``self.joystick.x`` times five and you'll be going five times faster.
-
-Here is a full example:
+See the highlighted lines for how we take care of the dead zone:
 
 .. literalinclude:: move_with_game_controller.py
     :caption: move_with_game_controller.py
     :language: python
     :linenos:
-    :emphasize-lines: 59-69, 77-94
+    :emphasize-lines: 6, 82-92
 
