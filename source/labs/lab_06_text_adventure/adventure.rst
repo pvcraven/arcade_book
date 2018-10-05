@@ -116,17 +116,19 @@ students that I find on-line. Make sure your work is your own.
     list in a list the index goes after the first index.
     Don't do this: ``[current_room[0]]``, do ``[current_room][0]``
 
-::
+..code-block:: text
 
     You are in a room. There is a passage to the north.
 
 11. Create a variable called ``done`` and set it to ``False``. Then put the
     printing of the room description in a ``while`` loop that repeats until ``done`` is
-    set to ``True``.
+    set to ``True``. We won't set ``done`` to ``True`` yet though.
 12. Before printing the description, add a code to print a blank line. This
     will make it visually separate each turn when playing the game.
 13. After printing the room description, add a line of code that asks the user
-    what they want to do.
+    what they want to do. Use the ``input`` statement. Keep in mind that you will
+    be entering letters, therefore you will *not* want to convert what the user enters
+    to an integer or floating point number.
 14. Add an ``if`` statement to see if the user wants to go north. You may need
     to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`.
 15. If the user wants to go north, create a variable called ``next_room`` and
