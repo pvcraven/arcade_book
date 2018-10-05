@@ -20,6 +20,7 @@ Chapters
    13_lists/lists
    14_classes/classes
    15_user_control/user_control
+   15b_user_control/user_control
    16_sounds/sounds
    17_sprites/sprites
    18_sprites_and_walls/sprites_and_walls

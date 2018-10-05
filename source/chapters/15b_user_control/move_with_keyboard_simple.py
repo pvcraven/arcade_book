@@ -2,8 +2,7 @@ import arcade
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
-MOVEMENT_MULTIPLIER = 5
-DEAD_ZONE = 0.02
+MOVEMENT_SPEED = 3
 
 
 class Ball:
@@ -26,19 +25,6 @@ class Ball:
         self.position_y += self.change_y
         self.position_x += self.change_x
 
-        # See if the ball hit the edge of the screen. If so, change direction
-        if self.position_x < self.radius:
-            self.position_x = self.radius
-
-        if self.position_x > SCREEN_WIDTH - self.radius:
-            self.position_x = SCREEN_WIDTH - self.radius
-
-        if self.position_y < self.radius:
-            self.position_y = self.radius
-
-        if self.position_y > SCREEN_HEIGHT - self.radius:
-            self.position_y = SCREEN_HEIGHT - self.radius
-
 
 class MyGame(arcade.Window):
 
@@ -56,45 +42,35 @@ class MyGame(arcade.Window):
         # Create our ball
         self.ball = Ball(50, 50, 0, 0, 15, arcade.color.AUBURN)
 
-        # Get a list of all the game controllers that are plugged in
-        joysticks = arcade.get_joysticks()
-
-        # If we have a game controller plugged in, grab it and
-        # make an instance variable out of it.
-        if joysticks:
-            self.joystick = joysticks[0]
-            self.joystick.open()
-        else:
-            print("There are no joysticks.")
-            self.joystick = None
-
     def on_draw(self):
-
         """ Called whenever we need to draw the window. """
         arcade.start_render()
         self.ball.draw()
 
     def update(self, delta_time):
-        if self.joystick:
-
-            # Set a "dead zone" to prevent drive from a centered joystick
-            if abs(self.ball.change_x) < DEAD_ZONE:
-                self.ball.change_x = 0
-            else:
-                self.ball.change_x = self.joystick.x * MOVEMENT_MULTIPLIER
-
-            # Set a "dead zone" to prevent drive from a centered joystick
-            if abs(self.ball.change_y) < DEAD_ZONE:
-                self.ball.change_y = 0
-            else:
-                self.ball.change_y = -self.joystick.y * MOVEMENT_MULTIPLIER
-
         self.ball.update()
+
+    def on_key_press(self, key, modifiers):
+        """ Called whenever the user presses a key. """
+        if key == arcade.key.LEFT:
+            self.ball.change_x = -MOVEMENT_SPEED
+        elif key == arcade.key.RIGHT:
+            self.ball.change_x = MOVEMENT_SPEED
+        elif key == arcade.key.UP:
+            self.ball.change_y = MOVEMENT_SPEED
+        elif key == arcade.key.DOWN:
+            self.ball.change_y = -MOVEMENT_SPEED
+
+    def on_key_release(self, key, modifiers):
+        """ Called whenever a user releases a key. """
+        if key == arcade.key.LEFT or key == arcade.key.RIGHT:
+            self.ball.change_x = 0
+        elif key == arcade.key.UP or key == arcade.key.DOWN:
+            self.ball.change_y = 0
 
 
 def main():
     window = MyGame(640, 480, "Drawing Example")
-
     arcade.run()
 
 

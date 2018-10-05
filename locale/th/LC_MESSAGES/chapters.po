@@ -5271,7 +5271,7 @@ msgid "Here's a full example:"
 msgstr ""
 
 #: ../../source/chapters/09_user_control/user_control.rst:241
-msgid "move_with_keyboard.py"
+msgid "move_with_keyboard_edge_detect.py"
 msgstr ""
 
 #: ../../source/chapters/09_user_control/user_control.rst:247

@@ -65,11 +65,6 @@ by the time they finished the semester.
 
 .. raw:: html
 
-=======
-Here are some videos of games students have created in prior semesters:
-
-.. raw:: html
-
   <figure class='video_float_right'><iframe width="400" height="300" src="https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYMKgRRhWk0cDhVd5Ev52T1" frameborder="0" allowfullscreen></iframe><figcaption>Video: Spring 2018 Game Projects</figcaption></figure>
 
   <figure class='video_float_right'><iframe width="400" height="300" src="https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ub1tPayFjz7w-LCTQ_gYs7V" frameborder="0" allowfullscreen></iframe><figcaption>Video: Spring 2017 Game Projects</figcaption></figure>

@@ -154,6 +154,7 @@ below, the first spot at location zero (not one) is assigned the number 22.
 
 
 .. code-block:: python
+
     x = [1, 2]
     print(x)
 

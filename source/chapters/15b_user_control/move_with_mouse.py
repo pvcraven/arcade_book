@@ -47,7 +47,6 @@ class MyGame(arcade.Window):
 
 def main():
     window = MyGame(640, 480, "Drawing Example")
-
     arcade.run()
 
 
