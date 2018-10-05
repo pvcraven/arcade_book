@@ -27,7 +27,7 @@ Without classes, our Python code to store this data might look like:
     :linenos:
 
     name = "Link"
-    sex = "Male"
+    outfit = "Green"
     max_hit_points = 50
     current_hit_points = 50
 
@@ -51,12 +51,12 @@ describe our character. In this case we've added ``max_speed``:
     :linenos:
 
     name = "Link"
-    sex = "Male"
+    outfit = "Green"
     max_hit_points = 50
     current_hit_points = 50
     max_speed = 10
 
-    def display_character(name, sex, max_hit_points, current_hit_points, max_speed):
+    def display_character(name, outfit, max_hit_points, current_hit_points, max_speed):
         print(name, sex, max_hit_points, current_hit_points)
 
 In example above, there is only one function. But in a large video game, we
@@ -89,7 +89,7 @@ For example, we can *define* a class representing a character in a game:
         def __init__(self):
             """ This is a method that sets up the variables in the object. """
             self.name = ""
-            self.sex = ""
+            outfit = "Green"
             self.max_hit_points = 0
             self.current_hit_points = 0
             self.max_speed = 0
