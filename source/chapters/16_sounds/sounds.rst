@@ -55,6 +55,7 @@ right away and keeps going. This was a similar issue that we had when we opened
 a window, and we can solve it the same way:
 
 .. code-block:: python
+    :linenos:
 
     import arcade
 
@@ -74,6 +75,8 @@ sound once during the ``__init__``. When the user hits the space bar, that
 is when we trigger the sound to play.
 
 .. code-block:: python
+    :linenos:
+    :emphasize-lines: 10, 16
 
     import arcade
 

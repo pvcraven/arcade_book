@@ -143,8 +143,8 @@ We use a command built into the parent ``Window`` class called
 ``set_mouse_visible`` to make the mouse not visible. Finally we set the
 background color.
 
-The Setup Function
-^^^^^^^^^^^^^^^^^^
+The `setup` Function
+^^^^^^^^^^^^^^^^^^^^
 
 Next up, we will create a ``setup`` method. This will create our sprites and get
 our game set up. We do this in a different method than ``__init__`` so that
@@ -158,7 +158,7 @@ code that calls the ``setup`` function near the end: ``window.setup()``.
 .. literalinclude:: sprite_sample_player.py
     :caption: Sprite Sample With Player
     :language: python
-    :emphasize-lines: 36-51, 70
+    :emphasize-lines: 36-51, 56-64, 70
     :linenos:
 
 
