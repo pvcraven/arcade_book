@@ -23,7 +23,8 @@ Chapters
    15b_user_control/user_control
    16_sounds/sounds
    17_sprites/sprites
-   17b_shooting_sprites/shooting_sprites
+   17b_moving_sprites/moving_sprites
+   17c_shooting_sprites/shooting_sprites
    18_sprites_and_walls/sprites_and_walls
    19_libraries_and_modules/libraries_and_modules
    20_searching/searching
