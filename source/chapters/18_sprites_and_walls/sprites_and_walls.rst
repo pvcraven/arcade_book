@@ -3,8 +3,6 @@
 Sprites and Walls
 =================
 
-(Note: Show how to place individual blocks. Blocks in a row, in a column. Use a list.)
-
 Setup
 -----
 
