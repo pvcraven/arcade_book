@@ -61,7 +61,7 @@ class MyGame(arcade.Window):
 
             # Position the coin
             coin.center_x = random.randrange(SCREEN_WIDTH)
-            coin.center_y = random.randrange(120, SCREEN_HEIGHT)
+            coin.center_y = random.randrange(150, SCREEN_HEIGHT)
 
             # Add the coin to the lists
             self.coin_list.append(coin)
@@ -79,8 +79,8 @@ class MyGame(arcade.Window):
 
         # Draw all the sprites.
         self.coin_list.draw()
-        self.bullet_list.draw()
         self.player_list.draw()
+        self.bullet_list.draw()
 
         # Render the text
         arcade.draw_text(f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14)
@@ -95,20 +95,7 @@ class MyGame(arcade.Window):
         """
         Called whenever the mouse button is clicked.
         """
-
-        # Create a bullet
-        bullet = arcade.Sprite("laserBlue01.png", SPRITE_SCALING_LASER)
-
-        # The image points to the right, and we want it to point up. So
-        # rotate it.
-        bullet.angle = 90
-
-        # Position the bullet
-        bullet.center_x = self.player_sprite.center_x
-        bullet.bottom = self.player_sprite.top
-
-        # Add the bullet to the appropriate lists
-        self.bullet_list.append(bullet)
+        pass
 
     def update(self, delta_time):
         """ Movement and game logic """
@@ -116,25 +103,6 @@ class MyGame(arcade.Window):
         # Call update on all sprites
         self.coin_list.update()
         self.bullet_list.update()
-
-        # Loop through each bullet
-        for bullet in self.bullet_list:
-
-            # Check this bullet to see if it hit a coin
-            hit_list = arcade.check_for_collision_with_list(bullet, self.coin_list)
-
-            # If it did, get rid of the bullet
-            if len(hit_list) > 0:
-                bullet.kill()
-
-            # For every coin we hit, add to the score and remove the coin
-            for coin in hit_list:
-                coin.kill()
-                self.score += 1
-
-            # If the bullet flies off-screen, remove it.
-            if bullet.bottom > SCREEN_HEIGHT:
-                bullet.kill()
 
 
 def main():
