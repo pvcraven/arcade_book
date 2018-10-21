@@ -22,7 +22,10 @@ and position multiple items.
   change the character. 4 points, one point for each graphic used that wasn't
   part of the base example.
 * Step 5: Add coins (or something) for the user to collect. 4 points, based on
-  the complexity of the coin layout.
+  the complexity of the coin layout. It is ok if the coins appear on top of the
+  walls. But if if bothers you, see the "Important Part" around line 75 or so of
+  the example
+  `sprite_no_coins_on_walls.py <http://arcade.academy/examples/sprite_no_coins_on_walls.html>`_.
 * Step 6: Keep score of how many coins were collected, and display on-screen.
   4 points.
 * Step 7: Add a sound to play each time the user collects a coin. 2 points.
