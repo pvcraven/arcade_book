@@ -17,7 +17,9 @@ and position multiple items.
   allow the user to go off-screen. 6 points, based on how complex the
   arrangement. See :ref:`individual_wall_placement`, :ref:`loop_wall_placement`,
   and :ref:`list_wall_placement` for ideas. Just DON'T do the same thing as
-  examples. Make it your own.
+  examples. Make it your own. Also, if you have more than one type of wall block,
+  that's great. But you don't need more than one wall list. The physics engine
+  requires all walls be kept in the same list.
 * Step 4: Update the graphics. Use multiple types of blocks for the walls. Maybe
   change the character. 4 points, one point for each graphic used that wasn't
   part of the base example.
