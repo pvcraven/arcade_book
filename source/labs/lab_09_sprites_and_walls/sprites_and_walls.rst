@@ -20,7 +20,8 @@ and position multiple items.
   examples. Make it your own.
 * Step 4: Update the graphics. Use multiple types of blocks for the walls. Maybe
   change the character. 4 points, one point for each graphic used that wasn't
-  part of the base example.
+  part of the base example. Remember to put a quick citation in your program just
+  before you load graphics or sounds.
 * Step 5: Add coins (or something) for the user to collect. 4 points, based on
   the complexity of the coin layout.
 * Step 6: Keep score of how many coins were collected, and display on-screen.
