@@ -9,7 +9,7 @@ libraries are written by someone else and brought into the project so that
 the programmer does not have to "reinvent the wheel." In Python the term used
 to describe a library of code is module.
 
-By using ``import pygame`` and ``import random``, the programs created so far have
+By using ``import arcade`` and ``import random``, the programs created so far have
 already used modules. A library can be made up of multiple modules that can be
 imported. Often a library only has one module, so these words can sometimes be
 used interchangeably.
@@ -73,8 +73,11 @@ we have a function in a file named ``test.py``, and a call to that function:
     def foo():
         print("foo!")
 
-    # Foo call
-    foo()
+    def main():
+        # Foo call
+        foo()
+
+    main()
 
 Yes, this program is not too long to be in one file. But if both the function
 and the main program code were long, it would be different. If we had several
@@ -101,8 +104,11 @@ directory as ``test.py``.
     :linenos:
     :caption: test.py that doesn't work
 
-    # Foo call that doesn't work
-    foo()
+    def main():
+        # Foo call that doesn't work
+        foo()
+
+    main()
 
 Unfortunately it isn't as simple as this. The file ``test.py`` does not know to
 go and look at the ``my_functions.py`` file and import it. We have to add the
@@ -115,8 +121,11 @@ command to import it:
     # Import the my_functions.py file
     import my_functions
 
-    # Foo call that still doesn't work
-    foo()
+    def main():
+        # Foo call that still doesn't work
+        foo()
+
+    main()
 
 That still doesn't work. What are we missing? Just like when we import
 arcade, we have to put the package name in front of the function. Like this:
@@ -128,8 +137,11 @@ arcade, we have to put the package name in front of the function. Like this:
     # Import the my_functions.py file
     import my_functions
 
-    # Foo call that does work
-    my_functions.foo()
+    def main():
+        # Foo call that does work
+        my_functions.foo()
+
+    main()
 
 This works because ``my_functions.`` is prepended to the function call.
 
@@ -172,8 +184,11 @@ appears before the function name in the code below:
     import student_functions
     import financial_functions
 
-    student_functions.print_report()
-    financial_functions.print_report()
+    def main():
+        student_functions.print_report()
+        financial_functions.print_report()
+
+    main()
 
 So now we can see why this might be needed. But what if you don't have name
 collisions? Typing in a namespace each and every time can be tiresome. You
@@ -189,7 +204,10 @@ let's remove the original import and replace it with a new type of import:
     # import foo
     from my_functions import *
 
-    foo()
+    def main():
+        foo()
+
+    main()
 
 This works even without ``my_functions.`` prepended to the function call. The
 asterisk is a wildcard that will import all functions from ``my_functions``.
