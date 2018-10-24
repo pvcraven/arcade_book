@@ -279,8 +279,9 @@ A command like this would shift the whole "view" of the window 200 pixels to
 the right:
 
 .. code-block:: python
-
-    arcade.set_viewport(200, 0, 200 + SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1)
+    
+    # Specify viewport size by (left, right, bottom, top)
+    arcade.set_viewport(200, 200 + SCREEN_WIDTH - 1, 0, SCREEN_HEIGHT - 1)
 
 So with a 800 wide pixel window, we would show x-coordinates 200 - 999 instead
 of 0 - 799.

@@ -69,17 +69,17 @@ by the time they finished the semester.
 
   <figure class='video_float_right'><iframe width="400" height="300" src="https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ub1tPayFjz7w-LCTQ_gYs7V" frameborder="0" allowfullscreen></iframe><figcaption>Video: Spring 2017 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYp9yKJnGdBN-66di_5G4d2' style='border:none;'></iframe><figcaption>Video: Summer 2015 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYp9yKJnGdBN-66di_5G4d2' style='border:none;'></iframe><figcaption>Video: Summer 2015 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ubHF8yQe0kly1_00sM8S8Pv' style='border:none;'></iframe><figcaption>Video: Spring 2015 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8ubHF8yQe0kly1_00sM8S8Pv' style='border:none;'></iframe><figcaption>Video: Spring 2015 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uZmDrHG5TxL_GboYP1I16sr' style='border:none;'></iframe><figcaption>Video: Fall 2014 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uZmDrHG5TxL_GboYP1I16sr' style='border:none;'></iframe><figcaption>Video: Fall 2014 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYkfd5FSGRfPIbA5BbK03Lb' style='border:none;'></iframe><figcaption>Video: Spring 2014 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYkfd5FSGRfPIbA5BbK03Lb' style='border:none;'></iframe><figcaption>Video: Spring 2014 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uZZjNv16i-v5Sgi_spcoWQS' style='border:none;'></iframe><figcaption>Video: Fall 2013 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uZZjNv16i-v5Sgi_spcoWQS' style='border:none;'></iframe><figcaption>Video: Fall 2013 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYtUcblVH0fxKjobSsT32cp' style='border:none;'></iframe><figcaption>Video: Fall 2012 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PLUjR0nhln8uYtUcblVH0fxKjobSsT32cp' style='border:none;'></iframe><figcaption>Video: Fall 2012 Game Projects</figcaption></figure>
 
-  <figure class='video_float_right'><iframe width='400' height='300' src='http://www.youtube.com/embed/videoseries?list=PL3765F6910B016383' style='border:none;'></iframe><figcaption>Video: Spring 2012 Game Projects</figcaption></figure>
+  <figure class='video_float_right'><iframe width='400' height='300' src='https://www.youtube.com/embed/videoseries?list=PL3765F6910B016383' style='border:none;'></iframe><figcaption>Video: Spring 2012 Game Projects</figcaption></figure>
 
