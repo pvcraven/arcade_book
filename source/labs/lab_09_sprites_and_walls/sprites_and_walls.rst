@@ -45,6 +45,19 @@ and position multiple items.
     sprites to update, update only those sprites. For example:
     ``self.coin_list.update()``.
 
+Additional Challenges
+---------------------
+
+These aren't required for the lab, but I've had students ask in prior
+years how to do these:
+
+* If you are interested in having the player be able to face left or right,
+  see the
+  `Sprite Face Left or Right <http://arcade.academy/examples/sprite_face_left_or_right.html>`_
+  example.
+* Want to animate walking? Look at the
+  `Animate your sprites <http://arcade.academy/examples/sprite_move_animation.html>`_. example.
+
 
 .. _Move with Walls: http://arcade.academy/examples/sprite_move_walls.html
 .. _Move with a Scrolling Screen: http://arcade.academy/examples/sprite_move_scrolling.html
