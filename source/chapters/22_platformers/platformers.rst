@@ -6,8 +6,8 @@ Platformers
 Ever wanted to create your own platformer?
 It isn't too hard! Here's an example to get started.
 
-Map File The Hard Way
----------------------
+Map File
+--------
 
 Creating The Map
 ~~~~~~~~~~~~~~~~
@@ -164,18 +164,54 @@ can read about the `csv library` in the official documentation.
 
 .. _csv library: https://docs.python.org/3/library/csv.html
 
-In the listing below, we've put this into a function called ``get_map``.
-We use that grid and position our sprites based on the grid. See the highlighted
-sections below:
+Platformer Physics Engine
+-------------------------
+
+In prior chapters, we've used the ``PhysicsEngineSimple`` to keep from running
+through walls. There's another engine called ``PhysicsEnginePlatformer`` for
+platformers.
+
+This engine has two important additions:
+
+1. Gravity
+2. ``can_jump`` method
+
+Gravity
+~~~~~~~
+
+Creating the platformer physics engine requires a gravity constant. I recommend
+0.5 to start with. This is your acceleration in pixels per frame.
+
+.. code-block:: python
+
+    self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
+                                                         self.wall_list,
+                                                         gravity_constant=GRAVITY)
+
+Jumping
+~~~~~~~
+
+Also, you often need to know if there is ground beneath your character to
+know if she can jump. The physics engine has a method for this:
+
+.. code-block:: python
+
+    if self.physics_engine.can_jump():
+        self.player_sprite.change_y = JUMP_SPEED
+
 
 Python Program
 --------------
+
+In the highlighted code for the listing below,
+see how we've implemented these concepts to create a platformer
+
 
 .. literalinclude:: sprite_tiled_map_simple.py
     :caption: Platformer example, simple
     :language: python
     :linenos:
-    :emphasize-lines: 25-56, 99-130
+    :emphasize-lines: 25-56, 98-99, 101-128, 130-133, 162
 
 Other Examples
 --------------

@@ -127,6 +127,7 @@ class MyWindow(arcade.Window):
                     # Add the sprite
                     self.wall_list.append(wall)
 
+        # Create out platformer physics engine with gravity
         self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
                                                              self.wall_list,
                                                              gravity_constant=GRAVITY)
