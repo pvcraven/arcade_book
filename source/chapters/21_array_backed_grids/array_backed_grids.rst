@@ -178,16 +178,19 @@ Populating the Grid
 .. code-block:: python
     :caption: Create a 10x10 array of numbers
 
+    ROW_COUNT = 10
+    COLUMN_COUNT = 10
+
     # --- Create grid of numbers
     # Create an empty list
     self.grid = []
     # Loop for each row
-    for row in range(10):
+    for row in range(ROW_COUNT):
         # For each row, create a list that will
         # represent an entire row
         self.grid.append([])
         # Loop for each column
-        for column in range(10):
+        for column in range(COLUMN_COUNT):
             # Add a the number zero to the current row
             self.grid[row].append(0)
 
