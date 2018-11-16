@@ -129,7 +129,7 @@ game needs to be able to do.
 * `Kenney.nl`_ has many images and sounds as well.
 
 .. _OpenGameArt.org: http://opengameart.org
-.. _Kenney.nl: http://kenny.nl
+.. _Kenney.nl: http://kenney.nl
 .. _arcade.academy: http://arcade.academy/examples/index.html
 
 Requirements for Part 2
