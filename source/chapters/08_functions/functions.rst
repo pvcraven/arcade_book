@@ -146,7 +146,7 @@ You can pass in multiple numbers, just separate them with a comma.
         print(a, b)
 
 
-    print_number(11, 7)
+    add_numbers(11, 7)
 
 Occasionally, new programmers want to set the number values inside the
 function. This is wrong. Then the function would only work for those values.
@@ -163,7 +163,7 @@ the function to be limited to only certain data values.
         print(a, b)
 
 
-    print_number(11, 7)
+    add_numbers(11, 7)
 
 
 
