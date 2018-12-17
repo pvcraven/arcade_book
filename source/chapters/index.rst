@@ -19,20 +19,21 @@ Chapters
    12_advanced_looping/advanced_looping
    13_lists/lists
    14_classes/classes
-   15_user_control/user_control
-   15b_user_control/user_control
-   16_sounds/sounds
-   17_sprites/sprites
-   17b_moving_sprites/moving_sprites
-   17c_shooting_sprites/shooting_sprites
-   18_sprites_and_walls/sprites_and_walls
-   19_libraries_and_modules/libraries_and_modules
-   20_searching/searching
-   21_array_backed_grids/array_backed_grids
-   22_platformers/platformers
-   23_sorting/sorting
-   24_exceptions/exceptions
-   25_recursion/recursion
-   26_print_formatting/print_formatting
+   15_window_class/window_class
+   16_user_control/user_control
+   17_sounds/sounds
+   18_sprites_and_collisions/sprites
+   19_moving_sprites/moving_sprites
+   20_debugging/debugging
+   21_shooting_sprites/shooting_sprites
+   22_sprites_and_walls/sprites_and_walls
+   23_libraries_and_modules/libraries_and_modules
+   24_searching/searching
+   25_array_backed_grids/array_backed_grids
+   26_platformers/platformers
+   27_sorting/sorting
+   28_exceptions/exceptions
+   29_recursion/recursion
+   30_print_formatting/print_formatting
 
 
