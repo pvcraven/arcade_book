@@ -323,7 +323,7 @@ By using parentheses this problem can be fixed:
     average = (90 + 86 + 71 + 100 + 98) / 5
 
 Printing Variables
-^^^^^^^^^^^^^^^^^^
+------------------
 
 How can you print variables and text together? Say you've got a variable ``result`` and
 you want to nicely print it. Based on what we learned so far, you can do this:
