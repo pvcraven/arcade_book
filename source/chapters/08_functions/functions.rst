@@ -143,7 +143,7 @@ You can pass in multiple numbers, just separate them with a comma.
     :linenos:
 
     def add_numbers(a, b):
-        print(a, b)
+        print(a + b)
 
 
     add_numbers(11, 7)
@@ -160,7 +160,7 @@ the function to be limited to only certain data values.
     def add_numbers(a, b):
         a = 11
         b = 7
-        print(a, b)
+        print(a + b)
 
 
     add_numbers(11, 7)
@@ -278,7 +278,7 @@ function that returns a value. Look at the code below and try it out.
     # This will set x2 to the sum
     # and print it properly
     x2 = sum_return(4, 4)
-    print("x2 =", x1)
+    print("x2 =", x2)
 
 
 When first working with functions it is not unusual to get stuck looking at

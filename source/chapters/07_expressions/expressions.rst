@@ -321,3 +321,95 @@ By using parentheses this problem can be fixed:
 .. code-block:: python
 
     average = (90 + 86 + 71 + 100 + 98) / 5
+
+Printing Variables
+^^^^^^^^^^^^^^^^^^
+
+How can you print variables and text together? Say you've got a variable ``result`` and
+you want to nicely print it. Based on what we learned so far, you can do this:
+
+.. code-block:: python
+
+    answer = "bananas"
+    print(answer)
+
+But that just prints out ``bananas`` on a line by itself. Not very descriptive. What
+if we wanted:
+
+.. code-block:: text
+
+    The answer is bananas
+
+You can do this with:
+
+.. code-block:: python
+
+    answer = "bananas"
+    print("The answer is", answer)
+
+Better. But I want to add punctuation. If we do this:
+
+.. code-block:: python
+
+    answer = "bananas"
+    print("The answer is", answer, ".")
+
+We get an extra space before the period:
+
+.. code-block:: text
+
+    The answer is bananas .
+
+The ``,`` adds a space when we use it in a ``print`` statement. We don't
+always want that. We can instead use a ``+`` sign:
+
+.. code-block:: python
+
+    answer = "bananas"
+    print("The answer is" + answer + ".")
+
+Which gets rid of all the spaces:
+
+.. code-block:: text
+
+    The answer isbananas.
+
+So we need to add a space INSIDE the quotes where we want it:
+
+.. code-block:: python
+
+    answer = "bananas"
+    print("The answer is " + answer + ".")
+
+Ok, so I think I know how to print variables. Until I try this:
+
+.. code-block:: python
+
+    answer = 42
+    print("The answer is " + answer + ".")
+
+The computer doesn't know how to put text and numbers together. If you add two
+*numbers*
+``20 + 20`` you get ``40``. If you add two *strings* ``"20" + "20"`` you
+get ``2020``, but the
+computer has no idea what to do with a combo of text and numbers. So the fix
+is to use the ``str`` function which converts the number to a string (text):
+
+.. code-block:: python
+
+    answer = 42
+    print("The answer is " + str(answer) + ".")
+
+Yes, this is a bit complex. But wait! There's more! Another way to print
+variables is to use a *formatted string*. Later we will spend a whole other
+chapter on formatted strings, but they look like:
+
+.. code-block:: python
+
+    answer = 42
+    print(f"The answer is {answer}.")
+
+Note we start the string with an ``f`` before the quote, and the variable
+we want to print goes in curly braces.
+
+

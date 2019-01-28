@@ -16,6 +16,10 @@ SCREEN_HEIGHT = 600
 VIEWPORT_MARGIN = 40
 RIGHT_MARGIN = 150
 
+TILE_SIZE = 128
+SCALED_TILE_SIZE = TILE_SIZE * SPRITE_SCALING
+MAP_HEIGHT = 7
+
 # Physics
 MOVEMENT_SPEED = 5
 JUMP_SPEED = 14
@@ -121,8 +125,8 @@ class MyWindow(arcade.Window):
 
                 if item >= 0:
                     # Calculate where the sprite goes
-                    wall.left = column_index * 64
-                    wall.top = (7 - row_index) * 64
+                    wall.left = column_index * SCALED_TILE_SIZE
+                    wall.top = (MAP_HEIGHT - row_index) * SCALED_TILE_SIZE
 
                     # Add the sprite
                     self.wall_list.append(wall)
