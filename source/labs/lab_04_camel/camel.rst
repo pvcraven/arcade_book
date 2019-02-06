@@ -206,7 +206,7 @@ And not:
     thirst to zero. Otherwise print an error.
 17. In the loop, print "You are thirsty." if the user's thirst is above 4.
     Put this after your long ``if`` ... ``elif`` chain above.
-18. Print "You died of thirst!"" if the user's thirst is above 6. Set ``done``
+18. Print "You died of thirst!" if the user's thirst is above 6. Set ``done``
     to ``True``. Make sure you create your code so that the program doesn't
     print both "Your are thirsty" and "You died of thirst!" Use ``elif``
     as appropriate.
