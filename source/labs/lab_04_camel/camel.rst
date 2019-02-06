@@ -129,7 +129,9 @@ Call the ``main()`` function. Run and test the program.
    and set to ``False``. Make sure this, and everything else, is in the
    ``main`` function.
 4. Create a ``while`` loop that will keep looping while ``done`` is ``False``.
-5. Inside the loop, print out the following::
+5. Inside the loop, print out the following:
+
+.. code-block:: text
 
 	A. Drink from your canteen.
 	B. Ahead moderate speed.
@@ -145,7 +147,9 @@ Call the ``main()`` function. Run and test the program.
 
    What is your choice? Q
 
-And not::
+And not:
+
+.. code-block:: text
 
    What is your choice?Q
 
