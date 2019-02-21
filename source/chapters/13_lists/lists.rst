@@ -109,8 +109,6 @@ The output:
 
 To print an individual element in a list:
 
-
-
 .. code-block:: python
 
     print(x[0])
@@ -191,6 +189,19 @@ the tuple a new value. Why would we want this limitation? First, the computer
 can run faster if it knows the value won't change. Second, some lists we don't
 want to change, such as a list of RGB colors for red. The color red doesn't
 change, therefore an immutable tuple is a better choice.
+
+.. _create-an-empty-list:
+
+Create an Empty List
+--------------------
+
+Occasionally we need to create a list that is empty. We'll use this in a bit when
+we start with an empty list and build on it. How do I create an empty list? Easy:
+
+.. code-block:: python
+
+    # Create an empty list
+    my_list = []
 
 Iterating (Looping) Through a List
 ----------------------------------
@@ -335,11 +346,11 @@ implement a list as an array data type. But it is important to pay attention to
 your next semester data structures class and learn how all of this works.
 
 To create a list from scratch, it is necessary to create a blank list and then
-use the append function. This example creates a list based upon user input:
+use the ``append`` function to build it based upon user input:
 
-Creating a list of numbers from user input
 
 .. code-block:: python
+    :caption: Creating a list of numbers from user input
 
     # Create an empty list
     my_list = []

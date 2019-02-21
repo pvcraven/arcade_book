@@ -215,10 +215,10 @@ the value the function returned:
     # by putting "my_result =" in front of it.
     # (Use whatever variable name best describes the data,
     # don't blindly use 'my_result' for everything.)
-    my_result = sum_two_numbers(22, 15)
+    my_result = sum_two_numbers(22, 15) # <--- This line CAPTURES the return value
 
     # Now that I captured the result, print it.
-    print(my_result)
+    print(my_result) # <--- This is printing, NOT capturing.
 
 Now the result isn't lost. It is stored in `my_result`
 which we can print or use some other way.

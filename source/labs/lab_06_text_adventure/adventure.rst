@@ -84,10 +84,12 @@ Step-by-step Instructions
 
 As a reminder, at the end of the year I do scan for duplicate homework. I keep
 all homework assignments from prior semesters, and assignments from non-Simpson
-students that I find on-line. Make sure your work is your own.
+students that I find on-line. I run a program that scans for duplicates.
+Make sure your work is your own.
 
 1.  Create a ``main`` function and call the ``main`` function.
 2.  In the ``main`` function, create an empty array called ``room_list``.
+    If you've forgotten, see :ref:`create-an-empty-list`.
 3.  Create a variable called ``room``. Set it equal to an array with five elements.
     For the first element, create a string with a description of your first room.
     The last four elements will be the number of the next room if the user goes
@@ -101,7 +103,8 @@ students that I find on-line. Make sure your work is your own.
     the room variable.
 6.  Create a variable called ``current_room``. Set it to zero.
 7.  Print the ``room_list`` variable. Run the program. You should see a really long
-    list of every room in your adventure.
+    list of every room in your adventure. If you don't, make sure you are calling
+    your ``main`` function at the end of your program, and that it isn't indented.
 8.  Adjust your print statement to only print the first room (element zero) in the list.
     Note that at index 0 is the description, 1 is the room to the north, 2
     is the room to the east, etc.
@@ -116,7 +119,7 @@ students that I find on-line. Make sure your work is your own.
     list in a list the index goes after the first index.
     Don't do this: ``[current_room[0]]``, do ``[current_room][0]``
 
-..code-block:: text
+.. code-block:: text
 
     You are in a room. There is a passage to the north.
 
@@ -128,15 +131,20 @@ students that I find on-line. Make sure your work is your own.
 13. After printing the room description, add a line of code that asks the user
     what they want to do. Use the ``input`` statement. Keep in mind that you will
     be entering letters, therefore you will *not* want to convert what the user enters
-    to an integer or floating point number.
-14. Add an ``if`` statement to see if the user wants to go north. You may need
+    to an integer or floating point number. This will be similar to how we got
+    input in :ref:`lab-04`. The most frequent mistake I've seen students make is
+    to have an ``input`` statement and not capture the return value. See
+    :ref:`capturing_returned_values` if you have this issue.
+14. Add an ``if`` statement to see if the user wants to go north.
+    You should accept user input like "n" and "N" and "North" and
+    "NoRtH". You may need
     to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`.
 15. If the user wants to go north, create a variable called ``next_room`` and
     get it equal to ``room_list[current_room][1]``, which should be the number
     for what room is to the north. (Remember, 0 is the description, 1 is north,
     2 is east, etc.)
 16. Add another ``if`` statement to see if the next room is equal to ``None``. If
-    it is, print "You can't go that way." Otherwise set ``current_room``
+    it is, print "You can't go that way." *Otherwise* (how do you do 'otherwise'?) set ``current_room``
     equal to ``next_room``. Note: This new ``if`` statement is part of the
     ``if`` statement to go north. So make sure it is indented inside that
     ``if``.
