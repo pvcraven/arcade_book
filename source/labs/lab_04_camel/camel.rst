@@ -129,7 +129,9 @@ Call the ``main()`` function. Run and test the program.
    and set to ``False``. Make sure this, and everything else, is in the
    ``main`` function.
 4. Create a ``while`` loop that will keep looping while ``done`` is ``False``.
-5. Inside the loop, print out the following::
+5. Inside the loop, print out the following:
+
+.. code-block:: text
 
 	A. Drink from your canteen.
 	B. Ahead moderate speed.
@@ -145,7 +147,9 @@ Call the ``main()`` function. Run and test the program.
 
    What is your choice? Q
 
-And not::
+And not:
+
+.. code-block:: text
 
    What is your choice?Q
 
@@ -201,8 +205,8 @@ And not::
     in the canteen. If there are, subtract one drink and set the player's
     thirst to zero. Otherwise print an error.
 17. In the loop, print "You are thirsty." if the user's thirst is above 4.
-    Put this after your long ``if``...``elif`` chain above.
-18. Print "You died of thirst!"" if the user's thirst is above 6. Set ``done``
+    Put this after your long ``if`` ... ``elif`` chain above.
+18. Print "You died of thirst!" if the user's thirst is above 6. Set ``done``
     to ``True``. Make sure you create your code so that the program doesn't
     print both "Your are thirsty" and "You died of thirst!" Use ``elif``
     as appropriate.

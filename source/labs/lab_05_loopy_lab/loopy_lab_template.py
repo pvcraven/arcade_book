@@ -18,8 +18,8 @@ def draw_section_outlines():
 def draw_section_1():
     for row in range(30):
         for column in range(30):
-            x = 0  # Instead of zero, calculate the proper x location using column
-            y = 0  # Instead of zero, calculate the proper y location using row
+            x = 0  # Instead of zero, calculate the proper x location using 'column'
+            y = 0  # Instead of zero, calculate the proper y location using 'row'
             arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
 
 
