@@ -1,3 +1,5 @@
+.. _guessing-games:
+
 Guessing Games with Random Numbers and Loops
 ============================================
 

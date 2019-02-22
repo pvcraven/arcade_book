@@ -64,6 +64,8 @@ Sample Run
     A hallway is to the east.
     What direction?
 
+This game assumes you know the material up through :ref:`intro-to-lists`.
+
 Creating Your Dungeon
 ---------------------
 Before you start, sketch out the dungeon that you want to create. It might look

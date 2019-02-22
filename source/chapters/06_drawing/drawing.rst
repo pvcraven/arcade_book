@@ -250,6 +250,7 @@ you will see some of the items behind the square. An alpha of 0 is completely
 transparent and you'll see nothing of the square.
 
 .. _color chart: http://www.colorpicker.com/color-chart/
+.. _arcade.csscolor API documentation: http://arcade.academy/arcade.csscolor.html
 .. _arcade.color API documentation: http://arcade.academy/arcade.color.html
 
 Wait, What Is Up With 255?

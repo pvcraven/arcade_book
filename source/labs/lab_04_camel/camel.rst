@@ -104,6 +104,8 @@ Here is a sample run of the game:
 	The natives are getting close!
 	You made it across the desert! You won!
 
+This game assumes you know the material up through :ref:`guessing-games`.
+
 Programming Guide
 -----------------
 Here are the steps to complete this lab. Feel free to modify and add to the lab.
@@ -238,6 +240,10 @@ Hints
   and between each user command. Add comments where appropriate.
 * It is considered better style to use ``while not done:`` instead of
   ``while done == False:``
+* Rather than setting ``done`` to ``True``, you can immediately exit the main program loop
+  by using the ``break`` statement. Some people prefer this method because it
+  simplifies the logic. Other people prefer not jumping out of the middle of a
+  loop. Quite frankly, either works.
 * To prevent bad message combinations, such as printing "You died of thirst."
   and "You found an oasis!" on the same turn, use the ``and`` operator.
   Such as, ``if not done and thirst > 4:``
