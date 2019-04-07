@@ -211,7 +211,7 @@ see how we've implemented these concepts to create a platformer
     :caption: Platformer example, simple
     :language: python
     :linenos:
-    :emphasize-lines: 25-56, 98-99, 101-128, 130-133, 162
+    :emphasize-lines: 29-60, 102-103,105-132, 134-137, 166
 
 Other Examples
 --------------
