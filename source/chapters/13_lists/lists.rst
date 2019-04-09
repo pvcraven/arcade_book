@@ -98,14 +98,14 @@ try the following:
 
 .. code-block:: python
 
-    x = [1, 2]
+    x = [10, 20]
     print(x)
 
 The output:
 
 .. code-block:: text
 
-    [1, 2]
+    [10, 20]
 
 To print an individual element in a list:
 
@@ -117,7 +117,7 @@ The output:
 
 .. code-block:: text
 
-    1
+    10
 
 This number with the item's location is called the index. Note that list
 locations start at zero. So a list or array with 10 elements does not have an
@@ -146,6 +146,21 @@ location of a particular value.
 .. figure:: ice_cube_tray.png
 
     Lists are like ice cube trays
+
+You can also access elements from the back-side of an array using negative
+numbers. (Not all languages support this.) For example:
+
+.. code-block:: python
+
+    x = [10, 20, 30]
+    print(x[-1])
+
+The output:
+
+.. code-block:: text
+
+    30
+
 
 A program can assign new values to an individual element in a list. In the case
 below, the first spot at location zero (not one) is assigned the number 22.
@@ -491,16 +506,18 @@ each letter a separate item. Run the following code with both versions of x:
 
     print("x=", x)
 
-    # Accessing a single character
+    # Accessing the first character ("T")
     print("x[0]=", x[0])
+
+    # Accessing the second character ("h")
     print("x[1]=", x[1])
 
-    # Accessing from the right side
+    # Accessing from the right side ("g")
     print("x[-1]=", x[-1])
 
-    # Access 0-5
+    # Access 0-5 ("This ")
     print("x[:6]=", x[:6])
-    # Access 6
+    # Access 6 to the end ("is a sample string")
     print("x[6:]=", x[6:])
     # Access 6-8
     print("x[6:9]=", x[6:9])
