@@ -33,14 +33,14 @@ program has a list that looks like the following:
 
 .. code-block:: python
 
-    my_list = [15,57,14,33,72,79,26,56,42,40]
+    my_list = [15, 57, 14, 33, 72, 79, 26, 56, 42, 40]
 
 The developer wants to swap positions 0 and 2, which contain the numbers 15
 and 14 respectively. See Figure 18.1.
 
 .. figure:: sortgraph1.svg
 
-    Figure 18.1: Swapping values in an array
+    Figure 27.1: Swapping values in an array
 
 A first attempt at writing this code might look something like this:
 
@@ -51,9 +51,9 @@ A first attempt at writing this code might look something like this:
 
 .. figure:: sortgraph2.svg
 
-    Figure 18.2: Incorrect attempt to swap array values
+    Figure 27.2: Incorrect attempt to swap array values
 
-See Figure 18.2 to get an idea on what would happen. This clearly does not
+See Figure 27.2 to get an idea on what would happen. This clearly does not
 work. The first assignment ``list[0] = list[2]`` causes the value 15 that exists
 in position 0 to be overwritten with the 14 in position 2 and irretrievably
 lost. The next line with ``list[2] = list[0]`` just copies the 14 back to
@@ -78,7 +78,7 @@ currently held in the ``temp`` variable, and places it in position 2.
 
 .. figure:: sortgraph1b.svg
 
-    Figure 18.3: Correct method to swap array values
+    Figure 27.3: Correct method to swap array values
 
 Selection Sort
 --------------
@@ -94,7 +94,7 @@ then 2, and so forth. Graphically, the sort looks like Figure 18.4.
 
 .. figure:: sortgraph.svg
 
-    Figure 18.4: Selection Sort
+    Figure 27.4: Selection Sort
 
 The code for a selection sort involves two nested loops. The outside loop
 tracks the current position that the code wants to swap the smallest value
@@ -197,7 +197,7 @@ location to insert. Graphically, it looks like Figure 18.5.
 
 .. figure:: sortgraph4.svg
 
-    Figure 18.5: Insertion Sort
+    Figure 27.5: Insertion Sort
 
 The insertion sort breaks the list into two sections, the "sorted"
 half and the "unsorted" half. In each round of the outside loop, the

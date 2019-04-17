@@ -35,5 +35,4 @@ Chapters
    28_exceptions/exceptions
    29_recursion/recursion
    30_print_formatting/print_formatting
-
-
+   xx_venv_setup/index

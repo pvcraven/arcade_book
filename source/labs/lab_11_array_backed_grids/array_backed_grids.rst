@@ -109,6 +109,8 @@ zero for each row. If the current grid location is one, then add one to
 than 2. If so, print the count. Regardless, reset it back to zero.
 
 You'll also need to do the same ``if`` after the loop with the row is done.
+If the row goes up to the grid-edge, then the blocks-in-a-row won't trigger
+without this second check.
 
 .. code-block:: text
     :caption: Sample Output
