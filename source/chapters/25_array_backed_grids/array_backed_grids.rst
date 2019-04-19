@@ -150,7 +150,7 @@ Drawing the Grid
 6. Add the margin before drawing the rectangles, in addition to between each
    rectangle. This should keep the box from appearing right next to the window
    edge. See Figure 16.6. You'll end up with an equation like:
-   :math:`(margin+width)\cdot column+margin+\frac{margin}{2}`
+   :math:`(margin+width)\cdot column+margin+\frac{width}{2}`
 
 
 .. figure:: step_06.png
