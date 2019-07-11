@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-13 11:17+0200\n"
+"PO-Revision-Date: 2019-07-16 11:57+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:2
+msgid "Quantitative Reasoning Reflection"
+msgstr "Quantitative Überlegungen"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:4
+msgid ""
+"This is a reflection on quantitative reasoning. However, instead of turning "
+"it in via a PDF or MS Word document, we'll turn it in as a text document."
+msgstr ""
+"Dies ist eine Reflexion über das quantitative Denken. Anstatt es jedoch über "
+"ein PDF- oder MS Word-Dokument einzureichen, werden wir es als Textdokument "
+"einreichen."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:8
+msgid "Directions"
+msgstr "Anweisungen"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:10
+msgid ""
+"Create a directory in your project called ``Quantitative Reasoning "
+"Reflection``."
+msgstr ""
+"Erstelle in deinem Projekt ein Verzeichnis mit dem Namen \"Quantitative "
+"Reasoning Reflection\"."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:11
+msgid ""
+"Inside that directory, create a new file called ``reflection.txt``. Don't "
+"create it as a Python file, because this isn't a Python program."
+msgstr ""
+"Erstelle in diesem Verzeichnis eine neue Datei mit dem Namen ``reflection."
+"txt``. Erstelle sie nicht als Python-Datei, da dies kein Python-Programm ist."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:13
+msgid ""
+"In PyCharm, under the \"File\" menu, select \"Settings...\". Then find "
+"\"Editor\" and under that \"Code Style.\" By default you could see a column "
+"guide set at 120 characters. Set this to 80 for now."
+msgstr ""
+"Wähle in PyCharm im Menü \"Datei\" die Option \"Einstellungen ...\". Dann "
+"findest du \"Editor\" und unter diesem \"Code Style\". Standardmäßig wurde "
+"eine Spaltenübersicht mit 120 Zeichen angezeigt. Stelle dies für diese "
+"Aufgabe auf 80 ein."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:16
+msgid ""
+"Add your name, date, and a title to the document. Failure to do this is a "
+"three point penalty."
+msgstr ""
+"Füge dem Dokument deinen Namen, das Datum und einen Titel hinzu. "
+"Nichtbeachtung gibt einen Abzug von drei Punkten."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:18
+msgid ""
+"Don't write text beyond the 80 character limit. (Occasionally hitting 85 "
+"isn't a big deal, but if you write 800 characters on a line, expect to get "
+"penalized."
+msgstr ""
+"Schreibe keine Zeile mit mehr als 80 Zeichen. (Hin und wieder 85 zu "
+"erreichen ist keine große Sache, aber wenn du 800 Zeichen in eine Zeile "
+"schreibst, musst du damit rechnen, Punkte abgezogen zu bekommen.)"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:21
+msgid ""
+"Use paragraphs. Most paragraphs are around five sentences long. While this "
+"isn't a hard and fast rule, if your paragraph has 22 sentences, chances are, "
+"something's wrong."
+msgstr ""
+"Verwende Absätze. Die meisten Absätze bestehen aus fünf Sätzen. Dies ist "
+"zwar keine feste Regel, aber wenn dein Absatz 22 Sätze enthält, ist die "
+"Wahrscheinlichkeit groß, dass etwas nicht stimmt."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:24
+msgid ""
+"Answer each question below. Commit and turn in just like a regular program. "
+"Use complete sentences and proper spelling. Label each question. Put a blank "
+"line between each question."
+msgstr ""
+"Beantworte jede Frage unten. Commit und gebe sie wie bei einem normalen "
+"Programm ab. Verwende vollständige Sätze und die richtige Schreibweise. "
+"Beschrifte jede Frage. Schreibe zwischen jede Frage eine Leerzeile."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:29
+msgid "Questions"
+msgstr "Fragen"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:31
+msgid ""
+"Each question is worth five points. Make sure you have five good points as "
+"part of your answer. I'd suggest drafting out five points, and then fill in "
+"the points with proper sentences, grammar, and punctuation. Examples are "
+"encouraged."
+msgstr ""
+"Jede Frage ist fünf Punkte wert. Stelle sicher, dass du fünf gute Punkte als "
+"Teil deiner Antwort hast. Ich würde vorschlagen, fünf Punkte zu formulieren "
+"und die Punkte dann mit richtigen Sätzen, Grammatik und Interpunktion "
+"auszufüllen. Beispiele sind empfehlenswert."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:35
+msgid ""
+"Describe how you used multiple quantitative methods, techniques and "
+"algorithms to add functionality to your program. How did you decided what "
+"method to use? For example, how did you use lists? \"If\" statements? Loops? "
+"Classes? Functions? Sample pieces of code? How did you decide which methods "
+"to apply? Feel free to give examples."
+msgstr ""
+"Beschreibe, wie du mehrere quantitative Methoden, Techniken und Algorithmen "
+"verwendet hast, um deinem Programm Funktionen hinzuzufügen. Wie hast du dich "
+"für eine Methode entschieden? Wie hast du beispielsweise Listen verwendet? "
+"``If``-Anweisungen? Schleifen? Klassen? Funktionen? Beispielcode? Wie hast "
+"du dich entschieden, welche Methoden angewendet werden sollen? Gib Beispiele "
+"an, wenn du möchtest."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:41
+msgid ""
+"Explain how you communicate your solution (from one programmer to another) "
+"when writing the code. Show how variable names matter, how function names "
+"matter, how comments and structure make your code easier to read."
+msgstr ""
+"Erkläre, wie du deine Lösung (von einem Programmierer zum anderen) "
+"kommunizierst, wenn du den Programmcode schreibst. Zeige, wie gute "
+"Variablennamen entscheidend sind, wie Funktionsnamen entscheidend sind, wie "
+"Kommentare und Struktur deinen Programmcode leichter lesbar machen."
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:45
+msgid ""
+"How did you test and evaluate the accuracy of your code? When something "
+"didn't work, describe how you debugged what the error was. Also, how do you "
+"determine if data returned is correct data?"
+msgstr ""
+"Wie hast du die Korrektheit deines Programmcodes getestet und bewertet? Wenn "
+"etwas nicht funktioniert hat, beschreibe, wie du den Fehler behoben hast. "
+"Wie kannst du außerdem feststellen, ob die zurückgegebenen Daten korrekte "
+"Daten sind?"
+
+#: ../../source/labs/lab_12_quantitative_reasoning/quantitative_reasoning.rst:48
+msgid ""
+"What are the limitations to using numerical methods to make decisions? For "
+"example, why can't we just replace humans with algorithms? Why can't we just "
+"evaluate students based solely on test scores? Why can't we evaluate "
+"teachers just on how their students do? What is the limitation to evaluating "
+"athletes just on their stats?"
+msgstr ""
+"Was sind die Einschränkungen bei der Verwendung numerischer Methoden, um "
+"Entscheidungen zu treffen? Warum können wir zum Beispiel nicht einfach den "
+"Menschen durch Algorithmen ersetzen? Warum können wir Studierende nicht "
+"einfach nur anhand von Testergebnissen bewerten? Warum können wir Lehrkräfte "
+"nicht nur danach bewerten, wie es ihren Studierenden geht? Worin besteht die "
+"Einschränkung, Sportler nur anhand ihrer Statistiken zu bewerten?"

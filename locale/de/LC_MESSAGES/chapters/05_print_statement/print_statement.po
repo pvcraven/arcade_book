@@ -1,0 +1,421 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-12 09:20+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:4
+msgid "The ``print`` Function"
+msgstr "Die Funktion ``print``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:9
+msgid "Printing Hello World"
+msgstr "Hello World ausgeben"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:11
+msgid ""
+"We will use a function called ``print`` to print to the screen. ``print`` is "
+"called a *function*."
+msgstr ""
+"Wir werden die ``print`` genannte Funktion benutzen, um etwas auf dem "
+"Bildschirm auszugeben. ``print`` wird eine *Funktion* genannt."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:14
+msgid ""
+"You've already used functions in mathematics. For example, **sin** and "
+"**cos**. Functions are followed by parentheses: ``( )``. We put the function "
+"*parameter(s)* inside the parenthesis."
+msgstr ""
+"Wir kennen Funktionen aus der Mathematik. Zum Beispiel sind **sin** und "
+"**cos** Funktionen in der Mathematik. Auf den Funktionsnamen folgen runde "
+"Klammern ``( )``. Die *Argumente* der Funktion packen wir in die Klammern."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:20
+msgid ""
+"With a sine function, we put in an angle. With the ``print`` function, we "
+"are going to put the text we want to print. Text must be enclosed in quotes."
+msgstr ""
+"Bei der Sinus-Funktion stecken wir den Winkel als Argument in die Klammern. "
+"Bei der ``print``-Funktion kommt der Text, den wir ausgeben wollen, in die "
+"Klammern. Text muss in Anführungszeichen stehen."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:25
+msgid "print(\"Hello there\")"
+msgstr "print(\"Hello there\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:27
+msgid "Note that case matters. The following will not work:"
+msgstr ""
+"Beachte, dass Groß- und Kleinschreibung einen Unterschied macht. Das "
+"Folgende wird nicht funktionieren:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:31
+msgid "Print(\"Hello there\")"
+msgstr "Print(\"Hello there\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:33
+msgid "Great! Time to run it."
+msgstr "Klasse! Es wird Zeit, das Programm auszuführen."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:35
+msgid "Right-click on the program and select \"Run 'lab_01.py'\""
+msgstr "Rechtsklicke auf das Programm und wähle \"Run 'lab_01.py'\"."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:37
+msgid ""
+"Before we go on, note how the PyCharm window is put together. See the output "
+"of your program at the bottom of the screen. Click the image below to make "
+"it bigger and note the:"
+msgstr ""
+"Schau dir an, wie das PyCharm-Fenster aufgebaut ist, bevor wir weiter gehen. "
+"Unten findest du die Ausgabe deines Programms. Klicke auf das Bild unten um "
+"es zu vergrößern und beachte:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:41
+msgid "Right margin. You can write code past this point, but don’t."
+msgstr ""
+"Rechter Randbereich. Du kannst Programmcode über den Randbereich hinaus "
+"schreiben, aber lass es."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:42
+msgid ""
+"Where you can hover your mouse for \"hints\" on how to make your code better."
+msgstr ""
+"Wo du mit dem Mauszeiger herumlungern kannst, um \"Hinweise\" zu bekommen "
+"wie dein Code besser wird. "
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:43
+msgid "Where you can quickly click to run your program again."
+msgstr "Wo du schnell klicken kannst, um dein Programm wieder auszuführen."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:46
+msgid ".. image:: chapters/05_print_statement/pycharm_window.png"
+msgstr ".. image:: chapters/05_print_statement/pycharm_window.png"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:47
+msgid ""
+"Ok, now it's time to update our program. Go back to our program and improve "
+"it by printing multiple lines, while quoting Snoopy's famous story:"
+msgstr ""
+"OK, jetzt wird es Zeit dein Programm zu aktualisieren. Gehe zurück zu deinem "
+"Programm und verbessere es durch die Ausgabe von mehreren Zeilen, die "
+"Snoopys berühmte Geschichte zitieren:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:53
+msgid "Multiple Print Lines"
+msgstr "Mehrere Zeilen ausgeben"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:55
+msgid "Let's add additional code:"
+msgstr "Lass uns zusätzlichen Programmcode hinzufügen:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:59
+msgid ""
+"print(\"It was a dark and stormy night.\")\n"
+"print(\"Suddenly a shot rang out!\")"
+msgstr ""
+"print(\"It was a dark and stormy night.\")\n"
+"print(\"Suddenly a shot rang out!\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:62
+msgid "Go ahead and run it to make sure it outputs as expected."
+msgstr ""
+"Mach weiter und führe es aus, um zu sehen, ob die Ausgabe ist wie erwartet."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:67
+msgid "Escape Codes"
+msgstr "Escape-Codes"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:69
+msgid ""
+"If quotes are used to tell the computer the start and end of the string of "
+"text you wish to print, how does a program print out a set of double quotes? "
+"(This is a double quote ``\"`` and this is a single quote ``'``.) For "
+"example:"
+msgstr ""
+"Wenn Anführungszeichen verwendet werden, um dem Rechner den Anfang und das "
+"Ende einer Zeichenkette, die du ausgeben willst, anzugeben, wie kann dann "
+"das Programm doppelte Anführungszeichen ausgeben? (Dies ist ein doppeltes "
+"Anführungszeichen ``\"`` und dies ist ein einfaches Anführungszeichen "
+"``'``.) Zum Beispiel:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:72
+msgid "print(\"I want to print a double quote \" for some reason.\")"
+msgstr "print(\"I want to print a double quote \" for some reason.\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:76
+msgid ""
+"This code doesn't work. The computer looks at the quote in the middle of the "
+"string and thinks that is the end of the text. Then it has no idea what to "
+"do with the commands for some reason and the quote and the end of the string "
+"confuses the computer even further."
+msgstr ""
+"Dieser Code funktioniert nicht. Der Rechner sieht das Anführungszeichen in "
+"der Mitte der Zeichenkette und denkt es ist das Ende der Zeichenkette. "
+"Danach weiß er aus irgendeinem Grund nicht mehr, was er mit den Kommandos "
+"anfangen soll. Das Anführungszeichen am Ende der Zeichenkette verwirrt ihn "
+"noch mehr."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:81
+msgid ""
+"It is necessary to tell the computer that we want to treat that middle "
+"double quote as text, not as a quote ending the string. This is easy, just "
+"prepend a backslash in front of quotes to tell the computer it is part of a "
+"string, not a character that terminates a string. For example:"
+msgstr ""
+"Wir müssen dem Rechner sagen, dass das Anführungszeichen in der Mitte als "
+"Text behandelt werden soll und nicht als Anführungszeichen, das die "
+"Zeichenkette beendet. Das ist leicht, schreibe einfach einen Backslash vor "
+"das Anführungszeichen. Jetzt weiß der Rechner, dass es Teil der Zeichenkette "
+"und kein Zeichen zum Beenden der Zeichenkette ist. Zum Beispiel:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:85
+msgid "print(\"I want to print a double quote \\\" for some reason.\")"
+msgstr "print(\"I want to print a double quote \\\" for some reason.\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:89
+msgid ""
+"This combination of the two characters ``\\\"`` is called an *escape code*. "
+"Almost every language has escape codes. Here's another example:"
+msgstr ""
+"Die Kombination von den beiden Zeichen ``\\\"`` wird Escape-Code genannt. "
+"Fast jede Sprache hat Escape-Codes. Hier ist ein anderes Beispiel:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:92
+msgid ""
+"print(\"Audrey Hepburn once said \\\"Nothing is impossible. The word itself "
+"says 'I'm Possible!'.\\\"\")"
+msgstr ""
+"print(\"Audrey Hepburn sagte einmal: \\\"Nothing is impossible. The word "
+"itself says 'I'm Possible!'.\\\"\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:96
+msgid "This will print:"
+msgstr "Das wird ausgeben:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:98
+msgid ""
+"Audrey Hepburn once said \"Nothing is impossible. The word itself says 'I'm "
+"Possible!'.\""
+msgstr ""
+"Audrey Hepburn sagte einmal: \"Nothing is impossible. The word itself says "
+"'I'm Possible!'.\""
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:102
+msgid ""
+"Because the backslash is used as part of an escape code, the backslash "
+"itself must be escaped if you want to use one. For example, this code does "
+"not work correctly:"
+msgstr ""
+"Weil der Backslash als Teil des Escape-Codes verwendet wird, muss er selbst "
+"als Escape-Code eingegeben werden. Dieser Code wird zum Beispiel nicht wie "
+"erwartet funktionieren:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:105
+msgid "print(\"The file is stored in C:\\new folder\")"
+msgstr "print(\"The file is stored in C:\\new folder\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:109
+msgid ""
+"Why? Because ``\\n`` is an escape code. To print the backslash it is "
+"necessary to escape it like so:"
+msgstr ""
+"Warum? ``\\n`` ist ein Escape-Code. Um den Backslash auszugeben, muss er "
+"selbst wie im folgenden Beispiel als Escape-Code eingegeben werden:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:111
+msgid "print(\"The file is stored in C:\\\\new folder\")"
+msgstr "print(\"The file is stored in C:\\\\new folder\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:115
+msgid ""
+"There are a few other important escape codes to know. Here is a table of the "
+"important escape codes:"
+msgstr ""
+"Es gibt noch ein paar weitere Escape-Codes, die man kennen sollte. Hier ist "
+"eine Tabelle mit wichtigen Escape-Codes:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:118
+#: ../../source/chapters/05_print_statement/print_statement.rst:148
+msgid "Escape code"
+msgstr "Escape-Code"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:118
+#: ../../source/chapters/05_print_statement/print_statement.rst:148
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:120
+msgid "``\\'``"
+msgstr "``\\'``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:120
+msgid "Single Quote"
+msgstr "Einfaches Anführungszeichen"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:121
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:121
+msgid "Double Quote"
+msgstr "Doppeltes Anführungszeichen"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:122
+msgid "``\\t``"
+msgstr "``\\t``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:122
+msgid "Tab"
+msgstr "Tabulator"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:123
+#: ../../source/chapters/05_print_statement/print_statement.rst:152
+msgid "``\\r``"
+msgstr "``\\r``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:123
+msgid "CR: Carriage Return (move to the left)"
+msgstr "CR: Wagenrücklauf (bewege den Cursor ganz nach links)"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:124
+#: ../../source/chapters/05_print_statement/print_statement.rst:151
+msgid "``\\n``"
+msgstr "``\\n``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:124
+msgid "LF: Linefeed (move down)"
+msgstr "LF: Zeilenumbruch (bewege den Cursor eine Zeile nach unten)"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:127
+msgid "What is a \"Carriage Return\" and a \"Linefeed\"? Try this example:"
+msgstr ""
+"Was sind \"Wagenrücklauf\" und \"Zeilenumbruch\"? Probiere dieses Beispiel "
+"aus:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:129
+msgid "print(\"This\\nis\\nmy\\nsample.\")"
+msgstr "print(\"This\\nis\\nmy\\nsample.\")"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:133
+msgid "The output from this command is:"
+msgstr "Die Ausgabe des Kommandos ist:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:137
+msgid ""
+"This\n"
+"is\n"
+"my\n"
+"sample."
+msgstr ""
+"This\n"
+"is\n"
+"my\n"
+"sample."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:142
+msgid ""
+"The ``\\n`` is a linefeed. It moves \"cursor\" where the computer will print "
+"text down one line. The computer stores all text in one big long line. It "
+"knows to display the text on different lines because of the placement of ``"
+"\\n`` characters."
+msgstr ""
+"Das ``\\n`` ist ein Zeilenvorschub. Er bewegt den \"Cursor\", wodurch der "
+"Rechner den Text eine Zeile weiter unten ausgibt. Der Rechner speichert den "
+"Text in einer großen, langen Zeile. Er weiß, dass er den Text auf mehrere "
+"Zeilen aufteilen soll, wegen der Platzierung der ``\\n``-Zeichen im Text. "
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:145
+msgid ""
+"To make matters more complex, different operating systems have different "
+"standards on what makes a line ending."
+msgstr ""
+"Um die Sache zu verkomplizieren, haben die verschiedenen Betriebssysteme "
+"verschiedene Standard, was eine Zeile beendet."
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:150
+msgid "``\\r\\n``"
+msgstr "``\\r\\n``"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:150
+msgid "CR+LF: Microsoft Windows"
+msgstr "CR+LF: Microsoft Windows"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:151
+msgid "LF: UNIX based systems, and newer Macs."
+msgstr "LF: UNIX basierte Systeme und neuere Macs"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:152
+msgid "CR: Older Mac based systems"
+msgstr "CR: Ältere Mac basierte Systeme"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:156
+msgid ""
+"Ok, now it is time to make this lab yours. Write program that consists of "
+"several print statements. Here is my example:"
+msgstr ""
+"OK, jetzt wird es Zeit deine Aufgabe zu bearbeiten. Schreibe ein Programm, "
+"das aus mehreren print-Anweisungen besteht. Hier ist mein Beispiel:"
+
+#: ../../source/chapters/05_print_statement/print_statement.rst:159
+msgid ""
+"print(\"You can print a statement surrounded by double quotes.\")\n"
+"print('You can print a statement surrounded by single quotes.')\n"
+"\n"
+"print(\"If you want to print a double quote, you can by prepending it with"
+"\")\n"
+"print(\"a slash. \\\"That's great!\\\" he said.\")\n"
+"\n"
+"print(\"If you want to print a backslash, you can by prepending it with\")\n"
+"print(\"a slash. So this \\\\ prints one backslash, and this \\\\\\\\ does "
+"two.\")\n"
+"\n"
+"print(\"You can print a blank line with a empty print statement.\")\n"
+"print()\n"
+"\n"
+"print(\"You can use a backlash n to print a new line. These\\nare\\non\\nnew"
+"\\nlines.\")\n"
+"print(\"\"\"You can print\n"
+"on multiple\n"
+"lines using\n"
+"triple\n"
+"quotes. Just in\n"
+"case you wanted to.\"\"\")"
+msgstr ""
+"print(\"You can print a statement surrounded by double quotes.\")\n"
+"print('You can print a statement surrounded by single quotes.')\n"
+"\n"
+"print(\"If you want to print a double quote, you can by prepending it with"
+"\")\n"
+"print(\"a slash. \\\"That's great!\\\" he said.\")\n"
+"\n"
+"print(\"If you want to print a backslash, you can by prepending it with\")\n"
+"print(\"a slash. So this \\\\ prints one backslash, and this \\\\\\\\ does "
+"two.\")\n"
+"\n"
+"print(\"You can print a blank line with a empty print statement.\")\n"
+"print()\n"
+"\n"
+"print(\"You can use a backlash n to print a new line. These\\nare\\non\\nnew"
+"\\nlines.\")\n"
+"print(\"\"\"You can print\n"
+"on multiple\n"
+"lines using\n"
+"triple\n"
+"quotes. Just in\n"
+"case you wanted to.\"\"\")"

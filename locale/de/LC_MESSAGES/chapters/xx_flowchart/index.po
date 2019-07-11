@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-13 11:17+0200\n"
+"PO-Revision-Date: 2019-07-09 18:02+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/xx_flowchart/index.rst:2
+msgid "Flowchart For Setup And Version Control"
+msgstr "Flussdiagramm für Setup und Versionskontrolle"
+
+#: ../../source/chapters/xx_flowchart/index.rst:5
+msgid "Step A - Set Up The Software"
+msgstr "Schritt A - Einrichten der Software"
+
+#: ../../source/chapters/xx_flowchart/index.rst:7
+msgid ""
+"Does the computer you are working on have Python, PyCharm, Arcade, and Git "
+"installed?"
+msgstr ""
+"Ist auf dem Rechner, auf dem Sie arbeiten, Python, PyCharm, Arcade und Git "
+"installiert?"
+
+#: ../../source/chapters/xx_flowchart/index.rst:10
+msgid ""
+"No, software is needed to be installed - Go to :ref:`chapter-setup`, then "
+"continue below."
+msgstr ""
+"Nein, es muss Software installiert werden - Gehen Sie zu :ref:`chapter-"
+"setup` und fahren Sie unten fort."
+
+#: ../../source/chapters/xx_flowchart/index.rst:11
+msgid "Yes, everything is installed - Continue below"
+msgstr "Ja, alles ist installiert - weiter unten"
+
+#: ../../source/chapters/xx_flowchart/index.rst:14
+msgid "Step B - Get Your Files On The Computer"
+msgstr "Schritt B - Holen Sie sich Ihre Dateien auf den Rechner"
+
+#: ../../source/chapters/xx_flowchart/index.rst:16
+msgid "Do you have the folder with all your Python files on your computer?"
+msgstr "Haben Sie den Ordner mit all Ihren Python-Dateien auf Ihrem Rechner?"
+
+#: ../../source/chapters/xx_flowchart/index.rst:18
+msgid ""
+"No, and I have **never** \"forked\" the repository (never fork more than "
+"once) - Go to :ref:`fork-repository` and then :ref:`share-repository`. "
+"Proceed to the bullet point below."
+msgstr ""
+"Nein, und ich habe das Repository **nie** \"geforkt\" (forke niemals mehr "
+"als einmal) - Gehe zu :ref:`fork-repository` und dann :ref:`share-"
+"repository`. Fahren Sie mit dem Aufzählungspunkt unten fort."
+
+#: ../../source/chapters/xx_flowchart/index.rst:20
+msgid ""
+"No, but once I forked the repository - Go to :ref:`clone-repository`. Then "
+"continue below."
+msgstr ""
+"Nein, aber nachdem ich das Repository geforkt habe - Gehe zu :ref:`clone-"
+"repository`. Dann weiter unten."
+
+#: ../../source/chapters/xx_flowchart/index.rst:21
+msgid "Yes, continue below."
+msgstr "Ja, weiter unten."
+
+#: ../../source/chapters/xx_flowchart/index.rst:24
+msgid "Step C - Pull Changes From Other Computers"
+msgstr "Schritt C - Änderungen von anderen Rechnern übernehmen"
+
+#: ../../source/chapters/xx_flowchart/index.rst:26
+msgid "Have you edited your code on another computer?"
+msgstr "Haben Sie Ihren Programmcode auf einem anderen Rechner bearbeitet?"
+
+#: ../../source/chapters/xx_flowchart/index.rst:28
+msgid "Yes - Do :ref:`pull-changes` then continue below."
+msgstr "Ja - Führe :ref:`pull-changes` dann weiter unten aus."
+
+#: ../../source/chapters/xx_flowchart/index.rst:29
+msgid "No - Continue"
+msgstr "Nein - Weiter"
+
+#: ../../source/chapters/xx_flowchart/index.rst:32
+msgid "Step D - Edit Your Programs"
+msgstr "Schritt D - Bearbeiten Sie Ihre Programme"
+
+#: ../../source/chapters/xx_flowchart/index.rst:34
+msgid ""
+"Next :ref:`open-in-pycharm` and edit your program. When you are done, "
+"continue to the next step."
+msgstr ""
+"Weiter :ref:`open-in-pycharm` und bearbeiten Sie Ihr Programm. Wenn Sie "
+"fertig sind, fahren Sie mit dem nächsten Schritt fort."
+
+#: ../../source/chapters/xx_flowchart/index.rst:38
+msgid "Step E - Commit and Push Your Code"
+msgstr "Schritt E - Commit und push Sie Ihren Programmcode"
+
+#: ../../source/chapters/xx_flowchart/index.rst:40
+msgid ":ref:`commit`"
+msgstr ":ref:`commit`"
+
+#: ../../source/chapters/xx_flowchart/index.rst:41
+msgid ":ref:`push-code`"
+msgstr ":ref:`push-code`"
+
+#: ../../source/chapters/xx_flowchart/index.rst:43
+msgid "Was there any error in pushing your code?"
+msgstr "Gab es einen Fehler beim Pushen Ihres Codes?"
+
+#: ../../source/chapters/xx_flowchart/index.rst:45
+msgid "Yes - Follow the instructions with :ref:`cant-push`"
+msgstr "Ja - Folgen Sie den Anweisungen mit :ref:`cant-push`"
+
+#: ../../source/chapters/xx_flowchart/index.rst:46
+msgid "No - Continue below"
+msgstr "Nein - Weiter unten"
+
+#: ../../source/chapters/xx_flowchart/index.rst:49
+msgid "Step F - Turn In Your Labs"
+msgstr "Schritt F - Geben Sie Ihre Übungen ab"
+
+#: ../../source/chapters/xx_flowchart/index.rst:51
+msgid "Are you ready to turn in your program?"
+msgstr "Sind Sie bereit, Ihr Programm einzureichen?"
+
+#: ../../source/chapters/xx_flowchart/index.rst:53
+msgid "No - Then you are done for now!"
+msgstr "Nein - dann sind Sie vorerst fertig!"
+
+#: ../../source/chapters/xx_flowchart/index.rst:54
+msgid "Yes - :ref:`turn-in-program`"
+msgstr "Ja - :ref:`turn-in-program`"

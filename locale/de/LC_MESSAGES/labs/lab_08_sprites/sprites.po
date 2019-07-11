@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-16 11:18+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:4
+msgid "Lab 8: Sprites"
+msgstr "Übung 8: Sprites"
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:7
+msgid ".. image:: labs/lab_08_sprites/lab_8.gif"
+msgstr ".. image:: labs/lab_08_sprites/lab_8.gif"
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:8
+msgid ""
+"Create a player-character sprite. Feel free to pick your own image for the "
+"sprite."
+msgstr ""
+"Erstelle ein Sprite für die Spielfigur. Wähle dein eigenes Bild für das "
+"Sprite."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:10
+msgid ""
+"Allow the user to move the player move by the keyboard, mouse, or game pad. "
+"Your choice. If you use the mouse, make sure you hide it."
+msgstr ""
+"Ermögliche dem Benutzer, die Spielfigur mit der Tastatur, der Maus oder dem "
+"Gamepad zu bewegen. Es ist deine Entscheidung. Wenn du die Maus verwendest, "
+"vergewissere dich, dass du sie ausblendest."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:12
+msgid "Create \"good\" sprites. Pick your own image for the sprite."
+msgstr "Erstelle \"gute\" Sprites. Wähle dein eigenes Bild für das Sprite."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:13
+msgid "Create \"bad\" sprites. Pick your own image for the sprite."
+msgstr "Erstelle \"böse\" Sprites. Wählen dein eigenes Bild für das Sprite."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:14
+msgid ""
+"For each good sprite collected, make the score go up. Play a 'good' sound "
+"when the user collects that item."
+msgstr ""
+"Erhöhe die Punktzahl für jedes eingesammelte gute Sprite. Spiele einen "
+"\"guten\" Sound ab, wenn der Benutzer diesen Gegenstand sammelt."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:16
+msgid ""
+"For each bad sprite touched, have the score go down. Play a 'bad' sound when "
+"the user collects that item."
+msgstr ""
+"Lasse für jedes böse Sprite die Punktzahl sinken. Spiele einen \"schlechten"
+"\" Sound ab, wenn der Benutzer diesen Gegenstand einsammelt."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:18
+msgid ""
+"Animate/move the good sprites. Pick any of the motions we showed, or make "
+"your one."
+msgstr ""
+"Animiere/bewege die guten Sprites. Wähle eine der gezeigten Bewegungen aus "
+"oder erstelle eine eigene."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:20
+msgid "Move the bad sprites. Move them differently than the good ones."
+msgstr "Bewege die bösen Sprites. Bewege sie anders als die Guten."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:21
+msgid ""
+"If the length of the good sprite list is zero, then don't move any of the "
+"sprites or the character. \"Freeze\" the game. To do this, note what line of "
+"the ``update`` method in the main window class causes the sprites to move. "
+"Then only run that line if you have sprites. (Check the length of the sprite "
+"list.) If you get that to work, the do something similar ``on_mouse_motion``."
+msgstr ""
+"Wenn die Länge der Liste der guten Sprites Null ist, verschiebe die Sprites "
+"oder die Spielfigur nicht mehr. \"Friere\" das Spiel ein. Beachte dazu, in "
+"welcher Zeile der Methode ``update`` in der Hauptfensterklasse die Sprites "
+"verschoben werden. Führe diese Zeile dann nur aus, wenn du gute Sprites "
+"hast. (Überprüfe die Länge der Sprite-Liste.) Wenn du das zum Laufen "
+"gebracht hast, tue etwas Ähnliches in ``on_mouse_motion``."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:26
+msgid ""
+"If the length of the good sprite list is zero, draw \"Game Over\" on the "
+"screen."
+msgstr ""
+"Wenn die Länge der guten Sprite-Liste Null ist, zeichne \"Game Over\" auf "
+"dem Bildschirm."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:27
+msgid "Add, commit, and push via ``git``."
+msgstr "Add, commit und push mit ``git``."
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:28
+msgid "Turn in a URL to your project."
+msgstr "Gib eine URL für dein Projekt ab."

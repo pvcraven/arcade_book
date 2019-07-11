@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-09 19:42+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/03_setup/setup.rst:4
+msgid "Setting Up Your System"
+msgstr "Richte dein System ein"
+
+#: ../../source/chapters/03_setup/setup.rst:6
+msgid ""
+"Before you begin, you need to install a few things on the computer. Using a "
+"school computer? You may have these already installed. Yay! Still, read "
+"through this part. Make sure you know how the computer is setup up."
+msgstr ""
+"Bevor du anfangen kannst, musst du ein paar Sachen auf dem Rechner "
+"installieren. Verwendest du einen Schulrechner? Ja! Lese trotzdem diesen "
+"Abschnitt, um sicher zu gehen, dass du weißt, wie der Rechner eingerichtet "
+"wird."
+
+#: ../../source/chapters/03_setup/setup.rst:11
+msgid ""
+"Getting a system set up and ready to program can be a bit frustrating. "
+"**Don't give up.** Once you've got a system set up for programming you don't"
+" need to think about it again. You can concentrate on the programming part. "
+"You may get stuck during the setup, so don't hesitate to reach out and get "
+"help."
+msgstr ""
+"Das System einzurichten, damit man damit programmieren kann, kann etwas "
+"frustrierend sein. **Gib nicht auf!** Wenn das System zum Programmieren "
+"eingerichtet ist, brauchst du nicht mehr darüber nachdenken. Du kannst dich "
+"auf das Programmieren konzentrieren. Es kann sein, dass du beim Einrichten "
+"nicht mehr weiter kommst. Scheue dich in diesem Fall nicht Hilfe bei anderen"
+" zu suchen."
+
+#: ../../source/chapters/03_setup/setup.rst:16
+msgid "Your development computer will need:"
+msgstr "Dein Entwicklungsrechner benötigt:"
+
+#: ../../source/chapters/03_setup/setup.rst:18
+msgid "The Python_ programming language and the Arcade_ code library."
+msgstr "Die Python_ Programmiersprache und die Arcade_-Code-Bibliothek."
+
+#: ../../source/chapters/03_setup/setup.rst:19
+msgid ""
+"An editor to type in your programs. (We'll use a program called PyCharm_. "
+"You can use the community edition for free, or if you have an email address "
+"that ends in ``.edu`` get can get a free `student license`_ for the "
+"professional version.)"
+msgstr ""
+"Einen Editor mit dem du deine Programme eingibst. (Wir verwenden ein "
+"Programm, das sich PyCharm_ nennt. Du kannst du Community Edition kostenfrei"
+" benutzen. Oder, wenn du eine E-Mail-Adresse hast, die auf ``.edu`` endet, "
+"eine kostenfreie `student license`_ für die professionelle Version "
+"bekommen.)"
+
+#: ../../source/chapters/03_setup/setup.rst:23
+msgid ""
+"A version control system to track and turn in your work. "
+"(Git/SourceTree_/BitBucket_)"
+msgstr ""
+"Ein Versionskontrollsystem um deine Arbeit zu verfolgen und einzureichen. "
+"(Git/Sourcetree_/BitBucket_)"
+
+#: ../../source/chapters/03_setup/setup.rst:24
+msgid "A minor configuration tweak so we can see file extensions."
+msgstr ""
+"Eine kleine Anpassung der Konfiguration, so dass wir die Dateiendungen "
+"sehen."
+
+#: ../../source/chapters/03_setup/setup.rst:29
+msgid "Let's go through these four items in detail."
+msgstr "Lass uns durch diese vier Punkte im einzelnen gehen."
+
+#: ../../source/chapters/03_setup/setup.rst:38
+msgid "Setup the Programming Environment"
+msgstr "Einrichten der Programmierumgebung"
+
+#: ../../source/chapters/03_setup/setup.rst:40
+msgid ""
+"To get your computer ready for programming, we need to install Python, some "
+"Python libraries, and an editor."
+msgstr ""
+"Um den Rechner programmierbereit einzurichten, müssen wir Python, ein paar "
+"Python-Bibliotheken und einen Editor installieren."
+
+msgid ".. image:: chapters/03_setup/python-logo.svg"
+msgstr ".. image:: chapters/03_setup/python-logo.svg"
+
+#: ../../source/chapters/03_setup/setup.rst:48
+msgid "Installing Python and Arcade"
+msgstr "Installation von Python und Arcade"
+
+#: ../../source/chapters/03_setup/setup.rst:50
+msgid ""
+"We will be using the \"Python_\" computer programming language. The creator "
+"of Python was a fan of `Monty Python`_, hence the name."
+msgstr ""
+"Wir werden die Programmiersprache \"Python_\" verwenden. Guido van Rossum, "
+"der Schöpfer von Python, war ein großer Fan von `Monty Python`_ und wählte "
+"deshalb diesen Namen."
+
+#: ../../source/chapters/03_setup/setup.rst:56
+msgid ""
+"In addition to the Python language, we are going to use a library of "
+"commands for drawing on the screen. This is called the \"Arcade\" library."
+msgstr ""
+"Zusätzlich zur Sprache Python brauchen wir noch eine Bibliothek mit "
+"Anweisungen zum Zeichnen auf den Bildschirm. Dies ist die Arcade-Bibliothek."
+
+#: ../../source/chapters/03_setup/setup.rst:59
+msgid ""
+"Installation for installing Python and the Arcade library are available "
+"below:"
+msgstr "Für die verschiedenen Betriebssysteme gibt es folgende Anleitungen:"
+
+#: ../../source/chapters/03_setup/setup.rst:61
+msgid ""
+"`Windows Installation <http://arcade.academy/installation_windows.html>`_ "
+"(Make sure to read the instructions carefully. Do not skip the \"Add Python "
+"to Path\" step. This seems to be the most frequent issue.)"
+msgstr ""
+"`Windows Installation <http://arcade.academy/installation_windows.html>`_ "
+"(Lies die Anweisungen sorgfältig. Lass den Schritt \"Add Python to Path\" "
+"auf keinen Fall aus. Das scheint in den meisten Fällen die Ursache von "
+"Problemen zu sein.)"
+
+#: ../../source/chapters/03_setup/setup.rst:64
+msgid "`Mac Installation <http://arcade.academy/installation_mac.html>`_"
+msgstr "`OS X Installation <http://arcade.academy/installation_mac.html>`_"
+
+#: ../../source/chapters/03_setup/setup.rst:65
+msgid "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
+msgstr "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
+
+#: ../../source/chapters/03_setup/setup.rst:70
+msgid "Installing an IDE"
+msgstr "Installation einer IDE"
+
+#: ../../source/chapters/03_setup/setup.rst:72
+msgid ""
+"We also need an editor. Python comes with an editor called IDLE, but it is "
+"awful and not worth using. We'll use an editor called PyCharm."
+msgstr ""
+"Wir benötigen auch einen Editor. Python wird ausgeliefert mit einem Editor, "
+"der IDLE genannt wird. Der ist aber fürchterlich und nicht wert verwendet zu"
+" werden. Wir verwenden einen Editor, der PyCharm genannt wird."
+
+#: ../../source/chapters/03_setup/setup.rst:75
+msgid ""
+"PyCharm is a powerful program that lets you do more than just edit the "
+"program, it also includes a large set of tools that programmers need. This "
+"type of environment is called an **Integrated Development Environment**, or "
+"**IDE** for short."
+msgstr ""
+"PyCharm ist ein mächtiges Programm, dass dich mehr als nur ein Programm "
+"eingeben lässt. Es bringt eine Menge von Werkzeugen mit, die ein "
+"Programmierer benötigt. Diese Art von Programmierumgebung wird **Integrated "
+"Development Environment** oder kurz **IDE** genannt."
+
+#: ../../source/chapters/03_setup/setup.rst:80
+msgid ""
+"Download and install PyCharm_. You can use their community edition for free."
+" We won't use the features in the professional edition. If you decide to "
+"pick the professional edition anyway, you'll need a license to use it. But "
+"licenses are free for educational use! If you have an e-mail that ends in "
+"``.edu`` you can ask for a `student license`_. It can be used on a school "
+"computer, or on your own computer."
+msgstr ""
+"Lade und installiere PyCharm_. Du kannst die Community Edition kostenfrei "
+"verwenden. Wir werden keine Besonderheiten der professionellen Version "
+"verwenden. Wenn du trotzdem die professionelle Version wählst, wirst du eine"
+" Lizenz benötigen. Die Lizenzen kosten nichts für schulische Zwecke! Wenn du"
+" eine E-Mail-Adresse hast, die in ``.edu`` endet, kannst du um eine `student"
+" licence`_ bitten. Sie kann auf einem Schulrechner oder deinem eigenen "
+"verwendet werden."
+
+#: ../../source/chapters/03_setup/setup.rst:90
+msgid ""
+"What is a text editor? What is an IDE? Read more at `Understanding and "
+"Choosing Text Editors`_."
+msgstr ""
+"Was ist ein Texteditor? Was ist eine IDE? Mehr findest du unter "
+"`Understanding and Choosing Text Editors`_."
+
+#: ../../source/chapters/03_setup/setup.rst:97
+msgid "Viewing File Extensions"
+msgstr "Dateiendungen anzeigen"
+
+#: ../../source/chapters/03_setup/setup.rst:99
+msgid ""
+"It is a great idea to change your windows configuration to show file "
+"extensions. A file usually has a name like Book ``report.docx`` where the "
+"``.docx`` tells the computer it is a Microsoft Word compatible document. By "
+"default Windows hides the ``.docx`` extension if there is a program "
+"installed to handle it. If you are programming, this hiding part of the file"
+" name can be annoying."
+msgstr ""
+"Es ist eine gute Idee Windows so einzustellen, dass es Dateiendungen "
+"anzeigt. Üblicherweise hat eine Datei einen Namen wie ``report.docx``, wobei"
+" ``.docx`` dem Rechner sagt, dass es ein mit Microsoft Word kompatibles "
+"Dokument ist. Standardmäßig versteckt Windows die ``.docx``-Endung, wenn es "
+"ein Programm installiert ist, das dafür zuständig ist. Beim Programmieren "
+"kann das Verstecken der Dateiendung nerven."
+
+#: ../../source/chapters/03_setup/setup.rst:106
+msgid ""
+"For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key."
+" Then click the \"view\" tab and make sure \"File name extensions\" has been"
+" checked."
+msgstr ""
+"Drücke Windows-E auf der Tastatur unter Windows 8 und 10 um den Datei-"
+"Explorer zu öffnen. Klicke dann auf den \"Ansicht\"-Reiter und überprüfe, "
+"dass \"Dateinamenerweiterung\" gesetzt ist."
+
+msgid ".. image:: chapters/03_setup/win_10.png"
+msgstr ".. image:: chapters/03_setup/win_10.png"
+
+#~ msgid "Windows 7"
+#~ msgstr "Windows 7"
+
+#~ msgid ""
+#~ "For Windows 7, to show file extensions, open up your computer's control "
+#~ "panel. Find the selection for \"Folder Options.\"\" Click the \"View\" tab, "
+#~ "and then unselect the option for \"Hide extensions for known file types.\"\""
+#~ msgstr ""
+#~ "Öffne unter Windows 7 die Systemsteuerung, um die Dateiendungen anzuzeigen. "
+#~ "Suche die \"Ordneroptionen\". Klicke auf den \"Ansicht\"-Reiter und wähle "
+#~ "die Option \"Erweiterungen bei bekannten Dateitypen ausblenden\" ab."
+
+#~ msgid "Windows 8 and 10"
+#~ msgstr "Windows 8 und 10"
