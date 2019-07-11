@@ -2,14 +2,21 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
+SPHINXOPTS    = -D language='de'
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
+SPHINXINTL    = sphinx-intl
+LANGUAGE      = de
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
 $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINXBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
+endif
+
+# User-friendly check for sphinx-intl
+ifeq ($(shell which $(SPHINXINTL) >/dev/null 2>&1; echo $$?), 1)
+$(error The '$(SPHINXINTL)' command was not found. Make sure you have requirements from requirements.txt installed. You may run pip install -r to install all requirements for the build.)
 endif
 
 # Internal variables.
@@ -19,7 +26,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext intl
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -40,7 +47,8 @@ help:
 	@echo "  man        to make manual pages"
 	@echo "  texinfo    to make Texinfo files"
 	@echo "  info       to make Texinfo files and run them through makeinfo"
-	@echo "  gettext    to make PO message catalogs"
+	@echo "  gettext    to make POT message catalogs"
+	@echo "  intl       to make PO message catalogs"
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  xml        to make Docutils-native XML files"
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
@@ -159,6 +167,11 @@ gettext:
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
+
+intl:
+	$(SPHINXINTL) update -p $(BUILDDIR)/locale -l $(LANGUAGE)
+	@echo
+	@echo "The .po files for $(LANGUAGE) are in locale/$(LANGUAGE)/LC_MESSAGES."
 
 changes:
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) $(BUILDDIR)/changes
