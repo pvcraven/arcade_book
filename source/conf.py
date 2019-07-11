@@ -401,6 +401,6 @@ locale_dirs = ['../locale/']
 
 # It may be advisable to comment out the following, but if the literal code
 # should also be (in part) translated you must change the additional targets
-#gettext_additional_targets = ['literal-block', 'image']
+gettext_additional_targets = ['literal-block', 'image']
 
 gettext_compact = False     #optional
