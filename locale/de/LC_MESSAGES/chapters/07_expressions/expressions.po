@@ -1,0 +1,903 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-11 14:00+0200\n"
+"PO-Revision-Date: 2019-07-12 10:04+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/07_expressions/expressions.rst:2
+msgid "Variables and Expressions"
+msgstr "Variablen und Ausdrücke"
+
+#: ../../source/chapters/07_expressions/expressions.rst:4
+msgid ""
+"We've learned how to call functions to draw shapes like circles, but what if "
+"we could expand that? What if we could create our own instructions for "
+"drawing trees, houses, spaceships, and rainbows? What if our program could "
+"look like:"
+msgstr ""
+"Wir haben gelernt Funktion aufzurufen, um Formen wie Kreise zu zeichnen, "
+"aber wie können wir das erweitern? Was ist, wenn wir unsere eigenen "
+"Anweisungen zum Zeichnen von Bäumen, Häusern, Raumschiffen und Regenbogen "
+"erstellen wollen? Unser Programm könnte wie folgt aussehen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:10
+msgid ""
+"draw_tree(225, 35)\n"
+"draw_tree(420, 45)\n"
+"draw_house(720, 60)\n"
+"draw_snow_person(300, 20)"
+msgstr ""
+"draw_tree(225, 35)\n"
+"draw_tree(420, 45)\n"
+"draw_house(720, 60)\n"
+"draw_snow_person(300, 20)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:17
+msgid ""
+"For this level of computer-programming power, we need to learn three things:"
+msgstr ""
+"Für diesen Level an Rechnerprogrammier-Power, müssen wir drei Dinge lernen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:20
+msgid "How to use variables (this chapter)"
+msgstr "Wie man Variablen verwendet (dieses Kapitel)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:21
+msgid "How to write expressions (this chapter)"
+msgstr "Wie man Ausdrücke eingibt (dieses Kapitel)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:22
+msgid "How to create out own functions (next two chapters)"
+msgstr "Wie man eigene Funktionen erstellt (die nächsten beiden Kapitel)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:25
+msgid "How to Use Variables"
+msgstr "Wie man Variablen verwendet"
+
+#: ../../source/chapters/07_expressions/expressions.rst:27
+msgid ""
+"A **variable** is a value the computer stores in memory that can change. "
+"That is, it *varies*."
+msgstr ""
+"Eine **Variable** ist ein Wert, den ein Rechner speichert und der sich "
+"ändern kann. Das heißt, er ist *variabel*."
+
+#: ../../source/chapters/07_expressions/expressions.rst:30
+msgid ""
+"You've used variables in mathematics before. With computer science, we use "
+"them a lot. But in math class, you were given the equation and you had to "
+"solve for the variable. In computer science class, *we* come up with the "
+"equation and the *computer* solves the variable."
+msgstr ""
+"Du hast Variablen in Mathematik schon verwendet. In der Informatik verwenden "
+"wir sie häufig. Im Mathematikunterricht hast du aber eine Gleichung bekommen "
+"und musstest sie nach der Variablen auflösen. Im Informatikunterricht "
+"erstellen *wir* die Gleichung und der *Rechner* löst die Variable auf."
+
+#: ../../source/chapters/07_expressions/expressions.rst:35
+msgid "Here is a quick example:"
+msgstr "Hier ist ein kurzes Beispiel:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:37
+msgid ""
+"# What will this print?\n"
+"x = 5\n"
+"print(x)"
+msgstr ""
+"# What will this print?\n"
+"x = 5\n"
+"print(x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:43
+msgid "What will the code above print? It will print ``5``."
+msgstr "Was wird der Programmcode oben ausgeben? Er wird ``5`` ausgeben."
+
+#: ../../source/chapters/07_expressions/expressions.rst:45
+msgid ""
+"The ``=`` is called an **assignment operator**. It assigns the value on the "
+"right side to the variable on the left."
+msgstr ""
+"Das ``=`` wird **Zuweisungsoperator** genannt. Es weist den Wert auf der "
+"rechten Seite der Variablen auf der linken Seite zu."
+
+#: ../../source/chapters/07_expressions/expressions.rst:48
+msgid ""
+"Here's another example. Very similar, but something is different. What will "
+"it print?"
+msgstr ""
+"Hier ist ein anderes Beispiel. Es ist sehr ähnlich, aber etwas ist "
+"unterschiedlich. Was wird es ausgeben?"
+
+#: ../../source/chapters/07_expressions/expressions.rst:51
+msgid ""
+"# What will this print?\n"
+"x = 5\n"
+"print(\"x\")"
+msgstr ""
+"# What will this print?\n"
+"x = 5\n"
+"print(\"x\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:57
+msgid "The code above prints ``x``. Why not ``5``? Because:"
+msgstr "Der Code oben gibt ``x`` aus. Warum nicht ``5``? Der Grund ist:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:59
+msgid ""
+"If there are no quotes, the computer evaluates code like a mathematical "
+"expression."
+msgstr ""
+"Wenn es keine Anführungszeichen gibt, wertet der Rechner den Code genauso "
+"wie einen mathematischen Ausdruck aus."
+
+#: ../../source/chapters/07_expressions/expressions.rst:61
+msgid ""
+"If there are quotes, we treat what is between the quotes as a string of "
+"characters and don't change it."
+msgstr ""
+"Wenn es Anführungszeichen gibt, behandeln wir alles zwischen den "
+"Anführungszeichen als Zeichenkette und verändern sie nicht."
+
+#: ../../source/chapters/07_expressions/expressions.rst:64
+msgid ""
+"In fact, that is what we call the characters between the quotes. A "
+"**string**, which is short for \"string of characters.\" We don't call it "
+"\"text.\""
+msgstr ""
+"Das ist, was wir tatsächlich die Zeichen zwischen den Anführungszeichen "
+"nennen. Einen **String**, was kurz für \"string of characters\" (Kette von "
+"Zeichen) steht. Wir nennen es nicht \"Text\"."
+
+#: ../../source/chapters/07_expressions/expressions.rst:67
+msgid "The following code won't print at all:"
+msgstr "Der folgende Code gibt gar nichts aus:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:71
+msgid "print(Have a great day!)"
+msgstr "print(Have a great day!)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:73
+msgid ""
+"The code above will fail because the computer will think that it should "
+"evaluate ``Have a great day!`` as a mathematical expression. It isn't, so "
+"the computer gets confused and generates an error. That's why we need quotes:"
+msgstr ""
+"Der Code wird fehlschlagen, weil der Rechner meint, dass er ``Have a great "
+"day!`` als mathematischen Ausdruck auswerten soll. Es ist keiner, deshalb "
+"wird der Rechner verwirrt und generiert einen Fehler. Das ist der Grund, "
+"weshalb wir Anführungszeichen benötigen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:77
+msgid "print(\"Have a great day!\")"
+msgstr "print(\"Have a great day!\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:82
+msgid "Variable and Function Names"
+msgstr "Variablen und Funktionsnamen"
+
+#: ../../source/chapters/07_expressions/expressions.rst:84
+msgid ""
+"Variable names and function names follow the same rules. There are names you "
+"*should* use, names you *shouldn't* use, and names you *can't* use."
+msgstr ""
+"Variablennamen und Funktionsnamen folgen den gleichen Regeln. Es gibt Namen, "
+"die du verwenden *solltest*, Namen, die du *nicht* verwenden *solltest*, und "
+"Namen, die du *nicht* verwenden *kannst*."
+
+#: ../../source/chapters/07_expressions/expressions.rst:93
+msgid "Good variable name examples:"
+msgstr "Gute Beispiele für Variablennamen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:89
+msgid "``temperature_in_celsius``"
+msgstr "``temperature_in_celsius``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:90
+msgid "``tree_position``"
+msgstr "``tree_position``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:91
+msgid "``car_speed``"
+msgstr "``car_speed``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:92
+msgid "``number_of_children``"
+msgstr "``number_of_children``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:93
+msgid "``simpson``"
+msgstr "``simpson``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:98
+msgid "Legal, but bad variable names:"
+msgstr "Erlaubte, aber schlechte Variablennamen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:96
+msgid ""
+"``temperatueInCelsius`` - Uses capital letters. Keep it lower case and use "
+"underscores."
+msgstr ""
+"``temperatueInCelsius`` - verwendet Großbuchstaben. Bleibe bei "
+"Kleinbuchstaben und verwende Unterstriche."
+
+#: ../../source/chapters/07_expressions/expressions.rst:97
+msgid "``x`` - Too short, and not descriptive."
+msgstr "``x`` - zu kurz und nicht beschreibend"
+
+#: ../../source/chapters/07_expressions/expressions.rst:98
+msgid "``Simpson`` - Starts with a capital letter."
+msgstr "``Simpson`` - beginnt mit einem Großbuchstaben"
+
+#: ../../source/chapters/07_expressions/expressions.rst:102
+msgid "Variable names that won't work:"
+msgstr "Variablen die nicht erlaubt sind:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:101
+msgid "``tree position`` - Can't use spaces"
+msgstr "``tree position`` - Leerzeichen kann man nicht verwenden"
+
+#: ../../source/chapters/07_expressions/expressions.rst:102
+msgid "``4runner`` - Can't start with a number"
+msgstr "``4runner`` - darf nicht mit einer Ziffer anfangen"
+
+#: ../../source/chapters/07_expressions/expressions.rst:104
+msgid ""
+"Sometimes we want to create a variable that won't change. We call these "
+"variables **constants**. By convention, these variable names are in all "
+"upper case. They are the only variables that use upper-case. For example:"
+msgstr ""
+"Manchmal möchten wir Variablen erzeugen, die sich nicht verändern. Wir "
+"nennen diese Variablen **Konstanten**. Nach Konvention werden diese "
+"Variablennamen in Blockbuchstaben geschrieben. Sie sind nur Variablen die "
+"Blockbuchstaben verwenden. Zum Beispiel:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:109
+msgid ""
+"PI = 3.14159\n"
+"SCREEN_WIDTH = 600\n"
+"RED = (255, 0 ,0)"
+msgstr ""
+"PI = 3.14159\n"
+"SCREEN_WIDTH = 600\n"
+"RED = (255, 0 ,0)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:115
+msgid ""
+"Good variable names help make code *readable*. Note the example below that "
+"calculates miles-per-gallon. It isn't easy to understand."
+msgstr ""
+"Gute Variablennamen helfen den Code *lesbar* zu machen. Betrachte das "
+"Beispiel unten, dass den Verbrauch in Meilen-pro-Gallone ausrechnet. Es ist "
+"nicht leicht zu verstehen."
+
+#: ../../source/chapters/07_expressions/expressions.rst:118
+msgid ""
+"# Calculate mpg using confusing variable names\n"
+"m = 294\n"
+"g = 10.5\n"
+"m2 = m / g\n"
+"print(m2)"
+msgstr ""
+"# Calculate mpg using confusing variable names\n"
+"m = 294\n"
+"g = 10.5\n"
+"m2 = m / g\n"
+"print(m2)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:126
+msgid ""
+"But the code below that uses descriptive variable names *is* easy to "
+"understand."
+msgstr ""
+"Aber der Code unten verwendet beschreibende Variablennamen. Er *ist* leicht "
+"zu verstehen."
+
+#: ../../source/chapters/07_expressions/expressions.rst:128
+msgid ""
+"# Calculate mpg using good variable names\n"
+"miles_driven = 294\n"
+"gallons_used = 10.5\n"
+"mpg = miles_driven / gallons_used\n"
+"print(mpg)"
+msgstr ""
+"# Calculate mpg using good variable names\n"
+"miles_driven = 294\n"
+"gallons_used = 10.5\n"
+"mpg = miles_driven / gallons_used\n"
+"print(mpg)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:137
+msgid "How to Create Expressions"
+msgstr "Wie man Ausdrücke erstellt"
+
+#: ../../source/chapters/07_expressions/expressions.rst:140
+msgid "Using Operators in Expressions"
+msgstr "Verwendung von Operatoren in Ausdrücken"
+
+#: ../../source/chapters/07_expressions/expressions.rst:142
+msgid ""
+"Great! We are part-way there. To really be powerful, variables need to be "
+"used with **expressions**. An expression is simply a mathematical equation "
+"like what you've used in math before. Here's an example:"
+msgstr ""
+"Großartig! Wir sind zum Teil da. Um wirklich kraftvoll zu sein, müssen "
+"Variablen mit **Ausdrücken** verwendet werden. Ein Ausdruck ist einfach eine "
+"mathematische Formel, wie wir sie in Mathematik bisher verwendet haben. Hier "
+"ist ein Beispiel:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:146
+msgid ""
+"# What will this print?\n"
+"x = 5 + 10\n"
+"print(x)"
+msgstr ""
+"# What will this print?\n"
+"x = 5 + 10\n"
+"print(x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:152
+msgid ""
+"As you can probably guess, this will print out ``15``. We call the ``+`` "
+"sign an **operator**. Here are some other operators:"
+msgstr ""
+"Wie du wahrscheinlich ahnst, wird dies ``15`` ausgeben. Wir nennen das ``+``-"
+"Zeichen einen **Operator**. Hier sind ein paar andere Operatoren:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:156
+#: ../../source/chapters/07_expressions/expressions.rst:239
+msgid "Operator"
+msgstr "Operator"
+
+#: ../../source/chapters/07_expressions/expressions.rst:156
+#: ../../source/chapters/07_expressions/expressions.rst:239
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../source/chapters/07_expressions/expressions.rst:158
+msgid "``+``"
+msgstr "``+``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:158
+msgid "Addition"
+msgstr "Addition"
+
+#: ../../source/chapters/07_expressions/expressions.rst:159
+msgid "``-``"
+msgstr "``-``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:159
+msgid "Subtraction"
+msgstr "Subtraktion"
+
+#: ../../source/chapters/07_expressions/expressions.rst:160
+msgid "``*``"
+msgstr "``*``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:160
+msgid "Multiplication"
+msgstr "Multiplikation"
+
+#: ../../source/chapters/07_expressions/expressions.rst:161
+msgid "``**``"
+msgstr "``**``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:161
+msgid "Exponentiation (raise to the power)"
+msgstr "Exponentiation (hoch)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:162
+msgid "``/``"
+msgstr "``/``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:162
+msgid "Division"
+msgstr "Division"
+
+#: ../../source/chapters/07_expressions/expressions.rst:163
+msgid "``//``"
+msgstr "``//``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:163
+msgid "Integer division (rounds down)"
+msgstr "Ganzzahl-Division (rundet ab)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:164
+msgid "``%``"
+msgstr "``%``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:164
+msgid "Modulus (gives remainder of division)"
+msgstr "Modulo (ergibt den Rest einer Division)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:167
+msgid ""
+"There are two things that **don't** work like you'd expect. There is no "
+"\"juxtaposition\" used to multiply items. And the ``=`` is not an algebraic "
+"equality"
+msgstr ""
+"Es gibt zwei Dinge, die **nicht** wie erwartet funktionieren. Man kann das "
+"Multiplikationszeichen nicht weglassen. Das ``=``-Zeichen ist keine "
+"algebraische Gleichheit."
+
+#: ../../source/chapters/07_expressions/expressions.rst:172
+msgid "Juxtaposition Doesn't Work"
+msgstr "Auslassen des Multiplikationszeichens funktioniert nicht"
+
+#: ../../source/chapters/07_expressions/expressions.rst:174
+msgid ""
+"Juxtaposition doesn't work for multiplication. For example, the following "
+"will **not** work:"
+msgstr ""
+"Die Auslassung des Multiplikationszeichens funktioniert nicht. Das folgende "
+"Beispiel wird **nicht** funktionieren:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:177
+msgid ""
+"# The last two lines will error\n"
+"x = 3\n"
+"y = 2x\n"
+"z = 2(3 + x)"
+msgstr ""
+"# The last two lines will error\n"
+"x = 3\n"
+"y = 2x\n"
+"z = 2(3 + x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:184
+msgid "You can rewrite the code above to work by explicitly multiplying:"
+msgstr ""
+"Du kannst den Code oben durch explizites Multiplizieren zum Laufen bringen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:186
+msgid ""
+"# This code works. Although it doesn't print anything.\n"
+"x = 3\n"
+"y = 2 * x\n"
+"z = 2 * (3 + x)"
+msgstr ""
+"# This code works. Although it doesn't print anything.\n"
+"x = 3\n"
+"y = 2 * x\n"
+"z = 2 * (3 + x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:193
+msgid "Easy enough, just remember to use ``*`` any time you want to multiply."
+msgstr ""
+"Einfach genug. Denke nur daran, jedes mal ``*`` zu verwenden, wenn du "
+"multiplizieren willst."
+
+#: ../../source/chapters/07_expressions/expressions.rst:196
+msgid "Assignment Operators"
+msgstr "Zuweisungsoperatoren"
+
+#: ../../source/chapters/07_expressions/expressions.rst:198
+msgid ""
+"The ``=`` doesn't work the same as in algebra. The ``=`` evaluates what is "
+"on the right, and puts it in the variable on the left. For example:"
+msgstr ""
+"Das ``=``-Zeichen funktioniert nicht so wie in Algebra. Das ``=``-Zeichen "
+"wertet das auf der rechten Seite aus und steckt es in die Variable auf der "
+"linken Seite. Zum Beispiel:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:201
+msgid ""
+"# This works\n"
+"x = 3 + 4\n"
+"\n"
+"# This doesn't work because the only thing that can be on the left of\n"
+"# the = is one variable.\n"
+"3 + 4 = x\n"
+"\n"
+"# This works\n"
+"x = 5\n"
+"y = 6\n"
+"z = x + 2 * y\n"
+"\n"
+"# This doesn't\n"
+"x = 5\n"
+"y = 6\n"
+"2 * z = x + y"
+msgstr ""
+"# This works\n"
+"x = 3 + 4\n"
+"\n"
+"# This doesn't work because the only thing that can be on the left of\n"
+"# the = is one variable.\n"
+"3 + 4 = x\n"
+"\n"
+"# This works\n"
+"x = 5\n"
+"y = 6\n"
+"z = x + 2 * y\n"
+"\n"
+"# This doesn't\n"
+"x = 5\n"
+"y = 6\n"
+"2 * z = x + y"
+
+#: ../../source/chapters/07_expressions/expressions.rst:220
+msgid "This allows us to do some strange things we can't do in algebra!"
+msgstr ""
+"Das erlaubt uns einige merkwürdige Dinge zu tun, die in Mathematik nicht "
+"erlaubt sind!"
+
+#: ../../source/chapters/07_expressions/expressions.rst:222
+msgid ""
+"# This works, and prints \"3\"\n"
+"x = 3\n"
+"print(x)\n"
+"\n"
+"# This works too, even if it is invalid in algebra.\n"
+"# It takes the value of x (which is 3) and adds one. Then stores\n"
+"# the result (4) back in x. So we'll print \"4\".\n"
+"x = x + 1\n"
+"print(x)"
+msgstr ""
+"# This works, and prints \"3\"\n"
+"x = 3\n"
+"print(x)\n"
+"\n"
+"# This works too, even if it is invalid in algebra.\n"
+"# It takes the value of x (which is 3) and adds one. Then stores\n"
+"# the result (4) back in x. So we'll print \"4\".\n"
+"x = x + 1\n"
+"print(x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:235
+msgid ""
+"The ``=`` sign is also considered an operator. Specifically an \"assignment "
+"operator.\" Here are some other \"assignment\" operators:"
+msgstr ""
+"Das ``=``-Zeichen wir auch als Operator betrachtet. Genauer ein "
+"\"Zuweisungsoperator\". Hier sind weitere Zuweisungsoperatoren:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:241
+msgid "``=``"
+msgstr "``=``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:241
+msgid "Assignment"
+msgstr "Zuweisung"
+
+#: ../../source/chapters/07_expressions/expressions.rst:242
+msgid "``+=``"
+msgstr "``+=``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:242
+msgid "Increment"
+msgstr "Inkrement"
+
+#: ../../source/chapters/07_expressions/expressions.rst:243
+msgid "``-=``"
+msgstr "``-=``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:243
+msgid "Decrement"
+msgstr "Dekrement"
+
+#: ../../source/chapters/07_expressions/expressions.rst:244
+msgid "``*=``"
+msgstr "``*=``"
+
+#: ../../source/chapters/07_expressions/expressions.rst:244
+msgid "Multiply/Add"
+msgstr "Multipliziere"
+
+#: ../../source/chapters/07_expressions/expressions.rst:247
+msgid ""
+"# This works, and prints \"3\"\n"
+"x = 3\n"
+"print(x)\n"
+"\n"
+"# Make x bigger by one\n"
+"x = x + 1\n"
+"print(x)\n"
+"\n"
+"# Make x bigger by one, just like before\n"
+"x += 1\n"
+"print(x)\n"
+"\n"
+"# Make x smaller by five\n"
+"x -= 5\n"
+"print(x)"
+msgstr ""
+"# This works, and prints \"3\"\n"
+"x = 3\n"
+"print(x)\n"
+"\n"
+"# Make x bigger by one\n"
+"x = x + 1\n"
+"print(x)\n"
+"\n"
+"# Make x bigger by one, just like before\n"
+"x += 1\n"
+"print(x)\n"
+"\n"
+"# Make x smaller by five\n"
+"x -= 5\n"
+"print(x)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:266
+msgid "Using Expressions In Function Calls"
+msgstr "Verwendung von Funktionsaufrufen in Ausdrücken"
+
+#: ../../source/chapters/07_expressions/expressions.rst:268
+msgid ""
+"We can use expressions even in the calls that we make. For example, what if "
+"we want to draw a circle in the center of the screen?"
+msgstr ""
+"Wir können Ausdrücke in den Funktionsaufrufen verwenden. Was, wenn wir zum "
+"Beispiel einen Kreis in der Mitte des Zeichenbereichs zeichnen wollen?"
+
+#: ../../source/chapters/07_expressions/expressions.rst:271
+msgid "We could do something like:"
+msgstr "Wir könnten etwas wie folgt schreiben:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:273
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing Example\")\n"
+"\n"
+"arcade.set_background_color(arcade.color.WHITE)\n"
+"\n"
+"arcade.start_render()\n"
+"\n"
+"# Instead of this:\n"
+"# arcade.draw_circle_filled(400, 300, 50, arcade.color.FOREST_GREEN)\n"
+"# do this:\n"
+"arcade.draw_circle_filled(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 50, arcade."
+"color.FOREST_GREEN)\n"
+"\n"
+"arcade.finish_render()\n"
+"arcade.run()"
+msgstr ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing Example\")\n"
+"\n"
+"arcade.set_background_color(arcade.color.WHITE)\n"
+"\n"
+"arcade.start_render()\n"
+"\n"
+"# Instead of this:\n"
+"# arcade.draw_circle_filled(400, 300, 50, arcade.color.FOREST_GREEN)\n"
+"# do this:\n"
+"arcade.draw_circle_filled(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 50, arcade."
+"color.FOREST_GREEN)\n"
+"\n"
+"arcade.finish_render()\n"
+"arcade.run()"
+
+#: ../../source/chapters/07_expressions/expressions.rst:297
+msgid "Order of Operations"
+msgstr "Rangfolge der Operatoren"
+
+#: ../../source/chapters/07_expressions/expressions.rst:299
+msgid ""
+"Python will evaluate expressions using the same order of operations that are "
+"expected in standard mathematical expressions. For example this equation "
+"does not correctly calculate the average:"
+msgstr ""
+"Python wird die Operatoren in der Reihenfolge auswerten, die wir bei "
+"mathematischen Ausdrücken erwarten. So wird zum Beispiel die folgende "
+"Zuweisung nicht den korrekten Mittelwert ausrechnen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:303
+msgid "average = 90 + 86 + 71 + 100 + 98 / 5"
+msgstr "average = 90 + 86 + 71 + 100 + 98 / 5"
+
+#: ../../source/chapters/07_expressions/expressions.rst:307
+msgid "The first operation done is 98/5. The computer calculates:"
+msgstr ""
+"Die erste Operation, die ausgeführt wird, ist 98/5. Der Rechner berechnet:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:309
+msgid "90+86+71+100+\\frac{98}{5}"
+msgstr "90+86+71+100+\\frac{98}{5}"
+
+#: ../../source/chapters/07_expressions/expressions.rst:313
+msgid "rather than the desired:"
+msgstr "Anstatt wie gewünscht:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:315
+msgid "\\dfrac{90+86+71+100+98}{5}"
+msgstr "\\dfrac{90+86+71+100+98}{5}"
+
+#: ../../source/chapters/07_expressions/expressions.rst:319
+msgid "By using parentheses this problem can be fixed:"
+msgstr "Durch die Verwendung von Klammern kann dieses Problem gelöst werden:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:321
+msgid "average = (90 + 86 + 71 + 100 + 98) / 5"
+msgstr "average = (90 + 86 + 71 + 100 + 98) / 5"
+
+#: ../../source/chapters/07_expressions/expressions.rst:326
+msgid "Printing Variables"
+msgstr "Ausgabe von Variablen"
+
+#: ../../source/chapters/07_expressions/expressions.rst:328
+msgid ""
+"How can you print variables and text together? Say you've got a variable "
+"``result`` and you want to nicely print it. Based on what we learned so far, "
+"you can do this:"
+msgstr ""
+"Wie kann man Variablen und Text zusammen ausgeben? Nehmen wir an, wir haben "
+"die Variable ``result`` und wollen sie hübsch ausgeben. Basierend auf dem, "
+"was wir bisher gelernt haben, kannst du das tun:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:331
+msgid ""
+"answer = \"bananas\"\n"
+"print(answer)"
+msgstr ""
+"answer = \"bananas\"\n"
+"print(answer)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:336
+msgid ""
+"But that just prints out ``bananas`` on a line by itself. Not very "
+"descriptive. What if we wanted:"
+msgstr ""
+"Aber das gibt nur ``bananas`` auf einer Zeile alleine aus. Nicht wirklich "
+"anschaulich. Was wenn wir haben wollten:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:339
+msgid "The answer is bananas"
+msgstr "The answer is bananas"
+
+#: ../../source/chapters/07_expressions/expressions.rst:343
+msgid "You can do this with:"
+msgstr "Du kannst das erreichen mit:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:345
+msgid ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\", answer)"
+msgstr ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\", answer)"
+
+#: ../../source/chapters/07_expressions/expressions.rst:350
+msgid "Better. But I want to add punctuation. If we do this:"
+msgstr "Besser, aber wenn wir Interpunktion haben. Wenn wir dies tun:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:352
+msgid ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\", answer, \".\")"
+msgstr ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\", answer, \".\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:357
+msgid "We get an extra space before the period:"
+msgstr "Bekommen wir ein Leerzeichen vor dem Punkt:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:359
+msgid "The answer is bananas ."
+msgstr "The answer is bananas ."
+
+#: ../../source/chapters/07_expressions/expressions.rst:363
+msgid ""
+"The ``,`` adds a space when we use it in a ``print`` statement. We don't "
+"always want that. We can instead use a ``+`` sign:"
+msgstr ""
+"Das ``,`` fügt ein Leerzeichen ein, wenn wir es in einer ``print``-Anweisung "
+"verwenden. Das wollen wir nicht immer. Wir können das ``+``-Zeichen "
+"verwenden:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:366
+msgid ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\" + answer + \".\")"
+msgstr ""
+"answer = \"bananas\"\n"
+"print(\"The answer is\" + answer + \".\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:371
+msgid "Which gets rid of all the spaces:"
+msgstr "Das entfernt alle Leerzeichen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:373
+msgid "The answer isbananas."
+msgstr "The answer isbananas."
+
+#: ../../source/chapters/07_expressions/expressions.rst:377
+msgid "So we need to add a space INSIDE the quotes where we want it:"
+msgstr ""
+"Also müssen wir Leerzeichen *in* den Anführungszeichen einfügen, wo wir sie "
+"haben wollen:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:379
+msgid ""
+"answer = \"bananas\"\n"
+"print(\"The answer is \" + answer + \".\")"
+msgstr ""
+"answer = \"bananas\"\n"
+"print(\"The answer is \" + answer + \".\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:384
+msgid "Ok, so I think I know how to print variables. Until I try this:"
+msgstr ""
+"OK, also denke ich weiß, wie man Variablen ausgibt. Bis ich das ausprobiere:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:386
+msgid ""
+"answer = 42\n"
+"print(\"The answer is \" + answer + \".\")"
+msgstr ""
+"answer = 42\n"
+"print(\"The answer is \" + answer + \".\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:391
+msgid ""
+"The computer doesn't know how to put text and numbers together. If you add "
+"two *numbers* ``20 + 20`` you get ``40``. If you add two *strings* ``\"20\" "
+"+ \"20\"`` you get ``2020``, but the computer has no idea what to do with a "
+"combo of text and numbers. So the fix is to use the ``str`` function which "
+"converts the number to a string (text):"
+msgstr ""
+"Der Rechner weiß nicht, wie er Text und Zahlen zusammenfügen soll. Wenn du "
+"zwei *Zahlen* ``20+20`` addierst, bekommst du ``40``. Wenn du zwei "
+"*Zeichenketten* ``\"20\"+\"20\"`` addierst, bekommst du ``2020``, aber der "
+"Rechner hat keine Ahnung, was er mit einer Kombination von Text und Zahlen "
+"machen soll. Die Korrektur ist die ``str``-Funktion, die eine Zahl in eine "
+"Zeichenkette (string) konvertiert:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:398
+msgid ""
+"answer = 42\n"
+"print(\"The answer is \" + str(answer) + \".\")"
+msgstr ""
+"answer = 42\n"
+"print(\"The answer is \" + str(answer) + \".\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:403
+msgid ""
+"Yes, this is a bit complex. But wait! There's more! Another way to print "
+"variables is to use a *formatted string*. Later we will spend a whole other "
+"chapter on formatted strings, but they look like:"
+msgstr ""
+"Ja, das ist etwas kompliziert, aber warte! Es gibt mehr! Ein anderer Weg "
+"Variablen auszugeben sind *formatierte Zeichenketten*. Später werden wir ein "
+"ganzes Kapitel auf formatierte Zeichenketten verwenden, aber sie sehen so "
+"aus:"
+
+#: ../../source/chapters/07_expressions/expressions.rst:407
+msgid ""
+"answer = 42\n"
+"print(f\"The answer is {answer}.\")"
+msgstr ""
+"answer = 42\n"
+"print(f\"The answer is {answer}.\")"
+
+#: ../../source/chapters/07_expressions/expressions.rst:412
+msgid ""
+"Note we start the string with an ``f`` before the quote, and the variable we "
+"want to print goes in curly braces."
+msgstr ""
+"Beachte, dass wir die Zeichenkette mit einem ``f`` vor dem Anführungszeichen "
+"anfangen und die Variable in geschweiften Klammern steht. "

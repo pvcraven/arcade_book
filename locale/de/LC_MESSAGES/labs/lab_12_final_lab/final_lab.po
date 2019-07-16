@@ -1,0 +1,666 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-11 14:00+0200\n"
+"PO-Revision-Date: 2019-07-16 11:51+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:4
+msgid "Lab 12: Final Lab"
+msgstr "Übung 12: Abschließende Übung"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:6
+msgid ""
+"This is it! This is your chance to use your creativity and really show off "
+"what you can create in your own game. More than just passing a test, in this "
+"class you actually get to do something, and create something real."
+msgstr ""
+"Das ist es! Dies ist deine Chance, deine Kreativität zu nutzen und wirklich "
+"zu zeigen, was du in deinem eigenen Spiel erstellen kannst. Mehr als nur "
+"eine Prüfung zu bestehen, in diesem Kurs kann man tatsächlich etwas tun und "
+"etwas Reales erschaffen."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:10
+msgid ""
+"There are two options for the final lab. A \"video game option\" and a "
+"\"text adventure option.\""
+msgstr ""
+"Es gibt zwei Möglichkeiten für die abschließende Übung. Eine \"Videospiel-"
+"Option\" und eine \"Text-Adventure-Option\"."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:13
+msgid ""
+"Both options are divided into three parts. Each part should take about one "
+"week. The goals of this lab:"
+msgstr ""
+"Beide Optionen sind in drei Teile unterteilt. Jeder Teil sollte ungefähr "
+"eine Woche benötigen. Die Ziele dieser Übung sind:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:16
+msgid ""
+"Get used to working on longer programs by breaking them into different "
+"functions, classes, and files."
+msgstr ""
+"Mache dich mit längeren Programmen vertraut, indem du sie in verschiedene "
+"Funktionen, Klassen und Dateien unterteilst."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:18
+msgid ""
+"Learn to search for code that does what you want, and adapt it into your "
+"program."
+msgstr ""
+"Lerne, nach Programmcode zu suchen, der genau das tut, was du willst, und "
+"passe ihn an dein Programm an."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:20
+msgid "Learn to break down large programs into smaller, easier to solve parts."
+msgstr ""
+"Lerne, große Programme in kleinere, leichter zu lösende Teile zu zerlegen."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:21
+msgid "Start creating a portfolio of work that you've done."
+msgstr ""
+"Beginne mit der Erstellung eines Portfolios von Arbeiten, die du erledigt "
+"hast."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:22
+msgid "See that programming can be a fun, creative outlet."
+msgstr ""
+"Erkenne, dass das Programmieren eine unterhaltsame und kreative "
+"Angelegenheit sein kann."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:23
+msgid ""
+"Apply the concepts we learned, such as variables, expressions, if "
+"statements, loops, lists, arrays, and more."
+msgstr ""
+"Wende die Konzepte an, die wir gelernt haben, zum Beispiel Variablen, "
+"Ausdrücke, ``if``-Anweisungen, Schleifen, Listen, Arrays und mehr."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:26
+msgid ""
+"This lab is worth 60 points. Each week, turn in what you have for the lab so "
+"you can \"lock in\" your score and get an idea of how you are progressing. "
+"When you get more done, resubmit the assignment."
+msgstr ""
+"Diese Übung ist 60 Punkte wert. Gebe jede Woche das ab, was du für die Übung "
+"getan hast, damit du deine Punktzahl \"fest hältst\" und eine Vorstellung "
+"davon bekommst, wie du vorankommst. Wenn du weitere Aufgaben erledigt hast, "
+"gib die Übung ab."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:31
+msgid ""
+"You can wait until the end to turn in your work until the end of the "
+"semester, but that is a very risky plan."
+msgstr ""
+"Du kannst bis zum Ende warten, um deine Arbeit bis zum Ende des Kurses "
+"abzugeben, aber das ist ein sehr riskanter Plan."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:35
+msgid "Video Game Option"
+msgstr "Videospiel-Option"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:37
+msgid ""
+"The video game option is the most popular option. Here are some videos of "
+"what students have done in prior years:"
+msgstr ""
+"Die Videospieloption ist die beliebteste Option. Hier sind einige Videos von "
+"dem, was die Studierenden in früheren Jahren programmiert haben:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:64
+msgid "Using Images or Sounds from Other Sources"
+msgstr "Verwenden von Bildern oder Sounds aus anderen Quellen"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:66
+msgid ""
+"It is ok to use images and sounds from other sources if you cite the source."
+msgstr ""
+"Es ist in Ordnung, Bilder und Sounds aus anderen Quellen zu verwenden, wenn "
+"du die Quelle angibst."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:68
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:91
+msgid ""
+"Cite in the code comments what images and sounds you've used. So for every "
+"image or sound loaded, put a ``#`` tag in the line above with a citation on "
+"where it came from. I'll expect more than just a URL, give me a name of the "
+"website as well."
+msgstr ""
+"Zitiere in Kommentaren im Programmcode, welche Bilder und Sounds du "
+"verwendest hast. Füge für jedes geladene Bild oder jeden geladenen Sound "
+"einen mit ``#`` beginnenden Kommentar in der Zeile darüber ein, und gib an, "
+"woher er stammt. Ich erwarte mehr als nur eine URL, gib mir auch einen Namen "
+"für die Website und die Lizenz an."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:73
+msgid ""
+"For a professionally published game this would NOT be enough. You'd need to "
+"make sure you have license to use the work."
+msgstr ""
+"Für ein professionell veröffentlichtes Spiel wäre dies *nicht* genug. Du "
+"musst sicherstellen, dass du über eine Lizenz verfügst, um das Werk nutzen "
+"zu dürfen."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:76
+msgid ""
+"If you create your own image or sound, state that in the comments so I can "
+"be properly impressed."
+msgstr ""
+"Wenn du ein eigenes Bild oder einen eigenen Sound erstellst, gibt dies in "
+"den Kommentaren an, damit ich richtig beeindruckt werde."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:80
+msgid "Using Code from Other Sources"
+msgstr "Verwenden von Programmcode aus anderen Quellen"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:82
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:95
+msgid ""
+"If you find code to use that doesn't come from this website or from arcade."
+"academy, cite it. Otherwise you'll be plagiarizing, and flunked from the "
+"class."
+msgstr ""
+"Wenn du Programmcode findest, der nicht von dieser Website oder von arcade."
+"academy stammt, zitiere ihn. Sonst plagiierst du und fliegst aus dem Kurs."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:86
+msgid "Almost every semester I catch someone doing this. Please, just don't."
+msgstr ""
+"Fast jedes Semester ertappe ich dabei jemanden. Bitte, tu es einfach nicht."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:89
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:171
+msgid "Requirements for Part 1"
+msgstr "Anforderungen für Teil 1"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:99
+msgid ""
+"Each of the three parts for the final lab raises the bar on what your game "
+"needs to be able to do."
+msgstr ""
+"Jeder der drei Teile für die abschließende Übung legt die Messlatte für das, "
+"was Ihr Spiel tun muss, höher."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:102
+msgid "Open up a screen."
+msgstr "Öffne einen Bildschirm."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:103
+msgid ""
+"Set up the items to be drawn on the screen. Figure out the images that you "
+"want to use."
+msgstr ""
+"Richte die Elemente ein, die auf dem Bildschirm gezeichnet werden sollen. "
+"Plane welche Bilder du verwenden möchtest."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:105
+msgid ""
+"Provide some sort of player movement or interaction via mouse, keyboard, or "
+"game controller. Get items on the screen to move, if applicable."
+msgstr ""
+"Stellen Sie eine Art von Bewegung der Spielfigur oder Interaktion über Maus, "
+"Tastatur oder Gamecontroller bereit. Bewege gegebenenfalls Objekte auf dem "
+"Bildschirm."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:107
+msgid "Have something that is at least kind-of playable."
+msgstr "Erstelle etwas, das zumindest irgendwie spielbar ist."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:110
+msgid "**Tips:**"
+msgstr "**Tipps:**"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:112
+msgid ""
+"If your program will involve things running into each other, start by using "
+"sprites. Do not start by using drawing commands, and expect to add in "
+"sprites later. It won't work and you'll need start over from scratch. This "
+"will be sad."
+msgstr ""
+"Wenn dein Programm Dinge beinhaltet, die aufeinander treffen, verwende "
+"direkt Sprites. Beginne nicht mit Zeichnungsbefehlen und erwarte, dass du "
+"später Sprites hinzufügst. Es wird nicht funktionieren und du musst von "
+"vorne anfangen. Das wäre traurig."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:116
+msgid ""
+"If you are coding a program like mine sweeper or connect four, do *not* use "
+"sprites. Since collision detection is not needed, there is no need to mess "
+"with sprites."
+msgstr ""
+"Wenn du ein Programm wie \"Mine Sweeper\" oder \"Vier gewinnt\" "
+"programmierst, verwende keine Sprites. Da keine Kollisionserkennung "
+"erforderlich ist, musst du dich nicht mit Sprites herumschlagen."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:119
+msgid ""
+"While you can start with and use any of the example game code from this "
+"website or `arcade.academy`_, don't just turn these in as Part 1. You'll "
+"need to add a lot before it qualifies."
+msgstr ""
+"Du darfst zwar mit einem der Beispiel-Spielprogramme von dieser Website oder "
+"`arcade.academy`_ beginnen und dieses verwenden, aber stelle dieses nicht "
+"einfach als Teil 1 ein. Du musst eine Menge hinzufügen, bevor das als eigene "
+"Leistung gilt."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:122
+msgid ""
+"A very common mistake is to make a call to ``self.all_sprites_list."
+"update()`` and ``self.physics_engine.update()``. This will cause you to warp "
+"through walls. You want to specifically update lists that don't include the "
+"player, like ``self.enemy_list.update()``."
+msgstr ""
+"Ein sehr häufiger Fehler ist der Aufruf von ``self.all_sprites_list."
+"update()`` und ``self.physics_engine.update()``. Dies führt dazu, dass die "
+"Spielfiguren durch Wände tunneln. Du solltest speziell die Listen "
+"aktualisieren, die die Spielfigur nicht enthalten, wie ``self.enemy_list."
+"update()``."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:126
+msgid ""
+"Remember that any extra white-space around your image will throw off "
+"collision detection. Best to check and trim white space from images you use."
+msgstr ""
+"Denke daran, dass ein zusätzlicher weißer Bereich um Ihr Bild die "
+"Kollisionserkennung auslöst. Am besten überprüfst und beschneidest du den "
+"weißen Bereich von Bildern, die du verwendest."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:128
+msgid ""
+"`OpenGameArt.org`_ has a lot of images and sounds you can use royalty-free."
+msgstr ""
+"`OpenGameArt.org`_ enthält viele Bilder und Sounds, die du kostenfrei "
+"verwenden kannst."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:129
+msgid "`Kenney.nl`_ has many images and sounds as well."
+msgstr "`Kenney.nl`_ hat auch viele Bilder und Sounds."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:136
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:209
+msgid "Requirements for Part 2"
+msgstr "Anforderungen für Teil 2"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:138
+msgid ""
+"For Final Lab Part 2, your game should be functional. A person should be "
+"able to sit down and play the game for a few minutes and have it feel like a "
+"real game. Here are some things you might want to add:"
+msgstr ""
+"Für die finale Übung - Teil 2 sollte dein Spiel funktionsfähig sein. Jemand "
+"sollte in der Lage sein, sich für einige Minuten hinzusetzen und das Spiel "
+"zu spielen, und es sollte sich wie ein echtes Spiel anfühlen. Hier sind "
+"einige Dinge, die du vielleicht hinzufügen möchtest:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:142
+msgid "Be able to collide with objects."
+msgstr "Mit Objekten kollidieren können."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:143
+msgid "Players can lose the game if something bad happens."
+msgstr "Spieler können das Spiel verlieren, wenn etwas Schlimmes passiert."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:144
+msgid "On-screen score."
+msgstr "Spielstand auf dem Bildschirm."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:145
+msgid "Sound effects."
+msgstr "Soundeffekte."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:146
+msgid "Movement of other characters in the screen."
+msgstr "Bewegung anderer Charaktere auf dem Bildschirm."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:147
+msgid "The ability to click on mines or empty spots."
+msgstr "Die Möglichkeit, auf Minen oder leere Stellen zu klicken."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:150
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:241
+msgid "Requirements for Part 3"
+msgstr "Anforderungen für Teil 3"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:152
+msgid ""
+"For the final part, add in the last polish for your game. Here are some "
+"things you might want to add:"
+msgstr ""
+"Füge für den letzten Teil den letzten Schliff für dein Spiel hinzu. Hier "
+"sind einige Dinge, die du vielleicht hinzufügen möchtest:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:155
+msgid "Title and instruction screens"
+msgstr "Titel- und Anweisungsbildschirme"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:156
+msgid "Multiple levels"
+msgstr "Mehrere Level"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:157
+msgid "Lots of Sounds"
+msgstr "Viele Sounds"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:158
+msgid "Multiple \"lives\""
+msgstr "Mehrere \"Leben\""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:159
+msgid "More types of enemies"
+msgstr "Weitere Arten von Feinden"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:160
+msgid "Power-ups"
+msgstr "Power-Ups"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:161
+msgid "Heat seeking missiles"
+msgstr "Hitze suchende Raketen"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:162
+msgid "Hidden doors"
+msgstr "Versteckte Türen"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:163
+msgid ""
+"A \"sweep\" action in a minesweeper game or the ability to place \"flags\""
+msgstr ""
+"Eine \"Sweep\" -Aktion in einem Minensuchspiel oder die Fähigkeit, \"Flaggen"
+"\" zu setzen"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:166
+msgid "Text Adventure Option"
+msgstr "Text-Adventure-Option"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:168
+msgid ""
+"Not interested in a video game? Continue your work from the \"Adventure!\" "
+"game."
+msgstr ""
+"Du interessierst dich nicht für ein Videospiel? Setze deine Arbeit am Text-"
+"Adventure-Spiel fort."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:173
+msgid ""
+"Rather than have each room be a list of ``[description, north, east, south, "
+"west]`` create a ``Room`` class. The class should have a constructor that "
+"takes in ``(description, north, east, south, west)`` and sets fields for the "
+"description and all of the directions. Get the program working with the new "
+"class. The program should be able to add rooms like:"
+msgstr ""
+"Anstatt für jeden Raum eine Liste mit ``[description, north, east, south, "
+"west]`` zu erstellen, erstelle eine ``Room``-Klasse. Die Klasse sollte einen "
+"Konstruktor haben, der ``(description, north, east, south, west)`` aufnimmt "
+"und Attribute für die Beschreibung und alle Richtungen festlegt. Verwende "
+"die neue Klasse in deinem Programm. Das Programm sollte Räume in der "
+"folgenden Art hinzufügen können:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:180
+msgid ""
+"room = Room(\"You are in the kitchen. There is a room to the east.\", None, "
+"1, None, None)\n"
+"room_list.append(room)\n"
+"\n"
+"room = Room(\"You are in the living room. There is a room to the west.\", "
+"None, None, 0, None)\n"
+"room_list.append(room)"
+msgstr ""
+"room = Room(\"Du bist in der Küche. Es ist ein Raum im Osten.\", None, 1, "
+"None, None)\n"
+"room_list.append(room)\n"
+"\n"
+"room = Room(\"Du bist im Wohnzimmer. Es gibt einen Raum nach Westen.\", "
+"None, None, 0, None)\n"
+"room_list.append(room)"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:188
+msgid "Later the program should be able to refer to fields in the room:"
+msgstr ""
+"Später sollte das Programm in der Lage sein, auf Attribute im Raum zu "
+"verweisen:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:190
+msgid "current_room = room_list[current_room].north"
+msgstr "current_room = room_list[current_room].north"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:194
+msgid ""
+"Perhaps expand the game so that a person can travel up and down. Also expand "
+"it so the person can travel northwest, southwest, northeast, and southeast."
+msgstr ""
+"Vielleicht erweiterst du das Spiel, so dass eine Person nach oben und nach "
+"unten gehen kann. Erweitere es auch, so dass die Person nach Nordwesten, "
+"Südwesten, Nordosten und Südosten gehen kann."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:196
+msgid "Add a list of items in your game."
+msgstr "Füge eine Liste der Gegenstände in deinem Spiel hinzu."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:198
+msgid "Create a class called ``Item``."
+msgstr "Erstelle eine Klasse namens ``Item``."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:199
+msgid ""
+"Add fields for the item's room number, a long description, and a short name. "
+"The short name should only be one word long. This way the user can type "
+"``get key`` and the computer will know what object he/she is referring to. "
+"The description will be what is printed out. Like ``There is a rusty key "
+"here.``"
+msgstr ""
+"Füge Attribute für die Zimmernummer des Artikels, eine lange Beschreibung "
+"und einen kurzen Namen hinzu. Der Kurzname sollte nur ein Wort lang sein. "
+"Auf diese Weise kann der Benutzer ``get key`` eingeben und der Computer "
+"weiß, auf welches Objekt er sich bezieht. Die Beschreibung ist das, was "
+"ausgegeben wird. Wie ``Hier liegt ein rostiger Schlüssel.``"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:204
+msgid "Create a list of items, much like you created your list of rooms."
+msgstr ""
+"Erstelle eine Liste mit Elementen, ähnlich wie du deine Liste mit Räumen "
+"erstellt hast."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:205
+msgid "If the item is in the user's room, print the item's description."
+msgstr ""
+"Gib die Artikelbeschreibung aus, wenn sich der Artikel im aktuellen Raum "
+"befindet."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:206
+msgid "Test, and make sure this works."
+msgstr "Teste, und stelle sicher, dass dies funktioniert."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:211
+msgid ""
+"Change your command processing, so rather than just allowing the user to "
+"only type in directions, the user will now start having other options. For "
+"example, we want the user to also be able to type in commands such as get "
+"key, inventory or wave wand."
+msgstr ""
+"Ändere deine Befehlsverarbeitung, sodass der Benutzer nicht nur Anweisungen "
+"eingeben darf, sondern jetzt auch andere Optionen hat. Zum Beispiel möchten "
+"wir, dass der Benutzer auch Befehle wie \"get key\", \"inventory\" oder "
+"\"wave wand\" eingeben kann. (Natürlich darfst du dein Adventure auch auf "
+"Deutsch erstellen.)"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:213
+msgid ""
+"To do this, don't ask the user What direction do you want to go? Instead ask "
+"the user something like What is your command?"
+msgstr ""
+"Frage den Benutzer dazu nicht, \"In welche Richtung möchten Sie gehen?\". "
+"Bitte stattdessen den Benutzer um etwas, wie \"Was ist Ihr Kommando?\"."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:214
+msgid ""
+"Split the user input. We need a variable that is equal to the first command "
+"they type, such as get and a different variable equal to the second word, "
+"such as key."
+msgstr ""
+"Teile die Benutzereingabe auf. Wir brauchen eine Variable, die dem ersten "
+"Befehl entspricht, den sie eingeben, wie zum Beispiel \"get\" (\"nimm\"), "
+"und eine andere Variable, die dem zweiten Wort entspricht, wie zum Beispiel "
+"\"key\" (\"Schlüssel\")."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:216
+msgid ""
+"Use the split method that's built into Python strings. For example: "
+"``command_words = user_command.split(\" \")`` This will split what the user "
+"types into a list. Each item separated out based on spaces."
+msgstr ""
+"Verwende die in Python-Strings integrierte Methode ``split`` zum Aufteilen. "
+"Zum Beispiel: ``command_words = user_command.split(\" \")``. Dies teilt das, "
+"was der Benutzer eingibt, in eine Liste auf. Jedes Element wird nach "
+"Leerzeichen getrennt."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:220
+msgid ""
+"Update your code that processes the user typing in directions, to check "
+"command_words[0] instead of whatever you had before."
+msgstr ""
+"Aktualisiere deinen Programmcode, der die Eingabe von Anweisungen durch den "
+"Benutzer verarbeitet, um ``command_words[0]`` zu überprüfen, anstatt dessen, "
+"was du zuvor hattest."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:223
+msgid "Add a get command."
+msgstr "Füge ein \"get'-Kommando hinzu."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:225
+msgid ""
+"Add a check for a get command in your if/elif chain that is now just "
+"processing directions."
+msgstr ""
+"Füge eine Überprüfung für ein \"get\"-Kommando in deine ``if``/``elif``-"
+"Kette ein, die jetzt nur noch Anweisungen verarbeitet."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:227
+msgid ""
+"Search the item list until you find an object that matches what the user is "
+"trying pick up."
+msgstr ""
+"Durchsuche die Objektliste, bis du ein Objekt finden, das mit dem "
+"übereinstimmt, was der Benutzer aufheben möchte."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:229
+msgid ""
+"If the object isn't found, or if the object isn't in the current room, print "
+"an error."
+msgstr ""
+"Wenn das Objekt nicht gefunden wird oder wenn sich das Objekt nicht im "
+"aktuellen Raum befindet, gib einen Fehler aus."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:231
+msgid ""
+"If the object is found and it is in the current room, then set the object's "
+"room number to -1."
+msgstr ""
+"Wenn das Objekt gefunden wurde und es sich im aktuellen Raum befindet, setze "
+"die Raumnummer des Objekts auf -1."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:234
+msgid ""
+"Add a command for \"inventory\" that will print every object who's room "
+"number is equal to -1."
+msgstr ""
+"Fügen Sie einen Befehl für \"Inventar\" hinzu, mit dem jedes Objekt "
+"ausgegeben wird, dessen Zimmernummer gleich -1 ist."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:236
+msgid "Add the ability to drop an object."
+msgstr "Füge die Fähigkeit hinzu, ein Objekt fallen zu lassen."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:237
+msgid ""
+"Add the ability to use the objects. For example \"use key\" or \"swing sword"
+"\" or \"feed bear.\""
+msgstr ""
+"Füge die Fähigkeit hinzu, die Objekte zu verwenden. Zum Beispiel \"get key"
+"\" (\"benutze Schlüssel\") oder \"swing sword\" (\"schwinge Schwert\") oder "
+"\"feed bear\" (\"füttere Bär\")."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:243
+msgid "Expand the game some more. Try some of these ideas:"
+msgstr "Erweitere das Spiel noch etwas. Probiere einige dieser Ideen aus:"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:245
+msgid ""
+"Create a file format that allows you to load the rooms and objects from a "
+"file rather than write code for it."
+msgstr ""
+"Erstelle ein Dateiformat, mit dem du Räume und Objekte aus einer Datei laden "
+"kannst, anstatt Programmcode dafür zu schreiben."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:246
+msgid "Have monsters with hit points."
+msgstr ""
+"Monster mit Trefferpunkten, die erst sterben wenn die Trefferpunkte null "
+"werden."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:247
+msgid "Split the code up into multiple files for better organization."
+msgstr ""
+"Teile den Programmcode zur besseren Organisation in mehrere Dateien auf."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:248
+msgid ""
+"Remove globals using a main function as shown at the end of the chapter "
+"about functions."
+msgstr ""
+"Entferne globale Variablen mithilfe einer Hauptfunktion, wie am Ende des "
+"Kapitels über Funktionen gezeigt."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:249
+msgid "Have objects with limited use. Like a bow that only has so many arrows."
+msgstr ""
+"Objekte mit begrenzter Verwendung. Wie ein Bogen, der nur eine bestimmte "
+"Anzahl von Pfeilen hat."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:250
+msgid ""
+"Have creatures with limited health, and weapons that cause random damage and "
+"have a random chance to hit."
+msgstr ""
+"Kreaturen mit eingeschränkter Gesundheit und Waffen, die zufälligen Schaden "
+"verursachen und zufällige Trefferchancen haben."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:253
+msgid "Tips"
+msgstr "Tipps"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:255
+msgid ""
+"Commit and push your code often. It is not unusual for something bad to "
+"happen to the code while you are working on this assignment. Anything you "
+"commit and push we can recover. Don't work for more than a couple hours "
+"without doing this."
+msgstr ""
+"Commit und push deinen Programmcode häufig. Es ist nicht ungewöhnlich, dass "
+"etwas Schlimmes mit dem Programmcode passiert, während du an dieser Aufgabe "
+"arbeitest. Alles, was du commitet und gepusht hast, können wir "
+"wiederherstellen. Arbeite nicht länger als ein paar Stunden, ohne dies zu "
+"tun."
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:259
+msgid ""
+"I give a lot of in-class lab time for this project. Use it. Don't leave "
+"early."
+msgstr ""
+"Ich gebe viel Übungszeit im Kurs für dieses Projekt. Nutze sie. Geh nicht zu "
+"früh."

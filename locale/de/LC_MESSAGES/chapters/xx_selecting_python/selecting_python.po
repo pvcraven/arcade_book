@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-09 20:56+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:2
+msgid "Appendix: Selecting Python"
+msgstr "Anhang: Auswählen von Python"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:4
+msgid ""
+"Our school computers have three different copies of Python installed. We "
+"need to select the correct Python to run. This is how you do it."
+msgstr ""
+"Auf unseren Schulcomputern sind drei verschiedene Kopien von Python "
+"installiert. Wir müssen das richtige Python auswählen, um es auszuführen. "
+"Hier ist wie man das macht."
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:7
+msgid "Select File...Settings from the menu:"
+msgstr "Wählen Sie Datei ... Einstellungen aus dem Menü:"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:10
+msgid ".. image:: chapters/xx_selecting_python/project_settings.png"
+msgstr ".. image:: chapters/xx_selecting_python/project_settings.png"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:11
+msgid ""
+"Next, select \"Project Interpreter\" from the left side. Then select the "
+"gear icon on the right side, which will pop down a menu. Select \"Add Local."
+"\""
+msgstr ""
+"Als nächstes wählen Sie \"Project Interpreter\" von der linken Seite. Wählen "
+"Sie dann das Zahnradsymbol auf der rechten Seite. Daraufhin wird ein Menü "
+"eingeblendet. Wählen Sie \"Add Local\"."
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:16
+msgid ".. image:: chapters/xx_selecting_python/add_local.png"
+msgstr ".. image:: chapters/xx_selecting_python/add_local.png"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:17
+msgid ""
+"Then browse to the Python interpreter that we want. See the path below. If "
+"you are lucky, it might automatically select the interpreter for you."
+msgstr ""
+"Navigieren Sie dann zum gewünschten Python-Interpreter. Siehe den Pfad "
+"unten. Wenn Sie Glück haben, wird der Interpreter möglicherweise automatisch "
+"für Sie ausgewählt."
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:21
+msgid ".. image:: chapters/xx_selecting_python/select_file.png"
+msgstr ".. image:: chapters/xx_selecting_python/select_file.png"
+
+#: ../../source/chapters/xx_selecting_python/selecting_python.rst:22
+msgid ""
+"After you do this, the \"run\" option won't be available for a little while. "
+"The computer will be reindexing all the commands. You can see this on the "
+"bar at the bottom. When it is done, you should be able to run your programs."
+msgstr ""
+"Nachdem Sie dies getan haben, wird die Option \"run\" für eine Weile nicht "
+"verfügbar sein. Der Rechner indiziert alle Befehle neu. Sie können dies an "
+"der Leiste unten sehen. Wenn dies erledigt ist, sollten Sie in der Lage "
+"sein, Ihre Programme auszuführen."

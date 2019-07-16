@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-13 11:17+0200\n"
+"PO-Revision-Date: 2019-07-12 08:17+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/01_foreword/foreword.rst:2
+msgid "Foreword - Why Learn Programming?"
+msgstr "Vorwort - Warum sollte ich Python lernen?"
+
+#: ../../source/chapters/01_foreword/foreword.rst:4
+msgid "Why program? Programming is:"
+msgstr "Warum programmieren? Weil es:"
+
+#: ../../source/chapters/01_foreword/foreword.rst:7
+msgid "Fun"
+msgstr "Spaß macht"
+
+#: ../../source/chapters/01_foreword/foreword.rst:8
+msgid "Pays well"
+msgstr "Gut bezahlt wird"
+
+#: ../../source/chapters/01_foreword/foreword.rst:11
+msgid "Programming Is Fun"
+msgstr "Programmieren macht Spaß"
+
+#: ../../source/chapters/01_foreword/foreword.rst:13
+msgid ""
+"With programming you get to *create*. People paint and perform music to "
+"create and express themselves."
+msgstr ""
+"Beim Programmieren ist man *kreativ*. Manche malen oder musizieren, um "
+"kreativ zu sein und sich selbst auszudrücken."
+
+#: ../../source/chapters/01_foreword/foreword.rst:18
+msgid ""
+"Picasso had a saying. He said, \"Good artists copy, great artists steal.\" "
+"And we have always been shameless about stealing great ideas and I think "
+"part of what made the Macintosh great was that the people working on it were "
+"musicians and poets and artists and zoologists and historians who also "
+"happened to be the best computer scientists in the world."
+msgstr ""
+"Picasso had a saying. He said, \"Good artists copy, great artists steal.\" "
+"And we have always been shameless about stealing great ideas and I think "
+"part of what made the Macintosh great was that the people working on it were "
+"musicians and poets and artists and zoologists and historians who also "
+"happened to be the best computer scientists in the world."
+
+#: ../../source/chapters/01_foreword/foreword.rst:24
+msgid ""
+"*Steve Jobs in PBS's \"Triumph of the Nerds: The Rise of Accidental Empires"
+"\" (1996)*"
+msgstr ""
+"*Steve Jobs in der Sendung \"Triumph of the Nerds: The Rise of Accidental "
+"Empires\" (1996) auf PBS*"
+
+#: ../../source/chapters/01_foreword/foreword.rst:26
+msgid ""
+"Not only do you get to be an artist when you program, but you get to design."
+msgstr ""
+"Beim Programmieren bist du nicht nur ein Künstler, sondern auch ein Designer."
+
+#: ../../source/chapters/01_foreword/foreword.rst:30
+msgid ""
+"Design is a funny word. Some people think design means how it looks. But of "
+"course, if you dig deeper, it's really how it works. The design of the Mac "
+"wasn't what it looked like, although that was part of it. Primarily, it was "
+"how it worked."
+msgstr ""
+"Design is a funny word. Some people think design means how it looks. But of "
+"course, if you dig deeper, it's really how it works. The design of the Mac "
+"wasn't what it looked like, although that was part of it. Primarily, it was "
+"how it worked."
+
+#: ../../source/chapters/01_foreword/foreword.rst:35
+msgid "*Steve Jobs in Wired's \"The Next Insanely Great Thing\" (1996)*"
+msgstr ""
+"*Steve Jobs im Artikel in Wired \"The Next Insanely Great Thing\" (1996)*"
+
+#: ../../source/chapters/01_foreword/foreword.rst:38
+msgid "Programming Pays Well"
+msgstr "Programmieren wird gut bezahlt"
+
+#: ../../source/chapters/01_foreword/foreword.rst:40
+msgid ""
+"Search up \"top paid majors\" and you'll see computer science is usually one "
+"of the top paid degrees you can get."
+msgstr ""
+"Suche nach den Berufen mit gutem Einkommen und du wirst sehen, dass ein "
+"Abschluss in Informatik zu den am besten bezahlten Arbeitsplätzen führt."
+
+#: ../../source/chapters/01_foreword/foreword.rst:43
+msgid ""
+"The National Association of Colleges and Employers (NACE) says that Computer "
+"Science is the second best paid degree (as of Jan 2018) that you can get. "
+"Engineering is number one."
+msgstr ""
+"In den USA sagt die National Association of Colleges and Employers (NACE), "
+"dass Computer Science der zweitbest bezahlte Abschluss ist (Stand Januar "
+"2018). Das Ingenieurswesen liegt auf Platz eins."
+
+#: ../../source/chapters/01_foreword/foreword.rst:47
+msgid ""
+"`Payscale breaks the engineering degrees out, and puts computer science at "
+"#14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/"
+"bachelors>`_. The other top-paid majors, such as engineering and "
+"mathematics, all use programming extensively."
+msgstr ""
+"`Payscale breaks the engineering degrees out, and puts computer science at "
+"#14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/"
+"bachelors>`_. Die anderen top bezahlten Studienrichtungen, wie "
+"Ingenieursdisziplinen und Mathematik, nutzen alle intensive das Entwickeln "
+"von Programmen."
+
+#: ../../source/chapters/01_foreword/foreword.rst:51
+msgid ""
+"In addition we'll teach the topics of a typical first-semester programming "
+"class. But the most important thing is for you to find out if programming is "
+"worth your time."
+msgstr ""
+"Zusätzlich unterrichten wir all die Themen eines typischen "
+"Erstsemesterkurses im Programmieren, aber das Wichtigste für dich ist "
+"herauszufinden, dass Programmieren den Zeitaufwand wert ist."
+
+#: ../../source/chapters/01_foreword/foreword.rst:56
+msgid ""
+"In :ref:`how-to-draw` we show how to create your first graphics. These first "
+"chapters we show you how to get your computer set up."
+msgstr ""
+"Im Kapitel :ref:`how-to-draw` zeigen wir, wie du deine erste Grafik "
+"erzeugst. Diese ersten Kapitel zeigen dir, wie du deinen Rechner "
+"einrichtest, um in Python zu programmieren."
+
+#: ../../source/chapters/01_foreword/foreword.rst:60
+msgid "What Other Students Have Made"
+msgstr "Was andere Studierende entwickelt haben"
+
+#: ../../source/chapters/01_foreword/foreword.rst:62
+msgid ""
+"Here are some videos of games students have created in prior semesters. "
+"Students who didn't know any programming, were able to create these games by "
+"the time they finished the semester."
+msgstr ""
+"Hier gibt es ein paar Videos von Spielen von Studierenden am Simpson "
+"College. Studenten, die vorher nicht programmieren konnten, konnten diese "
+"Spiele am Ende ihres ersten Semesters umsetzen."

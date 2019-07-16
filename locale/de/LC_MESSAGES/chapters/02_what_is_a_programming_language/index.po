@@ -1,0 +1,497 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-12 08:41+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:4
+msgid "What is a Programming Language?"
+msgstr "Was ist eine Programmiersprache?"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:6
+msgid ""
+"What is a programming language? This wouldn't be much of a programming "
+"course if you left without even knowing what a programming language was! So "
+"let's get that out of the way."
+msgstr ""
+"Was ist eine Programmiersprache? Dies wäre kein anständiger Programmierkurs, "
+"wenn du danach nicht einmal wüsstest, was eine Programmiersprache ist. "
+"Bringen wir es hinter uns."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:10
+msgid "The CPU is the \"brain\" of the computer."
+msgstr "Die CPU ist das \"Hirn des Rechners\"."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:12
+msgid ""
+"Computers have a chip called the Central Processing Unit (CPU_) that "
+"functions as the main \"brain\" of the computer. For example, right now you "
+"might have an Intel i7 or an AMD-FX CPU in your computer."
+msgstr ""
+"Rechner haben einen Baustein der Central Processing Unit (CPU_) genannt "
+"wird. Dieser Baustein funktioniert als das \"Hirn\" des Rechners. Du "
+"könntest zum Beispiel eine Intel i7 oder AMD-FX CPU in deinem Rechner haben."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:20
+msgid ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg"
+msgstr ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:20
+msgid ""
+"Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/"
+"File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`_)"
+msgstr ""
+"Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/"
+"File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`_)"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:22
+msgid ""
+"The CPU gets its instructions by reading a set of numbers. For example the "
+"number \"04\" might be an instruction to add two other numbers together."
+msgstr ""
+"Die CPU bekommt ihre Anweisungen durch das Einlesen einer Menge von Zahlen. "
+"So könnte die Zahl \"04\" für die Anweisung zwei Zahlen zu addieren stehen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:25
+msgid ""
+"Everything stored on the computer is in the form of numbers. Some numbers "
+"computers store are for data (text, photos, movies), and some are computer "
+"instructions."
+msgstr ""
+"Alles wird im Rechner in der Forma von Zahlen gespeichert. Manche Zahlen, "
+"die Rechner speichern, stehen für Daten (Text, Bilder oder Filme) und andere "
+"bilden Anweisungen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:32
+msgid "Machine Code"
+msgstr "Maschinencode"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:34
+msgid ""
+"In the early days of computing, programmers punched in numbers that "
+"represented commands for the CPU. Then the programmers punched in the data."
+msgstr ""
+"In den Anfangstagen der Computerei, gaben Programmierer Zahlen ein, die die "
+"Kommandos für die CPU repräsentierten. Danach gaben sie die Daten ein."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:38
+msgid "Machine code is the native language of any computer."
+msgstr "Maschinencode ist die native Sprache jedes Rechners."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:40
+msgid ""
+"We call these numbers that are instructions `machine code`_. All machine "
+"code is made of numbers, but not all numbers are machine code. Some of the "
+"numbers might be data to hold text or images. Machine code is also called a "
+"`First Generation Language`_ (1GL)."
+msgstr ""
+"Wir nennen diese Zahlen, die Anweisungen sind, Maschinenanweisungen "
+"(`machine code`_). Jede Maschinenanweisung besteht aus Zahlen, aber nicht "
+"alle Zahlen gehören zu den Maschinenanweisungen. Manche der Zahlen können "
+"Daten sein, die Text oder Bilder repräsentieren. Die Maschinenanweisungen "
+"bilden Maschinensprache genannt. Sie gehört zu den Sprachen der ersten "
+"Generation (`First Generation Language`_ (1GL))."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:45
+msgid ""
+"Below is an image of the `Altair 8800`_, the first personal computer that "
+"regular people could buy. Notice that it is missing a monitor and a "
+"keyboard! The first computers loaded the instructions by flipping switches. "
+"A pattern of switches represented a machine instruction. So you'd flip lots "
+"of switches, then hit the \"Run\" switch. And the lights would blink."
+msgstr ""
+"Unten ist ein Bild des `Altair 8800`_ zu sehen. Das war einer der ersten "
+"Rechner, die man einfach so kaufen konnte. Der Rechner hatte keinen Monitor "
+"und keine Tastatur. Bei den ersten Rechnern gab man die Anweisungen durch "
+"das Umlegen von Schaltern ein. Ein Muster von Schalterstellungen "
+"repräsentierte eine Maschinenanweisung. So hatte man eine Menge von "
+"Schaltern um zu legen und dann den \"Run\"-Schalter zu drücken. Und die "
+"Lämpchen blinkten. "
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:54
+msgid ".. image:: chapters/02_what_is_a_programming_language/Altair_8800.jpg"
+msgstr ".. image:: chapters/02_what_is_a_programming_language/Altair_8800.jpg"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:54
+msgid ""
+"Source: `Wikipedia: Altair 8800 <https://commons.wikimedia.org/wiki/File:"
+"Altair_8800,_Smithsonian_Museum.jpg>`_"
+msgstr ""
+"Quelle: `Wikipedia: Altair 8800 <https://commons.wikimedia.org/wiki/File:"
+"Altair_8800,_Smithsonian_Museum.jpg>`_"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:56
+msgid ""
+"While this may not seem very useful (and quite frankly, it wasn't) it was "
+"very popular in the hobbyist community. Those people saw the potential."
+msgstr ""
+"Obwohl das ziemlich unpraktisch aussieht (und ehrlicherweise auch war), war "
+"es doch sehr beliebt bei den Hobbyprogrammierern. Diese Leute erkannten das "
+"Potential dieser Maschinen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:59
+msgid ""
+"Computers *still* run on machine code. You can still code by punching in "
+"numbers if you want. But you'd be crazy because hand-coding these numbers is "
+"*so* tedious. There's something better. Assembly Language."
+msgstr ""
+"Rechner benutzen *immer noch* Maschinencode. Du kannst auch heute noch "
+"programmieren indem du den Maschinencode als Zahlen eingibst. Aber du "
+"müsstest verrückt sein, weil es so nervtötend ist die Zahlen händisch zu "
+"kodieren. Es gibt etwas besseres - Assemblersprache."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:69
+msgid "Assembly Language"
+msgstr "Assemblersprache"
+
+# Translate link
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:71
+msgid ""
+"In order to make things easier, computer scientists came up with something "
+"called `assembly language`_. Assembly language is a `Second Generation "
+"Language`_ (2GL). Assembly language looks like this:"
+msgstr ""
+"Um sich die Arbeit zu erleichtern entwickelten Programmierer ein Konzept, "
+"das sie `Assemblersprache` (`assembly language`_) nannten. Assemblersprache "
+"ist eine Sprache der zweiten Generation (`Second Generation Language`_ "
+"(2GL)). Assemblersprache sieht wie folgt aus:"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:82
+msgid ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Motorola_6800_Assembly_Language.png"
+msgstr ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Motorola_6800_Assembly_Language.png"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:82
+msgid ""
+"Source: `Wikipedia: Motorola 6800 Assembly Language <https://en.wikipedia."
+"org/wiki/File:Motorola_6800_Assembly_Language.png>`_"
+msgstr ""
+"Quelle: `Wikipedia: Motorola 6800 Assembly Language <https://en.wikipedia."
+"org/wiki/File:Motorola_6800_Assembly_Language.png>`_"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:84
+msgid "Don't worry! We aren't coding in assembly language for this class."
+msgstr ""
+"Keine Sorge! Wir werden in diesem Kurs nicht in Assemblersprache kodieren."
+
+# Translate link
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:86
+msgid ""
+"Assembly language allows a programmer to edit a file and type in codes like "
+"``LDA`` which stands for \"Load Accumulator Immediate.\" The programmer "
+"types these commands into a **source file**. We call the commands `source "
+"code`_. The computer can't run the source code as-is. The programmer runs a "
+"`compiler`_ that simply translates the computer commands like ``LDA`` into "
+"the corresponding number of the machine language instruction."
+msgstr ""
+"Assemblersprache erlaubt es einem Programmierer eine Datei zu editieren und "
+"Code wir ``LDA``, der für \"Lade Akkumulator unmittelbar\" steht, "
+"einzugeben. Der Programmierer tippt diese Anweisungen in eine **Quelldatei** "
+"(source file). Wir nennen diese Anweisungen `source code`_. Der Rechner kann "
+"keinen Quellcode so wie er ist ausführen. Der Programmierer startet ein "
+"Assemblierer-Programm (`compiler`_), um den Quellcode in eine entsprechende "
+"Anzahl von Anweisungen der Maschinensprache umzusetzen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:97
+msgid "A compiler turns human-readable code into machine code."
+msgstr "Ein Compiler wandelt von Menschen lesbaren Code in Maschinencode."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:99
+msgid ""
+"After I compile the source code into compiled code, I can run the compiled "
+"code. I can give the compiled code to someone else and they can run it. They "
+"do not need the source code or the compiler."
+msgstr ""
+"Nachdem ich den Quellcode in kompilierten Code übersetzt habe, kann ich den "
+"kompilierten Code ausführen lassen. Ich kann den kompilierten Code jemand "
+"anderem geben und der kann den Code ausführen lassen. Die anderen benötigen "
+"weder Quellcode noch Compiler."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:104
+msgid ""
+"Assembly language is an improvement over machine language. But it isn't "
+"*that* much of an improvement. Why? Assembly language instructions are very "
+"low-level. There are no commands like \"draw a building here.\" Or even "
+"\"print hi.\" There are only mind-numbingly simple commands that move bits "
+"from one spot to another, add them, and shift them."
+msgstr ""
+"Assemblersprache ist ein Fortschritt gegenüber der Maschinensprache, aber es "
+"ist kein großer Fortschritt. Warum? Anweisungen der Assemblersprache sind "
+"auf einem sehr niedrigen Level. Es gibt keine Kommandos wie \"zeichne ein "
+"Haus hier\" oder wenigstens \"gebe Hallo aus\". Es gibt nur dämlich einfache "
+"Kommandos, die Bits von einem Ort an den anderen bewegen, sie dann addieren "
+"und verschieben."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:112
+msgid "Third Generation Languages"
+msgstr "Sprachen der dritten Generation"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:117
+msgid ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Grace_Hopper_and_UNIVAC.jpg"
+msgstr ""
+".. image:: chapters/02_what_is_a_programming_language/"
+"Grace_Hopper_and_UNIVAC.jpg"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:117
+msgid ""
+"Source: `Wikipedia Grace Hopper and UNIVAC <https://en.wikipedia.org/wiki/"
+"Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_"
+msgstr ""
+"Quelle: `Wikipedia Grace Hopper and UNIVAC <https://en.wikipedia.org/wiki/"
+"Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:119
+msgid ""
+"`Third Generation Languages`_ (3GL) started with `Grace Hopper`_ creating "
+"the language COBOL_. There are many, many different third generation "
+"languages now. These languages often specialize at certain tasks. For "
+"example, the language C_ is great at creating small, fast programs that can "
+"run on minimal hardware. PHP_ is an easy-to-use language that can build "
+"websites."
+msgstr ""
+"Sprachen der dritten Generation (`Third Generation Languages`_ (3GL)) gibt "
+"es seit `Grace Hopper`_ die Sprache COBOL_ entwickelte. Es gibt sehr viele "
+"Sprachen der dritten Generation. Diese Sprachen sind oft auf bestimmte "
+"Aufgaben spezialisiert. Die Sprache C_ zum Beispiel ist klasse für kleine "
+"schnelle Programme, die nur eine minimale Hardware benötigen. PHP_ ist eine "
+"einfach zu benutzende Sprache, um Webseiten aufzubauen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:125
+msgid ""
+"Most of the original computer scientists were female. See `Grace Hopper`_, "
+"`Hedy Lamar`_, and `Ada Lovelace`_ for examples. If you want to find other "
+"female programmers who code in Python, check out `@PyLadies <https://twitter."
+"com/PyLadies>`_, `@DJangoGirls <https://twitter.com/djangogirls>`_, and "
+"`@WomenWhoCode <https://twitter.com/WomenWhoCode>`_."
+msgstr ""
+"Die meisten der frühen Programmierer waren Frauen (siehe `Grace Hopper`_, "
+"`Hedy Lamar`_, and `Ada Lovelace`_ als Beispiele). Wenn du weitere weibliche "
+"Programmierer finden willst, die in Python programmieren, dann probiere "
+"`@PyLadies <https://twitter.com/PyLadies>`_, `@DJangoGirls <https://twitter."
+"com/djangogirls>`_, and `@WomenWhoCode <https://twitter.com/WomenWhoCode>`_."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:141
+msgid "Third generation languages usually fall into one of three categories."
+msgstr ""
+"Die Sprachen der dritten Generation fallen üblicherweise in eine von drei "
+"Kategorien."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:143
+msgid ""
+"**Compiled:** The computer takes the original source code, and uses a "
+"*compiler* to translate it to machine code. The user then run the machine "
+"code. The original source code is not needed to run the program. \"C\" is an "
+"example of a language that works this way. So is the 2GL assembly language "
+"we just talked about."
+msgstr ""
+"**Kompiliert:** Der Rechner nimmt den originalen Quellcode und verwendet "
+"einen *Compiler* um ihn in Maschinencode zu übersetzen. Der Anwender startet "
+"dann den Maschinencode. Der originale Quellcode wird nicht benötigt, um das "
+"Programm auszuführen. \"C\" ist ein Beispiel für eine Sprache, die so "
+"funktioniert. Die Assemblersprache von oben fällt ebenfalls in diese "
+"Kategorie."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:148
+msgid ""
+"**Interpreted:** The computer looks at the source code and translates/runs "
+"it line-by-line. The compile step is not needed, but the user needs both the "
+"source code and an interpreter to run the program. Python is an example of "
+"an interpreted language."
+msgstr ""
+"**Interpretiert:** Der Rechner sieht sich den Quellcode an und übersetzt und "
+"führt ihn Zeile für Zeile aus. Ein Compilerlauf ist nicht notwendig, aber "
+"der Anwender benötigt sowohl Quellcode als auch den Interpreter, um das "
+"Programm auszuführen. Python ist ein Beispiel einer interpretierten Sprache."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:153
+msgid ""
+"**Runtime Environment:** Languages such as Java and C# take source code, and "
+"compile the source code to a machine language. But not the language of your "
+"actual machine, they compile to a *virtual* machine. This is a separate "
+"program that acts as a layer between the real machine and the compiled code. "
+"This allows for better security, portability, and memory management."
+msgstr ""
+"**Laufzeitumgebung:** Sprachen wie Java und C# übersetzen den Quellcode in "
+"eine Maschinensprache, aber nicht in die Maschinensprache des tatsächlichen "
+"Rechners. Sie übersetzen den Quellcode für eine *virtuelle* Maschine. Dies "
+"ist ein separates Programm, das als eine Schicht zwischen der realen "
+"Maschine und dem kompilierten Code fungiert. Das erlaubt mehr Sicherheit, "
+"mehr Portabilität und bessere Speicherverwaltung."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:159
+msgid ""
+"Working with a compiled language is like taking a book in Spanish and "
+"translating it to English. You no longer need the Spanish book, and you "
+"don't need the translator. However, if you want to edit or change the book "
+"you have to re-translate everything."
+msgstr ""
+"Das Arbeiten mit einer Compilersprache ist, als ob man ein Buch in Spanisch "
+"nimmt und es ins Deutsche übersetzt. Du benötigst danach das spanische Buch "
+"nicht mehr. Du brauchst auch den Übersetzer nicht mehr. Aber wenn du etwas "
+"editieren oder ändern willst, musst du alles wieder übersetzen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:164
+msgid ""
+"Working with an interpreted language is like working with a interpreter. You "
+"can communicate back and forth with a person that knows both English and "
+"Spanish. You need the original Spanish, the English, and the interpreter. It "
+"is easier to make ad-hoc changes and carry out a dialog. Interpreters often "
+"help prevent computers from running commands that will cause major crashes "
+"or common security issues. Kind of like having a human interpreter that "
+"says, \"You don't *really* want to say that.\""
+msgstr ""
+"Das Arbeiten mit einer Interpretersprache ist, als ob man mit einem "
+"Dolmetscher arbeitet. Du kommunizierst mit dem Dolmetscher, der sowohl "
+"Spanisch als auch Deutsch spricht. Du brauchst das originale Spanisch, das "
+"Deutsch und den Dolmetscher. Es ist einfacher direkt zu ändern und einen "
+"Dialog zu führen. Die Interpreter helfen oft zu verhindern, dass Anweisungen "
+"ausgeführt werden, die den Rechner abstürzen lassen oder zu "
+"Sicherheitsproblemen führen würden. Das ist so ähnlich als ob der "
+"Dolmetscher sagen würde: \"Das willst du doch nicht *wirklich* so sagen.\""
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:172
+msgid ""
+"Using a runtime environment is hard to explain in human terms. It is a "
+"hybrid of the two system. You need source code. You need a compiler. Instead "
+"of the compiler making machine code, it makes for for a **virtual machine**."
+msgstr ""
+"Die Arbeit mit einem Laufzeitsystem ist schwer zu übertragen. Es ist eine "
+"Kreuzung der beiden Systeme. Man benötigt den Quellcode. Man benötigt einen "
+"Compiler. Anstatt dass der Compiler Maschinencode erzeugt, erzeugt er Code "
+"für eine **virtuelle Maschine**. "
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:177
+msgid "What is so great about Python?"
+msgstr "Was ist an Python so toll?"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:179
+msgid ""
+"Python is a great language to start programming in. Python is a Top-5 "
+"language in popularity according to the `TIOBE Index <http://www.tiobe.com/"
+"tiobe-index/>`_. While may be less popular than Java, it is easier to read "
+"and learn. Less work is required to do graphics. And everything you learn in "
+"Python you can also apply when you learn `C#`_ or Java_."
+msgstr ""
+"Python ist eine sehr gute Anfängersprache. Python ist eine der beliebtesten "
+"Sprachen (Top 5 laut `TIOBE Index <http://www.tiobe.com/tiobe-index/>`_). "
+"Obwohl sie vielleicht nicht so beliebt ist wie Java, ist sie doch einfacher "
+"zu lesen und zu lernen. Es ist einfacher, Grafik zu generieren. Und alles "
+"was du in Python lernst, kann du später auch verwenden, wenn du `C#`_ oder "
+"`Java`_ lernst."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:191
+msgid ""
+"Python a great language for people interested in `automating boring things "
+"<https://automatetheboringstuff.com/>`_. Python is also extremely popular in "
+"data analytics. Typically researchers will use the add-ons `Pandas <https://"
+"pandas.pydata.org/>`_ and `Jupyter Notebooks <http://jupyter.org/>`_."
+msgstr ""
+"Python ist eine tolle Sprache, wenn man langweilige Tätigkeiten "
+"automatisieren möchte (`automating boring things <https://"
+"automatetheboringstuff.com/>`_). Python ist auch sehr beliebt zur "
+"Datenanalyse. Typischerweise verwenden Forscher die Erweiterungen `Pandas "
+"<https://pandas.pydata.org/>`_ und `Jupyter Notebooks <http://jupyter.org/"
+">`_."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:199
+msgid "Python 2.7 vs. Python 3.7"
+msgstr "Python 2.7 gegen Python 3.7"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:201
+msgid ""
+"There are two main versions of Python. When Python moved to version 3, there "
+"were changes that didn't work with all the currently written Python 2 "
+"programs. So both Python 2 and Python 3 were being developed simultaneously. "
+"Some people don't want to move to Python 3 at all."
+msgstr ""
+"Es gibt zwei Hauptversionen von Python. Als Python den Schritt zur Version 3 "
+"ging, gab es Änderungen. Manche Programme in Python 2 funktionierten deshalb "
+"nicht mehr mit Python 3. Also wurden sowohl Python 2 als auch Python 3 "
+"gleichzeitig weiter entwickelt. Es gibt auch Leute, die auf keinen Fall auf "
+"Python 3 wechseln wollen."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:206
+msgid "We use Python 3. Why are you going to care?"
+msgstr "Wir verwenden Python 3. Warum betrifft dich das?"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:208
+msgid ""
+"If you search up examples you will find both Python 2 and Python 3 examples."
+msgstr ""
+"Wenn du Beispiele suchst wirst Beispiele in Python 2 und Python 3 finden."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:209
+msgid "Systems such as the Mac and Linux have Python 2 installed by default."
+msgstr ""
+"OS X kommt immer noch mit Python 2 vorinstalliert. Auch manche (aber nur "
+"noch wenige) Linux-Distributionen kommen noch mit Python 2 vorinstalliert."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:211
+msgid ""
+"If you see a Python example on the web that has a print statement that looks "
+"like:"
+msgstr ""
+"Wenn du ein Python-Beispiel findest mit einer print-Anweisung, die wie folgt "
+"aussieht:"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:214
+msgid ""
+"# A \"print\" statement with Python Version 2.x\n"
+"print \"Hi\""
+msgstr ""
+"# Eine \"print\"-Anweisung in Python Version 2.x\n"
+"print \"Hi\""
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:219
+msgid "Instead of:"
+msgstr "Anstatt von:"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:221
+msgid ""
+"# A \"print\" statement with Python Version 3.x\n"
+"print(\"Hi\")"
+msgstr ""
+"# Eine \"print\"-Anweisung in Python Version 3.x\n"
+"print(\"Hi\")"
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:226
+msgid ""
+"Then you have a Python 2 example and it won't run with what we install and "
+"use in this class."
+msgstr ""
+"Dann hast du ein Beispiel in Python 2 und es wird nicht funktionieren mit "
+"dem, was wir in diesem Kurs installieren und verwenden."
+
+#: ../../source/chapters/02_what_is_a_programming_language/index.rst:229
+msgid ""
+"In the case of the Mac and Linux, it will be important to use Python 3 and "
+"not Python 2. Since Python 2 is installed by default, it can be a bit of a "
+"hassle to make sure they use Python 3."
+msgstr ""
+"Im Fall von OS X (und eventuell) Linux ist es wichtig Python 3 und nicht "
+"Python 2 zu verwenden. Wenn Python 2 vorinstalliert kann es etwas Arbeit "
+"machen sicher zu stellen, dass Python 3 verwendet wird."

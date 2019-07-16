@@ -1,0 +1,1190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"PO-Revision-Date: 2019-07-12 09:45+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:4
+msgid "How to Draw with Your Computer"
+msgstr "Wie du mit deinem Rechner zeichnest"
+
+#: ../../source/chapters/06_drawing/drawing.rst:6
+msgid "Finally, time to do start making graphics!"
+msgstr "Endlich kommen wir dazu, ein paar Bilder zu erstellen!"
+
+#: ../../source/chapters/06_drawing/drawing.rst:8
+msgid ""
+"By the end of this chapter, you should know how to write programs that will "
+"draw images on the screen. Below is an example of what one student did:"
+msgstr ""
+"Am Ende dieses Kapitel solltest du wissen, wie du Programme schreibst, die "
+"Bilder auf den Bildschirm zeichnen. Unten ist ein Beispiel, das einer der "
+"Studierenden erstellt hat:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:12
+msgid ".. image:: chapters/06_drawing/simpson_map.png"
+msgstr ".. image:: chapters/06_drawing/simpson_map.png"
+
+#: ../../source/chapters/06_drawing/drawing.rst:13
+msgid ""
+"At the end of :ref:`lab-02` you can page through several other examples of "
+"what students have created for this lab."
+msgstr ""
+"Am Ende von :ref:`lab-02` kannst du durch die anderen Beispiele blättern, "
+"die Studierende für diese Aufgabe erstellt haben."
+
+#: ../../source/chapters/06_drawing/drawing.rst:17
+msgid "Creating a New Program"
+msgstr "Erstellen eines neuen Programms"
+
+#: ../../source/chapters/06_drawing/drawing.rst:19
+msgid ""
+"Open up PyCharm to the same project we created earlier. We'll use it for all "
+"our work this semester. Do **not** create new projects for each lab or "
+"program you create in this class. Just use one project for the entire class."
+msgstr ""
+"Starte PyCharm mit demselben Projekt, das wir vorher angelegt haben. Wir "
+"werden es für alle unsere Arbeiten in diesem Semester nutzen. Lege **kein** "
+"neues Projekt für die Aufgaben und Programme in diesem Kurs an. Benutze nur "
+"ein einziges Projekt für den Kurs."
+
+#: ../../source/chapters/06_drawing/drawing.rst:24
+msgid ""
+"We are going to create a lot of code samples as we go through the chapters. "
+"Let's create a directory in our project for these samples, away from the "
+"labs. Call it ``Code Samples``. Then create a Python source file for this "
+"chapter called ``drawing_samples.py``. Your system should look like this:"
+msgstr ""
+"Wir werden eine Menge Code-Beispiele im Verlauf der Kapitel erstellen. Lass "
+"uns ein Verzeichnis in unserem Projekt für diese Beispiele anlegen, getrennt "
+"von den Aufgaben. Nenn es ``Code Samples``. Erstelle danach eine Python-"
+"Quelldatei ``drawing_samples.py`` für dieses Kapitel in diesem Verzeichnis. "
+"Dein System sollte wie folgt aussehen:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:30
+msgid ".. image:: chapters/06_drawing/create_drawing_source_file.png"
+msgstr ".. image:: chapters/06_drawing/create_drawing_source_file.png"
+
+#: ../../source/chapters/06_drawing/drawing.rst:32
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../../source/chapters/06_drawing/drawing.rst:34
+msgid ""
+"Before we begin learning to draw, we need to learn about **comments** in "
+"code. When typing in computer code, sometimes we want to be able to write "
+"things that the computer ignores. We call this \"commenting our code.\" You "
+"will see a lot of comments in my code examples to explain how they work."
+msgstr ""
+"Bevor wir lernen zu zeichnen, wir müssen erst **Kommentare** im Code "
+"kennenlernen. Während der Eingabe von Programmcode wollen wir manchmal Dinge "
+"eingeben, die der Rechner ignoriert. Wir nennen das den Code \"kommentieren"
+"\". Du wirst eine Menge Kommentare in meinen Codebeispielen sehen, die "
+"erklären wie sie funktionieren."
+
+#: ../../source/chapters/06_drawing/drawing.rst:39
+msgid ""
+"Below are two ways of adding comments to code in the Python computer "
+"language:"
+msgstr ""
+"Unten stehen zwei Arten, um Kommentare zu Python-Programmen hinzuzufügen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:41
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\n"
+"Multi-line comments are surrounded by three of the double-quote marks.\n"
+"Single-line comments start with a hash/pound sign. #\n"
+"\"\"\"\n"
+"\n"
+"# This is a single-line comment.\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\n"
+"Multi-line comments are surrounded by three of the double-quote marks.\n"
+"Single-line comments start with a hash/pound sign. #\n"
+"\"\"\"\n"
+"\n"
+"# This is a single-line comment.\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:45
+msgid ""
+"Go ahead and try it. Multi-line comments usually start each source file and "
+"explain what the code does."
+msgstr ""
+"Mach weiter und probiere es aus. Mehrzeilige Kommentare stehen normalerweise "
+"am Anfang jeder Quelldatei und erklären, was der Code macht."
+
+#: ../../source/chapters/06_drawing/drawing.rst:48
+msgid ""
+"Let's try running the program. But before we run the program, we need to "
+"make sure we are running the *right* program. Look at the image below. If I "
+"select \"run\" with the green arrow, I will run ``lab_01.py``, *not* the "
+"program I want to run. You need to right-click on our program and select "
+"\"Run ``drawing_sample.py``\" instead."
+msgstr ""
+"Lass uns das Programm ausführen. Wir müssen aber sicherstellen, dass wir das "
+"*richtige* Programm ausführen, bevor wir es starten. Sie die Abbildung unten "
+"an. Wenn ich \"run\" mit dem grünen Pfeil auswähle, wird es ``lab_01.py`` "
+"und nicht das Programm, das ich starten will, ausführen. Du musst auf unser "
+"Programm rechtsklicken und \"Run ``drawing_sample.py``\" stattdessen "
+"auswählen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:55
+msgid ".. image:: chapters/06_drawing/running_the_right_program.png"
+msgstr ".. image:: chapters/06_drawing/running_the_right_program.png"
+
+#: ../../source/chapters/06_drawing/drawing.rst:56
+msgid ""
+"Hey wait! When we finally run our program, nothing happens. That's because "
+"the only code that we wrote were \"comments.\" Comments are ignored. "
+"Therefore, there was nothing for the computer to do. Read on."
+msgstr ""
+"Halt, warte! Wenn wir das Programm endlich ausführen, passiert nichts. Das "
+"ist, weil der einzige Programmcode, den wir geschrieben haben \"Kommentare\" "
+"waren. Kommentare werden ignoriert, deshalb war da nichts für den Rechner zu "
+"tun. Lies weiter."
+
+#: ../../source/chapters/06_drawing/drawing.rst:61
+msgid "Import the Arcade Library"
+msgstr "Importiere die Arcade-Bibliothek"
+
+#: ../../source/chapters/06_drawing/drawing.rst:63
+msgid ""
+"Before we can draw anything, we need to import a \"library\" of code that "
+"has commands for drawing."
+msgstr ""
+"Bevor wir etwas zeichnen können, müssen wir eine \"Bibliothek\" aus "
+"Programmcode importieren, die Anweisungen zum Zeichnen enthält."
+
+#: ../../source/chapters/06_drawing/drawing.rst:66
+msgid ""
+"Computer languages come with a set of built-in commands. Most programs will "
+"require *more* commands than what the computer language loads by default. "
+"These sets of commands are called **libraries**. Some languages have their "
+"own special term for these libraries. In the case of Python, they are called "
+"**modules**."
+msgstr ""
+"Programmiersprachen kommen mit einer Menge von eingebauten Anweisungen. Die "
+"meisten Programme werden *mehr* Anweisungen benötigen, als die "
+"Programmiersprache standardmäßig lädt. Diese Menge von Anweisungen werden "
+"**Bibliotheken** genannt. Manche Sprachen haben ihren eigenen Ausdruck für "
+"diese Bibliotheken. Im Fall von Python werden sie **Module** genannt."
+
+#: ../../source/chapters/06_drawing/drawing.rst:71
+msgid ""
+"Thankfully, it is easy to import a library of code. If we want to use the "
+"\"arcade\" library, all we need to do is add ``import arcade`` at the top of "
+"our program."
+msgstr ""
+"Zum Glück ist es einfach eine Code-Bibliothek zu importieren. Wenn wir die "
+"Bibliothek \"arcade\" einbinden wollen, müssen wir nur ``import arcade`` am "
+"Anfang unseres Programms einfügen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:76
+msgid ""
+"Libraries should always be imported at the **top** of your program. Only "
+"comments should appear ahead of an ``import`` statement. Technically, you "
+"*can* put the ``import`` statement somewhere else, just like technically you "
+"*can* wear a pair of shorts on your head. But don't. Trust me on this."
+msgstr ""
+"Bibliotheken sollten immer am **Anfang** deines Programms importiert werden. "
+"Nur Kommentare sollten vor der ``import``-Anweisung stehen. Im Prinzip "
+"*kannst* du die ``import``-Anweisung irgendwo anders eingeben, genauso wie "
+"du im Prinzip deine Unterhosen über den Kopf ziehen kannst. Mach es einfach "
+"nicht, glaub mir einfach."
+
+#: ../../source/chapters/06_drawing/drawing.rst:82
+msgid ""
+"In the code below, we've imported the arcade library. If you run the code, "
+"yet again nothing will happen. We've asked to load the arcade library, but "
+"we haven't *done* anything with it yet. That's our next step."
+msgstr ""
+"Im Programm unten haben wir die arcade-Bibliothek importiert. Wenn wir das "
+"Programm ausführen, wird trotzdem nichts passieren. Wir haben angewiesen, "
+"die arcade-Bibliothek zu laden, aber wir *machen* noch nichts mit ihr. Das "
+"ist unser nächster Schritt."
+
+#: ../../source/chapters/06_drawing/drawing.rst:86
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:92
+msgid "How to Open a Window for Drawing"
+msgstr "Wie man ein Fenster zum Zeichnen öffnet"
+
+#: ../../source/chapters/06_drawing/drawing.rst:94
+msgid "Now it is time to open the window. See the command below:"
+msgstr "Jetzt wird es Zeit das Fenster zu öffnen. Siehe die Anweisung unten:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:97
+msgid ".. image:: chapters/06_drawing/open_window.svg"
+msgstr ".. image:: chapters/06_drawing/open_window.svg"
+
+#: ../../source/chapters/06_drawing/drawing.rst:98
+msgid ""
+"How does this command work? To begin, we select the arcade library with "
+"``arcade``. Then we separate the library from the command we want to call "
+"with a period: ``.`` Next, we put in the name of the command to run. Which "
+"happens to be ``open_window``."
+msgstr ""
+"Wie funktioniert die Anweisung? Zuerst wählen wir die arcade-Bibliothek mit "
+"``arcade`` aus. Danach verbinden wir die Anweisung der Bibliothek, die wir "
+"ausführen wollen, in diesem Fall ``open_window``, mit einem Punkt ``.``. "
+
+#: ../../source/chapters/06_drawing/drawing.rst:105
+msgid "Commands that we can run are called **functions**."
+msgstr "Anweisungen, die wir aufrufen, werden **Funktionen** genannt."
+
+#: ../../source/chapters/06_drawing/drawing.rst:107
+msgid ""
+"Just like the sine and cosine functions in math, we surround the function "
+"**parameters** with parenthesis. For example:"
+msgstr ""
+"Genau wie bei Sinus und Kosinus in Mathematik umgeben wir die **Argumente** "
+"der Funktion mit runden Klammern. Zum Beispiel:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:110
+msgid "my_function(parameters)"
+msgstr "my_function(parameters)"
+
+#: ../../source/chapters/06_drawing/drawing.rst:114
+msgid ""
+"The data we need to pass the function are the parameters. In the case of "
+"``open_window``, we need three parameters:"
+msgstr ""
+"Die Daten die wir der Funktion übergeben müssen sind die Argumente. Im Fall "
+"von ``open_window`` benötigen wir drei Argumente:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:118
+msgid "The window width in pixels."
+msgstr "Die Breite des Fensters in Pixeln,"
+
+#: ../../source/chapters/06_drawing/drawing.rst:119
+msgid "The window height in pixels."
+msgstr "die Höhe des Fensters in Pixeln und"
+
+#: ../../source/chapters/06_drawing/drawing.rst:120
+msgid "The text that will appear on the title bar."
+msgstr "der Text, der in der Titelzeile des Fensters erscheinen soll."
+
+#: ../../source/chapters/06_drawing/drawing.rst:122
+msgid ""
+"In the case of width and height, the numbers specify the part of the window "
+"you can draw on. The actual window is larger to accommodate the title bar "
+"and borders. So a 600x600 window is really 602x632 if you count the title "
+"bar and borders."
+msgstr ""
+"Im Fall der Breite und Höhe, legen die Zahlen den Bereich, in den du "
+"zeichnen kannst, fest. Das Fenster ist tatsächlich größer, um die Titelzeile "
+"und die Umrandungen einzuschließen. So ist ein 600x600 Pixel großes Fenster "
+"tatsächlich 602x632 Pixel groß, wenn du die Titelzeile und Umrandung mit "
+"zählst."
+
+#: ../../source/chapters/06_drawing/drawing.rst:127
+msgid ""
+"Wait, how do we know that it was the ``open_window`` function to call? How "
+"did we know what parameters to use? The names of the functions, the order of "
+"the parameters, is the **Application Program Interface** or \"API\" for "
+"short. You can click here for the `Arcade API`_. Any decent code library "
+"will have an API and documentation you can find on the web."
+msgstr ""
+"Warte. Woher wissen wir, dass wir die Funktion ``open_window`` aufrufen "
+"müssen? Woher wissen wir, welche Argumente wir übergeben müssen? Die Namen "
+"der Funktionen, die Reihenfolge der Argumente ist das **Application Program "
+"Interface** oder kurz \"API\". Du kannst hier klicken für die `Arcade API`_. "
+"Jede anständige Programcode-Bibliothek wird eine API und Dokumentation im "
+"Web haben."
+
+#: ../../source/chapters/06_drawing/drawing.rst:135
+msgid "Below is an example program that will open up a window:"
+msgstr "Unten ist ein Programm, dass ein Fenster öffnet:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:137
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the and dimensions (width and height)\n"
+"# Set the window title to \"Drawing Example\"\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the and dimensions (width and height)\n"
+"# Set the window title to \"Drawing Example\"\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:142
+msgid ""
+"Try running the code above. It kind-of works. If you have fast eyes, and a "
+"slow computer you might see the window pop open, then immediately close. If "
+"your computer is fast, you won't see anything at all because the window "
+"closes too fast. Why does it close? Because our program is done! We've ran "
+"out of code to execute."
+msgstr ""
+"Versuche das Programm oben auszuführen. Es wird irgendwie funktionieren. "
+"Wenn du schnelle Augen und einen langsamen Rechner hast, wirst du ein "
+"Fenster auf gehen und sofort wieder schließen sehen. Wenn dein Rechner "
+"schnell ist, wirst du nichts sehen, weil das Fenster sich zu schnell wieder "
+"schließt. Warum schließt es sich? Weil das Programm zu Ende ist! Wir haben "
+"keinen Programmcode mehr, der noch ausgeführt werden soll."
+
+#: ../../source/chapters/06_drawing/drawing.rst:149
+msgid ""
+"To keep the window open, we need to pause until the user hits the close "
+"button. To do this, we'll use the ``run`` command in the Arcade library. The "
+"``run`` command takes no parameters, but even if a function doesn't take "
+"parameters, you still need to use parenthesis."
+msgstr ""
+"Um das Fenster offen zu halten, müssen wir warten, bis der Anwender den "
+"Schließen-Knopf drückt. Das erreichen wir, indem wir die Funktion ``run`` in "
+"der Arcade-Bibliothek aufrufen. Die ``run``-Funktion hat keine Parameter. "
+"Auch wenn sie keine Parameter hat, musst du trotzdem die Klammern angeben."
+
+#: ../../source/chapters/06_drawing/drawing.rst:154
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:159
+msgid "You should get a window that looks something like this:"
+msgstr "Du solltest ein Fenster erhalten, das so ähnlich aussieht:"
+
+msgid ".. image:: chapters/06_drawing/empty_window.png"
+msgstr ".. image:: chapters/06_drawing/empty_window.png"
+
+#: ../../source/chapters/06_drawing/drawing.rst:166
+msgid "Clearing the screen"
+msgstr "Löschen des Fensterinhalts"
+
+#: ../../source/chapters/06_drawing/drawing.rst:168
+msgid ""
+"Right now we just have a default white as our background. How do we get a "
+"different color? Use the ``set_background_color`` command."
+msgstr ""
+"Bis jetzt haben wir nur den standardmäßigen weißen Hintergrund verwendet. "
+"Wie bekommen wir eine andere Farbe? Benutze die Funktion "
+"``set_background_color``."
+
+#: ../../source/chapters/06_drawing/drawing.rst:171
+msgid ""
+"But by itself, the function doesn't work. You need a two more commands. "
+"These tell the Arcade library when you are about to start drawing "
+"(``start_render``), and when you are done drawing (``finish_render``)."
+msgstr ""
+"Aber für sich allein wird die Funktion nicht funktionieren. Wir benötigen "
+"zwei weitere Funktionen. Diese teilen der Arcade-Bibliothek mit, wenn wir "
+"anfangen zu zeichnen (``start_render``) und wenn wir fertig mit Zeichnen "
+"sind (``finish_render``)."
+
+#: ../../source/chapters/06_drawing/drawing.rst:175
+msgid "See below:"
+msgstr "Siehe unten:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:177
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window( 600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# (The drawing code will go here.)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window( 600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# (The drawing code will go here.)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:184
+msgid "Specifying Colors"
+msgstr "Farben angeben"
+
+#: ../../source/chapters/06_drawing/drawing.rst:186
+msgid ""
+"Wait, where did ``AIR_SUPERIORITY_BLUE`` come from? How do I get to choose "
+"the color I want? There are two ways to specify colors:"
+msgstr ""
+"Warte. Wo kam ``AIR_SUPERIORITY_BLUE`` her? Wie kann ich die Farben "
+"auswählen, die ich möchte? Es gibt zwei Wege die Farben anzugeben:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:189
+msgid "Look at the `arcade.color API documentation`_ and specify by name."
+msgstr ""
+"Sieh in die `arcade.color API documentation`_ und wähle sie über ihren Namen "
+"aus."
+
+#: ../../source/chapters/06_drawing/drawing.rst:190
+msgid "Specify the RGB or RGBA color."
+msgstr "Gib die Farbe als RBG- oder RGBA-Wert an."
+
+#: ../../source/chapters/06_drawing/drawing.rst:192
+msgid ""
+"To specify colors by name, you can look at the color API documentation and "
+"use something like ``arcade.color.AQUAMARINE`` in your program. Then color "
+"names come from the ColorPicker `color chart`_."
+msgstr ""
+"Um die Farbe mit ihrem Namen anzugeben, kannst du in der color-API-"
+"Dokumentation nachsehen und etwas wie ``arcade.color.AQUAMARINE`` in deinem "
+"Programm verwenden. In diesem Fall kommen die Namen vom ColorPicker `color "
+"chart`_ (Farbtabelle)."
+
+#: ../../source/chapters/06_drawing/drawing.rst:196
+msgid ""
+"If the color you want isn't in the chart, or you just don't want to use that "
+"chart, you can specify colors by \"RGB\". RGB stands for Red, Green, and "
+"Blue."
+msgstr ""
+"Wenn die Farbe nicht in der Farbtabelle ist oder du die Farbtabelle nicht "
+"benutzen möchtest, kannst du die Farbe mit \"RBG\" angeben. RGB steht für "
+"Rot, Grün und Blau."
+
+#: ../../source/chapters/06_drawing/drawing.rst:200
+msgid ""
+"Computers, TVs, color changing LEDs, all work by having three small lights "
+"close together. A red light, a green light, and a blue light. Turn all three "
+"lights off and you get black. Turn all three lights on and you get white. "
+"Just turn on the red, and you get red. Turn on both red and green to get "
+"yellow."
+msgstr ""
+"Rechner, Fernseher, farbwechselnde LEDs, alle funktionieren, indem sie drei "
+"kleine Leuchtelemente dicht beieinander haben. Ein rotes, ein grünes und ein "
+"blaues Leuchtelement. Schalte alle Leuchtelemente aus und du erhältst "
+"Schwarz. Schalte alle an und du erhältst weiß. Schalte nur das rote an und "
+"du erhältst Rot. Schalte rot und grün an und du bekommst Gelb."
+
+#: ../../source/chapters/06_drawing/drawing.rst:206
+msgid ""
+"RGB based monitors work on an *additive* process. You start with black and "
+"add light to get color."
+msgstr ""
+"RGB-Monitore arbeiten mit der *additiven* Farbmischung. Du fängst mit "
+"schwarz an und fügst Licht hinzu, um eine Farbe zu bekommen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:209
+msgid ""
+"This is different than paint or ink, which works on a *subtractive* process. "
+"You start with white and add to get darker colors."
+msgstr ""
+"Das ist anders als bei Farbe oder Tinte, die mit einem *subtraktiven* "
+"Prozess arbeitet. Du startest mit Weiß und fügst Pigmente hinzu, damit es "
+"dunkler wird."
+
+#: ../../source/chapters/06_drawing/drawing.rst:213
+msgid ""
+"Therefore, keep separate in your mind how light-based RGB color works from "
+"how paint and ink works."
+msgstr ""
+"Unterscheide deshalb immer im Kopf, wie Licht basierte RGB-Farben "
+"funktionieren und wie Farbe und Tinte funktioniert."
+
+#: ../../source/chapters/06_drawing/drawing.rst:216
+msgid ""
+"We specify how much red, green, and blue to use using numbers. No light is "
+"zero. Turn the light on all the way and it is 255. So ``(0, 0, 0)`` means no "
+"red, no green, no blue. Black. Here are some other examples:"
+msgstr ""
+"Wir müssen mit Zahlen angeben wie viel Rot, Grün und Blau wir haben wollen. "
+"Kein Licht ist Null. Komplett angeschaltet ist 255. ``(0, 0, 0)`` bedeutet "
+"also kein Rot, kein Grün und kein Blau. Schwarz. Hier sind noch ein paar "
+"Beispiele:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:221
+#: ../../source/chapters/06_drawing/drawing.rst:226
+msgid "Red"
+msgstr "Rot"
+
+#: ../../source/chapters/06_drawing/drawing.rst:221
+#: ../../source/chapters/06_drawing/drawing.rst:227
+msgid "Green"
+msgstr "Grün"
+
+#: ../../source/chapters/06_drawing/drawing.rst:221
+#: ../../source/chapters/06_drawing/drawing.rst:228
+msgid "Blue"
+msgstr "Blau"
+
+#: ../../source/chapters/06_drawing/drawing.rst:221
+msgid "Color"
+msgstr "Farbe"
+
+#: ../../source/chapters/06_drawing/drawing.rst:223
+#: ../../source/chapters/06_drawing/drawing.rst:226
+#: ../../source/chapters/06_drawing/drawing.rst:227
+#: ../../source/chapters/06_drawing/drawing.rst:228
+#: ../../source/chapters/06_drawing/drawing.rst:229
+#: ../../source/chapters/06_drawing/drawing.rst:276
+msgid "0"
+msgstr "0"
+
+#: ../../source/chapters/06_drawing/drawing.rst:223
+msgid "Black"
+msgstr "Schwarz"
+
+#: ../../source/chapters/06_drawing/drawing.rst:224
+#: ../../source/chapters/06_drawing/drawing.rst:226
+#: ../../source/chapters/06_drawing/drawing.rst:227
+#: ../../source/chapters/06_drawing/drawing.rst:228
+#: ../../source/chapters/06_drawing/drawing.rst:229
+msgid "255"
+msgstr "255"
+
+#: ../../source/chapters/06_drawing/drawing.rst:224
+msgid "White"
+msgstr "Weiß"
+
+#: ../../source/chapters/06_drawing/drawing.rst:225
+msgid "127"
+msgstr "127"
+
+#: ../../source/chapters/06_drawing/drawing.rst:225
+msgid "Gray"
+msgstr "Grau"
+
+#: ../../source/chapters/06_drawing/drawing.rst:229
+msgid "Yellow"
+msgstr "Gelb"
+
+#: ../../source/chapters/06_drawing/drawing.rst:232
+msgid ""
+"There are tools that let you easily find a color, and then get the RGB "
+"values. One I really like, because it is easy to remember is \"`colorpicker."
+"com <http://www.colorpicker.com>`_\". You can select the color, and then get "
+"the numbers to use when specifying a color. See the image below:"
+msgstr ""
+"Es gibt Werkzeuge, mit denen du leicht eine Farbe findest und dann die RGB-"
+"Werte dazu bekommst. Eins, das ich wirklich mag, weil es sich leicht merken "
+"lässt, ist \"`colorpicker.com <http://www.colorpicker.com>`_\". Du kannst "
+"die Farbe auswählen und bekommst dann die Zahlen, die du für die Farbe "
+"angeben musst. Siehe die Abbildung unten:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:238
+msgid ".. image:: chapters/06_drawing/colorpicker.png"
+msgstr ".. image:: chapters/06_drawing/colorpicker.png"
+
+#: ../../source/chapters/06_drawing/drawing.rst:239
+msgid ""
+"After getting the number, specify the color as a set of three numbers "
+"surrounded by parenthesis, like this:"
+msgstr ""
+"Wenn du die Zahlen hast, gib sie als Liste von drei eingeklammerten Zahlen "
+"an, wie hier gezeigt:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:242
+msgid "arcade.set_background_color((189, 55, 180))"
+msgstr "arcade.set_background_color((189, 55, 180))"
+
+#: ../../source/chapters/06_drawing/drawing.rst:246
+msgid ""
+"In addition to RGB, you can also specify \"Alpha.\" The \"Alpha Channel\" "
+"controls how transparent the color is. If you draw a square with an alpha of "
+"255, it will be solid and hide everything behind it. An alpha of 127 will be "
+"in the middle, you will see some of the items behind the square. An alpha of "
+"0 is completely transparent and you'll see nothing of the square."
+msgstr ""
+"Zusätzlich zu den RGB-Werten, kannst du den \"Alphawert\" angeben. Der "
+"\"Alpha-Kanal\" gibt an, wie durchsichtig die Farbe ist. Wenn du ein Quadrat "
+"mit dem Alphawert 255 zeichnest, wird es solide und versteckt alles hinter "
+"ihm. Bei einem Alphawert von 127 wird es halb durchsichtig und du siehst "
+"Dinge hinter dem Quadrat durchscheinen. Ein Alphawert von 0 bedeutet "
+"komplett durchsichtig und du wirst das Quadrat nicht sehen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:257
+msgid "Wait, What Is Up With 255?"
+msgstr "Warte, warum 255?"
+
+#: ../../source/chapters/06_drawing/drawing.rst:259
+msgid ""
+"Notice how the color values go between 0 and 255? That's strange. Why 255? "
+"Why not 100? Why not 1000?"
+msgstr ""
+"Hast du bemerkt, dass die Werte von 0 bis 255 gehen? Das ist merkwürdig. "
+"Warum 255? Warum nicht 100? Warum nicht 1000?"
+
+#: ../../source/chapters/06_drawing/drawing.rst:262
+msgid ""
+"The reason is important to understand how computers work. Remember how "
+"everything is stored in numbers? They are not just stored in numbers, they "
+"are stored in 1's and 0's."
+msgstr ""
+"Der Grund ist wichtig, um zu verstehen wie Rechner funktionieren. Erinnerst "
+"du dich, dass alles als Zahlen gespeichert wird? Sie sind nicht nur als "
+"Zahlen gespeichert. Sie sind gespeichert als Einsen und Nullen."
+
+#: ../../source/chapters/06_drawing/drawing.rst:266
+msgid ""
+"Everything to the compute is a switch. If there is electricity, we have a 1. "
+"If there is no electricity we have a 0. We can store those 1's and 0's in "
+"memory. We call these 1's and 0's **binary numbers**."
+msgstr ""
+"Alles zum Rechnen ist ein Schalter. Wenn Elektrizität da ist, haben wir eine "
+"Eins. Wenn keine Elektrizität da ist, haben wir eine Null. Wir können diese "
+"Einsen und Nullen im Speicher ablegen. Wir nennen diese Einsen und Nullen "
+"**Binärzahlen**."
+
+#: ../../source/chapters/06_drawing/drawing.rst:270
+msgid ""
+"How do we go from 1's and 0's to numbers we normally use? For example, a "
+"number like 758? We do that with a combination of 1's and 0's. Like this:"
+msgstr ""
+"Wie kommen wir von den Einsen und Nullen zu den Zahlen, die wir "
+"normalerweise verwenden? Nehmen wir als Beispiel 758. Wir stellen das als "
+"eine Kombination von Einsen und Nullen dar. So wie hier:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:274
+msgid "Binary - Base 2"
+msgstr "Binär - Basis 2"
+
+#: ../../source/chapters/06_drawing/drawing.rst:274
+msgid "Base 10"
+msgstr "Dezimal - Basis 10"
+
+#: ../../source/chapters/06_drawing/drawing.rst:276
+msgid "0000"
+msgstr "0000"
+
+#: ../../source/chapters/06_drawing/drawing.rst:277
+msgid "0001"
+msgstr "0001"
+
+#: ../../source/chapters/06_drawing/drawing.rst:277
+msgid "1"
+msgstr "1"
+
+#: ../../source/chapters/06_drawing/drawing.rst:278
+msgid "0010"
+msgstr "0010"
+
+#: ../../source/chapters/06_drawing/drawing.rst:278
+msgid "2"
+msgstr "2"
+
+#: ../../source/chapters/06_drawing/drawing.rst:279
+msgid "0011"
+msgstr "0011"
+
+#: ../../source/chapters/06_drawing/drawing.rst:279
+msgid "3"
+msgstr "3"
+
+#: ../../source/chapters/06_drawing/drawing.rst:280
+msgid "0100"
+msgstr "0100"
+
+#: ../../source/chapters/06_drawing/drawing.rst:280
+msgid "4"
+msgstr "4"
+
+#: ../../source/chapters/06_drawing/drawing.rst:281
+msgid "0101"
+msgstr "0101"
+
+#: ../../source/chapters/06_drawing/drawing.rst:281
+msgid "5"
+msgstr "5"
+
+#: ../../source/chapters/06_drawing/drawing.rst:282
+msgid "0110"
+msgstr "0110"
+
+#: ../../source/chapters/06_drawing/drawing.rst:282
+msgid "6"
+msgstr "6"
+
+#: ../../source/chapters/06_drawing/drawing.rst:283
+msgid "0111"
+msgstr "0111"
+
+#: ../../source/chapters/06_drawing/drawing.rst:283
+msgid "7"
+msgstr "7"
+
+#: ../../source/chapters/06_drawing/drawing.rst:284
+msgid "1000"
+msgstr "1000"
+
+#: ../../source/chapters/06_drawing/drawing.rst:284
+msgid "8"
+msgstr "8"
+
+#: ../../source/chapters/06_drawing/drawing.rst:287
+msgid ""
+"See the pattern? It is the same pattern we use when we count as a kid. As a "
+"kid we learned to go 0 to 9, then when we hit 9 we go back to 0 and add one "
+"to the ten's place. Here we only have 0 to 1 instead of 0 to 9. And instead "
+"of a \"ten's place\" we have a \"two's place.\""
+msgstr ""
+"Siehst du das Muster? Es ist das Muster mit dem wir als Kinder gezählt "
+"haben. Als Kind haben wir gelernt von Null bis Neun zu zählen, wenn wir Neun "
+"erreicht haben, fangen wir wieder bei Null an und fügen eine Eins an der "
+"Zehnerstelle hinzu. Hier haben wir nur 0 und 1 anstellen von 0 bis 9. "
+"Anstelle einer \"Zehnerstelle\" haben wir eine \"Zweierstelle\". "
+
+#: ../../source/chapters/06_drawing/drawing.rst:293
+msgid ""
+"You might have used \"bases\" in math class long ago. Computers work in "
+"Base-2 because they only have two ways to count, on or off. Humans think in "
+"Base-10 because we have 10 fingers."
+msgstr ""
+"Eventuell hast du im Mathematikunterricht vor langer Zeit Basen verwendet. "
+"Rechner arbeiten zur Basis 2, weil sie nur zwei Wege zu zählen haben, an "
+"oder aus. Menschen denken zur Basis 10, weil wir zehn Finger haben."
+
+#: ../../source/chapters/06_drawing/drawing.rst:297
+msgid ""
+"Numbers are stored in **bytes**. A byte is a set of eight binary numbers. If "
+"we were to follow the pattern we started above, the largest number we could "
+"store with eight 1's and 0's is::"
+msgstr ""
+"Zahlen werden als **Bytes** gespeichert. Ein Byte ist eine Menge von acht "
+"binären Ziffern. Wenn wir dem Muster oben folgen, ist die größte Zahl, die "
+"wir speichern können aus acht Einsen und Nullen:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:301
+msgid "1111 1111"
+msgstr "1111 1111"
+
+#: ../../source/chapters/06_drawing/drawing.rst:303
+msgid "In Base-10 this is 255."
+msgstr "Zur Basis 10 ist das 255."
+
+#: ../../source/chapters/06_drawing/drawing.rst:305
+msgid ""
+"Let's use some math. We have 8 ones and zeros. That give us 2 :sup:`8` = 256 "
+"possible numbers. Since zero is a combination, that makes the biggest number "
+"255."
+msgstr ""
+"Lass uns etwas Mathematik verwenden. Wir haben acht Einsen und Nullen. Das "
+"gibt uns 2:sup:`8` = 256 mögliche Zahlen. Da Null eine Kombination ist, "
+"ergibt das, dass 255 die größte Zahl ist."
+
+#: ../../source/chapters/06_drawing/drawing.rst:308
+msgid ""
+"If we had 16 bits, then we'd have 2 :sup:`16` = 65,536 possible "
+"combinations. Or a number from 0-65535. A 32-bit computer can hold numbers "
+"up to 2 :sup:`32` = 4,294,967,296. A 64-bit computer can hold really large "
+"numbers!"
+msgstr ""
+"Wenn wir 16 Bit hätten, hätten wir 2 :sup:`16` = 65.536 mögliche "
+"Kombinationen oder eine Zahl von 0 bis 65535. Ein 32-Bit-Rechner kann Zahlen "
+"von 0 bis zu 2 :sup:`32` = 4.294.967.295 speichern. Ein 64-Bit-Rechner kann "
+"wirklich große Zahlen verarbeiten."
+
+#: ../../source/chapters/06_drawing/drawing.rst:312
+msgid ""
+"So because a computer holds colors with one byte for red, one for green, and "
+"one for blue, each color has a value range from 0 - 255."
+msgstr ""
+"Weil der Rechner Farben mit je einem Byte für Rot, Grün und Blau speichert "
+"hat jede Farbe einen Bereich von 0 bis 255."
+
+#: ../../source/chapters/06_drawing/drawing.rst:316
+msgid "The Coordinate System"
+msgstr "Das Koordinatensystem"
+
+#: ../../source/chapters/06_drawing/drawing.rst:318
+msgid ""
+"In your math classes, you've learned about the Cartesian coordinate system, "
+"which looks like this:"
+msgstr ""
+"Im Mathematikunterricht hast du das kartesische Koordinatensystem "
+"kennengelernt, das wie folgt aussieht:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:324
+msgid ".. image:: chapters/06_drawing/cartesian_coordinate_system.svg"
+msgstr ".. image:: chapters/06_drawing/cartesian_coordinate_system.svg"
+
+#: ../../source/chapters/06_drawing/drawing.rst:324
+msgid ""
+"Source: `Wikipedia: Cartesian coordinate system <https://commons.wikimedia."
+"org/wiki/File:Cartesian_coordinate_system_(comma).svg>`_"
+msgstr ""
+"Quelle: `Wikipedia: Cartesian coordinate system <https://commons.wikimedia."
+"org/wiki/File:Cartesian_coordinate_system_(comma).svg>`_"
+
+#: ../../source/chapters/06_drawing/drawing.rst:326
+msgid ""
+"Our graphics will be drawn using this same system. But there are additional "
+"things to keep in mind:"
+msgstr ""
+"Unsere Grafiken wird mit dem gleichen System gezeichnet. Es gibt aber ein "
+"paar Dinge zu beachten:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:329
+msgid ""
+"We will only draw in the upper right quadrant. So 0,0 will be in the lower "
+"left of the screen, and all negative coordinates will be off-screen."
+msgstr ""
+"Wir werden nur im rechten, oberen Quadranten zeichnen. 0, 0 ist die untere "
+"linke Ecke des Zeichenbereichs und alle negativen Werte sind außerhalb des "
+"Zeichenbereichs."
+
+#: ../../source/chapters/06_drawing/drawing.rst:331
+msgid ""
+"Each \"Point\" will be a pixel. So a window that is 800 pixels wide, will "
+"have x-coordinates that run from 0 to 800."
+msgstr ""
+"Jeder \"Punkt\" ist ein Pixel. Ein Fenster, das 800 Pixel breit ist, hat X-"
+"Koordinaten von 0 bis 799."
+
+#: ../../source/chapters/06_drawing/drawing.rst:335
+msgid "Drawing a Rectangle"
+msgstr "Ein Rechteck zeichnen"
+
+#: ../../source/chapters/06_drawing/drawing.rst:337
+msgid ""
+"Let's start drawing with a program to draw a rectangle. The function we will "
+"use is ``draw_lrtb_rectangle_filled``. It stands for \"draw left-right-top-"
+"bottom rectangle\"."
+msgstr ""
+"Lass uns mit einem Programm zum Zeichnen eines Rechtecks anfangen. Die "
+"Funktion, die wir verwenden werden, ist ``draw_lrtb_rectangle_filled``. Es "
+"steht für \"draw left-right-top-bottom rectangle\" (zeichne links-rechts-"
+"oben-unten Rechteck)."
+
+#: ../../source/chapters/06_drawing/drawing.rst:341
+msgid "We'll use this program to draw a green rectangle:"
+msgstr "Wir verwenden dieses Programm, um ein grünes Rechteck zu zeichnen:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:343
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# Draw a rectangle\n"
+"# Left of 5, right of 35\n"
+"# Top of 590, bottom of 570\n"
+"arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color."
+"BITTER_LIME)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# Draw a rectangle\n"
+"# Left of 5, right of 35\n"
+"# Top of 590, bottom of 570\n"
+"arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color."
+"BITTER_LIME)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:348
+msgid "There are a lot of shapes we can draw. Try running the program below:"
+msgstr ""
+"Es gibt eine Menge Formen, die wir zeichnen können. Versuch das Programm "
+"unten auszuführen:"
+
+#: ../../source/chapters/06_drawing/drawing.rst:350
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# Draw a rectangle\n"
+"# Left of 5, right of 35\n"
+"# Top of 590, bottom of 570\n"
+"arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color."
+"BITTER_LIME)\n"
+"\n"
+"# Different way to draw a rectangle\n"
+"# Center rectangle at (100, 520) with a width of 45 and height of 25\n"
+"arcade.draw_rectangle_filled(100, 520, 45, 25, arcade.color.BLUSH)\n"
+"\n"
+"# Rotate a rectangle\n"
+"# Center rectangle at (200, 520) with a width of 45 and height of 25\n"
+"# Also, rotate it 45 degrees.\n"
+"arcade.draw_rectangle_filled(200, 520, 45, 25, arcade.color.BLUSH, 45)\n"
+"\n"
+"\n"
+"# Draw a point at (50, 580) that is 5 pixels large\n"
+"arcade.draw_point(50, 580, arcade.color.RED, 5)\n"
+"\n"
+"# Draw a line\n"
+"# Start point of (75, 590)\n"
+"# End point of (95, 570)\n"
+"arcade.draw_line(75, 590, 95, 570, arcade.color.BLACK, 2)\n"
+"\n"
+"# Draw a circle outline centered at (140, 580) with a radius of 18 and a "
+"line\n"
+"# width of 3.\n"
+"arcade.draw_circle_outline(140, 580, 18, arcade.color.WISTERIA, 3)\n"
+"\n"
+"# Draw a circle centered at (190, 580) with a radius of 18\n"
+"arcade.draw_circle_filled(190, 580, 18, arcade.color.WISTERIA)\n"
+"\n"
+"# Draw an ellipse. Center it at (240, 580) with a width of 30 and\n"
+"# height of 15.\n"
+"arcade.draw_ellipse_filled(240, 580, 30, 15, arcade.color.AMBER)\n"
+"\n"
+"# Draw text starting at (10, 450) with a size of 20 points.\n"
+"arcade.draw_text(\"Simpson College\", 10, 450, arcade.color.BRICK_RED, 20)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+msgstr ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(600, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# Draw a rectangle\n"
+"# Left of 5, right of 35\n"
+"# Top of 590, bottom of 570\n"
+"arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color."
+"BITTER_LIME)\n"
+"\n"
+"# Different way to draw a rectangle\n"
+"# Center rectangle at (100, 520) with a width of 45 and height of 25\n"
+"arcade.draw_rectangle_filled(100, 520, 45, 25, arcade.color.BLUSH)\n"
+"\n"
+"# Rotate a rectangle\n"
+"# Center rectangle at (200, 520) with a width of 45 and height of 25\n"
+"# Also, rotate it 45 degrees.\n"
+"arcade.draw_rectangle_filled(200, 520, 45, 25, arcade.color.BLUSH, 45)\n"
+"\n"
+"\n"
+"# Draw a point at (50, 580) that is 5 pixels large\n"
+"arcade.draw_point(50, 580, arcade.color.RED, 5)\n"
+"\n"
+"# Draw a line\n"
+"# Start point of (75, 590)\n"
+"# End point of (95, 570)\n"
+"arcade.draw_line(75, 590, 95, 570, arcade.color.BLACK, 2)\n"
+"\n"
+"# Draw a circle outline centered at (140, 580) with a radius of 18 and a "
+"line\n"
+"# width of 3.\n"
+"arcade.draw_circle_outline(140, 580, 18, arcade.color.WISTERIA, 3)\n"
+"\n"
+"# Draw a circle centered at (190, 580) with a radius of 18\n"
+"arcade.draw_circle_filled(190, 580, 18, arcade.color.WISTERIA)\n"
+"\n"
+"# Draw an ellipse. Center it at (240, 580) with a width of 30 and\n"
+"# height of 15.\n"
+"arcade.draw_ellipse_filled(240, 580, 30, 15, arcade.color.AMBER)\n"
+"\n"
+"# Draw text starting at (10, 450) with a size of 20 points.\n"
+"arcade.draw_text(\"Simpson College\", 10, 450, arcade.color.BRICK_RED, 20)\n"
+"\n"
+"# Finish drawing\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+
+#: ../../source/chapters/06_drawing/drawing.rst:355
+msgid "Drawing Primitives"
+msgstr "Zeichen-Primitive"
+
+#: ../../source/chapters/06_drawing/drawing.rst:357
+msgid ""
+"For a program showing all the drawing primitives, see the example `Drawing "
+"Primitives`_. Also, see the API documentation's `Quick Index`_."
+msgstr ""
+"Im Beispiel `Drawing Primitives`_, findest du ein Beispiel mit allen Zeichen-"
+"Primitiven. Schau ebenfalls in der API-Dokumentation `Quick Index`_ nach."
+
+#: ../../source/chapters/06_drawing/drawing.rst:360
+msgid "What's next? Try :ref:`lab-02`."
+msgstr "Was kommt als nächstes? Versuche die Aufgabe :ref:`lab-02`."

@@ -1,3 +1,4 @@
+*.mo
 *.sublime-project
 *.sublime-workspace
 build/

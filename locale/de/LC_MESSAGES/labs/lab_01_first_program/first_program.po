@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade Fall 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-13 11:17+0200\n"
+"PO-Revision-Date: 2019-07-16 10:26+0200\n"
+"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.32.1\n"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:4
+msgid "Lab 1: First Program"
+msgstr "Übung 1: Ein erstes Programm"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:6
+msgid ""
+"Follow these step-by-step instructions. Note that a lot of the instructions "
+"link to a different site. I'd recommend opening those links in a different "
+"tab on your browser. That way you don't lose your spot on what lab step you "
+"are on."
+msgstr ""
+"Folge diesen Anweisungen schrittweise. Beachte, dass eine Menge der "
+"Anweisungen auf eine andere Seite verweisen. Ich empfehle dir diese Links in "
+"einem anderen Tab in deinem Browser zu öffnen, dadurch verlierst du nicht "
+"die Position, an der du dich in dieser Übung befindest."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:10
+msgid "If you are installing on your own computer:"
+msgstr "Wenn du auf deinem eigenen Rechner installierst:"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:12
+msgid "Install Python and set up the libraries. See :ref:`installing-python`."
+msgstr ""
+"Installiere Python und richte die Bibliotheken ein. Siehe :ref:`installing-"
+"python`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:13
+msgid "Install PyCharm. See :ref:`installing-pycharm`."
+msgstr "Installiere PyCharm. Siehe :ref:`installing-pycharm`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:14
+msgid "Install Git. See :ref:`installing-git`."
+msgstr "Installiere Git. Siehe :ref:`installing-git`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:16
+msgid "Fork the repository. See :ref:`fork-repository`."
+msgstr "Forke das Repository. Siehe :ref:`fork-repository`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:17
+msgid "Share the repository. See :ref:`share-repository`."
+msgstr "Share das Repository. See :ref:`share-repository`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:18
+msgid "Clone the repository. See :ref:`clone-repository`."
+msgstr "Clone das Repository. Siehe :ref:`clone-repository`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:19
+msgid "Open your project in PyCharm. See :ref:`open-in-pycharm`."
+msgstr "Öffne dein Projekt in PyCharm. Siehe :ref:`open-in-pycharm`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:20
+msgid "Try changing a file. See :ref:`change_file`."
+msgstr "Versuche eine Datei zu ändern. Siehe :ref:`change_file`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:21
+msgid "Commit and push the updated program to BitBucket. See :ref:`commit`."
+msgstr ""
+"Commit und push das aktualisierte Programm auf BitBucket. Siehe :ref:"
+"`commit`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:22
+msgid ""
+"Great! Now let's try programming something. Create and run a test program "
+"that prints ``Hello``. See :ref:`print-hello-world`. Make sure you take the "
+"time to learn how to \"run\" the program and see the output."
+msgstr ""
+"Großartig! Lass uns jetzt versuchen, etwas zu programmieren. Erstelle und "
+"starte ein Testprogramm, das ``Hallo`` ausgibt. Siehe :ref:`print-hello-"
+"world`. Nimm dir die Zeit zu lernen, wie man ein Programm \"startet\" und "
+"sieh dir die Ausgabe an."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:25
+msgid ""
+"Update your program to print something longer. Commit and push again. See :"
+"ref:`print-multiple-lines`."
+msgstr ""
+"Aktualisiere dein Programm so, dass etwas Längeres ausgibt. Commit und push "
+"wieder. Siehe :ref:`print-multiple-lines`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:26
+msgid ""
+"Examine and try out different **escape codes**. See :ref:`escape-codes`. "
+"(We'll talk more about this Friday.)"
+msgstr ""
+"Untersuche und probiere verschiedene **Escape-Codes** aus. Siehe :ref:"
+"`escape-codes`. (Wir werden mehr am Freitag darüber sprechen.)"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:27
+msgid ""
+"Commit and push the updated program to BitBucket. See :ref:`commit` again."
+msgstr ""
+"Commit und push das aktualisierte Programm auf BitBucket. Siehe noch einmal :"
+"ref:`commit`."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:28
+msgid ""
+"Now is the time to work on Lab 01. Make sure you are working in the Lab 01 "
+"folder, with the ``lab_01.py`` file."
+msgstr ""
+"Jetzt wird es Zeit an Übung 1 zu arbeiten. Stelle sicher, dass du im Ordner "
+"Lab 01 mit der Datei ``lab01.py`` arbeitest."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:29
+msgid ""
+"Make the lab *yours*. Figure out something of your own to print. Don't just "
+"use my examples. Make it longer than one line. At least four. Also include "
+"at least one escape code."
+msgstr ""
+"Mach die Übung zu deiner Übung. Finde etwas Eigenes für die Ausgabe heraus. "
+"Nimm nicht einfach nur meine Beispiele. Mach die Ausgabe länger als eine "
+"Zeile. Mindestens vier. Pack auch wenigstens einen Escape-Code hinein."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:31
+msgid ""
+"Try running your lab. If you see the old \"test\" program running instead, "
+"right click on your program and tell it you want it to run ``lab_01.py`` not "
+"the other program."
+msgstr ""
+"Versuch deine Übung zu starten. Wenn das alte \"test\" Programm stattdessen "
+"läuft, rechtsklicke auf dein Programm und sage ihm, dass es ``lab_01.py`` "
+"und nicht das andere Programm starten soll "
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:33
+msgid "Commit and push your lab."
+msgstr "Commit und push deine Übung."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:34
+msgid ""
+"Find your lab in in BitBucket. Go to \"source\" and find the directory it is "
+"in. Copy the URL, submit for grading."
+msgstr ""
+"Suche deine Übung in BitBucket. Gehe auf \"source\" und suche das "
+"Verzeichnis in dem es ist. Kopiere die URL und reiche sie zur Bewertung ein."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:36
+msgid "Before turning in your program, double-check:"
+msgstr "Bevor du dein Programm abgibst, überprüfe noch einmal:"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:38
+msgid "Did you put the code in ``lab_01.py`` in the Lab 1 folder?"
+msgstr "Hast du den Code in ``lab_01.py`` im Ordner Lab 1?"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:39
+msgid ""
+"Did you remove the sample prints shown above, and make up your own print "
+"statements? At least four lines?"
+msgstr ""
+"Hast du die Beispielausgaben von oben entfernt und deine eigenen "
+"Ausgabeanweisungen erstellt? Sind es mindestens vier Zeilen?"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:41
+msgid "Did you invite your instructor to the repository?"
+msgstr "Hast du deine Übungsbetreuer zum Repository eingeladen?"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:42
+msgid ""
+"Does the program use proper spelling, capitalization, and grammar in the "
+"text that you printed to the screen? (Seriously, make sure what you print "
+"out has periods and capital letters.)"
+msgstr ""
+"Verwendet dein Programm korrekte Rechtschreibung, Groß-/Kleinschreibung und "
+"Grammatik im ausgegebenen Text? (Ernsthaft, stelle sicher, dass deine "
+"Programmausgabe Punkte und Großbuchstaben am Satzanfang und -ende enthält.)"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:44
+msgid ""
+"Does the program use at least one escape code? Also, remember you don't have "
+"to put spaces around escape codes. So do this: ``\"\\tIndented with a tab"
+"\"`` not ``\"\\t Indented with a tab\"`` because the space after the t isn't "
+"needed unless you want both a tab and an extra space."
+msgstr ""
+"Verwendet dein Programm wenigstens einen Escape-Code? Denke ebenfalls daran, "
+"dass du die Escape-Codes nicht mit Leerzeichen umgeben darfst. Schreibe "
+"also: ``\\tEingerückt mit einem Tabulator`` und nicht ``\\t Eingerückt mit "
+"einem Tabulator``, weil das Leerzeichen nach dem t nicht notwendig ist, es "
+"sein denn, du willst um einen Tabulator und ein extra Leerzeichen einrücken."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:47
+msgid ""
+"Hover over the PyCharm \"hints\" that are on the right side of your editor "
+"to see if there are suggestions on how to make your code better."
+msgstr ""
+"Lass den Mauszeiger über den \"hints\" (Hinweisen) auf der rechten Seite des "
+"Editors schweben, um nachzusehen, ob es Vorschläge zur Verbesserung des "
+"Codes gibt."
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:49
+msgid "Can you find the code in BitBucket?"
+msgstr "Findest du den Code auf BitBucket?"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:50
+msgid ""
+"Have you copied the URL and turned it in to Scholar? (Find the Lab 01 link "
+"on Scholar.)"
+msgstr ""
+"Hast du die URL kopiert und auf Scholar abgegeben? (Suche den Lab 01 Link "
+"auf Scholar.)"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:52
+msgid "Congratulations, you are done!"
+msgstr "Glückwunsch, du bist fertig!"
