@@ -139,7 +139,7 @@ Forking the Repository
 Share the Repository
 --------------------
 
-1. Give read permission to the instructor ``pcraven`` for your fork so he can
+1. Give read permission to the instructor ``paul@cravenfamily.com`` for your fork so he can
    grade your assignments.
 
 .. image:: invite_1.png
