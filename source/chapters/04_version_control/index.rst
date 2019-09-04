@@ -379,25 +379,12 @@ What happens if you can't push to the server? If you get an error like what's be
     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 
-Step 1: Make Sure You Have No Pending Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Run a ``git status`` and make sure you have nothing to commit.
-It should look like this:
-
-.. code-block:: text
-
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git status
-    On branch master
-    Your branch is up-to-date with 'origin/master'.
-    nothing to commit, working tree clean
-
-If you do hove code to commit, jump up to :ref:`commit` and then come back here.
+You are getting an error because there are changes on the server that aren't on
+your computer. You need to pull and merge those changes.
 
 .. _pull-changes:
 
-Step 2: Pull Changes From The Server
+Step 1: Pull Changes From The Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Pull changes from the server:
@@ -406,14 +393,14 @@ Pull changes from the server:
 
     $ git pull
 
-Normally, this will work fine and you'll be done. But if you have other computers
-that you are coding on, the computer will automatically try to merge.
+Normally, this will work fine and you'll be done. If so, you can do a
+``git push`` and your code will be pushed to the server.
 
-Step 2A: Merging
-~~~~~~~~~~~~~~~~
+Step 2: Merging
+~~~~~~~~~~~~~~~
 
 If you get a screen like the image below, the computer automatically
-merged your code bases. It now wants you to type in a comment for the
+merged your code bases but it now wants you to type in a comment for the
 merge. We'll take the default comment.
 Hold down the shift key and type ``ZZ``.
 If that doesn't work, hit escape, and then try again.
@@ -453,8 +440,8 @@ Then we edited the same file in the same spot. We have to tell
 the computer if we want our changes, or the changes on the other
 computer.
 
-Step 2B: Resolving a Merge Conflict
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 3: Resolving a Merge Conflict
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Do a ``git status``. It should look something like this:
 
@@ -514,7 +501,7 @@ Then when you are all done with all merges, type:
        6a8f398..e083f36  master -> master
 
 
-Step 3: Try Pushing Again
+Step 4: Try Pushing Again
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: text
