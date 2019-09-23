@@ -262,6 +262,37 @@ Operator   Description
     x -= 5
     print(x)
 
+..incrementing_x::
+
+Increasing/Decreasing a Variable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to increase or decrease a variable, you need to use an assignment operator.
+
+.. code-block:: python
+
+    x = 3
+    print(x)
+
+    # This adds one to x, but does nothing with the result.
+    # So x does not get bigger.
+    x + 1
+    print(x)
+
+    # This adds one to x, and stores the result back in x
+    x = x + 1
+    print(x)
+
+    # This does the same thing, but uses the increment operator
+    x += 1
+    print(x)
+
+    # This doubles x, and then adds one.
+    # Probably not what the programmer intended.
+    x += x + 1
+
+
+
 Using Expressions In Function Calls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
