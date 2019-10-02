@@ -36,8 +36,8 @@ In order to do anything with this character, we'll need to pass that data to a f
 .. code-block:: python
     :linenos:
 
-    def display_character(name, sex, max_hit_points, current_hit_points):
-        print(name, sex, max_hit_points, current_hit_points)
+    def display_character(name, outfit, max_hit_points, current_hit_points):
+        print(name, outfit, max_hit_points, current_hit_points)
 
 Now imagine creating a program that has a set of variables like that for each
 character, monster, and item in our game. Then we need to create functions that
@@ -57,7 +57,8 @@ describe our character. In this case we've added ``max_speed``:
     max_speed = 10
 
     def display_character(name, outfit, max_hit_points, current_hit_points, max_speed):
-        print(name, sex, max_hit_points, current_hit_points)
+        print(name, outfit, max_hit_points, current_hit_points, max_speed)
+        print(name, outfit, max_hit_points, current_hit_points, max_speedA new )
 
 In example above, there is only one function. But in a large video game, we
 might have hundreds of functions that deal with the main character. Adding a
@@ -674,7 +675,7 @@ two underscores before the init, and two underscores after.
 A common mistake is to only use one.
 
 The constructor must take in self as the first parameter just like other
-methods in a class. When the program is run, it will print::
+methods in a class. When the program is run, it will print:
 
 .. code-block:: text
 
