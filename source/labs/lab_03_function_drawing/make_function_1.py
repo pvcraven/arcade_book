@@ -48,7 +48,7 @@ arcade.draw_polygon_filled([[20, 350],
                             [100, 470],
                             [280, 470],
                             [360, 340]],
-                            arcade.color.BROWN)
+                           arcade.color.BROWN)
 
 # Draw loft of barn
 arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color.BROWN)

@@ -46,4 +46,5 @@ def main():
     # Run the program
     arcade.run()
 
+
 main()

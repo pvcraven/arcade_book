@@ -25,6 +25,7 @@ def on_draw(delta_time):
                                  RECT_WIDTH, RECT_HEIGHT,
                                  arcade.color.ALIZARIN_CRIMSON)
 
+
 # Open up our window
 arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Bouncing Rectangle Example")
 arcade.set_background_color(arcade.color.WHITE)

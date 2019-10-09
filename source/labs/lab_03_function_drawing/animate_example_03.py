@@ -44,6 +44,7 @@ def on_draw(delta_time):
     if on_draw.center_y > SCREEN_HEIGHT:
         on_draw.delta_y *= -1
 
+
 # Below are function-specific variables. Before we use them
 # in our function, we need to give them initial values. Then
 # the values will persist between function calls.
