@@ -125,16 +125,16 @@ class MyGame(arcade.Window):
 
             # If it did, get rid of the bullet
             if len(hit_list) > 0:
-                bullet.kill()
+                bullet.remove_from_sprite_lists()
 
             # For every coin we hit, add to the score and remove the coin
             for coin in hit_list:
-                coin.kill()
+                coin.remove_from_sprite_lists()
                 self.score += 1
 
             # If the bullet flies off-screen, remove it.
             if bullet.bottom > SCREEN_HEIGHT:
-                bullet.kill()
+                bullet.remove_from_sprite_lists()
 
 
 def main():

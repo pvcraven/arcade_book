@@ -128,7 +128,7 @@ class MyGame(arcade.Window):
         # Loop through each colliding sprite, remove it, and add to the score.
         for coin in hit_list:
             self.score += 1
-            coin.kill()
+            coin.remove_from_sprite_lists()
 
 
 def main():

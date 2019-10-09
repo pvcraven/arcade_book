@@ -335,7 +335,7 @@ We also need to get rid of the sprite. The sprite class has a method called
 
     # Loop through each colliding sprite, remove it, and add to the score.
     for coin in coins_hit_list:
-        coin.kill()
+        coin.remove_from_sprite_lists()
         self.score += 1
 
 Here's the whole ``update`` method put together:
