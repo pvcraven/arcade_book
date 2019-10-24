@@ -130,9 +130,9 @@ This line of code would not work:
     line.strip()
 
 If the programmer wants the original variable to reference the new string,
-she must assign it to the new returned string as shown on line 4.
+she must assign it to the new returned string as shown on line 11.
 
-The second addition is on line 7. This closes the file so that the operating
+The second addition is on line 14. This closes the file so that the operating
 system doesn't have to go around later and clean up open files after the
 program ends.
 
