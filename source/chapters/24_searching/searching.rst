@@ -119,7 +119,7 @@ it is a bad habit to program like that, let's update the code:
 
     main()
 
-The listing above works better. It has two new additions. On line 4 is a call
+The listing above works better. It has two new additions. On line 7 is a call
 to the ``strip`` method built into every ``String`` class. This function returns a new
 string without the trailing spaces and carriage returns of the original string.
 The method does not alter the original string but instead creates a new one.
@@ -130,9 +130,9 @@ This line of code would not work:
     line.strip()
 
 If the programmer wants the original variable to reference the new string,
-she must assign it to the new returned string as shown on line 4.
+she must assign it to the new returned string as shown on line 11.
 
-The second addition is on line 7. This closes the file so that the operating
+The second addition is on line 14. This closes the file so that the operating
 system doesn't have to go around later and clean up open files after the
 program ends.
 
