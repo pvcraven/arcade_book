@@ -232,7 +232,7 @@ that work with the web, complex numbers, databases, and more.
   `these examples <http://arcade.academy/examples/index.html#pymunk>`_ http://www.pymunk.org/
 * wxPython: Create GUI programs, with windows, menus, and more. http://www.wxpython.org/
 * pydot: Generate complex directed and non-directed graphs http://code.google.com/p/pydot/
-* NumPy: Sophisticated library for working with matrices. http://numpy.scipy.org/
+* NumPy: Sophisticated library for working with matrices. http://numpy.org/
 * Pandas: A library for data analysis. https://pandas.pydata.org/
 * Pillow: Work with images. https://pillow.readthedocs.io/en/latest/
 * Pyglet: Another graphics library. Arcade uses this library. https://bitbucket.org/pyglet/pyglet/wiki/Home
