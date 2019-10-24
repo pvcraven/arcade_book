@@ -140,7 +140,7 @@ the mouse. We want the laser to be where the player is. That's easy:
         # Add the bullet to the appropriate list
         self.bullet_list.append(bullet)
 
-We can even start the player a bit ABOVE the player:
+We can even start the bullet a bit ABOVE the player:
 
 .. code-block:: Python
     :emphasize-lines: 6-7
