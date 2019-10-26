@@ -119,7 +119,7 @@ it is a bad habit to program like that, let's update the code:
 
     main()
 
-The listing above works better. It has two new additions. On line 7 is a call
+The listing above works better. It has two new additions. On line 11 is a call
 to the ``strip`` method built into every ``String`` class. This function returns a new
 string without the trailing spaces and carriage returns of the original string.
 The method does not alter the original string but instead creates a new one.
