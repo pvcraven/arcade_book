@@ -122,11 +122,11 @@ Multiple types of errors may be captured and processed differently. It can be
 useful to provide a more exact error message to the user than a simple "an
 error has occurred."
 
-In the code below, different types of errors can occur from lines 3-6. By
-placing ``IOError`` after ``except`` on line 7, only errors regarding Input and
-Output (IO) will be handled by that code. Likewise line 9 only handles
-errors around converting values, and line 11 covers division by zero errors.
-The last exception handling occurs on line 13. Since line 13 does not include
+In the code below, different types of errors can occur from lines 3-15. By
+placing ``IOError`` after ``except`` on line 19, only errors regarding Input and
+Output (IO) will be handled by that code. Likewise line 21 only handles
+errors around converting values, and line 23 covers division by zero errors.
+The last exception handling occurs on line 25. Since line 25 does not include
 a particular type of error, it will handle any error not covered by the ``except``
 blocks above. The "catch-all" ``except`` must always be last.
 
