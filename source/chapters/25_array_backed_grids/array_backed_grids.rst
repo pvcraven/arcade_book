@@ -254,12 +254,43 @@ Place this code somewhere ahead of your main program loop.
 
     Figure 16.10: Step 15
 
-Final Program
-^^^^^^^^^^^^^
+Resulting Program
+^^^^^^^^^^^^^^^^^
 
 .. literalinclude:: array_backed_grid.py
     :caption: array_backed_grid.py
     :language: python
     :linenos:
+
+Faster Program
+^^^^^^^^^^^^^^
+
+The program we have above works, but it is slow. If you look at the CPU
+of your computer, you'll find the Python program needlessly taking up
+CPU time when the grid isn't changing at all.
+
+Normally, our screens update at 60 frames per second, but for many computers
+they won't be able to show even that grid at 60 frames per second.
+Why? Every single frame we are taking our 100 rectangles,
+loading the four corners of each rectangle, its
+colors, and telling the graphics card to draw a box. This results in
+hundreds of calls to the graphics card.
+
+We can off-load the drawing to the graphics card. We can load all the rectangles
+to the graphics card, tell the graphics card to remember them, and then
+redraw them with *one* command.
+
+This makes drawing a two-step process. Load the the graphics card, and
+then draw. Slightly more complex, but much faster.
+
+If our shapes change, this program will reload all the shapes. There
+are more efficient ways to do this, but they are also more complex to
+program, so we'll skip that for now.
+
+.. literalinclude:: array_backed_grid_2.py
+    :caption: array_backed_grid_2.py
+    :language: python
+    :linenos:
+
 
 .. _draw_rectangle_filled: http://pythonhosted.org/arcade/arcade.html#arcade.draw_commands.draw_rectangle_filled
