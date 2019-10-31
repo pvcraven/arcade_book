@@ -66,7 +66,7 @@ disk.
 
 .. figure:: qt_tiled.png
 
-    Figure 16.2: Using Qt Tiles to create an adventure map
+    Figure 16.2: Using Tiled Map Editor to create an adventure map
 
 Adventure games also use multiple grids of numbers, just like minesweeper has
 a grid for the mines, and a separate grid for the flags. One grid, or "layer,"
@@ -75,11 +75,10 @@ you can't walk on like walls and trees; a layer for things that can instantly
 kill you, like lava or bottomless pits; one for objects that can be picked up
 and moved around; and yet another layer for initial placement of monsters.
 
-Maps like these can be loaded in a Python program, but unfortunately a full
-description of how to manage is beyond the scope of this book. Projects like
-PyTMX_ that provide some of the code needed to load these maps.
+Maps like these can be loaded in a Python program, which is
+shown in more detail with the Python Arcade Library documentation.
 
-.. _PyTMX: https://github.com/bitcraft/PyTMX
+* http://arcade.academy/examples/platform_tutorial/index.html#step-8-use-a-map-editor
 
 Application
 -----------
