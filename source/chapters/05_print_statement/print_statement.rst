@@ -1,36 +1,75 @@
 .. _print-function:
 
 The ``print`` Function
-----------------------
+======================
+
+In this chapter we'll write our first programs using the most fundamental of all
+tools in the programmer's toolbox, the ``print`` function. As you can probably guess,
+this function prints information to the screen.
+
+While a lot of programs are graphics-based, text-only programs are still quite common
+with people that manage computers, or who do data analytics. Even for the graphics-based
+games we develop in this book, the ``print`` function will be a vital aid in understanding
+and debugging our games.
+
+We aren't limited to printing to the screen! The same techniques we learn here can
+be used to print information to a file, so we can save our data. We can even print
+over a over a network connection, which is the start of what's needed to learn how
+to do web programming.
+
+Prior to starting this chapter we got our computer ready to start coding in
+:ref:`chapter-setup`. We did that by installing the Python programming language,
+and an integrated development environment (IDE) called PyCharm. You can think
+of Python as the engine, and PyCharm as the interface to the engine.
+
+In :ref:`version-control` we began learning `git`, a version control system.
+Version control systems allow us to share code, work on code in groups, and
+track changes to the code.
 
 .. _print-hello-world:
 
-Printing Hello World
-^^^^^^^^^^^^^^^^^^^^
+Printing "Hello World"
+----------------------
 
-We will use a function called ``print`` to print to the screen.
-``print`` is called a *function*.
+We are going to use a **function** to output text to the screen.
+Functions are a basic building block in any computer program.
+If you've taken a geometry class, you've already used the sine (**sin**)
+and cosine (**cos**) functions. In programming, we use functions *a lot*.
+Just like in math, when we use functions in programming we start with a function
+name and it by a pair of parentheses: ``( )``.
+We put any function **parameter** inside the parenthesis.
 
-You've already used functions
-in mathematics. For example, **sin** and **cos**.
-Functions are followed by parentheses: ``( )``.
-We put the
-function *parameter(s)* inside the parenthesis.
+In :ref:`sin-function` example below, we have a function,
+parenthesis, and a parameter.
 
-With a sine function, we put in an angle. With
-the ``print`` function, we are going to put the text we want to print. Text must be enclosed in quotes.
+.. code-block:: text
+    :caption: Functions in Math
+    :name: sin-function
 
-::
+    sin(0)
+    ^ Function name, sin
+        ^ Parameter, 0
+
+In the :ref:`print-function1` example below, we also have a function,
+parenthesis, and a parameter.
+
+.. code-block:: text
+    :caption: Python Print Function
+    :name: print-function1
 
     print("Hello there")
+    ^ Function name, print
+           ^ Parameter, "Hello there"
 
-Note that case matters. The following will not work:
+With a sine function, we put in an angle as our parameter.
+With the ``print`` function, we put the text we want to print as a parameter.
+Text *must* be enclosed in quotes, we'll explain why later in
+the :ref:`expressions` chapter.
 
-::
+Running Our Program
+-------------------
 
-    Print("Hello there")
-
-Great! Time to run it.
+Great! Let's enter our program and run it.
 
 Right-click on the program and select "Run 'lab_01.py'"
 
@@ -49,22 +88,28 @@ it by printing multiple lines, while quoting Snoopy's famous story:
 
 .. _print-multiple-lines:
 
+Case matters when you type in code. The following will not work:
+
+.. code-block:: text
+
+    Print("Hello there")
+
 Multiple Print Lines
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 Let's add additional code:
 
-::
+.. code-block:: python
 
-	print("It was a dark and stormy night.")
-	print("Suddenly a shot rang out!")
+    print("It was a dark and stormy night.")
+    print("Suddenly a shot rang out!")
 
 Go ahead and run it to make sure it outputs as expected.
 
 .. _escape-codes:
 
 Escape Codes
-^^^^^^^^^^^^
+------------
 
 If quotes are used to tell the computer the start and end of the string of text you wish to print, how does a program
 print out a set of double quotes? (This is a double quote ``"`` and this is a single quote ``'``.) For example:
@@ -132,7 +177,7 @@ What is a "Carriage Return" and a "Linefeed"? Try this example:
 
 The output from this command is:
 
-::
+.. code-block:: text
 
     This
     is
@@ -178,4 +223,17 @@ several print statements. Here is my example:
 	quotes. Just in
 	case you wanted to.""")
 
+What We Learned
+---------------
 
+* function
+* parameter
+
+On-Line Practice
+----------------
+
+Where this is used
+------------------
+
+Possible Errors
+---------------

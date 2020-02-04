@@ -6,11 +6,11 @@ Chapters
    :numbered:
 
    01_foreword/foreword
-   02_what_is_a_programming_language/index
    03_setup/setup
    04_version_control/index
    05_print_statement/print_statement
    06_drawing/drawing
+   02_what_is_a_programming_language/index
    07_expressions/expressions
    08_functions/functions
    09_drawing_with_functions/drawing_with_functions
