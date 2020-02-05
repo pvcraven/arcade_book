@@ -37,10 +37,10 @@ If you've taken a geometry class, you've already used the sine (**sin**)
 and cosine (**cos**) functions. In programming, we use functions *a lot*.
 Functions are a basic building block in any computer program.
 Just like in math, when we use functions in programming we start with a function
-name and follow it it by a pair of parentheses: ``( )``.
+name and follow it by a pair of parentheses: ``( )``.
 We put any function **parameter** inside the parentheses.
 
-In the :ref:`sin-function` example, we have a function,
+In the :ref:`sin-function` example below, we have a function,
 parenthesis, and a parameter:
 
 .. code-block:: text
@@ -51,7 +51,7 @@ parenthesis, and a parameter:
     ^ Function name, sin
         ^ Parameter, 0
 
-In the :ref:`print-function1` example, we also have a function,
+In the :ref:`print-function1` example below, we also have a function,
 parenthesis, and a parameter:
 
 .. code-block:: text
@@ -117,27 +117,129 @@ your computer:
 Errors and Warnings
 -------------------
 
+Programs don't always work on the first try. If fact, finding errors in programs can sometimes
+take hundreds of tries. Rather than being frustrating, I find debugging programs to be
+like reading a mystery. Figuring out where the error is can be fun.
 
+In addition to errors where the program doesn't run at all, Python can show us
+*warnings*. Warnings occur when the code runs, but something isn't "perfect."
 
-Before we go on, note how the PyCharm window is put together.
-See the output of your program at the bottom of the screen.
-Click the image below to make it bigger and note the:
+Errors
+^^^^^^
 
-* Right margin. You can write code past this point, but don’t.
-* Where you can hover your mouse for "hints" on how to make your code better.
-* Where you can quickly click to run your program again.
+Let's create an error. Change the ``print`` function to use a capital letter: ``Print``.
 
-Ok, now it's time to update our program. Go back to our program and improve
-it by printing multiple lines, while quoting Snoopy's famous story:
+.. code-block:: Python
 
-Case matters when you type in code. The following will not work:
+    Print("Hello World!")
+
+Run the program. You should get something like:
 
 .. code-block:: text
 
-    Print("Hello there")
+    Traceback (most recent call last):
+      File "C:/Users/myusername/Documents/learn_arcade/Scratch Work/print_statements.py", line 1, in <module>
+        Print("Hello World!")
+    NameError: name 'Print' is not defined
+
+    Process finished with exit code 1
+
+.. sidebar:: Exit Codes
+
+    All computer programs return a number called an *exit code* when they are done running.
+    An exit code of 0 means the program ran without an error, any other number is a signal
+    something went wrong. It is possible to write a program that runs other programs automatically,
+    and this exit code is used to track if there was an error.
+
+While it may look confusing, Python is telling you that on line 1 of your ``print_statements.py``
+program it encountered a function named ``Print``. But that function has not yet been
+"defined."
+
+Python is case-sensitive, which means ``print`` and ``Print`` are as different as
+apples and oranges. The ``print`` function is built into the language, and Python
+knows exactly what to do with it. The ``Print`` function is not built into the language,
+and Python complains with a ``NameError`` that it doesn't know what this function is.
+
+Let's try a different error. Go back to using ``print``, but remove the parentheses:
+
+.. code-block:: python
+
+    print "Hello World"
+
+When you run the program now, you'll get:
+
+.. code-block:: text
+
+    File "C:/Users/myusername/Documents/learn_arcade/Scratch Work/print_statements.py", line 1
+        print "Hello World!"
+                           ^
+    SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello World!")?
+
+This is a different type of error, a *syntax error*. The term *syntax* originates with human
+languages, not computer languages. Both human and computer languages have an expected structure
+to them. A statement in English can take the form of a noun followed by a verb.
+"Rob runs." is a valid statement, while "Runs Rob." is not. The computer expects a function
+name to be followed by parentheses. If your program doesn't follow that pattern, it
+generates a syntax error.
+
+There are many types of errors that programs can have, that and
+the line give you clues on how to solve it.
+
+Warnings
+^^^^^^^^
+
+It can be possible to write code that runs, but isn't quite perfect.
+For example, let's take our Hello World program and add some extra spaces:
+
+.. code-block:: python
+
+    print  ("Hello World!")
+
+Go ahead and run the program. It should run without any errors.
+
+The Python standard is to have *no* spaces between the function name and the
+opening parenthesis. However, this code is "close enough" that the computer can
+run fine with no errors. In English, if we go to a store and ask
+"I'd like to buy one apples please," our sentence isn't grammatically correct.
+It is close enough anyone could figure out the intent.
+
+.. sidebar:: PEP-8
+
+    Python has a *style-guide* which lays out how to format your code properly.
+    This style-guide is called `PEP-8`_.
+
+.. _PEP-8: https://www.python.org/dev/peps/pep-0008/
+
+Why fix warnings? When finding errors in code, programmers spend a lot of time
+looking for things that are out of place. If all code is formatted the same way
+it is easier to scan looking for problems. Any inconsistency forces a programmer's
+brain to stop and figure out if it is important. Removing those inconsistencies
+makes debugging easier.
+
+You can find warnings in your code using PyCharm by looking at the right margin.
+Any yellow line is a warning. You can hover over it with your mouse to find the
+details.
+
+.. figure:: pycharm_4.png
+
+    Warnings are highlighted by yellow lines on the right side of the screen.
+
+Another warning you might encounter in your first program is the Python style
+guide states all programs are supposed to have exactly one blank line at the end of the file.
+If you get into the habit of fixing these warnings, you'll learn to write
+code that will be easier to maintain.
+
+.. note::
+
+    Warnings are not just about style. You might also get a warning about an error that
+    could occur before you run the program. For example, if instead of passing a number
+    to the ``sin()`` function, you might have written code that passes in text.
+
+    *Weak warnings* are warnings that are mostly just about style or aren't as likely to
+    end up being errors. *Strong warnings* are code the computer feels probably points to
+    a bug that will end up being an error.
 
 .. _print-multiple-lines:
-
 Multiple Print Lines
 --------------------
 
@@ -151,6 +253,7 @@ Let's add additional code:
 Go ahead and run it to make sure it outputs as expected.
 
 .. _escape-codes:
+
 
 Escape Codes
 ------------
