@@ -434,12 +434,12 @@ But the output will include all those extra spaces:
              triple
              quotes.
 
-
-Review
-------
+Apply Your Knowledge
+--------------------
 
 Quiz
 ^^^^
+
 
 Online Coding Problems
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -448,9 +448,12 @@ Practice on-line by completing the first set of coding problems available here:
 
 https://repl.it/community/classrooms/174286
 
-All problems beginning with 01 can be done with the knowledge from this class.
+All problems beginning with ``01`` can be done with the knowledge from this class.
 
 Lab 1
 ^^^^^
 
+Complete :ref:`lab-01`.
 
+Applying in the Real-World
+--------------------------
