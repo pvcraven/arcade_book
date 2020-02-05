@@ -72,7 +72,52 @@ Running Our Program
 
 Let's enter the Hello World program and run it.
 
-Right-click on the program and select "Run 'lab_01.py'"
+First, open PyCharm.
+From our work in :ref:`chapter-setup` and :ref:`version-control` we should
+already have our PyCharm and our project ready to go. You should be able to run PyCharm, and
+see a window like this:
+
+.. figure:: pycharm_1.png
+
+    PyCharm window ready for coding.
+
+First click the triangle next to your project name (1), then find ``Scratch Work``,
+(2) then finally ``print_statements.py`` (3).
+
+.. note::
+
+    The most frequent mistake here is to have PyCharm opened to the wrong folder.
+    Make sure your all lab folders appear inside the ``learn_arcade`` folder. If they
+    don't, select the File...Open menu and reselect your project folder as shown
+    in :ref:`open-in-pycharm`. Once selected
+    you should not have to do a File...Open again for the rest of the book.
+
+Once you've selected ``print_statements.py``, go ahead and type in your first
+program:
+
+.. code-block:: python
+
+    print("Hello World!")
+
+After you've typed in your program, right-click on either ``print_statements.py``
+or anywhere on the window with the text of that file and
+select ``Run 'print_statements.py'``
+
+.. figure:: pycharm_2.png
+
+    Right click on your program, then select run.
+
+You should see the output from your program appear in a window at the bottom of
+your computer:
+
+.. figure:: pycharm_3.png
+
+    Output of our Hello World program.
+
+Errors and Warnings
+-------------------
+
+
 
 Before we go on, note how the PyCharm window is put together.
 See the output of your program at the bottom of the screen.
@@ -81,12 +126,6 @@ Click the image below to make it bigger and note the:
 * Right margin. You can write code past this point, but don’t.
 * Where you can hover your mouse for "hints" on how to make your code better.
 * Where you can quickly click to run your program again.
-
-.. figure:: pycharm_window.png
-
-    Once sentence.
-
-    Longer thing.
 
 Ok, now it's time to update our program. Go back to our program and improve
 it by printing multiple lines, while quoting Snoopy's famous story:
