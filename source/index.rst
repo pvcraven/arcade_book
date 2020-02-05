@@ -6,3 +6,4 @@ Learn Python With Arcade Academy
 
    chapters/index
    labs/index
+   voice_overs
