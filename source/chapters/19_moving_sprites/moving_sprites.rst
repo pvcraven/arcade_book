@@ -39,7 +39,7 @@ of our new ``Coin`` class instead:
 Now, how do we get the coin to move?
 
 Moving Sprites Down
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 To get the sprites to "fall" down the screen, we need to make their y location
 smaller. This is easy. Over-ride ``update`` in the sprite and subtract from
@@ -68,7 +68,7 @@ keep going into negative-coordinate land. We can't see them any more. Sad.
     Coins moving down
 
 Resetting to the Top
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 We can get around this by resetting the coins up to the top. Here's how its
 done:
@@ -143,7 +143,7 @@ Instead we can randomize it a bit:
             self.center_x = random.randrange(SCREEN_WIDTH)
 
 Never Ending Coins
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 This works, but when we we collect all the coins we are done. What if it was
 a never-ending set of coins? Instead of "killing" the coin, let's reset it to
@@ -175,7 +175,7 @@ We can even take that common code, and move it to a method. Here's a full exampl
     :emphasize-lines: 15-36
 
 Bouncing Coins
-^^^^^^^^^^^^^^
+--------------
 
 Instead of always adding one to the y-coordinate and have the sprites move
 down, we can keep a vector by using ``change_x`` and ``change_y``. By
@@ -203,7 +203,7 @@ this:
     Test Pattern
 
 Coins Moving In Circles
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 .. figure:: sprites_circle.gif
 

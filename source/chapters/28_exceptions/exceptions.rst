@@ -165,6 +165,8 @@ A list of built-in exceptions is available from this web address:
 
 http://docs.python.org/library/exceptions.html
 
+.. _saving-high-score:
+
 Example: Saving High Score
 --------------------------
 

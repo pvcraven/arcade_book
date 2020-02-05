@@ -3,28 +3,29 @@
 The ``print`` Function
 ======================
 
-In this chapter we'll write our first programs using the most fundamental of all
-tools in the programmer's toolbox, the ``print`` function. As you can probably guess,
-this function prints information to the screen.
-
-While a lot of programs are graphics-based, text-only programs are still quite common
-with people that manage computers, or who do data analytics. Even for the graphics-based
-games we develop in this book, the ``print`` function will be a vital aid in understanding
-and debugging our games.
-
-We aren't limited to printing to the screen! The same techniques we learn here can
-be used to print information to a file, so we can save our data. We can even print
-over a over a network connection, which is the start of what's needed to learn how
-to do web programming.
-
-Prior to starting this chapter we got our computer ready to start coding in
+Prior to this chapter we got our computer ready to start coding in
 :ref:`chapter-setup`. We did that by installing the Python programming language,
 and an integrated development environment (IDE) called PyCharm. You can think
 of Python as the engine, and PyCharm as the interface to the engine.
 
 In :ref:`version-control` we began learning `git`, a version control system.
 Version control systems allow us to share code, work on code in groups, and
-track changes to the code.
+track changes to the code. We'll use that tool to track and share your code for
+every lab you write in this book.
+
+In this chapter we'll write our first programs using the most fundamental of all
+tools in the programmer's toolbox, the ``print`` function. This function does
+exactly what you'd expect--it prints to the screen.
+
+While a lot of programs are graphics-based, text-only programs are still quite common
+with people that manage computers, or who do data analytics. Even for the graphics-based
+games we develop in this book, the ``print`` function will be a vital aid in understanding
+and debugging our games.
+
+We aren't limited to printing to the screen. Later on in :ref:`saving-high-score`
+we'll show how to print to a file so we can save data. Programs can even print
+over a network connection, which is the start of what's needed to learn how
+to do web programming.
 
 .. _print-hello-world:
 
@@ -32,15 +33,15 @@ Printing "Hello World"
 ----------------------
 
 We are going to use a **function** to output text to the screen.
-Functions are a basic building block in any computer program.
 If you've taken a geometry class, you've already used the sine (**sin**)
 and cosine (**cos**) functions. In programming, we use functions *a lot*.
+Functions are a basic building block in any computer program.
 Just like in math, when we use functions in programming we start with a function
-name and it by a pair of parentheses: ``( )``.
-We put any function **parameter** inside the parenthesis.
+name and follow it it by a pair of parentheses: ``( )``.
+We put any function **parameter** inside the parentheses.
 
-In :ref:`sin-function` example below, we have a function,
-parenthesis, and a parameter.
+In the :ref:`sin-function` example, we have a function,
+parenthesis, and a parameter:
 
 .. code-block:: text
     :caption: Functions in Math
@@ -50,8 +51,8 @@ parenthesis, and a parameter.
     ^ Function name, sin
         ^ Parameter, 0
 
-In the :ref:`print-function1` example below, we also have a function,
-parenthesis, and a parameter.
+In the :ref:`print-function1` example, we also have a function,
+parenthesis, and a parameter:
 
 .. code-block:: text
     :caption: Python Print Function
@@ -69,7 +70,7 @@ the :ref:`expressions` chapter.
 Running Our Program
 -------------------
 
-Great! Let's enter our program and run it.
+Let's enter the Hello World program and run it.
 
 Right-click on the program and select "Run 'lab_01.py'"
 
@@ -81,18 +82,22 @@ Click the image below to make it bigger and note the:
 * Where you can hover your mouse for "hints" on how to make your code better.
 * Where you can quickly click to run your program again.
 
-.. image:: pycharm_window.png
+.. figure:: pycharm_window.png
+
+    Once sentence.
+
+    Longer thing.
 
 Ok, now it's time to update our program. Go back to our program and improve
 it by printing multiple lines, while quoting Snoopy's famous story:
-
-.. _print-multiple-lines:
 
 Case matters when you type in code. The following will not work:
 
 .. code-block:: text
 
     Print("Hello there")
+
+.. _print-multiple-lines:
 
 Multiple Print Lines
 --------------------

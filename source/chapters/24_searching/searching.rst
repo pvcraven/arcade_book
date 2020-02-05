@@ -14,6 +14,8 @@ There are a lot of ways to search for data. Google has based an entire
 multi-billion dollar company on this fact. This chapter introduces the two
 simplest methods for searching, the linear search and the binary search.
 
+.. reading-from-a-file::
+
 Reading From a File
 -------------------
 
