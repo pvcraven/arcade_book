@@ -243,42 +243,77 @@ code that will be easier to maintain.
 Multiple Print Lines
 --------------------
 
-Let's add additional code:
+We aren't limited to one ``print`` statement. We can print multiple lines of text with
+multiple lines of code. Let's change our Hello World program to the cliché opener for
+melodramatic fiction:
 
 .. code-block:: python
 
     print("It was a dark and stormy night.")
     print("Suddenly a shot rang out!")
 
-Go ahead and run it to make sure it outputs as expected.
-
-.. _escape-codes:
-
-
-Escape Codes
-------------
-
-If quotes are used to tell the computer the start and end of the string of text you wish to print, how does a program
-print out a set of double quotes? (This is a double quote ``"`` and this is a single quote ``'``.) For example:
+Your output should look like:
 
 .. code-block:: text
 
-    print("I want to print a double quote " for some reason.")
+    It was a dark and stormy night.
+    Suddenly a shot rang out!
 
-This code doesn't work.
+.. _escape-codes:
+Escape Codes
+------------
+
+If quotes are used to tell the computer the start and end of the string of text you wish
+to print, how does a program print out a set of double quotes?
+
+.. note::
+
+    A double-quote is not two quote marks.
+
+    * This is a double quote: ``"``
+    * This is a single quote: ``'``
+    * This is two double quote marks: ``" "``
+
+This code doesn't work:
+
+.. code-block:: text
+
+    print("Hi! This is a double quote mark: " We use it for printing.")
+
+If we try to run it, we get a syntax error:
+
+.. code-block:: text
+
+    File "S:/Webserver/arcade_book/test.py", line 1
+        print("Hi! This is a double quote mark: " We use it for printing.")
+                                                  ^
+    SyntaxError: invalid syntax
 The computer looks at the quote in the middle of the string and thinks that is the end of the text.
-Then it has no idea what to do with the commands for some reason and the quote and the end of the string confuses the
-computer even further.
+Then it has no idea what to do with the text after the quote. It doesn't expect text after a
+closing quote, so we end up with an error.
 
-It is necessary to tell the computer that we want to treat that middle double quote as text, not as a quote ending the
-string. This is easy, just prepend a backslash in front of quotes to tell the computer it is part of a string, not a
-character that terminates a string. For example:
+It is necessary to tell the computer that we want to treat that middle double quote as text,
+not as a quote ending the string.
+To do this, we need to use an **escape code**. An escape code is a sequence of characters that
+can be used to print an otherwise unprintable characters.
+
+All escape codes in Python start with a backslash: ``\``. (A backslash leans backwards. A forward
+slash ``/`` leans forward.) The escape code for a double quote is ``\"``:
 
 .. code-block:: python
 
-    print("I want to print a double quote \" for some reason.")
+    print("Hi! This is a double quote mark: \" We use it for printing.")
 
-This combination of the two characters ``\"`` is called an *escape code*. Almost every language has escape codes.
+If we run this code, it does not print the backslash, nor does it error. We get:
+
+.. code-block:: text
+
+    Hi! This is a double quote mark: " We use it for printing.
+
+
+Almost every language has escape codes, and many of them (C, C#, Java) use backslashes
+just like Python.
+
 Here's another example:
 
 .. code-block:: python
@@ -306,15 +341,15 @@ Why? Because ``\n`` is an escape code. To print the backslash it is necessary to
 
 There are a few other important escape codes to know. Here is a table of the important escape codes:
 
-=========== =======================================
+=========== =============================================================
 Escape code	Description
-=========== =======================================
+=========== =============================================================
 ``\'``      Single Quote
 ``\"``	    Double Quote
 ``\t``	    Tab
-``\r``	    CR: Carriage Return (move to the left)
-``\n``	    LF: Linefeed (move down)
-=========== =======================================
+``\r``	    Carriage Return (Abbreviated as CR, move cursor to the left)
+``\n``	    Linefeed (Abbreviated as LF, move cursor down)
+=========== =============================================================
 
 What is a "Carriage Return" and a "Linefeed"? Try this example:
 
@@ -334,7 +369,7 @@ The output from this command is:
 The ``\n`` is a linefeed. It moves "cursor" where the computer will print text down one line. The computer stores all
 text in one big long line. It knows to display the text on different lines because of the placement of ``\n`` characters.
 
-To make matters more complex, different operating systems have different standards on what makes a line ending.
+Before the Internet became commonplace, computers didn't agree on what characters to use for line endings:
 
 =========== =======================================
 Escape code	Description
@@ -344,43 +379,78 @@ Escape code	Description
 ``\r``      CR: Older Mac based systems
 =========== =======================================
 
+Having different standards was annoying when computers were connected on a network. The
+post-internet standard is to use ``\n`` for line endings.
 
-Ok, now it is time to make this lab yours. Write program that consists of
-several print statements. Here is my example:
+If you use an escape code, don't put spaces around it. Dont, unless, you want spaces to be
+there.
+For example, this code might look better:
 
 .. code-block:: python
 
-	print("You can print a statement surrounded by double quotes.")
-	print('You can print a statement surrounded by single quotes.')
+    print("This \n is \n my \n sample.")
 
-	print("If you want to print a double quote, you can by prepending it with")
-	print("a slash. \"That's great!\" he said.")
+But it will print with extra spaces before the words:
 
-	print("If you want to print a backslash, you can by prepending it with")
-	print("a slash. So this \\ prints one backslash, and this \\\\ does two.")
+.. code-block:: text
 
-	print("You can print a blank line with a empty print statement.")
-	print()
+    This
+     is
+     my
+     sample.
 
-	print("You can use a backlash n to print a new line. These\nare\non\nnew\nlines.")
+Triple Quotes
+-------------
+
+If you have a block of text and don't want to spend a lot of time putting quotes around
+each line, you can use triple quotes.
+
+.. code-block:: python
+
 	print("""You can print
 	on multiple
 	lines using
 	triple
-	quotes. Just in
-	case you wanted to.""")
+	quotes.""")
 
-What We Learned
----------------
+It is tempting to put in extra blank lines and indents. Don't do this unless you want this in the
+final output. The code in this example looks good:
 
-* function
-* parameter
+.. code-block:: python
 
-On-Line Practice
-----------------
+	print("""You can print
+                on multiple
+                lines using
+                triple
+                quotes.""")
 
-Where this is used
-------------------
+But the output will include all those extra spaces:
 
-Possible Errors
----------------
+.. code-block:: text
+
+    You can print
+             on multiple
+             lines using
+             triple
+             quotes.
+
+
+Review
+------
+
+Quiz
+^^^^
+
+Online Coding Problems
+^^^^^^^^^^^^^^^^^^^^^^
+
+Practice on-line by completing the first set of coding problems available here:
+
+https://repl.it/community/classrooms/174286
+
+All problems beginning with 01 can be done with the knowledge from this class.
+
+Lab 1
+^^^^^
+
+
