@@ -1,17 +1,16 @@
 Voice-Over Talent
 =================
 
-Are you interested in recording a voice-over for Arcade Academy lessons?
-
-I'm looking for a variety of people to do voice-over. I'm creating introductory Python lessons
-in video and audio format. The videos will be hosted on YouTube.
+I'm looking for a diverse set of volunteers to do voice-over for
+introductory Python lessons.
+The videos will be hosted on YouTube with monitization turned off.
 The lessons will cover the on-line text available at:
 
 https://learn.arcade.academy
 
-The point of having multiple people to voice-overs is to have
-students to find instructors they identify with, to feel included in
-the programming community, and to realize can learn from anyone,
+The point of having multiple people do voice-overs is for
+students find people  they identify with, to feel included in
+the programming community, and to realize we can learn from anyone,
 no matter who they are.
 
 Questions and Answers
@@ -24,11 +23,13 @@ That means I have no extra money to pass along to you.
 
 **Wait, you don't get paid?**
 
+Ok, full disclaimer.
 I *do* get paid as a Professor. Part of the my job does involve research and outreach.
-I *do* get paid to teach computer science at Simpson College, and I use the material
+I *do* get paid to teach computer science at Simpson College and I use this material
 to do so.
 
-I have gotten two paid semester-long sabbaticals, with the stated intent to make free programming
+I have gotten two paid semester-long sabbaticals (this semester and one six years ago),
+with the stated intent to make free programming
 materials available to the public.
 
 I do *not* receive
@@ -79,16 +80,28 @@ journey on learning to program.
 
 **How long should this take?**
 
-It should take less than thirty minutes total.
+It should take less than thirty minutes of your time in total.
 
 **Why should I trust you with my time?**
 
+I've already done something very similar before.
+
 For my last college sabbatical from teaching six years ago, I created ProgramArcadeGames.com and accompanying videos.
-This site is been ad-free. The videos are ad-free. The site still gets about 1,800 people using it each weekday
+This site has always
+been ad-free. The videos are ad-free. The site still gets about 1,800 people using it each weekday
 during the school year. The videos have had over a million views.
 
 This Arcade Academy is an updated website using the Arcade library instead of PyGame, and will incorporate everything
 I've learned since creating the original website. It already gets 400-500 users per day.
 
 **What if I don't like what you've written?**
+
+I'm open to constructive criticism of the written content. I'm happy to work
+with to make sure the content is as good as it can be.
+
+**What will the visuals be?**
+
+I'll combine the audio with video of the code being written often with on-screen writing to highlight the code we are
+talking about in. If we aren't talking though code, I'll use slides or some other visual to help readers understand
+the topic.
 

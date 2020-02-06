@@ -3,8 +3,11 @@
 The ``print`` Function
 ======================
 
+.. image:: print_snake.svg
+    :width: 50%
+
 Prior to this chapter we got our computer ready to start coding in
-:ref:`chapter-setup`. We did that by installing the Python programming language,
+:ref:`chapter-setup`. We did that by installing the Python programming language
 and an integrated development environment (IDE) called PyCharm. You can think
 of Python as the engine, and PyCharm as the interface to the engine.
 
@@ -100,8 +103,7 @@ program:
     print("Hello World!")
 
 After you've typed in your program, right-click on either ``print_statements.py``
-or anywhere on the window with the text of that file and
-select ``Run 'print_statements.py'``
+or anywhere in the code window and select ``Run 'print_statements.py'``
 
 .. figure:: pycharm_2.png
 
@@ -117,8 +119,10 @@ your computer:
 Errors and Warnings
 -------------------
 
-Programs don't always work on the first try. If fact, finding errors in programs can sometimes
-take hundreds of tries. Rather than being frustrating, I find debugging programs to be
+Programs don't always work on the first try. In fact, they rarely do.
+As programmers, we run programs over and over until we find the right code.
+
+Rather than being frustrating, I find debugging programs to be
 like reading a mystery. Figuring out where the error is can be fun.
 
 In addition to errors where the program doesn't run at all, Python can show us
