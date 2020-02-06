@@ -42,7 +42,8 @@ code, .rst-content tt, .rst-content code {
     border-width: 2px 0 2px 0;
     background: #FCFCFC;
 }
-div[class^='highlight'] pre {
+
+.rst-content div[class^='highlight'] pre {
     white-space: pre;
     margin: 0;
     padding: 12px 12px;
@@ -53,6 +54,8 @@ div[class^='highlight'] pre {
     overflow: auto;
     color: #404040;
 }
+
+
 .headerlink {
     visibility: hidden;
 }
@@ -105,4 +108,8 @@ div[class^='highlight'] pre {
 .highlight .k {
     font-weight: bold;
     color: black;
+}
+
+img.right-image {
+   float: right;
 }

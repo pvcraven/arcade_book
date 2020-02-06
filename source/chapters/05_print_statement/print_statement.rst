@@ -1,10 +1,11 @@
 .. _print-function:
 
-The ``print`` Function
-======================
+The Print Function
+==================
 
 .. image:: print_snake.svg
-    :width: 50%
+    :width: 40%
+    :class: right-image
 
 Prior to this chapter we got our computer ready to start coding in
 :ref:`chapter-setup`. We did that by installing the Python programming language
@@ -35,6 +36,10 @@ to do web programming.
 Printing "Hello World"
 ----------------------
 
+.. image:: hello_world.svg
+    :width: 40%
+    :class: right-image
+
 We are going to use a **function** to output text to the screen.
 If you've taken a geometry class, you've already used the sine (**sin**)
 and cosine (**cos**) functions. In programming, we use functions *a lot*.
@@ -43,37 +48,34 @@ Just like in math, when we use functions in programming we start with a function
 name and follow it by a pair of parentheses: ``( )``.
 We put any function **parameter** inside the parentheses.
 
-In the :ref:`sin-function` example below, we have a function,
+In the example below, we have a function,
 parenthesis, and a parameter:
 
-.. code-block:: text
-    :caption: Functions in Math
-    :name: sin-function
+.. image:: function_math.svg
+   :width: 20%
 
-    sin(0)
-    ^ Function name, sin
-        ^ Parameter, 0
-
-In the :ref:`print-function1` example below, we also have a function,
+In the example below, we also have a function,
 parenthesis, and a parameter:
 
-.. code-block:: text
-    :caption: Python Print Function
-    :name: print-function1
+.. image:: function_python.svg
+   :width: 30%
 
-    print("Hello there")
-    ^ Function name, print
-           ^ Parameter, "Hello there"
 
 With a sine function, we put in an angle as our parameter.
 With the ``print`` function, we put the text we want to print as a parameter.
 Text *must* be enclosed in quotes, we'll explain why later in
 the :ref:`expressions` chapter.
 
-Running Our Program
--------------------
+Entering Our Program
+--------------------
 
-Let's enter the Hello World program and run it.
+The `Hello World`_ program is a simple program that just prints "Hello
+World" to the screen. It is often the first program any programmer
+creates in a new computer language.
+
+.. _Hello World: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
+
+Let's enter our Python *Hello World* program and run it.
 
 First, open PyCharm.
 From our work in :ref:`chapter-setup` and :ref:`version-control` we should
@@ -102,6 +104,10 @@ program:
 
     print("Hello World!")
 
+
+Running Our Program
+-------------------
+
 After you've typed in your program, right-click on either ``print_statements.py``
 or anywhere in the code window and select ``Run 'print_statements.py'``
 
@@ -119,11 +125,15 @@ your computer:
 Errors and Warnings
 -------------------
 
+.. image:: crash.svg
+    :width: 40%
+    :class: right-image
+
 Programs don't always work on the first try. In fact, they rarely do.
 As programmers, we run programs over and over until we find the right code.
 
-Rather than being frustrating, I find debugging programs to be
-like reading a mystery. Figuring out where the error is can be fun.
+If the computer runs into an error that it doesn't know how to handle, it
+will generate an error and stop.
 
 In addition to errors where the program doesn't run at all, Python can show us
 *warnings*. Warnings occur when the code runs, but something isn't "perfect."
@@ -244,6 +254,7 @@ code that will be easier to maintain.
     a bug that will end up being an error.
 
 .. _print-multiple-lines:
+
 Multiple Print Lines
 --------------------
 
@@ -264,6 +275,7 @@ Your output should look like:
     Suddenly a shot rang out!
 
 .. _escape-codes:
+
 Escape Codes
 ------------
 
@@ -292,6 +304,7 @@ If we try to run it, we get a syntax error:
         print("Hi! This is a double quote mark: " We use it for printing.")
                                                   ^
     SyntaxError: invalid syntax
+
 The computer looks at the quote in the middle of the string and thinks that is the end of the text.
 Then it has no idea what to do with the text after the quote. It doesn't expect text after a
 closing quote, so we end up with an error.
