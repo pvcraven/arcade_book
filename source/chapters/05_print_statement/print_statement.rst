@@ -454,8 +454,16 @@ But the output will include all those extra spaces:
 Apply Your Knowledge
 --------------------
 
-Quiz
-^^^^
+Review Questions
+^^^^^^^^^^^^^^^^
+
+1. What term refers to the values between the parentheses in function?
+2. What type of error are we likely to get, if we mistype a function name?
+3. If you forget to use parentheses when using a function, what type of error will you get?
+4. What is the name of the style-guide for Python?
+5. What is the escape code for a double quote?
+6. What escape code is most commonly used to go to a new line?
+7. What will this print? ``print("Escape codes: \\\\")``
 
 
 Online Coding Problems
