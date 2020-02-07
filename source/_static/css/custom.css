@@ -113,3 +113,17 @@ code, .rst-content tt, .rst-content code {
 img.right-image {
    float: right;
 }
+
+.rst-content .section a > img.video-image-h1 {
+    width: 50px;
+    position: absolute;
+    margin-left: 698px;
+    margin-top: -74px;
+}
+
+.rst-content .section a > img.video-image-h2 {
+    width: 50px;
+    position: absolute;
+    margin-left: 698px;
+    margin-top: -67px;
+}

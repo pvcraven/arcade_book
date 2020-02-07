@@ -3,6 +3,11 @@
 The Print Function
 ==================
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: http://youtube.com
+    :alt: Video link
+
 .. image:: print_snake.svg
     :width: 40%
     :class: right-image
@@ -12,7 +17,7 @@ Prior to this chapter we got our computer ready to start coding in
 and an integrated development environment (IDE) called PyCharm. You can think
 of Python as the engine, and PyCharm as the interface to the engine.
 
-In :ref:`version-control` we began learning `git`, a version control system.
+In :ref:`version-control` we began learning `git`.
 Version control systems allow us to share code, work on code in groups, and
 track changes to the code. We'll use that tool to track and share your code for
 every lab you write in this book.
@@ -36,16 +41,26 @@ to do web programming.
 Printing "Hello World"
 ----------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: http://youtube.com
+    :alt: Video link
+
+
 .. image:: hello_world.svg
     :width: 40%
     :class: right-image
 
 We are going to use a **function** to output text to the screen.
 If you've taken a geometry class, you've already used the sine (**sin**)
-and cosine (**cos**) functions. In programming, we use functions *a lot*.
+and cosine (**cos**) functions. In this chapter, we are going to use the
+**print** function.
+
+In programming, we use functions *a lot*.
 Functions are a basic building block in any computer program.
-Just like in math, when we use functions in programming we start with a function
-name and follow it by a pair of parentheses: ``( )``.
+Just like in math, when we use functions in programming we start with a
+**function name**, such as sin, cos, and print.
+Immediately after the function name is a pair of parentheses: ``( )``.
 We put any function **parameter** inside the parentheses.
 
 In the example below, we have a function,
@@ -54,20 +69,21 @@ parenthesis, and a parameter:
 .. image:: function_math.svg
    :width: 20%
 
-In the example below, we also have a function,
-parenthesis, and a parameter:
+With a ``sin`` function, we put in an angle as our parameter.
+With the ``print`` function, we put the text we want to print as a parameter:
 
 .. image:: function_python.svg
    :width: 30%
 
-
-With a sine function, we put in an angle as our parameter.
-With the ``print`` function, we put the text we want to print as a parameter.
 Text *must* be enclosed in quotes, we'll explain why later in
 the :ref:`expressions` chapter.
 
+
 Entering Our Program
 --------------------
+
+Now that we've seen what the ``print`` function looks like, let's use it to
+enter our first program.
 
 The `Hello World`_ program is a simple program that just prints "Hello
 World" to the screen. It is often the first program any programmer
@@ -75,12 +91,10 @@ creates in a new computer language.
 
 .. _Hello World: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 
-Let's enter our Python *Hello World* program and run it.
-
 First, open PyCharm.
 From our work in :ref:`chapter-setup` and :ref:`version-control` we should
-already have our PyCharm and our project ready to go. You should be able to run PyCharm, and
-see a window like this:
+already have our PyCharm and our project ready to go. You should be able to run
+PyCharm, and see a window like this:
 
 .. figure:: pycharm_1.png
 
@@ -147,7 +161,7 @@ Let's create an error. Change the ``print`` function to use a capital letter: ``
 
     Print("Hello World!")
 
-Run the program. You should get something like:
+Run the program. You should get something like this:
 
 .. code-block:: text
 
@@ -169,8 +183,10 @@ While it may look confusing, Python is telling you that on line 1 of your ``prin
 program it encountered a function named ``Print``. But that function has not yet been
 "defined."
 
-Python is case-sensitive, which means ``print`` and ``Print`` are as different as
-apples and oranges. The ``print`` function is built into the language, and Python
+Python is case-sensitive, which means ``print`` with a lower-case ``p``
+and ``Print`` with an upper-case ``P`` are as different as
+apples and oranges to the computer.
+The ``print`` function is built into the language, and Python
 knows exactly what to do with it. The ``Print`` function is not built into the language,
 and Python complains with a ``NameError`` that it doesn't know what this function is.
 
@@ -235,6 +251,7 @@ Any yellow line is a warning. You can hover over it with your mouse to find the
 details.
 
 .. figure:: pycharm_4.png
+    :width: 90%
 
     Warnings are highlighted by yellow lines on the right side of the screen.
 
@@ -419,8 +436,8 @@ But it will print with extra spaces before the words:
 Triple Quotes
 -------------
 
-If you have a block of text and don't want to spend a lot of time putting quotes around
-each line, you can use triple quotes.
+If you have a block of text and don't want to spend a lot of time putting quotes
+around each line, you can use triple quotes.
 
 .. code-block:: python
 
@@ -430,8 +447,19 @@ each line, you can use triple quotes.
 	triple
 	quotes.""")
 
-It is tempting to put in extra blank lines and indents. Don't do this unless you want this in the
-final output. The code in this example looks good:
+This code will run and print out like this:
+
+.. code-block:: text
+
+    You can print
+    on multiple
+    lines using
+    triple
+    quotes.
+
+It is tempting to put in extra blank lines and indents. Don't do this unless you
+want them in the final output. For example, the code in this example looks better
+than the code in the previous example:
 
 .. code-block:: python
 
@@ -451,19 +479,34 @@ But the output will include all those extra spaces:
              triple
              quotes.
 
-Apply Your Knowledge
---------------------
+Reveiw
+------
 
-Review Questions
-^^^^^^^^^^^^^^^^
+In this chapter we learned one of the most basic building blocks of a computer
+program is the **function**.
+The first function we are learning about is the ``print`` function,
+used to output information to the screen.
+We learned how to use that function by entering and running our first program.
+As programs don't always work the first try, we learned about **name errors** and
+**syntax errors**. We learned that code has a style guide called
+**PEP-8** that defines how code should be formatted.
+Print multiple lines is possible using three techniques: multiple print statements,
+**escape codes**, and **triple-quotes**. We learned about escape codes can be used to
+print quotes and tab characters.
 
-1. What term refers to the values between the parentheses in function?
-2. What type of error are we likely to get, if we mistype a function name?
-3. If you forget to use parentheses when using a function, what type of error will you get?
-4. What is the name of the style-guide for Python?
-5. What is the escape code for a double quote?
-6. What escape code is most commonly used to go to a new line?
-7. What will this print? ``print("Escape codes: \\\\")``
+Questions
+^^^^^^^^^
+
+#. What term refers to the values between the parentheses in function?
+#. What type of error are we likely to get, if we mistype a function name?
+#. If you forget to use parentheses when using a function, what type of error
+   will you get?
+#. What is the name of the style-guide for Python?
+#. What is the escape code for a double quote?
+#. What escape code is most commonly used to go to a new line?
+#. What will this print? ``print("Escape codes: \\\\")``
+#. What do you use to print a block of text without using multiple print statements
+   or ``\n``?
 
 
 Online Coding Problems
@@ -473,12 +516,11 @@ Practice on-line by completing the first set of coding problems available here:
 
 https://repl.it/community/classrooms/174286
 
-All problems beginning with ``01`` can be done with the knowledge from this class.
+All problems beginning with ``01`` can be done with the knowledge from this
+chapter.
 
 Lab 1
 ^^^^^
 
 Complete :ref:`lab-01`.
 
-Applying in the Real-World
---------------------------
