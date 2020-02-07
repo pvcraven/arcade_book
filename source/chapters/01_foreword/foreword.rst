@@ -1,11 +1,20 @@
 Foreword - Why Learn Programming?
 =================================
 
-Why program?
-Programming is:
+Programming is consistently one of the top paid skills that you can learn.
+Try searching for "Top Paid Majors". Engineering,
+computer science, and actuarial science have consistently ranked at the top.
+Computer science is also one of the most
+flexible majors you can get, because it is in demand in almost any industry
+and any location.
 
-* Fun
-* Pays well
+Even if programming isn't going to be your main job, as a skill it can
+still enhance your career. Need an interactive website? Need to crunch
+sales numbers? What about automatically saving the data and graphing the
+results of your latest experiment? You might need to run 100 different
+simulations of a mathematical model. Or maybe you want your home to
+automatically e-mail you if the garage door is left open more than
+twenty minutes.
 
 Programming Is Fun
 ------------------
