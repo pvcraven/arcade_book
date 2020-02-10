@@ -147,7 +147,8 @@ Programs don't always work on the first try. In fact, they rarely do.
 As programmers, we run programs over and over until we find the right code.
 
 If the computer runs into an error that it doesn't know how to handle, it
-will generate an error and stop.
+will generate an error and stop. Don't panic, it's no big deal. We'll
+fix it.
 
 In addition to errors where the program doesn't run at all, Python can show us
 *warnings*. Warnings occur when the code runs, but something isn't "perfect."
@@ -155,7 +156,7 @@ In addition to errors where the program doesn't run at all, Python can show us
 Errors
 ^^^^^^
 
-Let's create an error. Change the ``print`` function to use a capital letter: ``Print``.
+Let's create an error. Change the ``print`` function to use a capital ``P``: ``Print``.
 
 .. code-block:: Python
 
@@ -180,17 +181,17 @@ Run the program. You should get something like this:
     and this exit code is used to track if there was an error.
 
 While it may look confusing, Python is telling you that on line 1 of your ``print_statements.py``
-program it encountered a function named ``Print``. But that function has not yet been
-"defined."
+program it encountered a function named ``Print`` with a capital ``P``.
+But that function has not yet been "defined."
 
 Python is case-sensitive, which means ``print`` with a lower-case ``p``
 and ``Print`` with an upper-case ``P`` are as different as
 apples and oranges to the computer.
-The ``print`` function is built into the language, and Python
-knows exactly what to do with it. The ``Print`` function is not built into the language,
+The lower-case ``print`` function is built into the language, and Python
+knows exactly what to do with it. The upper-case ``Print`` function is not built into the language,
 and Python complains with a ``NameError`` that it doesn't know what this function is.
 
-Let's try a different error. Go back to using ``print``, but remove the parentheses:
+Let's try a different error. Go back to using ``print`` with a lower case ``p``, but remove the parentheses:
 
 .. code-block:: python
 
@@ -212,8 +213,8 @@ to them. A statement in English can take the form of a noun followed by a verb.
 name to be followed by parentheses. If your program doesn't follow that pattern, it
 generates a syntax error.
 
-There are many types of errors that programs can have, that and
-the line give you clues on how to solve it.
+The type of error and the line number are both important clues
+on how to solve the mystery what caused the bug.
 
 Warnings
 ^^^^^^^^
@@ -416,7 +417,7 @@ Escape code	Description
 Having different standards was annoying when computers were connected on a network. The
 post-internet standard is to use ``\n`` for line endings.
 
-If you use an escape code, don't put spaces around it. Dont, unless, you want spaces to be
+If you use an escape code, don't put spaces around it. Don't, unless, you want spaces to be
 there.
 For example, this code might look better:
 
@@ -432,6 +433,10 @@ But it will print with extra spaces before the words:
      is
      my
      sample.
+
+Just because you *can* use a ``\n`` to print multiple lines in a single ``print`` statement
+doesn't mean you should. Often it is easier to read two short ``print`` statements rather
+than one super-long ``print`` statement with a bunch of ``\n`` escape codes crammed into it.
 
 Triple Quotes
 -------------
@@ -490,8 +495,8 @@ We learned how to use that function by entering and running our first program.
 As programs don't always work the first try, we learned about **name errors** and
 **syntax errors**. We learned that code has a style guide called
 **PEP-8** that defines how code should be formatted.
-Print multiple lines is possible using three techniques: multiple print statements,
-**escape codes**, and **triple-quotes**. We learned about escape codes can be used to
+Printing multiple lines is possible using three techniques: multiple print statements,
+**escape codes**, and **triple-quotes**. We learned that escape codes can also be used to
 print quotes and tab characters.
 
 Questions
