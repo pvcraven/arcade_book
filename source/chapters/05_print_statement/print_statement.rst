@@ -479,7 +479,7 @@ But the output will include all those extra spaces:
              triple
              quotes.
 
-Reveiw
+Review
 ------
 
 In this chapter we learned one of the most basic building blocks of a computer
