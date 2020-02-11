@@ -3,40 +3,57 @@
 How to Draw with Your Computer
 ==============================
 
-We've setup our system, learned to use git, and ran our first basic program
-using the `print` statement. Now we are ready to start making graphics!
+We've setup our system, learned to use git, and run our first program
+using the ``print`` function. Now we are ready to start using other
+functions to make graphics!
 
 In this chapter we will learn to import a graphics library and call its
 functions. By the end of this chapter, you will be able to create your
-own art:
+own art like this:
 
 .. image:: simpson_map.png
 
+You can page through several other examples of student-created art
+in :ref:`lab-02`.
 
-At the end of :ref:`lab-02` you can page through several other examples
-of what students have created for this lab.
+We will concentrate on learning to call functions for graphics
+in this chapter. Those same concepts apply if you want to call functions
+for other activities
+like robotics, data analytics, and web site programming.
 
 Creating a New Program
 ----------------------
 
-Open up PyCharm to the same project we created earlier. We'll use
-it for all our work this semester. Do **not** create new projects for each
+Open up PyCharm. It should start up with the same set of project files
+we used last chapter. We'll use
+this project for all our work in this book. Do **not** create new projects for each
 lab or program you create in this class. Just use one project for the entire
 class.
 
 We are going to create a lot of code samples as we go through the chapters.
-Let's create a directory in our project for these samples, away from the labs.
-Call it ``Code Samples``. Then create a Python source file for this chapter
-called ``drawing_samples.py``. Your system should look like this:
+You should already have a folder called ``Scratch Work``. We can put our code
+samples there. Create a new sample by:
+
+#. Right-click on ``Scratch Work``
+#. Click ``New``
+#. Click ``Python File``
 
 .. image:: create_drawing_source_file.png
 
-Comments
---------
+Call the file ``drawing_samples.py``. Make sure it is inside the ``Scratch Work``
+folder. If it isn't, drag to move it. The file should appear like the
+following:
 
-Before we begin learning to draw, we need to learn about **comments** in code.
+.. image:: drawing_samples.png
+    :width: 40%
+
+Comments In Code
+----------------
+
+Before we start writing long programs, we need to learn about **code comments**.
 When typing in computer code, sometimes we want to be able to write things
-that the computer ignores. We call this "commenting our code."
+for our own benefit, and anyone else that reads the code, which
+the computer ignores. We call this "commenting our code."
 You will see a lot of comments in my code examples to explain how they work.
 
 Below are two ways of adding comments to code in the Python computer language:
@@ -45,8 +62,9 @@ Below are two ways of adding comments to code in the Python computer language:
     :language: python
     :linenos:
 
-Go ahead and try it. Multi-line comments usually start each source file
-and explain what the code does.
+Go ahead and try it. Multi-line comments with triple quotes
+usually start each source file
+and explain what the code does. Single-line comments are used elsewhere.
 
 Let's try running the program. But before we run the program, we need to make
 sure we are running the *right* program. Look at the image below. If I select

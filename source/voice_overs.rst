@@ -1,14 +1,16 @@
 Voice-Over Talent
 =================
 
-.. image:: print_snake.svg
+.. image:: images/microphone.svg
     :width: 40%
     :class: right-image
 
-I'm looking for a diverse set of volunteers to do voice-over for
+Interested in helping people learning to code?
+I'm putting together a set of volunteers to do voice-over for
 introductory Python lessons.
-The videos will be hosted on YouTube with monitization turned off.
-The lessons will cover the on-line text available at:
+The videos will be hosted for free
+on YouTube with monitization turned off.
+The lessons will cover the free on-line text available at:
 
 https://learn.arcade.academy
 
@@ -41,14 +43,16 @@ extra money for posting materials on-line, doing videos, or contributing to the 
 library. I *do not* and *will not*
 monitize these videos by including ads or putting them behind a pay-wall.
 
-(At one point I did self-publish a paper copy of similar work with ProgramArcadeGames.com as a book.
+At one point I did self-publish a paper copy of similar work with ProgramArcadeGames.com as a book.
 I did get money from that. Then I went with a publisher, sold fewer copies, and hardly got any
-money.)
+money. I may one day sell a book version of the website, but mainly as a service to those
+who learn better by reading text on paper. I won't sell the videos.
 
 **If there is no money, why do this?**
 
 If you've used free resources on-line to lean how to program or find solutions to
-programming problems, this is a great way to give back to the community.
+programming problems, this is a great way to give back to the community. Personally,
+I've found online resources to be a great aid in my programming.
 
 **How am I identified?**
 
@@ -72,23 +76,28 @@ journey on learning to program.
 
 * First, send me an e-mail and let me know that you are interested.
 * Second, I'll send you a section of the text to read.
-* Third, record your audio. Preferably twice.
+* Third, record your audio.
 
   * Use a high-quality microphone.
   * Use a recording program like Audacity.
+  * Adjust sound levels so that the db meter on audacity stays a bit below -6 db.
   * Record in an environment with minimal echo and background noise.
-  * Export the audio (hopefully in a lossless format) and sent to me.
+  * I'll edit the audio. If you misspeak, just pause so I can make a clean
+    edit, then start the sentence again.
+  * Save the project, which should keep the audio in a lossless format, and
+    send to me.
 
 * I'll edit the audio and combine it with video.
 * Then I'll post it on-line.
 
 **How long should this take?**
 
-It should take less than thirty minutes of your time in total.
+The audio portion is about 15 minutes. As I assume it will take a while to get
+set up, and some sections might require a few takes, I'd guess about 45 minutes.
 
 **Why should I trust you with my time?**
 
-I've already done something very similar before.
+I've already done something very similar before, with success.
 
 For my last college sabbatical from teaching six years ago, I created ProgramArcadeGames.com and accompanying videos.
 This site has always
@@ -109,3 +118,12 @@ I'll combine the audio with video of the code being written often with on-screen
 talking about in. If we aren't talking though code, I'll use slides or some other visual to help readers understand
 the topic.
 
+**What will it look like?**
+
+Take a look at this chapter:
+
+https://learn.arcade.academy/chapters/04_print_statement/print_statement.html
+
+And this video:
+
+https://youtu.be/6KaRu3FS3AA
