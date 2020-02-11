@@ -3,12 +3,15 @@
 How to Draw with Your Computer
 ==============================
 
-Finally, time to do start making graphics!
+We've setup our system, learned to use git, and ran our first basic program
+using the `print` statement. Now we are ready to start making graphics!
 
-By the end of this chapter, you should know how to write programs that will
-draw images on the screen. Below is an example of what one student did:
+In this chapter we will learn to import a graphics library and call its
+functions. By the end of this chapter, you will be able to create your
+own art:
 
 .. image:: simpson_map.png
+
 
 At the end of :ref:`lab-02` you can page through several other examples
 of what students have created for this lab.

@@ -1,6 +1,10 @@
 Voice-Over Talent
 =================
 
+.. image:: print_snake.svg
+    :width: 40%
+    :class: right-image
+
 I'm looking for a diverse set of volunteers to do voice-over for
 introductory Python lessons.
 The videos will be hosted on YouTube with monitization turned off.

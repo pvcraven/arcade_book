@@ -545,8 +545,8 @@ Printing multiple lines is possible using three techniques: multiple print state
 **escape codes**, and **triple-quotes**. We learned that escape codes can also be used to
 print quotes and tab characters.
 
-Questions
-^^^^^^^^^
+Review Questions
+^^^^^^^^^^^^^^^^
 
 #. What term refers to the values between the parentheses in function?
 #. What type of error are we likely to get, if we mistype a function name?
@@ -573,5 +573,7 @@ chapter.
 Lab 1
 ^^^^^
 
-Complete :ref:`lab-01`.
-
+Use the computer that you've set up in :ref:`chapter-setup` and the set of files
+you cloned in :ref:`version-control` to create your first program
+in :ref:`lab-01`. Then learn
+to commit the code to the version control system and turn it in.
