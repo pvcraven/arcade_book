@@ -5,7 +5,7 @@ The Print Function
 
 .. image:: ../../images/video.svg
     :class: video-image-h1
-    :target: http://youtube.com
+    :target: https://youtu.be/6KaRu3FS3AA
     :alt: Video link
 
 .. image:: print_snake.svg
@@ -43,9 +43,8 @@ Printing "Hello World"
 
 .. image:: ../../images/video.svg
     :class: video-image-h2
-    :target: http://youtube.com
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=86s
     :alt: Video link
-
 
 .. image:: hello_world.svg
     :width: 40%
@@ -81,6 +80,12 @@ the :ref:`expressions` chapter.
 
 Entering Our Program
 --------------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=141s
+    :alt: Video link
+
 
 Now that we've seen what the ``print`` function looks like, let's use it to
 enter our first program.
@@ -122,6 +127,11 @@ program:
 Running Our Program
 -------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=216s
+    :alt: Video link
+
 After you've typed in your program, right-click on either ``print_statements.py``
 or anywhere in the code window and select ``Run 'print_statements.py'``
 
@@ -139,6 +149,11 @@ your computer:
 Errors and Warnings
 -------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=235s
+    :alt: Video link
+
 .. image:: crash.svg
     :width: 40%
     :class: right-image
@@ -155,6 +170,11 @@ In addition to errors where the program doesn't run at all, Python can show us
 
 Errors
 ^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=263s
+    :alt: Video link
 
 Let's create an error. Change the ``print`` function to use a capital ``P``: ``Print``.
 
@@ -219,6 +239,12 @@ on how to solve the mystery what caused the bug.
 Warnings
 ^^^^^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=357s
+    :alt: Video link
+
+
 It can be possible to write code that runs, but isn't quite perfect.
 For example, let's take our Hello World program and add some extra spaces:
 
@@ -276,6 +302,11 @@ code that will be easier to maintain.
 Multiple Print Lines
 --------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=468s
+    :alt: Video link
+
 We aren't limited to one ``print`` statement. We can print multiple lines of text with
 multiple lines of code. Let's change our Hello World program to the cliché opener for
 melodramatic fiction:
@@ -296,6 +327,11 @@ Your output should look like:
 
 Escape Codes
 ------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=493s
+    :alt: Video link
 
 If quotes are used to tell the computer the start and end of the string of text you wish
 to print, how does a program print out a set of double quotes?
@@ -441,6 +477,11 @@ than one super-long ``print`` statement with a bunch of ``\n`` escape codes cram
 Triple Quotes
 -------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=669s
+    :alt: Video link
+
 If you have a block of text and don't want to spend a lot of time putting quotes
 around each line, you can use triple quotes.
 
@@ -486,6 +527,11 @@ But the output will include all those extra spaces:
 
 Review
 ------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=6KaRu3FS3AA&t=708s
+    :alt: Video link
 
 In this chapter we learned one of the most basic building blocks of a computer
 program is the **function**.
