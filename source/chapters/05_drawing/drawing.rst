@@ -233,11 +233,13 @@ See below:
     :linenos:
     :emphasize-lines: 16, 19, 24
 
+.. image:: clear_screen.png
+   :width: 35%
 
 Specifying Colors
 -----------------
 
-Wait, where did ``AIR_SUPERIORITY_BLUE`` come from? How do I get to choose
+Wait, where did ``arcade.csscolor.SKY_BLUE`` come from? How do I get to choose
 the color I want? There are two ways to specify colors:
 
 * Look at the `arcade.color API documentation`_ and specify by name.
@@ -404,16 +406,50 @@ Let's start drawing with a rectangle. The function
 we will use is ``draw_lrtb_rectangle_filled``. It stands for "draw
 left-right-top-bottom rectangle".
 
-We'll use this program to draw a green rectangle:
+To make the bottom half of our screen green grass, we'll start
+with a left of 0, a right of 599, a top of 300, and a bottom of zero.
 
 .. literalinclude:: draw_rect.py
     :language: python
     :linenos:
     :emphasize-lines: 24
 
-There are a lot of shapes we can draw. Try running the program below:
+Sometimes we don't want to specify a rectangle by left-right-top-bottom.
+There is also an option to specify it by center, width, and height using the
+``draw_rectangle_filled`` function. For example
+this displays a tree trunk:
 
-.. literalinclude:: draw_shapes.py
+.. code-block:: python
+
+    # Tree trunk
+    arcade.draw_rectangle_filled(100, 320, 20, 60, arcade.csscolor.SIENNA)
+
+We can draw an circle:
+
+.. code-block:: python
+
+    # Tree top
+    arcade.draw_circle_filled(100, 350, 30, arcade.csscolor.DARK_GREEN)
+
+If you don't want a perfect ellipse, you can draw a circle:
+
+.. code-block:: python
+
+    # Another tree, with a trunk and ellipse for top
+    arcade.draw_rectangle_filled(200, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_ellipse_filled(200, 370, 60, 80, arcade.csscolor.DARK_GREEN)
+
+Triangles are a bit more difficult. You need to think about where each point
+goes.
+
+.. code-block:: python
+
+    # Another tree, with a trunk and triangle for top
+    arcade.draw_rectangle_filled(300, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_triangle_filled(300, 400, 270, 320, 330, 320, arcade.csscolor.DARK_GREEN)
+
+
+.. literalinclude:: draw_02.py
     :language: python
     :linenos:
 

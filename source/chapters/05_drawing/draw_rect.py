@@ -19,9 +19,9 @@ arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 
 # Draw a rectangle
-# Left of 5, right of 35
-# Top of 590, bottom of 570
-arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color.BITTER_LIME)
+# Left of 0, right of 599
+# Top of 300, bottom of 0
+arcade.draw_lrtb_rectangle_filled(0, 599, 300, 0, arcade.color.BITTER_LIME)
 
 # Finish drawing
 arcade.finish_render()
