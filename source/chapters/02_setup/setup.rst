@@ -44,8 +44,8 @@ To get your computer ready for programming, we need to install Python, some Pyth
 
 .. _installing-python:
 
-Installing Python and Arcade
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing Python
+^^^^^^^^^^^^^^^^^
 
 We will be using the "Python_" computer programming language.
 The creator of Python was a fan of `Monty Python`_, hence the name.
@@ -92,6 +92,12 @@ What is a text editor? What is an IDE? Read more at
 
 .. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
+
+.. _installing-arcade:
+
+Installing Arcade
+^^^^^^^^^^^^^^^^^
+
 
 Viewing File Extensions
 -----------------------

@@ -14,7 +14,7 @@
    viewBox="0 0 537.13261 133.20905"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="open_window.svg">
   <defs
      id="defs4">
@@ -562,9 +562,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="3840"
-     inkscape:window-height="2066"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-height="2004"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -634,35 +634,35 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="469.28571"
-       y="159.50508"
+       x="440.38055"
+       y="160.06253"
        id="text4176"><tspan
          sodipodi:role="line"
          id="tspan4178"
-         x="469.28571"
-         y="159.50508"
+         x="440.38055"
+         y="160.06253"
          style="font-size:15px;line-height:1.25">Window Title</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="329.28571"
-       y="158.79079"
+       x="300.60379"
+       y="157.91965"
        id="text4180"><tspan
          sodipodi:role="line"
          id="tspan4182"
-         x="329.28571"
-         y="158.79079"
+         x="300.60379"
+         y="157.91965"
          style="font-size:15px;line-height:1.25">Width</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="404.99997"
-       y="158.79079"
+       x="370.29126"
+       y="157.87502"
        id="text4184"><tspan
          sodipodi:role="line"
          id="tspan4186"
-         x="404.99997"
-         y="158.79079"
+         x="370.29126"
+         y="157.87502"
          style="font-size:15px;line-height:1.25">Height</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
@@ -684,19 +684,19 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-6)"
-       d="M 512.46823,113.25983 497.46824,148.9741"
+       d="m 469.50057,113.81728 -0.93749,35.71427"
        id="path4188-6-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-10)"
-       d="m 348.18249,114.68842 -2.85713,30.71427"
+       d="m 319.50058,113.81728 -2.85713,30.71427"
        id="path4188-6-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-1-9)"
-       d="m 396.75392,115.40269 37.14287,32.14285"
+       d="m 362.0452,114.48693 37.14287,32.14285"
        id="path4188-6-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />

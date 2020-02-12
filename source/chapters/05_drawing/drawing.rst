@@ -4,7 +4,7 @@ How to Draw with Your Computer
 ==============================
 
 We've setup our system, learned to use git, and run our first program
-using the ``print`` function. Now we are ready to start using other
+using the ``print`` function. Now we are ready to start using
 functions to make graphics!
 
 In this chapter we will learn to import a graphics library and call its
@@ -40,21 +40,20 @@ samples there. Create a new sample by:
 
 .. image:: create_drawing_source_file.png
 
-Call the file ``drawing_samples.py``. Make sure it is inside the ``Scratch Work``
+Name the file ``drawing_samples.py``. Make sure it is inside the ``Scratch Work``
 folder. If it isn't, drag to move it. The file should appear like the
 following:
 
 .. image:: drawing_samples.png
-    :width: 40%
+    :width: 35%
 
-Comments In Code
-----------------
+Comments Your Code
+------------------
 
 Before we start writing long programs, we need to learn about **code comments**.
 When typing in computer code, sometimes we want to be able to write things
-for our own benefit, and anyone else that reads the code, which
-the computer ignores. We call this "commenting our code."
-You will see a lot of comments in my code examples to explain how they work.
+for our own benefit, and for anyone else that reads the code. Since this won't be
+computer code, we need to tell the computer to ignore it.
 
 Below are two ways of adding comments to code in the Python computer language:
 
@@ -62,9 +61,11 @@ Below are two ways of adding comments to code in the Python computer language:
     :language: python
     :linenos:
 
-Go ahead and try it. Multi-line comments with triple quotes
-usually start each source file
-and explain what the code does. Single-line comments are used elsewhere.
+The Python standard is to use multi-line comments with triple quotes
+at start each source file to and explain what the code does. For now,
+just use single-line comments everywhere else.
+
+Go ahead and try putting in your own comments.
 
 Let's try running the program. But before we run the program, we need to make
 sure we are running the *right* program. Look at the image below. If I select
@@ -88,6 +89,7 @@ Computer languages come with a set of built-in commands. Most programs will
 require *more* commands than what the computer language loads by default. These
 sets of commands are called **libraries**. Some languages have their own special
 term for these libraries. In the case of Python, they are called **modules**.
+In the Python world you can use the term library and module interchangeably.
 
 Thankfully, it is easy to import a library of code.
 If we want to use the "arcade" library, all we need
@@ -109,17 +111,22 @@ library, but we haven't *done* anything with it yet. That's our next step.
     :linenos:
     :emphasize-lines: 7
 
+.. note::
+   If you get an error that you can't import the arcade library, it hasn't been
+   installed for your current Python environment. Go back
+   and follow the directions in :ref:`installing-arcade`.
+
 How to Open a Window for Drawing
 --------------------------------
 
-Now it is time to open the window. See the command below:
+The first Arcade function we are going to learn is ``open_window``. This
+command opens a window with a given size and title.
 
 .. image:: open_window.svg
 
 How does this command work? To begin, we select the arcade library
 with ``arcade``. Then we separate the library from the command we want to
-call with a period: ``.`` Next, we put in the name of the command to run.
-Which happens to be ``open_window``.
+call with a period: ``.`` Next, we put in the name of the function, ``open_window``.
 
 .. note::
 
