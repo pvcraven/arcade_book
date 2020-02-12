@@ -27,10 +27,9 @@ Creating a New Program
 Open up PyCharm. It should start up with the same set of project files
 we used last chapter. We'll use
 this project for all our work in this book. Do **not** create new projects for each
-lab or program you create in this class. Just use one project for the entire
-class.
+lab or program.
 
-We are going to create a lot of code samples as we go through the chapters.
+We are going to create a lot of code samples as we learn new concepts.
 You should already have a folder called ``Scratch Work``. We can put our code
 samples there. Create a new sample by:
 
@@ -62,7 +61,7 @@ Below are two ways of adding comments to code in the Python computer language:
     :linenos:
 
 The Python standard is to use multi-line comments with triple quotes
-at start each source file to and explain what the code does. For now,
+at the start of each source file to explain what the code does. For now,
 just use single-line comments everywhere else.
 
 Go ahead and try putting in your own comments.
@@ -82,6 +81,10 @@ Therefore, there was nothing for the computer to do. Read on.
 Import the Arcade Library
 -------------------------
 
+.. image:: library.svg
+    :width: 30%
+    :class: right-image
+
 Before we can draw anything, we need to import a "library" of code that has
 commands for drawing.
 
@@ -92,7 +95,7 @@ term for these libraries. In the case of Python, they are called **modules**.
 In the Python world you can use the term library and module interchangeably.
 
 Thankfully, it is easy to import a library of code.
-If we want to use the "arcade" library, all we need
+If we want to use the Arcade library, all we need
 to do is add ``import arcade`` at the top of our program.
 
 .. attention::
@@ -102,8 +105,8 @@ to do is add ``import arcade`` at the top of our program.
     just like technically you *can* wear a pair of shorts on your head. But
     don't. Trust me on this.
 
-In the code below, we've imported the arcade library. If you run the code,
-yet again nothing will happen. We've asked to load the arcade
+In the code below, we've imported the Arcade library. If you run the code,
+yet again nothing will happen. We've loaded the arcade
 library, but we haven't *done* anything with it yet. That's our next step.
 
 .. literalinclude:: import_arcade.py
@@ -121,27 +124,51 @@ How to Open a Window for Drawing
 
 The first Arcade function we are going to learn is ``open_window``. This
 command opens a window with a given size and title.
+The code looks like the following:
+
+.. code-block:: python
+
+    arcade.open_window(600, 600, "Drawing Example")
+
+What does each part mean?
 
 .. image:: open_window.svg
 
-How does this command work? To begin, we select the arcade library
-with ``arcade``. Then we separate the library from the command we want to
-call with a period: ``.`` Next, we put in the name of the function, ``open_window``.
+To begin, we select the arcade library
+with ``arcade``. Then we separate the library from the function name
+with a period: ``.`` Next, we put in the name of the function, ``open_window``.
 
-.. note::
+.. sidebar:: Vocabulary
 
-    Commands that we can run are called **functions**.
+    We give commands to the computer by using **functions**.
+    The **function name**, such as ``print`` or ``open_window``
+    is how we identify the function.
 
-Just like the sine and cosine functions in math, we surround the function
-**parameters** with parenthesis. For example:
+    We can import new functions
+    by using a **library**. The **library name**, such as ``arcade``
+    is how we identify the library.
+
+    A **statement** is a line of code in Python. It includes the
+    function name, parentheses, numbers, text and everything else
+    required to call the function or perform some other operation.
+
+Just like the ``print`` function, we surround the function
+**parameters** with parentheses. For example:
 
 .. code-block:: python
 
     my_function(parameters)
 
-The data we need
-to pass the function are the parameters. In the case of ``open_window``, we
-need three parameters:
+If we have more than one parameter, we can use commas to separate them.
+PEP-8 asks that each comma is followed by a space. If we have a library,
+then we specify that up front. For example:
+
+.. code-block:: python
+
+    my_library.my_function(parameter_1, parameter_2)
+
+
+The ``open_window`` function requires at least three parameters:
 
 * The window width in pixels.
 * The window height in pixels.
@@ -152,11 +179,11 @@ can draw on. The actual
 window is larger to accommodate the title bar and borders. So a 600x600 window
 is really 602x632 if you count the title bar and borders.
 
-Wait, how do we know that it was the ``open_window`` function to call? How did
+How do we know ``open_window`` is the name of the function to call? How did
 we know what parameters to use? The names of the functions, the order of the
 parameters, is the **Application Program Interface** or "API" for short. You can
-click here for the `Arcade API`_. Any decent code library will have an API and
-documentation you can find on the web.
+click here for the `Arcade API`_. Any decent library will have API
+documentation, and example code you can find on the web to learn how to use it.
 
 .. _Arcade API: http://arcade.academy/quick_index.html
 
@@ -169,15 +196,14 @@ Below is an example program that will open up a window:
 
 Try running the code above. It kind-of works. If you have fast eyes, and a slow
 computer you might see the window pop open, then immediately close.
-If your computer is fast, you won't see anything at all because the window
-closes too fast.
+If your computer is super-fast, you won't see anything at all because the
+window opens and closes faster than your eye can process.
 Why does it close? Because our program is done! We've ran out of code
 to execute.
 
 To keep the window open, we need to pause until the user hits the
 close button. To do this, we'll use the ``run`` command in the Arcade library.
-The ``run`` command takes no parameters, but even if a function doesn't take
-parameters, you still need to use parenthesis.
+The ``run`` command takes no parameters, but still needs parentheses.
 
 .. literalinclude:: open_window_and_pause.py
     :language: python
@@ -193,10 +219,10 @@ You should get a window that looks something like this:
 Clearing the screen
 -------------------
 
-Right now we just have a default white as our background.
+Right now we have default white as our background.
 How do we get a different color? Use the ``set_background_color`` command.
 
-But by itself, the function doesn't work. You need a two more commands. These
+Before we can see the color, we need two more commands. These
 tell the Arcade library when you are about to start drawing (``start_render``),
 and when you are done drawing (``finish_render``).
 
@@ -215,14 +241,19 @@ Wait, where did ``AIR_SUPERIORITY_BLUE`` come from? How do I get to choose
 the color I want? There are two ways to specify colors:
 
 * Look at the `arcade.color API documentation`_ and specify by name.
+* Look at the `arcade.csscolor API documentation`_ and specify by name.
 * Specify the RGB or RGBA color.
 
 To specify colors by name, you can look at the color API documentation and
-use something like ``arcade.color.AQUAMARINE`` in your program. Then color
+use something like ``arcade.color.AQUAMARINE`` in your program. Those color
 names come from the ColorPicker `color chart`_.
 
+The colors in ``arcade.csscolor`` come from the standard color names used in
+creating web pages. Therefore, getting used to these color names can help
+with web development skills.
+
 If the color you want isn't in the chart, or you just don't want to use
-that chart, you can specify colors by "RGB". RGB stands for Red, Green, and
+that chart, you can specify colors by "RGB" value. RGB stands for Red, Green, and
 Blue.
 
 Computers, TVs, color changing LEDs, all
@@ -233,7 +264,6 @@ both red and green to get yellow.
 
 RGB based monitors work on an *additive* process. You start with black and
 add light to get color.
-
 This is different than
 paint or ink, which works on a *subtractive* process. You start with white and
 add to get darker colors.
@@ -257,21 +287,25 @@ Red   Green   Blue   Color
 255   255     0      Yellow
 ===== ======= ====== ===========
 
-There are tools that let you easily find a color, and then get the RGB values.
-One I really like, because it is easy to remember is
-"`colorpicker.com <http://www.colorpicker.com>`_". You can select the color,
-and then get the numbers to use when specifying a color. See the image below:
+There are tools that let you easily find a color, and then get the RGB value for it.
+If you go to the Google search engine and type in "`color picker`_" it shows a nice
+tool for picking colors. At the bottom of the color picker, the color is shown
+in hex, CMYK, and several other formats. Remember, we want the RGB
+value.
+
+.. _color picker: https://www.google.com/search?q=color+picker
 
 .. image:: colorpicker.png
 
-After getting the number, specify the color as a set of three numbers surrounded
-by parenthesis, like this:
+After getting the RBG value, specify the color as a set of three numbers surrounded
+by parenthesis, like the following code:
 
 .. code-block:: python
 
     arcade.set_background_color((189, 55, 180))
 
-In addition to RGB, you can also specify "Alpha." The "Alpha Channel" controls
+In addition to RGB, you can also specify the "Alpha" with an RGBA value.
+The "Alpha Channel" controls
 how transparent the color is. If you draw a square with an alpha of 255, it will
 be solid and hide everything behind it. An alpha of 127 will be in the middle,
 you will see some of the items behind the square. An alpha of 0 is completely
@@ -286,12 +320,12 @@ Wait, What Is Up With 255?
 
 Notice how the color values go between 0 and 255? That's strange. Why 255? Why
 not 100? Why not 1000?
+This requires an explanation of a very important concept of how computers
+handle numbers.
 
-The reason is important to understand how computers work. Remember how everything
-is stored in numbers? They are not just stored in numbers, they are stored in
-1's and 0's.
-
-Everything to the compute is a switch. If there is electricity, we have a 1. If
+You may have heard that computers think in 1's and 0's.
+That's true.
+Everything to the computer is a switch. If there is electricity, we have a 1. If
 there is no electricity we have a 0. We can store those 1's and 0's in memory.
 We call these 1's and 0's **binary numbers**.
 
@@ -324,17 +358,20 @@ Humans think in Base-10 because we have 10 fingers.
 
 Numbers are stored in **bytes**. A byte is a set of eight binary numbers.
 If we were to follow the pattern we started above, the largest number we
-could store with eight 1's and 0's is::
+could store with eight 1's and 0's is:
+
+.. code-block:: text
 
     1111 1111
 
 In Base-10 this is 255.
 
 Let's use some math. We have 8 ones and zeros. That give us 2 :sup:`8` = 256
-possible numbers. Since zero is a combination, that makes the biggest number 255.
+possible combinations. Each combination is a different number.
+Since zero is a counts as a number, that makes the biggest number 255.
 
 If we had 16 bits, then we'd have 2 :sup:`16` = 65,536 possible combinations. Or a
-number from 0-65535. A 32-bit computer can hold numbers up
+number from 0-65,535. A 32-bit computer can hold numbers up
 to 2 :sup:`32` = 4,294,967,296. A 64-bit computer can hold really large numbers!
 
 So because a computer holds colors with one byte for red, one for green, and one
@@ -356,13 +393,14 @@ things to keep in mind:
 
 * We will only draw in the upper right quadrant. So 0,0 will be in the
   lower left of the screen, and all negative coordinates will be off-screen.
-* Each "Point" will be a pixel. So a window that is 800 pixels wide, will have
-  x-coordinates that run from 0 to 800.
+* Each "point" will be a pixel. So a window that is 800 pixels wide, will have
+  x-coordinates that run from 0 to 799. (Zero is one of the pixels, so 0-799 is
+  800 pixels. Off-by-one errors are *very* common in computing.)
 
 Drawing a Rectangle
 -------------------
 
-Let's start drawing with a program to draw a rectangle. The function
+Let's start drawing with a rectangle. The function
 we will use is ``draw_lrtb_rectangle_filled``. It stands for "draw
 left-right-top-bottom rectangle".
 

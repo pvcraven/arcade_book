@@ -3,3 +3,4 @@ sphinx-rtd-theme
 sphinx-intl
 sphinx-copybutton
 awscli
+arcade
