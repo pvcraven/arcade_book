@@ -17,7 +17,7 @@ You can page through several other examples of student-created art
 in :ref:`lab-02`.
 
 We will concentrate on learning to call functions for graphics
-in this chapter. Those same concepts apply if you want to call functions
+in this chapter. The same concepts we learn here also apply to calling functions
 for other activities
 like robotics, data analytics, and web site programming.
 
@@ -46,8 +46,8 @@ following:
 .. image:: drawing_samples.png
     :width: 35%
 
-Comments Your Code
-------------------
+Comment Your Code
+-----------------
 
 Before we start writing long programs, we need to learn about **code comments**.
 When typing in computer code, sometimes we want to be able to write things
@@ -61,12 +61,12 @@ Below are two ways of adding comments to code in the Python computer language:
     :linenos:
 
 The Python standard is to use multi-line comments with triple quotes
-at the start of each source file to explain what the code does. For now,
-just use single-line comments everywhere else.
+at the start of each source file to explain what the code does.
+Use single-line comments everywhere else for now.
 
 Go ahead and try putting in your own comments.
 
-Let's try running the program. But before we run the program, we need to make
+Before we run this program, we need to make
 sure we are running the *right* program. Look at the image below. If I select
 "run" with the green arrow, I will run ``lab_01.py``, *not* the program I
 want to run. You need to right-click on our program and select
@@ -240,7 +240,7 @@ Specifying Colors
 -----------------
 
 Wait, where did ``arcade.csscolor.SKY_BLUE`` come from? How do I get to choose
-the color I want? There are two ways to specify colors:
+the color I want? There are three ways to specify colors:
 
 * Look at the `arcade.color API documentation`_ and specify by name.
 * Look at the `arcade.csscolor API documentation`_ and specify by name.
@@ -250,12 +250,17 @@ To specify colors by name, you can look at the color API documentation and
 use something like ``arcade.color.AQUAMARINE`` in your program. Those color
 names come from the ColorPicker `color chart`_.
 
-The colors in ``arcade.csscolor`` come from the standard color names used in
-creating web pages. Therefore, getting used to these color names can help
-with web development skills.
+The colors in ``arcade.csscolor`` come from the same standard color names used in
+creating web pages. Therefore, I suggest using these color names because it
+will also help with web development skills.
+
+.. _rgb-values:
+
+RGB Values
+^^^^^^^^^^
 
 If the color you want isn't in the chart, or you just don't want to use
-that chart, you can specify colors by "RGB" value. RGB stands for Red, Green, and
+a chart, you can specify colors by "RGB" value. RGB stands for Red, Green, and
 Blue.
 
 Computers, TVs, color changing LEDs, all
@@ -317,8 +322,8 @@ transparent and you'll see nothing of the square.
 .. _arcade.csscolor API documentation: http://arcade.academy/arcade.csscolor.html
 .. _arcade.color API documentation: http://arcade.academy/arcade.color.html
 
-Wait, What Is Up With 255?
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+What is a Byte?
+^^^^^^^^^^^^^^^
 
 Notice how the color values go between 0 and 255? That's strange. Why 255? Why
 not 100? Why not 1000?
@@ -382,8 +387,10 @@ for blue, each color has a value range from 0 - 255.
 The Coordinate System
 ---------------------
 
-In your math classes, you've learned about the Cartesian coordinate system,
-which looks like this:
+We've learned to specify the color of what we want to draw, the next thing
+we need to learn is how to position it.
+In your math classes, you've probably learned about the Cartesian coordinate
+system, which looks like this:
 
 .. figure:: cartesian_coordinate_system.svg
     :width: 350px
@@ -399,12 +406,23 @@ things to keep in mind:
   x-coordinates that run from 0 to 799. (Zero is one of the pixels, so 0-799 is
   800 pixels. Off-by-one errors are *very* common in computing.)
 
-Drawing a Rectangle
--------------------
+Drawing
+-------
 
-Let's start drawing with a rectangle. The function
-we will use is ``draw_lrtb_rectangle_filled``. It stands for "draw
+Arcade has "drawing primitives" that allow you to create rectangles, circles,
+arcs, lines, and text.
+
+Drawing Rectangles
+^^^^^^^^^^^^^^^^^^
+
+Our screen currently has a sky-blue color. Let's draw a rectangle in the bottom
+half of the screen and make that a grass color.
+
+The function
+we will use is draw_lrtb_rectangle_filled_. It stands for "draw
 left-right-top-bottom rectangle".
+
+.. _draw_lrtb_rectangle_filled: https://arcade.academy/arcade.html#arcade.draw_lrtb_rectangle_filled
 
 To make the bottom half of our screen green grass, we'll start
 with a left of 0, a right of 599, a top of 300, and a bottom of zero.
@@ -414,24 +432,72 @@ with a left of 0, a right of 599, a top of 300, and a bottom of zero.
     :linenos:
     :emphasize-lines: 24
 
+.. image:: grass.png
+   :width: 35%
+
 Sometimes we don't want to specify a rectangle by left-right-top-bottom.
 There is also an option to specify it by center, width, and height using the
-``draw_rectangle_filled`` function. For example
+draw_rectangle_filled_ function. For example
 this displays a tree trunk:
+
+.. _draw_rectangle_filled: https://arcade.academy/arcade.html#arcade.draw_rectangle_filled
 
 .. code-block:: python
 
     # Tree trunk
+    # Center of 100, 320
+    # Width of 20
+    # Height of 60
     arcade.draw_rectangle_filled(100, 320, 20, 60, arcade.csscolor.SIENNA)
 
-We can draw an circle:
+.. image:: trunk.png
+   :width: 35%
+
+There's also a function to draw the outline of a rectangle called
+draw_rectangle_outline_. Both of these functions (and many others)
+have an optional parameter to tilt the rectangle to a desired angle.
+
+.. _draw_rectangle_outline: https://arcade.academy/arcade.html#arcade.draw_rectangle_outline
+
+
+Drawing Circles
+^^^^^^^^^^^^^^^
+
+We can draw an circle with draw_circle_filled_. This circle will have a center
+of 100, 350 and a radius of 30 pixels.
+
+.. _draw_circle_filled: https://arcade.academy/arcade.html#arcade.draw_circle_filled
 
 .. code-block:: python
 
     # Tree top
     arcade.draw_circle_filled(100, 350, 30, arcade.csscolor.DARK_GREEN)
 
-If you don't want a perfect ellipse, you can draw a circle:
+.. image:: circle.png
+   :width: 35%
+
+Drawing Ellipses
+^^^^^^^^^^^^^^^^
+
+If you don't want a perfect circle, you can draw a ellipse. Ellipses are drawn
+like rectangles. The "rectangle" forms the bounds of the ellipse that's drawn
+inside it. Examine this code sample:
+
+.. code-block:: python
+
+    # Draw an ellipse and rect with
+    # a center of (300, 300)
+    # width of 350
+    # height of 200
+    arcade.draw_rectangle_outline(300, 300, 350, 200, arcade.csscolor.BLACK, 3)
+    arcade.draw_ellipse_outline(300, 300, 350, 200, arcade.csscolor.RED, 3)
+
+Now look at what it draws:
+
+.. image:: ellipse_example.png
+   :width: 35%
+
+With that function we can make a tree with a tall ellipse for the top:
 
 .. code-block:: python
 
@@ -439,22 +505,196 @@ If you don't want a perfect ellipse, you can draw a circle:
     arcade.draw_rectangle_filled(200, 320, 20, 60, arcade.csscolor.SIENNA)
     arcade.draw_ellipse_filled(200, 370, 60, 80, arcade.csscolor.DARK_GREEN)
 
-Triangles are a bit more difficult. You need to think about where each point
-goes.
+.. image:: ellipse.png
+   :width: 35%
+
+Drawing Arcs
+^^^^^^^^^^^^
+
+You can draw an arc with draw_arc_filled_. Drawing an arc works just like an
+ellipse, with the additional parameters for a start angle and an end angle.
+
+.. _draw_arc_filled: https://arcade.academy/arcade.html#arcade.draw_arc_filled
+
+.. code-block:: python
+
+    # Another tree, with a trunk and arc for top
+    # Arc is centered at (300, 340) with a width of 60 and height of 100.
+    # The starting angle is 0, and ending angle is 180.
+    arcade.draw_rectangle_filled(300, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_arc_filled(300, 340, 60, 100, arcade.csscolor.DARK_GREEN, 0, 180)
+
+.. image:: arc.png
+   :width: 35%
+
+Triangles
+^^^^^^^^^
+
+Triangles are drawn by specifying the coordinates of each point with draw_triangle_filled_.
+That requires
+a bit of thought about where each point goes. I often end up sketching it
+out on paper to get it straight.
+
+.. _draw_triangle_filled: https://arcade.academy/arcade.html#arcade.draw_triangle_filled
 
 .. code-block:: python
 
     # Another tree, with a trunk and triangle for top
-    arcade.draw_rectangle_filled(300, 320, 20, 60, arcade.csscolor.SIENNA)
-    arcade.draw_triangle_filled(300, 400, 270, 320, 330, 320, arcade.csscolor.DARK_GREEN)
+    # Triangle is made of these three points:
+    # (400, 400), (370, 320), (430, 320)
+    arcade.draw_rectangle_filled(400, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_triangle_filled(400, 400, 370, 320, 430, 320, arcade.csscolor.DARK_GREEN)
+
+.. image:: triangle.png
+   :width: 35%
+
+
+Polygons
+^^^^^^^^
+
+Polygons are drawn with a list of points and the draw_polygon_filled_ function.
+In this example we use five points to create a tree-top.
+
+.. _draw_polygon_filled: https://arcade.academy/arcade.html#arcade.draw_polygon_filled
+
+.. code-block:: python
+
+    # Draw a tree using a polygon with a list of points
+    arcade.draw_rectangle_filled(500, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_polygon_filled(((500, 400),
+                                (480, 360),
+                                (470, 320),
+                                (530, 320),
+                                (520, 360)
+                                ),
+                               arcade.csscolor.DARK_GREEN)
+
+.. image:: polygon.png
+   :width: 35%
+
+Lines
+^^^^^
+
+Line drawing with draw_line_ involves specifying a start point and and end point.
+Optionally, you can also specify the line width. You can also use
+draw_line_strip_ to draw a continuous multi-point line.
+
+.. _draw_line: https://arcade.academy/arcade.html#arcade.draw_line
+.. _draw_line_strip: https://arcade.academy/arcade.html#arcade.draw_line_strip
+
+In our sample image, we'll use several lines to draw rays coming out of a sun:
+
+.. code-block:: python
+
+    # Draw a sun
+    arcade.draw_circle_filled(500, 550, 40, arcade.color.YELLOW)
+
+    # Rays to the left, right, up, and down
+    arcade.draw_line(500, 550, 400, 550, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 600, 550, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 500, 450, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 500, 650, arcade.color.YELLOW, 3)
+
+    # Diagonal rays
+    arcade.draw_line(500, 550, 550, 600, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 550, 500, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 450, 600, arcade.color.YELLOW, 3)
+    arcade.draw_line(500, 550, 450, 500, arcade.color.YELLOW, 3)
+
+.. image:: sun.png
+   :width: 35%
+
+Text
+^^^^
+
+Text can be drawn with the draw_text_ command.
+
+.. _draw_text: https://arcade.academy/arcade.html#arcade.draw_text
+
+.. code-block:: python
+
+    # Draw text at (150, 230) with a font size of 24 pts.
+    arcade.draw_text("Arbor Day - Plant a Tree!",
+                     150, 230,
+                     arcade.color.BLACK, 24)
+
+.. image:: text.png
+   :width: 35%
+
+
+Full Example Drawing Program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here's the full code for our example drawing program.
+
+.. image:: full_program.png
+   :width: 35%
 
 
 .. literalinclude:: draw_02.py
     :language: python
     :linenos:
 
-Drawing Primitives
-------------------
+
+
+Specifying Parameters By Name
+-----------------------------
+
+It can be confusing to track a lot of parameters given to a function.
+For example, here's a call to draw_arc_outline_.
+
+.. _draw_arc_outline: https://arcade.academy/arcade.html#arcade.draw_arc_outline
+
+.. code-block:: python
+
+    arcade.draw_arc_outline(300,
+                            340,
+                            60,
+                            100,
+                            arcade.csscolor.BLACK,
+                            0,
+                            180,
+                            3,
+                            45)
+
+There's no easy way to track what number goes with what parameter. The parameters
+are done in order, but without memorizing or looking at the documentation, a
+programmer can't quickly tell.
+
+Parameters each have a **parameter name** which can be found in the documentation.
+We can use that name to specify each value given to a function.
+This may take some additional up-front coding time, but the increased readability
+may save time later.
+
+.. code-block:: python
+
+    arcade.draw_arc_outline(center_x=300,
+                            center_y=340,
+                            width=60,
+                            height=100,
+                            color=arcade.csscolor.BLACK,
+                            start_angle=0,
+                            end_angle=180,
+                            border_width=3,
+                            tilt_angle=45)
+
+Future Improvements
+-------------------
+
+Looking forward, there's a can do to improve this code.
+
+Readability
+^^^^^^^^^^^
+
+Functions
+^^^^^^^^^
+
+Performance
+^^^^^^^^^^^
+
+
+Review
+------
 
 For a program showing all the drawing primitives, see the example
 `Drawing Primitives`_. Also, see the API documentation's `Quick Index`_.

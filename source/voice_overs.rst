@@ -76,15 +76,19 @@ journey on learning to program.
 
 * First, send me an e-mail and let me know that you are interested.
 * Second, I'll send you a section of the text to read.
-* Third, record your audio.
+* Third, record **one paragraph** of your audio.
 
   * Use a high-quality microphone.
   * Use a recording program like Audacity.
   * Adjust sound levels so that the db meter on audacity stays a bit below -6 db.
   * Record in an environment with minimal echo and background noise.
+
+* Send the sample recording back to me. Once we have the recording working well,
+  narrate the whole section.
+
   * I'll edit the audio. If you misspeak, just pause so I can make a clean
     edit, then start the sentence again.
-  * Save the project, which should keep the audio in a lossless format, and
+  * Save the project, which should keep the audio in a loss-less format, and
     send to me.
 
 * I'll edit the audio and combine it with video.

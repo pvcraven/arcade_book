@@ -13,15 +13,17 @@ import arcade
 arcade.open_window(600, 600, "Drawing Example")
 
 # Set the background color
-arcade.set_background_color(arcade.csscolor.SKY_BLUE)
+arcade.set_background_color(arcade.csscolor.WHITE)
 
 # Get ready to draw
 arcade.start_render()
 
-# Draw a rectangle
-# Left of 0, right of 599
-# Top of 300, bottom of 0
-arcade.draw_lrtb_rectangle_filled(0, 599, 300, 0, arcade.csscolor.GREEN)
+# Draw an ellipse and rect with
+# a center of (300, 300)
+# width of 350
+# height of 200
+arcade.draw_rectangle_outline(300, 300, 350, 200, arcade.csscolor.BLACK, 3)
+arcade.draw_ellipse_outline(300, 300, 350, 200, arcade.csscolor.RED, 3)
 
 # Finish drawing
 arcade.finish_render()
