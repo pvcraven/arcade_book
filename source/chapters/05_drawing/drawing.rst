@@ -315,7 +315,7 @@ value.
 
 .. image:: colorpicker.png
 
-After getting the RBG value, specify the color as a set of three numbers surrounded
+After getting the RGB value, specify the color as a set of three numbers surrounded
 by parenthesis, like the following code:
 
 .. code-block:: python
@@ -350,7 +350,8 @@ We can store those bits in memory.
 How do we go from 1's and 0's to numbers we normally use?
 We group these 1's and 0's together to form **binary numbers**.
 These combinations of 1's and 0's work like combinations
-of the digits 0-9 we use to form other numbers. Like this:
+of the digits 0-9 used to form the base-10 numbers we are used to.
+Like this:
 
 ================ ===========
 Binary - Base 2  Base 10
@@ -376,7 +377,7 @@ You might have used "bases" in math class long ago. Computers work in Base-2
 because they only have two ways to count, on or off.
 Humans think in Base-10 because we have 10 fingers.
 
-Numbers are stored in **bytes**. A byte is a set of eight binary numbers.
+Numbers are stored in **bytes**. A byte is a set of eight bits.
 If we were to follow the pattern we started above, the largest number we
 could store with eight 1's and 0's is:
 
@@ -388,7 +389,7 @@ In Base-10 this is 255.
 
 Let's use some math. We have 8 ones and zeros. That give us 2 :sup:`8` = 256
 possible combinations. Each combination is a different number.
-Since zero is a counts as a number, that makes the biggest number 255.
+Since zero a counts as a number, that makes the biggest number 255.
 
 If we had 16 bits, then we'd have 2 :sup:`16` = 65,536 possible combinations. Or a
 number from 0-65,535. A 32-bit computer can hold numbers up
@@ -439,19 +440,23 @@ left-right-top-bottom rectangle".
 
 To make the bottom half of our screen green grass, we'll start
 with a left of 0, a right of 599, a top of 300, and a bottom of zero.
+The order of the statements is important, make sure you put in your command
+after the ``start_render`` and before the ``finish_render``.
 
 .. literalinclude:: draw_rect.py
     :language: python
     :linenos:
     :emphasize-lines: 24
 
+Your window should look like this:
+
 .. image:: grass.png
    :width: 35%
 
 Sometimes we don't want to specify a rectangle by left-right-top-bottom.
-There is also an option to specify it by center, width, and height using the
+There is also an option to specify it by center x, center y, width, and height using the
 draw_rectangle_filled_ function. For example
-this displays a tree trunk:
+this code displays a tree trunk:
 
 .. _draw_rectangle_filled: https://arcade.academy/arcade.html#arcade.draw_rectangle_filled
 
@@ -476,8 +481,8 @@ have an optional parameter to tilt the rectangle to a desired angle.
 Drawing Circles
 ^^^^^^^^^^^^^^^
 
-We can draw an circle with draw_circle_filled_. This circle will have a center
-of 100, 350 and a radius of 30 pixels.
+We can draw a circle with draw_circle_filled_. This code will draw a circle
+with a center of 100, 350 and a radius of 30 pixels.
 
 .. _draw_circle_filled: https://arcade.academy/arcade.html#arcade.draw_circle_filled
 
@@ -505,12 +510,13 @@ inside it. Examine this code sample:
     arcade.draw_rectangle_outline(300, 300, 350, 200, arcade.csscolor.BLACK, 3)
     arcade.draw_ellipse_outline(300, 300, 350, 200, arcade.csscolor.RED, 3)
 
-Now look at what it draws:
+Now look at what it draws to understand the relation between the rectangle and ellipse.
 
 .. image:: ellipse_example.png
    :width: 35%
 
-With that function we can make a tree with a tall ellipse for the top:
+With the ``draw_rectangle_filled`` function we can make a tree out of a tall
+ellipse for the top:
 
 .. code-block:: python
 
@@ -546,7 +552,7 @@ Triangles
 Triangles are drawn by specifying the coordinates of each point with draw_triangle_filled_.
 That requires
 a bit of thought about where each point goes. I often end up sketching it
-out on paper to get it straight.
+out on paper to get it straight. This can be used to make a pine tree.
 
 .. _draw_triangle_filled: https://arcade.academy/arcade.html#arcade.draw_triangle_filled
 
@@ -588,8 +594,8 @@ In this example we use five points to create a tree-top.
 Lines
 ^^^^^
 
-Line drawing with draw_line_ involves specifying a start point and and end point.
-Optionally, you can also specify the line width. You can also use
+Line drawing with the draw_line_ function involves specifying a start point and and end point.
+Optionally, you can specify the line width. You can also use
 draw_line_strip_ to draw a continuous multi-point line.
 
 .. _draw_line: https://arcade.academy/arcade.html#arcade.draw_line
@@ -621,6 +627,9 @@ Text
 ^^^^
 
 Text can be drawn with the draw_text_ command.
+Just like with the ``print`` function, text must be enclosed in quotes.
+The text to draw is the first parameter. The x, y location of the text is
+are next two. Finally the color and font size come next.
 
 .. _draw_text: https://arcade.academy/arcade.html#arcade.draw_text
 
@@ -670,9 +679,9 @@ For example, here's a call to draw_arc_outline_.
                             3,
                             45)
 
-There's no easy way to track what number goes with what parameter. The parameters
-are done in order, but without memorizing or looking at the documentation, a
-programmer can't quickly tell.
+It is not easy to track what number goes with what parameter. Yes,
+the parameters have an order to them. But unless a programmer memorizes
+every order of every function, you can't quickly tell.
 
 Parameters each have a **parameter name** which can be found in the documentation.
 We can use that name to specify each value given to a function.
@@ -715,23 +724,49 @@ To speed graphics, computers have separate processors to handle the display.
 To use those separate processors we need to draw in two steps.
 First, the computer will collect a batch of points, colors, and drawing
 information together. Then it will send all of that information to the
-graphics processors. If you've experienced a long pause between
+graphic processors. If you've experienced a long pause between
 levels when playing a game, this is what's happening.
 
-After that anytime it wants to draw a tree, house,
-or rainbow unicorn, it tells the graphics card simply 'draw the unicorn'
-rather than resend all the individual drawing commands over and over.
+After the graphics information is send to the graphic processors
+anytime our program wants to draw a tree, house,
+or rainbow unicorn, it tells the graphic processors simply 'draw the unicorn'
+rather than resend all the individual drawing commands.
 
 As we progress through the class, if you find your drawing commands
 to get too slow, keep this in mind. The Arcade library supports
 batch drawing with sprites and shape lists. We'll cover how do do
-this is future chapters.
+this in future chapters.
+
+Real-World Applications
+-----------------------
+
+We aren't limited to the Arcade library and its API.
+Here are a few other APIs to give you an idea of what's out there.
+
+* `OpenPyXL <https://openpyxl.readthedocs.io/en/stable/>`_ for creating and
+  processing spreadsheets.
+* `CircuitPython <https://circuitpython.readthedocs.io/projects/bundle/en/latest/drivers.html>`_
+  has a set of libraries for controlling LEDs, motors, displays, and robotic servos.
+* `NumPy <https://numpy.org/>`_ is a powerful library for working on anything
+  related to linear algebra.
+* `Beautiful Soup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
+  is a library that allows your program to automatically download pages
+  off the web and process the data in them.
 
 Review
 ------
 
-For a program showing all the drawing primitives, see the example
-`Drawing Primitives`_. Also, see the API documentation's `Quick Index`_.
+In this chapter we learned how to import a Python module. We learned to call
+functions from an imported module. While we are learning how to do graphics
+in this chapter, these same skills can be used for importing and calling libraries
+of code that manage spreadsheets, images, robotics, and more.
+
+Colors can be specified in RGB format and are stored in bytes. Each byte is a
+group of eight bits, and can hold numbers from 0-255.
+
+We learned how do draw ellipses, arcs, rectangles, triangles, polygons, lines
+and text. More importantly we learned how to look up these functions out of the
+API documentation.
 
 
 Review Questions
@@ -740,15 +775,20 @@ Review Questions
 #. In Python, a library of code is called what?
 #. What do we call a line of code in Python which includes the function name, parentheses,
    numbers, text and everything else required perform an operation?
+#. When we call a function that is inside a library,  what character do we use
+   to separate the library name and the function name?
+#. According to PEP-8, should we put a space after a comma that separates parameters?
 #. What function is used to open a window? Just list the function name, don't include
    the library or parameters.
+#. What do we call the names of the functions and parameter order that make up
+   how we interface with a library?
 #. What function name sets the background colors?
 #. What function name must happen before you start drawing?
 #. What function name happens after drawing?
 #. Colors are specified using three numbers that represent what?
 #. If a color is turned all the way OFF, what number is used?
 #. If a color is turned all the way ON, what number is used?
-#. A bit can hold what numbers?
+#. A bit can hold what two numbers?
 #. A byte is made up of how many bits?
 #. A byte can hold how many different combinations of numbers?
 
@@ -756,7 +796,8 @@ Review Questions
 Lab 2: Draw a Picture
 ^^^^^^^^^^^^^^^^^^^^^
 
-What's next? Try :ref:`lab-02`.
+Apply what you've learned here and use the drawing commands to create
+your own artwork in :ref:`lab-02`.
 
 .. _Drawing Primitives: http://arcade.academy/examples/drawing_primitives.html
 .. _Quick Index: http://arcade.academy/quick_index.html#id1

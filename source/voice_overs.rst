@@ -83,6 +83,14 @@ journey on learning to program.
   * Adjust sound levels so that the db meter on audacity stays a bit below -6 db.
   * Record in an environment with minimal echo and background noise.
 
+* Read your sections for voice-over.
+
+  * Start with an short introduction. Something like "Hi, I'm Mary. I'm using my
+    programming as part of my work with an insurance company." Figure out
+    how much identifying information you want to give out.
+  * Don't read out the code samples
+  * Don't read the review questions or any section after that.
+
 * Send the sample recording back to me. Once we have the recording working well,
   narrate the whole section.
 

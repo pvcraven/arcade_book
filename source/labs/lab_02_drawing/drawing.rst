@@ -31,7 +31,7 @@ Tips
 
 To select new colors use:
 
-http://www.colorpicker.com/
+https://www.google.com/search?q=color+picker
 
 Copy the values for Red, Green, and Blue.
 Do not worry about colors for hue, Saturation, or Brilliance.
