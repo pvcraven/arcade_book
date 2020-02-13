@@ -106,7 +106,7 @@ to do is add ``import arcade`` at the top of our program.
     don't. Trust me on this.
 
 In the code below, we've imported the Arcade library. If you run the code,
-yet again nothing will happen. We've loaded the arcade
+yet again nothing will happen. We've loaded the Arcade
 library, but we haven't *done* anything with it yet. That's our next step.
 
 .. literalinclude:: import_arcade.py
@@ -115,16 +115,18 @@ library, but we haven't *done* anything with it yet. That's our next step.
     :emphasize-lines: 7
 
 .. note::
-   If you get an error that you can't import the arcade library, it hasn't been
+   If you get an error that you can't import the Arcade library, it hasn't been
    installed for your current Python environment. Go back
    and follow the directions in :ref:`installing-arcade`.
 
 How to Open a Window for Drawing
 --------------------------------
 
-The first Arcade function we are going to learn is ``open_window``. This
+The first Arcade function we are going to learn is open_window_. This
 command opens a window with a given size and title.
 The code looks like the following:
+
+.. _open_window: https://arcade.academy/arcade.html#arcade.open_window
 
 .. code-block:: python
 
@@ -182,8 +184,11 @@ is really 602x632 if you count the title bar and borders.
 How do we know ``open_window`` is the name of the function to call? How did
 we know what parameters to use? The names of the functions, the order of the
 parameters, is the **Application Program Interface** or "API" for short. You can
-click here for the `Arcade API`_. Any decent library will have API
-documentation, and example code you can find on the web to learn how to use it.
+click here for the entire `Arcade API`_ or go straight to the documenation
+for open_window_. Any decent library will have API
+documentation, and
+`example code <https://arcade.academy/examples/index.html>`_
+to learn how to use the library.
 
 .. _Arcade API: http://arcade.academy/quick_index.html
 
@@ -222,7 +227,7 @@ Clearing the screen
 Right now we have default white as our background.
 How do we get a different color? Use the ``set_background_color`` command.
 
-Before we can see the color, we need two more commands. These
+Before we can see the color, we need two more commands. These commands
 tell the Arcade library when you are about to start drawing (``start_render``),
 and when you are done drawing (``finish_render``).
 
@@ -232,6 +237,9 @@ See below:
     :language: python
     :linenos:
     :emphasize-lines: 16, 19, 24
+
+Try running the program, and make sure you get a window with a different
+colored background.
 
 .. image:: clear_screen.png
    :width: 35%
@@ -278,8 +286,11 @@ add to get darker colors.
 Therefore, keep separate in your mind how light-based RGB color works from how
 paint and ink works.
 
-We specify how much red, green, and blue to use using numbers. No light is zero.
-Turn the light on all the way and it is 255. So ``(0, 0, 0)`` means no red,
+We specify how much red, green, and blue to use by a number range
+of 0-255. No light is zero.
+Turn the light on all the way on and it is 255.
+We need three numbers to specify three colors, so
+``(0, 0, 0)`` means no red,
 no green, no blue. Black. Here are some other examples:
 
 ===== ======= ====== ===========
@@ -333,11 +344,13 @@ handle numbers.
 You may have heard that computers think in 1's and 0's.
 That's true.
 Everything to the computer is a switch. If there is electricity, we have a 1. If
-there is no electricity we have a 0. We can store those 1's and 0's in memory.
-We call these 1's and 0's **binary numbers**.
+there is no electricity we have a 0. Every 1 and 0 is called a **bit**.
+We can store those bits in memory.
 
-How do we go from 1's and 0's to numbers we normally use? For example, a
-number like 758? We do that with a combination of 1's and 0's. Like this:
+How do we go from 1's and 0's to numbers we normally use?
+We group these 1's and 0's together to form **binary numbers**.
+These combinations of 1's and 0's work like combinations
+of the digits 0-9 we use to form other numbers. Like this:
 
 ================ ===========
 Binary - Base 2  Base 10
@@ -683,21 +696,65 @@ Future Improvements
 
 Looking forward, there's a can do to improve this code.
 
-Readability
-^^^^^^^^^^^
+In :ref:`expressions` we'll learn to use variables to store our parameter values
+which will enhance the readability of our program, while giving us more
+flexibility to update our item's positioning. In :ref:`custom-drawing-function` we'll
+create our own functions. That will allow us to create a function like ``draw_tree``.
 
-Functions
-^^^^^^^^^
+Improving Graphics Performance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Performance
-^^^^^^^^^^^
+If you create awesome graphics using these commands, you might find
+later when creating a game that drawing graphics in this manner is
+very slow. Computers redraw the screen about
+60 times every second. Complex drawings can have hundreds or thousands of points
+of data to draw. Multiply that by 60, and it is quite a bit for even fast computers
+to handle.
 
+To speed graphics, computers have separate processors to handle the display.
+To use those separate processors we need to draw in two steps.
+First, the computer will collect a batch of points, colors, and drawing
+information together. Then it will send all of that information to the
+graphics processors. If you've experienced a long pause between
+levels when playing a game, this is what's happening.
+
+After that anytime it wants to draw a tree, house,
+or rainbow unicorn, it tells the graphics card simply 'draw the unicorn'
+rather than resend all the individual drawing commands over and over.
+
+As we progress through the class, if you find your drawing commands
+to get too slow, keep this in mind. The Arcade library supports
+batch drawing with sprites and shape lists. We'll cover how do do
+this is future chapters.
 
 Review
 ------
 
 For a program showing all the drawing primitives, see the example
 `Drawing Primitives`_. Also, see the API documentation's `Quick Index`_.
+
+
+Review Questions
+^^^^^^^^^^^^^^^^
+
+#. In Python, a library of code is called what?
+#. What do we call a line of code in Python which includes the function name, parentheses,
+   numbers, text and everything else required perform an operation?
+#. What function is used to open a window? Just list the function name, don't include
+   the library or parameters.
+#. What function name sets the background colors?
+#. What function name must happen before you start drawing?
+#. What function name happens after drawing?
+#. Colors are specified using three numbers that represent what?
+#. If a color is turned all the way OFF, what number is used?
+#. If a color is turned all the way ON, what number is used?
+#. A bit can hold what numbers?
+#. A byte is made up of how many bits?
+#. A byte can hold how many different combinations of numbers?
+
+
+Lab 2: Draw a Picture
+^^^^^^^^^^^^^^^^^^^^^
 
 What's next? Try :ref:`lab-02`.
 

@@ -570,8 +570,8 @@ https://repl.it/community/classrooms/174286
 All problems beginning with ``01`` can be done with the knowledge from this
 chapter.
 
-Lab 1
-^^^^^
+Lab 1: First Program
+^^^^^^^^^^^^^^^^^^^^
 
 Use the computer that you've set up in :ref:`chapter-setup` and the set of files
 you cloned in :ref:`version-control` to create your first program
