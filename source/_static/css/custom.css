@@ -110,9 +110,11 @@ code, .rst-content tt, .rst-content code {
     color: black;
 }
 
-img.right-image {
+.section > a > img.right-image {
    float: right;
    margin-left: 8px;
+   margin-bottom: 4px;
+   margin-top: 10px;
 }
 
 .rst-content .section a > img.video-image-h1 {

@@ -3,6 +3,10 @@
 Variables and Expressions
 =========================
 
+.. image:: expressions.svg
+    :width: 30%
+    :class: right-image
+
 We've learned how to call functions to draw shapes like circles,
 but what if we could expand that?
 What if we could create our own instructions for drawing trees, houses,
