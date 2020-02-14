@@ -3,9 +3,35 @@
 What is a Programming Language?
 ===============================
 
+.. image:: binary_code.svg
+    :width: 30%
+    :class: right-image
+
 We've gotten started writing our first programs using the Python computer language.
 But what *is* a computer language? What other languages are there?
 How do they work?
+
+This section will briefly dive into how computers work. We won't spend more than
+a chapter on this subject because you don't *need* to understand any of this to
+get started programming. Once you become a more advanced programmer, that's no
+longer true.
+If you want to get the best performance, if you want to debug complex
+problems, if you work on building a platform for your servers to run on, you
+need to understand what happens "under the hood."
+
+Remember in the last chapter
+how RGB values were specified from 0-255? The reason for that choice comes
+from how the computer is built. Understanding how computers work, helps us
+understand why 255 is a special number.
+
+Learning to drive
+a car is a good analogy. You don't need to understand how an engine works
+to drive a car, but it helps if you want performance, reliability, and to
+know if you are getting a good deal from the repair shop.
+In this chapter we'll introduce a few concepts to get started.
+
+Central Processing Unit
+-----------------------
 
 Computers have a chip called the Central Processing Unit (CPU_).
 The CPU functions
@@ -36,8 +62,14 @@ Some numbers represent data, such as text, photos, and movies.
 
 .. _CPU: https://en.wikipedia.org/wiki/Central_processing_unit
 
-Machine Code
-^^^^^^^^^^^^
+Computer Languages
+------------------
+
+Computer languages are divided into three broad categories. First generation,
+second generation, and third generation languages.
+
+First Generation Languages - Machine Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the early days of computing, programmers entered sequences of
 numbers that represented commands for the CPU.
@@ -74,11 +106,13 @@ There's something better. Assembly Language.
 .. _machine code: https://en.wikipedia.org/wiki/Machine_code
 .. _Altair 8800: https://en.wikipedia.org/wiki/Altair_8800
 
-Assembly Language
-^^^^^^^^^^^^^^^^^
+Second Generation Languages - Assembly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to make things
-easier, a computer scientist named Kathleen Booth came up with something called `assembly language`_.
+easier, a computer scientist named
+`Kathleen Booth <https://en.wikipedia.org/wiki/Kathleen_Booth>`_
+came up with something called `assembly language`_.
 Assembly language is a `Second Generation Language`_ (2GL). Assembly language
 looks like this:
 
@@ -179,11 +213,11 @@ issues. Kind of like having a human interpreter that says, "You don't *really*
 want to say that."
 
 Using a runtime environment is hard to explain in human terms. It is a hybrid
-of the two system. You need source code. You need a compiler. Instead of the compiler
-making machine code, it makes for for a **virtual machine**.
+of the two systems. You need source code. You need a compiler. Instead of the compiler
+making machine code for the CPU, it makes machine code for for a **virtual machine**.
 
-What is so great about Python?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Python as a Computer Language
+-----------------------------
 
 Python is a great language to start programming in.
 Python is a Top-5 language in popularity according to the
@@ -209,10 +243,10 @@ Python 2.7 vs. Python 3.7
 
 There are two main versions of Python. When Python moved to version 3,
 there were changes that didn't work with all the currently written Python 2
-programs. So both Python 2 and Python 3 were being developed simultaneously.
-Some people don't want to move to Python 3 at all.
+programs. So both Python 2 and Python 3 were being developed simultaneously
+for a while.
 
-We use Python 3. Why are you going to care?
+Why are you going to care?
 
 * If you search up examples you will find both Python 2 and Python 3 examples.
 * Systems such as the Mac and Linux have Python 2 installed by default.
@@ -242,9 +276,33 @@ hassle to make sure they use Python 3.
 Review
 ------
 
+In this chapter we learned about what a CPU is, and that computer instructions
+are simply numbers fed into the CPU.
+We learned about first, second, and third generation computer languages.
+Second and third generation languages have programmers write source code, that
+is saved into source files. Those files are used by either a compiler or an
+interpreter to turn the source code into machine language.
+
+Some languages
+compile code to a set of instructions for a virtual machine, and than virtual
+machine can run on multiple different types of systems.
+
+The language we are using for this class is called Python, it is one of the top five
+computer languages in use today.
+
 Review Questions
 ----------------
 
 #. What do we call the main "brain" of the computer where all the processing happens?
 #. Instructions for a CPU are made up of a long sequence of what?
 #. What is the name of the native language for CPUs?
+#. If machine language is a first-generation language, what is the second-generation
+   language?
+#. What do we call the file that programmers type commands into?
+#. What is the name of the program that turns assembly language into machine
+   language?
+#. Third-generation languages usually fall into what three categories?
+#. What is the difference between a compiler and an interpreter?
+#. What generation of language is Python?
+#. What are some of the most popular languages in use today, according to the
+   TIOBE Index?

@@ -112,6 +112,7 @@ code, .rst-content tt, .rst-content code {
 
 img.right-image {
    float: right;
+   margin-left: 8px;
 }
 
 .rst-content .section a > img.video-image-h1 {

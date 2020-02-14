@@ -3,15 +3,15 @@
 Lab 2: Draw a Picture
 =====================
 
-Your assignment: Draw a pretty picture.
+Your assignment: Draw a picture.
 
 The goal:
 
-* Practice looking up API documentation
-* Practice calling functions
-* Practice working with RGB colors
-* Practice commenting and formatting code properly
-* Practice working with graphics coordinates
+* Practice looking up API documentation - useful for using any code library
+* Practice calling functions - a basic building block of all computer programs
+* Practice working with RGB colors - used in graphics, web design, and even LED lighting
+* Practice commenting and formatting code properly - required to make code maintainable
+* Practice working with graphics coordinates - also used in document layout and web design
 
 Requirements
 ------------
@@ -21,42 +21,37 @@ To get full credit:
 * Use the same project and repository that you used for Lab 01.
   If you forked your repository from mine, you should already have a folder
   for lab 2. Use that folder, and the ``lab_02.py`` file inside. Otherwise create one.
-* You must use multiple colors.
-* You must have a coherent picture.
-  I am not interested in abstract art with random shapes.
-* You must use multiple types of graphic functions
-  (e.g. circles, rectangles, lines, etc.)
-* Use blank lines in the code to break up sections. For example, when drawing
-  a tree, put a blank line ahead of, and after.
+* Use several different colors.
+* Make a coherent picture.
+  Don't make abstract art with random shapes, because that doesn't require a full
+  application of what we've learned to a real use-case.
+* Use multiple types of graphic functions. Include
+  circles, ellipses, rectangles, lines, polygons and more in your drawing.
+  It is certainly
+  possible to make great art with just squares, but the point of the lab is to
+  practice using multiple functions.
+* Use a single blank line in your code to break up logical sections.
+  For example, when drawing
+  a tree, put a blank line ahead of, and after. See the example code below.
 * Use comments effectively. For example, when drawing a tree, put a comment at
   the start of those drawing commands that says ``# Draw a tree``. Remember
   to put one space after the ``#`` sign.
 * Put spaces after commas for proper "style."
+* Use PyCharm to inspect your code for warnings. Fix warnings that you encounter.
 
 Tips
 ----
 
-To select new colors use:
+To select new colors use: https://www.google.com/search?q=color+picker
 
-https://www.google.com/search?q=color+picker
-
-Copy the values for Red, Green, and Blue.
-Do not worry about colors for hue, Saturation, or Brilliance.
-
-Please use comments and blank lines to make it easy to follow your program.
-If you have 5 lines that draw a robot, group them together with blank lines
-above and below. Then add a comment at the top telling the reader what you
-are drawing. Refer to the example code at the end of this lab description
-to get an idea of how it should be done.
+Copy the values for Red, Green, and Blue from the color picker.
+Do not worry about colors for hue, saturation, or brilliance.
 
 Keep in mind the order of code. Shapes drawn first will be at the "back."
 Shapes drawn later will be drawn on top of the other shapes.
 
 Also, remember you can look up the available commands, called the "API" at:
-
 https://arcade.academy
-
-Here is an example image and program:
 
 Example Lab
 -----------
@@ -139,10 +134,21 @@ Here are some images from prior years:
     });
     </script>
 
-To flip through the images, click the prev/next buttons above the image. The
-prev/next buttons below navigate between the different labs.
-
 Turn In
 -------
 
 Refer back to :ref:`git-quick-ref` for a reminder on how to turn in this lab.
+You need to do a:
+
+* ``git add *``
+* ``git commit -m "Lab 02"``
+* ``git push``
+* Find the lab on ``github.com``
+* Copy the URL
+* Go to the class website and turn in the lab.
+
+Remember, if there are errors on the lab that you want to correct and get full
+credit for, you can. Once corrected, go through all the steps above. You must
+resubmit the lab to the class website (not just upload to git) otherwise I don't
+get notified to look at the lab again. You have 7 days (to the hour and minute)
+to submit the lab again.
