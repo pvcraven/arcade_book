@@ -3,41 +3,50 @@
 What is a Programming Language?
 ===============================
 
-What is a programming language?
-This wouldn't be much of a programming course if you left without
-even knowing what a programming language was! So let's get that out of the way.
+We've gotten started writing our first programs using the Python computer language.
+But what *is* a computer language? What other languages are there?
+How do they work?
+
+Computers have a chip called the Central Processing Unit (CPU_).
+The CPU functions
+as the main "brain" of the
+computer. For example, right now you might have a CPU called an
+Intel i7 or an AMD-FX in
+your computer. Your phone might have the Qualcomm Snapdragon 855
+as its CPU. A dishwasher could have a ARM Cortex M3.
+Desktop CPUs emphasize speed, phone CPUs emphasize low power
+consumption, and dishwasher CPUs emphasize low cost.
 
 .. note:: The CPU is the "brain" of the computer.
 
-Computers have a chip called the Central Processing Unit (CPU_) that functions
-as the main "brain" of the
-computer. For example, right now you might have an Intel i7 or an AMD-FX CPU in
-your computer.
 
 .. figure:: Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg
     :width: 300px
 
     Intel i7 CPU (`Wikipedia Commons: CPU <https://commons.wikimedia.org/wiki/File:Intel_CPU_Core_i7_2600K_Sandy_Bridge_top.jpg>`_)
 
-The CPU gets its instructions by reading a set of numbers. For example
-the number "04" might be an instruction to add two other numbers together.
+The CPU knows what to do by reading in a sequence of instructions.
+Each instruction the computer reads is a number. For example
+the number "4" might be an instruction to add two other numbers together.
 
-Everything stored on the computer is in the form of numbers.
-Some numbers computers store are for data (text, photos, movies),
-and some are computer instructions.
+*Everything* stored on the computer is saved as a long sequence
+of numbers.
+Some numbers are instructions.
+Some numbers represent data, such as text, photos, and movies.
 
 .. _CPU: https://en.wikipedia.org/wiki/Central_processing_unit
 
 Machine Code
 ^^^^^^^^^^^^
 
-In the early days of computing, programmers punched
-in numbers that represented commands for the CPU.
-Then the programmers punched in the data.
+In the early days of computing, programmers entered sequences of
+numbers that represented commands for the CPU.
+Programmers also entered sets of numbers as data for the computer
+to process.
 
 .. note:: Machine code is the native language of any computer.
 
-We call these numbers that are instructions `machine code`_.
+We call these numbers that are CPU instructions `machine code`_.
 All machine code is made of numbers, but not all numbers are machine code.
 Some of the numbers might be data to hold text or images.
 Machine code is also called a `First Generation Language`_ (1GL).
@@ -69,7 +78,7 @@ Assembly Language
 ^^^^^^^^^^^^^^^^^
 
 In order to make things
-easier, computer scientists came up with something called `assembly language`_.
+easier, a computer scientist named Kathleen Booth came up with something called `assembly language`_.
 Assembly language is a `Second Generation Language`_ (2GL). Assembly language
 looks like this:
 
@@ -230,3 +239,12 @@ In the case of the Mac and Linux, it will be important to use Python 3 and
 not Python 2. Since Python 2 is installed by default, it can be a bit of a
 hassle to make sure they use Python 3.
 
+Review
+------
+
+Review Questions
+----------------
+
+#. What do we call the main "brain" of the computer where all the processing happens?
+#. Instructions for a CPU are made up of a long sequence of what?
+#. What is the name of the native language for CPUs?
