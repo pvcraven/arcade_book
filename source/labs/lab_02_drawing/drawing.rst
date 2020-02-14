@@ -3,8 +3,15 @@
 Lab 2: Draw a Picture
 =====================
 
-Your assignment: Draw a pretty picture. The goal of this lab is to get practice
-using functions to draw, and introduce computer graphics.
+Your assignment: Draw a pretty picture.
+
+The goal:
+
+* Practice looking up API documentation
+* Practice calling functions
+* Practice working with RGB colors
+* Practice commenting and formatting code properly
+* Practice working with graphics coordinates
 
 Requirements
 ------------
@@ -39,27 +46,29 @@ Do not worry about colors for hue, Saturation, or Brilliance.
 Please use comments and blank lines to make it easy to follow your program.
 If you have 5 lines that draw a robot, group them together with blank lines
 above and below. Then add a comment at the top telling the reader what you
-are drawing.
+are drawing. Refer to the example code at the end of this lab description
+to get an idea of how it should be done.
 
 Keep in mind the order of code. Shapes drawn first will be at the "back."
 Shapes drawn later will be drawn on top of the other shapes.
 
-Looking for ideas? At the page below, each time you refresh the page I show
-various images created by students from prior years:
-
-http://programarcadegames.com/
-
 Also, remember you can look up the available commands, called the "API" at:
 
-http://arcade.academy
+https://arcade.academy
 
-Also, here is an example program that shows you what I'm looking for:
+Here is an example image and program:
+
+Example Lab
+-----------
 
 .. image:: final_program.png
 
 .. literalinclude:: final_program.py
     :language: python
     :linenos:
+
+Other Examples
+--------------
 
 Here are some images from prior years:
 
@@ -96,6 +105,16 @@ Here are some images from prior years:
         <img data-src="../../_static/lab_02_images/024.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/025.png" src="" alt="">
         <img data-src="../../_static/lab_02_images/026.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/027.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/028.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/029.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/030.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/031.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/032.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/034.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/035.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/036.png" src="" alt="">
+        <img data-src="../../_static/lab_02_images/037.png" src="" alt="">
     </div>
 
     <!-- Include slider JS file -->
