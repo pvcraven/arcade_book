@@ -13,7 +13,7 @@ How do they work?
 
 This section will briefly dive into how computers work. We won't spend more than
 a chapter on this subject because you don't *need* to understand any of this to
-get started programming. Once you become a more advanced programmer, that's no
+get *started* programming. But once you become a more advanced programmer, that's no
 longer true.
 If you want to get the best performance, if you want to debug complex
 problems, if you work on building a platform for your servers to run on, you
@@ -62,6 +62,21 @@ Some numbers represent data, such as text, photos, and movies.
 
 .. _CPU: https://en.wikipedia.org/wiki/Central_processing_unit
 
+Graphics Processing Unit
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+In addition to a CPU, computers often have
+a `Graphics Processing Unit <https://en.wikipedia.org/wiki/Graphics_processing_unit>`_ (GPU).
+The GPU is a processor whose primary purpose is to run graphics displays. In fact, high-end
+computer graphic cards can have not just one processor, but 2,500 processors!
+We call each processor a 'core', and a GPU is often made of many cores.
+The more processors we have,
+the more calculations we can run at the same time.
+
+GPUs aren't just used for graphics anymore. They are also very useful for any type of
+task with simple calculations that can be broken into many parts. Physics simulations,
+artificial intelligence, and data analytics can often make use of a computer's GPU.
+
 Computer Languages
 ------------------
 
@@ -85,9 +100,11 @@ Machine code is also called a `First Generation Language`_ (1GL).
 
 Below is an image of the `Altair 8800`_, the first personal computer that regular
 people could buy. Notice that it is missing a monitor and a keyboard! The first
-computers loaded the instructions by flipping switches. A pattern of switches
-represented a machine instruction. So you'd flip lots of switches, then hit
-the "Run" switch. And the lights would blink.
+computers loaded instructions by flipping switches. A pattern of switches
+represented a machine instruction. So you'd flip switches, hit store,
+flip more switches, hit store, and keep at it until all instructions and
+data were entered. When you were finally done you would hit
+the "Run" button. And the lights would blink.
 
 .. figure:: Altair_8800.jpg
     :width: 400px
@@ -139,9 +156,9 @@ number of the machine language instruction.
 
 .. note:: A compiler turns human-readable code into machine code.
 
-After I compile the source code into compiled code,
-I can run the compiled code. I can give the compiled
-code to someone else and they can run it. They do not need the source code
+After the programmer compiles the source code into machine code,
+the programmer can run the compiled code. The compiled code can be given
+to someone else and they can run it. They do not need the source code
 or the compiler.
 
 Assembly language is an improvement over machine language.
@@ -214,7 +231,7 @@ want to say that."
 
 Using a runtime environment is hard to explain in human terms. It is a hybrid
 of the two systems. You need source code. You need a compiler. Instead of the compiler
-making machine code for the CPU, it makes machine code for for a **virtual machine**.
+making machine code for the CPU, it makes machine code for a **virtual machine**.
 
 Python as a Computer Language
 -----------------------------
@@ -222,7 +239,7 @@ Python as a Computer Language
 Python is a great language to start programming in.
 Python is a Top-5 language in popularity according to the
 `TIOBE Index <http://www.tiobe.com/tiobe-index/>`_.
-While may be less popular
+While it may be slightly less popular
 than Java, it is easier to read and learn. Less work is required to
 do graphics. And everything you learn in Python you can also apply when you
 learn `C#`_ or Java_.
@@ -232,26 +249,29 @@ learn `C#`_ or Java_.
 .. _C#: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 
 Python a great language for people interested in
-`automating boring things <https://automatetheboringstuff.com/>`_.
+`automating boring things <https://automatetheboringstuff.com/>`_, because you
+can program repetitive tasks to happen automatically.
 Python is also extremely popular in data analytics. Typically researchers will
-use the add-ons
+use the add-on libraries like
 `Pandas <https://pandas.pydata.org/>`_ and
 `Jupyter Notebooks <http://jupyter.org/>`_.
 
-Python 2.7 vs. Python 3.7
+Python 2.x vs. Python 3.x
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are two main versions of Python. When Python moved to version 3,
 there were changes that didn't work with all the currently written Python 2
-programs. So both Python 2 and Python 3 were being developed simultaneously
+programs.
+It was too much work to suddenly rewrite thousands of Python 2 programs.
+So both Python 2 and Python 3 were being developed simultaneously
 for a while.
 
-Why are you going to care?
+We are using Python 3. Why does Python 2 matter to us?
 
-* If you search up examples you will find both Python 2 and Python 3 examples.
+* If you search up examples on the web, you might find incompatible Python 2 examples.
 * Systems such as the Mac and Linux have Python 2 installed by default.
 
-If you see a Python example on the web that has a print statement that looks
+If you see a Python example on the web that has a ``print`` statement that looks
 like:
 
 .. code-block:: python
@@ -284,7 +304,7 @@ is saved into source files. Those files are used by either a compiler or an
 interpreter to turn the source code into machine language.
 
 Some languages
-compile code to a set of instructions for a virtual machine, and than virtual
+compile code to a set of instructions for a virtual machine, and the virtual
 machine can run on multiple different types of systems.
 
 The language we are using for this class is called Python, it is one of the top five
@@ -296,6 +316,8 @@ Review Questions
 #. What do we call the main "brain" of the computer where all the processing happens?
 #. Instructions for a CPU are made up of a long sequence of what?
 #. What is the name of the native language for CPUs?
+#. What is the difference between a CPU and a GPU?
+#. Commands with a GPU can be processed by hundreds or thousands of what?
 #. If machine language is a first-generation language, what is the second-generation
    language?
 #. What do we call the file that programmers type commands into?
