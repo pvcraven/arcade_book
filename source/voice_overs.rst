@@ -83,6 +83,9 @@ journey on learning to program.
   * Adjust sound levels so that the db meter on audacity stays a bit below -6 db.
   * Record in an environment with minimal echo and background noise.
 
+.. image:: images/level.png
+   :width: 50%
+
 * Read your sections for voice-over.
 
   * Start with an short introduction. Something like "Hi, I'm Mary. I'm using my
