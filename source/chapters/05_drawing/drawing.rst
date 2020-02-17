@@ -188,7 +188,7 @@ click here for the entire `Arcade API`_ or go straight to the documenation
 for open_window_. Any decent library will have API
 documentation, and
 `example code <https://arcade.academy/examples/index.html>`_
-to learn how to use the library.
+to show how to use the library.
 
 .. _Arcade API: http://arcade.academy/quick_index.html
 
@@ -238,7 +238,7 @@ See below:
     :linenos:
     :emphasize-lines: 16, 19, 24
 
-Try running the program, and make sure you get a window with a different
+Try running the program. If everything is correct, you should get a window with a
 colored background.
 
 .. image:: clear_screen.png
@@ -515,7 +515,7 @@ Now look at what it draws to understand the relation between the rectangle and e
 .. image:: ellipse_example.png
    :width: 35%
 
-With the ``draw_rectangle_filled`` function we can make a tree out of a tall
+With the ``draw_ellipse_filled`` function we can make a tree out of a tall
 ellipse for the top:
 
 .. code-block:: python
@@ -703,7 +703,7 @@ may save time later.
 Future Improvements
 -------------------
 
-Looking forward, there's a can do to improve this code.
+Looking forward, there's a lot we can do to improve this code.
 
 In :ref:`expressions` we'll learn to use variables to store our parameter values
 which will enhance the readability of our program, while giving us more
@@ -727,7 +727,7 @@ information together. Then it will send all of that information to the
 graphic processors. If you've experienced a long pause between
 levels when playing a game, this is what's happening.
 
-After the graphics information is send to the graphic processors
+After the graphics information is sent to the graphic processors,
 anytime our program wants to draw a tree, house,
 or rainbow unicorn, it tells the graphic processors simply 'draw the unicorn'
 rather than resend all the individual drawing commands.
