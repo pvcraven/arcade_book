@@ -351,19 +351,22 @@ Oh, and a common mistake is to mix the ``+`` and ``+=`` operator.
     # Probably not what the programmer intended.
     x += x + 1
 
-
-
 Using Expressions In Function Calls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We can use expressions even in the calls that we make. For example, what if we want
+Expressions are not limited to assignment statements.
+We can use expressions as parameters in function calls.
+This can be useful when you need a quick calculation.
+For example, what if we want
 to draw a circle in the center of the screen?
 
-We could do something like:
+By creating variables for the height and width of the
+screen, we can set the screen size, and also do a quick
+calculation to find the screen center.
 
 .. code-block:: python
     :linenos:
-    :emphasize-lines: 12-15
+    :emphasize-lines: 3-4, 12-15
 
     import arcade
 
@@ -384,24 +387,29 @@ We could do something like:
     arcade.finish_render()
     arcade.run()
 
+The great thing about this is that the variables which control the screen size
+can be changed, and the circle will automatically be re-centered. Had we simply
+coded (400, 300) as the center, we'd need to go and change that number as well.
+Perhaps not a big deal with a small program, but as our programs get larger is
+saves a lot of time.
+
 Order of Operations
 ^^^^^^^^^^^^^^^^^^^
 
-Python will evaluate expressions using the same order of operations that
-are expected in standard mathematical expressions. For example this
-equation does not correctly calculate the average:
+Python will evaluate expressions using the same order of operations math uses.
+For example this expression does not correctly calculate the average:
 
 .. code-block:: python
 
     average = 90 + 86 + 71 + 100 + 98 / 5
 
-The first operation done is 98/5. The computer calculates:
+The first operation done is 98/5. The computer calculates this equation:
 
 .. math::
 
    90+86+71+100+\frac{98}{5}
 
-rather than the desired:
+rather than the desired desired equation where the division happens last:
 
 .. math::
 
@@ -416,8 +424,8 @@ By using parentheses this problem can be fixed:
 Printing Variables
 ------------------
 
-How can you print variables and text together? Say you've got a variable ``result`` and
-you want to nicely print it. Based on what we learned so far, you can do this:
+How can you print variables and text together? Say you've got a variable ``answer`` and
+you want to print it. Based on what we've learned so far, you can do this:
 
 .. code-block:: python
 
@@ -478,6 +486,16 @@ Ok, so I think I know how to print variables. Until I try this:
 
     answer = 42
     print("The answer is " + answer + ".")
+
+This gives a brand new error we haven't seen yet, a ``TypeError``.
+
+.. code-block:: text
+
+    Traceback (most recent call last):
+      File "C:/arcade_book/test.py", line 2, in <module>
+        print("The answer is " + answer + ".")
+    TypeError: can only concatenate str (not "int") to str
+
 
 The computer doesn't know how to put text and numbers together. If you add two
 *numbers*
