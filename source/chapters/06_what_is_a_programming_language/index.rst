@@ -242,7 +242,7 @@ Python is a Top-5 language in popularity according to the
 While it may be slightly less popular
 than Java, it is easier to read and learn. Less work is required to
 do graphics. And everything you learn in Python you can also apply when you
-learn `C#`_ or Java_.
+learn other popular languages, such as `C#`_ or Java_.
 
 .. _Java: https://en.wikipedia.org/wiki/Java_(programming_language)
 .. _TIOBE Index: http://www.tiobe.com/tiobe-index/

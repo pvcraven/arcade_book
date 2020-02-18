@@ -7,11 +7,11 @@ Variables and Expressions
     :width: 30%
     :class: right-image
 
-We've learned how to call functions to draw shapes like circles,
-but what if we could expand that?
-What if we could create our own instructions for drawing trees, houses,
-spaceships, and rainbows?
-What if our program could look like:
+We've learned how to import a library and call functions.
+The next step is to make our code more flexible.
+What if we could take that drawing code we wrote and put it into
+our own functions? Then we could just call a function anytime
+we wanted a tree, house, or rainbow. Our code could look like this:
 
 .. code-block:: python
 
@@ -25,20 +25,13 @@ we need to learn three things:
 
 * How to use variables (this chapter)
 * How to write expressions (this chapter)
-* How to create out own functions (next two chapters)
+* How to create our own functions (next two chapters)
 
 How to Use Variables
 --------------------
 
 A **variable** is a value the computer stores in memory that can change. That
-is, it *varies*.
-
-You've used variables in mathematics before. With computer science, we use
-them a lot. But in math class, you were given the equation and you had to
-solve for the variable. In computer science class, *we* come up with the
-equation and the *computer* solves the variable.
-
-Here is a quick example:
+is, it *varies*. Here is a quick example:
 
 .. code-block:: python
 
@@ -48,7 +41,7 @@ Here is a quick example:
 
 What will the code above print? It will print ``5``.
 
-The ``=`` is called an **assignment operator**. It assigns the value on the
+``x`` is a variable. The ``=`` is called an **assignment operator**. It assigns the value on the
 right side to the variable on the left.
 
 Here's another example. Very similar, but something is different. What will
@@ -72,13 +65,13 @@ which is short for "string of characters." We don't call it "text."
 
 The following code won't print at all:
 
-::
+.. code-block:: text
 
     print(Have a great day!)
 
 The code above will fail because the computer will think that it should evaluate
 ``Have a great day!`` as a mathematical expression. It isn't, so the computer
-gets confused and generates an error. That's why we need quotes:
+gets confused and generates a syntax error. That's why we need quotes:
 
 .. code-block:: python
 
@@ -91,17 +84,24 @@ Variable names and function names follow the same rules. There are
 names you *should* use, names you *shouldn't* use, and
 names you *can't* use.
 
-Good variable name examples:
+Variable names *should* be descriptive, all lower case, and if you have
+multiple words, separate the words by an underscore.
+Variable names *can't* start with a number nor have a space or any symbol
+other than an underscore.
+Here are some examples:
+
+Good variables:
     * ``temperature_in_celsius``
-    * ``tree_position``
+    * ``tree_position_1``
+    * ``tree_position_2``
     * ``car_speed``
     * ``number_of_children``
     * ``simpson``
 
-Legal, but bad variable names:
+Bad variable names that still work:
     * ``temperatueInCelsius`` - Uses capital letters. Keep it lower case and use underscores.
     * ``x`` - Too short, and not descriptive.
-    * ``Simpson`` - Starts with a capital letter.
+    * ``Smith`` - Starts with a capital letter.
 
 Variable names that won't work:
     * ``tree position`` - Can't use spaces
@@ -118,18 +118,28 @@ the only variables that use upper-case. For example:
     SCREEN_WIDTH = 600
     RED = (255, 0 ,0)
 
-Good variable names help make code *readable*. Note the example below that
-calculates miles-per-gallon. It isn't easy to understand.
+Good variable names help make code *readable*.
+
+For example, what does this code do? It is hard to tell. (Furthermore, if I
+have to update the numbers, I'm editing the equation which makes it more likely
+I'll accidentally change the function.)
 
 .. code-block:: python
 
-    # Calculate mpg using confusing variable names
+    m = 294 / 10.5
+    print(m)
+
+Here we use variables. A bit easier to change the values, and a bit easier to understand.
+
+.. code-block:: python
+
     m = 294
     g = 10.5
     m2 = m / g
     print(m2)
 
-But the code below that uses descriptive variable names *is* easy to understand.
+Instead of using short variable names, if we use use descriptive variable names
+and comments the code is *very* easy to understand.
 
 .. code-block:: python
 
@@ -139,15 +149,22 @@ But the code below that uses descriptive variable names *is* easy to understand.
     mpg = miles_driven / gallons_used
     print(mpg)
 
+Good variable names make code easier to understand, easier to code,
+and easier to find errors.
+
 How to Create Expressions
 -------------------------
+
+Great! We are part-way there. To manipulate data with a computer, we use
+**expressions**. An expression is simply a mathematical equation, although
+we aren't limited to numbers.
 
 Using Operators in Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Great! We are part-way there. To really be powerful, variables need to be used
-with **expressions**. An expression is simply a mathematical equation like what
-you've used in math before. Here's an example:
+Expressions use **operators**. That's just a fancy word for symbols like
+addition (``+``) and subtraction(``-``).
+Here's an example:
 
 .. code-block:: python
 
@@ -170,9 +187,9 @@ Operator   Description
 ``%``      Modulus (gives remainder of division)
 ========== =====================================
 
-There are two things that **don't** work like you'd expect. There is no
-"juxtaposition" used to multiply items. And the ``=`` is not an algebraic
-equality
+There are two things that **don't** work like mathematics. First, there is no
+"juxtaposition" used to multiply items. Second, the ``=`` is not an algebraic
+equality.
 
 Juxtaposition Doesn't Work
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,7 +227,7 @@ the right, and puts it in the variable on the left. For example:
     x = 3 + 4
 
     # This doesn't work because the only thing that can be on the left of
-    # the = is one variable.
+    # the = is a variable.
     3 + 4 = x
 
     # This works
@@ -237,9 +254,56 @@ This allows us to do some strange things we can't do in algebra!
     x = x + 1
     print(x)
 
+.. _incrementing_x:
 
-The ``=`` sign is also considered an operator. Specifically an "assignment operator."
-Here are some other "assignment" operators:
+Increasing a Variable
+^^^^^^^^^^^^^^^^^^^^^
+
+What if we want to change a value stored in a variable? We need to use
+an assignment operator.
+
+For example, take a look at this code. It prints the number ``4`` twice.
+First, we assign ``3`` to ``x``.
+Then, every time we print we add one to ``x``.
+We *aren't* changing the original value of ``x``, so we don't print ``4`` and
+then ``5``. The variable ``x`` only holds the number ``3``.
+
+.. code-block:: python
+
+    x = 3
+    print(x + 1)
+    print(x + 1)
+
+Take a look at this example. This example prints ``3``. It *does* add ``1`` to ``x``.
+But it does nothing with the result. We don't print it. Just like the prior example,
+the number in ``x`` doesn't change.
+
+.. code-block:: python
+
+    x = 3
+    x + 1
+    print(x)
+
+Now look at this example. We use the assignment operator. We store into ``x`` the result
+of ``x + 1``. This *does* increase the value stored in ``x`` and therefore we print out
+a ``4``.
+
+.. code-block:: python
+
+    x = 3
+    x = x + 1
+    print(x)
+
+.. note::
+
+   It can be confusing to learn when to use ``x + 1`` and when to use ``x = x + 1``. Remember,
+   the former does *not* change the value of ``x``.
+
+Increment/Decrement Operators
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``=`` symbol isn't the only assignment operator.
+Here are the other assignment operators:
 
 ========== =====================================
 Operator   Description
@@ -247,8 +311,13 @@ Operator   Description
 ``=``      Assignment
 ``+=``     Increment
 ``-=``     Decrement
-``*=``     Multiply/Add
+``*=``     Multiply
+``/=``     Divide
 ========== =====================================
+
+Because statements like ``x = x + 1`` are so common, we can shorten this
+using the ``+=`` assignment operator. Examine this code to see how it
+works:
 
 .. code-block:: python
 
@@ -256,42 +325,27 @@ Operator   Description
     x = 3
     print(x)
 
-    # Make x bigger by one
+    # Make x bigger by one using the regular
+    # assignment operator.
     x = x + 1
     print(x)
 
-    # Make x bigger by one, just like before
+    # Make x bigger by one, using the +=
+    # assignment operator.
     x += 1
     print(x)
 
-    # Make x smaller by five
+    # Make x smaller by five using the -=
+    # operator.
     x -= 5
     print(x)
 
-.. _incrementing_x:
 
-Increasing/Decreasing a Variable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Remember, if you want to increase or decrease a variable, you need to use an assignment operator.
 
-If you want to increase or decrease a variable, you need to use an assignment operator.
+Oh, and a common mistake is to mix the ``+`` and ``+=`` operator.
 
 .. code-block:: python
-
-    x = 3
-    print(x)
-
-    # This adds one to x, but does nothing with the result.
-    # So x does not get bigger.
-    x + 1
-    print(x)
-
-    # This adds one to x, and stores the result back in x
-    x = x + 1
-    print(x)
-
-    # This does the same thing, but uses the increment operator
-    x += 1
-    print(x)
 
     # This doubles x, and then adds one.
     # Probably not what the programmer intended.
@@ -448,5 +502,15 @@ chapter on formatted strings, but they look like:
 
 Note we start the string with an ``f`` before the quote, and the variable
 we want to print goes in curly braces.
+
+Review
+------
+
+Review Questions
+^^^^^^^^^^^^^^^^
+
+#. What do computer languages use to store changing data?
+#. What do we call the ``=`` symbol in Python?
+#. When we store text into a variable, what is another name for the text?
 
 
