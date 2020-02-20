@@ -1,6 +1,14 @@
 Introduction to Classes
 =======================
 
+We've learned to store individual values in variables.
+We just learned how to store multiple values using a list.
+We've learned how to feed variables to a function, and get
+back results.
+*Object-oriented programming* is the next step. It
+allows us to group similar data together.
+
+
 Classes and objects are very powerful programming tools. They make programming
 easier. In fact, you are already familiar with the concept of classes and
 objects. A class is a "classification" of an object. Like "person" or "image."
