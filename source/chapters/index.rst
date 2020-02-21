@@ -19,6 +19,7 @@ Chapters
    12_advanced_looping/advanced_looping
    13_lists/lists
    14_classes/classes
+   14b_class_methods/class_methods
    15_window_class/window_class
    16_user_control/user_control
    17_sounds/sounds
