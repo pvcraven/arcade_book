@@ -1,110 +1,189 @@
-Introduction to Classes
-=======================
+Object-Oriented Programming
+===========================
 
-We've learned to store individual values in variables.
-We just learned how to store multiple values using a list.
-We've learned how to feed variables to a function, and get
-back results.
-*Object-oriented programming* is the next step. It
-allows us to group similar data together.
+Throughout this course we've been using variables to store *a* value.
+We just learned how to store *multiple* values using a list.
+The next step is **object-oriented programming**. This type of programming
+has three advantages.
+One, we can group multiple variables together in a single record. Two, we can
+associate functions with that group of data. Third, we'll use
+something called **inheritance** which allows us to take a base set of code
+and extend it, without needing to rewrite it from scratch.
 
-
-Classes and objects are very powerful programming tools. They make programming
-easier. In fact, you are already familiar with the concept of classes and
-objects. A class is a "classification" of an object. Like "person" or "image."
-An object is a particular instance of a class. Like "Mary" is an instance of
-"Person."
-
-Objects have attributes, such as a person's name, height, and age. Objects
-also have methods. Methods define what an object can do, like run, jump, or sit.
-
-Why Learn About Classes?
-------------------------
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/K0PdqWAIpEY" frameborder="0" allowfullscreen></iframe>
-
-Each character in an adventure game needs data: a name, location, strength,
-are they raising their arm, what direction they are headed, etc. Plus those
-characters do things. They run, jump, hit, and talk.
-
-Without classes, our Python code to store this data might look like:
-
-.. code-block:: python
-    :linenos:
-
-    name = "Link"
-    outfit = "Green"
-    max_hit_points = 50
-    current_hit_points = 50
-
-In order to do anything with this character, we'll need to pass that data to a function:
-
-.. code-block:: python
-    :linenos:
-
-    def display_character(name, outfit, max_hit_points, current_hit_points):
-        print(name, outfit, max_hit_points, current_hit_points)
-
-Now imagine creating a program that has a set of variables like that for each
-character, monster, and item in our game. Then we need to create functions that
-work with those items. We've now waded into a quagmire of data. All of a sudden
-this doesn't sound like fun at all.
-
-But wait, it gets worse! As our game expands, we may need to add new fields to
-describe our character. In this case we've added ``max_speed``:
-
-.. code-block:: python
-    :linenos:
-
-    name = "Link"
-    outfit = "Green"
-    max_hit_points = 50
-    current_hit_points = 50
-    max_speed = 10
-
-    def display_character(name, outfit, max_hit_points, current_hit_points, max_speed):
-        print(name, outfit, max_hit_points, current_hit_points, max_speed)
-        print(name, outfit, max_hit_points, current_hit_points, max_speedA new )
-
-In example above, there is only one function. But in a large video game, we
-might have hundreds of functions that deal with the main character. Adding a
-new field to help describe what a character has and can do would require us to
-go through each one of those functions and add it to the parameter list. That
-would be a lot of work. And perhaps we need to add ``max_speed`` to different
-types of characters like monsters. There needs to be a better way. Somehow our
-program needs to package up those data fields so they can be managed easily.
-
-Defining and Creating Simple Classes
+Using Classes and Objects Group Data
 ------------------------------------
 
-.. raw:: html
+Grouping related data together using object-oriented programming
+can simplify our code.
+For example, think of an adventure game.
+Each character in an adventure game needs data, such as a name,
+what they look like, how many hit points they have, their armor,
+and how fast they can move.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UvX28buBN3U" frameborder="0" allowfullscreen></iframe>
-
-A better way to manage multiple data attributes is to *define* a structure that
-has all of the information. Then we can give that "grouping" of information a
-name, like *Character* or *Address*. This can be easily done in Python and any
-other modern language by using a *class*.
-
-For example, we can *define* a class representing a character in a game:
+Without classes, our Python code to store the information might look like
+this:
 
 .. code-block:: python
     :linenos:
 
-    class Character():
-        """ This is a class that represents the main character in a game. """
+    name = "Link"
+    outfit = "Green"
+    max_hit_points = 50
+    current_hit_points = 50
+    armor_amount = 6
+    max_speed = 10
+
+In order to do anything with this character, we'll need to pass all that data to a function.
+With so many parameters, that function gets complex and hard to manage.
+
+.. code-block:: python
+    :linenos:
+
+    def display_character(name, outfit, max_hit_points, current_hit_points, armor, max_speed):
+        print(name, outfit, max_hit_points, current_hit_points)
+
+As our game expands, we might start adding more character attributes, such
+weapons, magic, special abilities, and more. To do that we'd have
+to go through each function
+in our program that works with the player character and redo the parameters.
+
+Keeping all these data points organized becomes difficult very quickly.
+How do
+we keep a monster's hit points separated from the player's hit points?
+Because when we add monsters to the game, they'll have their own
+attributes. In fact, just about every item in an adventure game has
+attributes.
+
+There needs to be a better way. Somehow our
+program needs to package up those data fields for easy management.
+
+Defining Classes
+----------------
+
+A better way to manage multiple data attributes is to define a structure
+to hold the information. We can give that "grouping" of information a
+name, like *Character* or *Address*. This can be easily done in Python and any
+other modern language by using a **class**.
+
+Defining the Class
+^^^^^^^^^^^^^^^^^^
+
+Let's code an example using our adventure character. First, we tell the computer
+we are defining a class with the ``class`` keyword, and then we give the class a name
+that starts with a capital letter. Just like with functions and loops, we end
+the statement with a colon, and everything associated with the class will be
+indented below it:
+
+.. code-block:: python
+    :linenos:
+
+    class Character:
+
+Unlike variables, all class names should start with a capital letter.
+While you *can* use a lower-case variable, you never should. Following this
+pattern of lower-case for variables and upper-case for classes make it easy
+to tell which is which.
+
+Next, we normally put into triple-quote comments a description of the class.
+
+.. code-block:: python
+    :linenos:
+
+    class Character:
+        """
+        This is a class that represents the player character.
+        """
+
+Yes, the code will run fine without any comments. It is optional.
+However good documentation is important to maintainable
+code, even if you are the only person using the code.
+
+The cool feature about creating comments this way,
+is the text can be pulled out automatically to form a website
+for your API documentation.
+All the classes and functions in the Arcade library's API are
+created with these comments. You can see the result here:
+
+https://arcade.academy/arcade.html
+
+For each of those examples, you can click on the "source" link and quickly
+go to the source code for that function or class.
+
+Defining the Init Function
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Any time we create a new character, we need to run code that will create our
+attributes and set them to default values. In Python, this is the ``__init__``
+method.
+
+This strangely named method needs a bit of explanation.
+
+First, any function in a class is called a **method**, rather than a function. This
+helps us keep straight what is in a class, and what isn't.
+
+Second, the initialization method is a **magic method** that is called automatically.
+Yes, Python programmers actually call methods that are automatically called
+"magic."
+
+Third, to signify a method is magic, Python surrounds the method name with double
+underscores. Two underscores in the front, and two underscores in the back.
+The short-name for double-underline is **dunder**, and these
+magic methods are also known as **dunder methods**.
+
+.. code-block:: python
+    :linenos:
+
+    class Character:
+        """
+        This is a class that represents the player character.
+        """
+        def __init__(self):
+            """ This is a method that sets up the variables in the object. """
+
+The most common mistakes people make when typing this in is to use only one underscore
+before and after the ``init``, and to forget that there is a space between ``def`` and the
+first underscore.
+
+All methods in a class have at least one parameter, and the first parameter is always
+``self``. We'll explain about ``self`` in the next section.
+
+Defining Class Attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Remember back to our chapter on functions, that any variable created inside a function
+is forgotten about after the function is done running? If you want to keep anything,
+you need to return it as a value.
+
+Methods in classes follow this rule as well, with one exception. The ``self`` parameter
+refers to memory associated with each instance of the class. We can use that
+``self`` to create variables that *keep* their value for as long as the object exists.
+
+Use the ``__init__`` method and the ``self`` parameter to define these attributes.
+They must be set
+to an default value. That value is often 0, an empty string, or the special value ``None``.
+
+.. code-block:: python
+    :linenos:
+
+    class Character:
+        """
+        This is a class that represents the player character.
+        """
         def __init__(self):
             """ This is a method that sets up the variables in the object. """
             self.name = ""
-            outfit = "Green"
+            self.outfit = ""
             self.max_hit_points = 0
             self.current_hit_points = 0
-            self.max_speed = 0
             self.armor_amount = 0
+            self.max_speed = 0
 
-Here's another example, we *define* a class to hold all the fields for an address:
+In the example above, if we had failed to put ``self.`` in front,
+the computer would completely forget about the variables once the ``__init__`` function
+was done.
+
+Here's another example, we are defining a class called ``Address`` which has
+attributes for each field of a US mailing address.
 
 .. code-block:: python
     :linenos:
@@ -122,39 +201,46 @@ Here's another example, we *define* a class to hold all the fields for an addres
             self.zip = ""
 
 In the code above, ``Address`` is the class name. The variables in the class,
-such as ``name`` and ``city``, are called *attributes* or *fields*.
-(Note the similarities and differences between declaring a class and declaring
-a function.)
+such as ``name`` and ``city``, are called **attributes** or **fields**.
 
-Unlike functions and variables, class names should begin with an upper case
-letter. While it is possible to begin a class with a lower case letter, it is
-not considered good practice.
+.. sidebar:: Constructor?
 
-The ``def __init__(self):`` in a special function called a *constructor* that is
-run automatically when the class is created. We'll discuss the constructor more
-in a bit.
+    There is some debate about calling ``__init__`` a constructor. In some languages
+    a constructor is called *before* the computer sets aside memory for the object.
+    In Python the
+    ``__init__`` method is actually called *after* this happens. For our purposes,
+    the distinction is not important.
+
+The ``__init__`` is a special function that you may also hear referred to
+as a **constructor**. If you are programming in other languages, the term
+constructor is a generic term used to refer to whatever that language's
+equivalent to the ``__init__`` method is.
 
 The ``self.`` is kind of like the pronoun *my*. When inside the class
 ``Address`` we are talking about *my* name, *my* city, etc. We don't want to
-use ``self.`` outside of the class definition for ``Address``, to refer to an
-``Address`` field. Why? Because just like the pronoun "my," it means someone
+use ``self.`` outside the class. Why? Because just like the pronoun "my," it means someone
 totally different when said by a different person!
 
-To better visualize classes and how they relate, programmers often make
-diagrams. A diagram for the Address class would look like the figure below.
-See how the class name is on top with the name of each attribute listed below.
-To the right of each attribute is the data type, such as string or integer.
+Creating Objects
+----------------
 
-.. figure:: address_example_3.png
-
-    Class Diagram
-
-The class code *defines* a class but it does not actually create an *instance*
-of one. The code told the computer what fields an address has and what the
-initial default values will be. We don't actually have an address yet though.
+The class code *defines* a class but it does not actually create an **instance**
+of one. The code told the computer what fields an address has,
+but we don't actually have an address yet.
 We can define a class without creating one just like we can define a function
-without calling it. To create a class and set the fields, look at the example
-below:
+without calling it.
+
+To create an instance of the ``Address`` class, we use the following code:
+
+.. code-block:: python
+    :linenos:
+    :caption: Create an instance of the address class
+
+    # Create an address
+    home_address = Address()
+
+To set the fields:
+
 
 .. code-block:: python
     :linenos:
