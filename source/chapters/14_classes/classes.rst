@@ -530,6 +530,39 @@ is done.
 Typing Attributes
 -----------------
 
+It is possible to tell Python what *type* of data
+should be stored in a class attribute. This allows a programmer to use a tool like
+``mypy`` and catch errors earlier in the development process.
+
+In this example, we are adding a type definition to the ``name`` attribute on
+line 3. We do this by following the variable name with a colon, and adding ``str``
+which is the abbreviation for the **string** data type.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 3
+
+    class Person:
+        def __init__(self):
+            self.name: str = "A"
+
+
+    mary = Person()
+    mary.name = 22
+
+By assigning a number to the ``name`` attribute, we are storing the wrong kind
+of data. The program runs, but if we use the ``mypy`` tool, it will give us an
+error saying we've made a mistake:
+
+.. code-block:: text
+    :linenos:
+
+    test.py:7: error: Incompatible types in assignment (expression has type "int", variable has type "str")
+    Found 1 error in 1 file (checked 1 source file)
+
+Typing is great for large programs, and for programs where we want to make sure
+to catch all the errors we can before shipping to customers. If you are just learning
+how to program, this is a topic that can wait until later.
 
 Data Classes
 ------------
@@ -573,3 +606,6 @@ Starting with Python 3.8, you can write the same thing using only:
         city: str = ""
         state: str = ""
         zip_code: str = ""
+
+Static Variables
+----------------

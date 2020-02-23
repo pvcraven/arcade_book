@@ -5,3 +5,4 @@ build/
 .idea/
 venv/
 test.py
+.mypy_cache
