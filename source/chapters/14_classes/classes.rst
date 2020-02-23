@@ -6,7 +6,7 @@ We just learned how to store *multiple* values using a list.
 The next step is **object-oriented programming**. This type of programming
 has three advantages.
 One, we can group multiple variables together in a single record. Two, we can
-associate functions with that group of data. Third, we'll use
+associate functions with that group of data. Three, we'll can use
 something called **inheritance** which allows us to take a base set of code
 and extend it, without needing to rewrite it from scratch.
 
@@ -81,7 +81,7 @@ indented below it:
 
 Unlike variables, all class names should start with a capital letter.
 While you *can* use a lower-case variable, you never should. Following this
-pattern of lower-case for variables and upper-case for classes make it easy
+pattern of lower-case for variables and upper-case for classes makes it easy
 to tell which is which.
 
 Next, we normally put into triple-quote comments a description of the class.
@@ -154,10 +154,10 @@ Remember back to our chapter on functions, that any variable created inside a fu
 is forgotten about after the function is done running? If you want to keep anything,
 you need to return it as a value.
 
-Methods in classes follow this rule as well, with one exception. The ``self`` parameter
+Methods follow this rule too, with one exception. The ``self`` parameter
 refers to memory associated with each instance of the class. We can use that
 ``self`` to create variables that *keep* their value for as long as the object exists.
-We call variables these that exist as part of the class **attributes**.
+We call variables that exist as part of the class **attributes**.
 They must be set to an default value. That value is often 0, an empty string,
 or the special value ``None``.
 
@@ -305,7 +305,9 @@ points to the same address.
 Another very common mistake when working with classes is to forget to specify which
 instance of the class you want to work with. If only one address is created, it
 is natural to assume the computer will know to use that address you are talking
-about. This is not the case. See the example below:
+about. This is not the case.
+
+Take a look at this code:
 
 .. code-block:: python
     :linenos:
@@ -329,6 +331,9 @@ about. This is not the case. See the example below:
         # This doesn't set the name for the address either
         Address.name = "Dr. Smith"
 
+        # This runs, creates a new attribute but with the wrong name.
+        my_address.naem = "Dr. Smith"
+
         # This does work:
         my_address.name = "Dr. Smith"
 
@@ -341,14 +346,17 @@ the name, but we haven't.
 
 Line 18 does refer to ``Address``, but not ``my_address``. Frustratingly it
 runs without alerting us to an error, but the code isn't modifying
-``my_address``. Instead it starts treating our ``Address`` class
-as an object, which the class goes along with.
+``my_address``. Instead it sets something called a static variable,
+which we'll talk about later.
 
 Think of it this way. If you are in a room of people, saying "Age is 18" is
 confusing. Saying "Human's age is 18" is also confusing. Saying "Sally's
 age is 18" is ideal, because you are saying which instance of human you
 are referring to. You have to do this with programming, even if there is
 only one human in the room.
+
+Line 22 runs, but it creates a new attribute called ``naem`` instead of setting
+the desired attribute ``name``.
 
 Using Objects in Functions
 --------------------------
@@ -385,16 +393,19 @@ parameters for each field of the address.
 Customizing the Constructor
 ---------------------------
 
-There's a terrible problem with our class for Dog listed below. When we create
-a dog, by default the dog has no name. Dogs should have names! We should not
-allow dogs to be born and then never be given a name. Yet the code below allows
-this to happen, and that dog will never have a name.
+Take a look at this code, where we represent a dog using
+a class.
+Unfortunately, there's a terrible problem with the code. When we create
+a dog, the dog has no name. Dogs should have names!
+`Only horses in the desert can have no name <https://en.wikipedia.org/wiki/A_Horse_with_No_Name>`_.
 
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 4
 
     class Dog():
         def __init__(self):
+            """ Constructor. Called when creating an object of this type. """
             self.name = ""
 
 
@@ -404,15 +415,13 @@ this to happen, and that dog will never have a name.
 
     main()
 
-Python doesn't want this to happen. That's why Python classes have a special
-function that is called any time an instance of that class is created. By
-adding a function called a constructor, a programmer can add code that is
-automatically run each time an instance of the class is created. See the
-example constructor code below:
-
+We can modify the code in our constructor to keep this from happening.
+First, let's add a ``print`` statement to our ``__init__`` to demonstrate
+that it is really being called.
 
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 5
 
     class Dog():
         def __init__(self):
@@ -425,18 +434,98 @@ example constructor code below:
         # This creates the dog
         my_dog = Dog()
 
-The constructor starts on line 2. It must be named ``__init__``. There are
-two underscores before the init, and two underscores after.
-A common mistake is to only use one.
-
-The constructor must take in self as the first parameter just like other
-methods in a class. When the program is run, it will print:
+When the program is run, it will print this:
 
 .. code-block:: text
 
     A new dog is born!
 
-When a Dog object is created on line 8, the ``__init__`` function is automatically called and the message is printed to the screen.
+When a Dog object is created on line 10, the ``__init__`` function is "magically"
+called and the message is printed to the screen.
+
+We can add a parameter to our constructor, so that it requires us to pass in a
+name for the dog. Try running this code.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 2, 4
+
+    class Dog():
+        def __init__(self, new_name):
+            """ Constructor. Called when creating an object of this type. """
+            self.name = new_name
+            print("A new dog is born!")
+
+
+    def main():
+        # This creates the dog
+        my_dog = Dog()
+
+
+    main()
+
+You should get an error that looks like:
+
+.. code-block:: text
+
+  File "c:/my_project/test.py", line 10, in main
+    my_dog = Dog()
+  TypeError: __init__() missing 1 required positional argument: 'new_name'
+
+The computer is saying it is missing a value for the ``new_name`` parameter. It
+won't let the dog be created without a name. We can fix that up by adding a
+name when we create the dog.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 10
+
+    class Dog():
+        def __init__(self, new_name):
+            """ Constructor. Called when creating an object of this type. """
+            self.name = new_name
+            print("A new dog is born!")
+
+
+    def main():
+        # This creates the dog
+        my_dog = Dog("Fluffy")
+
+
+    main()
+
+Notice in line 4 we take the value that was passed in as a parameter and assign
+``self.name`` to have that same value. Without this line, the dog's name
+won't get set.
+
+As programmers sometimes get tired of making up variable names, it is completely normal
+to see code like this:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 2, 4
+
+    class Dog():
+        def __init__(self, name):
+            """ Constructor. Called when creating an object of this type. """
+            self.name = name
+            print("A new dog is born!")
+
+
+    def main():
+        # This creates the dog
+        my_dog = Dog("Fluffy")
+
+
+    main()
+
+Though it may seem strange at first, we have two variables at work, not one.
+The first variable is
+``name``, and that variable is assigned as a parameter when we call the ``Dog``
+constructor. It goes away as soon as the ``Dog`` constructor is done, and is
+forgotten about. The second variable is ``self.name``, and that variable
+is complete different than ``name``. Its value will stay after the constructor
+is done.
 
 Typing Attributes
 -----------------
@@ -445,3 +534,42 @@ Typing Attributes
 Data Classes
 ------------
 
+It is common to write code like this:
+
+.. code-block:: python
+    :linenos:
+
+    class Address:
+        def __init__(self,
+                     name: str = "",
+                     line1: str = "",
+                     line2: str = "",
+                     city: str = "",
+                     state: str = "",
+                     zip_code: str = ""
+                     ):
+            self.name: str = name
+            self.line1: str = line1
+            self.line2: str = line2
+            self.city: str = city
+            self.state: str = state
+            self.zip_code: str = zip_code
+
+
+It seems like the code is twice as long as it needs to be.
+If your ``__init__`` method is only going to take in data
+fields and assign attribute values, you can use a **dataclass**.
+
+Starting with Python 3.8, you can write the same thing using only:
+
+.. code-block:: python
+    :linenos:
+
+    @dataclass
+    class Address:
+        name: str = ""
+        line1: str = ""
+        line2: str = ""
+        city: str = ""
+        state: str = ""
+        zip_code: str = ""
