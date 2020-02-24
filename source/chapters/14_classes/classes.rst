@@ -6,7 +6,7 @@ We just learned how to store *multiple* values using a list.
 The next step is **object-oriented programming**. This type of programming
 has three advantages.
 One, we can group multiple variables together in a single record. Two, we can
-associate functions with that group of data. Three, we'll can use
+associate functions with that group of data. Three, we can use
 something called **inheritance** which allows us to take a base set of code
 and extend it, without needing to rewrite it from scratch.
 
@@ -55,7 +55,7 @@ attributes. In fact, just about every item in an adventure game has
 attributes.
 
 There needs to be a better way. Somehow our
-program needs to package up those data fields for easy management.
+program needs to package up all those data fields for easy management.
 
 Defining Classes
 ----------------
@@ -159,8 +159,9 @@ you need to return it as a value.
 Methods follow this rule too, with one exception. The ``self`` parameter
 refers to memory associated with each instance of the class. We can use that
 ``self`` to create variables that *keep* their value for as long as the object exists.
-We call variables that exist as part of the class **attributes**.
-They must be set to an default value. That value is often 0, an empty string,
+We call variables that exist as part of the class either attributes,
+fields, or instance variables. The terms mean the same thing.
+Attributes must be set to an default value. That value is often 0, an empty string,
 or the special value ``None``.
 
 .. code-block:: python
@@ -200,8 +201,8 @@ attributes for each field of a US mailing address.
             self.state = ""
             self.zip = ""
 
-In the code above, ``Address`` is the class name. The variables in the class,
-such as ``name`` and ``city``, are called **attributes** or **fields**.
+In the code above, ``Address`` is the class name. The variables in the class
+are the attributes.
 
 .. sidebar:: Constructor?
 
@@ -211,7 +212,7 @@ such as ``name`` and ``city``, are called **attributes** or **fields**.
     ``__init__`` method is actually called *after* this happens. For our purposes,
     the distinction is not important.
 
-The ``__init__`` is a special function that you may also hear referred to
+The ``__init__`` is a special method that you may also hear referred to
 as a **constructor**. If you are programming in other languages, the term
 constructor is a generic term used to refer to whatever that language's
 equivalent to the ``__init__`` method is.
@@ -235,8 +236,9 @@ To create an instance of the ``Address`` class, we use the following code:
 .. code-block:: python
     :linenos:
 
-    # Create an address
-    home_address = Address()
+    def main():
+        # Create an address
+        home_address = Address()
 
 We need a variable that will point to our address. In this case, we've called it
 ``home_address``. Then we follow that with parentheses, which will "magically"
@@ -247,23 +249,24 @@ The ``home_address`` variable points to an **object**. An object is an instance 
 a class. It is the actual address. As another example, "Human" is a class, while
 "Samantha" and "Pete" and instances of the class.
 
-You can set the attributes with the class using the dot operator. First, use
-a variable that points to our object, then a period, followed by the attribute
-name.
+You can set the object's attributes using the dot operator. First, use
+the variable that points to our object, immediately follow that with a period,
+then the attribute name.
 
 .. code-block:: python
     :linenos:
 
-    # Create an address
-    home_address = Address()
+    def main():
+        # Create an address
+        home_address = Address()
 
-    # Set the fields in the address
-    home_address.name = "John Smith"
-    home_address.line1 = "701 N. C Street"
-    home_address.line2 = "Carver Science Building"
-    home_address.city = "Indianola"
-    home_address.state = "IA"
-    home_address.zip = "50125"
+        # Set the fields in the address
+        home_address.name = "John Smith"
+        home_address.line1 = "701 N. C Street"
+        home_address.line2 = "Carver Science Building"
+        home_address.city = "Indianola"
+        home_address.state = "IA"
+        home_address.zip = "50125"
 
 A second variable can be created that points to a completely different instance
 of the ``Address`` class:
@@ -271,19 +274,19 @@ of the ``Address`` class:
 .. code-block:: python
     :linenos:
 
-    # Create another address
-    vacation_home_address = Address()
+        # Create another address
+        vacation_home_address = Address()
 
-    # Set the fields in the address
-    vacation_home_address.name = "John Smith"
-    vacation_home_address.line1 = "1122 Main Street"
-    vacation_home_address.line2 = ""
-    vacation_home_address.city = "Panama City Beach"
-    vacation_home_address.state = "FL"
-    vacation_home_address.zip = "32407"
+        # Set the fields in the address
+        vacation_home_address.name = "John Smith"
+        vacation_home_address.line1 = "1122 Main Street"
+        vacation_home_address.line2 = ""
+        vacation_home_address.city = "Panama City Beach"
+        vacation_home_address.state = "FL"
+        vacation_home_address.zip = "32407"
 
-    print("The client's main home is in " + home_address.city)
-    print("His vacation home is in " + vacation_home_address.city)
+        print("The client's main home is in " + home_address.city)
+        print("His vacation home is in " + vacation_home_address.city)
 
 Attributes are not limited to being simple strings and numbers!
 If you have a class that represents a graph, you can store all the data
@@ -295,7 +298,7 @@ represents a magical hat.
 Common Mistakes Creating Objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first common mistake when creating objects is to forget the parentheses:
+The first common mistake when creating an object is to forget the parentheses:
 
 .. code-block:: python
     :linenos:
@@ -364,8 +367,8 @@ age is 18" is ideal, because you are saying which instance of human you
 are referring to. You have to do this with programming, even if there is
 only one human in the room.
 
-Line 22 runs, but it creates a new attribute called ``naem`` instead of setting
-the desired attribute ``name``.
+Another mistake is on line 22. That line also runs fine, but it creates a new attribute
+called ``naem`` instead of setting the desired attribute ``name``.
 
 Using Objects in Functions
 --------------------------
@@ -394,6 +397,8 @@ parameters for each field of the address.
 
 
     def main():
+        # ... code for creating home_address and vacation_home_address
+        # goes here.
         print_address(home_address)
         print()
         print_address(vacation_home_address)
@@ -427,8 +432,8 @@ a dog, the dog has no name. Dogs should have names!
     main()
 
 We can modify the code in our constructor to keep this from happening.
-First, let's add a ``print`` statement to our ``__init__`` to demonstrate
-that it is really being called.
+First, let's add a ``print`` statement to our ``__init__`` to just
+to demonstrate that it is really being called.
 
 .. code-block:: python
     :linenos:
@@ -561,7 +566,7 @@ which is the abbreviation for the **string** data type.
     mary = Person()
     mary.name = 22
 
-By assigning a number to the ``name`` attribute, we are storing the wrong kind
+By assigning a number to the ``name`` attribute on line 7, we are storing the wrong kind
 of data. The program runs, but if we use the ``mypy`` tool, it will give us an
 error saying we've made a mistake:
 
@@ -572,13 +577,19 @@ error saying we've made a mistake:
     Found 1 error in 1 file (checked 1 source file)
 
 Typing is great for large programs, and for programs where we want to make sure
-to catch all the errors we can before shipping to customers. If you are just learning
-how to program, this is a topic that can wait until later.
+to catch all the errors we can before shipping to customers.
+
+As we are just learning programming, it can be distracting to try adding typing
+to our programs at this stage. But we will be both looking and using, other people's code
+which does use typing. Therefore
+it is important to know what typing is, even if we don't need to use it ourselves until
+later.
 
 Data Classes
 ------------
 
-When creating a class and a constructor to define a set of that just defines fields,
+When creating a class and a constructor to define a set of fields,
+we end up with code that looks like this:
 
 .. code-block:: python
     :linenos:
@@ -600,11 +611,12 @@ When creating a class and a constructor to define a set of that just defines fie
             self.zip_code: str = zip_code
 
 
-It seems like the code is twice as long as it needs to be.
+This code is repetitive, as we state the fields twice.
 If your ``__init__`` method is only going to take in data
-fields and assign attribute values, you can use a **dataclass**.
+fields and assign attribute values, you can simplify your code by
+using a **dataclass**.
 
-Starting with Python 3.8, you can write the same thing using only:
+Starting with Python 3.8, you can write the same thing using only this code:
 
 .. code-block:: python
     :linenos:
@@ -618,6 +630,8 @@ Starting with Python 3.8, you can write the same thing using only:
         state: str = ""
         zip_code: str = ""
 
+This makes the code a lot easier to both write, and to read.
+
 Static Variables
 ----------------
 
@@ -625,8 +639,8 @@ Class attributes are also called instance variables because they can be
 different for each instance of the class. If you have five instances of
 the ``Dog`` class, each instance will have its own name.
 
-In a few rare cases, we want to share data between all instances of the ``Cat``
-class. In this example, we have a ``population`` variable. This variable is
+In a few rare cases, we want to share data between *all* instances of a
+class. In this example with a ``Cat`` class, we have a ``population`` variable. This variable is
 *not* different for each cat.
 
 .. code-block:: python
@@ -645,14 +659,78 @@ class. In this example, we have a ``population`` variable. This variable is
         cat2 = Cat("Pepper")
         cat3 = Cat("Pouncy")
 
-        print("The cap population is:", Cat.population)
+        print("The cat population is:", Cat.population)
 
     main()
+
+In this case we use ``Cat.population`` to keep track of our cat population, and the
+program will print out the correct count of 3.
 
 Variables that *don't* change for each instance of a class, are called
 **class variables** or **static variables**. The terms mean the same thing and
 can be used interchangeably.
 
+You refer to a static variable by using the class name ``Cat`` rather than any of the
+instance names like ``cat1``.
+
+Static variables aren't used that often. The only reason we are introducing them here
+is that it is not unusual for students to accidentally use a static variable instead of
+an instance variable. In fact, Python makes it a bit too easy to 'blend' the two concepts
+together.
+
+For example, we can also print a static variable not just by using the class name, but also
+by using the instance name:
+
+.. code-block:: python
+    :linenos:
+
+    print("The cat population is:", Cat.population)
+    print("The cat population is:", cat1.population)
+
+When we see a variable ``Cat.population``, we immediately know it is static. How? All class
+names start with a capital letter, so ``Cat`` is a class. The only attributes that we can
+refer to with a class, rather than an instance, are static variables. So ``population`` must
+be static. If we use ``cat1.population``, any programmer reading that code might assume
+it is an instance variable rather than a static variable, so that makes debugging really hard.
+To reduce confusion, always refer to static variables using the class name.
+
+In this example, I set population to 4, and each print statement says population is 4. This is
+confusing because I set one variable and the others change. If I just use ``Cat.population`` to
+refer to the population, then I remove that confusion.
+
+.. code-block:: python
+    :linenos:
+
+    Cat.population = 4
+    print("The cat population is:", Cat.population)
+    print("The cat population is:", cat2.population)
+    print("The cat population is:", cat1.population)
+
+Here's where it gets really wild. As we just saw, I can print a static variable
+by referring to it with an instance, rather than by the class name. I shouldn't,
+but I can.
+
+What if, instead of printing, I assign a value that way?
+
+.. code-block:: python
+    :linenos:
+
+    Cat.population = 4
+    cat3.population = 5
+    print("The cat population is:", Cat.population)
+    print("The cat population is:", cat1.population)
+    print("The cat population is:", cat2.population)
+    print("The cat population is:", cat3.population)
+
+In this case ``Cat.population``, ``cat1.population``, and ``cat2.population`` all refer to the
+same static variable. But once I *assign* a value to ``cat3.population`` it creates a brand-new
+*instance* variable. So all the other cats use the static population value, while ``cat3`` uses
+a new instance variable with the same exact name as the static variable. The static variable
+is **shadowed** by the instance variable. Therefore when we print ``cat3.population`` we
+get a 5.
+
+For our purposes, we won't need to use static variables, we only introduce them so that
+you can better understand some confusing errors people occasionally run into.
 
 Review
 ------
@@ -664,17 +742,20 @@ Functions defined in a class are called methods. A special "magic" method
 called when an object is created is the ``__init__`` method, which
 is used to set up instance variables and assign them their initial values.
 
+Inside the class we refer to instance variables by putting ``self.`` in front
+of them, such as ``self.name``. Outside the class, we need to use a variable
+that stores the class, such as ``customer.name``.
+
 Using classes helps simplify our code. We can use classes to represent:
 
 * Characters in a video game, with attributes for health, speed, and armor.
 * Graphs, with attributes for heading, size, and data.
-* A customer order, with list as an attribute for each item in their order.
+* A customer order, with a list as an attribute for each item in the order.
 
-Data classes can be used to make it easier to define a class that just holds
-data methods.
-Typing can be used to make sure we don't put the wrong type of data in an
+**Data classes** can be used to make it easier to define a class with a lot of attributes.
+**Typing** can be used to make sure we don't put the wrong type of data in an
 attribute.
-Static variables are attributes that don't change from object
+**Static variables** are attributes that don't change from object
 to object.
 
 Review Questions
