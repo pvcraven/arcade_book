@@ -285,6 +285,13 @@ of the ``Address`` class:
     print("The client's main home is in " + home_address.city)
     print("His vacation home is in " + vacation_home_address.city)
 
+Attributes are not limited to being simple strings and numbers!
+If you have a class that represents a graph, you can store all the data
+points in an attribute that is a list.
+Attributes can even be other objects. An object that represents a player
+character in an adventure could have an attribute with another object that
+represents a magical hat.
+
 Common Mistakes Creating Objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -650,6 +657,26 @@ can be used interchangeably.
 Review
 ------
 
+In this chapter we learned how to bundle together several related data items
+into a **class**. We call these class attributes, instance variables, or fields.
+Each instance of a class is an **object**.
+Functions defined in a class are called methods. A special "magic" method
+called when an object is created is the ``__init__`` method, which
+is used to set up instance variables and assign them their initial values.
+
+Using classes helps simplify our code. We can use classes to represent:
+
+* Characters in a video game, with attributes for health, speed, and armor.
+* Graphs, with attributes for heading, size, and data.
+* A customer order, with list as an attribute for each item in their order.
+
+Data classes can be used to make it easier to define a class that just holds
+data methods.
+Typing can be used to make sure we don't put the wrong type of data in an
+attribute.
+Static variables are attributes that don't change from object
+to object.
+
 Review Questions
 ^^^^^^^^^^^^^^^^
 
@@ -676,9 +703,12 @@ Review Questions
 #. What are static variables?
 
 
-Online Coding Problems
-^^^^^^^^^^^^^^^^^^^^^^
 
-Lab 1: First Program
-^^^^^^^^^^^^^^^^^^^^
+Lab 6: Text Adventure
+^^^^^^^^^^^^^^^^^^^^^
 
+In :ref:`lab-06`, you'll use a class to represent a room in an adventure. You'll
+use attributes to store the room description, and which rooms are north, south,
+east and west of it. You'll use a list to store all the rooms in your adventure.
+Then you'll create code that can be used whether your adventure had five rooms,
+or five hundred.
