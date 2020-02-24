@@ -1,6 +1,10 @@
 Classes Constructors and Attributes
 ===================================
 
+.. image:: construction.svg
+    :width: 35%
+    :class: right-image
+
 Throughout this course we've been using variables to store *a* value.
 We just learned how to store *multiple* values using a list.
 The next step is **object-oriented programming**. This type of programming
@@ -12,6 +16,10 @@ and extend it, without needing to rewrite it from scratch.
 
 Using Classes and Objects to Group Data
 ---------------------------------------
+
+.. image:: character.svg
+    :width: 15%
+    :class: right-image
 
 Grouping related data together using object-oriented programming
 can simplify our code.
@@ -152,6 +160,11 @@ All methods in a class have at least one parameter, and the first parameter is a
 Defining Class Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: healthbar.png
+    :width: 25%
+    :class: right-image
+
+
 Remember back to our chapter on functions, that any variable created inside a function
 is forgotten about after the function is done running? If you want to keep anything,
 you need to return it as a value.
@@ -224,6 +237,10 @@ totally different when said by a different person!
 
 Creating Objects
 ----------------
+
+.. image:: address.svg
+    :width: 25%
+    :class: right-image
 
 The class code *defines* a class but it does not actually create an **instance**
 of one. The code told the computer what fields an address has,
@@ -409,6 +426,10 @@ parameters for each field of the address.
 Customizing the Constructor
 ---------------------------
 
+.. image:: dog.svg
+    :width: 20%
+    :class: right-image
+
 Take a look at this code, where we represent a dog using
 a class.
 Unfortunately, there's a terrible problem with the code. When we create
@@ -421,7 +442,7 @@ a dog, the dog has no name. Dogs should have names!
 
     class Dog():
         def __init__(self):
-            """ Constructor. Called when creating an object of this type. """
+            """ Constructor """
             self.name = ""
 
 
@@ -634,6 +655,10 @@ This makes the code a lot easier to both write, and to read.
 
 Static Variables
 ----------------
+
+.. image:: cat.svg
+    :width: 20%
+    :class: right-image
 
 Class attributes are also called instance variables because they can be
 different for each instance of the class. If you have five instances of
