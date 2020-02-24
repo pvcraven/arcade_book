@@ -1,5 +1,5 @@
-Classes Constructors and Attributes
-===================================
+Classes, Constructors, and Attributes
+=====================================
 
 .. image:: construction.svg
     :width: 35%
@@ -712,10 +712,11 @@ by using the instance name:
     print("The cat population is:", Cat.population)
     print("The cat population is:", cat1.population)
 
-When we see a variable ``Cat.population``, we immediately know it is static. How? All class
+When we are reading code and come across a variable like ``Cat.population``,
+we immediately know it is static. How? All class
 names start with a capital letter, so ``Cat`` is a class. The only attributes that we can
 refer to with a class, rather than an instance, are static variables. So ``population`` must
-be static. If we use ``cat1.population``, any programmer reading that code might assume
+be static. If we use ``cat1.population``, a programmer reading that code might mistakenly assume
 it is an instance variable rather than a static variable, so that makes debugging really hard.
 To reduce confusion, always refer to static variables using the class name.
 
@@ -752,7 +753,7 @@ same static variable. But once I *assign* a value to ``cat3.population`` it crea
 *instance* variable. So all the other cats use the static population value, while ``cat3`` uses
 a new instance variable with the same exact name as the static variable. The static variable
 is **shadowed** by the instance variable. Therefore when we print ``cat3.population`` we
-get a 5.
+get a 5. That type of bug is *very* hard to find.
 
 For our purposes, we won't need to use static variables, we only introduce them so that
 you can better understand some confusing errors people occasionally run into.
@@ -761,15 +762,15 @@ Review
 ------
 
 In this chapter we learned how to bundle together several related data items
-into a **class**. We call these class attributes, instance variables, or fields.
+into a **class**. We call these **class attributes**, **instance variables**, or **fields**.
 Each instance of a class is an **object**.
-Functions defined in a class are called methods. A special "magic" method
+Functions defined in a class are called **methods**. A special **magic method**
 called when an object is created is the ``__init__`` method, which
 is used to set up instance variables and assign them their initial values.
 
 Inside the class we refer to instance variables by putting ``self.`` in front
 of them, such as ``self.name``. Outside the class, we need to use a variable
-that stores the class, such as ``customer.name``.
+that refers to the class, such as ``customer.name``.
 
 Using classes helps simplify our code. We can use classes to represent:
 
@@ -813,8 +814,6 @@ Review Questions
 Lab 6: Text Adventure
 ^^^^^^^^^^^^^^^^^^^^^
 
-In :ref:`lab-06`, you'll use a class to represent a room in an adventure. You'll
+In :ref:`lab-06`, you'll use a class to represent a room in an text adventure. You'll
 use attributes to store the room description, and which rooms are north, south,
 east and west of it. You'll use a list to store all the rooms in your adventure.
-Then you'll create code that can be used whether your adventure had five rooms,
-or five hundred.
