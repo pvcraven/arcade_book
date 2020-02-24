@@ -63,7 +63,9 @@ Defining Classes
 A better way to manage multiple data attributes is to define a structure
 to hold the information. We can give that "grouping" of information a
 name, like *Character* or *Address*. This can be easily done in Python and any
-other modern language by using a **class**.
+other modern language by using a **class**. Each data item we group into
+the class is called a **field**, **attribute**, or **instance variable**. These
+terms may be used interchangeably, as they mean the same thing.
 
 Defining the Class
 ^^^^^^^^^^^^^^^^^^
@@ -187,7 +189,7 @@ attributes for each field of a US mailing address.
 .. code-block:: python
     :linenos:
 
-    class Address():
+    class Address:
         """ Hold all the fields for a mailing address. """
         def __init__(self):
             """ Set up the address fields. """
@@ -370,8 +372,10 @@ parameters for each field of the address.
     :linenos:
     :caption: Passing in an object as a function parameter
 
-    # Print an address to the screen
+
     def print_address(address):
+        """ Print an address to the screen """
+
         print(address.name)
         # If there is a line1 in the address, print it
         if len(address.line1) > 0:
@@ -567,7 +571,7 @@ how to program, this is a topic that can wait until later.
 Data Classes
 ------------
 
-It is common to write code like this:
+When creating a class and a constructor to define a set of that just defines fields,
 
 .. code-block:: python
     :linenos:
@@ -609,3 +613,72 @@ Starting with Python 3.8, you can write the same thing using only:
 
 Static Variables
 ----------------
+
+Class attributes are also called instance variables because they can be
+different for each instance of the class. If you have five instances of
+the ``Dog`` class, each instance will have its own name.
+
+In a few rare cases, we want to share data between all instances of the ``Cat``
+class. In this example, we have a ``population`` variable. This variable is
+*not* different for each cat.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 2, 6, 13
+
+    class Cat:
+        population = 0
+
+        def __init__(self, name):
+            self.name = name
+            Cat.population += 1
+
+    def main():
+        cat1 = Cat("Pat")
+        cat2 = Cat("Pepper")
+        cat3 = Cat("Pouncy")
+
+        print("The cap population is:", Cat.population)
+
+    main()
+
+Variables that *don't* change for each instance of a class, are called
+**class variables** or **static variables**. The terms mean the same thing and
+can be used interchangeably.
+
+
+Review
+------
+
+Review Questions
+^^^^^^^^^^^^^^^^
+
+#. What are the three main advantages of object-oriented programming?
+#. What keyword is used to define a new class?
+#. All class names should start with an upper-case or lower-case letter?
+#. Where do the comments for a class go? What kind of comments do you use?
+   Why is there a standard?
+#. What is the difference between a function and a method?
+#. What three different terms can be used to refer to data that is tied to a
+   a class?
+#. What is a magic method?
+#. What is a dunder method?
+#. All class methods should have start with the same parameter. What is that
+   parameter?
+#. What is the name of the method in a class where we define our attributes?
+#. When defining a class attribute, what needs to go right before it?
+#. What is a constructor?
+#. What is the difference between a class and an object?
+#. What are the common mistakes when creating instances (objects) of a class?
+#. How can we make sure our attributes are assigned when the object is created?
+#. What is the point of adding "typing" to a class?
+#. What is a data class?
+#. What are static variables?
+
+
+Online Coding Problems
+^^^^^^^^^^^^^^^^^^^^^^
+
+Lab 1: First Program
+^^^^^^^^^^^^^^^^^^^^
+
