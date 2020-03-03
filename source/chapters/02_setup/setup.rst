@@ -3,14 +3,19 @@
 Setting Up Your System
 ======================
 
-Before you begin, you need to install a few things on the computer.
-Using a school computer? You may have these already installed. Yay!
-Still, read through this part. Make sure you know how the computer
-is setup up.
+.. image:: computer_screen_checkbox.svg
+    :width: 35%
+    :class: right-image
 
-Getting a system set up and ready to program can be a bit frustrating. **Don't give up.** Once you've got a system
-set up for programming you don't need to think about it again. You can concentrate on the programming part.
-You may get stuck during the setup, so don't hesitate to reach out and get help.
+Before you begin programming, we need to install a few things.
+Using a school computer? Yay! You may have these already installed.
+Still, read through this part, as you might need to set up your own
+system in the future.
+
+Getting a system set up and ready to program can be a bit frustrating.
+**Don't give up.** Once you've got a system set up for programming you
+don't need to think about it again. You can concentrate on the programming part.
+It is normal to get stuck during setup, so don't hesitate to reach out and get help.
 
 
 Your development computer will need:
@@ -20,11 +25,11 @@ Your development computer will need:
   You can use the community edition for free, or if you have an email
   address that ends in ``.edu`` get can get a free `student license`_ for
   the professional version.)
-* A version control system to track and turn in your work. (Git/SourceTree_/BitBucket_)
+* A version control system to track and turn in your work. (Git_)
 * A minor configuration tweak so we can see file extensions.
 
 .. _SourceTree: https://www.sourcetreeapp.com/
-
+.. _Git: https://git-scm.com/downloads
 
 Let's go through these four items in detail.
 
@@ -37,10 +42,12 @@ Let's go through these four items in detail.
 Setup the Programming Environment
 ---------------------------------
 
-To get your computer ready for programming, we need to install Python, some Python libraries, and an editor.
-
 .. image:: python-logo.svg
     :width: 300px
+    :class: right-image
+
+To get your computer ready for programming we need to install the Python computer language,
+and an editor you can type your programs into.
 
 .. _installing-python:
 

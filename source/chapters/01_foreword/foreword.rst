@@ -1,26 +1,36 @@
-Foreword - Why Learn Programming?
-=================================
+Foreword
+========
+
+.. image:: screenshot.png
+    :width: 55%
+
+This book aims to teach programming through creating 2D video games.
+We cover all the standard topics in a normal first-semester class, and video
+games provide great visual feedback for your
+code. Furthermore, programming can be *fun*.
 
 Programming is consistently one of the top paid skills that you can learn.
-Try searching for "Top Paid Majors". Engineering,
-computer science, and actuarial science have consistently ranked at the top.
-Computer science is also one of the most
-flexible majors you can get, because it is in demand in almost any industry
-and any location.
+It is also one of the most
+flexible majors you can get. You can take your programming skills to almost
+any industry, and any location.
 
 Even if programming isn't going to be your main job, as a skill it can
 still enhance your career. Need an interactive website? Need to crunch
-sales numbers? What about automatically saving the data and graphing the
-results of your latest experiment? You might need to run 100 different
-simulations of a mathematical model. Or maybe you want your home to
-automatically e-mail you if the garage door is left open more than
-twenty minutes.
+sales numbers? What about automatically saving experiment data and graphing
+results? Maybe you want your home to
+automatically e-mail you if the garage door is left open?
+Learning programming, be able to do this and more.
 
-Programming Is Fun
-------------------
+Programming Is For Everyone
+---------------------------
 
-With programming you get to *create*. People paint and perform music to create
-and express themselves.
+.. image:: steve_jobs.webp
+    :width: 35%
+    :class: right-image
+
+With programming you get to *create*. Making beautiful graphics and designing
+programs is an art. Good design requires people from all walks of life, and that's
+one of the reasons Apple was able to gain a foothold in the computing industry:
 
 .. epigraph::
 
@@ -32,7 +42,8 @@ and express themselves.
 
     *Steve Jobs in PBS's "Triumph of the Nerds: The Rise of Accidental Empires" (1996)*
 
-Not only do you get to be an artist when you program, but you get to design.
+The artistry behind a program isn't just how it looks, but how it is *designed*.
+How the interface between the human and the computer functions:
 
 .. epigraph::
 
@@ -43,33 +54,33 @@ Not only do you get to be an artist when you program, but you get to design.
 
     *Steve Jobs in Wired's "The Next Insanely Great Thing" (1996)*
 
+Programming requires all kinds of people. Successful programs require idea people,
+business people, project people, artists, subject-matter experts, testers, writers,
+and more. You may not have ever thought of yourself as a programmer, but you
+*can* be.
+
 Programming Pays Well
 ---------------------
 
+.. image:: money.svg
+    :width: 35%
+    :class: right-image
+
 Search up "top paid majors" and you'll see computer science is usually one
-of the top paid degrees you can get.
+of the best paying degrees you can get.
 
-The National Association of Colleges and Employers (NACE) says that Computer Science
-is the second best paid degree (as of Jan 2018) that you can get. Engineering
-is number one.
+In 2019 the National Association of Colleges and Employers (NACE) says that
+`software developers have the second highest entry-level salaries <https://www.naceweb.org/job-market/compensation/stem-majors-projected-to-be-class-of-2019s-top-paid/>`_,
+with only some engineers getting paid more.
+Payscale agrees, says
+`computer science is second only to petroleum engineering <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors>`_.
+Learning to program is worth your time.
 
-`Payscale breaks the engineering degrees out, and puts computer science at #14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors>`_.
-The other top-paid majors, such as engineering and mathematics, all use
-programming extensively.
-
-In addition we'll teach the topics of a typical first-semester programming class.
-But the most important thing is for you to find out if programming is
-worth your time.
-
-.. note::
-    In :ref:`how-to-draw` we show how to create your first graphics.
-    These first chapters we show you how to get your computer set up.
-
-What Other Students Have Made
------------------------------
+What Can You Create By The End Of The Course?
+---------------------------------------------
 
 Here are some videos of games students have created in prior semesters.
-Students who didn't know any programming, were able to create these games
+Students who didn't know any programming were able to create these games
 by the time they finished the semester.
 
 .. raw:: html
