@@ -50,7 +50,7 @@ With so many parameters, that function gets complex and hard to manage.
     def display_character(name, outfit, max_hit_points, current_hit_points, armor, max_speed):
         print(name, outfit, max_hit_points, current_hit_points)
 
-As our game expands, we might start adding more character attributes, such
+As our game expands, we might start adding more character attributes, such as
 weapons, magic, special abilities, and more. To do that we'd have
 to go through each function
 in our program that works with the player character and redo the parameters.
@@ -132,8 +132,9 @@ First, any function in a class is called a **method**, rather than a function. T
 helps us keep straight what is in a class, and what isn't.
 
 Second, the initialization method is a **magic method** that is called automatically.
-Yes, Python programmers actually call methods that are automatically called
-"magic."
+Yes, Python programmers actually call methods that are automatically invoked
+"magic methods."
+
 
 Third, to signify a method is magic, Python surrounds the method name with double
 underscores. Two underscores in the front, and two underscores in the back.
