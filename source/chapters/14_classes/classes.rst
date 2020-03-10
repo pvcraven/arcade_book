@@ -175,7 +175,7 @@ refers to memory associated with each instance of the class. We can use that
 ``self`` to create variables that *keep* their value for as long as the object exists.
 We call variables that exist as part of the class either attributes,
 fields, or instance variables. The terms mean the same thing.
-Attributes must be set to an default value. That value is often 0, an empty string,
+Attributes must be set to a default value. That value is often 0, an empty string,
 or the special value ``None``.
 
 .. code-block:: python
@@ -265,7 +265,7 @@ call the ``__init__`` method where we set up the fields/attributes for the class
 In this case, ``Address`` is a class. It defines what an address looks like.
 The ``home_address`` variable points to an **object**. An object is an instance of
 a class. It is the actual address. As another example, "Human" is a class, while
-"Samantha" and "Pete" and instances of the class.
+"Samantha" and "Pete" are instances of the class.
 
 You can set the object's attributes using the dot operator. First, use
 the variable that points to our object, immediately follow that with a period,
@@ -454,7 +454,7 @@ a dog, the dog has no name. Dogs should have names!
     main()
 
 We can modify the code in our constructor to keep this from happening.
-First, let's add a ``print`` statement to our ``__init__`` to just
+First, let's add a ``print`` statement to our ``__init__`` just
 to demonstrate that it is really being called.
 
 .. code-block:: python
