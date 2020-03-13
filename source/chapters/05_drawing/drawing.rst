@@ -3,6 +3,11 @@
 How to Draw with Your Computer
 ==============================
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: https://youtu.be/wYofTQaIIlQ
+    :alt: Video link
+
 We've setup our system, learned to use git, and run our first program
 using the ``print`` function. Now we are ready to start using
 functions to make graphics!
@@ -23,6 +28,11 @@ like robotics, data analytics, and web site programming.
 
 Creating a New Program
 ----------------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=40s?autoplay=1
+    :alt: Video link
 
 Open up PyCharm. It should start up with the same set of project files
 we used last chapter. We'll use
@@ -48,6 +58,11 @@ following:
 
 Comment Your Code
 -----------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=85s
+    :alt: Video link
 
 Before we start writing long programs, we need to learn about **code comments**.
 When typing in computer code, sometimes we want to be able to write things
@@ -80,6 +95,11 @@ Therefore, there was nothing for the computer to do. Read on.
 
 Import the Arcade Library
 -------------------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=152s
+    :alt: Video link
 
 .. image:: library.svg
     :width: 30%
@@ -121,6 +141,11 @@ library, but we haven't *done* anything with it yet. That's our next step.
 
 How to Open a Window for Drawing
 --------------------------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=239s
+    :alt: Video link
 
 The first Arcade function we are going to learn is open_window_. This
 command opens a window with a given size and title.
@@ -184,7 +209,7 @@ is really 602x632 if you count the title bar and borders.
 How do we know ``open_window`` is the name of the function to call? How did
 we know what parameters to use? The names of the functions, the order of the
 parameters, is the **Application Program Interface** or "API" for short. You can
-click here for the entire `Arcade API`_ or go straight to the documenation
+click here for the entire `Arcade API`_ or go straight to the documentation
 for open_window_. Any decent library will have API
 documentation, and
 `example code <https://arcade.academy/examples/index.html>`_
@@ -224,6 +249,11 @@ You should get a window that looks something like this:
 Clearing the screen
 -------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=384s
+    :alt: Video link
+
 Right now we have default white as our background.
 How do we get a different color? Use the ``set_background_color`` command.
 
@@ -247,6 +277,12 @@ colored background.
 Specifying Colors
 -----------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=439s
+    :alt: Video link
+
+
 Wait, where did ``arcade.csscolor.SKY_BLUE`` come from? How do I get to choose
 the color I want? There are three ways to specify colors:
 
@@ -266,6 +302,12 @@ will also help with web development skills.
 
 RGB Values
 ^^^^^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=495s
+    :alt: Video link
+
 
 If the color you want isn't in the chart, or you just don't want to use
 a chart, you can specify colors by "RGB" value. RGB stands for Red, Green, and
@@ -336,6 +378,11 @@ transparent and you'll see nothing of the square.
 What is a Byte?
 ^^^^^^^^^^^^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=650s
+    :alt: Video link
+
 Notice how the color values go between 0 and 255? That's strange. Why 255? Why
 not 100? Why not 1000?
 This requires an explanation of a very important concept of how computers
@@ -401,6 +448,11 @@ for blue, each color has a value range from 0 - 255.
 The Coordinate System
 ---------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=826s
+    :alt: Video link
+
 We've learned to specify the color of what we want to draw, the next thing
 we need to learn is how to position it.
 In your math classes, you've probably learned about the Cartesian coordinate
@@ -423,11 +475,21 @@ things to keep in mind:
 Drawing
 -------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=870s
+    :alt: Video link
+
 Arcade has "drawing primitives" that allow you to create rectangles, circles,
 arcs, lines, and text.
 
 Drawing Rectangles
 ^^^^^^^^^^^^^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=878s
+    :alt: Video link
 
 Our screen currently has a sky-blue color. Let's draw a rectangle in the bottom
 half of the screen and make that a grass color.
@@ -481,6 +543,11 @@ have an optional parameter to tilt the rectangle to a desired angle.
 Drawing Circles
 ^^^^^^^^^^^^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=966s
+    :alt: Video link
+
 We can draw a circle with draw_circle_filled_. This code will draw a circle
 with a center of 100, 350 and a radius of 30 pixels.
 
@@ -496,6 +563,11 @@ with a center of 100, 350 and a radius of 30 pixels.
 
 Drawing Ellipses
 ^^^^^^^^^^^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=987s
+    :alt: Video link
 
 If you don't want a perfect circle, you can draw a ellipse. Ellipses are drawn
 like rectangles. The "rectangle" forms the bounds of the ellipse that's drawn
@@ -530,6 +602,11 @@ ellipse for the top:
 Drawing Arcs
 ^^^^^^^^^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1066s
+    :alt: Video link
+
 You can draw an arc with draw_arc_filled_. Drawing an arc works just like an
 ellipse, with the additional parameters for a start angle and an end angle.
 
@@ -548,6 +625,11 @@ ellipse, with the additional parameters for a start angle and an end angle.
 
 Triangles
 ^^^^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1107s
+    :alt: Video link
 
 Triangles are drawn by specifying the coordinates of each point with draw_triangle_filled_.
 That requires
@@ -571,6 +653,11 @@ out on paper to get it straight. This can be used to make a pine tree.
 Polygons
 ^^^^^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1140
+    :alt: Video link
+
 Polygons are drawn with a list of points and the draw_polygon_filled_ function.
 In this example we use five points to create a tree-top.
 
@@ -593,6 +680,11 @@ In this example we use five points to create a tree-top.
 
 Lines
 ^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1176
+    :alt: Video link
 
 Line drawing with the draw_line_ function involves specifying a start point and and end point.
 Optionally, you can specify the line width. You can also use
@@ -626,6 +718,11 @@ In our sample image, we'll use several lines to draw rays coming out of a sun:
 Text
 ^^^^
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1202
+    :alt: Video link
+
 Text can be drawn with the draw_text_ command.
 Just like with the ``print`` function, text must be enclosed in quotes.
 The text to draw is the first parameter. The x, y location of the text is
@@ -657,10 +754,13 @@ Here's the full code for our example drawing program.
     :language: python
     :linenos:
 
-
-
 Specifying Parameters By Name
 -----------------------------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1227
+    :alt: Video link
 
 It can be confusing to track a lot of parameters given to a function.
 For example, here's a call to draw_arc_outline_.
@@ -703,6 +803,11 @@ may save time later.
 Future Improvements
 -------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1269
+    :alt: Video link
+
 Looking forward, there's a lot we can do to improve this code.
 
 In :ref:`expressions` we'll learn to use variables to store our parameter values
@@ -712,6 +817,11 @@ create our own functions. That will allow us to create a function like ``draw_tr
 
 Improving Graphics Performance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1295
+    :alt: Video link
 
 If you create awesome graphics using these commands, you might find
 later when creating a game that drawing graphics in this manner is
@@ -740,6 +850,11 @@ this in future chapters.
 Real-World Applications
 -----------------------
 
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1375
+    :alt: Video link
+
 We aren't limited to the Arcade library and its API.
 Here are a few other APIs to give you an idea of what's out there.
 
@@ -755,6 +870,11 @@ Here are a few other APIs to give you an idea of what's out there.
 
 Review
 ------
+
+.. image:: ../../images/video.svg
+    :class: video-image-h2
+    :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1417
+    :alt: Video link
 
 In this chapter we learned how to import a Python module. We learned to call
 functions from an imported module. While we are learning how to do graphics

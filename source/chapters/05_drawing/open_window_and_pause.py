@@ -9,7 +9,7 @@ import arcade
 # Open up a window.
 # From the "arcade" library, use a function called "open_window"
 # Set the window title to "Drawing Example"
-# Set the and dimensions (width and height)
+# Set the dimensions (width and height)
 arcade.open_window(600, 600, "Drawing Example")
 
 # Keep the window up until someone closes it.
