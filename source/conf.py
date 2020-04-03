@@ -103,8 +103,6 @@ release = '2020'
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
 language = None
-locale_dirs = ['locale/']   # path is example but recommended.
-gettext_compact = False     # optional.
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -330,7 +328,7 @@ texinfo_documents = [
 epub_title = 'Learn to Program with Arcade'
 epub_author = 'Paul Vincent Craven'
 epub_publisher = 'Paul Vincent Craven'
-epub_copyright = 'Copyright 2019 by Paul Vincent Craven'
+epub_copyright = 'Copyright 2020 by Paul Vincent Craven'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project

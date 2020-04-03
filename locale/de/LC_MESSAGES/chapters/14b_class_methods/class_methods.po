@@ -1,0 +1,1098 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2020\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:2
+msgid "Class Methods"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:4
+msgid ""
+"In addition to attributes, classes may have methods. A method is a "
+"function that exists inside of a class. Expanding the earlier example of "
+"a ``Dog`` class from the review problem 1 above, the code below adds a "
+"method for a dog barking."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:8
+msgid ""
+"class Dog():\n"
+"    def __init__(self):\n"
+"        self.age = 0\n"
+"        self.name = \"\"\n"
+"        self.weight = 0\n"
+"\n"
+"    def bark(self):\n"
+"        print(\"Woof\")"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:20
+msgid ""
+"The method definition is contained in lines 7-8 above. Method definitions"
+" in a class look almost exactly like function definitions. The big "
+"difference is the addition of a parameter ``self`` on line 7. The first "
+"parameter of any method in a class must be ``self``. This parameter is "
+"required even if the function does not use it."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:26
+msgid ""
+"Here are the important items to keep in mind when creating methods for "
+"classes:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:28
+msgid "Attributes should be listed first, methods after."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:29
+msgid "The first parameter of any method must be self."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:30
+msgid "Method definitions are indented exactly one tab stop."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:32
+msgid ""
+"Methods may be called in a manner similar to referencing attributes from "
+"an object. See the example code below."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:35
+msgid ""
+"my_dog = Dog()\n"
+"\n"
+"my_dog.name = \"Spot\"\n"
+"my_dog.weight = 20\n"
+"my_dog.age = 3\n"
+"\n"
+"my_dog.bark()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:46
+msgid ""
+"Line 1 creates the dog. Lines 3-5 set the attributes of the object. Line "
+"7 calls the ``bark`` function. Note that even through the ``bark`` "
+"function has one parameter, ``self``, the call does not pass in anything."
+" This is because the first parameter is assumed to be a reference to the "
+"dog object itself. Behind the scenes, Python makes a call that looks "
+"like:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:52
+msgid ""
+"# Example, not actually legal\n"
+"Dog.bark(my_dog)"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:57
+msgid ""
+"If the ``bark`` function needs to make reference to any of the "
+"attributes, then it does so using the ``self`` reference variable. For "
+"example, we can change the ``Dog`` class so that when the dog barks, it "
+"also prints out the dog's name. In the code below, the name attribute is "
+"accessed using a dot operator and the ``self`` reference."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:63
+msgid ""
+"def bark(self):\n"
+"    print(\"Woof says\", self.name)"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:68
+msgid ""
+"Attributes are adjectives, and methods are verbs. The drawing for the "
+"class would look like Figure 12.3."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:72
+msgid ".. image:: chapters\\14b_class_methods\\dog_2_1.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:72
+msgid "Dog Class"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:75
+msgid "Example: Ball Class"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:76
+msgid ""
+"This example code could be used in Python/Arcade to draw a ball. Having "
+"all the parameters contained in a class makes data management easier. The"
+" diagram for the ``Ball`` class is shown in the figure below."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:82
+msgid ".. image:: chapters\\14b_class_methods\\ball_2_1.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:82
+msgid "Ball Class"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:84
+msgid ""
+"class Ball():\n"
+"    def __init__(self):\n"
+"        # --- Class Attributes ---\n"
+"        # Ball position\n"
+"        self.x = 0\n"
+"        self.y = 0\n"
+"\n"
+"        # Ball's vector\n"
+"        self.change_x = 0\n"
+"        self.change_y = 0\n"
+"\n"
+"        # Ball size\n"
+"        self.size = 10\n"
+"\n"
+"        # Ball color\n"
+"        self.color = [255,255,255]\n"
+"\n"
+"    # --- Class Methods ---\n"
+"    def move(self):\n"
+"        self.x += self.change_x\n"
+"        self.y += self.change_y\n"
+"\n"
+"    def draw(self):\n"
+"        arcade.draw_circle_filled(self.x, self.y, self.size, self.color )"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:112
+msgid ""
+"Below is the code that would go ahead of the main program loop to create "
+"a ball and set its attributes:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:115
+msgid ""
+"the_ball = Ball()\n"
+"the_ball.x = 100\n"
+"the_ball.y = 100\n"
+"the_ball.change_x = 2\n"
+"the_ball.change_y = 1\n"
+"the_ball.color = [255, 0, 0]"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:125
+msgid "This code would go inside the main loop to move and draw the ball:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:127
+msgid ""
+"the_ball.move()\n"
+"the_ball.draw()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:134
+msgid "References"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:140
+msgid ""
+"Here's where we separate the true programmers from the want-to-be's. "
+"Understanding class references. Take a look at the following code:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:143
+msgid ""
+"class Person():\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"        self.money = 0\n"
+"\n"
+"\n"
+"def main():\n"
+"    bob = Person()\n"
+"    bob.name = \"Bob\"\n"
+"    bob.money = 100\n"
+"\n"
+"    nancy = Person()\n"
+"    nancy.name = \"Nancy\"\n"
+"\n"
+"    print(bob.name, \"has\", bob.money, \"dollars.\")\n"
+"    print(nancy.name, \"has\", nancy.money, \"dollars.\")\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:166
+msgid ""
+"The code above creates two instances of the ``Person()`` class, and using"
+" `www.pythontutor.com`_ we can `visualize the two classes`_ in the "
+"figure."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:173
+msgid ".. image:: chapters\\14b_class_methods\\two_persons.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:173
+msgid "Two Persons"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:175
+msgid "The code above has nothing new. But the code below does:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:177
+msgid ""
+"class Person():\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"        self.money = 0\n"
+"\n"
+"\n"
+"def main():\n"
+"    bob = Person()\n"
+"    bob.name = \"Bob\"\n"
+"    bob.money = 100\n"
+"\n"
+"    nancy = bob\n"
+"    nancy.name = \"Nancy\"\n"
+"\n"
+"    print(bob.name, \"has\", bob.money, \"dollars.\")\n"
+"    print(nancy.name, \"has\", nancy.money, \"dollars.\")\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:200
+msgid "See the difference on line 10?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:202
+msgid ""
+"A common misconception when working with objects is to assume that the "
+"variable ``bob`` *is* the ``Person`` object. This is not the case. The "
+"variable ``bob`` is a *reference* to the ``Person`` object. That is, it "
+"stores the memory address of where the object is, and not the object "
+"itself."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:207
+msgid ""
+"If ``bob`` actually was the object, then line 9 could create a *copy* of "
+"the object and there would be two objects in existence. The output of the"
+" program would show both Bob and Nancy having 100 dollars. But when run, "
+"the program outputs the following instead:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:214
+msgid ""
+"Nancy has 100 dollars.\n"
+"Nancy has 100 dollars."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:217
+msgid ""
+"What ``bob`` stores is a *reference* to the object. Besides reference, "
+"one may call this *address*, *pointer*, or *handle*. A reference is an "
+"address in computer memory for where the object is stored. This address "
+"is a hexadecimal number which, if printed out, might look something like "
+"``0x1e504``. When line 9 is run, the address is copied rather than the "
+"entire object the address points to. See the figure below."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:226
+msgid ".. image:: chapters\\14b_class_methods\\example1.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:226
+msgid "Class References"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:228
+msgid ""
+"We can also run this in www.pythontutor.com to see how both of the "
+"variables `are pointing to the same object`_."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:234
+msgid ".. image:: chapters\\14b_class_methods\\one_person.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:234
+msgid "One Person, Two Pointers"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:237
+msgid "Functions and References"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:238
+msgid ""
+"Look at the code example below. Line 1 creates a function that takes in a"
+" number as a parameter. The variable ``money`` is a variable that "
+"contains a copy of the data that was passed in. Adding 100 to that number"
+" does not change the number that was stored in ``bob.money`` on line 11. "
+"Thus, the print statement on line 14 prints out 100, and not 200."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:244
+msgid ""
+"def give_money1(money):\n"
+"    money += 100\n"
+"\n"
+"\n"
+"class Person():\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"        self.money = 0\n"
+"\n"
+"\n"
+"def main():\n"
+"    bob = Person()\n"
+"    bob.name = \"Bob\"\n"
+"    bob.money = 100\n"
+"\n"
+"    give_money1(bob.money)\n"
+"    print(bob.money)\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:267
+msgid ""
+"`Running on PythonTutor`_ we see that there are two instances of the "
+"``money`` variable. One is a copy and local to the give_money1 function."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:274
+msgid ".. image:: chapters\\14b_class_methods\\function_references_1.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:274
+#: ../../source/chapters/14b_class_methods/class_methods.rst:297
+msgid "Function References"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:276
+msgid ""
+"Look at the additional code below. This code does cause ``bob.money`` to "
+"increase and the ``print`` statement to print 200."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:280
+msgid ""
+"def give_money2(person):\n"
+"    person.money += 100\n"
+"\n"
+"give_money2(bob)\n"
+"print(bob.money)"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:289
+msgid ""
+"Why is this? Because ``person`` contains a copy of the memory address of "
+"the object, not the actual object itself. One can think of it as a bank "
+"account number. The function has a copy of the bank account number, not a"
+" copy of the whole bank account. So using the copy of the bank account "
+"number to deposit 100 dollars causes Bob's bank account balance to go up."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:297
+msgid ".. image:: chapters\\14b_class_methods\\function_references_2.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:299
+msgid ""
+"Arrays work the same way. A function that takes in an array (list) as a "
+"parameter and modifies values in that array will be modifying the same "
+"array that the calling code created. The address of the array is copied, "
+"not the entire array."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:305
+#: ../../source/chapters/14b_class_methods/class_methods.rst:390
+msgid "Review Questions"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:307
+msgid ""
+"Create a class called ``Cat``. Give it attributes for name, color, and "
+"weight. Give it a method called ``meow``."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:309
+msgid ""
+"Create an instance of the cat class, set the attributes, and call the "
+"``meow`` method."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:311
+msgid ""
+"Create a class called ``Monster``. Give it an attribute for name and an "
+"integer attribute for health. Create a method called ``decrease_health`` "
+"that takes in a parameter amount and decreases the health by that much. "
+"Inside that method, print that the animal died if health goes below zero."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:319
+msgid "Avoid This Mistake"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:321
+msgid ""
+"Put everything for a method into just one definition. Don't define it "
+"twice. For example:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:324
+msgid ""
+"# Wrong:\n"
+"class Dog():\n"
+"    def __init__(self):\n"
+"        self.age = 0\n"
+"        self.name = \"\"\n"
+"        self.weight = 0\n"
+"\n"
+"    def __init__(self):\n"
+"        print(\"New dog!\")"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:337
+msgid ""
+"The computer will just ignore the first ``__init__`` and go with the last"
+" definition. Instead do this:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:340
+msgid ""
+"# Correct:\n"
+"class Dog():\n"
+"    def __init__(self):\n"
+"        self.age = 0\n"
+"        self.name = \"\"\n"
+"        self.weight = 0\n"
+"        print(\"New dog!\")"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:351
+msgid ""
+"A constructor can be used for initializing and setting data for the "
+"object. The example Dog class above still allows the name attribute to be"
+" left blank after the creation of the dog object. How do we keep this "
+"from happening? Many objects need to have values right when they are "
+"created. The constructor function can be used to make this happen. See "
+"the code below:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:357
+msgid "Constructor that takes in data to initialize the class"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:357
+msgid ""
+"class Dog():\n"
+"\n"
+"    def __init__(self, new_name):\n"
+"        \"\"\" Constructor. \"\"\"\n"
+"        self.name = new_name\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog(\"Spot\")\n"
+"\n"
+"    # Print the name to verify it was set\n"
+"    print(my_dog.name)\n"
+"\n"
+"    # This line will give an error because\n"
+"    # a name is not passed in.\n"
+"    her_dog = Dog()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:381
+msgid ""
+"On line 3 the constructor function now has an additional parameter named "
+"``new_name``. The value of this parameter is used to set the name "
+"attribute in the ``Dog`` class on line 8. It is no longer possible to "
+"create a ``Dog`` class without a name. The code on line 15 tries this. It"
+" will cause a Python error and it will not run. A common mistake is to "
+"name the parameter of the ``__init__`` function the same as the attribute"
+" and assume that the values will automatically synchronize. This does not"
+" happen."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:392
+msgid "Should class names begin with an upper or lower case letter?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:393
+msgid "Should method names begin with an upper or lower case letter?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:394
+msgid "Should attribute names begin with an upper or lower case letter?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:395
+msgid "Which should be listed first in a class, attributes or methods?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:396
+msgid "What are other names for a reference?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:397
+msgid "What is another name for instance variable?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:398
+msgid "What is the name for an instance of a class?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:399
+msgid ""
+"Create a class called Star that will print out \"A star is born!\" every "
+"time it is created."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:401
+msgid ""
+"Create a class called Monster with attributes for health and a name. Add "
+"a constructor to the class that sets the health and name of the object "
+"with data passed in as parameters."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:406
+msgid "Inheritance"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:413
+msgid ""
+"Another powerful feature of using classes and objects is the ability to "
+"make use of *inheritance*. It is possible to create a class and inherit "
+"all of the attributes and methods of a *parent class*."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:417
+msgid ""
+"For example, a program may create a class called ``Boat`` which has all "
+"the attributes needed to represent a boat in a game:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:420
+msgid "Class definition for a boat"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:420
+msgid ""
+"class Boat():\n"
+"    def __init__(self):\n"
+"        self.tonnage = 0\n"
+"        self.name = \"\"\n"
+"        self.is_docked = True\n"
+"\n"
+"    def dock(self):\n"
+"        if self.is_docked:\n"
+"            print(\"You are already docked.\")\n"
+"        else:\n"
+"            self.is_docked = True\n"
+"            print(\"Docking\")\n"
+"\n"
+"    def undock(self):\n"
+"        if not self.is_docked:\n"
+"            print(\"You aren't docked.\")\n"
+"        else:\n"
+"            self.is_docked = False\n"
+"            print(\"Undocking\")"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:444
+msgid "To test out our code:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:446
+msgid "Floating our boat"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:446
+msgid ""
+"b = Boat()\n"
+"\n"
+"b.dock()\n"
+"b.undock()\n"
+"b.undock()\n"
+"b.dock()\n"
+"b.dock()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:458
+msgid "The output:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:460
+msgid ""
+"You are already docked.\n"
+"Undocking\n"
+"You aren't docked.\n"
+"Docking\n"
+"You are already docked."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:468
+msgid ""
+"(If you watch the video for this section of the class, you'll note that "
+"the \"Boat\" class in the video doesn't actually run. The code above has "
+"been corrected but I haven't fixed the video. Use this as a reminder, no "
+"matter how simple the code and how experienced the developer, test your "
+"code before you deliver it!)"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:474
+msgid ""
+"Our program also needs a submarine. Our submarine can do everything a "
+"boat can, plus we need a command for ``submerge``. Without inheritance we"
+" have two options."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:477
+msgid ""
+"One, add the ``submerge()`` command to our boat. This isn't a great idea "
+"because we don't want to give the impression that our boats normally "
+"submerge."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:479
+msgid ""
+"Two, we could create a copy of the ``Boat`` class and call it "
+"``Submarine``. In this class we'd add the ``submerge()`` command. This is"
+" easy at first, but things become harder if we change the ``Boat`` class."
+" A programmer would need to remember that we'd need to change not only "
+"the ``Boat`` class, but also make the same changes to the ``Submarine`` "
+"class. Keeping this code synchronized is time consuming and error-prone."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:486
+msgid ""
+"Luckily, there is a better way. Our program can create *child classes* "
+"that will inherit all the attributes and methods of the *parent class*. "
+"The child classes may then add fields and methods that correspond to "
+"their needs. For example:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:491
+msgid ""
+"class Submarine(Boat):\n"
+"    def submerge(self):\n"
+"        print(\"Submerge!\")"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:498
+msgid ""
+"Line 1 is the important part. Just by putting ``Boat`` in between the "
+"parentheses during the class declaration, we have automatically picked up"
+" every attribute and method that is in the Boat class. If we update "
+"``Boat``, then the child class ``Submarine`` will automatically get these"
+" updates. Inheritance is that easy!"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:504
+msgid "The next code example is diagrammed out in the figure below."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:509
+msgid ".. image:: chapters\\14b_class_methods\\person_1.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:509
+msgid "Class Diagram"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:511
+msgid "Person, Employee, Customer Classes Examples"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:511
+msgid ""
+"class Person():\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"\n"
+"class Employee(Person):\n"
+"    def __init__(self):\n"
+"        # Call the parent/super class constructor first\n"
+"        super().__init__()\n"
+"\n"
+"        # Now set up our variables\n"
+"        self.job_title = \"\"\n"
+"\n"
+"class Customer(Person):\n"
+"    def __init__(self):\n"
+"        super().__init__()\n"
+"        self.email = \"\"\n"
+"\n"
+"def main():\n"
+"    john_smith = Person()\n"
+"    john_smith.name = \"John Smith\"\n"
+"\n"
+"    jane_employee = Employee()\n"
+"    jane_employee.name = \"Jane Employee\"\n"
+"    jane_employee.job_title = \"Web Developer\"\n"
+"\n"
+"    bob_customer = Customer()\n"
+"    bob_customer.name = \"Bob Customer\"\n"
+"    bob_customer.email = \"send_me@spam.com\"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:547
+msgid ""
+"By placing ``Person`` between the parentheses on lines 5 and 13, the "
+"programmer has told the computer that Person is a parent class to both "
+"``Employee`` and ``Customer``. This allows the program to set the name "
+"attribute on lines 19 and 22."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:552
+msgid ""
+"Methods are also inherited. Any method the parent has, the child class "
+"will have too. But what if we have a method in both the child and parent "
+"class?"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:555
+msgid ""
+"We have two options. We can run them both with ``super()`` keyword. Using"
+" ``super()`` followed by a dot operator, and then finally a method name "
+"allows you to call the parent's version of the method."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:559
+msgid ""
+"The code above shows the first option using ``super`` where we run not "
+"only the child constructor but also the parent constructor."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:562
+msgid ""
+"If you are writing a method for a child and want to call a parent method,"
+" normally it will be the first statement in the child method. Notice how "
+"it is in the example above."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:566
+msgid ""
+"All constructors should call the parent constructor because then you'd "
+"have a child without a parent and that is just sad. In fact, some "
+"languages force this rule, but Python doesn't."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:570
+msgid ""
+"The second option? Methods may be overridden by a child class to provide "
+"different functionality. The example below shows both options. The "
+"``Employee.report`` overrides the ``Person.report`` because it never "
+"calls and runs the parent ``report`` method. The ``Customer`` report does"
+" call the parent and the report method in ``Customer`` adds to the "
+"``Person`` functionality."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:577
+msgid "Overriding constructors"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:577
+msgid ""
+"class Person():\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"\n"
+"    def report(self):\n"
+"        # Basic report\n"
+"        print(\"Report for\", self.name)\n"
+"\n"
+"class Employee(Person):\n"
+"    def __init__(self):\n"
+"        # Call the parent/super class constructor first\n"
+"        super().__init__()\n"
+"\n"
+"        # Now set up our variables\n"
+"        self.job_title = \"\"\n"
+"\n"
+"    def report(self):\n"
+"        # Here we override report and just do this:\n"
+"        print(\"Employee report for\", self.name)\n"
+"\n"
+"class Customer(Person):\n"
+"    def __init__(self):\n"
+"        super().__init__()\n"
+"        self.email = \"\"\n"
+"\n"
+"    def report(self):\n"
+"        # Run the parent report:\n"
+"        super().report()\n"
+"        # Now add our own stuff to the end so we do both\n"
+"        print(\"Customer e-mail:\", self.email)\n"
+"\n"
+"def main():\n"
+"    john_smith = Person()\n"
+"    john_smith.name = \"John Smith\"\n"
+"\n"
+"    jane_employee = Employee()\n"
+"    jane_employee.name = \"Jane Employee\"\n"
+"    jane_employee.job_title = \"Web Developer\"\n"
+"\n"
+"    bob_customer = Customer()\n"
+"    bob_customer.name = \"Bob Customer\"\n"
+"    bob_customer.email = \"send_me@spam.com\"\n"
+"\n"
+"    john_smith.report()\n"
+"    jane_employee.report()\n"
+"    bob_customer.report()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:631
+msgid "Is-A and Has-A Relationships"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:633
+msgid ""
+"Classes have two main types of relationships. They are \"is a\" and \"has"
+" a\" relationships."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:636
+msgid ""
+"A parent class should always be a more general, abstract version of the "
+"child class. This type of child to parent relationship is called an *is "
+"a* relationship. For example, a parent class ``Animal`` could have a "
+"child class ``Dog``. The dog *is an* animal. The ``Dog`` class could have"
+" a child class Poodle. The poodle *is a* dog, and *is an* animal."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:643
+msgid ""
+"It does not work the other way! A dolphin *is a* mammal, but a mammal is "
+"not always a dolphin. So the class ``Dolphin`` should never be a parent "
+"to a class ``Mammal``."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:647
+msgid ""
+"Unrelated items that do not pass the *is a* test should not form "
+"parent/child relationships. For example, a class ``Table`` should not be "
+"a parent to a class ``Chair`` because a chair is not a table."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:651
+msgid ""
+"The other type of relationship is the *has a* relationship. These "
+"relationships are implemented in code by class attributes. A dog has a "
+"name, and so the ``Dog`` class has an attribute for name. Likewise a "
+"person could have a dog, and that would be implemented by having the "
+"Person class have an attribute for ``Dog``. The ``Person`` class would "
+"not derive from ``Dog`` because that would be some kind of insult."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:658
+msgid "Looking at the prior code example we can see:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:660
+msgid "Employee is a person."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:661
+msgid "Customer is a person."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:662
+msgid "Person has a name."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:663
+msgid "Employee has a job title."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:664
+msgid "Customer has an e-mail."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:667
+msgid "Static Variables vs. Instance Variables"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:669
+msgid ""
+"The difference between static and instance variables is confusing. "
+"Thankfully it isn't necessary to completely understand the difference "
+"right now. But if you stick with programming, it will be. Therefore we "
+"will briefly introduce it here."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:674
+msgid ""
+"There are also some oddities with Python that kept me confused the first "
+"several years I've made this book available. So you might see older "
+"videos and examples where I get it wrong."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:678
+msgid ""
+"An *instance variable* is the type of class variable we've used so far. "
+"Each instance of the class gets its own value. For example, in a room "
+"full of people each person will have their own age. Some of the ages may "
+"be the same, but we still need to track each age individually."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:683
+msgid ""
+"With instance variables, we can't just say \"age\" with a room full of "
+"people. We need to specify *whose* age we are talking about. Also, if "
+"there are no people in the room, then referring to an age when there are "
+"no people to have an age makes no sense."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:688
+msgid ""
+"With *static variables* the value is the same for every single instance "
+"of the class. Even if there are no instances, there still is a value for "
+"a static variable. For example, we might have a ``count`` static variable"
+" for the number of ``Human`` classes in existence. No humans? The value "
+"is zero, but the count variable still exists."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:694
+msgid ""
+"In the example below, ``ClassA`` creates an instance variable. ``ClassB``"
+" creates a static variable."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:697
+msgid ""
+"# Example of an instance variable\n"
+"class ClassA():\n"
+"    def __init__(self):\n"
+"        self.y = 3\n"
+"\n"
+"# Example of a static variable\n"
+"class ClassB():\n"
+"    x = 7\n"
+"\n"
+"def main():\n"
+"    # Create class instances\n"
+"    a = ClassA()\n"
+"    b = ClassB()\n"
+"\n"
+"    # Two ways to print the static variable.\n"
+"    # The second way is the proper way to do it.\n"
+"    print(b.x)\n"
+"    print(ClassB.x)\n"
+"\n"
+"    # One way to print an instance variable.\n"
+"    # The second generates an error, because we don't know what instance\n"
+"    # to reference.\n"
+"    print(a.y)\n"
+"    print(ClassA.y)\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:727
+msgid ""
+"In the example above, lines 16 and 17 print out the static variable. Line"
+" 17 is the \"proper\" way to do so. Unlike before, we can refer to the "
+"class name when using static variables, rather than a variable that "
+"points to a particular instance. Because we are working with the class "
+"name, by looking at line 17 we instantly can tell we are working with a "
+"static variable. Line 16 could be either an instance or static variable. "
+"That confusion makes line 17 the better choice."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:735
+msgid ""
+"Line 22 prints out the instance variable, just like we've done in prior "
+"examples. Line 23 will generate an error because each instance of y is "
+"different (it is an instance variable after all) and we aren't telling "
+"the computer what instance of ``ClassA`` we are talking about."
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:741
+msgid "Instance Variables Hiding Static Variables"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:743
+msgid ""
+"This is one \"feature\" of Python I dislike. It is possible to have a "
+"static variable, and an instance variable *with the same name*. Look at "
+"the example below:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:747
+msgid ""
+"# Class with a static variable\n"
+"class ClassB():\n"
+"    x = 7\n"
+"\n"
+"def main():\n"
+"    # Create a class instance\n"
+"    b = ClassB()\n"
+"\n"
+"    # This prints 7\n"
+"    print(b.x)\n"
+"\n"
+"    # This also prints 7\n"
+"    print(ClassB.x)\n"
+"\n"
+"    # Set x to a new value using the class name\n"
+"    ClassB.x = 8\n"
+"\n"
+"    # This also prints 8\n"
+"    print(b.x)\n"
+"\n"
+"    # This prints 8\n"
+"    print(ClassB.x)\n"
+"\n"
+"    # Set x to a new value using the instance.\n"
+"    # Wait! Actually, it doesn't set x to a new value!\n"
+"    # It creates a brand new variable, x. This x\n"
+"    # is an instance variable. The static variable is\n"
+"    # also called x. But they are two different\n"
+"    # variables. This is super-confusing and is bad\n"
+"    # practice.\n"
+"    b.x = 9\n"
+"\n"
+"    # This prints 9\n"
+"    print(b.x)\n"
+"\n"
+"    # This prints 8. NOT 9!!!\n"
+"    print(ClassB.x)\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:790
+msgid ""
+"Allowing instance variables to hide static variable caused confusion for "
+"me for many years!"
+msgstr ""
+

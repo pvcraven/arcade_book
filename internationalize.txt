@@ -1,5 +1,8 @@
 make gettext
-sphinx-intl update -p build -l de -l cz
+sphinx-intl update -p build/locale -l de
 
-set SPHINXOPTS=-D language=de
-make html
+sphinx-build -b html -D language=dn source build/html
+sphinx-build -b html -D language=de source build/html/de
+
+rem set SPHINXOPTS=-D language=de
+rem make html

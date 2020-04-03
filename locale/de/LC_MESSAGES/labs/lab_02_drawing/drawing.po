@@ -8,173 +8,180 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-11 13:34+0200\n"
+"POT-Creation-Date: 2020-04-03 12:51-0500\n"
 "PO-Revision-Date: 2019-07-16 10:34+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
 "Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:4
 msgid "Lab 2: Draw a Picture"
 msgstr "Übung 2: Zeichne ein Bild"
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:6
-msgid ""
-"Your assignment: Draw a pretty picture. The goal of this lab is to get "
-"practice using functions to draw, and introduce computer graphics."
+msgid "Your assignment: Draw a picture."
 msgstr ""
-"Deine Aufgabe: Zeichne ein hübsches Bild. Das Ziel dieser Übung ist es, "
-"Erfahrung mit den Zeichenfunktionen zu sammeln und in die Rechnergrafik "
-"einzuführen."
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:8
+msgid "The goal:"
+msgstr ""
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:10
-msgid "Requirements"
-msgstr "Anforderungen"
+msgid "Practice looking up API documentation - useful for using any code library"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:11
+msgid ""
+"Practice calling functions - a basic building block of all computer "
+"programs"
+msgstr ""
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:12
-msgid "To get full credit:"
-msgstr "Um volle Punkte zu erreichen:"
+msgid ""
+"Practice working with RGB colors - used in graphics, web design, and even"
+" LED lighting"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:13
+msgid ""
+"Practice commenting and formatting code properly - required to make code "
+"maintainable"
+msgstr ""
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:14
 msgid ""
-"Use the same project and repository that you used for Lab 01. If you forked "
-"your repository from mine, you should already have a folder for lab 2. Use "
-"that folder, and the ``lab_02.py`` file inside. Otherwise create one."
+"Practice working with graphics coordinates - also used in document layout"
+" and web design"
 msgstr ""
-"Verwende dasselbe Projekt und Repository, das du für Übung 1 verwendet hast. "
-"Wenn du dein Repository von meinem geforkt hast, solltest du schon den "
-"Ordner lab 2 für die Übung 2 haben. Verwende diesen Ordner und die Datei "
-"``lab_02.py`` darin. Erzeuge sie andernfalls."
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:17
-msgid "You must use multiple colors."
-msgstr "Du musst mehrere Farben verwenden."
+msgid "Requirements"
+msgstr "Anforderungen"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:18
-msgid ""
-"You must have a coherent picture. I am not interested in abstract art with "
-"random shapes."
-msgstr ""
-"Du musst ein schlüssiges Bild erstellen. Mich interessiert keine abstrakte "
-"Kunst mit zufälligen Formen."
+#: ../../source/labs/lab_02_drawing/drawing.rst:19
+msgid "To get full credit:"
+msgstr "Um volle Punkte zu erreichen:"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:20
+#: ../../source/labs/lab_02_drawing/drawing.rst:21
 msgid ""
-"You must use multiple types of graphic functions (e.g. circles, rectangles, "
-"lines, etc.)"
+"Use the same project and repository that you used for Lab 01. If you "
+"forked your repository from mine, you should already have a folder for "
+"lab 2. Use that folder, and the ``lab_02.py`` file inside. Otherwise "
+"create one."
 msgstr ""
-"Du musst verschiedene Arten von Zeichenfunktionen verwenden (zum Beispiel "
-"Kreise, Rechtecke, Linien und so weiter)."
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:22
-msgid ""
-"Use blank lines in the code to break up sections. For example, when drawing "
-"a tree, put a blank line ahead of, and after."
-msgstr ""
-"Du musst Leerzeilen verwenden, um den Code in Abschnitte aufzuteilen. Wenn "
-"du zum Beispiel einen Baum zeichnest, schreibe eine Leerzeile davor und "
-"dahinter."
+"Verwende dasselbe Projekt und Repository, das du für Übung 1 verwendet "
+"hast. Wenn du dein Repository von meinem geforkt hast, solltest du schon "
+"den Ordner lab 2 für die Übung 2 haben. Verwende diesen Ordner und die "
+"Datei ``lab_02.py`` darin. Erzeuge sie andernfalls."
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:24
+msgid "Use several different colors."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:25
 msgid ""
-"Use comments effectively. For example, when drawing a tree, put a comment at "
-"the start of those drawing commands that says ``# Draw a tree``. Remember to "
-"put one space after the ``#`` sign."
+"Make a coherent picture. Don't make abstract art with random shapes, "
+"because that doesn't require a full application of what we've learned to "
+"a real use-case."
 msgstr ""
-"Kommentiere sinnvoll. Wenn du zum Beispiel einen Baum zeichnest, dann "
-"schreibe einen Kommentar an den Anfang der Zeichenbefehle, die sagen ``# "
-"Draw a tree``. (Wem Englisch nicht so liegt, der kann die Kommentare auch in "
-"Deutsch schreiben.) Denke daran nach der Raute (``#``) ein Leerzeichen zu "
-"lassen."
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:27
-msgid "Put spaces after commas for proper \"style.\""
+#: ../../source/labs/lab_02_drawing/drawing.rst:28
+msgid ""
+"Use multiple types of graphic functions. Include circles, ellipses, "
+"rectangles, lines, polygons and more in your drawing. It is certainly "
+"possible to make great art with just squares, but the point of the lab is"
+" to practice using multiple functions."
 msgstr ""
-"Füge ein Leerzeichen nach Satzzeichen ein, damit es \"ordentlich\" aussieht."
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:30
-msgid "Tips"
-msgstr "Tipps"
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:32
-msgid "To select new colors use:"
-msgstr "Um neue Farben auszuwählen, verwende: "
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:34
-msgid "http://www.colorpicker.com/"
-msgstr "http://www.colorpicker.com/"
+#: ../../source/labs/lab_02_drawing/drawing.rst:33
+#, fuzzy
+msgid ""
+"Use a single blank line in your code to break up logical sections. For "
+"example, when drawing a tree, put a blank line ahead of, and after. See "
+"the example code below."
+msgstr ""
+"Du musst Leerzeilen verwenden, um den Code in Abschnitte aufzuteilen. "
+"Wenn du zum Beispiel einen Baum zeichnest, schreibe eine Leerzeile davor "
+"und dahinter."
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:36
 msgid ""
-"Copy the values for Red, Green, and Blue. Do not worry about colors for hue, "
-"Saturation, or Brilliance."
+"Use comments effectively. For example, when drawing a tree, put a comment"
+" at the start of those drawing commands that says ``# Draw a tree``. "
+"Remember to put one space after the ``#`` sign."
 msgstr ""
-"Kopiere die Werte für Red, Green und Blue. Kümmere dich nicht um die Werte "
-"für Hue, Saturation oder Brilliance."
+"Kommentiere sinnvoll. Wenn du zum Beispiel einen Baum zeichnest, dann "
+"schreibe einen Kommentar an den Anfang der Zeichenbefehle, die sagen ``# "
+"Draw a tree``. (Wem Englisch nicht so liegt, der kann die Kommentare auch"
+" in Deutsch schreiben.) Denke daran nach der Raute (``#``) ein "
+"Leerzeichen zu lassen."
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:39
-msgid ""
-"Please use comments and blank lines to make it easy to follow your program. "
-"If you have 5 lines that draw a robot, group them together with blank lines "
-"above and below. Then add a comment at the top telling the reader what you "
-"are drawing."
+msgid "Put spaces after commas for proper \"style.\""
 msgstr ""
-"Verwende bitte Kommentare und Leerzeilen, um dein Programm leicht "
-"nachvollziehbar zu machen. Wenn du in fünf Zeilen einen Roboter zeichnest, "
-"gruppiere sie zusammen mit Leerzeilen davor und danach. Füge dann einen "
-"Kommentar am Anfang der Gruppierung hinzu, der dem Leser sagt, was du "
-"zeichnest."
+"Füge ein Leerzeichen nach Satzzeichen ein, damit es \"ordentlich\" "
+"aussieht."
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:44
+#: ../../source/labs/lab_02_drawing/drawing.rst:40
 msgid ""
-"Keep in mind the order of code. Shapes drawn first will be at the \"back.\" "
-"Shapes drawn later will be drawn on top of the other shapes."
+"Use PyCharm to inspect your code for warnings. Fix warnings that you "
+"encounter."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:43
+msgid "Tips"
+msgstr "Tipps"
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:45
+msgid "To select new colors use: https://www.google.com/search?q=color+picker"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:47
+#, fuzzy
+msgid ""
+"Copy the values for Red, Green, and Blue from the color picker. Do not "
+"worry about colors for hue, saturation, or brilliance."
+msgstr ""
+"Kopiere die Werte für Red, Green und Blue. Kümmere dich nicht um die "
+"Werte für Hue, Saturation oder Brilliance."
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:50
+msgid ""
+"Keep in mind the order of code. Shapes drawn first will be at the "
+"\"back.\" Shapes drawn later will be drawn on top of the other shapes."
 msgstr ""
 "Denke an die Reihenfolge im Programmcode. Formen, die zuerst gezeichnet "
 "werden, werden \"hinten\" stehen. Formen, die später gezeichnet werden, "
 "werden über die anderen Formen gezeichnet."
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:47
+#: ../../source/labs/lab_02_drawing/drawing.rst:53
+#, fuzzy
 msgid ""
-"Looking for ideas? At the page below, each time you refresh the page I show "
-"various images created by students from prior years:"
+"Also, remember you can look up the available commands, called the \"API\""
+" at: https://arcade.academy"
 msgstr ""
-"Suchst du Ideen? Auf der Seite unten zeige ich dir bei jeder Aktualisierung "
-"verschiedene Bilder, die Studierende in den Vorjahren erstellt haben:"
+"Denke auch daran, dass du die verfügbaren Kommandos, \"API\" genannt, "
+"unter der folgenden Adresse findest:"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:50
-msgid "http://programarcadegames.com/"
-msgstr "http://programarcadegames.com/"
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:52
-msgid ""
-"Also, remember you can look up the available commands, called the \"API\" at:"
+#: ../../source/labs/lab_02_drawing/drawing.rst:57
+msgid "Example Lab"
 msgstr ""
-"Denke auch daran, dass du die verfügbaren Kommandos, \"API\" genannt, unter "
-"der folgenden Adresse findest:"
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:54
-msgid "http://arcade.academy"
-msgstr "http://arcade.academy"
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:56
-msgid "Also, here is an example program that shows you what I'm looking for:"
-msgstr "Hier ist auch ein Beispielprogramm, das dir zeigt, was ich erwarte:"
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:59
-msgid ".. image:: labs/lab_02_drawing/final_program.png"
-msgstr ". image:: labs/lab_02_drawing/final_program.png"
 
 #: ../../source/labs/lab_02_drawing/drawing.rst:60
+#, fuzzy
+msgid ".. image:: labs\\lab_02_drawing\\final_program.png"
+msgstr ". image:: labs/lab_02_drawing/final_program.png"
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:61
 msgid ""
 "\"\"\"\n"
-"This is a sample program to show how to draw using the Python programming\n"
+"This is a sample program to show how to draw using the Python programming"
+"\n"
 "language and the Arcade library.\n"
 "\"\"\"\n"
 "\n"
@@ -194,12 +201,14 @@ msgid ""
 "arcade.start_render()\n"
 "\n"
 "# Draw the grass\n"
-"arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)\n"
+"arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, "
+"arcade.color.BITTER_LIME)\n"
 "\n"
 "# --- Draw the barn ---\n"
 "\n"
 "# Barn cement base\n"
-"arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)\n"
+"arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)"
+"\n"
 "\n"
 "# Bottom half\n"
 "arcade.draw_lrtb_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)\n"
@@ -213,7 +222,8 @@ msgid ""
 "arcade.draw_rectangle_filled(310, 260, 20, 30, arcade.color.BLACK)\n"
 "\n"
 "# Barn door\n"
-"arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)\n"
+"arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)"
+"\n"
 "\n"
 "# Rail above the door\n"
 "arcade.draw_rectangle_filled(190, 280, 180, 5, arcade.color.BONE)\n"
@@ -226,8 +236,8 @@ msgid ""
 "                            arcade.color.BROWN)\n"
 "\n"
 "# Draw loft of barn\n"
-"arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color."
-"BROWN)\n"
+"arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, "
+"arcade.color.BROWN)\n"
 "\n"
 "# Left-top window\n"
 "arcade.draw_rectangle_filled(130, 440, 30, 40, arcade.color.BONE)\n"
@@ -268,7 +278,8 @@ msgid ""
 "arcade.run()\n"
 msgstr ""
 "\"\"\"\n"
-"This is a sample program to show how to draw using the Python programming\n"
+"This is a sample program to show how to draw using the Python programming"
+"\n"
 "language and the Arcade library.\n"
 "\"\"\"\n"
 "\n"
@@ -288,12 +299,14 @@ msgstr ""
 "arcade.start_render()\n"
 "\n"
 "# Draw the grass\n"
-"arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)\n"
+"arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, "
+"arcade.color.BITTER_LIME)\n"
 "\n"
 "# --- Draw the barn ---\n"
 "\n"
 "# Barn cement base\n"
-"arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)\n"
+"arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)"
+"\n"
 "\n"
 "# Bottom half\n"
 "arcade.draw_lrtb_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)\n"
@@ -307,7 +320,8 @@ msgstr ""
 "arcade.draw_rectangle_filled(310, 260, 20, 30, arcade.color.BLACK)\n"
 "\n"
 "# Barn door\n"
-"arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)\n"
+"arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)"
+"\n"
 "\n"
 "# Rail above the door\n"
 "arcade.draw_rectangle_filled(190, 280, 180, 5, arcade.color.BONE)\n"
@@ -320,8 +334,8 @@ msgstr ""
 "                            arcade.color.BROWN)\n"
 "\n"
 "# Draw loft of barn\n"
-"arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color."
-"BROWN)\n"
+"arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, "
+"arcade.color.BROWN)\n"
 "\n"
 "# Left-top window\n"
 "arcade.draw_rectangle_filled(130, 440, 30, 40, arcade.color.BONE)\n"
@@ -361,26 +375,149 @@ msgstr ""
 "# Keep the window up until someone closes it.\n"
 "arcade.run()\n"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:64
+#: ../../source/labs/lab_02_drawing/drawing.rst:66
+msgid "Other Examples"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:68
 msgid "Here are some images from prior years:"
 msgstr "Hier sind ein paar Bilder aus den Vorjahren:"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:123
-msgid ""
-"To flip through the images, click the prev/next buttons above the image. The "
-"prev/next buttons below navigate between the different labs."
-msgstr ""
-"Klicke auf Vorwärts-/Rückwärts-Knöpfe über den Bildern, um durch die Bilder "
-"zu blättern. Die Vorwärts-/Rückwärts-Knöpfe unter den Bildern navigieren "
-"zwischen den verschiedenen Übungen."
-
-#: ../../source/labs/lab_02_drawing/drawing.rst:127
+#: ../../source/labs/lab_02_drawing/drawing.rst:138
 msgid "Turn In"
 msgstr "Abgeben"
 
-#: ../../source/labs/lab_02_drawing/drawing.rst:129
+#: ../../source/labs/lab_02_drawing/drawing.rst:140
+#, fuzzy
 msgid ""
-"Refer back to :ref:`git-quick-ref` for a reminder on how to turn in this lab."
+"Refer back to :ref:`git-quick-ref` for a reminder on how to turn in this "
+"lab. You need to do a:"
 msgstr ""
-"Gehe zurück zu :ref:`git-quick-ref` für eine Erinnerung daran, wie du die "
-"Lösung abgeben sollst."
+"Gehe zurück zu :ref:`git-quick-ref` für eine Erinnerung daran, wie du die"
+" Lösung abgeben sollst."
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:143
+msgid "``git add *``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:144
+msgid "``git commit -m \"Lab 02\"``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:145
+msgid "``git push``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:146
+msgid "Find the lab on ``github.com``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:147
+msgid "Copy the URL"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:148
+msgid "Go to the class website and turn in the lab."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:150
+msgid ""
+"Remember, if there are errors on the lab that you want to correct and get"
+" full credit for, you can. Once corrected, go through all the steps "
+"above. You must resubmit the lab to the class website (not just upload to"
+" git) otherwise I don't get notified to look at the lab again. You have 7"
+" days (to the hour and minute) to submit the lab again."
+msgstr ""
+
+#~ msgid ""
+#~ "Your assignment: Draw a pretty picture."
+#~ " The goal of this lab is to "
+#~ "get practice using functions to draw,"
+#~ " and introduce computer graphics."
+#~ msgstr ""
+#~ "Deine Aufgabe: Zeichne ein hübsches "
+#~ "Bild. Das Ziel dieser Übung ist "
+#~ "es, Erfahrung mit den Zeichenfunktionen "
+#~ "zu sammeln und in die Rechnergrafik "
+#~ "einzuführen."
+
+#~ msgid "You must use multiple colors."
+#~ msgstr "Du musst mehrere Farben verwenden."
+
+#~ msgid ""
+#~ "You must have a coherent picture. "
+#~ "I am not interested in abstract "
+#~ "art with random shapes."
+#~ msgstr ""
+#~ "Du musst ein schlüssiges Bild erstellen."
+#~ " Mich interessiert keine abstrakte Kunst"
+#~ " mit zufälligen Formen."
+
+#~ msgid ""
+#~ "You must use multiple types of "
+#~ "graphic functions (e.g. circles, rectangles,"
+#~ " lines, etc.)"
+#~ msgstr ""
+#~ "Du musst verschiedene Arten von "
+#~ "Zeichenfunktionen verwenden (zum Beispiel "
+#~ "Kreise, Rechtecke, Linien und so "
+#~ "weiter)."
+
+#~ msgid "To select new colors use:"
+#~ msgstr "Um neue Farben auszuwählen, verwende: "
+
+#~ msgid "http://www.colorpicker.com/"
+#~ msgstr "http://www.colorpicker.com/"
+
+#~ msgid ""
+#~ "Please use comments and blank lines "
+#~ "to make it easy to follow your "
+#~ "program. If you have 5 lines that"
+#~ " draw a robot, group them together"
+#~ " with blank lines above and below."
+#~ " Then add a comment at the top"
+#~ " telling the reader what you are "
+#~ "drawing."
+#~ msgstr ""
+#~ "Verwende bitte Kommentare und Leerzeilen, "
+#~ "um dein Programm leicht nachvollziehbar "
+#~ "zu machen. Wenn du in fünf Zeilen"
+#~ " einen Roboter zeichnest, gruppiere sie "
+#~ "zusammen mit Leerzeilen davor und "
+#~ "danach. Füge dann einen Kommentar am "
+#~ "Anfang der Gruppierung hinzu, der dem"
+#~ " Leser sagt, was du zeichnest."
+
+#~ msgid ""
+#~ "Looking for ideas? At the page "
+#~ "below, each time you refresh the "
+#~ "page I show various images created "
+#~ "by students from prior years:"
+#~ msgstr ""
+#~ "Suchst du Ideen? Auf der Seite "
+#~ "unten zeige ich dir bei jeder "
+#~ "Aktualisierung verschiedene Bilder, die "
+#~ "Studierende in den Vorjahren erstellt "
+#~ "haben:"
+
+#~ msgid "http://programarcadegames.com/"
+#~ msgstr "http://programarcadegames.com/"
+
+#~ msgid "http://arcade.academy"
+#~ msgstr "http://arcade.academy"
+
+#~ msgid "Also, here is an example program that shows you what I'm looking for:"
+#~ msgstr "Hier ist auch ein Beispielprogramm, das dir zeigt, was ich erwarte:"
+
+#~ msgid ""
+#~ "To flip through the images, click "
+#~ "the prev/next buttons above the image."
+#~ " The prev/next buttons below navigate "
+#~ "between the different labs."
+#~ msgstr ""
+#~ "Klicke auf Vorwärts-/Rückwärts-Knöpfe über "
+#~ "den Bildern, um durch die Bilder "
+#~ "zu blättern. Die Vorwärts-/Rückwärts-Knöpfe"
+#~ " unter den Bildern navigieren zwischen "
+#~ "den verschiedenen Übungen."
+

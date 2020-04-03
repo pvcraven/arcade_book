@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2020\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/chapters/02_setup/setup.rst:4
+msgid "Setting Up Your System"
+msgstr ""
+
+msgid ".. image:: chapters\\02_setup\\computer_screen_checkbox.svg"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:10
+msgid ""
+"Before you begin programming, we need to install a few things. Using a "
+"school computer? Yay! You may have these already installed. Still, read "
+"through this part, as you might need to set up your own system in the "
+"future."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:15
+msgid ""
+"Getting a system set up and ready to program can be a bit frustrating. "
+"**Don't give up.** Once you've got a system set up for programming you "
+"don't need to think about it again. You can concentrate on the "
+"programming part. It is normal to get stuck during setup, so don't "
+"hesitate to reach out and get help."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:21
+msgid "Your development computer will need:"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:23
+msgid "The Python_ programming language and the Arcade_ code library."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:24
+msgid ""
+"An editor to type in your programs. (We'll use a program called PyCharm_."
+" You can use the community edition for free, or if you have an email "
+"address that ends in ``.edu`` get can get a free `student license`_ for "
+"the professional version.)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:28
+msgid "A version control system to track and turn in your work. (Git_)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:29
+msgid "A minor configuration tweak so we can see file extensions."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:34
+msgid "Let's go through these four items in detail."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:43
+msgid "Setup the Programming Environment"
+msgstr ""
+
+msgid ".. image:: chapters\\02_setup\\python-logo.svg"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:49
+msgid ""
+"To get your computer ready for programming we need to install the Python "
+"computer language, and an editor you can type your programs into."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:55
+msgid "Installing Python"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:57
+msgid ""
+"We will be using the \"Python_\" computer programming language. The "
+"creator of Python was a fan of `Monty Python`_, hence the name."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:63
+msgid ""
+"In addition to the Python language, we are going to use a library of "
+"commands for drawing on the screen. This is called the \"Arcade\" "
+"library."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:66
+msgid ""
+"Installation for installing Python and the Arcade library are available "
+"below:"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:68
+msgid ""
+"`Windows Installation <http://arcade.academy/installation_windows.html>`_"
+" (Make sure to read the instructions carefully. Do not skip the \"Add "
+"Python to Path\" step. This seems to be the most frequent issue.)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:71
+msgid "`Mac Installation <http://arcade.academy/installation_mac.html>`_"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:72
+msgid "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:77
+msgid "Installing an IDE"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:79
+msgid ""
+"We also need an editor. Python comes with an editor called IDLE, but it "
+"is awful and not worth using. We'll use an editor called PyCharm."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:82
+msgid ""
+"PyCharm is a powerful program that lets you do more than just edit the "
+"program, it also includes a large set of tools that programmers need. "
+"This type of environment is called an **Integrated Development "
+"Environment**, or **IDE** for short."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:87
+msgid ""
+"Download and install PyCharm_. You can use their community edition for "
+"free. We won't use the features in the professional edition. If you "
+"decide to pick the professional edition anyway, you'll need a license to "
+"use it. But licenses are free for educational use! If you have an e-mail "
+"that ends in ``.edu`` you can ask for a `student license`_. It can be "
+"used on a school computer, or on your own computer."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:97
+msgid ""
+"What is a text editor? What is an IDE? Read more at `Understanding and "
+"Choosing Text Editors`_."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:106
+msgid "Installing Arcade"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:110
+msgid "Viewing File Extensions"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:112
+msgid ""
+"It is a great idea to change your windows configuration to show file "
+"extensions. A file usually has a name like Book ``report.docx`` where the"
+" ``.docx`` tells the computer it is a Microsoft Word compatible document."
+" By default Windows hides the ``.docx`` extension if there is a program "
+"installed to handle it. If you are programming, this hiding part of the "
+"file name can be annoying."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:119
+msgid ""
+"For Windows 8 and 10, bring up a file explorer by hitting the Windows-E "
+"key. Then click the \"view\" tab and make sure \"File name extensions\" "
+"has been checked."
+msgstr ""
+
+msgid ".. image:: chapters\\02_setup\\win_10.png"
+msgstr ""
+

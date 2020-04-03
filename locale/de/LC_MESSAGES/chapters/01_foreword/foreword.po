@@ -8,154 +8,249 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-13 11:17+0200\n"
+"POT-Creation-Date: 2020-04-03 12:51-0500\n"
 "PO-Revision-Date: 2019-07-12 08:17+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
-"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../../source/chapters/01_foreword/foreword.rst:2
-msgid "Foreword - Why Learn Programming?"
-msgstr "Vorwort - Warum sollte ich Python lernen?"
+msgid "Foreword"
+msgstr ""
 
-#: ../../source/chapters/01_foreword/foreword.rst:4
-msgid "Why program? Programming is:"
-msgstr "Warum programmieren? Weil es:"
+msgid ".. image:: chapters\\01_foreword\\screenshot.png"
+msgstr ""
 
 #: ../../source/chapters/01_foreword/foreword.rst:7
-msgid "Fun"
-msgstr "Spaß macht"
+msgid ""
+"This book aims to teach programming through creating 2D video games. We "
+"cover all the standard topics in a normal first-semester class, and video"
+" games provide great visual feedback for your code. Furthermore, "
+"programming can be *fun*."
+msgstr ""
 
-#: ../../source/chapters/01_foreword/foreword.rst:8
-msgid "Pays well"
-msgstr "Gut bezahlt wird"
+#: ../../source/chapters/01_foreword/foreword.rst:12
+msgid ""
+"Programming is consistently one of the top paid skills that you can "
+"learn. It is also one of the most flexible majors you can get. You can "
+"take your programming skills to almost any industry, and any location."
+msgstr ""
 
-#: ../../source/chapters/01_foreword/foreword.rst:11
-msgid "Programming Is Fun"
+#: ../../source/chapters/01_foreword/foreword.rst:17
+msgid ""
+"Even if programming isn't going to be your main job, as a skill it can "
+"still enhance your career. Need an interactive website? Need to crunch "
+"sales numbers? What about automatically saving experiment data and "
+"graphing results? Maybe you want your home to automatically e-mail you if"
+" the garage door is left open? Learning programming, be able to do this "
+"and more."
+msgstr ""
+
+#: ../../source/chapters/01_foreword/foreword.rst:25
+#, fuzzy
+msgid "Programming Is For Everyone"
 msgstr "Programmieren macht Spaß"
 
-#: ../../source/chapters/01_foreword/foreword.rst:13
-msgid ""
-"With programming you get to *create*. People paint and perform music to "
-"create and express themselves."
+msgid ".. image:: chapters\\01_foreword\\steve_jobs.webp"
 msgstr ""
-"Beim Programmieren ist man *kreativ*. Manche malen oder musizieren, um "
-"kreativ zu sein und sich selbst auszudrücken."
 
-#: ../../source/chapters/01_foreword/foreword.rst:18
+#: ../../source/chapters/01_foreword/foreword.rst:31
 msgid ""
-"Picasso had a saying. He said, \"Good artists copy, great artists steal.\" "
-"And we have always been shameless about stealing great ideas and I think "
-"part of what made the Macintosh great was that the people working on it were "
-"musicians and poets and artists and zoologists and historians who also "
-"happened to be the best computer scientists in the world."
+"With programming you get to *create*. Making beautiful graphics and "
+"designing programs is an art. Good design requires people from all walks "
+"of life, and that's one of the reasons Apple was able to gain a foothold "
+"in the computing industry:"
 msgstr ""
-"Picasso had a saying. He said, \"Good artists copy, great artists steal.\" "
-"And we have always been shameless about stealing great ideas and I think "
-"part of what made the Macintosh great was that the people working on it were "
-"musicians and poets and artists and zoologists and historians who also "
-"happened to be the best computer scientists in the world."
 
-#: ../../source/chapters/01_foreword/foreword.rst:24
+#: ../../source/chapters/01_foreword/foreword.rst:37
 msgid ""
-"*Steve Jobs in PBS's \"Triumph of the Nerds: The Rise of Accidental Empires"
-"\" (1996)*"
+"Picasso had a saying. He said, \"Good artists copy, great artists "
+"steal.\" And we have always been shameless about stealing great ideas and"
+" I think part of what made the Macintosh great was that the people "
+"working on it were musicians and poets and artists and zoologists and "
+"historians who also happened to be the best computer scientists in the "
+"world."
 msgstr ""
-"*Steve Jobs in der Sendung \"Triumph of the Nerds: The Rise of Accidental "
-"Empires\" (1996) auf PBS*"
+"Picasso had a saying. He said, \"Good artists copy, great artists "
+"steal.\" And we have always been shameless about stealing great ideas and"
+" I think part of what made the Macintosh great was that the people "
+"working on it were musicians and poets and artists and zoologists and "
+"historians who also happened to be the best computer scientists in the "
+"world."
 
-#: ../../source/chapters/01_foreword/foreword.rst:26
+#: ../../source/chapters/01_foreword/foreword.rst:43
 msgid ""
-"Not only do you get to be an artist when you program, but you get to design."
+"*Steve Jobs in PBS's \"Triumph of the Nerds: The Rise of Accidental "
+"Empires\" (1996)*"
 msgstr ""
-"Beim Programmieren bist du nicht nur ein Künstler, sondern auch ein Designer."
+"*Steve Jobs in der Sendung \"Triumph of the Nerds: The Rise of Accidental"
+" Empires\" (1996) auf PBS*"
 
-#: ../../source/chapters/01_foreword/foreword.rst:30
+#: ../../source/chapters/01_foreword/foreword.rst:45
 msgid ""
-"Design is a funny word. Some people think design means how it looks. But of "
-"course, if you dig deeper, it's really how it works. The design of the Mac "
-"wasn't what it looked like, although that was part of it. Primarily, it was "
-"how it worked."
+"The artistry behind a program isn't just how it looks, but how it is "
+"*designed*. How the interface between the human and the computer "
+"functions:"
 msgstr ""
-"Design is a funny word. Some people think design means how it looks. But of "
-"course, if you dig deeper, it's really how it works. The design of the Mac "
-"wasn't what it looked like, although that was part of it. Primarily, it was "
-"how it worked."
 
-#: ../../source/chapters/01_foreword/foreword.rst:35
+#: ../../source/chapters/01_foreword/foreword.rst:50
+msgid ""
+"Design is a funny word. Some people think design means how it looks. But "
+"of course, if you dig deeper, it's really how it works. The design of the"
+" Mac wasn't what it looked like, although that was part of it. Primarily,"
+" it was how it worked."
+msgstr ""
+"Design is a funny word. Some people think design means how it looks. But "
+"of course, if you dig deeper, it's really how it works. The design of the"
+" Mac wasn't what it looked like, although that was part of it. Primarily,"
+" it was how it worked."
+
+#: ../../source/chapters/01_foreword/foreword.rst:55
 msgid "*Steve Jobs in Wired's \"The Next Insanely Great Thing\" (1996)*"
-msgstr ""
-"*Steve Jobs im Artikel in Wired \"The Next Insanely Great Thing\" (1996)*"
+msgstr "*Steve Jobs im Artikel in Wired \"The Next Insanely Great Thing\" (1996)*"
 
-#: ../../source/chapters/01_foreword/foreword.rst:38
+#: ../../source/chapters/01_foreword/foreword.rst:57
+msgid ""
+"Programming requires all kinds of people. Successful programs require "
+"idea people, business people, project people, artists, subject-matter "
+"experts, testers, writers, and more. You may not have ever thought of "
+"yourself as a programmer, but you *can* be."
+msgstr ""
+
+#: ../../source/chapters/01_foreword/foreword.rst:63
 msgid "Programming Pays Well"
 msgstr "Programmieren wird gut bezahlt"
 
-#: ../../source/chapters/01_foreword/foreword.rst:40
+msgid ".. image:: chapters\\01_foreword\\money.svg"
+msgstr ""
+
+#: ../../source/chapters/01_foreword/foreword.rst:69
+#, fuzzy
 msgid ""
-"Search up \"top paid majors\" and you'll see computer science is usually one "
-"of the top paid degrees you can get."
+"Search up \"top paid majors\" and you'll see computer science is usually "
+"one of the best paying degrees you can get."
 msgstr ""
 "Suche nach den Berufen mit gutem Einkommen und du wirst sehen, dass ein "
 "Abschluss in Informatik zu den am besten bezahlten Arbeitsplätzen führt."
 
-#: ../../source/chapters/01_foreword/foreword.rst:43
+#: ../../source/chapters/01_foreword/foreword.rst:72
 msgid ""
-"The National Association of Colleges and Employers (NACE) says that Computer "
-"Science is the second best paid degree (as of Jan 2018) that you can get. "
-"Engineering is number one."
+"In 2019 the National Association of Colleges and Employers (NACE) says "
+"that `software developers have the second highest entry-level salaries "
+"<https://www.naceweb.org/job-market/compensation/stem-majors-projected-"
+"to-be-class-of-2019s-top-paid/>`_, with only some engineers getting paid "
+"more. Payscale agrees, says `computer science is second only to petroleum"
+" engineering <https://www.payscale.com/college-salary-report/majors-that-"
+"pay-you-back/bachelors>`_. Learning to program is worth your time."
 msgstr ""
-"In den USA sagt die National Association of Colleges and Employers (NACE), "
-"dass Computer Science der zweitbest bezahlte Abschluss ist (Stand Januar "
-"2018). Das Ingenieurswesen liegt auf Platz eins."
 
-#: ../../source/chapters/01_foreword/foreword.rst:47
-msgid ""
-"`Payscale breaks the engineering degrees out, and puts computer science at "
-"#14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/"
-"bachelors>`_. The other top-paid majors, such as engineering and "
-"mathematics, all use programming extensively."
+#: ../../source/chapters/01_foreword/foreword.rst:80
+msgid "What Can You Create By The End Of The Course?"
 msgstr ""
-"`Payscale breaks the engineering degrees out, and puts computer science at "
-"#14 <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/"
-"bachelors>`_. Die anderen top bezahlten Studienrichtungen, wie "
-"Ingenieursdisziplinen und Mathematik, nutzen alle intensive das Entwickeln "
-"von Programmen."
 
-#: ../../source/chapters/01_foreword/foreword.rst:51
-msgid ""
-"In addition we'll teach the topics of a typical first-semester programming "
-"class. But the most important thing is for you to find out if programming is "
-"worth your time."
-msgstr ""
-"Zusätzlich unterrichten wir all die Themen eines typischen "
-"Erstsemesterkurses im Programmieren, aber das Wichtigste für dich ist "
-"herauszufinden, dass Programmieren den Zeitaufwand wert ist."
-
-#: ../../source/chapters/01_foreword/foreword.rst:56
-msgid ""
-"In :ref:`how-to-draw` we show how to create your first graphics. These first "
-"chapters we show you how to get your computer set up."
-msgstr ""
-"Im Kapitel :ref:`how-to-draw` zeigen wir, wie du deine erste Grafik "
-"erzeugst. Diese ersten Kapitel zeigen dir, wie du deinen Rechner "
-"einrichtest, um in Python zu programmieren."
-
-#: ../../source/chapters/01_foreword/foreword.rst:60
-msgid "What Other Students Have Made"
-msgstr "Was andere Studierende entwickelt haben"
-
-#: ../../source/chapters/01_foreword/foreword.rst:62
+#: ../../source/chapters/01_foreword/foreword.rst:82
+#, fuzzy
 msgid ""
 "Here are some videos of games students have created in prior semesters. "
-"Students who didn't know any programming, were able to create these games by "
-"the time they finished the semester."
+"Students who didn't know any programming were able to create these games "
+"by the time they finished the semester."
 msgstr ""
 "Hier gibt es ein paar Videos von Spielen von Studierenden am Simpson "
-"College. Studenten, die vorher nicht programmieren konnten, konnten diese "
-"Spiele am Ende ihres ersten Semesters umsetzen."
+"College. Studenten, die vorher nicht programmieren konnten, konnten diese"
+" Spiele am Ende ihres ersten Semesters umsetzen."
+
+#~ msgid "Foreword - Why Learn Programming?"
+#~ msgstr "Vorwort - Warum sollte ich Python lernen?"
+
+#~ msgid "Why program? Programming is:"
+#~ msgstr "Warum programmieren? Weil es:"
+
+#~ msgid "Fun"
+#~ msgstr "Spaß macht"
+
+#~ msgid "Pays well"
+#~ msgstr "Gut bezahlt wird"
+
+#~ msgid ""
+#~ "With programming you get to *create*."
+#~ " People paint and perform music to"
+#~ " create and express themselves."
+#~ msgstr ""
+#~ "Beim Programmieren ist man *kreativ*. "
+#~ "Manche malen oder musizieren, um kreativ"
+#~ " zu sein und sich selbst "
+#~ "auszudrücken."
+
+#~ msgid ""
+#~ "Not only do you get to be an"
+#~ " artist when you program, but you "
+#~ "get to design."
+#~ msgstr ""
+#~ "Beim Programmieren bist du nicht nur "
+#~ "ein Künstler, sondern auch ein Designer."
+
+#~ msgid ""
+#~ "The National Association of Colleges and"
+#~ " Employers (NACE) says that Computer "
+#~ "Science is the second best paid "
+#~ "degree (as of Jan 2018) that you"
+#~ " can get. Engineering is number one."
+#~ msgstr ""
+#~ "In den USA sagt die National "
+#~ "Association of Colleges and Employers "
+#~ "(NACE), dass Computer Science der "
+#~ "zweitbest bezahlte Abschluss ist (Stand "
+#~ "Januar 2018). Das Ingenieurswesen liegt "
+#~ "auf Platz eins."
+
+#~ msgid ""
+#~ "`Payscale breaks the engineering degrees "
+#~ "out, and puts computer science at "
+#~ "#14 <https://www.payscale.com/college-salary-report"
+#~ "/majors-that-pay-you-back/bachelors>`_. The"
+#~ " other top-paid majors, such as "
+#~ "engineering and mathematics, all use "
+#~ "programming extensively."
+#~ msgstr ""
+#~ "`Payscale breaks the engineering degrees "
+#~ "out, and puts computer science at "
+#~ "#14 <https://www.payscale.com/college-salary-report"
+#~ "/majors-that-pay-you-back/bachelors>`_. Die"
+#~ " anderen top bezahlten Studienrichtungen, "
+#~ "wie Ingenieursdisziplinen und Mathematik, "
+#~ "nutzen alle intensive das Entwickeln von"
+#~ " Programmen."
+
+#~ msgid ""
+#~ "In addition we'll teach the topics "
+#~ "of a typical first-semester programming"
+#~ " class. But the most important thing"
+#~ " is for you to find out if "
+#~ "programming is worth your time."
+#~ msgstr ""
+#~ "Zusätzlich unterrichten wir all die "
+#~ "Themen eines typischen Erstsemesterkurses im"
+#~ " Programmieren, aber das Wichtigste für "
+#~ "dich ist herauszufinden, dass Programmieren"
+#~ " den Zeitaufwand wert ist."
+
+#~ msgid ""
+#~ "In :ref:`how-to-draw` we show how"
+#~ " to create your first graphics. These"
+#~ " first chapters we show you how "
+#~ "to get your computer set up."
+#~ msgstr ""
+#~ "Im Kapitel :ref:`how-to-draw` zeigen "
+#~ "wir, wie du deine erste Grafik "
+#~ "erzeugst. Diese ersten Kapitel zeigen "
+#~ "dir, wie du deinen Rechner einrichtest,"
+#~ " um in Python zu programmieren."
+
+#~ msgid "What Other Students Have Made"
+#~ msgstr "Was andere Studierende entwickelt haben"
+
