@@ -1,0 +1,5 @@
+make gettext
+sphinx-intl update -p build -l de -l cz
+
+set SPHINXOPTS=-D language=de
+make html
