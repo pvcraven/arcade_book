@@ -1,8 +1,12 @@
 make gettext
-sphinx-intl update -p build/locale -l de
+sphinx-intl update -p build/locale -l en -l de
+
+sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project-name learn-with-arcade-academy
 
 sphinx-build -b html -D language=dn source build/html
 sphinx-build -b html -D language=de source build/html/de
 
 rem set SPHINXOPTS=-D language=de
 rem make html
+
+ 1/a933c0d9b6357cd5ba52534e687647b838e6d323

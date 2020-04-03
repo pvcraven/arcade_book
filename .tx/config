@@ -1,0 +1,309 @@
+[main]
+host = https://www.transifex.com
+
+[learn-with-arcade-academy.audio_processing]
+file_filter = locale/<lang>/LC_MESSAGES/audio_processing.po
+source_file = build/locale/audio_processing.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.color_scheme]
+file_filter = locale/<lang>/LC_MESSAGES/color_scheme.po
+source_file = build/locale/color_scheme.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.index]
+file_filter = locale/<lang>/LC_MESSAGES/index.po
+source_file = build/locale/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.voice_overs]
+file_filter = locale/<lang>/LC_MESSAGES/voice_overs.po
+source_file = build/locale/voice_overs.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--index]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/index.po
+source_file = build/locale/chapters/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--01_foreword--foreword]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/01_foreword/foreword.po
+source_file = build/locale/chapters/01_foreword/foreword.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--02_setup--setup]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/02_setup/setup.po
+source_file = build/locale/chapters/02_setup/setup.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--03_version_control--index]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/03_version_control/index.po
+source_file = build/locale/chapters/03_version_control/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--04_print_statement--print_statement]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/04_print_statement/print_statement.po
+source_file = build/locale/chapters/04_print_statement/print_statement.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--05_drawing--drawing]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/05_drawing/drawing.po
+source_file = build/locale/chapters/05_drawing/drawing.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--06_what_is_a_programming_language--index]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/06_what_is_a_programming_language/index.po
+source_file = build/locale/chapters/06_what_is_a_programming_language/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--07_expressions--expressions]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/07_expressions/expressions.po
+source_file = build/locale/chapters/07_expressions/expressions.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--08_functions--functions]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/08_functions/functions.po
+source_file = build/locale/chapters/08_functions/functions.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--09_drawing_with_functions--drawing_with_functions]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/09_drawing_with_functions/drawing_with_functions.po
+source_file = build/locale/chapters/09_drawing_with_functions/drawing_with_functions.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--10_if_statements--if_statements]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/10_if_statements/if_statements.po
+source_file = build/locale/chapters/10_if_statements/if_statements.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--11_loops_and_random_numbers--loops_and_random_numbers]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/11_loops_and_random_numbers/loops_and_random_numbers.po
+source_file = build/locale/chapters/11_loops_and_random_numbers/loops_and_random_numbers.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--advanced_looping]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/advanced_looping.po
+source_file = build/locale/chapters/12_advanced_looping/advanced_looping.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--13_lists--lists]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/13_lists/lists.po
+source_file = build/locale/chapters/13_lists/lists.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--14b_class_methods--class_methods]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/14b_class_methods/class_methods.po
+source_file = build/locale/chapters/14b_class_methods/class_methods.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--14_classes--classes]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/14_classes/classes.po
+source_file = build/locale/chapters/14_classes/classes.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--15_window_class--window_class]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/15_window_class/window_class.po
+source_file = build/locale/chapters/15_window_class/window_class.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--16_user_control--user_control]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/16_user_control/user_control.po
+source_file = build/locale/chapters/16_user_control/user_control.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--17_sounds--sounds]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/17_sounds/sounds.po
+source_file = build/locale/chapters/17_sounds/sounds.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--18_sprites_and_collisions--sprites]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/18_sprites_and_collisions/sprites.po
+source_file = build/locale/chapters/18_sprites_and_collisions/sprites.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--19_moving_sprites--moving_sprites]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/19_moving_sprites/moving_sprites.po
+source_file = build/locale/chapters/19_moving_sprites/moving_sprites.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--20_debugging--debugging]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/20_debugging/debugging.po
+source_file = build/locale/chapters/20_debugging/debugging.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--21_shooting_sprites--shooting_sprites]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/21_shooting_sprites/shooting_sprites.po
+source_file = build/locale/chapters/21_shooting_sprites/shooting_sprites.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--22_sprites_and_walls--sprites_and_walls]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/22_sprites_and_walls/sprites_and_walls.po
+source_file = build/locale/chapters/22_sprites_and_walls/sprites_and_walls.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--23_libraries_and_modules--libraries_and_modules]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/23_libraries_and_modules/libraries_and_modules.po
+source_file = build/locale/chapters/23_libraries_and_modules/libraries_and_modules.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--24_searching--searching]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/24_searching/searching.po
+source_file = build/locale/chapters/24_searching/searching.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--25_array_backed_grids--array_backed_grids]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/25_array_backed_grids/array_backed_grids.po
+source_file = build/locale/chapters/25_array_backed_grids/array_backed_grids.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--26_platformers--platformers]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/26_platformers/platformers.po
+source_file = build/locale/chapters/26_platformers/platformers.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--27_sorting--sorting]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/27_sorting/sorting.po
+source_file = build/locale/chapters/27_sorting/sorting.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--28_exceptions--exceptions]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/28_exceptions/exceptions.po
+source_file = build/locale/chapters/28_exceptions/exceptions.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--29_recursion--recursion]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/29_recursion/recursion.po
+source_file = build/locale/chapters/29_recursion/recursion.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--30_print_formatting--print_formatting]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/30_print_formatting/print_formatting.po
+source_file = build/locale/chapters/30_print_formatting/print_formatting.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--xx_venv_setup--index]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/xx_venv_setup/index.po
+source_file = build/locale/chapters/xx_venv_setup/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--index]
+file_filter = locale/<lang>/LC_MESSAGES/labs/index.po
+source_file = build/locale/labs/index.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_01_first_program--first_program]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_01_first_program/first_program.po
+source_file = build/locale/labs/lab_01_first_program/first_program.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_02_drawing--drawing]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_02_drawing/drawing.po
+source_file = build/locale/labs/lab_02_drawing/drawing.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_03_function_drawing--function_drawing]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_03_function_drawing/function_drawing.po
+source_file = build/locale/labs/lab_03_function_drawing/function_drawing.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_04_camel--camel]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_04_camel/camel.po
+source_file = build/locale/labs/lab_04_camel/camel.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_05_loopy_lab--loopy_lab]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_05_loopy_lab/loopy_lab.po
+source_file = build/locale/labs/lab_05_loopy_lab/loopy_lab.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_06_text_adventure--adventure]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_06_text_adventure/adventure.po
+source_file = build/locale/labs/lab_06_text_adventure/adventure.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_07_user_control--user_control]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_07_user_control/user_control.po
+source_file = build/locale/labs/lab_07_user_control/user_control.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_08_sprites--sprites]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_08_sprites/sprites.po
+source_file = build/locale/labs/lab_08_sprites/sprites.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_09_sprites_and_walls--sprites_and_walls]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_09_sprites_and_walls/sprites_and_walls.po
+source_file = build/locale/labs/lab_09_sprites_and_walls/sprites_and_walls.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_10_spell_check--spell_check]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_10_spell_check/spell_check.po
+source_file = build/locale/labs/lab_10_spell_check/spell_check.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_11_array_backed_grids--array_backed_grids]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_11_array_backed_grids/array_backed_grids.po
+source_file = build/locale/labs/lab_11_array_backed_grids/array_backed_grids.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_12_final_lab--final_lab]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_12_final_lab/final_lab.po
+source_file = build/locale/labs/lab_12_final_lab/final_lab.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.labs--lab_12_quantitative_reasoning--quantitative_reasoning]
+file_filter = locale/<lang>/LC_MESSAGES/labs/lab_12_quantitative_reasoning/quantitative_reasoning.po
+source_file = build/locale/labs/lab_12_quantitative_reasoning/quantitative_reasoning.pot
+source_lang = en
+type = PO
+

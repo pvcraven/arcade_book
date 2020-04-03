@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2020-04-03 13:29-0500\n"
 "PO-Revision-Date: 2019-07-14 10:31+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -424,8 +424,11 @@ msgstr ""
 "füllen. Wie erstellen wir eine leere Liste? Einfach: "
 
 #: ../../source/chapters/13_lists/lists.rst:216
-msgid "Erstelle eine leere Liste"
-msgstr ""
+#, fuzzy
+msgid ""
+"# Create an empty list\n"
+"my_list = []"
+msgstr "Erstelle eine leere Liste"
 
 #: ../../source/chapters/13_lists/lists.rst:222
 msgid "Iterating (Looping) Through a List"
@@ -743,7 +746,7 @@ msgstr "Erstelle ein Array mit 100 Nullen"
 #: ../../source/chapters/13_lists/lists.rst:395
 #, fuzzy
 msgid ""
-"# Erstelle ein Array mit 100 Nullen\n"
+"# Create an array with 100 zeros.\n"
 "my_list = [0] * 100"
 msgstr ""
 "# Erstelle ein Array mit 100 Nullen\n"
@@ -2013,4 +2016,7 @@ msgstr ""
 #~ "# Create an empty list\n"
 #~ "my_list = []"
 #~ msgstr "Erstelle eine leere Liste"
+
+#~ msgid "Erstelle eine leere Liste"
+#~ msgstr ""
 
