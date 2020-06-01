@@ -3,15 +3,15 @@
 Variables and Expressions
 =========================
 
-.. image:: expressions.svg
-    :width: 30%
+.. image:: drawing.png
+    :width: 35%
     :class: right-image
 
 We've learned how to import a library and call functions.
 The next step is to make our code more flexible.
-What if we could take that drawing code we wrote and put it into
-our own functions? Then we could just call a function anytime
-we wanted a tree, house, or rainbow. Our code could look like this:
+What if we could take that drawing code and put it into
+our *own* functions? Then we could write custom functions to draw
+trees, houses, even rainbows. Our code could look like this:
 
 .. code-block:: python
 
@@ -20,15 +20,23 @@ we wanted a tree, house, or rainbow. Our code could look like this:
     draw_house(720, 60)
     draw_snow_person(300, 20)
 
-For this level of computer-programming power,
-we need to learn three things:
+Creating flexible functions isn't just for drawing.
+Functions are the basic building block of almost
+every type of programming. If you are running a program, it is just functions,
+built on top of functions, built on yet more functions.
+
+To be able to create our own functions, we need to cover three things.
 
 * How to use variables (this chapter)
 * How to write expressions (this chapter)
-* How to create our own functions (next two chapters)
+* How to create our own functions (the next two chapters)
 
 How to Use Variables
 --------------------
+
+.. image:: expression.jpg
+    :width: 35%
+    :class: right-image
 
 A **variable** is a value the computer stores in memory that can change. That
 is, it *varies*. Here is a quick example:
@@ -80,6 +88,10 @@ gets confused and generates a syntax error. That's why we need quotes:
 Variable and Function Names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: hello.svg
+    :width: 35%
+    :class: right-image
+
 Variable names and function names follow the same rules. There are
 names you *should* use, names you *shouldn't* use, and
 names you *can't* use.
@@ -120,16 +132,15 @@ the only variables that use upper-case. For example:
 
 Good variable names help make code *readable*.
 
-For example, what does this code do? It is hard to tell. (Furthermore, if I
-have to update the numbers, I'm editing the equation which makes it more likely
-I'll accidentally change the function.)
+For example, what does this code do? It is hard to tell.
 
 .. code-block:: python
 
     m = 294 / 10.5
     print(m)
 
-Here we use variables. A bit easier to change the values, and a bit easier to understand.
+Here we use variables to separate the formula from the numbers.
+A bit easier to change the values, and a bit easier to figure out the formula.
 
 .. code-block:: python
 
@@ -149,15 +160,15 @@ and comments the code is *very* easy to understand.
     mpg = miles_driven / gallons_used
     print(mpg)
 
-Good variable names make code easier to understand, easier to code,
-and easier to find errors.
+Good variable names make code *readable*. Even a non-programmer could scan
+that code and understand what it does. Straightforward code requires less
+effort to find problems. Therefore, take the time to name your variables well.
 
 How to Create Expressions
 -------------------------
 
 Great! We are part-way there. To manipulate data with a computer, we use
-**expressions**. An expression is simply a mathematical equation, although
-we aren't limited to numbers.
+**expressions**. An expression is simply a mathematical equation.
 
 Using Operators in Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -218,29 +229,47 @@ Easy enough, just remember to use ``*`` any time you want to multiply.
 Assignment Operators
 ^^^^^^^^^^^^^^^^^^^^
 
-The ``=`` doesn't work the same as in algebra. The ``=`` evaluates what is on
-the right, and puts it in the variable on the left. For example:
+The ``=`` doesn't work the same as in algebra. The ``=`` takes the expression to
+the right and evaluates it. The resulting value is stored into a variable
+on the left of the ``=``.
+For example this stores a ``7`` into the variable ``x``:
 
 .. code-block:: python
 
-    # This works
     x = 3 + 4
 
-    # This doesn't work because the only thing that can be on the left of
-    # the = is a variable.
+In algebra, this next line of code would be ok.
+It does not work in Python however, because the
+only thing that can be on the left is a variable:
+
+.. code-block:: python
+
     3 + 4 = x
 
-    # This works
+Variables can be used in the expression. This example works fine, and
+stores ``17`` into ``z``:
+
+.. code-block:: python
+
     x = 5
     y = 6
     z = x + 2 * y
 
-    # This doesn't
+This next set of code doesn't work. On the left of the ``=`` in that last line,
+there's an expression. We need just a single variable for it to work.
+How would you re-write it to work?
+
+.. code-block:: python
+
+    # Last line has more than a variable on the left, doesn't
+    # work.
     x = 5
     y = 6
     2 * z = x + y
 
-This allows us to do some strange things we can't do in algebra!
+The fact that the ``=`` sign isn't an algebraic equality allows us to do some
+strange expressions that don't make sense in algebra. Look at the this set
+of code and the comments that explain it:
 
 .. code-block:: python
 
@@ -270,6 +299,7 @@ then ``5``. The variable ``x`` only holds the number ``3``.
 
 .. code-block:: python
 
+    # Add one to x, but the number x holds does not change.
     x = 3
     print(x + 1)
     print(x + 1)
@@ -280,6 +310,7 @@ the number in ``x`` doesn't change.
 
 .. code-block:: python
 
+    # Add one to x, but the number x holds still does not change.
     x = 3
     x + 1
     print(x)
@@ -362,11 +393,14 @@ to draw a circle in the center of the screen?
 
 By creating variables for the height and width of the
 screen, we can set the screen size, and also do a quick
-calculation to find the screen center.
+calculation to find the screen center. In this example
+we use constant variables for the screen width and height. Then
+use some math to calculate the center of the screen.
 
 .. code-block:: python
     :linenos:
-    :emphasize-lines: 3-4, 12-15
+    :emphasize-lines: 3-4, 12-18
+    :caption: Calculating the center of the screen
 
     import arcade
 
@@ -382,7 +416,10 @@ calculation to find the screen center.
     # Instead of this:
     # arcade.draw_circle_filled(400, 300, 50, arcade.color.FOREST_GREEN)
     # do this:
-    arcade.draw_circle_filled(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 50, arcade.color.FOREST_GREEN)
+    arcade.draw_circle_filled(SCREEN_WIDTH / 2,
+                              SCREEN_HEIGHT / 2,
+                              50,
+                              arcade.color.FOREST_GREEN)
 
     arcade.finish_render()
     arcade.run()
@@ -390,20 +427,22 @@ calculation to find the screen center.
 The great thing about this is that the variables which control the screen size
 can be changed, and the circle will automatically be re-centered. Had we simply
 coded (400, 300) as the center, we'd need to go and change that number as well.
-Perhaps not a big deal with a small program, but as our programs get larger is
+Perhaps not a big deal with a small program, but as our programs get larger it
 saves a lot of time.
 
 Order of Operations
 ^^^^^^^^^^^^^^^^^^^
 
-Python will evaluate expressions using the same order of operations math uses.
+Python will evaluate expressions using the same *order of operations*
+you learned in math.
 For example this expression does not correctly calculate the average:
 
 .. code-block:: python
 
     average = 90 + 86 + 71 + 100 + 98 / 5
 
-The first operation done is 98/5. The computer calculates this equation:
+The first operation to be calculated is ``98 / 5``, rather than adding up
+the numbers. That is, the computer calculates this equation:
 
 .. math::
 
@@ -530,5 +569,14 @@ Review Questions
 #. What do computer languages use to store changing data?
 #. What do we call the ``=`` symbol in Python?
 #. When we store text into a variable, what is another name for the text?
-
+#. What are the rules around creating a good variable name?
+#. What is an expression?
+#. Give an example for each of the seven operators.
+#. What is integer division? Explain.
+#. What is modulus?
+#. Rewrite the expression ``v = 2(3.14r)`` so that it works in Python.
+#. What is the code to add 1 to x? (That is, actually change the value of x.)
+#. Show how to use the increment operator to add one to x.
+#. Give an example of printing a variable, including additional text that labels
+   what it is.
 

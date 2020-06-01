@@ -164,7 +164,8 @@ Understanding class references. Take a look at the following code:
     main()
 
 The code above creates two instances of the ``Person()`` class, and
-using `www.pythontutor.com`_ we can `visualize the two classes`_ in the figure.
+using `www.pythontutor.com <https://www.pythontutor.com>`_
+we can `visualize the two classes`_ in the figure.
 
 .. _visualize the two classes: http://www.pythontutor.com/visualize.html#code=class+Person%3A%0D%0A++++def+__init__(self)%3A%0D%0A++++++++self.name+%3D+%22%22%0D%0A++++++++self.money+%3D+0%0D%0A+%0D%0Abob+%3D+Person()%0D%0Abob.name+%3D+%22Bob%22%0D%0Abob.money+%3D+100%0D%0A+%0D%0Anancy+%3D+Person()%0D%0Anancy.name+%3D+%22Nancy%22%0D%0A+%0D%0Aprint(bob.name,+%22has%22,+bob.money,+%22dollars.%22)%0D%0Aprint(nancy.name,+%22has%22,+nancy.money,+%22dollars.%22)&mode=display&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&py=3&rawInputLstJSON=%5B%5D&curInstr=1
 
