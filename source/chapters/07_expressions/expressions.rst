@@ -173,6 +173,10 @@ Great! We are part-way there. To manipulate data with a computer, we use
 Using Operators in Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: calculator.svg
+    :width: 20%
+    :class: right-image
+
 Expressions use **operators**. That's just a fancy word for symbols like
 addition (``+``) and subtraction(``-``).
 Here's an example:
@@ -288,6 +292,10 @@ of code and the comments that explain it:
 Increasing a Variable
 ^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: increase.svg
+    :width: 20%
+    :class: right-image
+
 What if we want to change a value stored in a variable? We need to use
 an assignment operator.
 
@@ -333,6 +341,10 @@ a ``4``.
 Increment/Decrement Operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: up_down.svg
+    :width: 20%
+    :class: right-image
+
 The ``=`` symbol isn't the only assignment operator.
 Here are the other assignment operators:
 
@@ -374,7 +386,8 @@ works:
 
 Remember, if you want to increase or decrease a variable, you need to use an assignment operator.
 
-Oh, and a common mistake is to mix the ``+`` and ``+=`` operator.
+Oh, and a common mistake is to mix the ``+`` and ``+=`` operator as shown in this
+example. It doesn't just add one to x, it doubles x and adds one.
 
 .. code-block:: python
 
@@ -433,6 +446,10 @@ saves a lot of time.
 Order of Operations
 ^^^^^^^^^^^^^^^^^^^
 
+.. image:: calculator_2.svg
+    :width: 20%
+    :class: right-image
+
 Python will evaluate expressions using the same *order of operations*
 you learned in math.
 For example this expression does not correctly calculate the average:
@@ -442,19 +459,19 @@ For example this expression does not correctly calculate the average:
     average = 90 + 86 + 71 + 100 + 98 / 5
 
 The first operation to be calculated is ``98 / 5``, rather than adding up
-the numbers. That is, the computer calculates this equation:
+the numbers. That is, the computer calculates this equation instead:
 
 .. math::
 
    90+86+71+100+\frac{98}{5}
 
-rather than the desired desired equation where the division happens last:
+What we need is an equation where the division happens last:
 
 .. math::
 
    \dfrac{90+86+71+100+98}{5}
 
-By using parentheses this problem can be fixed:
+By using parentheses around the addition in our code, this problem can be fixed:
 
 .. code-block:: python
 
@@ -463,8 +480,12 @@ By using parentheses this problem can be fixed:
 Printing Variables
 ------------------
 
+.. image:: printer.svg
+    :width: 20%
+    :class: right-image
+
 How can you print variables and text together? Say you've got a variable ``answer`` and
-you want to print it. Based on what we've learned so far, you can do this:
+you want to print it. Based on what we've learned so far, you can do this code:
 
 .. code-block:: python
 
@@ -478,20 +499,27 @@ if we wanted:
 
     The answer is bananas
 
-You can do this with:
+You can combine the answer with the additional text by using a comma. Here's
+an example:
+
+.. image:: banana.svg
+    :width: 20%
+    :class: right-image
 
 .. code-block:: python
 
     answer = "bananas"
     print("The answer is", answer)
 
-Better. But I want to add punctuation. If we do this:
+That example was better. But it is missing punctuation. This code attempts to
+add a period at the end:
 
 .. code-block:: python
 
     answer = "bananas"
     print("The answer is", answer, ".")
 
+Unfortunately, it doesn't work quite right.
 We get an extra space before the period:
 
 .. code-block:: text
@@ -499,34 +527,35 @@ We get an extra space before the period:
     The answer is bananas .
 
 The ``,`` adds a space when we use it in a ``print`` statement. We don't
-always want that. We can instead use a ``+`` sign:
+always want that. We can instead use a ``+`` sign as shown in this example:
 
 .. code-block:: python
 
     answer = "bananas"
     print("The answer is" + answer + ".")
 
-Which gets rid of all the spaces:
+That gets rid of all the spaces:
 
 .. code-block:: text
 
     The answer isbananas.
 
-So we need to add a space INSIDE the quotes where we want it:
+So we need to add a space INSIDE the quotes where we want it as shown here:
 
 .. code-block:: python
 
     answer = "bananas"
     print("The answer is " + answer + ".")
 
-Ok, so I think I know how to print variables. Until I try this:
+That works until you try an to print a variable that holds a number instead of
+text. Try this example:
 
 .. code-block:: python
 
     answer = 42
     print("The answer is " + answer + ".")
 
-This gives a brand new error we haven't seen yet, a ``TypeError``.
+That code generates a brand new error we haven't seen yet, a ``TypeError``.
 
 .. code-block:: text
 
@@ -535,33 +564,45 @@ This gives a brand new error we haven't seen yet, a ``TypeError``.
         print("The answer is " + answer + ".")
     TypeError: can only concatenate str (not "int") to str
 
-
+What is the problem?
 The computer doesn't know how to put text and numbers together. If you add two
 *numbers*
 ``20 + 20`` you get ``40``. If you add two *strings* ``"20" + "20"`` you
 get ``2020``, but the
 computer has no idea what to do with a combo of text and numbers. So the fix
-is to use the ``str`` function which converts the number to a string (text):
+is to use the ``str`` function which converts the number to a string (text).
+Here's an example:
 
 .. code-block:: python
 
     answer = 42
     print("The answer is " + str(answer) + ".")
 
-Yes, this is a bit complex. But wait! There's more! Another way to print
-variables is to use a *formatted string*. Later we will spend a whole other
-chapter on formatted strings, but they look like:
+Yes, this is a bit complex. But wait! There's an easier way! We can print
+variables using a *formatted string*. Later we will spend a whole
+chapter on formatted strings, but here's an example to get started.
 
 .. code-block:: python
 
     answer = 42
     print(f"The answer is {answer}.")
 
-Note we start the string with an ``f`` before the quote, and the variable
-we want to print goes in curly braces.
+Note this example starts the string with an ``f`` before the quote, and the variable
+we want to print goes in curly braces. This is the way I recommend printing
+variables. Again, we'll cover it in more detail in a later chapter.
 
 Review
 ------
+
+.. image:: girl-reading-book.svg
+    :width: 20%
+    :class: right-image
+
+In this chapter we introduced the concept of using **variables** and using them
+in **expressions**. Expressions are made up of both variables, and **operators**
+which are used to tell the computers how to combine the values. We also
+showed how to print variables along with text. We will use this knowledge to
+create our own functions in the next chapter.
 
 Review Questions
 ^^^^^^^^^^^^^^^^
