@@ -209,6 +209,14 @@ equality.
 Juxtaposition Doesn't Work
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. sidebar:: Juxtaposition
+
+    **Juxtaposition** is the term used to describe two mathematical terms right next
+    to each other. When this happens we assume the terms are multiplied. For example,
+    2x means two times the variable *x*. There's no multiplication sign between them.
+    This
+    also works for parenthesis, 2(y + 1) means two times the result of *y* plus one.
+
 Juxtaposition doesn't work for multiplication.
 For example, the following will **not** work:
 

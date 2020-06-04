@@ -141,10 +141,9 @@ the topic.
 
 **What will it look like?**
 
-Take a look at this chapter:
+Take a look at these chapters:
 
-https://learn.arcade.academy/chapters/04_print_statement/print_statement.html
-
-And this video:
-
-https://youtu.be/6KaRu3FS3AA
+* `Chapter 4 Text <https://learn.arcade.academy/chapters/04_print_statement/print_statement.html>`_
+* `Chapter 4 Video <https://youtu.be/6KaRu3FS3AA>`_
+* `Chapter 5 Text <https://learn.arcade.academy/chapters/05_drawing/drawing.html>`_
+* `Chapter 5 Video <https://www.youtube.com/watch?v=wYofTQaIIlQ&feature=youtu.be>`_
