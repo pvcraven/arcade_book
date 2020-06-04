@@ -568,7 +568,7 @@ What is the problem?
 The computer doesn't know how to put text and numbers together. If you add two
 *numbers*
 ``20 + 20`` you get ``40``. If you add two *strings* ``"20" + "20"`` you
-get ``2020``, but the
+get ``"2020"``, but the
 computer has no idea what to do with a combo of text and numbers. So the fix
 is to use the ``str`` function which converts the number to a string (text).
 Here's an example:
