@@ -1,6 +1,10 @@
 Creating Functions
 ==================
 
+.. image:: teacher.svg
+    :width: 50%
+    :class: right-image
+
 In the last chapter we learned how to create variables and use
 them in expressions. In this chapter we are going to build on
 that knowledge to create functions. Functions are the commands we
@@ -289,6 +293,10 @@ prints to the screen and we can't tell that anything happened.
 Capturing Returned Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: catch.svg
+    :width: 25%
+    :class: right-image
+
 We need to *capture* the result. We do that by setting a variable equal to
 the value the function returned. In this code we capture the result by
 putting a variable to the left of the function call and using the ``=``
@@ -315,6 +323,10 @@ juse an ``=`` operator.
 
 Volume Cylinder Example
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: cans.svg
+    :width: 35%
+    :class: right-image
 
 Let's use what we learned for something more practical.
 Here is a function that returns the volume of a cylinder.
@@ -422,6 +434,10 @@ to capture the result:
 Documenting Functions
 ---------------------
 
+.. image:: document.svg
+    :width: 25%
+    :class: right-image
+
 Functions in Python typically have a comment as the first statement of the
 function. This comment is delimited using three double quotes, and is called a
 **docstring**. In this case, the docstring is on line 2:
@@ -444,6 +460,10 @@ programs.
 
 Variable Scope
 --------------
+
+.. image:: telescope.svg
+    :width: 25%
+    :class: right-image
 
 The use of functions introduces the concept of **scope**. Scope is where in the
 code a variable is "alive" and can be accessed. For example, look at the code
@@ -508,6 +528,10 @@ above, will fail. The computer will claim it doesn't know what ``x`` is.
 
 Pass-by-Copy
 ------------
+
+.. image:: copy.svg
+    :width: 15%
+    :class: right-image
 
 When you call a function and set a value to a function parameter,
 that value is a *copy* of the original. For example take a look at this

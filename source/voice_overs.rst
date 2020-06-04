@@ -64,6 +64,11 @@ my recommendation is to introduce yourself
 at the beginning of the video with your first name only.
 This will hopefully reduce the chance of doxxing.
 
+If you want to,
+include if you are a member of an under-represented group in technology. This
+can help other people feel included, and everyone to realize the world is
+a beautiful, diverse place.
+
 If you are internet-famous and want to use your full name and link to your
 Twitter or website, that's great! If you are internet-private and want to use
 a pseudonym, we can do that too!
@@ -74,7 +79,8 @@ journey on learning to program.
 
 **What is the process?**
 
-* First, send me an e-mail and let me know that you are interested.
+* First, send me an e-mail
+  and let me know that you are interested. My e-mail is paul@cravenfamily.com
 * Second, I'll send you a section of the text to read.
 * Third, record **one paragraph** of your audio.
 
