@@ -55,6 +55,7 @@ Installing Python
 ^^^^^^^^^^^^^^^^^
 
 We will be using the "Python_" computer programming language.
+We'll learn more about what a computer language is
 The creator of Python was a fan of `Monty Python`_, hence the name.
 
 .. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python

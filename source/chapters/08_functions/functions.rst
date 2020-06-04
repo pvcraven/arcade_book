@@ -1,34 +1,45 @@
 Creating Functions
 ==================
 
+In the last chapter we learned how to create variables and use
+them in expressions. In this chapter we are going to build on
+that knowledge to create functions. Functions are the commands we
+give the computer. Being able to write our own functions allow
+us to create custom commands.
+
+Functions help us by:
+
+* **Making our code easier to read.** By writing our own functions we can
+  have functions to ``draw_tree`` and ``draw_horse`` which is a lot easier
+  to read than long blocks of code that just draw lines and rectangles.
+* **Abstracting our code.** By using variables, we can abstract our code and
+  tell a function where to draw a tree, how big to draw it, and what
+  color to draw it. This is a lot more flexible than one set of code
+  that can only draw a tree in one exact place and one exact size.
+* **Re-using our code.** By calling a function, I can re-use code
+  over and over. If it takes ten lines of code to draw a horse,
+  I can put that in a function. Then if I want to draw three horses,
+  I don't need thirty lines of code to do it.
+* **Dividing a complex problem into simpler ones.** The key to programming, and
+  a lot of things in life, is to learn how to take a large, overwhelmingly
+  complex problem, and divide it into small problems that are easy to solve.
+  For example,
+  we have functions that can display dots on the screen. Then there
+  functions that can draw a line using those dots. Then functions that
+  can draw triangles using those lines. Then functions that can draw
+  trees using those triangles. Then finally a forest function that
+  uses the trees function. A complex forest broken down into simple functions
+  that build off each other.
+* **Making code easier to maintain.** If there is a problem in your program,
+  it is easier to find when your program is divided into parts. If your
+  car isn't moving correctly, and there is a ``move_car`` function, that's
+  easy to find. Plus, if all cars move using that function, I can fix
+  a problem for every car in my game in one spot.
+
 Creating Simple Functions
 -------------------------
 
-Defining a function is rather easy.
-
-* Start with the keyword ``def``, which is short for "define."
-* Next, give the function a name. There are rules for function names. They must:
-
-  * Start with a lower case letter.
-  * After the first letter, only use letters, numbers, and underscores.
-  * Spaces are not allowed. Use underscores instead.
-  * While upper-case letters can be used, function names are normally all
-    lower-case.
-
-* After that, we have a set of parenthesis. Inside the parenthesis will go
-  **parameters**. We'll explain those in a bit.
-* Next, a colon.
-* Everything that is part of the function will be indented four spaces.
-* Usually we start a function with a multi-line comment that explains what
-  the function does.
-
-.. Note::
-
-    Function definitions go *below* the ``import`` statements, and *above* the
-    rest of the program. While you can put them somewhere else, you shouldn't.
-
-Below is a program that defines and uses the function twice.
-
+Defining a function in Python is easy. Here's an example:
 
 .. code-block:: python
     :linenos:
@@ -37,14 +48,62 @@ Below is a program that defines and uses the function twice.
         """ This is a comment that describes the function. """
         print("Hello!")
 
+To write a function:
 
+* Start with the keyword ``def``, which is short for "define."
+* Next, give the function a name. Function names follow the same
+  rules that variable names follow. They must:
+
+  * Start with a lower case letter. (Or in special cases, an underscore.)
+  * After the first letter, only use letters, numbers, and underscores.
+  * Spaces are not allowed. Use underscores instead.
+  * While upper-case letters can be used, function names are normally all
+    lower-case.
+
+* After that, we have a set of parenthesis. Inside the parenthesis will go
+  **parameters**. We'll explain those in a bit.
+* Next, a colon.
+* All the code that goes in the function will be on the following lines.
+  That code must be indented four spaces.
+  The first line that is not indented, signifies the function is done.
+* Usually we start a function with a multi-line comment that explains what
+  the function does.
+
+.. Note::
+
+    Function definitions go *below* the ``import`` statements, and *above* the
+    rest of the program. While you can put them somewhere else, you shouldn't.
+
+Defining a function doesn't cause the computer to *do* anything. It is like
+giving a recipe to the computer. Give someone a recipe for banana bread
+and they know how to make it. They haven't actually made it yet, they
+just know how.
+You have to do it *tell* them to make banana bread.
+That is, after we **define** the function
+we must **call** the function before the code in it runs.
+
+To call a function, type the function name and follow it by parenthesis.
+Do not use ``def``, that is only used when we define what the function does,
+not when we tell the computer to run it.
+
+Below is a program that defines ``print_hello``, then
+calls it twice.
+
+.. code-block:: python
+    :linenos:
+
+    def print_hello():
+        """ This is a comment that describes the function. """
+        print("Hello!")
+
+    # This calls our function twice.
     print_hello()
     print_hello()
 
 
 You can define and use multiple functions. But all function definitions should
-go before the main code.
-
+go before the main code. In this example, see how we've defined two
+functions and then we call them in our main code.
 
 .. code-block:: python
     :linenos:
@@ -56,7 +115,8 @@ go before the main code.
     def print_goodbye():
         print("Bye!")
 
-
+    # Here is the main code, after all the function
+    # definitions.
     print_hello()
     print_goodbye()
 
@@ -65,8 +125,12 @@ Actually, almost *all* code should go in a function. It is a good practice
 to put the main starting point of your program in a function called ``main``
 and call it.
 
+In this next example, we do just that. See how we took the two function
+calls and put them in a ``main`` function. Also, note that we call ``main``
+at the end. Without that, our program won't do anything at all.
+
 .. code-block:: python
-    :emphasize-lines: 9-12, 16
+    :emphasize-lines: 9-12, 15-16
     :linenos:
 
     def print_hello():
@@ -83,15 +147,23 @@ and call it.
         print_goodbye()
 
 
-    # Run the main program
+    # Call (run) the main function
     main()
 
+Remember how our drawing code always starts with ``import arcade``? That
+just imports a lot of functions that are defined in the Arcade library
+so we can use those functions ourselves. It doesn't run anything, just
+imports functions.
 
-An even better way of writing this is with a check to make sure we are trying
-to run this file, and not import it. The statement for this looks a little
+Eventually we'll learn to write our own modules we import. Right now,
+we couldn't do that with our code because attempting to import the code
+would run it, not just make the functions available for us to use.
+
+With that in mind, a better habit to get into is to check if we are
+trying to import the file.
+The statement for this looks a little
 weird. In fact, it is weird enough I just look it up and copy/paste it any
 time I want to use it. Don't worry about understanding how it works yet.
-
 
 .. code-block:: python
     :linenos:
@@ -115,15 +187,19 @@ time I want to use it. Don't worry about understanding how it works yet.
     if __name__ == "__main__":
         main()
 
+If this is too confusing, just call the ``main()`` method instead. Eventually
+we'll learn about imports and if statements and it will make more sense.
 
-Taking In Data
---------------
+Take in Data with Parameters
+----------------------------
 
-Functions are even more powerful if we have them take in data.
+Functions are even more powerful if we can feed data to them to process.
 
 Here is a simple example that will take in a number and print it. Notice how
-I've created a new variable ``my_number`` in between the parenthesis. This
-variable will be given whatever value is passed in. In the example below, it
+I've created a new variable ``my_number`` in between the parenthesis.
+This is called a function **parameter**. It is just a variable that
+is given a value equal to what is passed in when called.
+In the example below, it
 is given first a ``55``, then ``25``, and finally a ``5``.
 
 .. code-block:: python
@@ -137,7 +213,8 @@ is given first a ``55``, then ``25``, and finally a ``5``.
     print_number(25)
     print_number(8)
 
-You can pass in multiple numbers, just separate them with a comma.
+You can pass in multiple numbers, just separate them with a comma. In
+this case ``a`` will be 11 and ``b`` will be 7.
 
 .. code-block:: python
     :linenos:
@@ -148,10 +225,14 @@ You can pass in multiple numbers, just separate them with a comma.
 
     add_numbers(11, 7)
 
-Occasionally, new programmers want to set the number values inside the
-function. This is wrong. Then the function would only work for those values.
-The power is in specifying the numbers outside the function. We don't want
+Occasionally, new programmers want to set the parameter values inside the
+function. This is wrong. If you do this, the function would only work for those values.
+The power is in specifying the numbers *outside* the function. We don't want
 the function to be limited to only certain data values.
+
+This example works, but it is wrong. Because if we ever changed line 8 to
+pass in different values, the program would ignore those values because on
+lines 3 and 4 they are always over written with 11 and 7.
 
 .. code-block:: python
     :linenos:
@@ -165,21 +246,19 @@ the function to be limited to only certain data values.
 
     add_numbers(11, 7)
 
-
-
 Returning and Capturing Values
 ------------------------------
 
-Functions can not only take in values, functions can return values.
+Functions can not only take *in* values, functions can *return* values.
 
 .. _returning-values:
 
 Returning values
 ^^^^^^^^^^^^^^^^
 
-For example:
-
-Function that returns two numbers added together
+For example, here is a function that returns two numbers added together.
+See how it uses a ``return`` statement on line four to return the result out of the
+function.
 
 .. code-block:: python
     :linenos:
@@ -189,25 +268,32 @@ Function that returns two numbers added together
         result = a + b
         return result
 
-Note: Return is not a function, and does not use parentheses. Don't do
-``return(result)``.
+.. note::
+    Return is not a function, and does not use parentheses. Don't do
+    ``return(result)``.
 
 This only gets us half-way there. Because if we call the function now, not
-much happens. The numbers get added. They get returned to us. But we do
-nothing with the result.
+much happens. Take a look at this example:
 
 .. code-block:: python
 
     # This doesn't do much, because we don't capture the result
     sum_two_numbers(22, 15)
 
+The numbers get added. They get returned to us. But we do
+nothing with the result. So if you run this program, nothing
+prints to the screen and we can't tell that anything happened.
+
 .. _capturing_returned_values:
 
 Capturing Returned Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We need to capture the result. We do that by setting a variable equal to
-the value the function returned:
+We need to *capture* the result. We do that by setting a variable equal to
+the value the function returned. In this code we capture the result by
+putting a variable to the left of the function call and using the ``=``
+operator. Later the code prints the value, but that's not capturing, we are
+just using the result we captured in the code above it.
 
 .. code-block:: python
 
@@ -220,13 +306,20 @@ the value the function returned:
     # Now that I captured the result, print it.
     print(my_result) # <--- This is printing, NOT capturing.
 
-Now the result isn't lost. It is stored in `my_result`
+Now the result isn't lost. It is stored in the ``my_result`` variable
 which we can print or use some other way.
+
+We will do this a lot, so pause for a second and review. To *capture*
+the value returned from a function, put a variable to the left of it and
+juse an ``=`` operator.
 
 Volume Cylinder Example
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Function that returns the volume of a cylinder
+Let's use what we learned for something more practical.
+Here is a function that returns the volume of a cylinder.
+Notice how we take in two parameters and return the result of the
+calculation.
 
 .. code-block:: python
     :linenos:
@@ -236,18 +329,21 @@ Function that returns the volume of a cylinder
         volume = pi * radius ** 2 * height
         return volume
 
-Because of the return, this function could be used later on as part of an
+Because of the ``return``, this function could be used later on as part of an
 equation to calculate the volume of a six-pack like this:
 
 .. code-block:: python
 
     six_pack_volume = volume_cylinder(2.5, 5) * 6
 
-The value returned from volume_cylinder goes into the equation and is
+See how the value returned from ``volume_cylinder`` goes into the equation and is
 multiplied by six.
 
-There is a big difference between a function that prints a value and a
-function that returns a value. Look at the code below and try it out.
+There is a big difference between a function that *prints* a value and a
+function that *returns* a value. Look at the code below. Pause for a bit
+and make sure you can follow how it works. Read the comments. This is
+a common source of confusion for new programmers, so spend a bit of time
+studying it.
 
 .. code-block:: python
     :linenos:
@@ -264,25 +360,26 @@ function that returns a value. Look at the code below and try it out.
         return result
 
 
-    # This prints the sum of 4+4
+    # This prints the sum of 4+4, because the function has a print
     sum_print(4, 4)
 
-    # This does not
+    # This does not, because the function returns, and doesn't print
     sum_return(4, 4)
 
-    # This will not set x1 to the sum
-    # It actually gets a value of 'None'
+    # This will not set x1 to the sum, because the function prints and doesn't return
+    # x1 actually gets a value of 'None' because nothing was returned
     x1 = sum_print(4, 4)
     print("x1 =", x1)
 
     # This will set x2 to the sum
-    # and print it properly
+    # and print it properly.
     x2 = sum_return(4, 4)
     print("x2 =", x2)
 
-
-When first working with functions it is not unusual to get stuck looking at
-code like this:
+Here is a very common issue new programmers face.
+It is not unusual to get stuck looking at
+code like this example below. How would you print the result of the function?
+See if you can figure it out without looking ahead.
 
 .. code-block:: python
 
@@ -299,9 +396,13 @@ code like this:
     # Wait, how do I print the result of this?
     calculate_average(x, y)
 
-How do we print the result of calculate_average? The program can't print
-result because that variable only exists inside the function. Instead, use
-a variable to capture the result:
+What's the answer?
+How do we print the result of ``calculate_average``?
+In the code above, the program can't print
+the result because the ``result`` variable only exists inside the function.
+Instead, use
+a new variable outside the function, and the ``=`` operator
+to capture the result:
 
 .. code-block:: python
 
@@ -323,9 +424,11 @@ Documenting Functions
 
 Functions in Python typically have a comment as the first statement of the
 function. This comment is delimited using three double quotes, and is called a
-docstring. A function may look like:
+**docstring**. In this case, the docstring is on line 2:
 
 .. code-block:: python
+    :linenos:
+    :emphasize-lines: 2
 
     def volume_cylinder(radius, height):
         """Returns volume of a cylinder given radius, height."""
@@ -334,15 +437,15 @@ docstring. A function may look like:
         return volume
 
 The great thing about using docstrings in functions is that the comment can be
-pulled out and put into a website documenting your code using a tool like
-Sphinx. Most languages have similar tools that can help make documenting your
-code a breeze. This can save a lot of time as you start working on larger
+pulled out and put into a website. That can be part of a larger website that
+documents your code.
+Most languages have similar tools that can help make documenting a breeze. This can save a lot of time as you start working on larger
 programs.
 
 Variable Scope
 --------------
 
-The use of functions introduces the concept of scope. Scope is where in the
+The use of functions introduces the concept of **scope**. Scope is where in the
 code a variable is "alive" and can be accessed. For example, look at the code
 below:
 
@@ -359,12 +462,14 @@ below:
     # This fails, x only exists in f()
     print(x)
 
-The last line will generate an error because x only exists inside of the f()
-function. The variable is created when ``f()`` is called and the memory it uses is
+The last line will generate an error because ``x`` only exists inside of the ``f()``
+function. Every heard the phrase "What happens in Vegas, stays in Vegas?"
+Well, variables created in a function stay in that function.
+The variable is created when ``f()`` is called and the memory it uses is
 freed as soon as ``f()`` finishes.
 
 Here's where it gets complicated.
-A more confusing rule is accessing variables created outside of the ``f()``
+A more confusing rule is how to access variables created *outside* of the ``f()``
 function. In the following code, x is created before the ``f()`` function, and
 thus can be read from inside the ``f()`` function.
 
@@ -383,8 +488,8 @@ thus can be read from inside the ``f()`` function.
     f()
 
 Variables created ahead of a function may be read inside of the function only
-if the function does not change the value. This code, very similar to the code
-above, will fail. The computer will claim it doesn't know what x is.
+if the function does not *change* the value. This code, very similar to the code
+above, will fail. The computer will claim it doesn't know what ``x`` is.
 
 .. code-block:: python
 
@@ -401,14 +506,12 @@ above, will fail. The computer will claim it doesn't know what x is.
     # Call the function
     f()
 
-Other languages have more complex rules around the creation of variables and
-scope than Python does. Because Python is straight-forward it is a good
-introductory language.
-
 Pass-by-Copy
 ------------
 
-Functions pass their values by creating a copy of the original. For example:
+When you call a function and set a value to a function parameter,
+that value is a *copy* of the original. For example take a look at this
+code:
 
 .. code-block:: python
 
@@ -425,7 +528,7 @@ Functions pass their values by creating a copy of the original. For example:
     # Print y to see if it changed
     print(y)
 
-The value of y does not change, even though the f() function increases the
+The value of ``y`` does not change, even though the ``f()`` function increases the
 value passed to it. Each of the variables listed as a parameter in a function
 is a brand new variable. The value of that variable is copied from where it is
 called.
@@ -433,7 +536,7 @@ called.
 This is reasonably straight forward in the prior example. Where it gets
 confusing is if both the code that calls the function and the function itself
 have variables named the same. The code below is identical to the prior listing,
-but rather than use y it uses x.
+but rather than use ``y`` it uses ``x``.
 
 .. code-block:: python
 
