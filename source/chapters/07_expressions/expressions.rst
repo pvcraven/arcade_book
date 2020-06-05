@@ -3,6 +3,13 @@
 Variables and Expressions
 =========================
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: https://youtu.be/K1Lp6uqb5QE
+    :alt: Video link
+
+`Link to video for this chapter. <https://youtu.be/K1Lp6uqb5QE>`_
+
 .. image:: drawing.png
     :width: 35%
     :class: right-image

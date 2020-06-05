@@ -8,6 +8,8 @@ The Print Function
     :target: https://youtu.be/6KaRu3FS3AA
     :alt: Video link
 
+`Link to video for this chapter. <https://youtu.be/6KaRu3FS3AA>`_
+
 .. image:: print_snake.svg
     :width: 40%
     :class: right-image
