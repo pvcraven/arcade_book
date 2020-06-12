@@ -197,6 +197,10 @@ we'll learn about imports and if statements and it will make more sense.
 Take in Data with Parameters
 ----------------------------
 
+.. image:: data.svg
+    :width: 45%
+    :class: right-image
+
 Functions are even more powerful if we can feed data to them to process.
 
 Here is a simple example that will take in a number and print it. Notice how
