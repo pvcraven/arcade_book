@@ -259,7 +259,9 @@ To create an instance of the ``Address`` class, we use the following code:
         home_address = Address()
 
 We need a variable that will point to our address. In this case, we've called it
-``home_address``. Then we follow that with parentheses, which will "magically"
+``home_address``.
+We'll set that equal to the new instance of the class we create. We do this by
+using the name of the class, followed by parentheses, which will "magically"
 call the ``__init__`` method where we set up the fields/attributes for the class.
 
 In this case, ``Address`` is a class. It defines what an address looks like.
