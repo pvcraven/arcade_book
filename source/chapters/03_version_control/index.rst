@@ -1,7 +1,11 @@
 .. _version-control:
 
+
 Version Control Systems
 =======================
+
+.. image:: versions.svg
+   :width: 80%
 
 We will use a `version control system` to track your work, and allow the
 instructor to give feedback. Odds are, this will be the same exact system you'd
@@ -12,12 +16,15 @@ use in a large company.
 Quick Reference
 ---------------
 
+This is a quick reference, come back to this when you want to turn in your work.
+We'll go over a detailed explanation later.
+
 Commit and Upload
 ^^^^^^^^^^^^^^^^^
 
 Do this whenever you are done with a session of programming:
 
-1. Open "git bash" on Windows, or "terminal" on MacOS.
+1. Open either the "command prompt" on Windows, or "terminal" on MacOS.
 2. Type ``cd mydirectoryname`` where the name of the directory will be the same as the name of your repository on
    BitBucket. You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
 3. Type ``git add *``
@@ -30,17 +37,22 @@ If you get an error while pushing, see :ref:`cant-push`
 Turn In Your Work
 ^^^^^^^^^^^^^^^^^
 
-1. Go to BitBucket
-2. Click on "Source"
-3. Find the folder with your lab
-4. Copy link
-5. Go to Scholar for the lab
-6. Paste link, and turn in.
+#. Go to `GitHub <https://github.com/>`_
+#. Sign in if needed (Upper right corner. Don't try to sign up again.)
+#. Click on your repository on the left side
+#. Find the folder with your lab
+#. Copy link
+#. Go to Scholar/Moodle for the lab
+#. Paste link, and turn in
 
 For more commands, see the :ref:`git_command_reference`.
 
 What is a Distributed Version Control System
 --------------------------------------------
+
+.. image:: git.svg
+    :width: 35%
+    :class: right-image
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
@@ -68,23 +80,21 @@ control had enough of a learning curve that some developers refused to use it.
 Thankfully today's version control tools are so easy to use there's no excuse not to.
 
 There are two main types of version control. The original version control
-systems were "centralized." Subversion_ (SVN) is a very popular piece of software
-that supports this type of version control. The other type is a "Distributed
-Version Control Systems" (DVCS). There are two popular versions of DVCS in use
-today, Git_ and Mercurial_. Mercurial is sometimes also known as Hg. Get it? Hg
-is the symbol for Mercury. Either Git or Hg works fine, but for this tutorial we will
-standardize on Git.
+systems were "centralized" which required a central server. Currently we use
+"Distributed Version Control Systems" (DVCS) which don't require a central
+server. The software program Git_ is one of the most popular types of DVCS
+available today.
 
-
-.. _Subversion: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _Git: http://en.wikipedia.org/wiki/Git_(software)
-.. _Mercurial: http://en.wikipedia.org/wiki/Mercurial
-
 
 .. _installing-git:
 
 Installing Git
 --------------
+
+.. image:: install.svg
+    :width: 20%
+    :class: right-image
 
 Let's install ``git`` on your computer.
 If you are using a school computer with ``git`` pre-installed, you can skip
@@ -105,53 +115,37 @@ Forking the Repository
     once, something is wrong. Stop before you do this and see the instructor.
     It is a big headache for everyone if you fork more than once.
 
-1. We are going to store our programs on-line with a website called BitBucket.
-   BitBucket and a program called SourceTree are owned by a company called
-   Atlassian. They offer enhanced
-   accounts for e-mail addresses ending in ``.edu``.
-   To use BitBucket, create an account https://bitbucket.org/account/signup/
+1. We are going to store our programs on-line with a website called GitHub.
+   Get started by signing up for their website: https://github.com
+   As this may become a "portfolio" for your work, choose an account name that
+   would work in a professional environment. Feel free to keep it anonymous,
+   just avoid something too silly.
 2. Go to this web address which has a template for the labs we'll create in
-   class: https://bitbucket.org/pcraven/arcade-games-work
+   class: https://github.com/pythonarcade/learn-arcade-work
+
+.. image:: fork.svg
+    :width: 20%
+    :class: right-image
+
 3. We need to "fork" the repository. This will create your own copy of the
    repository that will be independent of mine. Changes you make to a "fork"
    aren't automatically sent to the original.
-   Fork the repository by clicking on the plus button:
+   Fork the repository by clicking on the fork button in the upper-right corner:
 
-.. image:: bitbucket_plus.png
-    :width: 400px
+.. figure:: fork.png
+    :width: 55%
 
-4. Then select "Fork":
+    Forking the repository
 
-.. image:: bitbucket_fork_01.png
-    :width: 300px
+4. After grinding away a bit, you should have your own fork. Make sure you are
+   on your own fork, and not the original, by looking for your account name:
 
-5. Next, select a name for your fork. Use your last name and first name. Also,
-   select that your repository is private, so that you don't share your
-   homework answers with the world.
+.. figure:: fork_2.png
+    :width: 45%
 
-.. image:: bitbucket_fork_02.png
-    :width: 450px
+    Verify you are working on your own fork, not the original
 
-6. Now you have your own fork. It exists on the BitBucket server only.
-
-.. _share-repository:
-
-Share the Repository
---------------------
-
-1. Give read permission to the instructor ``paul@cravenfamily.com`` for your fork so he can
-   grade your assignments.
-
-.. image:: invite_1.png
-
-Then
-
-.. image:: invite_2.png
-
-.. attention::
-    Check the feedback on your homework. If the instructor can't get to your
-    homework, you'll get a zero. You need to correct this and resubmit
-    ASAP.
+6. Now you have your own fork. It exists on the GitHub server only.
 
 .. _clone-repository:
 
@@ -162,7 +156,7 @@ Cloning the Repository
     Every time you start working on a new computer, you'll need to create a clone.
     (Unless you use a flash drive.)
 
-1. Run the program "Git Bash" on Windows. Or, if you are on the mac, go under
+1. Run the program "Git Bash" on Windows. Or, if you are on MacOS, go under
    "Applications", find "Utilities" and in that run "Terminal".
 
 .. figure:: git_bash.png

@@ -101,12 +101,6 @@ What is a text editor? What is an IDE? Read more at
 .. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
 
-.. _installing-arcade:
-
-Installing Arcade
-^^^^^^^^^^^^^^^^^
-
-
 Viewing File Extensions
 -----------------------
 

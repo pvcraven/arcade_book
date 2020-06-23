@@ -260,9 +260,12 @@ To create an instance of the ``Address`` class, we use the following code:
 
 We need a variable that will point to our address. In this case, we've called it
 ``home_address``.
-We'll set that equal to the new instance of the class we create. We do this by
-using the name of the class, followed by parentheses, which will "magically"
-call the ``__init__`` method where we set up the fields/attributes for the class.
+We'll set that variable equal to the new instance of the class we create.
+We create an new instance by
+using the name of the class (Address), followed by parentheses.
+This will "magically"
+call the ``__init__`` method which will set up fields/attributes for the class.
+call the ``__init__`` method which will set up fields/attributes for the class.
 
 In this case, ``Address`` is a class. It defines what an address looks like.
 The ``home_address`` variable points to an **object**. An object is an instance of
@@ -450,7 +453,9 @@ a dog, the dog has no name. Dogs should have names!
 
 
     def main():
+        # This creates the dog
         my_dog = Dog()
+        print(f"The dog's name is: {my_dog.name}")
 
 
     main()
@@ -465,7 +470,7 @@ to demonstrate that it is really being called.
 
     class Dog():
         def __init__(self):
-            """ Constructor. Called when creating an object of this type. """
+            """ Constructor """
             self.name = ""
             print("A new dog is born!")
 
@@ -473,6 +478,7 @@ to demonstrate that it is really being called.
     def main():
         # This creates the dog
         my_dog = Dog()
+        print(f"The dog's name is: {my_dog.name}")
 
 When the program is run, it will print this:
 
@@ -492,7 +498,7 @@ name for the dog. Try running this code.
 
     class Dog():
         def __init__(self, new_name):
-            """ Constructor. Called when creating an object of this type. """
+            """ Constructor """
             self.name = new_name
             print("A new dog is born!")
 
@@ -500,6 +506,7 @@ name for the dog. Try running this code.
     def main():
         # This creates the dog
         my_dog = Dog()
+        print(f"The dog's name is: {my_dog.name}")
 
 
     main()
@@ -522,7 +529,7 @@ name when we create the dog.
 
     class Dog():
         def __init__(self, new_name):
-            """ Constructor. Called when creating an object of this type. """
+            """ Constructor """
             self.name = new_name
             print("A new dog is born!")
 
@@ -530,9 +537,6 @@ name when we create the dog.
     def main():
         # This creates the dog
         my_dog = Dog("Fluffy")
-
-
-    main()
 
 Notice in line 4 we take the value that was passed in as a parameter and assign
 ``self.name`` to have that same value. Without this line, the dog's name
@@ -547,7 +551,7 @@ to see code like this:
 
     class Dog():
         def __init__(self, name):
-            """ Constructor. Called when creating an object of this type. """
+            """ Constructor """
             self.name = name
             print("A new dog is born!")
 
