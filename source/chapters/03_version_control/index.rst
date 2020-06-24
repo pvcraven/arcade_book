@@ -145,7 +145,8 @@ Forking the Repository
 
     Verify you are working on your own fork, not the original
 
-6. Now you have your own fork. It exists on the GitHub server only.
+6. Now you have your own fork, but it exists on the GitHub server and not
+   your computer. We'll fix that in the next section.
 
 .. _clone-repository:
 
@@ -156,86 +157,91 @@ Cloning the Repository
     Every time you start working on a new computer, you'll need to create a clone.
     (Unless you use a flash drive.)
 
-1. Run the program "Git Bash" on Windows. Or, if you are on MacOS, go under
-   "Applications", find "Utilities" and in that run "Terminal".
+1. Run the program "Command Prompt" on Windows. Or, if you are on MacOS, go under
+   "Applications", find "Utilities" and run "Terminal". You should get something
+   like one of the figures below:
 
-.. figure:: git_bash.png
+.. figure:: command_prompt.png
+   :width: 80%
 
-   Git Bash Window
+   Windows Command Prompt
+
+.. figure:: terminal_window.png
+   :width: 80%
+
+   MacOS Terminal Window
 
 2. Figure out where you want to store your files. You might want to store
-   the files on your laptop, a flash drive, or a networked drive.
-3. Figure out what directory your "Bash" window is in. Do this by typing ``pwd``,
-   which is short for "print working directory".
+   the files on your laptop, a flash drive, or a networked drive. If you aren't
+   sure, let's just put them on the Desktop.
+3. We need to change our "working directory" to where we want to store our files.
+   If you are saving to your desktop, just type ``cd Desktop``. It is case-sensitive
+   on MacOS.
 
-.. image:: pwd.png
+.. note::
 
-4. You can see what files are in the directory by typing ``ls``, short for
-   "list files".
-5. You can change directories using the ``cd`` command. You should default to
-   your "home" directory, which is a great place to put your files. But if you
-   want them in a different location, change to that location now.
+   You can change directories using the ``cd`` (change directory) command.
+   By default, when you
+   open a terminal or command prompt you are working in
+   your "home" directory. Let's use the
    There's a lot to the ``cd``
    command, but there are a few variations you need to know:
 
-   * ``cd`` Change to your "home" directory.
-   * ``cd mydir`` Change to ``mydir`` directory. That directory must be in the
+   * ``cd`` - Change to your "home" directory.
+   * ``cd mydir`` - Change to ``mydir`` directory. That directory must be in the
      same directory you are in now. Also, if you don't want to type the full
      directory name, you can type the first few letters and hit <tab>.
-   * ``cd ..`` Go up one directory.
+   * ``cd ..`` - Go up one directory. So if you are in ``C:\home\user\Desktop``
+     you'll go up to ``C:\home\user``
 
 
-6. We want to
-   copy the repository you created to your computer. We'll call this a "clone." A "clone" is a copy
-   we normally try to keep synced up, which is different than a "fork."
-   To clone the repository, hit the "plus" and then select "Clone Repository"
+4. We want to
+   copy the repository you created to your computer. We'll call this a "clone."
+   A clone is a copy
+   we normally try to keep synced up, which is different than a "fork." Click
+   the clone button and see the figure below.
+   1) Make sure you are cloning using "HTTPS". 2) Make sure the account shown
+   is yours, and not mine or "pythonarcade". 3) Click the copy link button.
 
-.. image:: bitbucket_clone.png
-    :width: 300px
+.. image:: github_clone.png
+    :width: 50%
 
-
-7. Copy the address that it gives you. It should have **your** name, and **not**
-   my name. If you get this wrong, you'll have to restart everything back at
-   the clone section. (Not the fork section.)
-
-.. image:: get_clone_address.png
-   :width: 75%
-
-8. Paste the command it gives you in your command prompt:
-
-.. image:: git_clone.png
-
-Then...
+6. Type ``git clone`` followed by a space. Finally, paste the address you copied.
+   You might need to use the mouse to paste, as ctrl-v doesn't always paste
+   on the command prompt. It should look like this:
 
 .. image:: after_clone.png
 
-9. There you go! You now have a directory set up where you can do your work.
+7. Done! You now have a directory set up where you can do your work.
+
 
 .. _open-in-pycharm:
 
 Open Project in Pycharm
 -----------------------
 
-Go ahead and start PyCharm, then select "File...Open" and select that directory.
+Go ahead and start PyCharm, then select "File...Open". You can select your
+Desktop with the non-very-intuitive icon shown in (1) below. Then find the
+folder and select it to open as a project as shown in (2).
 
 .. image:: open_in_pycharm.png
-    :width: 60%
+    :width: 55%
 
 Your project should look like the image below. If this isn't what you have,
 you might have opened the wrong folder. Hit "File...Open" and try again.
 
 .. image:: open_in_pycharm2.png
-    :width: 75%
+    :width: 45%
 
 If you click the arrow next to the folder name, you can see all the folders
 in the project folder.
 
 .. image:: open_in_pycharm3.png
-    :width: 75%
+    :width: 50%
 
-If you move from computer to computer hand have a flash drive, you can
-reopen your project be just doing "File...Open". If you don't have your
-flash drive, you'll need to re-clone your repository.
+If you plan on moving from computer to computer, try saving onto a flash
+drive instead of the desktop. Then you can
+reopen your project by just doing "File...Open".
 
 .. _change_file:
 
@@ -248,7 +254,19 @@ lab one. Type in "Hi" or something similar.
 .. image:: select_lab_file.png
     :width: 60%
 
-Hit Ctrl-S to save.
+The file will automatically save.
+
+.. _installing-arcade:
+
+Installing Arcade
+-----------------
+
+While editing the file, you will likely get a message that looks like this:
+
+.. image:: package_not_installed.png
+
+Go ahead and install the 'arcade' library. PyCharm will get everything set up
+for you.
 
 .. _commit:
 
@@ -261,21 +279,22 @@ The cool thing with version control, is that every time you commit, you can go b
 code at that point in time. Version control lets you take it all back! It is the best type
 of commitment ever!
 
-First, open Git Bash, and switch to the directory with your project using the ``cd`` command:
+First, open the terminal, and switch to the directory with your project using the ``cd`` command:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~
-    $ cd arcade-games-work2/
+    C:\Users\craven\Desktop>cd learn-arcade-work
+
+    C:\Users\craven\Desktop\learn-arcade-work>
 
 Optionally, we can use ``git status`` to see what files have changed:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git status
+    C:\Users\craven\Desktop\learn-arcade-work>git status
     On branch master
-    Your branch is up-to-date with 'origin/master'.
+    Your branch is up to date with 'origin/master'.
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)
@@ -284,22 +303,21 @@ Optionally, we can use ``git status`` to see what files have changed:
 
     no changes added to commit (use "git add" and/or "git commit -a")
 
+
 Now, add all the files that have changed. The asterisk (``*``) is a wild card character
 that means get all changes. Optionally, we could list out each file, but that's a lot
 of work and we don't want to leave anything behind anyway.
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git add *
+    C:\Users\craven\Desktop\learn-arcade-work> git add *
 
 Commit the changes:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git commit -m "Work on lab 1"
-    [master 45028a5] Work on lab 1
+    C:\Users\craven\Desktop\learn-arcade-work>git commit -m "Work on lab 1"
+    [master 5105a0c] Work on lab 1
      1 file changed, 1 insertion(+)
 
 You might get an error, if the computer doesn't know who you are yet. If you get this error, it will tell you the
@@ -322,8 +340,7 @@ And push them to the server:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git push
+    C:\Users\craven\Desktop\learn-arcade-work>git push
     Counting objects: 4, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (2/2), done.
@@ -331,9 +348,6 @@ And push them to the server:
     Total 4 (delta 1), reused 0 (delta 0)
     To bitbucket.org:pcraven/arcade-games-work2.git
        519c361..45028a5  master -> master
-
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $
 
 Look to see if the message says that there is an "error." The message will probably look a little different than what
 you see above, with other objects or threads, but there should not be any errors. If there are errors,
@@ -344,10 +358,11 @@ skip down to :ref:`cant-push`.
 Turning In Your Programs
 ------------------------
 
-When it comes time to turn in one of your programs, go back to BitBucket. Click on "source", find the lab file,
-copy the URL:
+When it comes time to turn in one of your programs, go back to GitHub.
+Click on "source", find the lab file, copy the URL:
 
-.. image:: bitbucket_copy_url.png
+.. image:: copy_url.png
+   :width: 80%
 
 Now go to Scholar and paste the link into the text field for the lab you are are working on.
 

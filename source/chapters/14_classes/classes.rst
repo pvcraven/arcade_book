@@ -1,6 +1,9 @@
 Classes, Constructors, and Attributes
 =====================================
 
+* Video:
+* Slides: https://slides.com/paulcraven/14-classes-constructors-and-attributes/
+
 .. image:: construction.svg
     :width: 35%
     :class: right-image
