@@ -138,7 +138,6 @@ Second, the initialization method is a **magic method** that is called automatic
 Yes, Python programmers actually call methods that are automatically invoked
 "magic methods."
 
-
 Third, to signify a method is magic, Python surrounds the method name with double
 underscores. Two underscores in the front, and two underscores in the back.
 The short-name for double-underline is **dunder**, and these
@@ -267,7 +266,6 @@ We'll set that variable equal to the new instance of the class we create.
 We create an new instance by
 using the name of the class (Address), followed by parentheses.
 This will "magically"
-call the ``__init__`` method which will set up fields/attributes for the class.
 call the ``__init__`` method which will set up fields/attributes for the class.
 
 In this case, ``Address`` is a class. It defines what an address looks like.
@@ -641,7 +639,6 @@ we end up with code that looks like this:
             self.state: str = state
             self.zip_code: str = zip_code
 
-
 This code is repetitive, as we state the fields twice.
 If your ``__init__`` method is only going to take in data
 fields and assign attribute values, you can simplify your code by
@@ -818,8 +815,6 @@ Review Questions
 #. What is the point of adding "typing" to a class?
 #. What is a data class?
 #. What are static variables?
-
-
 
 Lab 6: Text Adventure
 ^^^^^^^^^^^^^^^^^^^^^

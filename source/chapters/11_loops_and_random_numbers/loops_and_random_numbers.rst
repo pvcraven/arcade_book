@@ -3,9 +3,9 @@
 Guessing Games with Random Numbers and Loops
 ============================================
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t3MgBTHndpE" frameborder="0" allowfullscreen></iframe>
+.. image:: loop2.svg
+    :width: 15%
+    :class: right-image
 
 Our next step is how to loop a section of code. Most games "loop." They
 repeat the same code over and over. For example the number guessing
@@ -84,7 +84,15 @@ long it will have to wait.
 For Loops
 ---------
 
-The ``for`` loop example below runs the print statement five times. It could just as easily run 100 or 1,000,000 times just by changing the 5 to the desired number of times to loop. Note the similarities of how the ``for`` loop is written to the if statement. Both end in a colon, and both use indentation to specify which lines are affected by the statement.
+.. image:: loop.svg
+    :width: 20%
+    :class: right-image
+
+The ``for`` loop example below runs the print statement five times. It could
+just as easily run 100 or 1,000,000 times just by changing the 5 to the desired
+number of times to loop. Note the similarities of how the ``for`` loop is written
+to the if statement. Both end in a colon, and both use indentation to specify
+which lines are affected by the statement.
 
 
 
@@ -274,6 +282,10 @@ Either method works just fine.
 Counting By Numbers Other Than One
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: counting.svg
+    :width: 25%
+    :class: right-image
+
 If the program needs to count by 2's or use some other increment, that is easy.
 Just like before there are two ways to do it. The easiest is to supply a third
 number to the ``range`` function that tells it to count by 2's. The second way to
@@ -357,9 +369,12 @@ This prints::
 Nesting Loops
 ^^^^^^^^^^^^^
 
-.. raw:: html
+.. image:: nesting.svg
+    :width: 25%
+    :class: right-image
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fyP4SXpkYG4" frameborder="0" allowfullscreen></iframe>
+By putting nesting one loop _inside_ another loop, we can expand our processing
+beyone one dimension.
 
 Try to predict what the code below will print. Then enter the code and see
 if you are correct.
@@ -390,16 +405,12 @@ first for loop. This changes how the code runs significantly. Try it and see.
 
 I'm not going to tell you what the code does, go to a computer and see.
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/x4GXflaroPc" frameborder="0" allowfullscreen></iframe>
-
 Keeping a Running Total
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/prNzO_vtPvA" frameborder="0" allowfullscreen></iframe>
+.. image:: printing_calculator.svg
+    :width: 25%
+    :class: right-image
 
 A common operation in working with loops is to keep a running total. This
 "running total" code pattern is used a lot in this book. Keep a running total
@@ -512,10 +523,6 @@ This example code covers common for loops and shows how they work.
 
 While Loops
 -----------
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Z2pH0Ls9Ew" frameborder="0" allowfullscreen></iframe>
 
 A ``for`` loop is used when a program knows it needs to repeat a block of code for
 a certain number of times. A ``while`` loop is used when a program needs to loop
@@ -702,6 +709,10 @@ Here's a program that covers the different uses of the while loop that we just t
 The ``break`` And ``continue`` Statements
 -----------------------------------------
 
+.. image:: stop.svg
+    :width: 15%
+    :class: right-image
+
 If you are in the middle of a loop, and your code encounters a ``break`` statement, you'll immediately exit the
 loop.
 
@@ -731,10 +742,6 @@ games or simulations.
 
 The ``randrange`` Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/F20ho-PkcA4" frameborder="0" allowfullscreen></iframe>
 
 By default, Python does not know how to make random numbers. It is necessary
 to have Python import a code library that can create random numbers. So to use

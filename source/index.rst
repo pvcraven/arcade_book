@@ -1,5 +1,5 @@
-Learn Python With Arcade Academy
-================================
+Arcade Academy - Learn Python
+=============================
 
 .. image:: images/arcade-logo.svg
     :width: 20%

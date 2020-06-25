@@ -1,10 +1,13 @@
 If Statements
 =============
 
+.. image:: question_mark_1.svg
+    :width: 30%
+    :class: right-image
+
 How do we tell if a player has beat the high score? How can we tell if he has
 run out of lives? How can we tell if she has the key required to open the
 locked door?
-
 
 What we need is the ``if`` statement. The ``if`` statement is also known as a
 *conditional statement*. (You can use the term "conditional statement" when you
@@ -15,6 +18,10 @@ for these conditions with the ``if`` statement.
 
 Basic Comparisons
 -----------------
+
+.. image:: scale.svg
+    :width: 30%
+    :class: right-image
 
 Here are a few examples of ``if`` statements. The first section sets up two
 variables (a and b) for use in the ``if`` statements. Then two ``if`` statements
@@ -316,6 +323,10 @@ is reasonably simple to use:
 
     temperature = input("What is the temperature in Fahrenheit? ")
     print("You said the temperature was " + temperature + ".")
+
+.. image:: keyboard.svg
+    :width: 30%
+    :class: right-image
 
 As a parameter to ``input``, just give it text to use as a prompt. Whatever
 the user types in, is stored in the variable on the left.
