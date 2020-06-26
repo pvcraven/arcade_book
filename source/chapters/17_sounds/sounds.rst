@@ -3,6 +3,10 @@
 Sound Effects
 =============
 
+.. image:: sounds.svg
+    :width: 35%
+    :class: right-image
+
 Adding sound to your game isn't too hard. There are two steps:
 
 1. Load the sound
@@ -14,6 +18,10 @@ the same directory as any Python program that tries to use it.
 
 Loading Sounds
 --------------
+
+.. image:: loading_sound.svg
+    :width: 25%
+    :class: right-image
 
 The code below creates a new variable called ``laser_sound``. It calls
 arcades ``load_sound`` function. It passes the filename of our sound.
@@ -32,6 +40,10 @@ It can be kept in memory.
 
 Playing Sounds
 --------------
+
+.. image:: headphones.svg
+    :width: 25%
+    :class: right-image
 
 The code to play sounds is straight-forward. Just call the ``play_sound``
 function, and pass in the variable that we set equal to the sound we loaded:
@@ -69,6 +81,10 @@ the ``__init__`` method of the class that will play the sound.
 
 Triggering Sounds
 -----------------
+
+.. image:: switch.svg
+    :width: 20%
+    :class: right-image
 
 We want to play the sound when something happens. So this example loads the
 sound once during the ``__init__``. When the user hits the space bar, that
@@ -115,6 +131,10 @@ Great places to find free sounds to use in your program:
 
 Sound File Formats
 ------------------
+
+.. image:: waves.svg
+    :width: 35%
+    :class: right-image
 
 There are several types of `sound file formats`_ that you can find sounds in:
 

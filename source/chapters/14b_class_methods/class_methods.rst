@@ -1,6 +1,10 @@
 Class Methods
 =============
 
+.. image:: dog.svg
+    :width: 30%
+    :class: right-image
+
 In addition to attributes, classes may have methods. A method is a function
 that exists inside of a class. Expanding the earlier example of a ``Dog`` class
 from the review problem 1 above, the code below adds a method for a dog barking.
@@ -65,21 +69,18 @@ operator and the ``self`` reference.
     def bark(self):
         print("Woof says", self.name)
 
-Attributes are adjectives, and methods are verbs. The drawing for the class would look like Figure 12.3.
-
-.. figure:: dog_2_1.png
-
-    Dog Class
+Attributes are adjectives, and methods are verbs.
 
 Example: Ball Class
 ^^^^^^^^^^^^^^^^^^^
-This example code could be used in Python/Arcade to draw a ball. Having all
-the parameters contained in a class makes data management easier. The diagram
-for the ``Ball`` class is shown in the figure below.
 
-.. figure:: ball_2_1.png
+.. image:: ball.svg
+    :width: 20%
+    :class: right-image
 
-    Ball Class
+This example code could be used as part of a program to draw and keep track
+of a ball. Having all the parameters contained in a class makes data management
+easier.
 
 .. code-block:: python
     :linenos:
@@ -99,7 +100,7 @@ for the ``Ball`` class is shown in the figure below.
             self.size = 10
 
             # Ball color
-            self.color = [255,255,255]
+            self.color = [255, 255, 255]
 
         # --- Class Methods ---
         def move(self):
@@ -223,6 +224,7 @@ is run, the address is copied rather than the entire object the address points
 to. See the figure below.
 
 .. figure:: example1.png
+    :width: 40%
 
     Class References
 
@@ -231,6 +233,7 @@ We can also run this in www.pythontutor.com to see how both of the variables `ar
 .. _are pointing to the same object: http://www.pythontutor.com/visualize.html#code=class+Person%3A%0A++++name+%3D+%22%22%0A++++money+%3D+0%0A%0Abob+%3D+Person()%0Abob.name+%3D+%22Bob%22%0Abob.money+%3D+100%0A%0Anancy+%3D+bob%0Anancy.name+%3D+%22Nancy%22%0A%0Aprint(bob.name,+%22has%22,+bob.money,+%22dollars.%22)%0Aprint(nancy.name,+%22has%22,+nancy.money,+%22dollars.%22)&mode=display&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&curInstr=8
 
 .. figure:: one_person.png
+    :width: 60%
 
     One Person, Two Pointers
 
@@ -294,6 +297,7 @@ whole bank account. So using the copy of the bank account number to deposit
 100 dollars causes Bob's bank account balance to go up.
 
 .. figure:: function_references_2.png
+    :width: 60%
 
     Function References
 

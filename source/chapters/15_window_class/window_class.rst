@@ -3,6 +3,10 @@
 Using the Window Class
 ======================
 
+.. image:: window.svg
+    :width: 30%
+    :class: right-image
+
 We can use a class to represent our program.
 The Arcade library has a built-in class that represents a window on the
 screen. We can create our own child class and override functions to handle:
