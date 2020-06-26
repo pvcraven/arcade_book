@@ -599,7 +599,7 @@ Example 1
 
 In this example, note that if you don't use a function, it doesn't run.
 
-.. code-block:: python
+.. code-block:: pyth
 
     # Example 1
     def a():
@@ -904,3 +904,14 @@ Example 15
     print("global scope, list =", my_list)
     a(my_list)
     print("global scope, list =", my_list)
+
+
+Online Coding Problems
+^^^^^^^^^^^^^^^^^^^^^^
+
+Practice on-line by completing the first set of coding problems available here:
+
+https://repl.it/community/classrooms/174286
+
+All problems beginning with ``02`` can be done with the knowledge from this
+chapter.

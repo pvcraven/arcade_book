@@ -4,25 +4,24 @@ Advanced Looping
 
 .. image:: nested_loops.png
     :width: 200px
+    :class: right-image
 
 Games involve a lot of complex loops. This is a "challenge chapter" to learn
 how to be an expert with loops. If you can understand the problems in this
 chapter, by the end of it you can certify yourself as a loop expert.
 
-If becoming a loop expert isn't your goal, at least make sure you can
+At the very least, make sure you can
 write out the answers for the first eight problems. That will give you enough
-knowledge to continue this book. (Besides, being a loop expert
-never got anyone a date. Except for that guy in the
-`Groundhog Day`_ movie.)
+knowledge to continue this book.
 
-.. _Groundhog Day: http://www.imdb.com/title/tt0107048/
+You can try solving these on your computer, or on-line with
+`repl.it <https://repl.it/community/classrooms/174286>`_.
+Scroll down to the "05" set of problems.
 
-There are video explanations for the answers on-line.
+Print Statements and Line Endings
+---------------------------------
 
-Print Statement End Characters
-------------------------------
-
-By default, the "print" statement puts a *carriage return* at
+By default, the ``print`` statement puts a *carriage return* at
 the end of what is printed out. As we explained back in the first chapter,
 the carriage return is a character that moves the next line of
 output to be printed to the next line. Most of the time this is what we want.
@@ -90,6 +89,21 @@ This will print:
 
     0 1
 
+.. _move_to_the_next_line:
+
+Moving to the Next Line
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If you can get text to appear on the same line, how do you trigger text
+to appear on the next line? An empty ``print`` statement will do the trick:
+
+.. code:: python
+
+    print()
+
+
+The trick is to combine this statement with the ``for`` loops in the proper
+location, and the proper indentation.
 
 Advanced Looping Problems
 -------------------------
@@ -97,18 +111,22 @@ Advanced Looping Problems
 Problem 1
 ~~~~~~~~~
 
-Write code that will print ten asterisks (*) like the following:
+Write code that will print ten asterisks (*) in a row:
 
 .. code:: text
 
     * * * * * * * * * *
 
-Have this code print using a "for" loop, and print each
-asterisk individually, rather than just printing ten asterisks with one "print" statement.
-This can be done in two lines of code, a "for" loop and a "print" statement.
-When you have figured it out, or given up, here is the answer:
+Write code to print the asterisks using a ``for`` loop. Print each
+asterisk individually, don't just print all ten with one "print" statement.
+This problem can be completed in two lines of code using one ``for`` loop and
+one ``print`` statement.
 
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_1.php
+Remember, **don't** look at the answer until you've figured it out yourself,
+or you have been trying for 5-10 minutes. (I don't recommend waiting longer than
+ten minutes.)
+
+:ref:`answer-problem-01`
 
 Problem 2
 ~~~~~~~~~
@@ -122,11 +140,10 @@ Write code that will print the following:
     * * * * * * * * * * * * * * * * * * * *
 
 This is just like the prior problem, but also printing five and twenty stars. Copy and paste
-from the prior problem, adjusting the "for" loop as needed.
+from the prior problem, adjusting the ``for`` loop as needed.
+Don't forget how :ref:`move_to_the_next_line`.
 
-When you have figured it out, or given up, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_2.php
+:ref:`answer-problem-02`
 
 Problem 3
 ~~~~~~~~~
@@ -147,12 +164,11 @@ to print the following 10x10 rectangle:
 
 
 To start, take a look at Problem 1. The code in Problem 1 generates one line of asterisks.
-It needs to be repeated ten times.
+It needs to be repeated ten times. You'll also need to move to the next line
+after each row has printed.
 Work on this problem for at least ten minutes before looking at the answer.
 
-When you have figured it out, or given up, here it is:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/10x10box.php
+:ref:`answer-problem-03`
 
 Problem 4
 ~~~~~~~~~
@@ -174,16 +190,14 @@ rectangle:
     * * * * *
 
 This is a lot like the prior problem. Experiment with the ranges on the loops to find exactly what
-the numbers passed to the "range" function control.
+the numbers passed to the ``range`` function control.
 
-When you have figured it out, or given up, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_4.php
+:ref:`answer-problem-04`
 
 Problem 5
 ~~~~~~~~~
 
-Use two "for" loops, one of them nested, to print the following 20x5
+Use two ``for`` loops, one of them nested, to print the following 20x5
 rectangle:
 
 .. code:: text
@@ -196,9 +210,7 @@ rectangle:
 
 Again, like Problem 3 and Problem 4, but with different range values.
 
-When you have figured it out, or given up, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_5.php
+:ref:`answer-problem-05`
 
 Problem 6
 ~~~~~~~~~
@@ -218,7 +230,7 @@ Write code that will print the following:
     0 1 2 3 4 5 6 7 8 9
     0 1 2 3 4 5 6 7 8 9
 
-Use two nested loops. Print the first line with a loop, and not with:
+Use two nested loops. Print the first line with a loop. Don't use code like this:
 
 .. code:: python
 
@@ -226,8 +238,9 @@ Use two nested loops. Print the first line with a loop, and not with:
 
 .. attention::
 
-    First, create a loop that prints the first line. Then enclose it in another loop that repeats the line 10 times.
-    Use either "i" or "j" variables for what the program prints.
+    First, create a loop that prints the first line. Then enclose it in another
+    loop that repeats the line 10 times.
+    Use either ``i`` or ``j`` variables for what the program prints.
     This example and the next one helps reinforce what those index
     variables are doing.
 
@@ -235,7 +248,7 @@ Work on this problem for at least ten minutes before looking at the answer.
 The process of spending ten minutes working on the answer is far more important
 than the answer itself.
 
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/number_square_answer.php
+:ref:`answer-problem-06`
 
 Problem 7
 ~~~~~~~~~
@@ -255,10 +268,7 @@ Adjust the prior program to print:
     8 8 8 8 8 8 8 8 8 8
     9 9 9 9 9 9 9 9 9 9
 
-
-Answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_7.php
+:ref:`answer-problem-07`
 
 Problem 8
 ~~~~~~~~~
@@ -282,18 +292,15 @@ Write code that will print the following:
 Tip: This is just problem 6, but the inside loop no longer loops a fixed number of times.
 Don't use ``range(10)``, but adjust that range amount.
 
+:ref:`answer-problem-08`
 
-After working at least ten minutes on the problem, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_right_triangle.php
-
-Make sure you can write out the code for this and the prior problems. Yes, this
+Make sure you can write out the code for this and the prior problems. Repeat
+until you can get it without looking up the answer. Yes, this
 practice is work, but it will pay off later and you'll save time in the long run.
 
 
 Problem 9
 ~~~~~~~~~
-
 
 Write code that will print the following:
 
@@ -334,9 +341,7 @@ Then once that is working, add a loop after the outside loop starts
 and before the already existing inside loop. Use this
 new loop to print enough spaces to right justify the other loops.
 
-After working at least ten minutes on the problem, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/bottom_left_triangle.php
+:ref:`answer-problem-09`
 
 Problem 10
 ~~~~~~~~~~
@@ -385,12 +390,11 @@ Then adjust the code to print:
      8  16  24  32  40  48  56  64  72
      9  18  27  36  45  54  63  72  81
 
-Finally, use an "if" to print spaces if the number
-being printed is less than 10.
+Finally, use an 11if`` to print spaces if the number
+being printed is less than 10. (Or use string formatting if you are
+already familar with that.)
 
-After working at least ten minutes on the problem, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/multiplication_table.php
+:ref:`answer-problem-10`
 
 Problem 11
 ~~~~~~~~~~
@@ -439,9 +443,7 @@ Then write code to print:
 
 Then finish by adding spaces to print the final answer.
 
-After working at least ten minutes on the problem, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_triangle.php
+:ref:`answer-problem-11`
 
 Problem 12
 ~~~~~~~~~~
@@ -470,9 +472,7 @@ Write code that will print the following:
 
 This can be done by combining problems 11 and 9.
 
-After working at least ten minutes on the problem, here is the answer:
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/three_quarters.php
+:ref:`answer-problem-12`
 
 Problem 13
 ~~~~~~~~~~
@@ -500,10 +500,6 @@ Write code that will print the following:
                       1
 
 
+:ref:`answer-problem-13`
 
-
-After working at least ten minutes on the problem, here is the answer:
-
-
-http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.php
 
