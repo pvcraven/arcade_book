@@ -88,7 +88,7 @@ lines in the program below:
     :caption: move_with_keyboard_simple.py
     :language: python
     :linenos:
-    :emphasize-lines: 53-62, 64-69
+    :emphasize-lines: 5, 53-62, 64-69
 
 Keep From Moving Off Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
