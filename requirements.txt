@@ -4,4 +4,3 @@ sphinx-intl
 sphinx-copybutton
 awscli
 arcade
-mypy
