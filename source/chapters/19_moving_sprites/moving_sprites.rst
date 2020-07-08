@@ -172,7 +172,7 @@ We can even take that common code, and move it to a method. Here's a full exampl
     :caption: Full Move Down Sprite Sample
     :language: python
     :linenos:
-    :emphasize-lines: 15-36
+    :emphasize-lines: 15-36, 121
 
 Bouncing Coins
 --------------
