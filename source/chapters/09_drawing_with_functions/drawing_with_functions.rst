@@ -1,12 +1,17 @@
-
-
 .. _custom-drawing-function:
 
 Drawing With Functions
 ======================
 
-Here is a set of examples where we take a program that already exists and put
-everything in functions.
+We learned how to draw in :ref:`how-to-draw`.
+In :ref:`lab-02` we applied that to create our own drawing.
+We learned how to create functions in :ref:`creating_functions`.
+In this chapter, we'll combine all that knowledge to create our own drawing functions.
+
+We'll do that by expanding on the code you wrote for :ref:`lab-02`.
+
+To show you how, I'm going to start with a similar program and convert it to
+using functions.
 
 First the original program:
 
@@ -17,19 +22,27 @@ First the original program:
     :language: python
     :linenos:
 
+Ok, it isn't very fancy, but that will make this process easier to follow.
+
 .. _make_the_main_function:
 
 Make The ``main`` Function
 --------------------------
 
-Next, create a ``main()`` function. Put everything in it, and call the main
-function.
+After copying the code into Lab 3, we'll create a ``main()`` function.
+Put everything in it, and call the ``main`` function.
+
+Are those too many lines to indent? You can indent groups of lines by
+selecting them, and then hitting "tab". If you want to un-indent a group of
+lines, hit shift-tab.
 
 .. literalinclude:: drawing_with_functions_a2.py
     :language: python
     :linenos:
 
-When you do this, run your program and make sure it still works before proceeding.
+After this, run your program and make sure it still works before proceeding.
+If it doesn't work, stop and get help. Continuing will only make the problem
+harder.
 
 .. _make_the_drawing_function:
 
@@ -37,15 +50,24 @@ Make The Drawing Functions
 --------------------------
 
 Next, pick an item to move to a function. Start with an easy one if you have it.
-I chose grass because it was only one line of code, and I wasn't going to ever try
-to position it with x, y.
+
+Grass Function
+^^^^^^^^^^^^^^
+
+I chose grass to start withbecause it was only one line of code, and I wasn't
+going to ever try to position it with an x, y coordinate.
 
 .. literalinclude:: drawing_with_functions_a3.py
     :language: python
     :linenos:
     :emphasize-lines: 7-9, 17
 
-Then, I took a more complex shape and put it in a function.
+Test, and make sure it is working.
+
+Snow Person Function
+^^^^^^^^^^^^^^^^^^^^
+
+Now let's take the more complex snow person and put it in a function.
 
 .. literalinclude:: drawing_with_functions_a4.py
     :language: python

@@ -3,6 +3,9 @@
 Lab 3: Drawing with Functions
 =============================
 
+This lab uses what we learned in :ref:`creating_functions` and
+:ref:`custom-drawing-function` to extend our ability to draw to the screen.
+
 Requirements
 ------------
 Your goal: Draw and animate an image.
