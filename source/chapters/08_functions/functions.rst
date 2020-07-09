@@ -7,9 +7,10 @@ Creating Functions
 
 In the last chapter we learned how to create variables and use
 them in expressions. In this chapter we are going to build on
-that knowledge to create functions. Functions are the commands we
-give the computer. Being able to write our own functions allow
-us to create custom commands.
+that knowledge to create **functions**. Functions are groups of commands we
+give to the computer.
+We've already *used* functions, for example the ``print`` function and the ``draw_line``
+function. Now we are going to learn to *make our own* functions.
 
 Functions help us by:
 
@@ -17,8 +18,8 @@ Functions help us by:
   have functions to ``draw_tree`` and ``draw_horse`` which is a lot easier
   to read than long blocks of code that just draw lines and rectangles.
 * **Abstracting our code.** By using variables, we can abstract our code and
-  tell a function where to draw a tree, how big to draw it, and what
-  color to draw it. This is a lot more flexible than one set of code
+  tell a function *where* to draw a tree, *how big* to draw it, and
+  *what color* to draw it. This is a lot more flexible than one set of code
   that can only draw a tree in one exact place and one exact size.
 * **Re-using our code.** By calling a function, I can re-use code
   over and over. If it takes ten lines of code to draw a horse,
@@ -26,14 +27,14 @@ Functions help us by:
   I don't need thirty lines of code to do it.
 * **Dividing a complex problem into simpler ones.** The key to programming, and
   a lot of things in life, is to learn how to take a large, overwhelmingly
-  complex problem, and divide it into small problems that are easy to solve.
+  complex problem, and divide it into small problems.
   For example,
   we have functions that can display dots on the screen. Then there
   functions that can draw a line using those dots. Then functions that
   can draw triangles using those lines. Then functions that can draw
   trees using those triangles. Then finally a forest function that
-  uses the trees function. A complex forest broken down into simple functions
-  that build off each other.
+  uses the trees function. Drawing a complex forest is
+  broken down into simple functions that build off each other.
 * **Making code easier to maintain.** If there is a problem in your program,
   it is easier to find when your program is divided into parts. If your
   car isn't moving correctly, and there is a ``move_car`` function, that's
@@ -47,6 +48,7 @@ Defining a function in Python is easy. Here's an example:
 
 .. code-block:: python
     :linenos:
+    :caption: Defining a function.
 
     def print_hello():
         """ This is a comment that describes the function. """
@@ -82,7 +84,7 @@ Defining a function doesn't cause the computer to *do* anything. It is like
 giving a recipe to the computer. Give someone a recipe for banana bread
 and they know how to make it. They haven't actually made it yet, they
 just know how.
-You have to do it *tell* them to make banana bread.
+You have to *tell* them to make banana bread.
 That is, after we **define** the function
 we must **call** the function before the code in it runs.
 
@@ -95,6 +97,7 @@ calls it twice.
 
 .. code-block:: python
     :linenos:
+    :caption: Defining and calling a function.
 
     def print_hello():
         """ This is a comment that describes the function. """
@@ -111,6 +114,7 @@ functions and then we call them in our main code.
 
 .. code-block:: python
     :linenos:
+    :caption: Defining and calling multiple functions.
 
     def print_hello():
         print("Hello!")
@@ -136,6 +140,7 @@ at the end. Without that, our program won't do anything at all.
 .. code-block:: python
     :emphasize-lines: 9-12, 15-16
     :linenos:
+    :caption: Using a ``main`` function.
 
     def print_hello():
         print("Hello!")
@@ -161,16 +166,19 @@ imports functions.
 
 Eventually we'll learn to write our own modules we import. Right now,
 we couldn't do that with our code because attempting to import the code
-would run it, not just make the functions available for us to use.
+would actually *run* it. What we want is simply to make the functions
+available for us to use.
 
 With that in mind, a better habit to get into is to check if we are
-trying to import the file.
-The statement for this looks a little
-weird. In fact, it is weird enough I just look it up and copy/paste it any
-time I want to use it. Don't worry about understanding how it works yet.
+trying to ``import`` the file before calling the ``main`` function.
+The statement, in this next example, looks a little weird.
+In fact, it is weird enough I just look it up and copy/paste it any
+time I want to use it. Don't worry about understanding *how* it works yet,
+just realize it is a good practice and why.
 
 .. code-block:: python
     :linenos:
+    :caption: Check to make sure we aren't importing the file before calling ``main``.
     :emphasize-lines: 14-17
 
     def print_hello():
@@ -192,7 +200,7 @@ time I want to use it. Don't worry about understanding how it works yet.
         main()
 
 If this is too confusing, just call the ``main()`` method instead. Eventually
-we'll learn about imports and if statements and it will make more sense.
+we'll learn about imports and ``if`` statements. Then it will make more sense.
 
 Take in Data with Parameters
 ----------------------------
@@ -201,7 +209,7 @@ Take in Data with Parameters
     :width: 45%
     :class: right-image
 
-Functions are even more powerful if we can feed data to them to process.
+Functions are even more powerful if we can feed data into them to process.
 
 Here is a simple example that will take in a number and print it. Notice how
 I've created a new variable ``my_number`` in between the parenthesis.
@@ -298,14 +306,14 @@ Capturing Returned Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: catch.svg
-    :width: 25%
+    :width: 22%
     :class: right-image
 
 We need to *capture* the result. We do that by setting a variable equal to
-the value the function returned. In this code we capture the result by
-putting a variable to the left of the function call and using the ``=``
-operator. Later the code prints the value, but that's not capturing, we are
-just using the result we captured in the code above it.
+the value the function returned. In this next code example we capture the result by
+putting a variable to the left of the function call and using the ``=`` (assignment)
+operator. Later the code prints the value, but that's not capturing! That is
+just *using* the result we captured and printing it.
 
 .. code-block:: python
 
@@ -321,9 +329,16 @@ just using the result we captured in the code above it.
 Now the result isn't lost. It is stored in the ``my_result`` variable
 which we can print or use some other way.
 
-We will do this a lot, so pause for a second and review. To *capture*
+We will do this *a lot*, so pause for a second and set it sit in your mind.
+I'll wait.
+
+Great, now imagine you have an instructor or co-worker watching over your shoulder.
+You have a function. It returns a value. The person over your shoulder says,
+"Ok, now you just have to capture the value." The pressure is on.
+
+Don't panic! Remember to *capture*
 the value returned from a function, put a variable to the left of it and
-juse an ``=`` operator.
+use an ``=`` operator.
 
 Volume Cylinder Example
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -353,7 +368,8 @@ equation to calculate the volume of a six-pack like this:
     six_pack_volume = volume_cylinder(2.5, 5) * 6
 
 See how the value returned from ``volume_cylinder`` goes into the equation and is
-multiplied by six.
+multiplied by six. We would not be able to chain together calculations like
+that if all we could do was ``print``, instead of ``return``.
 
 There is a big difference between a function that *prints* a value and a
 function that *returns* a value. Look at the code below. Pause for a bit
@@ -364,37 +380,39 @@ studying it.
 .. code-block:: python
     :linenos:
 
-    # Function that prints the result
+    # This function will print the result
     def sum_print(a, b):
         result = a + b
         print(result)
 
 
-    # Function that returns the results
+    # This function will return the result
     def sum_return(a, b):
         result = a + b
         return result
 
 
-    # This prints the sum of 4+4, because the function has a print
+    # This code prints the sum of 4+4, because the function has a print
     sum_print(4, 4)
 
-    # This does not, because the function returns, and doesn't print
+    # This code prints nothing, because the function returns, and doesn't print
     sum_return(4, 4)
 
-    # This will not set x1 to the sum, because the function prints and doesn't return
+    # This code will not set x1 to the sum.
+    # The sum_print function does not have a return statement, so it returns
+    # nothing!
     # x1 actually gets a value of 'None' because nothing was returned
     x1 = sum_print(4, 4)
     print("x1 =", x1)
 
-    # This will set x2 to the sum
-    # and print it properly.
+    # This will set x2 to the sum and print it properly.
     x2 = sum_return(4, 4)
     print("x2 =", x2)
 
-Here is a very common issue new programmers face.
+This next code example has a very common issue new programmers face.
 It is not unusual to get stuck looking at
-code like this example below. How would you print the result of the function?
+code like this example below. Your task: how would you print the result of the
+function?
 See if you can figure it out without looking ahead.
 
 .. code-block:: python
@@ -457,10 +475,15 @@ function. This comment is delimited using three double quotes, and is called a
         return volume
 
 The great thing about using docstrings in functions is that the comment can be
-pulled out and put into a website. That can be part of a larger website that
-documents your code.
-Most languages have similar tools that can help make documenting a breeze. This can save a lot of time as you start working on larger
-programs.
+pulled out and put into a website.
+That can be part of a larger website that documents your code.
+For example,
+`here is the documentation for drawing a circle <https://arcade.academy/arcade.html#arcade.draw_circle_outline>`_,
+generated
+automatically from the function comment. In fact, everything on that page is
+automatically generated.
+Most languages have similar tools that can help make documenting a breeze.
+This can save a lot of time as you start working on larger programs.
 
 Variable Scope
 --------------
@@ -488,13 +511,13 @@ below:
 
 The last line will generate an error because ``x`` only exists inside of the ``f()``
 function. Every heard the phrase "What happens in Vegas, stays in Vegas?"
-Well, variables created in a function stay in that function.
+Well, variables created in a function stay in the function.
 The variable is created when ``f()`` is called and the memory it uses is
 freed as soon as ``f()`` finishes.
 
 Here's where it gets complicated.
 A more confusing rule is how to access variables created *outside* of the ``f()``
-function. In the following code, x is created before the ``f()`` function, and
+function. In the following code, ``x`` is created before the ``f()`` function, and
 thus can be read from inside the ``f()`` function.
 
 .. code-block:: python
@@ -599,7 +622,7 @@ Example 1
 
 In this example, note that if you don't use a function, it doesn't run.
 
-.. code-block:: pyth
+.. code-block:: python
 
     # Example 1
     def a():
@@ -905,6 +928,21 @@ Example 15
     a(my_list)
     print("global scope, list =", my_list)
 
+
+Review
+------
+
+This chapter was all about **functions**.
+We learned how to define functions using the ``def`` keyword.
+We can call functions just by using the function name followed by parenthesis.
+Functions can take in data by using **parameters**.
+Functions return data using the ``return`` statement.
+We can capture that data by setting a variable equal to the function call.
+Functions can be documented with comments.
+Variables created inside a function cannot be accessed outside the function.
+Parameter variables contain *copies* of the original data and can be modified without
+changing the original.
+Functions can call other functions, which can call yet more functions.
 
 Online Coding Problems
 ^^^^^^^^^^^^^^^^^^^^^^

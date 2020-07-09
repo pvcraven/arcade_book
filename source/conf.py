@@ -27,9 +27,9 @@ from docutils.utils import get_source_line
 
 
 def setup(app):
-    app.add_stylesheet('css/custom.css')
-    app.add_stylesheet('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.css')
-    app.add_stylesheet('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/themes/default/default.min.css')
+    app.add_css_file('css/custom.css')
+    app.add_css_file('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.css')
+    app.add_css_file('//cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/themes/default/default.min.css')
 
 
 def _warn_node(self, msg, node):
