@@ -7,9 +7,35 @@ Guessing Games with Random Numbers and Loops
     :width: 15%
     :class: right-image
 
-Our next step is how to loop a section of code. Most games "loop." They
-repeat the same code over and over. For example the number guessing
-game below loops for each guess that the user makes:
+In the last chapter, we added the ``if`` statement
+to our skill set, enabling the computer to choose which
+set of code to run. In this chapter we learn how to **loop**.
+Rather than have our programs run straight though, we
+can run a section of code ten times, or run code for each
+character we want to move on the screen, or even run code until
+the user reaches the end of the level.
+
+If our games do the same thing each time the game runs, that's
+not very interesting. At the end of this chapter we'll introduce
+**random numbers**. That is, we can have the computer roll the
+dice to change up the game each time we run it.
+
+Introduction to Looping
+-----------------------
+
+Most games loop. Most programs of *any* kind loop.
+For example, think of the simple number guessing game.
+One person thinks of a number from 1 to 100, and
+a different person tries to guess it.
+
+This is an easy game to program on the computer using
+loops. Start with code that will take in a guess from the
+user, and then tell the user if they are too high, too low, or
+correct using the ``if`` statements we learned about in
+the last chapter. Then, we just need to loop that code until
+the user guess correctly, or runs out of guesses.
+
+Here's an example run of just such a program:
 
 .. code-block:: text
 
@@ -39,33 +65,41 @@ game below loops for each guess that the user makes:
 
 (Code for this program is below: :ref:`number-guessing-game-code`)
 
-Wait, what does this looping have to do with graphics and video games? A lot. Each
-*frame* the game displays is one time through a loop. You may be familiar with
+Wait, what does this simple text game have to do with advanced graphical
+games? A lot.
+You may be familiar with
 the frames-per-second (FPS) statistic that games show. The FPS represents the
-number of times the computer updates the screen each second. The higher the
+number of times the computer updates the screen each second.
+Each *frame* in a video game is one time through a loop.  The higher the
 rate, the smoother the game. (Although an FPS rate past 60 is faster than
-most screens can update, so there isn't much point to push it past that.)
+most screens can update, so there's not much point to go faster.)
 The figure below shows the game Eve Online and a graph showing how many frames
-per second the computer is able to display.
+per second the computer displaying.
 
 .. figure:: fps.png
 
     FPS in video games
 
-The loop in these games works like the flowchart in the figure below. Despite the
-complexities of modern games, the inside of this loop is similar to a
-calculator program. Get user input. Perform calculations.
-Output the result. In a video game, we try to repeat this up to 60 times per
-second.
+The loop in these games works like the flowchart in the figure below.
 
 .. figure:: game_loop.svg
 
     Game loop
 
-There can even be loops inside of other loops. A real "loop the loop." Take a
-look at the "Draw Everything" box in Figure 4.2. This set of code loops through
-and draws each object in the game. That loop is inside of the larger loop that
-draws each frame of the game, which looks like the figure below.
+Despite the
+complexities of modern games, the inside of these loops all have three common steps:
+
+1. Get user input.
+2. Perform calculations.
+3. Output the result.
+
+In a video game, we try to repeat this 60 times per second.
+
+There can even be loops *inside* of loops.
+Take a look at the "Draw Everything" flowchart below.
+This set of code loops through and draws each object in the game.
+You can put this loop inside the larger loop that
+draws each frame of the game (outputs the result).
 
 .. figure:: draw_everything.svg
 
@@ -88,10 +122,10 @@ For Loops
     :width: 20%
     :class: right-image
 
-The ``for`` loop example below runs the print statement five times. It could
-just as easily run 100 or 1,000,000 times just by changing the 5 to the desired
+The ``for`` loop example below runs the ``print`` statement five times. It could
+just as easily run 100 or 1,000,000 times by changing the 5 to the desired
 number of times to loop. Note the similarities of how the ``for`` loop is written
-to the if statement. Both end in a colon, and both use indentation to specify
+to the ``if`` statement. Both end in a colon, and both use indentation to specify
 which lines are affected by the statement.
 
 
@@ -123,7 +157,7 @@ In this case, five times.
 
 The next example code will print "Please," five times and "Can I go to the
 mall?" only once. "Can I go to the mall?" is not indented so it is not part of
-the for loop and will not print until the for loop completes.
+the ``for`` loop and will not print until the ``for`` loop completes.
 
 .. code-block:: python
     :linenos:
@@ -146,7 +180,7 @@ Output:
 This next code example takes the prior example and indents line 3. This change
 will cause the program to print "Please," and "Can I go to the mall?" five
 times. Since the statement has been indented "Can I go to the mall?" is now
-part of the for loop and will repeat five times just like the word "Please,".
+part of the ``for`` loop and will repeat five times just like the word "Please,".
 
 .. code-block:: python
     :linenos:
@@ -171,8 +205,8 @@ Output:
     Can I go to the mall?
 
 You aren't stuck using a specific number with the ``range`` function. This
-example asks the user how many times to print using the ``input`` function
-we talked about back in :ref:`input-function`.
+next example asks the user how many times to print using the ``input`` function
+we talked about last chapter in :ref:`input-function`.
 
 .. code-block:: python
     :caption: Loop according to the user input
@@ -204,9 +238,8 @@ Or you could write a function, and take in the value by a parameter:
 
     main()
 
-The code below will print the numbers 0 to 9. Notice that the loop starts at
-0 and does not include the number 10. It is natural to assume that
-``range(10)`` would include 10, but it stops just short of it.
+You can use the increment variable in the ``for`` loop to track
+your loop. Try running this code, which prints ``i``.
 
 .. code-block:: python
     :caption: Print the numbers 0 to 9
@@ -214,6 +247,10 @@ The code below will print the numbers 0 to 9. Notice that the loop starts at
 
     for i in range(10):
         print(i)
+
+With a range of 10, you might expect that the code prints the numbers 1 to 10.
+It doesn't. It prints the numbers 0 to 9.
+It is natural to assume that ``range(10)`` would include 10, but it doesn't.
 
 Output:
 
@@ -229,6 +266,12 @@ Output:
     7
     8
     9
+
+In computer programming, we typically start counting at zero rather
+than one. Most computer languages use this convention.
+An old computer joke is to get your friend a mug that says "World's
+#1 programmer." Then get yourself a mug that says "World's #0
+programmer."
 
 A program does not need to name the variable ``i``, it could be named something
 else. For example a programmer might use ``line_number`` if she was processing a
