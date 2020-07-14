@@ -333,8 +333,10 @@ want the numbers right justified, and the text left justified? We can use the
      Grapes are 70  calories.
       Pears are 30  calories.
 
-Leading Zeros
--------------
+.. _clock-example:
+
+Clock Example with Leading Zeros
+--------------------------------
 
 This produces output that isn't right:
 

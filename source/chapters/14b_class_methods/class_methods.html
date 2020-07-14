@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<title>Class Methods</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="class-methods">
+<h1 class="title">Class Methods</h1>
+
+<object class="right-image" data="dog.svg" style="width: 30%;" type="image/svg+xml">
+dog.svg</object>
+<p>In addition to attributes, classes may have methods. A method is a function
+that exists inside of a class. Expanding the earlier example of a <tt class="docutils literal">Dog</tt> class
+from the review problem 1 above, the code below adds a method for a dog barking.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 12)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    class Dog():
+        def __init__(self):
+            self.age = 0
+            self.name = &quot;&quot;
+            self.weight = 0
+
+        def bark(self):
+            print(&quot;Woof&quot;)
+
+</pre>
+</div>
+<p>The method definition is contained in lines 7-8 above. Method definitions in a
+class look almost exactly like function definitions. The big difference is the
+addition of a parameter <tt class="docutils literal">self</tt> on line 7. The first parameter of any method
+in a class must be <tt class="docutils literal">self</tt>. This parameter is required even if the function
+does not use it.</p>
+<p>Here are the important items to keep in mind when creating methods for classes:</p>
+<ul class="simple">
+<li>Attributes should be listed first, methods after.</li>
+<li>The first parameter of any method must be self.</li>
+<li>Method definitions are indented exactly one tab stop.</li>
+</ul>
+<p>Methods may be called in a manner similar to referencing attributes from an
+object. See the example code below.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 39)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    my_dog = Dog()
+
+    my_dog.name = &quot;Spot&quot;
+    my_dog.weight = 20
+    my_dog.age = 3
+
+    my_dog.bark()
+
+</pre>
+</div>
+<p>Line 1 creates the dog. Lines 3-5 set the attributes of the object. Line 7
+calls the <tt class="docutils literal">bark</tt> function. Note that even through the <tt class="docutils literal">bark</tt> function has
+one parameter, <tt class="docutils literal">self</tt>, the call does not pass in anything. This is because
+the first parameter is assumed to be a reference to the dog object itself.
+Behind the scenes, Python makes a call that looks like:</p>
+<pre class="code python literal-block">
+<span class="comment single"># Example, not actually legal</span>
+<span class="name">Dog</span><span class="operator">.</span><span class="name">bark</span><span class="punctuation">(</span><span class="name">my_dog</span><span class="punctuation">)</span>
+</pre>
+<p>If the <tt class="docutils literal">bark</tt> function needs to make reference to any of the attributes,
+then it does so using the <tt class="docutils literal">self</tt> reference variable. For example, we can
+change the <tt class="docutils literal">Dog</tt> class so that when the dog barks, it also prints out the
+dog's name. In the code below, the name attribute is accessed using a dot
+operator and the <tt class="docutils literal">self</tt> reference.</p>
+<pre class="code python literal-block">
+<span class="keyword">def</span> <span class="name function">bark</span><span class="punctuation">(</span><span class="name builtin pseudo">self</span><span class="punctuation">):</span>
+    <span class="name builtin">print</span><span class="punctuation">(</span><span class="literal string double">&quot;Woof says&quot;</span><span class="punctuation">,</span> <span class="name builtin pseudo">self</span><span class="operator">.</span><span class="name">name</span><span class="punctuation">)</span>
+</pre>
+<p>Attributes are adjectives, and methods are verbs.</p>
+<div class="section" id="example-ball-class">
+<h1>Example: Ball Class</h1>
+<object class="right-image" data="ball.svg" style="width: 20%;" type="image/svg+xml">
+ball.svg</object>
+<p>This example code could be used as part of a program to draw and keep track
+of a ball. Having all the parameters contained in a class makes data management
+easier.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 85)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    class Ball():
+        def __init__(self):
+            # --- Class Attributes ---
+            # Ball position
+            self.x = 0
+            self.y = 0
+
+            # Ball's vector
+            self.change_x = 0
+            self.change_y = 0
+
+            # Ball size
+            self.size = 10
+
+            # Ball color
+            self.color = [255, 255, 255]
+
+        # --- Class Methods ---
+        def move(self):
+            self.x += self.change_x
+            self.y += self.change_y
+
+        def draw(self):
+            arcade.draw_circle_filled(self.x, self.y, self.size, self.color )
+
+</pre>
+</div>
+<p>Below is the code that would go ahead of the main program loop to create a ball
+and set its attributes:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 116)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    the_ball = Ball()
+    the_ball.x = 100
+    the_ball.y = 100
+    the_ball.change_x = 2
+    the_ball.change_y = 1
+    the_ball.color = [255, 0, 0]
+
+</pre>
+</div>
+<p>This code would go inside the main loop to move and draw the ball:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 128)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    the_ball.move()
+    the_ball.draw()
+
+</pre>
+</div>
+<div class="section" id="references">
+<h2>References</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1WYpw3bo__A" frameborder="0" allowfullscreen></iframe><p>Here's where we separate the true programmers from the want-to-be's.
+Understanding class references. Take a look at the following code:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 144)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    class Person():
+        def __init__(self):
+            self.name = &quot;&quot;
+            self.money = 0
+
+
+    def main():
+        bob = Person()
+        bob.name = &quot;Bob&quot;
+        bob.money = 100
+
+        nancy = Person()
+        nancy.name = &quot;Nancy&quot;
+
+        print(bob.name, &quot;has&quot;, bob.money, &quot;dollars.&quot;)
+        print(nancy.name, &quot;has&quot;, nancy.money, &quot;dollars.&quot;)
+
+
+    main()
+
+</pre>
+</div>
+<p>The code above creates two instances of the <tt class="docutils literal">Person()</tt> class, and
+using <a class="reference external" href="https://www.pythontutor.com">www.pythontutor.com</a>
+we can <a class="reference external" href="http://www.pythontutor.com/visualize.html#code=class+Person%3A%0D%0A++++def+__init__(self)%3A%0D%0A++++++++self.name+%3D+%22%22%0D%0A++++++++self.money+%3D+0%0D%0A+%0D%0Abob+%3D+Person()%0D%0Abob.name+%3D+%22Bob%22%0D%0Abob.money+%3D+100%0D%0A+%0D%0Anancy+%3D+Person()%0D%0Anancy.name+%3D+%22Nancy%22%0D%0A+%0D%0Aprint(bob.name,+%22has%22,+bob.money,+%22dollars.%22)%0D%0Aprint(nancy.name,+%22has%22,+nancy.money,+%22dollars.%22)&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;curInstr=1">visualize the two classes</a> in the figure.</p>
+<div class="figure">
+<img alt="two_persons.png" src="two_persons.png" />
+<p class="caption">Two Persons</p>
+</div>
+<p>The code above has nothing new. But the code below does:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 179)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    class Person():
+        def __init__(self):
+            self.name = &quot;&quot;
+            self.money = 0
+
+
+    def main():
+        bob = Person()
+        bob.name = &quot;Bob&quot;
+        bob.money = 100
+
+        nancy = bob
+        nancy.name = &quot;Nancy&quot;
+
+        print(bob.name, &quot;has&quot;, bob.money, &quot;dollars.&quot;)
+        print(nancy.name, &quot;has&quot;, nancy.money, &quot;dollars.&quot;)
+
+
+    main()
+
+</pre>
+</div>
+<p>See the difference on line 10?</p>
+<p>A common misconception when working with objects is to assume that the
+variable <tt class="docutils literal">bob</tt> <em>is</em> the <tt class="docutils literal">Person</tt> object. This is not the case. The
+variable <tt class="docutils literal">bob</tt> is a <em>reference</em> to the <tt class="docutils literal">Person</tt> object. That is, it
+stores the memory address of where the object is, and not the object itself.</p>
+<p>If <tt class="docutils literal">bob</tt> actually was the object, then line 9 could create a <em>copy</em> of the
+object and there would be two objects in existence. The output of the program
+would show both Bob and Nancy having 100 dollars. But when run, the program
+outputs the following instead:</p>
+<pre class="literal-block">
+Nancy has 100 dollars.
+Nancy has 100 dollars.
+</pre>
+<p>What <tt class="docutils literal">bob</tt> stores is a <em>reference</em> to the object. Besides reference, one may
+call this <em>address</em>, <em>pointer</em>, or <em>handle</em>. A reference is an address in
+computer memory for where the object is stored. This address is a hexadecimal
+number which, if printed out, might look something like <tt class="docutils literal">0x1e504</tt>. When line 9
+is run, the address is copied rather than the entire object the address points
+to. See the figure below.</p>
+<div class="figure">
+<img alt="example1.png" src="example1.png" style="width: 40%;" />
+<p class="caption">Class References</p>
+</div>
+<p>We can also run this in www.pythontutor.com to see how both of the variables <a class="reference external" href="http://www.pythontutor.com/visualize.html#code=class+Person%3A%0A++++name+%3D+%22%22%0A++++money+%3D+0%0A%0Abob+%3D+Person()%0Abob.name+%3D+%22Bob%22%0Abob.money+%3D+100%0A%0Anancy+%3D+bob%0Anancy.name+%3D+%22Nancy%22%0A%0Aprint(bob.name,+%22has%22,+bob.money,+%22dollars.%22)%0Aprint(nancy.name,+%22has%22,+nancy.money,+%22dollars.%22)&amp;mode=display&amp;cumulative=false&amp;heapPrimitives=false&amp;drawParentPointers=false&amp;textReferences=false&amp;showOnlyOutputs=false&amp;py=3&amp;curInstr=8">are pointing to the same object</a>.</p>
+<div class="figure">
+<img alt="one_person.png" src="one_person.png" style="width: 60%;" />
+<p class="caption">One Person, Two Pointers</p>
+</div>
+</div>
+</div>
+<div class="section" id="functions-and-references">
+<h1>Functions and References</h1>
+<p>Look at the code example below. Line 1 creates a function that takes in a
+number as a parameter. The variable <tt class="docutils literal">money</tt> is a variable that contains a
+copy of the data that was passed in. Adding 100 to that number does not change
+the number that was stored in <tt class="docutils literal">bob.money</tt> on line 11. Thus, the print
+statement on line 14 prints out 100, and not 200.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 248)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    def give_money1(money):
+        money += 100
+
+
+    class Person():
+        def __init__(self):
+            self.name = &quot;&quot;
+            self.money = 0
+
+
+    def main():
+        bob = Person()
+        bob.name = &quot;Bob&quot;
+        bob.money = 100
+
+        give_money1(bob.money)
+        print(bob.money)
+
+    main()
+
+</pre>
+</div>
+<p><a class="reference external" href="http://www.pythontutor.com/visualize.html#code=def+give_money1(money)%3A%0A++++money+%2B%3D+100%0A+%0Aclass+Person%3A%0A++++name+%3D+%22%22%0A++++money+%3D+0%0A+%0Abob+%3D+Person()%0Abob.name+%3D+%22Bob%22%0Abob.money+%3D+100%0A+%0Agive_money1(bob.money)%0Aprint(bob.money)&amp;mode=display&amp;cumulative=false&amp;heapPrimitives=false&amp;drawParentPointers=false&amp;textReferences=false&amp;showOnlyOutputs=false&amp;py=3&amp;curInstr=7">Running on PythonTutor</a> we see that there are two instances of the
+<tt class="docutils literal">money</tt> variable. One is a copy and local to the give_money1 function.</p>
+<div class="figure">
+<img alt="function_references_1.png" src="function_references_1.png" />
+<p class="caption">Function References</p>
+</div>
+<p>Look at the additional code below. This code does cause <tt class="docutils literal">bob.money</tt> to increase
+and the <tt class="docutils literal">print</tt> statement to print 200.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 284)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    def give_money2(person):
+        person.money += 100
+
+    give_money2(bob)
+    print(bob.money)
+
+</pre>
+</div>
+<p>Why is this? Because <tt class="docutils literal">person</tt> contains a copy of the memory address of the
+object, not the actual object itself. One can think of it as a bank account
+number. The function has a copy of the bank account number, not a copy of the
+whole bank account. So using the copy of the bank account number to deposit
+100 dollars causes Bob's bank account balance to go up.</p>
+<div class="figure">
+<img alt="function_references_2.png" src="function_references_2.png" style="width: 60%;" />
+<p class="caption">Function References</p>
+</div>
+<p>Arrays work the same way. A function that takes in an array (list) as a
+parameter and modifies values in that array will be modifying the same array
+that the calling code created. The address of the array is copied, not the
+entire array.</p>
+</div>
+<div class="section" id="review-questions">
+<h1>Review Questions</h1>
+<ol class="arabic simple">
+<li>Create a class called <tt class="docutils literal">Cat</tt>. Give it attributes for name, color, and
+weight. Give it a method called <tt class="docutils literal">meow</tt>.</li>
+<li>Create an instance of the cat class, set the attributes, and call the
+<tt class="docutils literal">meow</tt> method.</li>
+<li>Create a class called <tt class="docutils literal">Monster</tt>. Give it an attribute for name and an
+integer attribute for health. Create a method called <tt class="docutils literal">decrease_health</tt> that
+takes in a parameter amount and decreases the health by that much.
+Inside that method, print that the animal died if health goes below zero.</li>
+</ol>
+</div>
+<div class="section" id="avoid-this-mistake">
+<h1>Avoid This Mistake</h1>
+<p>Put everything for a method into just one definition.
+Don't define it twice. For example:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 329)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    # Wrong:
+    class Dog():
+        def __init__(self):
+            self.age = 0
+            self.name = &quot;&quot;
+            self.weight = 0
+
+        def __init__(self):
+            print(&quot;New dog!&quot;)
+
+</pre>
+</div>
+<p>The computer will just ignore the first <tt class="docutils literal">__init__</tt> and go with the last
+definition. Instead do this:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 345)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    # Correct:
+    class Dog():
+        def __init__(self):
+            self.age = 0
+            self.name = &quot;&quot;
+            self.weight = 0
+            print(&quot;New dog!&quot;)
+
+</pre>
+</div>
+<p>A constructor can be used for initializing and setting data for the object.
+The example Dog class above still allows the name attribute to be left blank
+after the creation of the dog object. How do we keep this from happening?
+Many objects need to have values right when they are created. The constructor
+function can be used to make this happen. See the code below:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 362)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+    :caption: Constructor that takes in data to initialize the class
+
+    class Dog():
+
+        def __init__(self, new_name):
+            &quot;&quot;&quot; Constructor. &quot;&quot;&quot;
+            self.name = new_name
+
+
+    def main():
+        # This creates the dog
+        my_dog = Dog(&quot;Spot&quot;)
+
+        # Print the name to verify it was set
+        print(my_dog.name)
+
+        # This line will give an error because
+        # a name is not passed in.
+        her_dog = Dog()
+
+    main()
+
+</pre>
+</div>
+<p>On line 3 the constructor function now has an additional parameter named
+<tt class="docutils literal">new_name</tt>. The value of this parameter is used to set the name attribute
+in the <tt class="docutils literal">Dog</tt> class on line 8. It is no longer possible to create a
+<tt class="docutils literal">Dog</tt> class without a name. The code on line 15 tries this. It will cause a
+Python error and it will not run. A common mistake is to name the parameter of
+the <tt class="docutils literal">__init__</tt> function the same as the attribute and assume that the values
+will automatically synchronize. This does not happen.</p>
+</div>
+<div class="section" id="id1">
+<h1>Review Questions</h1>
+<ul class="simple">
+<li>Should class names begin with an upper or lower case letter?</li>
+<li>Should method names begin with an upper or lower case letter?</li>
+<li>Should attribute names begin with an upper or lower case letter?</li>
+<li>Which should be listed first in a class, attributes or methods?</li>
+<li>What are other names for a reference?</li>
+<li>What is another name for instance variable?</li>
+<li>What is the name for an instance of a class?</li>
+<li>Create a class called Star that will print out &quot;A star is born!&quot; every time
+it is created.</li>
+<li>Create a class called Monster with attributes for health and a name.
+Add a constructor to the class that sets the health and name of the object
+with data passed in as parameters.</li>
+</ul>
+<div class="section" id="inheritance">
+<h2>Inheritance</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6IKV4kk47j0" frameborder="0" allowfullscreen></iframe><p>Another powerful feature of using classes and objects is the ability to make
+use of <em>inheritance</em>. It is possible to create a class and inherit all of the
+attributes and methods of a <em>parent class</em>.</p>
+<p>For example, a program may create a class called <tt class="docutils literal">Boat</tt> which has all the
+attributes needed to represent a boat in a game:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 425)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+    :caption: Class definition for a boat
+
+    class Boat():
+        def __init__(self):
+            self.tonnage = 0
+            self.name = &quot;&quot;
+            self.is_docked = True
+
+        def dock(self):
+            if self.is_docked:
+                print(&quot;You are already docked.&quot;)
+            else:
+                self.is_docked = True
+                print(&quot;Docking&quot;)
+
+        def undock(self):
+            if not self.is_docked:
+                print(&quot;You aren't docked.&quot;)
+            else:
+                self.is_docked = False
+                print(&quot;Undocking&quot;)
+
+</pre>
+</div>
+<p>To test out our code:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 451)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+    :caption: Floating our boat
+
+    b = Boat()
+
+    b.dock()
+    b.undock()
+    b.undock()
+    b.dock()
+    b.dock()
+
+</pre>
+</div>
+<p>The output:</p>
+<pre class="code text literal-block">
+You are already docked.
+Undocking
+You aren't docked.
+Docking
+You are already docked.
+</pre>
+<p>(If you watch the video for this section of the class, you'll note that the
+&quot;Boat&quot; class in the video doesn't actually run. The code above has been
+corrected but I haven't fixed the video. Use this as a reminder, no matter
+how simple the code and how experienced the developer, test your code before
+you deliver it!)</p>
+<p>Our program also needs a submarine. Our submarine can do everything a boat can,
+plus we need a command for <tt class="docutils literal">submerge</tt>. Without inheritance we have two options.</p>
+<ul class="simple">
+<li>One, add the <tt class="docutils literal">submerge()</tt> command to our boat. This isn't a great idea because
+we don't want to give the impression that our boats normally submerge.</li>
+<li>Two, we could create a copy of the <tt class="docutils literal">Boat</tt> class and call it <tt class="docutils literal">Submarine</tt>.
+In this class we'd add the <tt class="docutils literal">submerge()</tt> command. This is easy at first, but
+things become harder if we change the <tt class="docutils literal">Boat</tt> class. A programmer would need to
+remember that we'd need to change not only the <tt class="docutils literal">Boat</tt> class, but also make
+the same changes to the <tt class="docutils literal">Submarine</tt> class. Keeping this code synchronized is
+time consuming and error-prone.</li>
+</ul>
+<p>Luckily, there is a better way. Our program can create <em>child classes</em> that
+will inherit all the attributes and methods of the <em>parent class</em>. The child
+classes may then add fields and methods that correspond to their needs.
+For example:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 496)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    class Submarine(Boat):
+        def submerge(self):
+            print(&quot;Submerge!&quot;)
+
+</pre>
+</div>
+<p>Line 1 is the important part. Just by putting <tt class="docutils literal">Boat</tt> in between the
+parentheses during the class declaration, we have automatically picked up
+every attribute and method that is in the Boat class. If we update <tt class="docutils literal">Boat</tt>,
+then the child class <tt class="docutils literal">Submarine</tt> will automatically get these updates.
+Inheritance is that easy!</p>
+<p>The next code example is diagrammed out in the figure below.</p>
+<div class="figure">
+<img alt="person_1.png" src="person_1.png" style="width: 400px;" />
+<p class="caption">Class Diagram</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 516)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+    :caption: Person, Employee, Customer Classes Examples
+    :emphasize-lines: 5, 13
+
+    class Person():
+        def __init__(self):
+            self.name = &quot;&quot;
+
+    class Employee(Person):
+        def __init__(self):
+            # Call the parent/super class constructor first
+            super().__init__()
+
+            # Now set up our variables
+            self.job_title = &quot;&quot;
+
+    class Customer(Person):
+        def __init__(self):
+            super().__init__()
+            self.email = &quot;&quot;
+
+    def main():
+        john_smith = Person()
+        john_smith.name = &quot;John Smith&quot;
+
+        jane_employee = Employee()
+        jane_employee.name = &quot;Jane Employee&quot;
+        jane_employee.job_title = &quot;Web Developer&quot;
+
+        bob_customer = Customer()
+        bob_customer.name = &quot;Bob Customer&quot;
+        bob_customer.email = &quot;send_me&#64;spam.com&quot;
+
+    main()
+
+</pre>
+</div>
+<p>By placing <tt class="docutils literal">Person</tt> between the parentheses on lines 5 and 13, the
+programmer has told the computer that Person is a parent class to both
+<tt class="docutils literal">Employee</tt> and <tt class="docutils literal">Customer</tt>. This allows the program to set the name
+attribute on lines 19 and 22.</p>
+<p>Methods are also inherited. Any method the parent has, the child class will
+have too. But what if we have a method in both the child and parent class?</p>
+<p>We have two options. We can run them both with <tt class="docutils literal">super()</tt> keyword. Using
+<tt class="docutils literal">super()</tt> followed by a dot operator, and then finally a method name
+allows you to call the parent's version of the method.</p>
+<p>The code above shows the first option using <tt class="docutils literal">super</tt> where we run not only the
+child constructor but also the parent constructor.</p>
+<p>If you are writing a method for a child and want to call a parent method,
+normally it will be the first statement in the child method. Notice how it is
+in the example above.</p>
+<p>All constructors should call the parent constructor because then you'd have a
+child without a parent and that is just sad. In fact, some languages force this
+rule, but Python doesn't.</p>
+<p>The second option? Methods may be overridden by a child class to provide
+different functionality. The example below shows both options. The
+<tt class="docutils literal">Employee.report</tt> overrides the <tt class="docutils literal">Person.report</tt> because it never calls
+and runs the parent <tt class="docutils literal">report</tt> method. The <tt class="docutils literal">Customer</tt> report does call the
+parent and the report method in <tt class="docutils literal">Customer</tt> adds to the <tt class="docutils literal">Person</tt>
+functionality.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 582)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+    :caption: Overriding constructors
+
+    class Person():
+        def __init__(self):
+            self.name = &quot;&quot;
+
+        def report(self):
+            # Basic report
+            print(&quot;Report for&quot;, self.name)
+
+    class Employee(Person):
+        def __init__(self):
+            # Call the parent/super class constructor first
+            super().__init__()
+
+            # Now set up our variables
+            self.job_title = &quot;&quot;
+
+        def report(self):
+            # Here we override report and just do this:
+            print(&quot;Employee report for&quot;, self.name)
+
+    class Customer(Person):
+        def __init__(self):
+            super().__init__()
+            self.email = &quot;&quot;
+
+        def report(self):
+            # Run the parent report:
+            super().report()
+            # Now add our own stuff to the end so we do both
+            print(&quot;Customer e-mail:&quot;, self.email)
+
+    def main():
+        john_smith = Person()
+        john_smith.name = &quot;John Smith&quot;
+
+        jane_employee = Employee()
+        jane_employee.name = &quot;Jane Employee&quot;
+        jane_employee.job_title = &quot;Web Developer&quot;
+
+        bob_customer = Customer()
+        bob_customer.name = &quot;Bob Customer&quot;
+        bob_customer.email = &quot;send_me&#64;spam.com&quot;
+
+        john_smith.report()
+        jane_employee.report()
+        bob_customer.report()
+
+    main()
+
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="is-a-and-has-a-relationships">
+<h1>Is-A and Has-A Relationships</h1>
+<p>Classes have two main types of relationships. They are &quot;is a&quot; and &quot;has a&quot;
+relationships.</p>
+<p>A parent class should always be a more general, abstract version of the
+child class. This type of child to parent relationship is called an
+<em>is a</em> relationship. For example, a parent class <tt class="docutils literal">Animal</tt> could have a child
+class <tt class="docutils literal">Dog</tt>. The dog <em>is an</em> animal.
+The <tt class="docutils literal">Dog</tt> class could have a child class Poodle. The poodle <em>is a</em> dog, and
+<em>is an</em> animal.</p>
+<p>It does not work the other way! A dolphin <em>is a</em> mammal, but a
+mammal is not always a dolphin. So the class <tt class="docutils literal">Dolphin</tt> should never
+be a parent to a class <tt class="docutils literal">Mammal</tt>.</p>
+<p>Unrelated items that do not pass the <em>is a</em> test should not form parent/child
+relationships. For example, a class <tt class="docutils literal">Table</tt> should not be a
+parent to a class <tt class="docutils literal">Chair</tt> because a chair is not a table.</p>
+<p>The other type of relationship is the <em>has a</em> relationship. These relationships
+are implemented in code by class attributes. A dog has a name, and so
+the <tt class="docutils literal">Dog</tt> class has an attribute for name. Likewise a person could have
+a dog, and that would be implemented by having the Person class have
+an attribute for <tt class="docutils literal">Dog</tt>. The <tt class="docutils literal">Person</tt> class would not derive from <tt class="docutils literal">Dog</tt>
+because that would be some kind of insult.</p>
+<p>Looking at the prior code example we can see:</p>
+<ul class="simple">
+<li>Employee is a person.</li>
+<li>Customer is a person.</li>
+<li>Person has a name.</li>
+<li>Employee has a job title.</li>
+<li>Customer has an e-mail.</li>
+</ul>
+<div class="section" id="static-variables-vs-instance-variables">
+<h2>Static Variables vs. Instance Variables</h2>
+<p>The difference between static and instance variables is confusing. Thankfully
+it isn't necessary to completely understand the difference right now. But if
+you stick with programming, it will be. Therefore we will briefly introduce
+it here.</p>
+<p>There are also some oddities with Python that kept me confused the first
+several years I've made this book available. So you might see older videos
+and examples where I get it wrong.</p>
+<p>An <em>instance variable</em> is the type of class variable we've used so far. Each
+instance of the class gets its own value. For example, in a room full of people
+each person will have their own age. Some of the ages may be the same, but we
+still need to track each age individually.</p>
+<p>With instance variables, we can't just say &quot;age&quot; with a room full of people.
+We need to specify <em>whose</em> age we are talking about. Also, if there are no
+people in the room, then referring to an age when there are no people to
+have an age makes no sense.</p>
+<p>With <em>static variables</em> the value is the same for every single instance of the
+class. Even if there are no instances, there still is a value for a static
+variable. For example, we might have a <tt class="docutils literal">count</tt> static variable for the number
+of <tt class="docutils literal">Human</tt> classes in existence. No humans? The value is zero, but the
+count variable still exists.</p>
+<p>In the example below, <tt class="docutils literal">ClassA</tt> creates an instance variable. <tt class="docutils literal">ClassB</tt>
+creates a static variable.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 702)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    # Example of an instance variable
+    class ClassA():
+        def __init__(self):
+            self.y = 3
+
+    # Example of a static variable
+    class ClassB():
+        x = 7
+
+    def main():
+        # Create class instances
+        a = ClassA()
+        b = ClassB()
+
+        # Two ways to print the static variable.
+        # The second way is the proper way to do it.
+        print(b.x)
+        print(ClassB.x)
+
+        # One way to print an instance variable.
+        # The second generates an error, because we don't know what instance
+        # to reference.
+        print(a.y)
+        print(ClassA.y)
+
+    main()
+
+</pre>
+</div>
+<p>In the example above, lines 16 and 17 print out the static variable. Line 17
+is the &quot;proper&quot; way to do so. Unlike before, we can refer to the class name
+when using static variables, rather than a variable that points to a particular
+instance. Because we are working with the class name, by looking at line 17
+we instantly can tell we are working with a static variable. Line 16 could be
+either an instance or static variable. That confusion makes line 17 the better
+choice.</p>
+<p>Line 22 prints out the instance variable, just like we've done in prior
+examples. Line 23 will generate an error because each instance of y is
+different (it is an instance variable after all) and we aren't telling the
+computer what instance of <tt class="docutils literal">ClassA</tt> we are talking about.</p>
+</div>
+</div>
+<div class="section" id="instance-variables-hiding-static-variables">
+<h1>Instance Variables Hiding Static Variables</h1>
+<p>This is one &quot;feature&quot; of Python I dislike. It is possible to have a static
+variable, and an instance variable <em>with the same name</em>.
+Look at the example below:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/craven/Desktop/WebServer/arcade_book2/source/chapters/14b_class_methods/class_methods.rst</tt>, line 752)</p>
+<p>Error in &quot;code-block&quot; directive:
+unknown option: &quot;linenos&quot;.</p>
+<pre class="literal-block">
+.. code-block:: python
+    :linenos:
+
+    # Class with a static variable
+    class ClassB():
+        x = 7
+
+    def main():
+        # Create a class instance
+        b = ClassB()
+
+        # This prints 7
+        print(b.x)
+
+        # This also prints 7
+        print(ClassB.x)
+
+        # Set x to a new value using the class name
+        ClassB.x = 8
+
+        # This also prints 8
+        print(b.x)
+
+        # This prints 8
+        print(ClassB.x)
+
+        # Set x to a new value using the instance.
+        # Wait! Actually, it doesn't set x to a new value!
+        # It creates a brand new variable, x. This x
+        # is an instance variable. The static variable is
+        # also called x. But they are two different
+        # variables. This is super-confusing and is bad
+        # practice.
+        b.x = 9
+
+        # This prints 9
+        print(b.x)
+
+        # This prints 8. NOT 9!!!
+        print(ClassB.x)
+
+    main()
+
+</pre>
+</div>
+<p>Allowing instance variables to hide static variable caused confusion for me for
+many years!</p>
+</div>
+</div>
+</body>
+</html>

@@ -353,6 +353,8 @@ a ``4``.
    It can be confusing to learn when to use ``x + 1`` and when to use ``x = x + 1``. Remember,
    the former does *not* change the value of ``x``.
 
+.. _increment_decrement_operators:
+
 Increment/Decrement Operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

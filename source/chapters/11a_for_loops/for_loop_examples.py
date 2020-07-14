@@ -1,7 +1,6 @@
-# Sample Python/Pygame Programs
-# Simpson College Computer Science
-# http://programarcadegames.com/
-# http://simpson.edu/computer-science/
+"""
+Sample For Loops
+"""
 
 # Print 'Hi' 10 times
 for i in range(10):

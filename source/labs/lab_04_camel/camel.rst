@@ -104,7 +104,7 @@ Here is a sample run of the game:
 	The natives are getting close!
 	You made it across the desert! You won!
 
-This game assumes you know the material up through :ref:`guessing-games`.
+This game assumes you know the material up through :ref:`random-numbers`.
 
 Programming Guide
 -----------------

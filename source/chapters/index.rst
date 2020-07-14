@@ -15,7 +15,9 @@ Chapters
    08_functions/functions
    09_drawing_with_functions/drawing_with_functions
    10_if_statements/if_statements
-   11_loops_and_random_numbers/loops_and_random_numbers
+   11a_for_loops/for_loops
+   11b_while_loops/while_loops
+   11c_random_numbers/random_numbers
    12_advanced_looping/advanced_looping
    13_lists/lists
    14_classes/classes
