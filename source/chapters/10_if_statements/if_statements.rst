@@ -11,7 +11,6 @@ Our next step is to learn how to write code that will only run based on a certai
 For example, we may want to draw "Game Over" text on the screen--but only
 if the player has run out of lives.
 
-
 To do this we need to learn how to use an ``if`` statement.
 The ``if`` statement is also known as a
 *conditional statement*. (You can use the term "conditional statement" when you

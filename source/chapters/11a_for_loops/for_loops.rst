@@ -14,8 +14,8 @@ Rather than have our programs run straight though, we
 can run a section of code however many times we like.
 
 This chapter covers ``for`` loops which allow us to  loop a certain
-number of times. The next chapter covers ``while`` loops which will loop
-until a certain condition (such as game over) occurs.
+*number* of times. The next chapter covers ``while`` loops which will loop
+until a certain *condition* (such as game over) occurs.
 
 
 Introduction to Looping
@@ -24,7 +24,7 @@ Introduction to Looping
 Most games loop. Most programs of *any* kind loop.
 Take for example a simple number guessing game.
 The computer thinks of a number from 1 to 100, and
-the player person tries to guess it.
+the player tries to guess it.
 
 This is an easy game to program on the computer using
 loops. Start with code that will take in a guess from the
@@ -107,10 +107,10 @@ loops. If you want to repeat a certain number of times, use a ``for`` loop. If
 you want to repeat until something happens (like the user hits the quit button)
 then use a ``while`` loop.
 
-For example, a ``for`` loop can be used to print all student records since the
-computer knows how many students there are. A ``while`` loop would need to be used to
-check for when a user hits the mouse button since the computer has no idea how
-long it will have to wait.
+For example, a ``for`` loop can be used to print all student records, since the
+computer knows how many students there are. We could wait for the user to click
+the mouse button with a ``while`` loop, because we don't know how many times
+we'll have to loop before that happens.
 
 For Loops
 ---------
@@ -121,11 +121,9 @@ For Loops
 
 This ``for`` loop example runs the ``print`` statement five times. It could
 just as easily run 100 or 1,000,000 times by changing the 5 to the desired
-number of times to loop. Note the similarities of how the ``for`` loop is written
+number. Note the similarities of how the ``for`` loop is written
 to the ``if`` statement. Both end in a colon, and both use indentation to specify
 which lines are affected by the statement.
-
-
 
 .. code-block:: python
     :caption: Loop to print five times
@@ -135,7 +133,7 @@ which lines are affected by the statement.
         print("I will not chew gum in class.")
 
 Go ahead and enter it into the computer. You should get output like this.
-Try adjusting the number of times it loops.
+Try adjusting the number of times that it loops.
 
 .. code-block:: text
 
@@ -177,7 +175,7 @@ Go ahead and enter the code and verify its output.
     Please,
     Can I go to the mall?
 
-This next code example takes the prior example and indents line 3. This change
+This next code example takes the prior example and *indents* line 3. This change
 will cause the program to print *both* "Please," and "Can I go to the mall?" five
 times. Since the statement has been indented "Can I go to the mall?" is now
 part of the ``for`` loop and will repeat five times just like the word "Please,".
@@ -206,7 +204,8 @@ Here's the output of that program:
 
 You aren't stuck using a specific number with the ``range`` function. This
 next example asks the *user* how many times to print using the ``input`` function
-we talked about last chapter in :ref:`input-function`.
+we talked about last chapter in :ref:`input-function`. Go ahead and try the
+program out.
 
 .. code-block:: python
     :caption: Loop according to the user input
@@ -219,8 +218,8 @@ we talked about last chapter in :ref:`input-function`.
     for i in range(repetitions):
         print("I will not chew gum in class.")
 
-You could also write a function, and take in the value by a parameter
-as shown in this example:
+You could also use what we learned about functions,
+and take in the value by a parameter as shown in this example:
 
 .. code-block:: python
     :caption: Loop according to a function parameter
@@ -243,7 +242,7 @@ Using the Counter Variable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can use the counter variable in the ``for`` loop to track
-your loop. Try running this code, which prints ``i``.
+your loop. Try running this code, which prints the value stored in ``i``.
 
 .. code-block:: python
     :caption: Print the numbers 0 to 9
@@ -373,7 +372,7 @@ Both examples will output the numbers 2 to 10::
 
 It is also possible to count *backwards*--for example 10 down to zero.
 This is done by giving the ``range``
-function a negative step. In the example below we start at 10 and go down to, but not
+function a *negative* step. In the example below we start at 10 and go down to, but not
 including, zero. (To include zero, the second number would need to be a -1.)
 We do this by an increment of -1.
 
@@ -405,7 +404,7 @@ Output::
 
 If the numbers that a program needs to iterate through don't form an easy
 pattern, it is possible to pull numbers out of a list as shown in the next example.
-A full discussion of lists will be covered in :ref:`intro-to-lists`.
+A full discussion of lists will be covered in the :ref:`intro-to-lists` chapter.
 
 .. code-block:: python
     :caption: Print numbers out of a list
@@ -432,10 +431,10 @@ Nesting Loops
     :width: 25%
     :class: right-image
 
-By putting nesting one loop *inside* another loop, we can expand our processing
+By nesting one loop *inside* another loop, we can expand our processing
 beyond one dimension.
 
-Try to predict what the following code, which is not nested, below will print.
+Try to predict what the following code, which is not nested, will print.
 Then enter the code and see if you are correct.
 
 .. code-block:: python
@@ -466,14 +465,18 @@ guess how the output will change.
 
     print("Done")
 
-Did you guess right? We still get three a's, but now we get nine b's. The
-inside ``for`` loop is run three times.
+Did you guess right? We still get three a's, but now we get *nine* b's.
+For each a, we get three b's.
+The outside ``for`` loop causes the inside code to be run three times.
+The inside ``for`` loop causes its code to be run three times, so three
+times three is a total of nine times to run the innermost code.
 
 Complicated? Not really.
 You've already *lived* a loop like this. This is how a clock works.
-The 1-12 hour is the outside loop, and the 0-59 minute is the inside loop.
-Later on in :ref:`clock-example` we'll show how to format the output and
-make it look good.
+The 1-12 hour is the *outside* loop, and the 0-59 minute is the *inside* loop.
+Try this next example and see now it prints all the times between 1:00 and 12:59.
+(Later on in :ref:`clock-example` we'll show how to format the output and
+make it look good.)
 
 .. code-block:: python
     :linenos:
@@ -510,7 +513,8 @@ numbers and the code totals up their values.
 Note that line 1 creates the variable ``total``, and sets it to an initial amount
 of zero. It is easy to forget the need to create and initialize the variable to
 zero. Without it the computer will complain when it hits line 4. It doesn't
-know how to add ``new_number`` to total because ``total`` hasn't been given a value yet.
+know how to add ``new_number`` to ``total`` because ``total`` hasn't been given
+a value yet.
 
 A common mistake is to use ``i`` to total instead of ``new_number``. Remember,
 we are keeping a running total of the values entered by the user, not a running
@@ -524,13 +528,14 @@ some mathematical operations. For example check out this summation equation:
     s=\sum\limits_{n=1}^{100}n
 
 If you aren't familiar with this type of formula, it is just a fancy way of
-stating:
+stating this addition problem:
 
 .. math::
 
     s=1+2+3+4+5 \ldots 98+99+100
 
-The code below adds all the numbers from 1 to 100. It is another demonstration of
+The code below finds the answer to this equation by
+adding all the numbers from 1 to 100. It is another demonstration of
 a running total is kept inside of a loop.
 
 .. code-block:: python
@@ -543,7 +548,9 @@ a running total is kept inside of a loop.
         total = total + i
     print(total)
 
-Here's a different variation. This takes five numbers from the user and counts
+Here's yet another example of keeping a running total.
+In this case we add in an ``if`` statement.
+We take five numbers from the user and count
 the number of times the user enters a zero:
 
 .. code-block:: python
