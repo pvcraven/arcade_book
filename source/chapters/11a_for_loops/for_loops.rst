@@ -22,9 +22,9 @@ Introduction to Looping
 -----------------------
 
 Most games loop. Most programs of *any* kind loop.
-For example, think of the simple number guessing game.
-One person thinks of a number from 1 to 100, and
-a different person tries to guess it.
+Take for example a simple number guessing game.
+The computer thinks of a number from 1 to 100, and
+the player person tries to guess it.
 
 This is an easy game to program on the computer using
 loops. Start with code that will take in a guess from the
@@ -78,30 +78,29 @@ per second the computer displaying.
 
     FPS in video games
 
-The loop in these games works like the flowchart in the figure below.
+The loop in these games works like the flowchart this figure:
 
 .. figure:: game_loop.svg
 
     Game loop
 
-Despite the
-complexities of modern games, the inside of these loops all have three common steps:
+The inside of these loops have three common steps:
 
 1. Get user input.
 2. Perform calculations.
 3. Output the result.
 
-In a video game, we try to repeat this 60 times per second.
+Then we loop this 60 times per second until the user asks to close the program.
 
 There can even be loops *inside* of loops.
-Take a look at the "Draw Everything" flowchart below.
+Take a look at the "Draw Everything Loop" flowchart below.
 This set of code loops through and draws each object in the game.
 You can put this loop inside the larger loop that
-draws each frame of the game (outputs the result).
+draws each frame of the game.
 
 .. figure:: draw_everything.svg
 
-    Draw everything loop
+    Draw Everything Loop
 
 There are two major types of loops in Python, ``for`` loops and ``while``
 loops. If you want to repeat a certain number of times, use a ``for`` loop. If
@@ -120,7 +119,7 @@ For Loops
     :width: 20%
     :class: right-image
 
-The ``for`` loop example below runs the ``print`` statement five times. It could
+This ``for`` loop example runs the ``print`` statement five times. It could
 just as easily run 100 or 1,000,000 times by changing the 5 to the desired
 number of times to loop. Note the similarities of how the ``for`` loop is written
 to the ``if`` statement. Both end in a colon, and both use indentation to specify
@@ -135,7 +134,8 @@ which lines are affected by the statement.
     for i in range(5):
         print("I will not chew gum in class.")
 
-Output:
+Go ahead and enter it into the computer. You should get output like this.
+Try adjusting the number of times it loops.
 
 .. code-block:: text
 
@@ -146,9 +146,11 @@ Output:
     I will not chew gum in class.
 
 The ``i`` on line 1 is a variable that keeps track of how many times the program has
-looped. It is a new variable and can be named any legal variable name.
-Programmers often use ``i`` as for the variable name, because the ``i`` is short for
-*increment*. This variable helps track when the loop should end.
+looped, sometimes called the **counter** variable.
+It is a regular variable, and can be named any legal variable name.
+Programmers sometimes use ``i`` as for the variable name, because the ``i`` is short for
+*increment* and that's often what the variable does.
+This variable helps track when the loop should end.
 
 The ``range`` function controls how many times the code in the loop is run.
 In this case, five times.
@@ -164,7 +166,7 @@ the ``for`` loop and will not print until the ``for`` loop completes.
         print("Please,")
     print("Can I go to the mall?")
 
-Output:
+Go ahead and enter the code and verify its output.
 
 .. code-block:: text
 
@@ -176,7 +178,7 @@ Output:
     Can I go to the mall?
 
 This next code example takes the prior example and indents line 3. This change
-will cause the program to print "Please," and "Can I go to the mall?" five
+will cause the program to print *both* "Please," and "Can I go to the mall?" five
 times. Since the statement has been indented "Can I go to the mall?" is now
 part of the ``for`` loop and will repeat five times just like the word "Please,".
 
@@ -187,7 +189,7 @@ part of the ``for`` loop and will repeat five times just like the word "Please,"
         print("Please,")
         print("Can I go to the mall?")
 
-Output:
+Here's the output of that program:
 
 .. code-block:: text
 
@@ -203,7 +205,7 @@ Output:
     Can I go to the mall?
 
 You aren't stuck using a specific number with the ``range`` function. This
-next example asks the user how many times to print using the ``input`` function
+next example asks the *user* how many times to print using the ``input`` function
 we talked about last chapter in :ref:`input-function`.
 
 .. code-block:: python
@@ -217,7 +219,8 @@ we talked about last chapter in :ref:`input-function`.
     for i in range(repetitions):
         print("I will not chew gum in class.")
 
-Or you could write a function, and take in the value by a parameter:
+You could also write a function, and take in the value by a parameter
+as shown in this example:
 
 .. code-block:: python
     :caption: Loop according to a function parameter
@@ -236,7 +239,10 @@ Or you could write a function, and take in the value by a parameter:
 
     main()
 
-You can use the increment variable in the ``for`` loop to track
+Using the Counter Variable
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use the counter variable in the ``for`` loop to track
 your loop. Try running this code, which prints ``i``.
 
 .. code-block:: python
@@ -511,7 +517,7 @@ we are keeping a running total of the values entered by the user, not a running
 total of the current loop count.
 
 Speaking of the current loop count, we can use the loop count value to solve
-some mathematical operations. For example:
+some mathematical operations. For example check out this summation equation:
 
 .. math::
 
@@ -550,42 +556,10 @@ the number of times the user enters a zero:
             total += 1
     print("You entered a total of", total, "zeros")
 
-A programmer that understands the nested for loops and running totals should be
-able to predict the output of the code below.
-
-.. code-block:: python
-    :linenos:
-
-    # What is the value of a?
-    a = 0
-    for i in range(10):
-        a = a + 1
-    print(a)
-
-    # What is the value of a?
-    a = 0
-    for i in range(10):
-        a = a + 1
-    for j in range(10):
-        a = a + 1
-    print(a)
-
-    # What is the value of a?
-    a = 0
-    for i in range(10):
-        a = a + 1
-        for j in range(10):
-            a = a + 1
-    print(a)
-
-Don't go over this section too fast. Give it a try and predict the output of
-the code above. Then copy it into a Python program and run it to see if you
-are right. If you aren't, figure out why.
-
 Review
 ------
 
-In this chapter we talked about looping and how to use``for`` loops
+In this chapter we talked about looping and how to use ``for`` loops
 to count up or down by any number.
 We learned how loops can be **nested**. We learned how we can use a loop
 to keep a running total.
