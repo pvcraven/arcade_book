@@ -1,0 +1,47 @@
+Great! Thanks for reaching out.
+
+First, read through this:
+https://learn.arcade.academy/voice_overs.html
+I've tried to put all the info there about doing voice-overs. Let me know if you have questions.
+
+If you are still interested, please read a paragraph (any one) from here:
+https://learn.arcade.academy/chapters/11_loops_and_random_numbers/loops_and_random_numbers.html
+Then send me the paragraph as a sound-check.
+
+Thanks, it is a lot of fun helping people learn to program.
+--------
+
+Hey, thanks so much! This works. Your voice is very understandable, and not boring at all.
+
+Two thoughts:
+
+* I did not notice it on your take, but when recording try not to touch your headset (if using one) or anything your mic is hooked up to, like if it sits on the desk. I had one recording come out bad because of that.
+
+* Make sure to save using wav or flac format. Do not use mp3.
+
+* The audio you recorded could be a bit louder, if you've got the ability to boost the gain on your mike. Audacity had the audio maxing out about -20 db. A max of -6 db is ideal. BUT if you go over 0 db it adds distortion I can't correct for. So if you can boost it, don't do it by too much. The filters will mostly correct ok for too low a volume, but not very well for too loud.
+
+Thank you very much for doing this. I just finished one for chapter 14, and like how it turned out:
+https://learn.arcade.academy/chapters/14_classes/classes.html
+
+----
+Hey, thanks so much! The audio level is perfect.
+
+There was still a hum in the background. I can work to cancel it out if you can't figure out what it is causing it.
+If you could leave about a full 5 seconds of silence at the beginning of your recording I can get a "noise profile" and use it to cancel out the noise.
+
+Other things to keep in mind:
+
+* I did not notice it, but when recording try not to touch your headset (if using one) or anything your mic is hooked up to, like if it sits on the desk. I had one recording come out bad because of that.
+
+* Make sure to save using wav or flac format. Do not use mp3. If the file is too big, send via a cloud link or something.
+
+Use this link to read:
+https://craven-learn-arcade.s3-us-west-2.amazonaws.com/chapters/11a_for_loops/for_loops.html
+
+Don't read code samples, or the sample text output at the beginning.
+I'll just show them on the screen.
+Read 11.5, but NOT 11.5.1 or anything after.
+
+Thank you very much for doing this. I just finished one for chapter 14, and like how it turned out:
+https://learn.arcade.academy/chapters/14_classes/classes.html

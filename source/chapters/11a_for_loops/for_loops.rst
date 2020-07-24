@@ -3,6 +3,14 @@
 For Loops
 =========
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: https://youtu.be/pwl02EpuQSw
+    :alt: Video link
+
+* Video: https://youtu.be/pwl02EpuQSw
+* Slides: https://slides.com/paulcraven/11-for-loops
+
 .. image:: loop2.svg
     :width: 15%
     :class: right-image

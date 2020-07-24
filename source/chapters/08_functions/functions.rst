@@ -3,6 +3,14 @@
 Creating Functions
 ==================
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: https://youtu.be/966lu1_Ht1o
+    :alt: Video link
+
+* Video: https://youtu.be/966lu1_Ht1o
+* Slides: https://slides.com/paulcraven/deck-adf6d9
+
 .. image:: teacher.svg
     :width: 50%
     :class: right-image
@@ -218,7 +226,7 @@ I've created a new variable ``my_number`` in between the parenthesis.
 This is called a function **parameter**. It is just a variable that
 is given a value equal to what is passed in when called.
 In the example below, it
-is given first a ``55``, then ``25``, and finally a ``5``.
+is given first a ``55``, then ``25``, and finally an ``8``.
 
 .. code-block:: python
     :linenos:
