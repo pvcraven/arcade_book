@@ -8,7 +8,8 @@ How to Draw with Your Computer
     :target: https://youtu.be/wYofTQaIIlQ
     :alt: Video link
 
-`Link to video for this chapter. <https://youtu.be/wYofTQaIIlQ>`_
+* Video: https://youtu.be/wYofTQaIIlQ
+* Slides: https://slides.com/paulcraven/5-how-to-draw-with-your-computer
 
 We've setup our system, learned to use git, and run our first program
 using the ``print`` function. Now we are ready to start using

@@ -1,6 +1,14 @@
 If Statements
 =============
 
+.. image:: ../../images/video.svg
+    :class: video-image-h1
+    :target: https://youtu.be/CXsOXI24khw
+    :alt: Video link
+
+* Video: https://youtu.be/CXsOXI24khw
+* Slides: https://slides.com/paulcraven/if-statements
+
 .. image:: question_mark_1.svg
     :width: 30%
     :class: right-image
@@ -71,7 +79,7 @@ matches with the code we just ran. ``if`` statements go in diamonds and have two
 possible paths out of them. Regular statements go in rectangles, and have only one
 exit path.
 
-.. figure:: flowchart1.png
+.. figure:: flowchart_example.svg
     :width: 300px
 
     Flowchart
@@ -160,7 +168,7 @@ Indentation
 
 Indentation matters. Each line under the ``if`` statement that is indented will
 only be executed ``if`` the statement is ``True``. In this example, the three lines
-indented under the ``if`` statement will run *onlye* if true, the fourth print statement will
+indented under the ``if`` statement will run *only* if true, the fourth print statement will
 *always* run because it is *not* indented under an ``if`` statement.
 
 .. code-block:: python
