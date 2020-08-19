@@ -1,6 +1,5 @@
 .. _version-control:
 
-
 Version Control Systems
 =======================
 

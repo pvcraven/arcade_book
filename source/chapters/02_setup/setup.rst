@@ -17,68 +17,46 @@ Getting a system set up and ready to program can be a bit frustrating.
 don't need to think about it again. You can concentrate on the programming part.
 It is normal to get stuck during setup, so don't hesitate to reach out and get help.
 
+Setup the Programming Environment
+---------------------------------
 
-Your development computer will need:
+.. image:: laptop.svg
+    :width: 220px
+    :class: right-image
 
-* The Python_ programming language and the Arcade_ code library.
-* An editor to type in your programs. (We'll use a program called PyCharm_.
+In this chapter we'll show you how to:
+
+* Install an "IDE" to type in your programs. (We'll use a program called PyCharm_.
   You can use the community edition for free, or if you have an email
   address that ends in ``.edu`` get can get a free `student license`_ for
   the professional version.)
-* A version control system to track and turn in your work. (Git_)
+* Install the Python_ programming language.
 * A minor configuration tweak so we can see file extensions.
 
-.. _SourceTree: https://www.sourcetreeapp.com/
+In the next chapter we'll cover:
+
+* A version control system to track and turn in your work. (Git_)
+* Setup with the Arcade_ code library and a template project.
+
 .. _Git: https://git-scm.com/downloads
 
-Let's go through these four items in detail.
+Let's go through these items in detail.
 
 .. _Python: https://www.python.org/
 .. _Arcade: http://arcade.academy/
 .. _PyCharm: https://www.jetbrains.com/pycharm/
 .. _GitHub: https://github.com/
-.. _BitBucket: https://bitbucket.org/
-
-Setup the Programming Environment
----------------------------------
-
-.. image:: python-logo.svg
-    :width: 300px
-    :class: right-image
-
-To get your computer ready for programming we need to install the Python computer language,
-and an editor you can type your programs into.
-
-.. _installing-python:
-
-Installing Python
-^^^^^^^^^^^^^^^^^
-
-We will be using the "Python_" computer programming language.
-We'll learn more about what a computer language is
-The creator of Python was a fan of `Monty Python`_, hence the name.
-
-.. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python
-
-
-In addition to the Python language, we are going to use a library of commands
-for drawing on the screen. This is called the "Arcade" library.
-
-Installation for installing Python and the Arcade library are available below:
-
-* `Windows Installation <http://arcade.academy/installation_windows.html>`_
-  (Make sure to read the instructions carefully. Do not skip the "Add Python
-  to Path" step. This seems to be the most frequent issue.)
-* `Mac Installation <http://arcade.academy/installation_mac.html>`_
-* `Linux Installation <http://arcade.academy/installation_linux.html>`_
-
 .. _installing-pycharm:
 
 Installing an IDE
 ^^^^^^^^^^^^^^^^^
 
-We also need an editor. Python comes with an editor called IDLE, but it is
-awful and not worth using. We'll use an editor called PyCharm.
+.. image:: pycharm_logo.png
+    :width: 20%
+    :class: right-image
+
+We need an **editor**. Python comes with an editor called IDLE, but it is
+awful and not worth using. We'll use an editor called **PyCharm**.
 
 PyCharm is a powerful program that lets you do more than just edit the
 program, it also includes a large set of tools that programmers need. This
@@ -95,11 +73,39 @@ If you have an e-mail that ends in ``.edu`` you can
 ask for a `student license`_. It can be used on a school computer, or on your own
 computer.
 
-What is a text editor? What is an IDE? Read more at
-`Understanding and Choosing Text Editors`_.
-
-.. _Understanding and Choosing Text Editors: http://web-development-class.readthedocs.io/en/latest/tutorials/text_editors/text_editors.html
 .. _student license: https://www.jetbrains.com/student/
+
+.. _installing-python:
+
+Installing Python
+^^^^^^^^^^^^^^^^^
+
+.. image:: python-logo.svg
+    :width: 300px
+    :class: right-image
+
+We will be using the "Python_" computer programming language.
+(We'll learn more about what a computer language is
+in the :ref:`what-is-a-programming-language` chapter.
+Also, the creator of Python was a fan of `Monty Python`_, hence the name.)
+
+.. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python
+
+Download Python from the official Python website:
+
+https://www.python.org/downloads/
+
+When installing Python, make sure to add Python to the path (1) before clicking the Install
+button (2).
+
+.. image:: setup_windows_1.png
+    :width: 450px
+
+After that, you can just close the dialog. There's no need to increase the path length,
+although it doesn't hurt anything if you do.
+
+.. image:: setup_windows_5.png
+    :width: 450px
 
 Viewing File Extensions
 -----------------------
@@ -109,7 +115,6 @@ A file usually has a name like Book ``report.docx`` where the ``.docx`` tells th
 computer it is a Microsoft Word compatible document. By default Windows
 hides the ``.docx`` extension if there is a program installed to handle it.
 If you are programming, this hiding part of the file name can be annoying.
-
 
 For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key.
 Then click the "view" tab and make sure "File name extensions" has been checked.
