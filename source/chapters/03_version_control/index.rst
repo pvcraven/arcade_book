@@ -152,6 +152,10 @@ Forking the Repository
 Cloning the Repository
 ----------------------
 
+.. |code_button| image:: code_button.png
+  :height: 1em
+  :alt: Code Button
+
 .. note::
     Every time you start working on a new computer, you'll need to create a clone.
     (Unless you use a flash drive.)
@@ -193,12 +197,11 @@ Cloning the Repository
    * ``cd ..`` - Go up one directory. So if you are in ``C:\home\user\Desktop``
      you'll go up to ``C:\home\user``
 
-
 4. We want to
    copy the repository you created to your computer. We'll call this a "clone."
    A clone is a copy
    we normally try to keep synced up, which is different than a "fork." Click
-   the clone button and see the figure below.
+   the |code_button| button and see the figure below.
    1) Make sure you are cloning using "HTTPS". 2) Make sure the account shown
    is yours, and not mine or "pythonarcade". 3) Click the copy link button.
 
@@ -376,7 +379,7 @@ What happens if you can't push to the server? If you get an error like what's be
 .. code-block:: text
   :emphasize-lines: 4,5
 
-    $ git push
+    C:\Users\craven\Desktop\learn-arcade-work> git push
     To bitbucket.org:pcraven/arcade-games-work2.git
      ! [rejected]        master -> master (fetch first)
     error: failed to push some refs to 'git@bitbucket.org:pcraven/arcade-games-work2.git'
@@ -399,7 +402,7 @@ Pull changes from the server:
 
 .. code-block:: text
 
-    $ git pull
+    git pull
 
 Normally, this will work fine and you'll be done. If so, you can do a
 ``git push`` and your code will be pushed to the server.
@@ -423,7 +426,6 @@ It should finish with something that looks like:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
     Merge made by the 'recursive' strategy.
      Lab 01 - First Program/lab_01.py | 3 ++-
      1 file changed, 2 insertions(+), 1 deletion(-)
@@ -433,7 +435,7 @@ If instead you get this:
 .. code-block: text
    :emphasize-lines: 9
 
-    $ git pull
+    C:\Users\craven\Desktop\learn-arcade-work> git pull
     remote: Counting objects: 4, done.
     remote: Compressing objects: 100% (4/4), done.
     remote: Total 4 (delta 1), reused 0 (delta 0)
@@ -456,7 +458,7 @@ Do a ``git status``. It should look something like this:
 .. code-block:: text
     :emphasize-lines: 13
 
-    $ git status
+    C:\Users\craven\Desktop\learn-arcade-work> git status
     On branch master
     Your branch and 'origin/master' have diverged,
     and have 1 and 1 different commits each, respectively.
@@ -478,28 +480,25 @@ If you want **your** copy, type:
 
 .. code-block:: text
 
-    $ git checkout --ours "Lab 01 - First Program/lab_01.py"
+    git checkout --ours "Lab 01 - First Program/lab_01.py"
 
 If instead you want **their** copy (or the copy on the other computer)
 type
 
 .. code-block:: text
 
-    $ git checkout --theirs "Lab 01 - First Program/lab_01.py"
+    git checkout --theirs "Lab 01 - First Program/lab_01.py"
 
 Then when you are all done with all merges, type:
 
 .. code-block:: text
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)
-    $ git add *
+    C:\Users\craven\Desktop\learn-arcade-work> git add *
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)
-    $ git commit -m"Merged"
+    C:\Users\craven\Desktop\learn-arcade-work> git commit -m"Merged"
     [master e083f36] Merged
 
-    craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)
-    $ git push
+    C:\Users\craven\Desktop\learn-arcade-work> git push
     Counting objects: 5, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (5/5), done.
@@ -514,7 +513,7 @@ Step 4: Try Pushing Again
 
 .. code-block:: text
 
-    $ git push
+    C:\Users\craven\Desktop\learn-arcade-work> git push
     Counting objects: 6, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (4/4), done.
