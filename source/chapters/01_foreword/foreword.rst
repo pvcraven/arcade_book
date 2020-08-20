@@ -1,13 +1,25 @@
 Foreword
 ========
 
-.. image:: screenshot.png
-    :width: 55%
+.. image:: screen1.png
+    :width: 27%
 
-This book aims to teach programming through creating 2D video games.
-We cover all the standard topics in a normal first-semester class, and video
+.. image:: screen2.png
+    :width: 35%
+
+.. image:: screen3.png
+    :width: 35%
+
+This book teaches programming through creating 2D video games.
+It covers all the standard topics in a normal first-semester college class,
+but the projects are games. Video
 games provide great visual feedback for your
 code. Furthermore, programming can be *fun*.
+
+.. image:: top_majors.png
+    :width: 35%
+    :class: right-image
+    :target: https://www.glassdoor.com/blog/50-highest-paying-college-majors/
 
 Programming is consistently one of the top paid skills that you can learn.
 It is also one of the most
@@ -69,9 +81,8 @@ Programming Pays Well
 Search up "top paid majors" and you'll see computer science is usually one
 of the best paying degrees you can get.
 
-In 2019 the National Association of Colleges and Employers (NACE) says that
-`software developers have the second highest entry-level salaries <https://www.naceweb.org/job-market/compensation/stem-majors-projected-to-be-class-of-2019s-top-paid/>`_,
-with only some engineers getting paid more.
+In 2020 the National Association of Colleges and Employers (NACE) says that
+`computer science majors are projected to have the highest starting salary <https://www.naceweb.org/job-market/compensation/computer-science-grads-projected-to-be-top-paid-in-major/>`_.
 Payscale agrees, says
 `computer science is second only to petroleum engineering <https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors>`_.
 Learning to program is worth your time.
