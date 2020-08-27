@@ -99,10 +99,15 @@ Let's install ``git`` on your computer.
 If you are using a school computer with ``git`` pre-installed, you can skip
 this step.
 
-Click the link below and download and install the 64-bit version of the ``git``.
+If you are in Windows, click the link below and download and install the 64-bit version of the ``git``:
 
 * `Windows Git DVCS <https://git-scm.com/download/win>`_
-* `MacOS Git DVCS <https://git-scm.com/download/mac>`_
+
+If you are on the Mac:
+
+* Open the "Terminal" window. (Under the 'Utilities' folder in Applications.)
+* Type ``git`` at the command prompt.
+* You should now be prompted to install some developer tools, which includes ``git``.
 
 .. _fork-repository:
 
