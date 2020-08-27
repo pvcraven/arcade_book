@@ -341,9 +341,15 @@ because the values in the ``if`` statement are non-zero:
     if "A":
         print("A")
 
+.. sidebar:: What values are False?
+
+   There are a few other values besides zero that are treated as ``False``.
+   Namely the ``None`` keyword, an empty string ``""``, and an empty list.
+   We'll cover lists and the ``None`` keyword in later chapters.
+
 The code below will not print out anything because the value in the ``if``
-statement is zero which is treated as ``False``.
-*Any value other than zero is considered ``True``*.
+statement is zero. The value zero is treated as ``False``.
+Any value other than zero (like 2, -1, 600, or even "Fred") is considered ``True``.
 
 .. code-block:: python
     :linenos:

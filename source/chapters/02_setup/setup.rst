@@ -91,9 +91,8 @@ Also, the creator of Python was a fan of `Monty Python`_, hence the name.)
 
 .. _Monty Python: https://en.wikipedia.org/wiki/Monty_Python
 
-Download Python from the official Python website:
-
-https://www.python.org/downloads/
+| Download Python from the official Python website:
+| https://www.python.org/downloads/
 
 When installing Python, make sure to add Python to the path (1) before clicking the Install
 button (2).
