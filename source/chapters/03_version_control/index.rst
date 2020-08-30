@@ -565,3 +565,18 @@ capture most of what students need to do.
 +------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 | ``git push``                                   | Push commit up to the server.                                                                                           |
 +------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+
+Review
+------
+
+Review Questions
+^^^^^^^^^^^^^^^^
+
+#. What is the *type* of program that allows you to synchronize code between
+   multiple people, systems that you are working on, and keep prior versions of
+   your work?
+#. What is the name of the program for version control we are using in the
+   class? (The program, not the website we store the code in.)
+#. If you are using a version control system, and get an error trying to "push"
+   your code to the central repository, what do you likely need to do before you
+   can try pushing again?

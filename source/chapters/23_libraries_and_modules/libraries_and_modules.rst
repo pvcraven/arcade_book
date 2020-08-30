@@ -235,7 +235,7 @@ that work with the web, complex numbers, databases, and more.
 * NumPy: Sophisticated library for working with matrices. http://numpy.org/
 * Pandas: A library for data analysis. https://pandas.pydata.org/
 * Pillow: Work with images. https://pillow.readthedocs.io/en/latest/
-* Pyglet: Another graphics library. Arcade uses this library. https://bitbucket.org/pyglet/pyglet/wiki/Home
+* Pyglet: Another graphics library. Arcade uses this library. http://pyglet.org/
 
 You can do analysis and create your own interactive notebook using Jupyter:
 

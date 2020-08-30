@@ -550,17 +550,18 @@ print quotes and tab characters.
 Review Questions
 ^^^^^^^^^^^^^^^^
 
-#. What term refers to the values between the parentheses in function?
-#. What type of error are we likely to get, if we mistype a function name?
+#. What type of error (looking for one word) are we likely to get, if we mistype
+   a function name?
 #. If you forget to use parentheses when using a function, what type of error
-   will you get?
-#. What is the name of the style-guide for Python?
+   will you get (looking for one word)?
+#. What term refers to the values between the parentheses in function?
 #. What is the escape code for a double quote?
 #. What escape code is most commonly used to go to a new line?
 #. What will this print? ``print("Escape codes: \\\\")``
 #. What do you use to print a block of text without using multiple print statements
    or ``\n``?
-
+#. Write code to print ``Hello``.
+#. What is the name of the style-guide for Python?
 
 Online Coding Problems
 ^^^^^^^^^^^^^^^^^^^^^^

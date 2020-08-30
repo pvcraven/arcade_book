@@ -176,8 +176,10 @@ Third Generation Languages
 
     Source: `Wikipedia Grace Hopper and UNIVAC <https://en.wikipedia.org/wiki/Grace_Hopper#/media/File:Grace_Hopper_and_UNIVAC.jpg>`_
 
-`Third Generation Languages`_ (3GL) started with `Grace Hopper`_ creating the
-language COBOL_. There are many, many different third generation languages now.
+`Third Generation Languages`_ (3GL) started with `John Backus`_ creating FORTRAN
+in 1954 and `Grace Hopper`_ creating FLOW-MATIC in 1955 which evolved into
+COBOL_ by 1959.
+There are many, many different third generation languages now.
 These languages often specialize at certain tasks. For example, the language
 C_ is great at creating small, fast programs that can run on minimal hardware.
 PHP_ is an easy-to-use language that can build websites.
