@@ -24,8 +24,10 @@ Commit and Upload
 Do this whenever you are done with a session of programming:
 
 1. Open either the "command prompt" on Windows, or "terminal" on MacOS.
-2. Type ``cd mydirectoryname`` where the name of the directory will be the same as the name of your repository on
-   BitBucket. You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
+2. Type ``cd mydirectoryname`` to navigate to your directory. For most people,
+   this works with ``cd Desktop`` followed by ``cd learn-arcade-work``.
+   If you have OneDrive installed, you may need to first type ``cd OneDrive``.
+   You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
 3. Type ``git add *``
 4. Type ``git commit -m "Work on lab 1"`` Update the comment between the quotes
    to whatever you did.
