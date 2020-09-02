@@ -107,8 +107,8 @@ PyCharm, and see a window like this:
 
     PyCharm window ready for coding.
 
-First click the triangle next to your project name (1), then find ``Scratch Work``,
-(2) then finally ``print_statements.py`` (3).
+First click the triangle next to your project name (1), then find ``Testing``,
+(2) then finally ``test.py`` (3).
 
 .. note::
 
@@ -118,7 +118,7 @@ First click the triangle next to your project name (1), then find ``Scratch Work
     in :ref:`open-in-pycharm`. Once selected
     you should not have to do a File...Open again for the rest of the book.
 
-Once you've selected ``print_statements.py``, go ahead and type in your first
+Once you've selected ``test.py``, go ahead and type in your first
 program:
 
 .. code-block:: python

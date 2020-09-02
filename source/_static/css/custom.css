@@ -2,6 +2,15 @@ p, li {
     font-size: 18px;
     line-height: 33px;
 }
+
+@media print {
+    p, li {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+}
+
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
     font-family: 'Book Antiqua', 'Palatino Linotype', 'NanumMyeongjo', 'FreeSerif', 'Book Antiqua', Palatino, serif;
 }

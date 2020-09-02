@@ -192,6 +192,7 @@ PHP_ is an easy-to-use language that can build websites.
     `@DJangoGirls <https://twitter.com/djangogirls>`_,
     and `@WomenWhoCode <https://twitter.com/WomenWhoCode>`_.
 
+.. _John Backus: https://en.wikipedia.org/wiki/John_Backus
 .. _Grace Hopper: https://en.wikipedia.org/wiki/Grace_Hopper
 .. _Third Generation Languages: https://en.wikipedia.org/wiki/Third-generation_programming_language
 .. _COBOL: https://en.wikipedia.org/wiki/COBOL
