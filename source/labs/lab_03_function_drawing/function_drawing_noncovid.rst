@@ -35,13 +35,15 @@ Incorporate the following items:
     2 points for a cohesive multi-line function. (2 pts)
   * Pass in ``x`` and ``y`` parameters and successfully position the object
     as shown in :ref:`make_the_drawing_function`. (2 pts)
-  * Make sure the image you draw is centered around the x and y, and not
-    off-set. (1 pts)
 
-Drawing with functions is worth 18 points. Two additional points are awarded based
-on code quality. Are there two blank lines between functions? Are functions
-commented? Did you use good variable names?
+Drawing with functions is worth 16 points. You can get the final 4 points by animating your image.
 
+
+Requirements for Animation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Animate an object. The movement does not need to be complex. See :ref:`animate-drawing` for
+an example.
 
 Double Check
 ^^^^^^^^^^^^
