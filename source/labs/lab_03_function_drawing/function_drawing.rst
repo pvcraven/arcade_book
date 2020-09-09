@@ -8,7 +8,7 @@ This lab uses what we learned in :ref:`creating_functions` and
 
 Requirements
 ------------
-Your goal: Draw and animate an image.
+Your goal: Draw an image using functions.
 
 .. image:: lab_03_example_01.gif
 
@@ -26,7 +26,7 @@ Incorporate the following items:
   changing Lab 2 to have Lab 3 requirements.
 * We are going to be following the instructions/example in :ref:`custom-drawing-function`.
 * Put everything into a function as shown in :ref:`make_the_main_function`.
-* Create three functions that draw something. (15 pts total, up to 5 pts
+* Create three functions that draw something. (18 pts total, up to 6 pts
   per function)
 
   * Define the function and successfully call it. (1 pt)
@@ -46,7 +46,8 @@ commented? Did you use good variable names?
 Double Check
 ^^^^^^^^^^^^
 
-Make sure you don't put functions inside of functions. After the ``import`` statement, each function should
+Make sure you don't put functions inside of functions. After the ``import``
+statement, each function should
 be listed out, one ``def`` after the other. But no ``def`` inside of another ``def``.
 
 Also make sure you have *three* functions that take in an ``(x, y)`` position to draw an object,
