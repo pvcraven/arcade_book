@@ -138,6 +138,10 @@ functions and then we call them in our main code.
     print_hello()
     print_goodbye()
 
+.. _create-main-function:
+
+Creating a Main Function
+------------------------
 
 Actually, almost *all* code should go in a function. It is a good practice
 to put the main starting point of your program in a function called ``main``

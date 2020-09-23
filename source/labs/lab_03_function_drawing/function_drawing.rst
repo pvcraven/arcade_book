@@ -8,9 +8,17 @@ This lab uses what we learned in :ref:`creating_functions` and
 
 Requirements
 ------------
+
 Your goal: Draw an image using functions.
 
+.. image:: example.png
+   :width: 40%
+
+.. image:: example_2.png
+   :width: 40%
+
 .. image:: lab_03_example_01.gif
+   :width: 40%
 
 Requirements for Drawing
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -25,7 +33,7 @@ Incorporate the following items:
 * Make sure you are putting your program in the Lab 3 folder, and not just
   changing Lab 2 to have Lab 3 requirements.
 * We are going to be following the instructions/example in :ref:`custom-drawing-function`.
-* Put everything into a function as shown in :ref:`make_the_main_function`.
+* Put everything into a function as shown in :ref:`make_the_main_function`. 1 pt.
 * Create three functions that draw something. (18 pts total, up to 6 pts
   per function)
 
@@ -38,10 +46,7 @@ Incorporate the following items:
   * Make sure the image you draw is centered around the x and y, and not
     off-set. (1 pts)
 
-Drawing with functions is worth 18 points. Two additional points are awarded based
-on code quality. Are there two blank lines between functions? Are functions
-commented? Did you use good variable names?
-
+ * Call at least one of the functions more than once, and in a different location. (1 pt.)
 
 Double Check
 ^^^^^^^^^^^^

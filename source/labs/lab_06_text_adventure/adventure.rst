@@ -89,43 +89,55 @@ all homework assignments from prior semesters, and assignments from non-Simpson
 students that I find on-line. I run a program that scans for duplicates.
 Make sure your work is your own.
 
-1.  Create a ``main`` function and call the ``main`` function.
-2.  In the ``main`` function, create an empty array called ``room_list``.
+#.  Define a class called ``Room`` as shown in :ref:`define-class`.
+#.  Define an ``__init__`` method as shown in :ref:`define-init-method`.
+#.  Define class attributes for ``description``, ``north``, ``east``, ``south``,
+    and ``west`` as shown in :ref:`define-init-method`. Default ``description``
+    to an empty string, all others to ``0``.
+#.  Customize the ``__init__`` method (also known as the constructor) to take
+    in data for all five attributes when the ``Room`` is created.
+    See :ref:`customize-constructor`.
+#.  Create a ``main`` function and call the ``main`` function as shown in
+    :ref:`create-main-function`.
+#.  In the ``main`` function, create an empty array called ``room_list``.
     If you've forgotten, see :ref:`create-an-empty-list`.
-3.  Create a variable called ``room``. Set it equal to an array with five elements.
-    For the first element, create a string with a description of your first room.
+#.  Create a variable called ``room``. Set it equal to a new instance of the
+    ``Room`` class.
+    For the first parameter, create a string with a description of your first room.
     The last four elements will be the number of the next room if the user goes
     north, east, south, or west. Look at your sketch to see what numbers to use.
     Use ``None`` if no room hooks up in that direction. (Do not put ``None`` in quotes.
     Also, remember that Python is case sensitive so ``none`` won't work either.
     The keyword ``None`` is a special value that represents "nothing." Because
     sometimes you need a value, other than zero, that represents )
-4.  Append this room to the room list. See :ref:`append_to_list` if you've forgotten how to do that.
-5.  Repeat the prior two steps for each room you want to create. Just re-use
-    the room variable.
-6.  Create a variable called ``current_room``. Set it to zero.
-7.  Print the ``room_list`` variable. Run the program. You should see a really long
-    list of every room in your adventure. If you don't, make sure you are calling
+#.  Append this room to the room list. See :ref:`append_to_list` if you've forgotten how to do that.
+#.  Repeat the prior two steps for each room you want to create. Just re-use
+    the ``room`` variable.
+#.  Create a variable called ``current_room``. Set it to zero.
+#.  Print the ``room_list`` variable. Run the program. You should see a really long
+    list of every room object in your adventure that looks something like this strange line::
+
+    [<__main__.Room object at 0x03800520>, <__main__.Room object at 0x0398F220>,
+
+    If you don't, make sure you are calling
     your ``main`` function at the end of your program, and that it isn't indented.
-8.  Adjust your print statement to only print the first room (element zero) in the list.
-    Note that at index 0 is the description, 1 is the room to the north, 2
-    is the room to the east, etc.
+
+
+#.  Adjust your ``print statement`` to only print the first room (element zero) in the list.
     Run the program and confirm you get output similar to::
 
-    ['You are in a room. There is a passage to the north.', 1, None, None, None]
+    <__main__.Room object at 0x03800520>
 
-9.  Using ``current_room`` and ``room_list``, print the current room the user
+#.  Using ``current_room`` and ``room_list``, print the current room the user
     is in. Since your first room is zero, the output should be the same as before.
-10. Change the print statement so that you only print the description of the
-    room, and not the rooms that hook up to it. Remember if you are printing a
-    list in a list the index goes after the first index.
-    Don't do this: ``[current_room[0]]``, do ``[current_room][0]``
-
-.. code-block:: text
+#.  Change the print statement so that you only print the description of the
+    room, and not the strange object printing we are getting now.
+    It should look something like: ``current_room][0].description``. When you
+    run it, you should get your room description::
 
     You are in a room. There is a passage to the north.
 
-11. Create a variable called ``done`` and set it to ``False``. Then put the
+#.  Create a variable called ``done`` and set it to ``False``. Then put the
     printing of the room description in a ``while`` loop that repeats until ``done`` is
     set to ``True``. We won't set ``done`` to ``True`` yet though.
 12. Before printing the description, add a code to print a blank line. This
@@ -142,9 +154,8 @@ Make sure your work is your own.
     "NoRtH". You may need
     to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`.
 15. If the user wants to go north, create a variable called ``next_room`` and
-    get it equal to ``room_list[current_room][1]``, which should be the number
-    for what room is to the north. (Remember, 0 is the description, 1 is north,
-    2 is east, etc.)
+    get it equal to ``room_list[current_room].north``, which should be the number
+    for what room is to the north.
 16. Add another ``if`` statement to see if the next room is equal to ``None``. If
     it is, print "You can't go that way." *Otherwise* (how do you do 'otherwise'?) set ``current_room``
     equal to ``next_room``. Note: This new ``if`` statement is part of the

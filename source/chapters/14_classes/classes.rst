@@ -83,6 +83,8 @@ other modern language by using a **class**. Each data item we group into
 the class is called a **field**, **attribute**, or **instance variable**. These
 terms may be used interchangeably, as they mean the same thing.
 
+.. _define-class:
+
 Defining the Class
 ^^^^^^^^^^^^^^^^^^
 
@@ -127,6 +129,8 @@ https://arcade.academy/arcade.html
 For each of those examples, you can click on the "source" link and quickly
 go to the source code for that function or class.
 
+.. _define-init-method:
+
 Defining the Init Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -164,6 +168,8 @@ first underscore.
 
 All methods in a class have at least one parameter, and the first parameter is always
 ``self``. We'll explain about ``self`` in the next section.
+
+.. _define-attributes:
 
 Defining Class Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -434,6 +440,8 @@ parameters for each field of the address.
 
 
     main()
+
+.. _customize-constructor:
 
 Customizing the Constructor
 ---------------------------
