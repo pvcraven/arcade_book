@@ -55,5 +55,12 @@ Make sure you don't put functions inside of functions. After the ``import``
 statement, each function should
 be listed out, one ``def`` after the other. But no ``def`` inside of another ``def``.
 
-Also make sure you have *three* functions that take in an ``(x, y)`` position to draw an object,
+Make sure you have *three* functions that take in an ``(x, y)`` position to draw an object,
 not just one.
+
+The most frequent source of confusion on this lab, and way to lose points,
+is a drawing function that is not centered around the specified (x, y).
+You can confirm this is working by
+drawing a point right at the x, y as the last line of your code. If the point
+draws near the center of your item, you are good. If the point is nowhere near
+the center, you need to re-center it.

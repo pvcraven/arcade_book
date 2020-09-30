@@ -627,6 +627,8 @@ which does use typing. Therefore
 it is important to know what typing is, even if we don't need to use it ourselves until
 later.
 
+.. _data-classes:
+
 Data Classes
 ------------
 
