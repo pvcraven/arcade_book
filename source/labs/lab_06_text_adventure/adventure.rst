@@ -96,10 +96,10 @@ Make sure your work is your own.
     to an empty string, all others to ``0``.
 #.  Customize the ``__init__`` method (also known as the constructor) to take
     in data for all five attributes when the ``Room`` is created.
-    See :ref:`customize-constructor`. There's another example for ``Address``
-    in the :ref:`data-classes` section, or you can use a data class as shown there.
+    Refer back to :ref:`address-class-example-with-init` for an example.
 #.  Create a ``main`` function and call the ``main`` function as shown in
-    :ref:`create-main-function`.
+    :ref:`create-main-function`. Make sure your ``main`` function is **not**
+    inside the ``Room`` class.
 #.  In the ``main`` function, create an empty array called ``room_list``.
     If you've forgotten, see :ref:`create-an-empty-list`.
 #.  Create a variable called ``room``. Set it equal to a new instance of the

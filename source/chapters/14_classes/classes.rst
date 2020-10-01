@@ -585,6 +585,39 @@ forgotten about. The second variable is ``self.name``, and that variable
 is complete different than ``name``. Its value will stay after the constructor
 is done.
 
+.. _address-class-example-with-init:
+
+Address Class With Init Parameters
+----------------------------------
+
+Here's another example, this time with our ``Address`` class. We supply
+the address attributes as part of our ``__init__`` when our address is created.
+
+.. code-block:: python
+    :linenos:
+
+    class Address():
+        def __init__(self, , line2, city, state, zip, country):
+            self.line1 = line1
+            self.line2 = line2
+            self.city = city
+            self.state = state
+            self.zip = zip
+            self.country = country
+
+
+    def main():
+        # This creates the address
+        my_address = Address("701 N. C Street",
+                             "Carver Science Building",
+                             "Indianola",
+                             "IA",
+                             "50125",
+                              "USA)
+
+
+    main()
+
 Typing Attributes
 -----------------
 
