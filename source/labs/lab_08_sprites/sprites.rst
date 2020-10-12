@@ -5,10 +5,16 @@ Lab 8: Sprites
 
 .. image:: lab_8.gif
 
+* Make sure you understand the code from :ref:`sprites`. The example code there
+  is great to get started with.
 * Create a player-character sprite. Pick your own image for the
   sprite, from the web or from Kenney.nl.
 * Allow the user to move the player move by the keyboard, mouse, or game pad.
   Your choice. If you use the mouse, make sure you hide the cursor.
+  The :ref:`sprites` chapter uses the mouse, you can also look at the examples on
+  the Arcade website for
+  `Sprite Player Movement <https://arcade.academy/examples/index.html#sprite-player-movement>`_.
+  These examples show mouse, keyboard, improved keyboard, and the game controller.
 * Create "good" sprites. Pick your own image for the good sprite.
 * For each good sprite collected, make the score go up. Play a 'good' sound when
   the user collects that item.

@@ -11,14 +11,20 @@ Creating a New Virtual Environment
 
 Assuming you already have a project, follow these steps to create a venv:
 
-Step 1: Select File...Settings
+**Step 1:** On Windows select File...Settings
 
 .. image:: file_settings.png
 
-Step 2: Click "Python Interpreter". Then find the gear icon in the upper right.
-click on it and select "Add"
+.. image:: mac_settings.png
+    :width: 200px
+
+On Mac, select PyCharm...Preferences.
 
 .. image:: click_gear.png
+
+**Step 2:** Click "Python Interpreter". Then find the gear icon in the upper right.
+click on it and select "Add"
+
 
 Step 3: Select Virtualenv Environment from the left. Then create a new
 environment. Usually it should be in a folder called ``venv`` in your main
@@ -51,6 +57,16 @@ Step 2: Select your project (1), then the Python Interpreter (2), then
 select the library you want to upgrade (3), then click the upgrade arrow (4),
 then finally click "Ok".
 
+Windows:
+
 .. image:: upgrade.png
+    :width: 45%
+
+.. image:: mac_settings_details.png
+    :width: 45%
+
+Mac:
+
+
 
 Now you have the latest library!
