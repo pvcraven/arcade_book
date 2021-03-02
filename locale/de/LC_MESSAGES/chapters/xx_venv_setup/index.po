@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Spring 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 10:21+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -20,49 +20,67 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../source/chapters/xx_venv_setup/index.rst:2
-msgid "Setting Up a Virtual Environment In PyCharm"
+#, fuzzy
+msgid "Virtual Environments In PyCharm"
 msgstr "Einrichten einer virtuellen Umgebung in PyCharm"
 
 #: ../../source/chapters/xx_venv_setup/index.rst:4
+#, fuzzy
 msgid ""
 "A Python virtual environment (venv) allows libraries to be installed for "
 "just a single project, rather than shared across everyone using the "
-"computer. It also does not require administrator privilages to install."
+"computer. It also does not require administrator privileges to install."
 msgstr ""
 "In einer virtuellen Python-Umgebung (venv) können Bibliotheken nur für "
 "ein bestimmtes Projekt und nicht für alle Benutzer des Rechners "
 "installiert werden. Für die Installation sind keine Administratorrechte "
 "erforderlich."
 
-#: ../../source/chapters/xx_venv_setup/index.rst:8
+#: ../../source/chapters/xx_venv_setup/index.rst:10
+#, fuzzy
+msgid "Creating a New Virtual Environment"
+msgstr "Einrichten einer virtuellen Umgebung in PyCharm"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:12
 msgid "Assuming you already have a project, follow these steps to create a venv:"
 msgstr ""
 "Angenommen, du hast bereits ein Projekt, gehe folgendermaßen vor, um ein "
 "venv zu erstellen:"
 
-#: ../../source/chapters/xx_venv_setup/index.rst:10
-msgid "Step 1: Select File...Settings"
+#: ../../source/chapters/xx_venv_setup/index.rst:14
+#, fuzzy
+msgid "**Step 1:** On Windows select File...Settings"
 msgstr "Schritt 1: Wähle File...Settings aus"
 
-#: ../../source/chapters/xx_venv_setup/index.rst:13
+#: ../../source/chapters/xx_venv_setup/index.rst:17
+#: ../../source/chapters/xx_venv_setup/index.rst:55
 #, fuzzy
 msgid ".. image:: chapters\\xx_venv_setup\\file_settings.png"
 msgstr ".. image:: chapters/xx_venv_setup/file_settings.png"
 
-#: ../../source/chapters/xx_venv_setup/index.rst:14
+#, fuzzy
+msgid ".. image:: chapters\\xx_venv_setup\\mac_settings.png"
+msgstr ".. image:: chapters/xx_venv_setup/file_settings.png"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:21
+msgid "On Mac, select PyCharm...Preferences."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:24
+#, fuzzy
+msgid ".. image:: chapters\\xx_venv_setup\\click_gear.png"
+msgstr ".. image:: chapters/xx_venv_setup/click_gear.png"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:25
+#, fuzzy
 msgid ""
-"Step 2: Click \"Python Interpreter\". Then find the gear icon in the "
+"**Step 2:** Click \"Python Interpreter\". Then find the gear icon in the "
 "upper right. click on it and select \"Add\""
 msgstr ""
 "Schritt 2: Klicke auf \"Python Interpreter\". Suche dann das "
 "Zahnradsymbol oben rechts. Klicke darauf und wähle \"Add\""
 
-#: ../../source/chapters/xx_venv_setup/index.rst:18
-#, fuzzy
-msgid ".. image:: chapters\\xx_venv_setup\\click_gear.png"
-msgstr ".. image:: chapters/xx_venv_setup/click_gear.png"
-
-#: ../../source/chapters/xx_venv_setup/index.rst:19
+#: ../../source/chapters/xx_venv_setup/index.rst:29
 msgid ""
 "Step 3: Select Virtualenv Environment from the left. Then create a new "
 "environment. Usually it should be in a folder called ``venv`` in your "
@@ -77,12 +95,12 @@ msgstr ""
 "sorgfältig, um sicherzustellen, dass er korrekt ist, und klicke dann auf "
 "\"OK\"."
 
-#: ../../source/chapters/xx_venv_setup/index.rst:25
+#: ../../source/chapters/xx_venv_setup/index.rst:35
 #, fuzzy
 msgid ".. image:: chapters\\xx_venv_setup\\name_venv.png"
 msgstr ".. image:: chapters/xx_venv_setup/name_venv.png"
 
-#: ../../source/chapters/xx_venv_setup/index.rst:26
+#: ../../source/chapters/xx_venv_setup/index.rst:36
 msgid ""
 "Now a virtual environment has been set up. The standard in Python "
 "projects is to create a file called ``requirements.txt`` and list the "
@@ -92,7 +110,7 @@ msgstr ""
 "Projekten ist, eine Datei mit dem Namen ``requirements.txt`` zu erstellen"
 " und die gewünschten Pakete darin aufzulisten."
 
-#: ../../source/chapters/xx_venv_setup/index.rst:30
+#: ../../source/chapters/xx_venv_setup/index.rst:40
 msgid ""
 "PyCharm will automatically ask if you want to install those packages as "
 "soon as you type them in. Go ahead and let it."
@@ -100,8 +118,49 @@ msgstr ""
 "PyCharm fragt automatisch, ob du diese Pakete installieren möchtest, "
 "sobald du sie eingibst."
 
-#: ../../source/chapters/xx_venv_setup/index.rst:33
+#: ../../source/chapters/xx_venv_setup/index.rst:44
 #, fuzzy
 msgid ".. image:: chapters\\xx_venv_setup\\requirements.png"
 msgstr ".. image:: chapters/xx_venv_setup/requirements.png"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:46
+msgid "Updating Libraries"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:48
+msgid ""
+"Need an updated version of Arcade, or some other library? Updating "
+"libraries is easy."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:51
+msgid "Step 1: Select File...Settings"
+msgstr "Schritt 1: Wähle File...Settings aus"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:56
+msgid ""
+"Step 2: Select your project (1), then the Python Interpreter (2), then "
+"select the library you want to upgrade (3), then click the upgrade arrow "
+"(4), then finally click \"Ok\"."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:60
+msgid "Windows:"
+msgstr ""
+
+#, fuzzy
+msgid ".. image:: chapters\\xx_venv_setup\\upgrade.png"
+msgstr ".. image:: chapters/xx_venv_setup/name_venv.png"
+
+#, fuzzy
+msgid ".. image:: chapters\\xx_venv_setup\\mac_settings_details.png"
+msgstr ".. image:: chapters/xx_venv_setup/file_settings.png"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:68
+msgid "Mac:"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:72
+msgid "Now you have the latest library!"
+msgstr ""
 

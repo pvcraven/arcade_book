@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 13:29-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-13 06:53+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -27,7 +27,7 @@ msgstr "Fortgeschrittene Schleifen"
 msgid ".. image:: chapters\\12_advanced_looping\\nested_loops.png"
 msgstr ".. image:: chapters/12_advanced_looping/nested_loops.png"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:8
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:9
 msgid ""
 "Games involve a lot of complex loops. This is a \"challenge chapter\" to "
 "learn how to be an expert with loops. If you can understand the problems "
@@ -39,13 +39,12 @@ msgstr ""
 "einzusetzen. Wenn du die Probleme in diesem Kapitel verstehen kannst, "
 "kannst du dich am Ende ein Schleifenexperte nennen."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:12
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:13
+#, fuzzy
 msgid ""
-"If becoming a loop expert isn't your goal, at least make sure you can "
-"write out the answers for the first eight problems. That will give you "
-"enough knowledge to continue this book. (Besides, being a loop expert "
-"never got anyone a date. Except for that guy in the `Groundhog Day`_ "
-"movie.)"
+"At the very least, make sure you can write out the answers for the first "
+"eight problems. That will give you enough knowledge to continue this "
+"book."
 msgstr ""
 "Wenn du kein Schleifenexperte werden willst, dann solltest du zumindest "
 "sicherstellen, dass du die ersten acht Probleme lösen kannst. Das wird "
@@ -53,17 +52,22 @@ msgstr ""
 "niemand hat ein Date bekommen, weil er ein Schleifenexperte ist, außer "
 "dem Typ im Film `Groundhog Day`_.)"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:20
-msgid "There are video explanations for the answers on-line."
-msgstr "Es gibt online ein Video, das die Antworten erklärt."
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:17
+msgid ""
+"You can try solving these on your computer, or on-line with `repl.it "
+"<https://repl.it/community/classrooms/174286>`_. Scroll down to the "
+"\"05\" set of problems."
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:23
-msgid "Print Statement End Characters"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:22
+#, fuzzy
+msgid "Print Statements and Line Endings"
 msgstr "Abschlusszeichen in Ausgabeanweisungen"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:25
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:24
+#, fuzzy
 msgid ""
-"By default, the \"print\" statement puts a *carriage return* at the end "
+"By default, the ``print`` statement puts a *carriage return* at the end "
 "of what is printed out. As we explained back in the first chapter, the "
 "carriage return is a character that moves the next line of output to be "
 "printed to the next line. Most of the time this is what we want. "
@@ -79,7 +83,7 @@ msgstr ""
 "das Standardzeichen am Ende der Ausgabe ändern. Die ist das Beispiel, "
 "bevor wir das Abschlusszeichen ändern:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:33
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:32
 msgid ""
 "print(\"Pink\")\n"
 "print(\"Octopus\")"
@@ -87,11 +91,11 @@ msgstr ""
 "print(\"Pink\")\n"
 "print(\"Octopus\")"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:39
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:38
 msgid "...which will print out:"
 msgstr "... wird ausgeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:41
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:40
 msgid ""
 "Pink\n"
 "Octopus"
@@ -99,7 +103,7 @@ msgstr ""
 "Pink\n"
 "Octopus"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:47
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:46
 msgid ""
 "But if we wanted the code output to print on the same line, it can be "
 "done by using a new option to set the \"end\" character. For example:"
@@ -108,7 +112,7 @@ msgstr ""
 "können wir das durch das Setzen des ``end``-Zeichens erreichen. Zum "
 "Beispiel: "
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:51
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:50
 msgid ""
 "print(\"Pink\", end=\"\")\n"
 "print(\"Octopus\")"
@@ -116,21 +120,21 @@ msgstr ""
 "print(\"Pink\", end=\"\")\n"
 "print(\"Octopus\")"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:56
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:70
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:87
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:55
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:69
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:86
 msgid "This will print:"
 msgstr "Das wird ausgeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:58
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:57
 msgid "PinkOctopus"
 msgstr "PinkOctopus"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:62
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:61
 msgid "We can also use a space instead of setting it to an empty string:"
 msgstr "Wir können auch das Leerzeichen anstelle der leeren Zeichenkette setzen:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:64
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:63
 msgid ""
 "print(\"Pink\", end=\" \")\n"
 "print(\"Octopus\")"
@@ -138,15 +142,15 @@ msgstr ""
 "print(\"Pink\", end=\" \")\n"
 "print(\"Octopus\")"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:72
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:71
 msgid "Pink Octopus"
 msgstr "Pink Octopus"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:77
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:76
 msgid "Here's another example, using a variable:"
 msgstr "Hier ist ein anderes Beispiel, das eine Variable verwendet."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:79
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:78
 msgid ""
 "i = 0\n"
 "print(i, end=\" \")\n"
@@ -158,59 +162,82 @@ msgstr ""
 "i = 1\n"
 "print(i, end=\" \")"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:89
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:88
 msgid "0 1"
 msgstr "0 1"
 
 #: ../../source/chapters/12_advanced_looping/advanced_looping.rst:95
+msgid "Moving to the Next Line"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:97
+msgid ""
+"If you can get text to appear on the same line, how do you trigger text "
+"to appear on the next line? An empty ``print`` statement will do the "
+"trick:"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:100
+msgid "print()"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:105
+msgid ""
+"The trick is to combine this statement with the ``for`` loops in the "
+"proper location, and the proper indentation."
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:109
 msgid "Advanced Looping Problems"
 msgstr "Fortgeschrittene Schleifen-Probleme"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:98
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:112
 msgid "Problem 1"
 msgstr "Problem 1"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:100
-msgid "Write code that will print ten asterisks (*) like the following:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:114
+#, fuzzy
+msgid "Write code that will print ten asterisks (*) in a row:"
 msgstr "Schreibe Code, der zehn Sternchen (*) wie folgt ausgibt:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:102
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:116
 msgid "* * * * * * * * * *"
 msgstr "* * * * * * * * * *"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:106
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:120
 msgid ""
-"Have this code print using a \"for\" loop, and print each asterisk "
-"individually, rather than just printing ten asterisks with one \"print\" "
-"statement. This can be done in two lines of code, a \"for\" loop and a "
-"\"print\" statement. When you have figured it out, or given up, here is "
-"the answer:"
+"Write code to print the asterisks using a ``for`` loop. Print each "
+"asterisk individually, don't just print all ten with one \"print\" "
+"statement. This problem can be completed in two lines of code using one "
+"``for`` loop and one ``print`` statement."
 msgstr ""
-"Verwende im Code eine ``for``-Schleife und gib jedes Sternchen einzeln "
-"aus, anstatt einfach zehn Sternchen in einer ``print``-Anweisung "
-"auszugeben. Das kann man mit zwei Zeilen Code erreichen, eine "
-"``for``-Schleife und eine ``print``-Anweisung. Wenn du es herausbekommen "
-"oder aufgegeben hast, findest du die Antwort hier:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:111
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_1.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_1.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:125
+msgid ""
+"Remember, **don't** look at the answer until you've figured it out "
+"yourself, or you have been trying for 5-10 minutes. (I don't recommend "
+"waiting longer than ten minutes.)"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:114
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:129
+msgid ":ref:`answer-problem-01`"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:132
 msgid "Problem 2"
 msgstr "Problem 2"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:116
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:206
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:266
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:298
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:398
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:449
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:134
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:218
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:276
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:305
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:402
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:451
 #: ../../source/chapters/12_advanced_looping/advanced_looping.rst:480
 msgid "Write code that will print the following:"
 msgstr "Schreibe Code, der das folgende ausgibt:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:118
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:136
 msgid ""
 "* * * * * * * * * *\n"
 "* * * * *\n"
@@ -220,33 +247,26 @@ msgstr ""
 "* * * * *\n"
 "* * * * * * * * * * * * * * * * * * * *"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:124
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:142
+#, fuzzy
 msgid ""
 "This is just like the prior problem, but also printing five and twenty "
-"stars. Copy and paste from the prior problem, adjusting the \"for\" loop "
-"as needed."
+"stars. Copy and paste from the prior problem, adjusting the ``for`` loop "
+"as needed. Don't forget how :ref:`move_to_the_next_line`."
 msgstr ""
 "Dies ist ähnlich wie das erste Problem, aber es gibt auch fünf und 20 "
 "Sternchen aus. Copy and Paste aus dem vorherigen Problem und passe die "
 "``for``-Schleife wie benötigt an."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:127
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:179
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:199
-msgid "When you have figured it out, or given up, here is the answer:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:146
+msgid ":ref:`answer-problem-02`"
 msgstr ""
-"Wenn du es herausbekommen oder aufgegeben hast, findest du die Antwort "
-"hier:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:129
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_2.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_2.php"
-
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:132
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:149
 msgid "Problem 3"
 msgstr "Problem 3"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:134
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:151
 msgid ""
 "Use two \"for\" loops, one of them nested inside the other, to print the "
 "following 10x10 rectangle:"
@@ -254,7 +274,7 @@ msgstr ""
 "Verwende zwei ``for``-Schleifen, eine in die andere geschachtelt, um das "
 "folgende 10x10-Rechteck auszugeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:137
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:154
 msgid ""
 "* * * * * * * * * *\n"
 "* * * * * * * * * *\n"
@@ -274,32 +294,23 @@ msgstr ""
 "* * * * * * * * * *\n"
 "* * * * * * * * * *"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:149
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:166
 msgid ""
 "To start, take a look at Problem 1. The code in Problem 1 generates one "
-"line of asterisks. It needs to be repeated ten times. Work on this "
-"problem for at least ten minutes before looking at the answer."
+"line of asterisks. It needs to be repeated ten times. You'll also need to"
+" move to the next line after each row has printed. Work on this problem "
+"for at least ten minutes before looking at the answer."
 msgstr ""
-"Sieh dir das Problem 1 an, um anzufangen. Der Code in Problem 1 erzeugt "
-"eine Zeile von Sternchen. Er muss zehnmal wiederholt werden. Arbeite an "
-"diesem Problem für mindestens zehn Minuten, bevor du die Antwort "
-"ansiehst."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:153
-msgid "When you have figured it out, or given up, here it is:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:171
+msgid ":ref:`answer-problem-03`"
 msgstr ""
-"Wenn du es herausbekommen oder aufgegeben hast, findest du die Antwort "
-"hier:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:155
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/10x10box.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/10x10box.php"
-
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:158
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:174
 msgid "Problem 4"
 msgstr "Problem 4"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:160
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:176
 msgid ""
 "Use two \"for\" loops, one of them nested, to print the following 5x10 "
 "rectangle:"
@@ -307,7 +318,7 @@ msgstr ""
 "Verwende zwei ``for``-Schleifen, eine in die andere geschachtelt, um das "
 "folgende 5x10-Rechteck auszugeben."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:163
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:179
 msgid ""
 "* * * * *\n"
 "* * * * *\n"
@@ -331,33 +342,35 @@ msgstr ""
 "* * * * *\n"
 "* * * * *"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:176
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:192
+#, fuzzy
 msgid ""
 "This is a lot like the prior problem. Experiment with the ranges on the "
-"loops to find exactly what the numbers passed to the \"range\" function "
+"loops to find exactly what the numbers passed to the ``range`` function "
 "control."
 msgstr ""
 "Dies ähnelt sehr dem vorherigen Problem. Experimentiere mit den Bereichen"
 " (englisch *ranges*) bei den Schleifen, um herauszufinden, welche Zahlen "
 "an die ``range``-Funktion übergeben werden müssen."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:181
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_4.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_4.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:195
+msgid ":ref:`answer-problem-04`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:184
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:198
 msgid "Problem 5"
 msgstr "Problem 5"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:186
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:200
+#, fuzzy
 msgid ""
-"Use two \"for\" loops, one of them nested, to print the following 20x5 "
+"Use two ``for`` loops, one of them nested, to print the following 20x5 "
 "rectangle:"
 msgstr ""
 "Verwende zwei ``for``-Schleifen, eine davon verschachtelt, um das "
 "folgende 20x5-Rechteck auszugeben."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:189
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:203
 msgid ""
 "* * * * * * * * * * * * * * * * * * * *\n"
 "* * * * * * * * * * * * * * * * * * * *\n"
@@ -371,19 +384,19 @@ msgstr ""
 "* * * * * * * * * * * * * * * * * * * *\n"
 "* * * * * * * * * * * * * * * * * * * *"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:197
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:211
 msgid "Again, like Problem 3 and Problem 4, but with different range values."
 msgstr "Es ähnelt Problem 3 und 4, aber mit verschiedenen Werten für ``range``."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:201
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_5.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_5.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:213
+msgid ":ref:`answer-problem-05`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:204
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:216
 msgid "Problem 6"
 msgstr "Problem 6"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:208
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:220
 msgid ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "0 1 2 3 4 5 6 7 8 9\n"
@@ -407,20 +420,24 @@ msgstr ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "0 1 2 3 4 5 6 7 8 9"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:221
-msgid "Use two nested loops. Print the first line with a loop, and not with:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:233
+#, fuzzy
+msgid ""
+"Use two nested loops. Print the first line with a loop. Don't use code "
+"like this:"
 msgstr ""
 "Verwende zwei verschachtelte Schleifen. Gib die erste Zeile mit einer "
 "Schleife aus und nicht mit:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:223
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:235
 msgid "print(\"0 1 2 3 4 5 6 7 8 9\")"
 msgstr "print(\"0 1 2 3 4 5 6 7 8 9\")"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:229
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:241
+#, fuzzy
 msgid ""
 "First, create a loop that prints the first line. Then enclose it in "
-"another loop that repeats the line 10 times. Use either \"i\" or \"j\" "
+"another loop that repeats the line 10 times. Use either ``i`` or ``j`` "
 "variables for what the program prints. This example and the next one "
 "helps reinforce what those index variables are doing."
 msgstr ""
@@ -430,7 +447,7 @@ msgstr ""
 " ausgibt. Dieses Beispiel und das folgende helfen zu vertiefen, was die "
 "Indexvariablen bewirken."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:234
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:247
 msgid ""
 "Work on this problem for at least ten minutes before looking at the "
 "answer. The process of spending ten minutes working on the answer is far "
@@ -440,19 +457,19 @@ msgstr ""
 "nachsiehst. Der Prozess, zehn Minuten an dem Problem zu knabbern, ist "
 "wichtiger als die Lösung selbst."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:238
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/number_square_answer.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/number_square_answer.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:251
+msgid ":ref:`answer-problem-06`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:241
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:254
 msgid "Problem 7"
 msgstr "Problem 7"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:243
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:256
 msgid "Adjust the prior program to print:"
 msgstr "Passe die Ausgabe des vorigen Programms an."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:245
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:258
 msgid ""
 "0 0 0 0 0 0 0 0 0 0\n"
 "1 1 1 1 1 1 1 1 1 1\n"
@@ -476,19 +493,15 @@ msgstr ""
 "8 8 8 8 8 8 8 8 8 8\n"
 "9 9 9 9 9 9 9 9 9 9"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:259
-msgid "Answer:"
-msgstr "Lösung:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:271
+msgid ":ref:`answer-problem-07`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:261
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_7.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_7.php"
-
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:264
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:274
 msgid "Problem 8"
 msgstr "Problem 8"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:268
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:278
 msgid ""
 "0\n"
 "0 1\n"
@@ -512,7 +525,7 @@ msgstr ""
 "0 1 2 3 4 5 6 7 8\n"
 "0 1 2 3 4 5 6 7 8 9"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:282
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:292
 msgid ""
 "Tip: This is just problem 6, but the inside loop no longer loops a fixed "
 "number of times. Don't use ``range(10)``, but adjust that range amount."
@@ -521,36 +534,27 @@ msgstr ""
 "mehr eine feste Anzahl wiederholt. Verwende nicht ``range(10)``, sondern "
 "passe den Bereich an."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:286
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:337
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:391
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:442
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:473
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:505
-msgid "After working at least ten minutes on the problem, here is the answer:"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:295
+msgid ":ref:`answer-problem-08`"
 msgstr ""
-"Nachdem du zehn Minuten an dem Problem gearbeitet hast, ist hier die "
-"Lösung:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:288
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_right_triangle.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_right_triangle.php"
-
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:290
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:297
+#, fuzzy
 msgid ""
 "Make sure you can write out the code for this and the prior problems. "
-"Yes, this practice is work, but it will pay off later and you'll save "
-"time in the long run."
+"Repeat until you can get it without looking up the answer. Yes, this "
+"practice is work, but it will pay off later and you'll save time in the "
+"long run."
 msgstr ""
 "Stell sicher, dass du den Code für dieses und die vorherigen Probleme "
 "schreiben kannst. Ja, Übung ist anstrengend, aber sie wird sich später "
 "rentieren und du wirst langfristig Zeit sparen."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:295
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:303
 msgid "Problem 9"
 msgstr "Problem 9"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:300
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:307
 msgid ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "  0 1 2 3 4 5 6 7 8\n"
@@ -574,7 +578,7 @@ msgstr ""
 "                0 1\n"
 "                  0"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:314
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:321
 msgid ""
 "This one is difficult. Tip: Two loops are needed inside the outer loop "
 "that controls each row. First, a loop prints spaces, then a loop prints "
@@ -587,7 +591,7 @@ msgstr ""
 "aus. Wiederhole dies für jede Zeile. Für den Anfang versuche einfach zu "
 "schreiben, was die innere Schleife ausgibt:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:320
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:327
 msgid ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "0 1 2 3 4 5 6 7 8\n"
@@ -611,7 +615,7 @@ msgstr ""
 "0 1\n"
 "0"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:333
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:340
 msgid ""
 "Then once that is working, add a loop after the outside loop starts and "
 "before the already existing inside loop. Use this new loop to print "
@@ -621,15 +625,15 @@ msgstr ""
 "äußere Schleife und die schon existierende innere Schleife ein. Verwende "
 "diese neue Schleife um genügend Leerzeichen zum Einrücken einzufügen."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:339
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/bottom_left_triangle.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/bottom_left_triangle.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:344
+msgid ":ref:`answer-problem-09`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:342
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:347
 msgid "Problem 10"
 msgstr "Problem 10"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:344
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:349
 msgid ""
 "Write code that will print the following (Getting the alignment is hard, "
 "at least get the numbers):"
@@ -638,7 +642,7 @@ msgstr ""
 "hinzubekommen ist schwierig, aber es sollten wenigstens die Zahlen "
 "ausgegeben werden):"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:347
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:352
 msgid ""
 "1   2   3   4   5   6   7   8   9\n"
 "2   4   6   8  10  12  14  16  18\n"
@@ -660,13 +664,13 @@ msgstr ""
 "8  16  24  32  40  48  56  64  72\n"
 "9  18  27  36  45  54  63  72  81"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:359
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:364
 msgid "Tip: Start by adjusting the code in problem 1 to print:"
 msgstr ""
 "Tipp: Fange damit an, den Code aus Problem 1 anzupassen, um das folgende "
 "auszugeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:361
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:366
 msgid ""
 "0  0  0  0  0  0  0  0  0  0\n"
 "0  1  2  3  4  5  6  7  8  9\n"
@@ -690,11 +694,11 @@ msgstr ""
 "0  8  16  24  32  40  48  56  64  72\n"
 "0  9  18  27  36  45  54  63  72  81"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:374
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:379
 msgid "Then adjust the code to print:"
 msgstr "Passe danach den Code an, um auszugeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:376
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:381
 msgid ""
 "1  2  3  4  5  6  7  8  9\n"
 "2  4  6  8  10  12  14  16  18\n"
@@ -716,23 +720,25 @@ msgstr ""
 "8  16  24  32  40  48  56  64  72\n"
 "9  18  27  36  45  54  63  72  81"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:388
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:393
+#, fuzzy
 msgid ""
-"Finally, use an \"if\" to print spaces if the number being printed is "
-"less than 10."
+"Finally, use an 11if`` to print spaces if the number being printed is "
+"less than 10. (Or use string formatting if you are already familar with "
+"that.)"
 msgstr ""
 "Verwende schließlich ein ``if``, um die Leerzeichen auszugeben, wenn die "
 "Zahl kleiner als zehn ist."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:393
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/multiplication_table.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/multiplication_table.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:397
+msgid ":ref:`answer-problem-10`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:396
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:400
 msgid "Problem 11"
 msgstr "Problem 11"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:400
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:404
 msgid ""
 "                1\n"
 "              1 2 1\n"
@@ -754,11 +760,11 @@ msgstr ""
 "  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n"
 "1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:412
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:416
 msgid "Tip: first write code to print:"
 msgstr "Tipp: Schreibe als erstes Code, um auszugeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:414
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:418
 msgid ""
 "1\n"
 "1 2\n"
@@ -780,11 +786,11 @@ msgstr ""
 "1 2 3 4 5 6 7 8\n"
 "1 2 3 4 5 6 7 8 9"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:426
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:430
 msgid "Then write code to print:"
 msgstr "Schreibe danach Code um auszugeben:"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:428
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:432
 msgid ""
 "1\n"
 "1 2 1\n"
@@ -806,19 +812,19 @@ msgstr ""
 "1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n"
 "1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:440
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:444
 msgid "Then finish by adding spaces to print the final answer."
 msgstr "Beende das durch Hinzufügen von Leerzeichen für die endgültige Lösung."
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:444
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_triangle.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_triangle.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:446
+msgid ":ref:`answer-problem-11`"
+msgstr ""
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:447
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:449
 msgid "Problem 12"
 msgstr "Problem 12"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:451
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:453
 #, fuzzy
 msgid ""
 "                1\n"
@@ -849,13 +855,13 @@ msgstr ""
 "  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n"
 "1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:471
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:473
 msgid "This can be done by combining problems 11 and 9."
 msgstr "Dies kann durch eine Kombination von Problem 11 und 9 erreicht werden."
 
 #: ../../source/chapters/12_advanced_looping/advanced_looping.rst:475
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/three_quarters.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/three_quarters.php"
+msgid ":ref:`answer-problem-12`"
+msgstr ""
 
 #: ../../source/chapters/12_advanced_looping/advanced_looping.rst:478
 msgid "Problem 13"
@@ -899,9 +905,9 @@ msgstr ""
 "              1 2 1\n"
 "                1"
 
-#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:508
-msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.php"
-msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.php"
+#: ../../source/chapters/12_advanced_looping/advanced_looping.rst:503
+msgid ":ref:`answer-problem-13`"
+msgstr ""
 
 #~ msgid ""
 #~ "                1\n"
@@ -931,4 +937,105 @@ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.p
 #~ "    1 2 3 4 5 6 7 6 5 4 3 2 1\n"
 #~ "  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n"
 #~ "1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1"
+
+#~ msgid "There are video explanations for the answers on-line."
+#~ msgstr "Es gibt online ein Video, das die Antworten erklärt."
+
+#~ msgid ""
+#~ "Have this code print using a "
+#~ "\"for\" loop, and print each asterisk"
+#~ " individually, rather than just printing"
+#~ " ten asterisks with one \"print\" "
+#~ "statement. This can be done in two"
+#~ " lines of code, a \"for\" loop "
+#~ "and a \"print\" statement. When you "
+#~ "have figured it out, or given up,"
+#~ " here is the answer:"
+#~ msgstr ""
+#~ "Verwende im Code eine ``for``-Schleife "
+#~ "und gib jedes Sternchen einzeln aus, "
+#~ "anstatt einfach zehn Sternchen in einer"
+#~ " ``print``-Anweisung auszugeben. Das kann "
+#~ "man mit zwei Zeilen Code erreichen, "
+#~ "eine ``for``-Schleife und eine "
+#~ "``print``-Anweisung. Wenn du es herausbekommen"
+#~ " oder aufgegeben hast, findest du die"
+#~ " Antwort hier:"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_1.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_1.php"
+
+#~ msgid "When you have figured it out, or given up, here is the answer:"
+#~ msgstr ""
+#~ "Wenn du es herausbekommen oder "
+#~ "aufgegeben hast, findest du die Antwort"
+#~ " hier:"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_2.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_2.php"
+
+#~ msgid ""
+#~ "To start, take a look at Problem"
+#~ " 1. The code in Problem 1 "
+#~ "generates one line of asterisks. It "
+#~ "needs to be repeated ten times. "
+#~ "Work on this problem for at least"
+#~ " ten minutes before looking at the"
+#~ " answer."
+#~ msgstr ""
+#~ "Sieh dir das Problem 1 an, um "
+#~ "anzufangen. Der Code in Problem 1 "
+#~ "erzeugt eine Zeile von Sternchen. Er "
+#~ "muss zehnmal wiederholt werden. Arbeite "
+#~ "an diesem Problem für mindestens zehn"
+#~ " Minuten, bevor du die Antwort "
+#~ "ansiehst."
+
+#~ msgid "When you have figured it out, or given up, here it is:"
+#~ msgstr ""
+#~ "Wenn du es herausbekommen oder "
+#~ "aufgegeben hast, findest du die Antwort"
+#~ " hier:"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/10x10box.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/10x10box.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_4.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_4.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_5.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_5.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/number_square_answer.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/number_square_answer.php"
+
+#~ msgid "Answer:"
+#~ msgstr "Lösung:"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_7.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/problem_7.php"
+
+#~ msgid "After working at least ten minutes on the problem, here is the answer:"
+#~ msgstr ""
+#~ "Nachdem du zehn Minuten an dem "
+#~ "Problem gearbeitet hast, ist hier die"
+#~ " Lösung:"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_right_triangle.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_right_triangle.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/bottom_left_triangle.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/bottom_left_triangle.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/multiplication_table.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/multiplication_table.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_triangle.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/top_triangle.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/three_quarters.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/three_quarters.php"
+
+#~ msgid "http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.php"
+#~ msgstr "http://ProgramArcadeGames.com/chapters/06_back_to_looping/full_diamond.php"
 

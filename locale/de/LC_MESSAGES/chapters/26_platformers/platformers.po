@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-15 10:05+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -23,7 +23,16 @@ msgstr ""
 msgid "Platformers"
 msgstr "Jump 'n' Run - Plattformspiele"
 
-#: ../../source/chapters/26_platformers/platformers.rst:6
+#: ../../source/chapters/26_platformers/platformers.rst:8
+msgid ""
+"This chapter is out-dated. See the `Simple Platformer Tutorial "
+"<https://arcade.academy/examples/platform_tutorial/index.html>`_. Step 9 "
+"is a nice starting point. For more advanced usage, see `Platformer with "
+"Physics "
+"<https://arcade.academy/tutorials/pymunk_platformer/index.html>`_."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:13
 msgid ""
 "Ever wanted to create your own platformer? It isn't too hard! Here's an "
 "example to get started."
@@ -31,15 +40,15 @@ msgstr ""
 "Wolltest du schon immer deinen eigenen Plattformer erstellen? Es ist "
 "nicht zu schwer! Hier ist ein Beispiel für den Einstieg."
 
-#: ../../source/chapters/26_platformers/platformers.rst:10
+#: ../../source/chapters/26_platformers/platformers.rst:17
 msgid "Map File"
 msgstr "Map-Datei"
 
-#: ../../source/chapters/26_platformers/platformers.rst:13
+#: ../../source/chapters/26_platformers/platformers.rst:20
 msgid "Creating The Map"
 msgstr "Erstellen der Map"
 
-#: ../../source/chapters/26_platformers/platformers.rst:15
+#: ../../source/chapters/26_platformers/platformers.rst:22
 msgid ""
 "First, we need a map. This is a \"map\" file created with the Tiled_ "
 "program. The program is free. You can download it and use it to create "
@@ -49,101 +58,101 @@ msgstr ""
 "Programm Tiled_ erstellt wurde. Das Programm ist kostenlos. Du kannst es "
 "herunterladen und zum Erstellen deiner Map-Datei verwenden."
 
-#: ../../source/chapters/26_platformers/platformers.rst:18
+#: ../../source/chapters/26_platformers/platformers.rst:25
 msgid "In this map file the numbers represent:"
 msgstr "In dieser Map-Datei repräsentieren die Zahlen:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:23
+#: ../../source/chapters/26_platformers/platformers.rst:30
 msgid "Number"
 msgstr "Nummer"
 
-#: ../../source/chapters/26_platformers/platformers.rst:23
+#: ../../source/chapters/26_platformers/platformers.rst:30
 msgid "Item"
 msgstr "Gegenstand"
 
-#: ../../source/chapters/26_platformers/platformers.rst:25
+#: ../../source/chapters/26_platformers/platformers.rst:32
 msgid "-1"
 msgstr "-1"
 
-#: ../../source/chapters/26_platformers/platformers.rst:25
+#: ../../source/chapters/26_platformers/platformers.rst:32
 msgid "Empty square"
 msgstr "Leeres Quadrat"
 
-#: ../../source/chapters/26_platformers/platformers.rst:26
+#: ../../source/chapters/26_platformers/platformers.rst:33
 msgid "0"
 msgstr "0"
 
-#: ../../source/chapters/26_platformers/platformers.rst:26
+#: ../../source/chapters/26_platformers/platformers.rst:33
 msgid "Crate"
 msgstr "Kiste"
 
-#: ../../source/chapters/26_platformers/platformers.rst:27
+#: ../../source/chapters/26_platformers/platformers.rst:34
 msgid "1"
 msgstr "1"
 
-#: ../../source/chapters/26_platformers/platformers.rst:27
+#: ../../source/chapters/26_platformers/platformers.rst:34
 msgid "Left grass corner"
 msgstr "Linke Grasecke"
 
-#: ../../source/chapters/26_platformers/platformers.rst:28
+#: ../../source/chapters/26_platformers/platformers.rst:35
 msgid "2"
 msgstr "2"
 
-#: ../../source/chapters/26_platformers/platformers.rst:28
+#: ../../source/chapters/26_platformers/platformers.rst:35
 msgid "Middle grass corner"
 msgstr "Mittlere Grasecke"
 
-#: ../../source/chapters/26_platformers/platformers.rst:29
+#: ../../source/chapters/26_platformers/platformers.rst:36
 msgid "3"
 msgstr "3"
 
-#: ../../source/chapters/26_platformers/platformers.rst:29
+#: ../../source/chapters/26_platformers/platformers.rst:36
 msgid "Right grass corner"
 msgstr "Rechte Grasecke"
 
 # Make kenney.nl link
-#: ../../source/chapters/26_platformers/platformers.rst:32
+#: ../../source/chapters/26_platformers/platformers.rst:39
 msgid "You can download these tiles (originally from kenney.nl) here:"
 msgstr "Du kannst diese Kacheln (ursprünglich von kenney.nl) hier herunterladen:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:35
+#: ../../source/chapters/26_platformers/platformers.rst:42
 #, fuzzy
 msgid ".. image:: chapters\\26_platformers\\boxCrate_double.png"
 msgstr ".. image:: chapters/26_platformers/boxCrate_double.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:37
+#: ../../source/chapters/26_platformers/platformers.rst:44
 #, fuzzy
 msgid ".. image:: chapters\\26_platformers\\grassLeft.png"
 msgstr ".. image:: chapters/26_platformers/grassLeft.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:39
+#: ../../source/chapters/26_platformers/platformers.rst:46
 #, fuzzy
 msgid ".. image:: chapters\\26_platformers\\grassMid.png"
 msgstr ".. image:: chapters/26_platformers/grassMid.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:41
+#: ../../source/chapters/26_platformers/platformers.rst:48
 #, fuzzy
 msgid ".. image:: chapters\\26_platformers\\grassRight.png"
 msgstr ".. image:: chapters/26_platformers/grassRight.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:42
+#: ../../source/chapters/26_platformers/platformers.rst:49
 msgid "Of course, you'll need a character to jump around the map:"
 msgstr "Natürlich benötigen wir eine Spielfigur, die sich auf der Map herumbewegt:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:45
+#: ../../source/chapters/26_platformers/platformers.rst:52
 #, fuzzy
 msgid ".. image:: chapters\\26_platformers\\character.png"
 msgstr ".. image:: chapters/26_platformers/character.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:46
+#: ../../source/chapters/26_platformers/platformers.rst:53
 msgid "Here is the map file:"
 msgstr "Hier ist die Map-Datei:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:48
+#: ../../source/chapters/26_platformers/platformers.rst:55
 msgid "map.csv"
 msgstr "map.csv"
 
-#: ../../source/chapters/26_platformers/platformers.rst:48
+#: ../../source/chapters/26_platformers/platformers.rst:55
 msgid ""
 "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,2,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
 "\n"
@@ -175,7 +184,7 @@ msgstr ""
 "1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3"
 "\n"
 
-#: ../../source/chapters/26_platformers/platformers.rst:53
+#: ../../source/chapters/26_platformers/platformers.rst:60
 msgid ""
 "The Tiled_ program takes some getting used to. You start off with a "
 "screen like this, and you can create a new map here:"
@@ -187,7 +196,7 @@ msgstr ""
 msgid ".. image:: chapters\\26_platformers\\tiled_new_map.png"
 msgstr ".. image:: chapters/26_platformers/tiled_new_map.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:59
+#: ../../source/chapters/26_platformers/platformers.rst:66
 msgid ""
 "Then set up your map like this, adjusting the size of the map and the "
 "size of your images accordingly. (All your images need to be the same "
@@ -204,7 +213,7 @@ msgid ".. image:: chapters\\26_platformers\\tiled_new_file.png"
 msgstr ".. image:: chapters/26_platformers/tiled_new_file.png"
 
 # Make kenney.nl link
-#: ../../source/chapters/26_platformers/platformers.rst:66
+#: ../../source/chapters/26_platformers/platformers.rst:73
 msgid ""
 "Most of the tiles from kenney.nl are 128x128 pixels. In the image above "
 "I've got a 7 tile high, by 50 pixel wide side-scroll map."
@@ -213,7 +222,7 @@ msgstr ""
 " habe ich eine 7 Kacheln hohe, 50 Pixel breite Side-Scroll-Karte "
 "verwendet."
 
-#: ../../source/chapters/26_platformers/platformers.rst:69
+#: ../../source/chapters/26_platformers/platformers.rst:76
 msgid ""
 "After this, you have to create a new \"tile set.\" Find the button for "
 "that:"
@@ -223,7 +232,7 @@ msgstr "Danach musst du ein neues \"tile set\" erstellen. Finde den Button dafü
 msgid ".. image:: chapters\\26_platformers\\tiled_new_tileset_button.png"
 msgstr ".. image:: chapters/26_platformers/tiled_new_tileset_button.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:74
+#: ../../source/chapters/26_platformers/platformers.rst:81
 msgid "I use these settings:"
 msgstr "Ich benutze diese Einstellungen:"
 
@@ -231,7 +240,7 @@ msgstr "Ich benutze diese Einstellungen:"
 msgid ".. image:: chapters\\26_platformers\\new_tileset.png"
 msgstr ".. image:: chapters/26_platformers/new_tileset.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:79
+#: ../../source/chapters/26_platformers/platformers.rst:86
 msgid ""
 "You can add the images as tiles to your tileset. I don't find this "
 "obvious, but you click the wrench icon, then the plus icon:"
@@ -244,7 +253,7 @@ msgstr ""
 msgid ".. image:: chapters\\26_platformers\\edit_tileset.png"
 msgstr ".. image:: chapters/26_platformers/edit_tileset.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:86
+#: ../../source/chapters/26_platformers/platformers.rst:93
 msgid ""
 "These \"tiles\" will be all the images for your map, and the numbers they"
 " associate with:"
@@ -256,7 +265,7 @@ msgstr ""
 msgid ".. image:: chapters\\26_platformers\\tiled_new_tileset.png"
 msgstr ".. image:: chapters/26_platformers/tiled_new_tileset.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:92
+#: ../../source/chapters/26_platformers/platformers.rst:99
 msgid ""
 "The numbers of the tiles correspond to the order you added the tiles. I "
 "don't think you can change the mapping after you create the tileset."
@@ -265,7 +274,7 @@ msgstr ""
 "Kacheln hinzugefügt haben. Ich glaube nicht, dass Sie die Zuordnung "
 "ändern können, nachdem Sie das Tileset erstellt haben."
 
-#: ../../source/chapters/26_platformers/platformers.rst:95
+#: ../../source/chapters/26_platformers/platformers.rst:102
 msgid "Next, you \"paint\" your map:"
 msgstr "Als nächstes \"male\" deine Karte:"
 
@@ -273,15 +282,15 @@ msgstr "Als nächstes \"male\" deine Karte:"
 msgid ".. image:: chapters\\26_platformers\\tiled_make_map.png"
 msgstr ".. image:: chapters/26_platformers/tiled_make_map.png"
 
-#: ../../source/chapters/26_platformers/platformers.rst:100
+#: ../../source/chapters/26_platformers/platformers.rst:107
 msgid "When you are done, you can \"Export as\" a CSV file."
 msgstr "Wenn du fertig bist, kannst du eine CSV-Datei exportieren."
 
-#: ../../source/chapters/26_platformers/platformers.rst:103
+#: ../../source/chapters/26_platformers/platformers.rst:110
 msgid "Reading The Map"
 msgstr "Die Map lesen"
 
-#: ../../source/chapters/26_platformers/platformers.rst:105
+#: ../../source/chapters/26_platformers/platformers.rst:112
 msgid ""
 "Next, we want to read in this grid of numbers where each number is "
 "separated by a comma. We know how to read in a file, but how do you "
@@ -291,25 +300,25 @@ msgstr ""
 "durch ein Komma getrennt ist. Wir wissen, wie man eine Datei einliest, "
 "aber wie verarbeitet man eine CSV-Datei?"
 
-#: ../../source/chapters/26_platformers/platformers.rst:109
+#: ../../source/chapters/26_platformers/platformers.rst:116
 msgid "We've learned how to take a string and use the functions:"
 msgstr ""
 "Wir haben gelernt, wie man einen String nimmt und die Funktionen "
 "verwendet:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:111
+#: ../../source/chapters/26_platformers/platformers.rst:118
 msgid "``upper()``"
 msgstr "``upper()``"
 
-#: ../../source/chapters/26_platformers/platformers.rst:112
+#: ../../source/chapters/26_platformers/platformers.rst:119
 msgid "``lower()``"
 msgstr "``lower()``"
 
-#: ../../source/chapters/26_platformers/platformers.rst:113
+#: ../../source/chapters/26_platformers/platformers.rst:120
 msgid "``strip()``"
 msgstr "``strip()``"
 
-#: ../../source/chapters/26_platformers/platformers.rst:115
+#: ../../source/chapters/26_platformers/platformers.rst:122
 msgid ""
 "There's another function called ``split()``. This function will split "
 "apart a string into a list based on a delimiter. For example:"
@@ -318,7 +327,7 @@ msgstr ""
 "eine Zeichenfolge auf der Grundlage eines Trennzeichens in eine Liste "
 "auf. Zum Beispiel:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:118
+#: ../../source/chapters/26_platformers/platformers.rst:125
 msgid ""
 "# A comma delimited string of numbers\n"
 "my_text_string = \"23,34,1,3,5,10\"\n"
@@ -338,15 +347,15 @@ msgstr ""
 "# Print the result\n"
 "print(my_list)"
 
-#: ../../source/chapters/26_platformers/platformers.rst:130
+#: ../../source/chapters/26_platformers/platformers.rst:137
 msgid "This prints:"
 msgstr "Dies gibt aus:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:132
+#: ../../source/chapters/26_platformers/platformers.rst:139
 msgid "['23', '34', '1', '3', '5', '10']"
 msgstr "['23', '34', '1', '3', '5', '10']"
 
-#: ../../source/chapters/26_platformers/platformers.rst:136
+#: ../../source/chapters/26_platformers/platformers.rst:143
 msgid ""
 "Which is close to what we want, except the list is a list of text, not "
 "numbers."
@@ -354,11 +363,11 @@ msgstr ""
 "Das ist schon fast, was wir wollen, außer dass die Liste ist aus Text und"
 " nicht Zahlen besteht."
 
-#: ../../source/chapters/26_platformers/platformers.rst:138
+#: ../../source/chapters/26_platformers/platformers.rst:145
 msgid "We can convert the list by:"
 msgstr "Wir können die Liste folgendermaßen konvertieren:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:140
+#: ../../source/chapters/26_platformers/platformers.rst:147
 msgid ""
 "# Convert from list of strings to list of integers\n"
 "for i in range(len(my_list)):\n"
@@ -368,7 +377,7 @@ msgstr ""
 "for i in range(len(my_list)):\n"
 "    my_list[i] = int(my_list[i])"
 
-#: ../../source/chapters/26_platformers/platformers.rst:146
+#: ../../source/chapters/26_platformers/platformers.rst:153
 msgid ""
 "We haven't covered it a lot, but you can also use ``enumerate`` to do the"
 " same thing:"
@@ -376,7 +385,7 @@ msgstr ""
 "Wir haben nicht viel darüber gesprochen, aber man kann auch ``enumerate``"
 " verwenden, um dasselbe zu erreichen:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:149
+#: ../../source/chapters/26_platformers/platformers.rst:156
 msgid ""
 "# Convert from list of strings to list of integers\n"
 "for index, item in enumerate(my_list):\n"
@@ -386,11 +395,11 @@ msgstr ""
 "for index, item in enumerate(my_list):\n"
 "    my_list[index] = int(item)"
 
-#: ../../source/chapters/26_platformers/platformers.rst:155
+#: ../../source/chapters/26_platformers/platformers.rst:162
 msgid "Or use a list comprehension:"
 msgstr "Oder man verwendet Listen-Abstraktion:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:157
+#: ../../source/chapters/26_platformers/platformers.rst:164
 msgid ""
 "# Convert from list of strings to list of integers\n"
 "my_list = [int(item) for item in my_list]"
@@ -398,7 +407,7 @@ msgstr ""
 "# Convert from list of strings to list of integers\n"
 "my_list = [int(item) for item in my_list]"
 
-#: ../../source/chapters/26_platformers/platformers.rst:162
+#: ../../source/chapters/26_platformers/platformers.rst:169
 msgid ""
 "Python does have built-in code for working with csv files. If you want, "
 "you can read about the `csv library` in the official documentation."
@@ -407,11 +416,11 @@ msgstr ""
 "Wenn du möchtest, kannst du dich in der offiziellen Dokumentation über "
 "die `csv library` informieren."
 
-#: ../../source/chapters/26_platformers/platformers.rst:168
+#: ../../source/chapters/26_platformers/platformers.rst:175
 msgid "Platformer Physics Engine"
 msgstr "Plattformer-Physik-Engine"
 
-#: ../../source/chapters/26_platformers/platformers.rst:170
+#: ../../source/chapters/26_platformers/platformers.rst:177
 msgid ""
 "In prior chapters, we've used the ``PhysicsEngineSimple`` to keep from "
 "running through walls. There's another engine called "
@@ -421,20 +430,20 @@ msgstr ""
 "zu verhindern, dass die Spielfigur durch Wände gehen kann. Es gibt eine "
 "weitere Engine namens ``PhysicsEnginePlatformer`` für Plattformer."
 
-#: ../../source/chapters/26_platformers/platformers.rst:174
+#: ../../source/chapters/26_platformers/platformers.rst:181
 msgid "This engine has two important additions:"
 msgstr "Diese Engine hat zwei wichtige Ergänzungen:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:176
-#: ../../source/chapters/26_platformers/platformers.rst:180
+#: ../../source/chapters/26_platformers/platformers.rst:183
+#: ../../source/chapters/26_platformers/platformers.rst:187
 msgid "Gravity"
 msgstr "Schwerkraft"
 
-#: ../../source/chapters/26_platformers/platformers.rst:177
+#: ../../source/chapters/26_platformers/platformers.rst:184
 msgid "``can_jump`` method"
 msgstr "``can_jump``-Methode"
 
-#: ../../source/chapters/26_platformers/platformers.rst:182
+#: ../../source/chapters/26_platformers/platformers.rst:189
 msgid ""
 "Creating the platformer physics engine requires a gravity constant. I "
 "recommend 0.5 to start with. This is your acceleration in pixels per "
@@ -444,7 +453,7 @@ msgstr ""
 "Schwerkraftkonstante. Ich empfehle zu Beginn 0,5. Dies ist Ihre "
 "Beschleunigung in Pixel pro Frame."
 
-#: ../../source/chapters/26_platformers/platformers.rst:185
+#: ../../source/chapters/26_platformers/platformers.rst:192
 msgid ""
 "self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,\n"
 "                                                     self.wall_list,\n"
@@ -456,11 +465,11 @@ msgstr ""
 "                                                     "
 "gravity_constant=GRAVITY)"
 
-#: ../../source/chapters/26_platformers/platformers.rst:192
+#: ../../source/chapters/26_platformers/platformers.rst:199
 msgid "Jumping"
 msgstr "Springen"
 
-#: ../../source/chapters/26_platformers/platformers.rst:194
+#: ../../source/chapters/26_platformers/platformers.rst:201
 msgid ""
 "Also, you often need to know if there is ground beneath your character to"
 " know if she can jump. The physics engine has a method for this:"
@@ -469,7 +478,7 @@ msgstr ""
 "um zu wissen, ob sie springen kann. Die Physik-Engine hat dafür eine "
 "Methode:"
 
-#: ../../source/chapters/26_platformers/platformers.rst:197
+#: ../../source/chapters/26_platformers/platformers.rst:204
 msgid ""
 "if self.physics_engine.can_jump():\n"
 "    self.player_sprite.change_y = JUMP_SPEED"
@@ -477,11 +486,11 @@ msgstr ""
 "if self.physics_engine.can_jump():\n"
 "    self.player_sprite.change_y = JUMP_SPEED"
 
-#: ../../source/chapters/26_platformers/platformers.rst:204
+#: ../../source/chapters/26_platformers/platformers.rst:211
 msgid "Python Program"
 msgstr "Python-Programm"
 
-#: ../../source/chapters/26_platformers/platformers.rst:206
+#: ../../source/chapters/26_platformers/platformers.rst:213
 msgid ""
 "In the highlighted code for the listing below, see how we've implemented "
 "these concepts to create a platformer"
@@ -489,11 +498,11 @@ msgstr ""
 "Sieh dir im hervorgehobenen Code unten an, wie wir diese Konzepte "
 "implementiert haben, um einen Plattformer zu erstellen."
 
-#: ../../source/chapters/26_platformers/platformers.rst:210
+#: ../../source/chapters/26_platformers/platformers.rst:217
 msgid "Platformer example, simple"
 msgstr "Plattformer-Beispiel - einfach"
 
-#: ../../source/chapters/26_platformers/platformers.rst:210
+#: ../../source/chapters/26_platformers/platformers.rst:217
 msgid ""
 "\"\"\"\n"
 "Load a map stored in csv format, as exported by the program 'Tiled.'\n"
@@ -989,11 +998,11 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/26_platformers/platformers.rst:217
+#: ../../source/chapters/26_platformers/platformers.rst:224
 msgid "Other Examples"
 msgstr "Andere Beispiele"
 
-#: ../../source/chapters/26_platformers/platformers.rst:219
+#: ../../source/chapters/26_platformers/platformers.rst:226
 msgid ""
 "If you are looking for platforms that move, see `Sprite Moving "
 "Platforms`_."
@@ -1001,7 +1010,7 @@ msgstr ""
 "Wenn du nach Plattformen suchst, die sich bewegen, lies `Sprite Moving "
 "Platforms`_."
 
-#: ../../source/chapters/26_platformers/platformers.rst:220
+#: ../../source/chapters/26_platformers/platformers.rst:227
 msgid ""
 "If you are looking to be able to create ramps you can run up and down, "
 "see `Sprite Ramps`_."

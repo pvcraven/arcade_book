@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,95 +42,62 @@ msgid ""
 msgstr ""
 
 #: ../../source/chapters/02_setup/setup.rst:21
-msgid "Your development computer will need:"
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:23
-msgid "The Python_ programming language and the Arcade_ code library."
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:24
-msgid ""
-"An editor to type in your programs. (We'll use a program called PyCharm_."
-" You can use the community edition for free, or if you have an email "
-"address that ends in ``.edu`` get can get a free `student license`_ for "
-"the professional version.)"
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:28
-msgid "A version control system to track and turn in your work. (Git_)"
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:29
-msgid "A minor configuration tweak so we can see file extensions."
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:34
-msgid "Let's go through these four items in detail."
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:43
 msgid "Setup the Programming Environment"
 msgstr ""
 
-msgid ".. image:: chapters\\02_setup\\python-logo.svg"
+msgid ".. image:: chapters\\02_setup\\laptop.svg"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:49
+#: ../../source/chapters/02_setup/setup.rst:27
+msgid "In this chapter we'll show you how to:"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:29
 msgid ""
-"To get your computer ready for programming we need to install the Python "
-"computer language, and an editor you can type your programs into."
+"Install an \"IDE\" to type in your programs. (We'll use a program called "
+"PyCharm_. You can use the community edition for free, or if you have an "
+"email address that ends in ``.edu`` get can get a free `student license`_"
+" for the professional version.)"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:55
-msgid "Installing Python"
+#: ../../source/chapters/02_setup/setup.rst:33
+msgid "Install the Python_ programming language."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:57
-msgid ""
-"We will be using the \"Python_\" computer programming language. The "
-"creator of Python was a fan of `Monty Python`_, hence the name."
+#: ../../source/chapters/02_setup/setup.rst:34
+msgid "A minor configuration tweak so we can see file extensions."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:63
-msgid ""
-"In addition to the Python language, we are going to use a library of "
-"commands for drawing on the screen. This is called the \"Arcade\" "
-"library."
+#: ../../source/chapters/02_setup/setup.rst:36
+msgid "In the next chapter we'll cover:"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:66
-msgid ""
-"Installation for installing Python and the Arcade library are available "
-"below:"
+#: ../../source/chapters/02_setup/setup.rst:38
+msgid "A version control system to track and turn in your work. (Git_)"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:68
-msgid ""
-"`Windows Installation <http://arcade.academy/installation_windows.html>`_"
-" (Make sure to read the instructions carefully. Do not skip the \"Add "
-"Python to Path\" step. This seems to be the most frequent issue.)"
+#: ../../source/chapters/02_setup/setup.rst:39
+msgid "Setup with the Arcade_ code library and a template project."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:71
-msgid "`Mac Installation <http://arcade.academy/installation_mac.html>`_"
+#: ../../source/chapters/02_setup/setup.rst:43
+msgid "Let's go through these items in detail."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:72
-msgid "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
-msgstr ""
-
-#: ../../source/chapters/02_setup/setup.rst:77
+#: ../../source/chapters/02_setup/setup.rst:52
 msgid "Installing an IDE"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:79
-msgid ""
-"We also need an editor. Python comes with an editor called IDLE, but it "
-"is awful and not worth using. We'll use an editor called PyCharm."
+msgid ".. image:: chapters\\02_setup\\pycharm_logo.png"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:82
+#: ../../source/chapters/02_setup/setup.rst:58
+msgid ""
+"We need an **editor**. Python comes with an editor called IDLE, but it is"
+" awful and not worth using. We'll use an editor called **PyCharm**."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:61
 msgid ""
 "PyCharm is a powerful program that lets you do more than just edit the "
 "program, it also includes a large set of tools that programmers need. "
@@ -138,7 +105,7 @@ msgid ""
 "Environment**, or **IDE** for short."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:87
+#: ../../source/chapters/02_setup/setup.rst:66
 msgid ""
 "Download and install PyCharm_. You can use their community edition for "
 "free. We won't use the features in the professional edition. If you "
@@ -148,14 +115,45 @@ msgid ""
 "used on a school computer, or on your own computer."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:97
-msgid ""
-"What is a text editor? What is an IDE? Read more at `Understanding and "
-"Choosing Text Editors`_."
+#: ../../source/chapters/02_setup/setup.rst:81
+msgid "Installing Python"
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:106
-msgid "Installing Arcade"
+msgid ".. image:: chapters\\02_setup\\python-logo.svg"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:87
+msgid ""
+"We will be using the \"Python_\" computer programming language. (We'll "
+"learn more about what a computer language is in the :ref:`what-is-a"
+"-programming-language` chapter. Also, the creator of Python was a fan of "
+"`Monty Python`_, hence the name.)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:94
+msgid "Download Python from the official Python website:"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:95
+msgid "https://www.python.org/downloads/"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:97
+msgid ""
+"When installing Python, make sure to add Python to the path (1) before "
+"clicking the Install button (2)."
+msgstr ""
+
+msgid ".. image:: chapters\\02_setup\\setup_windows_1.png"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:103
+msgid ""
+"After that, you can just close the dialog. There's no need to increase "
+"the path length, although it doesn't hurt anything if you do."
+msgstr ""
+
+msgid ".. image:: chapters\\02_setup\\setup_windows_5.png"
 msgstr ""
 
 #: ../../source/chapters/02_setup/setup.rst:110
@@ -172,7 +170,7 @@ msgid ""
 "file name can be annoying."
 msgstr ""
 
-#: ../../source/chapters/02_setup/setup.rst:119
+#: ../../source/chapters/02_setup/setup.rst:118
 msgid ""
 "For Windows 8 and 10, bring up a file explorer by hitting the Windows-E "
 "key. Then click the \"view\" tab and make sure \"File name extensions\" "
@@ -181,4 +179,119 @@ msgstr ""
 
 msgid ".. image:: chapters\\02_setup\\win_10.png"
 msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:124
+msgid ""
+"We'll need to see the full filename for our programs. Our Python language"
+" programs will end in ``.py`` and we need to see the extensions of the "
+"image and sound files we'll load into our games."
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:129
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:132
+msgid "Review Questions"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:134
+msgid "Chapter 2"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:136
+msgid ""
+"What is the generic name of an editor that integrates a lot of tools for "
+"a developer to use when writing programs? (I'm not looking for a brand-"
+"name like PyCharm here.)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:139
+msgid ""
+"What does a computer use to tell the type of a file? (Word, Excel, image,"
+" etc.)"
+msgstr ""
+
+#: ../../source/chapters/02_setup/setup.rst:141
+msgid "All Python source code file names should end with what extension?"
+msgstr ""
+
+#~ msgid "Your development computer will need:"
+#~ msgstr ""
+
+#~ msgid "The Python_ programming language and the Arcade_ code library."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An editor to type in your "
+#~ "programs. (We'll use a program called"
+#~ " PyCharm_. You can use the community"
+#~ " edition for free, or if you "
+#~ "have an email address that ends in"
+#~ " ``.edu`` get can get a free "
+#~ "`student license`_ for the professional "
+#~ "version.)"
+#~ msgstr ""
+
+#~ msgid "Let's go through these four items in detail."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To get your computer ready for "
+#~ "programming we need to install the "
+#~ "Python computer language, and an editor"
+#~ " you can type your programs into."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We will be using the \"Python_\" "
+#~ "computer programming language. The creator "
+#~ "of Python was a fan of `Monty "
+#~ "Python`_, hence the name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In addition to the Python language, "
+#~ "we are going to use a library "
+#~ "of commands for drawing on the "
+#~ "screen. This is called the \"Arcade\""
+#~ " library."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Installation for installing Python and "
+#~ "the Arcade library are available below:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Windows Installation "
+#~ "<http://arcade.academy/installation_windows.html>`_ (Make "
+#~ "sure to read the instructions carefully."
+#~ " Do not skip the \"Add Python "
+#~ "to Path\" step. This seems to be"
+#~ " the most frequent issue.)"
+#~ msgstr ""
+
+#~ msgid "`Mac Installation <http://arcade.academy/installation_mac.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We also need an editor. Python "
+#~ "comes with an editor called IDLE, "
+#~ "but it is awful and not worth "
+#~ "using. We'll use an editor called "
+#~ "PyCharm."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "What is a text editor? What is "
+#~ "an IDE? Read more at `Understanding "
+#~ "and Choosing Text Editors`_."
+#~ msgstr ""
+
+#~ msgid "Installing Arcade"
+#~ msgstr ""
 

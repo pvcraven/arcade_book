@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2020\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_05.rst:6
+msgid "Answer to Problem 5"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_05.rst:8
+msgid "Answer to Looping Problem 05"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_05.rst:8
+msgid ""
+"for i in range(5):\n"
+"    for j in range(20):\n"
+"        print(\"*\", end=\" \")\n"
+"    print()"
+msgstr ""
+

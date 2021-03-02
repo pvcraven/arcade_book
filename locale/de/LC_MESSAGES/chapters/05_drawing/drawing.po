@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,30 +27,38 @@ msgid ""
 msgstr ""
 
 #: ../../source/chapters/05_drawing/drawing.rst:11
+msgid "Video: https://youtu.be/wYofTQaIIlQ"
+msgstr ""
+
+#: ../../source/chapters/05_drawing/drawing.rst:12
+msgid "Slides: https://slides.com/paulcraven/5-how-to-draw-with-your-computer"
+msgstr ""
+
+#: ../../source/chapters/05_drawing/drawing.rst:14
 msgid ""
 "We've setup our system, learned to use git, and run our first program "
 "using the ``print`` function. Now we are ready to start using functions "
 "to make graphics!"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:15
+#: ../../source/chapters/05_drawing/drawing.rst:18
 msgid ""
 "In this chapter we will learn to import a graphics library and call its "
 "functions. By the end of this chapter, you will be able to create your "
 "own art like this:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:20
+#: ../../source/chapters/05_drawing/drawing.rst:23
 msgid ".. image:: chapters\\05_drawing\\simpson_map.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:21
+#: ../../source/chapters/05_drawing/drawing.rst:24
 msgid ""
 "You can page through several other examples of student-created art in "
 ":ref:`lab-02`."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:24
+#: ../../source/chapters/05_drawing/drawing.rst:27
 msgid ""
 "We will concentrate on learning to call functions for graphics in this "
 "chapter. The same concepts we learn here also apply to calling functions "
@@ -58,41 +66,41 @@ msgid ""
 "programming."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:30
+#: ../../source/chapters/05_drawing/drawing.rst:33
 msgid "Creating a New Program"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:37
+#: ../../source/chapters/05_drawing/drawing.rst:40
 msgid ""
 "Open up PyCharm. It should start up with the same set of project files we"
 " used last chapter. We'll use this project for all our work in this book."
 " Do **not** create new projects for each lab or program."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:42
+#: ../../source/chapters/05_drawing/drawing.rst:45
 msgid ""
 "We are going to create a lot of code samples as we learn new concepts. "
 "You should already have a folder called ``Scratch Work``. We can put our "
 "code samples there. Create a new sample by:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:46
+#: ../../source/chapters/05_drawing/drawing.rst:49
 msgid "Right-click on ``Scratch Work``"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:47
+#: ../../source/chapters/05_drawing/drawing.rst:50
 msgid "Click ``New``"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:48
+#: ../../source/chapters/05_drawing/drawing.rst:51
 msgid "Click ``Python File``"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:51
+#: ../../source/chapters/05_drawing/drawing.rst:54
 msgid ".. image:: chapters\\05_drawing\\create_drawing_source_file.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:52
+#: ../../source/chapters/05_drawing/drawing.rst:55
 msgid ""
 "Name the file ``drawing_samples.py``. Make sure it is inside the "
 "``Scratch Work`` folder. If it isn't, drag to move it. The file should "
@@ -102,11 +110,11 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\drawing_samples.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:60
+#: ../../source/chapters/05_drawing/drawing.rst:63
 msgid "Comment Your Code"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:67
+#: ../../source/chapters/05_drawing/drawing.rst:70
 msgid ""
 "Before we start writing long programs, we need to learn about **code "
 "comments**. When typing in computer code, sometimes we want to be able to"
@@ -115,13 +123,13 @@ msgid ""
 "ignore it."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:72
+#: ../../source/chapters/05_drawing/drawing.rst:75
 msgid ""
 "Below are two ways of adding comments to code in the Python computer "
 "language:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:74
+#: ../../source/chapters/05_drawing/drawing.rst:77
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -135,18 +143,18 @@ msgid ""
 "# This is a single-line comment.\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:78
+#: ../../source/chapters/05_drawing/drawing.rst:81
 msgid ""
 "The Python standard is to use multi-line comments with triple quotes at "
 "the start of each source file to explain what the code does. Use single-"
 "line comments everywhere else for now."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:82
+#: ../../source/chapters/05_drawing/drawing.rst:85
 msgid "Go ahead and try putting in your own comments."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:84
+#: ../../source/chapters/05_drawing/drawing.rst:87
 msgid ""
 "Before we run this program, we need to make sure we are running the "
 "*right* program. Look at the image below. If I select \"run\" with the "
@@ -155,31 +163,31 @@ msgid ""
 "``drawing_sample.py``\" instead."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:91
+#: ../../source/chapters/05_drawing/drawing.rst:94
 msgid ".. image:: chapters\\05_drawing\\running_the_right_program.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:92
+#: ../../source/chapters/05_drawing/drawing.rst:95
 msgid ""
 "Hey wait! When we finally run our program, nothing happens. That's "
 "because the only code that we wrote were \"comments.\" Comments are "
 "ignored. Therefore, there was nothing for the computer to do. Read on."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:97
+#: ../../source/chapters/05_drawing/drawing.rst:100
 msgid "Import the Arcade Library"
 msgstr ""
 
 msgid ".. image:: chapters\\05_drawing\\library.svg"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:108
+#: ../../source/chapters/05_drawing/drawing.rst:111
 msgid ""
 "Before we can draw anything, we need to import a \"library\" of code that"
 " has commands for drawing."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:111
+#: ../../source/chapters/05_drawing/drawing.rst:114
 msgid ""
 "Computer languages come with a set of built-in commands. Most programs "
 "will require *more* commands than what the computer language loads by "
@@ -189,14 +197,14 @@ msgid ""
 "library and module interchangeably."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:117
+#: ../../source/chapters/05_drawing/drawing.rst:120
 msgid ""
 "Thankfully, it is easy to import a library of code. If we want to use the"
 " Arcade library, all we need to do is add ``import arcade`` at the top of"
 " our program."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:122
+#: ../../source/chapters/05_drawing/drawing.rst:125
 msgid ""
 "Libraries should always be imported at the **top** of your program. Only "
 "comments should appear ahead of an ``import`` statement. Technically, you"
@@ -205,14 +213,14 @@ msgid ""
 "this."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:128
+#: ../../source/chapters/05_drawing/drawing.rst:131
 msgid ""
 "In the code below, we've imported the Arcade library. If you run the "
 "code, yet again nothing will happen. We've loaded the Arcade library, but"
 " we haven't *done* anything with it yet. That's our next step."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:132
+#: ../../source/chapters/05_drawing/drawing.rst:135
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -224,37 +232,37 @@ msgid ""
 "import arcade\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:138
+#: ../../source/chapters/05_drawing/drawing.rst:141
 msgid ""
 "If you get an error that you can't import the Arcade library, it hasn't "
 "been installed for your current Python environment. Go back and follow "
 "the directions in :ref:`installing-arcade`."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:143
+#: ../../source/chapters/05_drawing/drawing.rst:146
 msgid "How to Open a Window for Drawing"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:150
+#: ../../source/chapters/05_drawing/drawing.rst:153
 msgid ""
 "The first Arcade function we are going to learn is open_window_. This "
 "command opens a window with a given size and title. The code looks like "
 "the following:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:156
+#: ../../source/chapters/05_drawing/drawing.rst:159
 msgid "arcade.open_window(600, 600, \"Drawing Example\")"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:160
+#: ../../source/chapters/05_drawing/drawing.rst:163
 msgid "What does each part mean?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:163
+#: ../../source/chapters/05_drawing/drawing.rst:166
 msgid ".. image:: chapters\\05_drawing\\open_window.svg"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:164
+#: ../../source/chapters/05_drawing/drawing.rst:167
 msgid ""
 "To begin, we select the arcade library with ``arcade``. Then we separate "
 "the library from the function name with a period: ``.`` Next, we put in "
@@ -264,64 +272,64 @@ msgstr ""
 msgid "Vocabulary"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:170
+#: ../../source/chapters/05_drawing/drawing.rst:173
 msgid ""
 "We give commands to the computer by using **functions**. The **function "
 "name**, such as ``print`` or ``open_window`` is how we identify the "
 "function."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:174
+#: ../../source/chapters/05_drawing/drawing.rst:177
 msgid ""
 "We can import new functions by using a **library**. The **library name**,"
 " such as ``arcade`` is how we identify the library."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:178
+#: ../../source/chapters/05_drawing/drawing.rst:181
 msgid ""
 "A **statement** is a line of code in Python. It includes the function "
 "name, parentheses, numbers, text and everything else required to call the"
 " function or perform some other operation."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:182
+#: ../../source/chapters/05_drawing/drawing.rst:185
 msgid ""
 "Just like the ``print`` function, we surround the function **parameters**"
 " with parentheses. For example:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:185
+#: ../../source/chapters/05_drawing/drawing.rst:188
 msgid "my_function(parameters)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:189
+#: ../../source/chapters/05_drawing/drawing.rst:192
 msgid ""
 "If we have more than one parameter, we can use commas to separate them. "
 "PEP-8 asks that each comma is followed by a space. If we have a library, "
 "then we specify that up front. For example:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:193
+#: ../../source/chapters/05_drawing/drawing.rst:196
 msgid "my_library.my_function(parameter_1, parameter_2)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:198
+#: ../../source/chapters/05_drawing/drawing.rst:201
 msgid "The ``open_window`` function requires at least three parameters:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:200
+#: ../../source/chapters/05_drawing/drawing.rst:203
 msgid "The window width in pixels."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:201
+#: ../../source/chapters/05_drawing/drawing.rst:204
 msgid "The window height in pixels."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:202
+#: ../../source/chapters/05_drawing/drawing.rst:205
 msgid "The text that will appear on the title bar."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:204
+#: ../../source/chapters/05_drawing/drawing.rst:207
 msgid ""
 "In the case of width and height, the numbers specify the part of the "
 "window you can draw on. The actual window is larger to accommodate the "
@@ -329,7 +337,7 @@ msgid ""
 " the title bar and borders."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:209
+#: ../../source/chapters/05_drawing/drawing.rst:212
 msgid ""
 "How do we know ``open_window`` is the name of the function to call? How "
 "did we know what parameters to use? The names of the functions, the order"
@@ -341,11 +349,11 @@ msgid ""
 "library."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:220
+#: ../../source/chapters/05_drawing/drawing.rst:223
 msgid "Below is an example program that will open up a window:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:222
+#: ../../source/chapters/05_drawing/drawing.rst:225
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -363,7 +371,7 @@ msgid ""
 "arcade.open_window(600, 600, \"Drawing Example\")\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:227
+#: ../../source/chapters/05_drawing/drawing.rst:230
 msgid ""
 "Try running the code above. It kind-of works. If you have fast eyes, and "
 "a slow computer you might see the window pop open, then immediately "
@@ -373,14 +381,14 @@ msgid ""
 "execute."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:234
+#: ../../source/chapters/05_drawing/drawing.rst:237
 msgid ""
 "To keep the window open, we need to pause until the user hits the close "
 "button. To do this, we'll use the ``run`` command in the Arcade library. "
 "The ``run`` command takes no parameters, but still needs parentheses."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:238
+#: ../../source/chapters/05_drawing/drawing.rst:241
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -401,35 +409,35 @@ msgid ""
 "arcade.run()\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:243
+#: ../../source/chapters/05_drawing/drawing.rst:246
 msgid "You should get a window that looks something like this:"
 msgstr ""
 
 msgid ".. image:: chapters\\05_drawing\\empty_window.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:250
+#: ../../source/chapters/05_drawing/drawing.rst:253
 msgid "Clearing the screen"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:257
+#: ../../source/chapters/05_drawing/drawing.rst:260
 msgid ""
 "Right now we have default white as our background. How do we get a "
 "different color? Use the ``set_background_color`` command."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:260
+#: ../../source/chapters/05_drawing/drawing.rst:263
 msgid ""
 "Before we can see the color, we need two more commands. These commands "
 "tell the Arcade library when you are about to start drawing "
 "(``start_render``), and when you are done drawing (``finish_render``)."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:264
+#: ../../source/chapters/05_drawing/drawing.rst:267
 msgid "See below:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:266
+#: ../../source/chapters/05_drawing/drawing.rst:269
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -461,7 +469,7 @@ msgid ""
 "arcade.run()\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:271
+#: ../../source/chapters/05_drawing/drawing.rst:274
 msgid ""
 "Try running the program. If everything is correct, you should get a "
 "window with a colored background."
@@ -470,54 +478,54 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\clear_screen.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:278
+#: ../../source/chapters/05_drawing/drawing.rst:281
 msgid "Specifying Colors"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:286
+#: ../../source/chapters/05_drawing/drawing.rst:289
 msgid ""
 "Wait, where did ``arcade.csscolor.SKY_BLUE`` come from? How do I get to "
 "choose the color I want? There are three ways to specify colors:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:289
+#: ../../source/chapters/05_drawing/drawing.rst:292
 msgid "Look at the `arcade.color API documentation`_ and specify by name."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:290
+#: ../../source/chapters/05_drawing/drawing.rst:293
 msgid "Look at the `arcade.csscolor API documentation`_ and specify by name."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:291
+#: ../../source/chapters/05_drawing/drawing.rst:294
 msgid "Specify the RGB or RGBA color."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:293
+#: ../../source/chapters/05_drawing/drawing.rst:296
 msgid ""
 "To specify colors by name, you can look at the color API documentation "
 "and use something like ``arcade.color.AQUAMARINE`` in your program. Those"
 " color names come from the ColorPicker `color chart`_."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:297
+#: ../../source/chapters/05_drawing/drawing.rst:300
 msgid ""
 "The colors in ``arcade.csscolor`` come from the same standard color names"
 " used in creating web pages. Therefore, I suggest using these color names"
 " because it will also help with web development skills."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:304
+#: ../../source/chapters/05_drawing/drawing.rst:307
 msgid "RGB Values"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:312
+#: ../../source/chapters/05_drawing/drawing.rst:315
 msgid ""
 "If the color you want isn't in the chart, or you just don't want to use a"
 " chart, you can specify colors by \"RGB\" value. RGB stands for Red, "
 "Green, and Blue."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:316
+#: ../../source/chapters/05_drawing/drawing.rst:319
 msgid ""
 "Computers, TVs, color changing LEDs, all work by having three small "
 "lights close together. A red light, a green light, and a blue light. Turn"
@@ -526,7 +534,7 @@ msgid ""
 "green to get yellow."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:322
+#: ../../source/chapters/05_drawing/drawing.rst:325
 msgid ""
 "RGB based monitors work on an *additive* process. You start with black "
 "and add light to get color. This is different than paint or ink, which "
@@ -534,13 +542,13 @@ msgid ""
 "darker colors."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:328
+#: ../../source/chapters/05_drawing/drawing.rst:331
 msgid ""
 "Therefore, keep separate in your mind how light-based RGB color works "
 "from how paint and ink works."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:331
+#: ../../source/chapters/05_drawing/drawing.rst:334
 msgid ""
 "We specify how much red, green, and blue to use by a number range of "
 "0-255. No light is zero. Turn the light on all the way on and it is 255. "
@@ -548,63 +556,63 @@ msgid ""
 "red, no green, no blue. Black. Here are some other examples:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:339
-#: ../../source/chapters/05_drawing/drawing.rst:344
+#: ../../source/chapters/05_drawing/drawing.rst:342
+#: ../../source/chapters/05_drawing/drawing.rst:347
 msgid "Red"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:339
-#: ../../source/chapters/05_drawing/drawing.rst:345
+#: ../../source/chapters/05_drawing/drawing.rst:342
+#: ../../source/chapters/05_drawing/drawing.rst:348
 msgid "Green"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:339
-#: ../../source/chapters/05_drawing/drawing.rst:346
+#: ../../source/chapters/05_drawing/drawing.rst:342
+#: ../../source/chapters/05_drawing/drawing.rst:349
 msgid "Blue"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:339
+#: ../../source/chapters/05_drawing/drawing.rst:342
 msgid "Color"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:341
 #: ../../source/chapters/05_drawing/drawing.rst:344
-#: ../../source/chapters/05_drawing/drawing.rst:345
-#: ../../source/chapters/05_drawing/drawing.rst:346
 #: ../../source/chapters/05_drawing/drawing.rst:347
-#: ../../source/chapters/05_drawing/drawing.rst:406
+#: ../../source/chapters/05_drawing/drawing.rst:348
+#: ../../source/chapters/05_drawing/drawing.rst:349
+#: ../../source/chapters/05_drawing/drawing.rst:350
+#: ../../source/chapters/05_drawing/drawing.rst:409
 msgid "0"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:341
+#: ../../source/chapters/05_drawing/drawing.rst:344
 msgid "Black"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:342
-#: ../../source/chapters/05_drawing/drawing.rst:344
 #: ../../source/chapters/05_drawing/drawing.rst:345
-#: ../../source/chapters/05_drawing/drawing.rst:346
 #: ../../source/chapters/05_drawing/drawing.rst:347
+#: ../../source/chapters/05_drawing/drawing.rst:348
+#: ../../source/chapters/05_drawing/drawing.rst:349
+#: ../../source/chapters/05_drawing/drawing.rst:350
 msgid "255"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:342
+#: ../../source/chapters/05_drawing/drawing.rst:345
 msgid "White"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:343
+#: ../../source/chapters/05_drawing/drawing.rst:346
 msgid "127"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:343
+#: ../../source/chapters/05_drawing/drawing.rst:346
 msgid "Gray"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:347
+#: ../../source/chapters/05_drawing/drawing.rst:350
 msgid "Yellow"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:350
+#: ../../source/chapters/05_drawing/drawing.rst:353
 msgid ""
 "There are tools that let you easily find a color, and then get the RGB "
 "value for it. If you go to the Google search engine and type in \"`color "
@@ -613,21 +621,21 @@ msgid ""
 " Remember, we want the RGB value."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:359
+#: ../../source/chapters/05_drawing/drawing.rst:362
 msgid ".. image:: chapters\\05_drawing\\colorpicker.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:360
+#: ../../source/chapters/05_drawing/drawing.rst:363
 msgid ""
 "After getting the RGB value, specify the color as a set of three numbers "
 "surrounded by parenthesis, like the following code:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:363
+#: ../../source/chapters/05_drawing/drawing.rst:366
 msgid "arcade.set_background_color((189, 55, 180))"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:367
+#: ../../source/chapters/05_drawing/drawing.rst:370
 msgid ""
 "In addition to RGB, you can also specify the \"Alpha\" with an RGBA "
 "value. The \"Alpha Channel\" controls how transparent the color is. If "
@@ -637,18 +645,18 @@ msgid ""
 "transparent and you'll see nothing of the square."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:379
+#: ../../source/chapters/05_drawing/drawing.rst:382
 msgid "What is a Byte?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:386
+#: ../../source/chapters/05_drawing/drawing.rst:389
 msgid ""
 "Notice how the color values go between 0 and 255? That's strange. Why "
 "255? Why not 100? Why not 1000? This requires an explanation of a very "
 "important concept of how computers handle numbers."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:391
+#: ../../source/chapters/05_drawing/drawing.rst:394
 msgid ""
 "You may have heard that computers think in 1's and 0's. That's true. "
 "Everything to the computer is a switch. If there is electricity, we have "
@@ -656,7 +664,7 @@ msgid ""
 "**bit**. We can store those bits in memory."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:397
+#: ../../source/chapters/05_drawing/drawing.rst:400
 msgid ""
 "How do we go from 1's and 0's to numbers we normally use? We group these "
 "1's and 0's together to form **binary numbers**. These combinations of "
@@ -664,83 +672,83 @@ msgid ""
 "base-10 numbers we are used to. Like this:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:404
+#: ../../source/chapters/05_drawing/drawing.rst:407
 msgid "Binary - Base 2"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:404
+#: ../../source/chapters/05_drawing/drawing.rst:407
 msgid "Base 10"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:406
+#: ../../source/chapters/05_drawing/drawing.rst:409
 msgid "0000"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:407
+#: ../../source/chapters/05_drawing/drawing.rst:410
 msgid "0001"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:407
+#: ../../source/chapters/05_drawing/drawing.rst:410
 msgid "1"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:408
+#: ../../source/chapters/05_drawing/drawing.rst:411
 msgid "0010"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:408
+#: ../../source/chapters/05_drawing/drawing.rst:411
 msgid "2"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:409
+#: ../../source/chapters/05_drawing/drawing.rst:412
 msgid "0011"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:409
+#: ../../source/chapters/05_drawing/drawing.rst:412
 msgid "3"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:410
+#: ../../source/chapters/05_drawing/drawing.rst:413
 msgid "0100"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:410
+#: ../../source/chapters/05_drawing/drawing.rst:413
 msgid "4"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:411
+#: ../../source/chapters/05_drawing/drawing.rst:414
 msgid "0101"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:411
+#: ../../source/chapters/05_drawing/drawing.rst:414
 msgid "5"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:412
+#: ../../source/chapters/05_drawing/drawing.rst:415
 msgid "0110"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:412
+#: ../../source/chapters/05_drawing/drawing.rst:415
 msgid "6"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:413
+#: ../../source/chapters/05_drawing/drawing.rst:416
 msgid "0111"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:413
+#: ../../source/chapters/05_drawing/drawing.rst:416
 msgid "7"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:414
+#: ../../source/chapters/05_drawing/drawing.rst:417
 msgid "1000"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:414
+#: ../../source/chapters/05_drawing/drawing.rst:417
 msgid "8"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:417
+#: ../../source/chapters/05_drawing/drawing.rst:420
 msgid ""
 "See the pattern? It is the same pattern we use when we count as a kid. As"
 " a kid we learned to go 0 to 9, then when we hit 9 we go back to 0 and "
@@ -748,36 +756,36 @@ msgid ""
 "And instead of a \"ten's place\" we have a \"two's place.\""
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:423
+#: ../../source/chapters/05_drawing/drawing.rst:426
 msgid ""
 "You might have used \"bases\" in math class long ago. Computers work in "
 "Base-2 because they only have two ways to count, on or off. Humans think "
 "in Base-10 because we have 10 fingers."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:427
+#: ../../source/chapters/05_drawing/drawing.rst:430
 msgid ""
 "Numbers are stored in **bytes**. A byte is a set of eight bits. If we "
 "were to follow the pattern we started above, the largest number we could "
 "store with eight 1's and 0's is:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:431
+#: ../../source/chapters/05_drawing/drawing.rst:434
 msgid "1111 1111"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:435
+#: ../../source/chapters/05_drawing/drawing.rst:438
 msgid "In Base-10 this is 255."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:437
+#: ../../source/chapters/05_drawing/drawing.rst:440
 msgid ""
 "Let's use some math. We have 8 ones and zeros. That give us 2 :sup:`8` = "
 "256 possible combinations. Each combination is a different number. Since "
 "zero a counts as a number, that makes the biggest number 255."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:441
+#: ../../source/chapters/05_drawing/drawing.rst:444
 msgid ""
 "If we had 16 bits, then we'd have 2 :sup:`16` = 65,536 possible "
 "combinations. Or a number from 0-65,535. A 32-bit computer can hold "
@@ -785,17 +793,17 @@ msgid ""
 "really large numbers!"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:445
+#: ../../source/chapters/05_drawing/drawing.rst:448
 msgid ""
 "So because a computer holds colors with one byte for red, one for green, "
 "and one for blue, each color has a value range from 0 - 255."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:449
+#: ../../source/chapters/05_drawing/drawing.rst:452
 msgid "The Coordinate System"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:456
+#: ../../source/chapters/05_drawing/drawing.rst:459
 msgid ""
 "We've learned to specify the color of what we want to draw, the next "
 "thing we need to learn is how to position it. In your math classes, "
@@ -803,30 +811,30 @@ msgid ""
 "looks like this:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:464
+#: ../../source/chapters/05_drawing/drawing.rst:467
 msgid ".. image:: chapters\\05_drawing\\cartesian_coordinate_system.svg"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:464
+#: ../../source/chapters/05_drawing/drawing.rst:467
 msgid ""
 "Source: `Wikipedia: Cartesian coordinate system "
 "<https://commons.wikimedia.org/wiki/File:Cartesian_coordinate_system_(comma).svg>`_"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:466
+#: ../../source/chapters/05_drawing/drawing.rst:469
 msgid ""
 "Our graphics will be drawn using this same system. But there are "
 "additional things to keep in mind:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:469
+#: ../../source/chapters/05_drawing/drawing.rst:472
 msgid ""
 "We will only draw in the upper right quadrant. So 0,0 will be in the "
 "lower left of the screen, and all negative coordinates will be off-"
 "screen."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:471
+#: ../../source/chapters/05_drawing/drawing.rst:474
 msgid ""
 "Each \"point\" will be a pixel. So a window that is 800 pixels wide, will"
 " have x-coordinates that run from 0 to 799. (Zero is one of the pixels, "
@@ -834,33 +842,33 @@ msgid ""
 "computing.)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:476
+#: ../../source/chapters/05_drawing/drawing.rst:479
 msgid "Drawing"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:483
+#: ../../source/chapters/05_drawing/drawing.rst:486
 msgid ""
 "Arcade has \"drawing primitives\" that allow you to create rectangles, "
 "circles, arcs, lines, and text."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:487
+#: ../../source/chapters/05_drawing/drawing.rst:490
 msgid "Drawing Rectangles"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:494
+#: ../../source/chapters/05_drawing/drawing.rst:497
 msgid ""
 "Our screen currently has a sky-blue color. Let's draw a rectangle in the "
 "bottom half of the screen and make that a grass color."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:497
+#: ../../source/chapters/05_drawing/drawing.rst:500
 msgid ""
 "The function we will use is draw_lrtb_rectangle_filled_. It stands for "
 "\"draw left-right-top-bottom rectangle\"."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:503
+#: ../../source/chapters/05_drawing/drawing.rst:506
 msgid ""
 "To make the bottom half of our screen green grass, we'll start with a "
 "left of 0, a right of 599, a top of 300, and a bottom of zero. The order "
@@ -868,7 +876,7 @@ msgid ""
 "the ``start_render`` and before the ``finish_render``."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:508
+#: ../../source/chapters/05_drawing/drawing.rst:511
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -903,14 +911,14 @@ msgid ""
 "arcade.run()\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:513
+#: ../../source/chapters/05_drawing/drawing.rst:516
 msgid "Your window should look like this:"
 msgstr ""
 
 msgid ".. image:: chapters\\05_drawing\\grass.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:518
+#: ../../source/chapters/05_drawing/drawing.rst:521
 msgid ""
 "Sometimes we don't want to specify a rectangle by left-right-top-bottom. "
 "There is also an option to specify it by center x, center y, width, and "
@@ -918,7 +926,7 @@ msgid ""
 "displays a tree trunk:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:525
+#: ../../source/chapters/05_drawing/drawing.rst:528
 msgid ""
 "# Tree trunk\n"
 "# Center of 100, 320\n"
@@ -930,24 +938,24 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\trunk.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:536
+#: ../../source/chapters/05_drawing/drawing.rst:539
 msgid ""
 "There's also a function to draw the outline of a rectangle called "
 "draw_rectangle_outline_. Both of these functions (and many others) have "
 "an optional parameter to tilt the rectangle to a desired angle."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:544
+#: ../../source/chapters/05_drawing/drawing.rst:547
 msgid "Drawing Circles"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:551
+#: ../../source/chapters/05_drawing/drawing.rst:554
 msgid ""
 "We can draw a circle with draw_circle_filled_. This code will draw a "
 "circle with a center of 100, 350 and a radius of 30 pixels."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:556
+#: ../../source/chapters/05_drawing/drawing.rst:559
 msgid ""
 "# Tree top\n"
 "arcade.draw_circle_filled(100, 350, 30, arcade.csscolor.DARK_GREEN)"
@@ -956,18 +964,18 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\circle.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:565
+#: ../../source/chapters/05_drawing/drawing.rst:568
 msgid "Drawing Ellipses"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:572
+#: ../../source/chapters/05_drawing/drawing.rst:575
 msgid ""
 "If you don't want a perfect circle, you can draw a ellipse. Ellipses are "
 "drawn like rectangles. The \"rectangle\" forms the bounds of the ellipse "
 "that's drawn inside it. Examine this code sample:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:576
+#: ../../source/chapters/05_drawing/drawing.rst:579
 msgid ""
 "# Draw an ellipse and rect with\n"
 "# a center of (300, 300)\n"
@@ -978,7 +986,7 @@ msgid ""
 "arcade.draw_ellipse_outline(300, 300, 350, 200, arcade.csscolor.RED, 3)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:585
+#: ../../source/chapters/05_drawing/drawing.rst:588
 msgid ""
 "Now look at what it draws to understand the relation between the "
 "rectangle and ellipse."
@@ -987,13 +995,13 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\ellipse_example.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:590
+#: ../../source/chapters/05_drawing/drawing.rst:593
 msgid ""
 "With the ``draw_ellipse_filled`` function we can make a tree out of a "
 "tall ellipse for the top:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:593
+#: ../../source/chapters/05_drawing/drawing.rst:596
 msgid ""
 "# Another tree, with a trunk and ellipse for top\n"
 "arcade.draw_rectangle_filled(200, 320, 20, 60, arcade.csscolor.SIENNA)\n"
@@ -1003,18 +1011,18 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\ellipse.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:603
+#: ../../source/chapters/05_drawing/drawing.rst:606
 msgid "Drawing Arcs"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:610
+#: ../../source/chapters/05_drawing/drawing.rst:613
 msgid ""
 "You can draw an arc with draw_arc_filled_. Drawing an arc works just like"
 " an ellipse, with the additional parameters for a start angle and an end "
 "angle."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:615
+#: ../../source/chapters/05_drawing/drawing.rst:618
 msgid ""
 "# Another tree, with a trunk and arc for top\n"
 "# Arc is centered at (300, 340) with a width of 60 and height of 100.\n"
@@ -1027,11 +1035,11 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\arc.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:627
+#: ../../source/chapters/05_drawing/drawing.rst:630
 msgid "Triangles"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:634
+#: ../../source/chapters/05_drawing/drawing.rst:637
 msgid ""
 "Triangles are drawn by specifying the coordinates of each point with "
 "draw_triangle_filled_. That requires a bit of thought about where each "
@@ -1039,7 +1047,7 @@ msgid ""
 "This can be used to make a pine tree."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:641
+#: ../../source/chapters/05_drawing/drawing.rst:644
 msgid ""
 "# Another tree, with a trunk and triangle for top\n"
 "# Triangle is made of these three points:\n"
@@ -1052,17 +1060,17 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\triangle.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:654
+#: ../../source/chapters/05_drawing/drawing.rst:657
 msgid "Polygons"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:661
+#: ../../source/chapters/05_drawing/drawing.rst:664
 msgid ""
 "Polygons are drawn with a list of points and the draw_polygon_filled_ "
 "function. In this example we use five points to create a tree-top."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:666
+#: ../../source/chapters/05_drawing/drawing.rst:669
 msgid ""
 "# Draw a tree using a polygon with a list of points\n"
 "arcade.draw_rectangle_filled(500, 320, 20, 60, arcade.csscolor.SIENNA)\n"
@@ -1078,24 +1086,24 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\polygon.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:682
+#: ../../source/chapters/05_drawing/drawing.rst:685
 msgid "Lines"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:689
+#: ../../source/chapters/05_drawing/drawing.rst:692
 msgid ""
 "Line drawing with the draw_line_ function involves specifying a start "
 "point and and end point. Optionally, you can specify the line width. You "
 "can also use draw_line_strip_ to draw a continuous multi-point line."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:696
+#: ../../source/chapters/05_drawing/drawing.rst:699
 msgid ""
 "In our sample image, we'll use several lines to draw rays coming out of a"
 " sun:"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:698
+#: ../../source/chapters/05_drawing/drawing.rst:701
 msgid ""
 "# Draw a sun\n"
 "arcade.draw_circle_filled(500, 550, 40, arcade.color.YELLOW)\n"
@@ -1116,11 +1124,11 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\sun.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:719
+#: ../../source/chapters/05_drawing/drawing.rst:722
 msgid "Text"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:726
+#: ../../source/chapters/05_drawing/drawing.rst:729
 msgid ""
 "Text can be drawn with the draw_text_ command. Just like with the "
 "``print`` function, text must be enclosed in quotes. The text to draw is "
@@ -1128,7 +1136,7 @@ msgid ""
 "Finally the color and font size come next."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:733
+#: ../../source/chapters/05_drawing/drawing.rst:736
 msgid ""
 "# Draw text at (150, 230) with a font size of 24 pts.\n"
 "arcade.draw_text(\"Arbor Day - Plant a Tree!\",\n"
@@ -1139,18 +1147,18 @@ msgstr ""
 msgid ".. image:: chapters\\05_drawing\\text.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:745
+#: ../../source/chapters/05_drawing/drawing.rst:748
 msgid "Full Example Drawing Program"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:747
+#: ../../source/chapters/05_drawing/drawing.rst:750
 msgid "Here's the full code for our example drawing program."
 msgstr ""
 
 msgid ".. image:: chapters\\05_drawing\\full_program.png"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:753
+#: ../../source/chapters/05_drawing/drawing.rst:756
 msgid ""
 "\"\"\"\n"
 "This is a sample program to show how to draw using the Python programming"
@@ -1239,17 +1247,17 @@ msgid ""
 "arcade.run()\n"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:758
+#: ../../source/chapters/05_drawing/drawing.rst:761
 msgid "Specifying Parameters By Name"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:765
+#: ../../source/chapters/05_drawing/drawing.rst:768
 msgid ""
 "It can be confusing to track a lot of parameters given to a function. For"
 " example, here's a call to draw_arc_outline_."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:770
+#: ../../source/chapters/05_drawing/drawing.rst:773
 msgid ""
 "arcade.draw_arc_outline(300,\n"
 "                        340,\n"
@@ -1262,14 +1270,14 @@ msgid ""
 "                        45)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:782
+#: ../../source/chapters/05_drawing/drawing.rst:785
 msgid ""
 "It is not easy to track what number goes with what parameter. Yes, the "
 "parameters have an order to them. But unless a programmer memorizes every"
 " order of every function, you can't quickly tell."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:786
+#: ../../source/chapters/05_drawing/drawing.rst:789
 msgid ""
 "Parameters each have a **parameter name** which can be found in the "
 "documentation. We can use that name to specify each value given to a "
@@ -1277,7 +1285,7 @@ msgid ""
 "increased readability may save time later."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:791
+#: ../../source/chapters/05_drawing/drawing.rst:794
 msgid ""
 "arcade.draw_arc_outline(center_x=300,\n"
 "                        center_y=340,\n"
@@ -1290,15 +1298,15 @@ msgid ""
 "                        tilt_angle=45)"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:804
+#: ../../source/chapters/05_drawing/drawing.rst:807
 msgid "Future Improvements"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:811
+#: ../../source/chapters/05_drawing/drawing.rst:814
 msgid "Looking forward, there's a lot we can do to improve this code."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:813
+#: ../../source/chapters/05_drawing/drawing.rst:816
 msgid ""
 "In :ref:`expressions` we'll learn to use variables to store our parameter"
 " values which will enhance the readability of our program, while giving "
@@ -1307,11 +1315,11 @@ msgid ""
 "create a function like ``draw_tree``."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:819
+#: ../../source/chapters/05_drawing/drawing.rst:822
 msgid "Improving Graphics Performance"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:826
+#: ../../source/chapters/05_drawing/drawing.rst:829
 msgid ""
 "If you create awesome graphics using these commands, you might find later"
 " when creating a game that drawing graphics in this manner is very slow. "
@@ -1320,7 +1328,7 @@ msgid ""
 "by 60, and it is quite a bit for even fast computers to handle."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:833
+#: ../../source/chapters/05_drawing/drawing.rst:836
 msgid ""
 "To speed graphics, computers have separate processors to handle the "
 "display. To use those separate processors we need to draw in two steps. "
@@ -1330,7 +1338,7 @@ msgid ""
 "when playing a game, this is what's happening."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:840
+#: ../../source/chapters/05_drawing/drawing.rst:843
 msgid ""
 "After the graphics information is sent to the graphic processors, anytime"
 " our program wants to draw a tree, house, or rainbow unicorn, it tells "
@@ -1338,7 +1346,7 @@ msgid ""
 "the individual drawing commands."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:845
+#: ../../source/chapters/05_drawing/drawing.rst:848
 msgid ""
 "As we progress through the class, if you find your drawing commands to "
 "get too slow, keep this in mind. The Arcade library supports batch "
@@ -1346,23 +1354,23 @@ msgid ""
 "future chapters."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:851
+#: ../../source/chapters/05_drawing/drawing.rst:854
 msgid "Real-World Applications"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:858
+#: ../../source/chapters/05_drawing/drawing.rst:861
 msgid ""
 "We aren't limited to the Arcade library and its API. Here are a few other"
 " APIs to give you an idea of what's out there."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:861
+#: ../../source/chapters/05_drawing/drawing.rst:864
 msgid ""
 "`OpenPyXL <https://openpyxl.readthedocs.io/en/stable/>`_ for creating and"
 " processing spreadsheets."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:863
+#: ../../source/chapters/05_drawing/drawing.rst:866
 msgid ""
 "`CircuitPython "
 "<https://circuitpython.readthedocs.io/projects/bundle/en/latest/drivers.html>`_"
@@ -1370,13 +1378,13 @@ msgid ""
 "robotic servos."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:865
+#: ../../source/chapters/05_drawing/drawing.rst:868
 msgid ""
 "`NumPy <https://numpy.org/>`_ is a powerful library for working on "
 "anything related to linear algebra."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:867
+#: ../../source/chapters/05_drawing/drawing.rst:870
 msgid ""
 "`Beautiful Soup "
 "<https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_ is a library "
@@ -1384,11 +1392,11 @@ msgid ""
 "process the data in them."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:872
+#: ../../source/chapters/05_drawing/drawing.rst:875
 msgid "Review"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:879
+#: ../../source/chapters/05_drawing/drawing.rst:882
 msgid ""
 "In this chapter we learned how to import a Python module. We learned to "
 "call functions from an imported module. While we are learning how to do "
@@ -1397,99 +1405,99 @@ msgid ""
 "and more."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:884
+#: ../../source/chapters/05_drawing/drawing.rst:887
 msgid ""
 "Colors can be specified in RGB format and are stored in bytes. Each byte "
 "is a group of eight bits, and can hold numbers from 0-255."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:887
+#: ../../source/chapters/05_drawing/drawing.rst:890
 msgid ""
 "We learned how do draw ellipses, arcs, rectangles, triangles, polygons, "
 "lines and text. More importantly we learned how to look up these "
 "functions out of the API documentation."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:893
+#: ../../source/chapters/05_drawing/drawing.rst:896
 msgid "Review Questions"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:895
+#: ../../source/chapters/05_drawing/drawing.rst:898
 msgid "In Python, a library of code is called what?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:896
+#: ../../source/chapters/05_drawing/drawing.rst:899
 msgid ""
 "What do we call a line of code in Python which includes the function "
 "name, parentheses, numbers, text and everything else required perform an "
 "operation?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:898
+#: ../../source/chapters/05_drawing/drawing.rst:901
 msgid ""
 "When we call a function that is inside a library,  what character do we "
 "use to separate the library name and the function name?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:900
+#: ../../source/chapters/05_drawing/drawing.rst:903
 msgid ""
 "According to PEP-8, should we put a space after a comma that separates "
 "parameters?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:901
+#: ../../source/chapters/05_drawing/drawing.rst:904
 msgid ""
 "What function is used to open a window? Just list the function name, "
 "don't include the library or parameters."
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:903
+#: ../../source/chapters/05_drawing/drawing.rst:906
 msgid ""
 "What do we call the names of the functions and parameter order that make "
 "up how we interface with a library?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:905
+#: ../../source/chapters/05_drawing/drawing.rst:908
 msgid "What function name sets the background colors?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:906
+#: ../../source/chapters/05_drawing/drawing.rst:909
 msgid "What function name must happen before you start drawing?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:907
+#: ../../source/chapters/05_drawing/drawing.rst:910
 msgid "What function name happens after drawing?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:908
+#: ../../source/chapters/05_drawing/drawing.rst:911
 msgid "Colors are specified using three numbers that represent what?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:909
+#: ../../source/chapters/05_drawing/drawing.rst:912
 msgid "If a color is turned all the way OFF, what number is used?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:910
+#: ../../source/chapters/05_drawing/drawing.rst:913
 msgid "If a color is turned all the way ON, what number is used?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:911
+#: ../../source/chapters/05_drawing/drawing.rst:914
 msgid "A bit can hold what two numbers?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:912
+#: ../../source/chapters/05_drawing/drawing.rst:915
 msgid "A byte is made up of how many bits?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:913
+#: ../../source/chapters/05_drawing/drawing.rst:916
 msgid "A byte can hold how many different combinations of numbers?"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:917
+#: ../../source/chapters/05_drawing/drawing.rst:920
 msgid "Lab 2: Draw a Picture"
 msgstr ""
 
-#: ../../source/chapters/05_drawing/drawing.rst:919
+#: ../../source/chapters/05_drawing/drawing.rst:922
 msgid ""
 "Apply what you've learned here and use the drawing commands to create "
 "your own artwork in :ref:`lab-02`."

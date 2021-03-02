@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 11:23+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -44,7 +44,7 @@ msgid "Step 1: Start with one these examples:"
 msgstr ""
 
 #: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:14
-msgid "`Move with Walls`_"
+msgid "`Move with Walls`_ (easiest, no scrolling)"
 msgstr ""
 
 #: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:15
@@ -52,7 +52,7 @@ msgid "`Move with a Scrolling Screen`_ (recommended)"
 msgstr ""
 
 #: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:16
-msgid "`Move Between Different Rooms`_"
+msgid "`Move Between Different Rooms`_ (more complex)"
 msgstr ""
 
 #: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:18
@@ -83,33 +83,29 @@ msgstr ""
 "benötigst jedoch nicht mehr als eine Liste für die Wände. Für die Physik-"
 "Engine müssen alle Wände in derselben Liste enthalten sein."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:27
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:26
+msgid ""
+"Step 4: Update the graphics. Use multiple types of blocks for the walls. "
+"(See note below.) Change the character. This is worth 4 points, one point"
+" for each graphic used that wasn't part of the base example. Remember to "
+"put a quick citation in your program just before you load graphics or "
+"sounds."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:34
 msgid ""
 "If you have more than one type of wall block, that's great. But you don't"
 " need more than one wall list. The physics engine requires all walls be "
 "kept in the same list."
 msgstr ""
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:31
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:39
 #, fuzzy
-msgid ""
-"Step 4: Update the graphics. Use multiple types of blocks for the walls. "
-"Maybe change the character. This is worth 4 points, one point for each "
-"graphic used that wasn't part of the base example. Remember to put a "
-"quick citation in your program just before you load graphics or sounds."
-msgstr ""
-"Schritt 4: Aktualisiere die Grafiken. Verwende mehrere Arten von Blöcken "
-"für die Wände. Vielleicht änderst du die Spielfigur. Es gibt maximal 4 "
-"Punkte, ein Punkt für jede verwendete Grafik, die nicht Teil des "
-"Basisbeispiels war. Denke daran, eine kurze Quellenangabe in dein "
-"Programm einzufügen, bevor du Grafiken oder Sounds lädst."
-
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:35
 msgid ""
 "Step 5: Add coins (or something) for the user to collect. 4 points, based"
 " on the complexity of the coin layout. Remember, you can place coins like"
 " we placed wall blocks. If you randomly place coins, you might end up "
-"with coins on top of walls. See the \"Important Part\" around line 75 or "
+"with coins on top of walls. See the \"Important Part\" around line 83 or "
 "so of the example `sprite_no_coins_on_walls.py "
 "<http://arcade.academy/examples/sprite_no_coins_on_walls.html>`_ for how "
 "to avoid this."
@@ -124,7 +120,7 @@ msgstr ""
 "<http://arcade.academy/examples/sprite_no_coins_on_walls.html>`_ herum "
 "erfährst du, wie du dies vermeiden kannst."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:42
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:46
 msgid ""
 "Step 6: Keep score of how many coins were collected, and display on-"
 "screen. 4 points."
@@ -132,17 +128,17 @@ msgstr ""
 "Schritt 6: Zähle mit, wie viele Münzen gesammelt wurden, und zeige den "
 "Wert auf dem Bildschirm an. Maximal 4 Punkte."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:44
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:48
 msgid "Step 7: Add a sound to play each time the user collects a coin. 2 points."
 msgstr ""
 "Schritt 7: Gib jedes Mal einen Sound aus, wenn der Benutzer eine Münze "
 "einsammelt. 2 Punkte."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:47
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:51
 msgid "Don't move the player twice!"
 msgstr "Bewege die Spielfigur nicht doppelt!"
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:49
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:53
 msgid ""
 "The command ``self.physics_engine.update()`` moves the player while "
 "checking for walls. The command ``self.all_sprites_list.update()`` will "
@@ -159,11 +155,11 @@ msgstr ""
 "aktualisiere nur diese Sprites. Zum Beispiel: "
 "``self.coin_list.update()``."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:57
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:61
 msgid "Additional Challenges"
 msgstr "Zusätzliche Herausforderungen"
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:59
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:63
 msgid ""
 "These aren't required for the lab, but I've had students ask in prior "
 "years how to do these:"
@@ -171,7 +167,7 @@ msgstr ""
 "Diese werden für diese Übung nicht benötigt, aber ich wurde in "
 "vergangenen Jahren von Studierenden gefragt, wie das geht:"
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:62
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:66
 msgid ""
 "If you are interested in having the player be able to face left or right,"
 " see the `Sprite Face Left or Right "
@@ -182,7 +178,7 @@ msgstr ""
 " Beispiel `Sprite Face Left or Right "
 "<http://arcade.academy/examples/sprite_face_left_or_right.html>`_."
 
-#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:66
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:70
 msgid ""
 "Want to animate walking? Look at the `Animate your sprites "
 "<http://arcade.academy/examples/sprite_move_animation.html>`_. example."
@@ -203,4 +199,32 @@ msgstr ""
 #~ "Verwende entweder das Beispiel `Move "
 #~ "with Walls`_ oder das Beispiel `Move "
 #~ "with a Scrolling Screen`_."
+
+#~ msgid "`Move with Walls`_"
+#~ msgstr ""
+
+#~ msgid "`Move Between Different Rooms`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Step 4: Update the graphics. Use "
+#~ "multiple types of blocks for the "
+#~ "walls. Maybe change the character. This"
+#~ " is worth 4 points, one point "
+#~ "for each graphic used that wasn't "
+#~ "part of the base example. Remember "
+#~ "to put a quick citation in your"
+#~ " program just before you load "
+#~ "graphics or sounds."
+#~ msgstr ""
+#~ "Schritt 4: Aktualisiere die Grafiken. "
+#~ "Verwende mehrere Arten von Blöcken für"
+#~ " die Wände. Vielleicht änderst du die"
+#~ " Spielfigur. Es gibt maximal 4 "
+#~ "Punkte, ein Punkt für jede verwendete"
+#~ " Grafik, die nicht Teil des "
+#~ "Basisbeispiels war. Denke daran, eine "
+#~ "kurze Quellenangabe in dein Programm "
+#~ "einzufügen, bevor du Grafiken oder "
+#~ "Sounds lädst."
 

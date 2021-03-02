@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 11:18+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -29,6 +29,12 @@ msgid ".. image:: labs\\lab_08_sprites\\lab_8.gif"
 msgstr ".. image:: labs/lab_08_sprites/lab_8.gif"
 
 #: ../../source/labs/lab_08_sprites/sprites.rst:8
+msgid ""
+"Make sure you understand the code from :ref:`sprites`. The example code "
+"there is great to get started with."
+msgstr ""
+
+#: ../../source/labs/lab_08_sprites/sprites.rst:10
 #, fuzzy
 msgid ""
 "Create a player-character sprite. Pick your own image for the sprite, "
@@ -37,22 +43,23 @@ msgstr ""
 "Erstelle ein Sprite für die Spielfigur. Wähle dein eigenes Bild für das "
 "Sprite."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:10
-#, fuzzy
+#: ../../source/labs/lab_08_sprites/sprites.rst:12
 msgid ""
 "Allow the user to move the player move by the keyboard, mouse, or game "
-"pad. Your choice. If you use the mouse, make sure you hide the cursor."
+"pad. Your choice. If you use the mouse, make sure you hide the cursor. "
+"The :ref:`sprites` chapter uses the mouse, you can also look at the "
+"examples on the Arcade website for `Sprite Player Movement "
+"<https://arcade.academy/examples/index.html#sprite-player-movement>`_. "
+"These examples show mouse, keyboard, improved keyboard, and the game "
+"controller."
 msgstr ""
-"Ermögliche dem Benutzer, die Spielfigur mit der Tastatur, der Maus oder "
-"dem Gamepad zu bewegen. Es ist deine Entscheidung. Wenn du die Maus "
-"verwendest, vergewissere dich, dass du sie ausblendest."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:12
+#: ../../source/labs/lab_08_sprites/sprites.rst:18
 #, fuzzy
 msgid "Create \"good\" sprites. Pick your own image for the good sprite."
 msgstr "Erstelle \"gute\" Sprites. Wähle dein eigenes Bild für das Sprite."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:13
+#: ../../source/labs/lab_08_sprites/sprites.rst:19
 msgid ""
 "For each good sprite collected, make the score go up. Play a 'good' sound"
 " when the user collects that item."
@@ -60,12 +67,12 @@ msgstr ""
 "Erhöhe die Punktzahl für jedes eingesammelte gute Sprite. Spiele einen "
 "\"guten\" Sound ab, wenn der Benutzer diesen Gegenstand sammelt."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:15
+#: ../../source/labs/lab_08_sprites/sprites.rst:21
 #, fuzzy
 msgid "Create \"bad\" sprites. Pick your own image for the bad sprite."
 msgstr "Erstelle \"böse\" Sprites. Wählen dein eigenes Bild für das Sprite."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:16
+#: ../../source/labs/lab_08_sprites/sprites.rst:22
 msgid ""
 "For each bad sprite touched, have the score go down. Play a 'bad' sound "
 "when the user collects that item."
@@ -73,11 +80,11 @@ msgstr ""
 "Lasse für jedes böse Sprite die Punktzahl sinken. Spiele einen "
 "\"schlechten\" Sound ab, wenn der Benutzer diesen Gegenstand einsammelt."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:19
+#: ../../source/labs/lab_08_sprites/sprites.rst:25
 msgid "A common mistake at this stage is to overwrite your list:"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:21
+#: ../../source/labs/lab_08_sprites/sprites.rst:27
 msgid ""
 "hit_list = arcade.check_for_collision_with_list(self.player_sprite, "
 "self.good_sprite_list)\n"
@@ -89,13 +96,13 @@ msgid ""
 "    # Process"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:30
+#: ../../source/labs/lab_08_sprites/sprites.rst:36
 msgid ""
 "This would cause bad sprites to be processed twice, because the original "
 "`hit_list` is overwritten. Instead try:"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:33
+#: ../../source/labs/lab_08_sprites/sprites.rst:39
 msgid ""
 "hit_list = arcade.check_for_collision_with_list(self.player_sprite, "
 "self.good_sprite_list)\n"
@@ -107,11 +114,11 @@ msgid ""
 "    # Process"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:42
+#: ../../source/labs/lab_08_sprites/sprites.rst:48
 msgid "or:"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:44
+#: ../../source/labs/lab_08_sprites/sprites.rst:50
 msgid ""
 "good_hit_list = arcade.check_for_collision_with_list(self.player_sprite, "
 "self.good_sprite_list)\n"
@@ -123,7 +130,7 @@ msgid ""
 "    # Process"
 msgstr ""
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:53
+#: ../../source/labs/lab_08_sprites/sprites.rst:59
 #, fuzzy
 msgid ""
 "Animate/move the good sprites. Pick any of the motions we showed, such as"
@@ -133,11 +140,11 @@ msgstr ""
 "Animiere/bewege die guten Sprites. Wähle eine der gezeigten Bewegungen "
 "aus oder erstelle eine eigene."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:56
+#: ../../source/labs/lab_08_sprites/sprites.rst:62
 msgid "Move the bad sprites. Move them differently than the good ones."
 msgstr "Bewege die bösen Sprites. Bewege sie anders als die Guten."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:57
+#: ../../source/labs/lab_08_sprites/sprites.rst:63
 msgid ""
 "If the length of the good sprite list is zero, then don't move any of the"
 " sprites or the character. \"Freeze\" the game. To do this, note what "
@@ -153,7 +160,7 @@ msgstr ""
 "gute Sprites hast. (Überprüfe die Länge der Sprite-Liste.) Wenn du das "
 "zum Laufen gebracht hast, tue etwas Ähnliches in ``on_mouse_motion``."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:62
+#: ../../source/labs/lab_08_sprites/sprites.rst:68
 msgid ""
 "If the length of the good sprite list is zero, draw \"Game Over\" on the "
 "screen."
@@ -161,11 +168,25 @@ msgstr ""
 "Wenn die Länge der guten Sprite-Liste Null ist, zeichne \"Game Over\" auf"
 " dem Bildschirm."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:63
+#: ../../source/labs/lab_08_sprites/sprites.rst:69
 msgid "Add, commit, and push via ``git``."
 msgstr "Add, commit und push mit ``git``."
 
-#: ../../source/labs/lab_08_sprites/sprites.rst:64
+#: ../../source/labs/lab_08_sprites/sprites.rst:70
 msgid "Turn in a URL to your project."
 msgstr "Gib eine URL für dein Projekt ab."
+
+#~ msgid ""
+#~ "Allow the user to move the player"
+#~ " move by the keyboard, mouse, or "
+#~ "game pad. Your choice. If you use"
+#~ " the mouse, make sure you hide "
+#~ "the cursor."
+#~ msgstr ""
+#~ "Ermögliche dem Benutzer, die Spielfigur "
+#~ "mit der Tastatur, der Maus oder "
+#~ "dem Gamepad zu bewegen. Es ist "
+#~ "deine Entscheidung. Wenn du die Maus "
+#~ "verwendest, vergewissere dich, dass du "
+#~ "sie ausblendest."
 

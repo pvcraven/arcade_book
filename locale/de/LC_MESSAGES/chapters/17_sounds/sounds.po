@@ -8,109 +8,119 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-15 08:11+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
-"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../../source/chapters/17_sounds/sounds.rst:4
 msgid "Sound Effects"
 msgstr "Soundeffekte"
 
-#: ../../source/chapters/17_sounds/sounds.rst:6
+msgid ".. image:: chapters\\17_sounds\\sounds.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:10
 msgid "Adding sound to your game isn't too hard. There are two steps:"
 msgstr ""
 "Das Hinzufügen von Sound zu deinem Spiel ist nicht zu schwierig. Es gibt "
 "zwei Schritte:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:8
+#: ../../source/chapters/17_sounds/sounds.rst:12
 msgid "Load the sound"
 msgstr "Lade den Sound"
 
-#: ../../source/chapters/17_sounds/sounds.rst:9
+#: ../../source/chapters/17_sounds/sounds.rst:13
 msgid "Play the sound"
 msgstr "Spiele den Sound ab"
 
-#: ../../source/chapters/17_sounds/sounds.rst:11
+#: ../../source/chapters/17_sounds/sounds.rst:15
 msgid ""
-"For these examples, I'm using a sound file called ``laser.ogg`` that you can "
-"`download here <../../_static/laser.ogg>`_. Make sure you save the file in "
-"the same directory as any Python program that tries to use it."
+"For these examples, I'm using a sound file called ``laser.ogg`` that you "
+"can `download here <../../_static/laser.ogg>`_. Make sure you save the "
+"file in the same directory as any Python program that tries to use it."
 msgstr ""
-"Für diese Beispiele verwende ich eine Sounddatei mit dem Namen ``laser."
-"ogg``, die Sie hier herunterladen können `<../../_static/laser.ogg>`_. "
-"Stelle sicher, dass du die Datei im selben Verzeichnis wie das Python-"
-"Programm speicherst, das versucht, sie zu verwenden."
+"Für diese Beispiele verwende ich eine Sounddatei mit dem Namen "
+"``laser.ogg``, die Sie hier herunterladen können "
+"`<../../_static/laser.ogg>`_. Stelle sicher, dass du die Datei im selben "
+"Verzeichnis wie das Python-Programm speicherst, das versucht, sie zu "
+"verwenden."
 
-#: ../../source/chapters/17_sounds/sounds.rst:16
+#: ../../source/chapters/17_sounds/sounds.rst:20
 msgid "Loading Sounds"
 msgstr "Laden von Sounds"
 
-#: ../../source/chapters/17_sounds/sounds.rst:18
+msgid ".. image:: chapters\\17_sounds\\loading_sound.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:26
 msgid ""
 "The code below creates a new variable called ``laser_sound``. It calls "
 "arcades ``load_sound`` function. It passes the filename of our sound."
 msgstr ""
-"Der folgende Code erstellt eine neue Variable mit dem Namen ``laser_sound``. "
-"Er ruft die Funktion ``load_sound`` auf und übergibt den Dateinamen unseres "
-"Sounds."
+"Der folgende Code erstellt eine neue Variable mit dem Namen "
+"``laser_sound``. Er ruft die Funktion ``load_sound`` auf und übergibt den"
+" Dateinamen unseres Sounds."
 
-#: ../../source/chapters/17_sounds/sounds.rst:21
+#: ../../source/chapters/17_sounds/sounds.rst:29
 msgid "laser_sound = arcade.load_sound(\"laser.ogg\")"
 msgstr "laser_sound = arcade.load_sound(\"laser.ogg\")"
 
-#: ../../source/chapters/17_sounds/sounds.rst:25
+#: ../../source/chapters/17_sounds/sounds.rst:33
 msgid ""
-"For this to work, you need to have a sound downloaded and named ``laser."
-"ogg`` in the same directory as your Python file. The computer will not find "
-"the sound if it is in a different directory."
+"For this to work, you need to have a sound downloaded and named "
+"``laser.ogg`` in the same directory as your Python file. The computer "
+"will not find the sound if it is in a different directory."
 msgstr ""
-"Damit dies funktioniert, musst du die eine Sounddatei mit dem Namen ``laser."
-"ogg`` in dasselbe Verzeichnis wie deine Python-Datei herunterladen. Der "
-"Rechner findet den Sound nicht, wenn sie sich in einem anderen Verzeichnis "
-"befindet."
+"Damit dies funktioniert, musst du die eine Sounddatei mit dem Namen "
+"``laser.ogg`` in dasselbe Verzeichnis wie deine Python-Datei "
+"herunterladen. Der Rechner findet den Sound nicht, wenn sie sich in einem"
+" anderen Verzeichnis befindet."
 
-#: ../../source/chapters/17_sounds/sounds.rst:29
+#: ../../source/chapters/17_sounds/sounds.rst:37
 msgid ""
-"This loads the sound, but does not play it. We only want to load the sound "
-"once. We don't want to load the sound off the disk every time we play it. It "
-"can be kept in memory."
+"This loads the sound, but does not play it. We only want to load the "
+"sound once. We don't want to load the sound off the disk every time we "
+"play it. It can be kept in memory."
 msgstr ""
-"Dadurch wird der Sound geladen, aber nicht abgespielt. Wir wollen den Sound "
-"nur einmal laden. Wir möchten den Sound nicht jedes Mal von der Festplatte "
-"laden, wenn wir ihn abspielen. Er kann im Speicher bleiben."
+"Dadurch wird der Sound geladen, aber nicht abgespielt. Wir wollen den "
+"Sound nur einmal laden. Wir möchten den Sound nicht jedes Mal von der "
+"Festplatte laden, wenn wir ihn abspielen. Er kann im Speicher bleiben."
 
-#: ../../source/chapters/17_sounds/sounds.rst:34
+#: ../../source/chapters/17_sounds/sounds.rst:42
 msgid "Playing Sounds"
 msgstr "Sounds abspielen"
 
-#: ../../source/chapters/17_sounds/sounds.rst:36
+msgid ".. image:: chapters\\17_sounds\\headphones.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:48
 msgid ""
-"The code to play sounds is straight-forward. Just call the ``play_sound`` "
-"function, and pass in the variable that we set equal to the sound we loaded:"
+"The code to play sounds is straight-forward. Just call the ``play_sound``"
+" function, and pass in the variable that we set equal to the sound we "
+"loaded:"
 msgstr ""
 "Der Code zum Abspielen von Sounds ist einfach. Rufe einfach die Funktion "
 "``play_sound`` auf und übergebe die Variable, die wir auf den geladenen "
 "Sound gesetzt haben:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:39
+#: ../../source/chapters/17_sounds/sounds.rst:51
 msgid "arcade.play_sound(laser_sound)"
 msgstr "arcade.play_sound(laser_sound)"
 
-#: ../../source/chapters/17_sounds/sounds.rst:43
-msgid ""
-"Putting the two together, you might think we could do this to play sounds:"
+#: ../../source/chapters/17_sounds/sounds.rst:55
+msgid "Putting the two together, you might think we could do this to play sounds:"
 msgstr ""
-"Wenn man die beiden zusammenfasst, könnte man denken, wir könnten dies tun, "
-"um Sounds abzuspielen:"
+"Wenn man die beiden zusammenfasst, könnte man denken, wir könnten dies "
+"tun, um Sounds abzuspielen:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:45
+#: ../../source/chapters/17_sounds/sounds.rst:57
 msgid ""
 "import arcade\n"
 "\n"
@@ -122,20 +132,20 @@ msgstr ""
 "laser_sound = arcade.load_sound(\"laser.ogg\")\n"
 "arcade.play_sound(laser_sound)"
 
-#: ../../source/chapters/17_sounds/sounds.rst:52
+#: ../../source/chapters/17_sounds/sounds.rst:64
 msgid ""
 "But that doesn't work. The program ends before the sound has a chance to "
 "play. The ``play_sound`` button doesn't pause while the sound plays, it "
 "returns right away and keeps going. This was a similar issue that we had "
 "when we opened a window, and we can solve it the same way:"
 msgstr ""
-"Das geht aber nicht. Das Programm endet, bevor der Sound abgespielt werden "
-"kann. Die Funktion ``play_sound`` pausiert nicht, während der Sound "
-"abgespielt wird, sie kehrt sofort zurück und das Programm geht weiter. Wir "
-"hatten ein ähnliches Problem, als wir ein Fenster öffneten, und wir können "
-"es auf dieselbe Weise lösen:"
+"Das geht aber nicht. Das Programm endet, bevor der Sound abgespielt "
+"werden kann. Die Funktion ``play_sound`` pausiert nicht, während der "
+"Sound abgespielt wird, sie kehrt sofort zurück und das Programm geht "
+"weiter. Wir hatten ein ähnliches Problem, als wir ein Fenster öffneten, "
+"und wir können es auf dieselbe Weise lösen:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:57
+#: ../../source/chapters/17_sounds/sounds.rst:69
 msgid ""
 "import arcade\n"
 "\n"
@@ -151,29 +161,32 @@ msgstr ""
 "arcade.play_sound(laser_sound)\n"
 "arcade.run()"
 
-#: ../../source/chapters/17_sounds/sounds.rst:67
+#: ../../source/chapters/17_sounds/sounds.rst:79
 msgid ""
-"For this reason, I recommend loading the sound in the ``__init__`` method of "
-"the class that will play the sound."
+"For this reason, I recommend loading the sound in the ``__init__`` method"
+" of the class that will play the sound."
 msgstr ""
 "Aus diesem Grund empfehle ich, den Sound in der ``__init__``-Methode der "
 "Klasse zu laden, die den Sound abspielen soll."
 
-#: ../../source/chapters/17_sounds/sounds.rst:71
+#: ../../source/chapters/17_sounds/sounds.rst:83
 msgid "Triggering Sounds"
 msgstr "Sounds auslösen"
 
-#: ../../source/chapters/17_sounds/sounds.rst:73
+msgid ".. image:: chapters\\17_sounds\\switch.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:89
 msgid ""
-"We want to play the sound when something happens. So this example loads the "
-"sound once during the ``__init__``. When the user hits the space bar, that "
-"is when we trigger the sound to play."
+"We want to play the sound when something happens. So this example loads "
+"the sound once during the ``__init__``. When the user hits the space bar,"
+" that is when we trigger the sound to play."
 msgstr ""
 "Wir wollen den Sound abspielen, wenn etwas passiert. Also lädt dieses "
-"Beispiel den Sound einmal während des ``__init__``. Wenn der Benutzer die "
-"Leertaste drückt, wird der Sound ausgelöst."
+"Beispiel den Sound einmal während des ``__init__``. Wenn der Benutzer die"
+" Leertaste drückt, wird der Sound ausgelöst."
 
-#: ../../source/chapters/17_sounds/sounds.rst:77
+#: ../../source/chapters/17_sounds/sounds.rst:93
 msgid ""
 "import arcade\n"
 "\n"
@@ -223,99 +236,104 @@ msgstr ""
 "\n"
 "main()"
 
-#: ../../source/chapters/17_sounds/sounds.rst:106
+#: ../../source/chapters/17_sounds/sounds.rst:122
 msgid "Finding Sounds"
 msgstr "Sounds finden"
 
-#: ../../source/chapters/17_sounds/sounds.rst:108
+#: ../../source/chapters/17_sounds/sounds.rst:124
 msgid "Great places to find free sounds to use in your program:"
-msgstr ""
-"Tolle Webseiten, um kostenlose Sounds für dein Programm zu finden, sind:"
+msgstr "Tolle Webseiten, um kostenlose Sounds für dein Programm zu finden, sind:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:110
+#: ../../source/chapters/17_sounds/sounds.rst:126
 msgid ""
-"`OpenGameArt.org <http://opengameart.org/art-search-advanced?"
-"keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_"
+"`OpenGameArt.org <http://opengameart.org/art-search-"
+"advanced?keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_"
 msgstr ""
-"`OpenGameArt.org <http://opengameart.org/art-search-advanced?"
-"keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_"
+"`OpenGameArt.org <http://opengameart.org/art-search-"
+"advanced?keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_"
 
-#: ../../source/chapters/17_sounds/sounds.rst:111
+#: ../../source/chapters/17_sounds/sounds.rst:127
 msgid ""
 "`www.freesound.org <http://www.freesound.org/>`_ is ok, but requires a "
 "login, which is a pain."
 msgstr ""
-"`www.freesound.org <http://www.freesound.org/>`_ ist in Ordnung, erfordert "
-"aber ein Login, was ziemlich nervt."
+"`www.freesound.org <http://www.freesound.org/>`_ ist in Ordnung, "
+"erfordert aber ein Login, was ziemlich nervt."
 
-#: ../../source/chapters/17_sounds/sounds.rst:113
+#: ../../source/chapters/17_sounds/sounds.rst:129
 msgid ""
-"`Kenney.nl <http://kenney.nl/assets?q=audio>`_ has a few free sound packs "
-"you can download, and several that are cheap."
+"`Kenney.nl <http://kenney.nl/assets?q=audio>`_ has a few free sound packs"
+" you can download, and several that are cheap."
 msgstr ""
 "`Kenney.nl <http://kenney.nl/assets?q=audio>`_ hat ein paar kostenlose "
-"Soundpakete, die du herunterladen kannst, und einige, die man günstig kaufen "
-"kann."
+"Soundpakete, die du herunterladen kannst, und einige, die man günstig "
+"kaufen kann."
 
-#: ../../source/chapters/17_sounds/sounds.rst:117
+#: ../../source/chapters/17_sounds/sounds.rst:133
 msgid "Sound File Formats"
 msgstr "Dateiformate für Sounds"
 
-#: ../../source/chapters/17_sounds/sounds.rst:119
-msgid ""
-"There are several types of `sound file formats`_ that you can find sounds in:"
+msgid ".. image:: chapters\\17_sounds\\waves.svg"
 msgstr ""
-"Es gibt verschiedene Arten von Audiodateiformaten (`sound file formats`_), "
-"in denen man Sounds finden kann:"
 
-#: ../../source/chapters/17_sounds/sounds.rst:123
+#: ../../source/chapters/17_sounds/sounds.rst:139
+msgid ""
+"There are several types of `sound file formats`_ that you can find sounds"
+" in:"
+msgstr ""
+"Es gibt verschiedene Arten von Audiodateiformaten (`sound file "
+"formats`_), in denen man Sounds finden kann:"
+
+#: ../../source/chapters/17_sounds/sounds.rst:143
 msgid ""
 "``.wav`` - This is a raw \"wave\" format. The sound is not compressed at "
 "all. You do not need a special library to decompress the sound, but the "
 "sound file itself can be rather large."
 msgstr ""
 "``.wav`` - Dies ist ein rohes \"Wave\" -Format. Der Sound wird überhaupt "
-"nicht komprimiert. Man benötigt keine spezielle Bibliothek, um den Sound zu "
-"dekomprimieren, aber die Sounddatei selbst kann ziemlich groß sein."
+"nicht komprimiert. Man benötigt keine spezielle Bibliothek, um den Sound "
+"zu dekomprimieren, aber die Sounddatei selbst kann ziemlich groß sein."
 
-#: ../../source/chapters/17_sounds/sounds.rst:125
+#: ../../source/chapters/17_sounds/sounds.rst:145
 msgid ""
-"``.mp3`` - MPEG Layer III Audio (mp3) is one of the most popular compressed "
-"sound file formats. This file format is what enabled on-line music to become "
-"popular. However some of the compression algorithms have patents on them, "
-"making it not as suitable for free software."
+"``.mp3`` - MPEG Layer III Audio (mp3) is one of the most popular "
+"compressed sound file formats. This file format is what enabled on-line "
+"music to become popular. However some of the compression algorithms have "
+"patents on them, making it not as suitable for free software."
 msgstr ""
 "``.mp3`` - MPEG Layer III Audio (mp3) ist eines der beliebtesten "
-"komprimierten Audiodateiformate. Durch dieses Dateiformat wurde Online-Musik "
-"immer beliebter. Einige der Komprimierungsalgorithmen sind jedoch "
+"komprimierten Audiodateiformate. Durch dieses Dateiformat wurde Online-"
+"Musik immer beliebter. Einige der Komprimierungsalgorithmen sind jedoch "
 "patentiert, so dass sie für freie Software nicht geeignet sind."
 
-#: ../../source/chapters/17_sounds/sounds.rst:128
+#: ../../source/chapters/17_sounds/sounds.rst:148
 msgid "``.m4a`` - Apple's file format for compressed, but unprotected audio."
-msgstr ""
-"``.m4a`` - Apples Dateiformat für komprimiertes, aber ungeschütztes Audio."
+msgstr "``.m4a`` - Apples Dateiformat für komprimiertes, aber ungeschütztes Audio."
 
-#: ../../source/chapters/17_sounds/sounds.rst:129
+#: ../../source/chapters/17_sounds/sounds.rst:149
 msgid ""
-"``.ogg`` - A open-source sound file that uses Ogg-Vorbis for compression. A "
-"less popular but patent-free method of sound storage."
+"``.ogg`` - A open-source sound file that uses Ogg-Vorbis for compression."
+" A less popular but patent-free method of sound storage."
 msgstr ""
-"``.ogg`` - Eine Audiodatei, die Ogg-Vorbis (Open Source) zur Komprimierung "
-"verwendet. Eine weniger beliebte, aber patentfreie Methode zur "
-"Tonspeicherung."
+"``.ogg`` - Eine Audiodatei, die Ogg-Vorbis (Open Source) zur "
+"Komprimierung verwendet. Eine weniger beliebte, aber patentfreie Methode "
+"zur Tonspeicherung."
 
-#: ../../source/chapters/17_sounds/sounds.rst:132
+#: ../../source/chapters/17_sounds/sounds.rst:152
 msgid ""
-"Arcade should be able to play files in either the mp3 or ogg format. If you "
-"have issues getting it to work, try converting the sound to a raw wav format."
+"Arcade should be able to play files in either the mp3 or ogg format. If "
+"you have issues getting it to work, try converting the sound to a raw wav"
+" format."
 msgstr ""
-"Arcade sollte in der Lage sein, Dateien im MP3- oder Ogg-Format abzuspielen. "
-"Konvertiere den Sound in ein rohes WAV-Format, wenn du damit Probleme hast."
+"Arcade sollte in der Lage sein, Dateien im MP3- oder Ogg-Format "
+"abzuspielen. Konvertiere den Sound in ein rohes WAV-Format, wenn du damit"
+" Probleme hast."
 
-#: ../../source/chapters/17_sounds/sounds.rst:135
+#: ../../source/chapters/17_sounds/sounds.rst:155
 msgid ""
-"If you need to convert file formats, or trim a sound file, I suggest using "
-"the program Audacity_."
+"If you need to convert file formats, or trim a sound file, I suggest "
+"using the program Audacity_."
 msgstr ""
-"Wenn du Dateiformate konvertieren oder eine Audiodatei zuschneiden musst, "
-"empfehle ich die Verwendung des Programms Audacity_."
+"Wenn du Dateiformate konvertieren oder eine Audiodatei zuschneiden musst,"
+" empfehle ich die Verwendung des Programms Audacity_."
+

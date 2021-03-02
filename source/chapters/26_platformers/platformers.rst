@@ -3,6 +3,13 @@
 Platformers
 ===========
 
+.. warning::
+
+   This chapter is out-dated. See the
+   `Simple Platformer Tutorial <https://arcade.academy/examples/platform_tutorial/index.html>`_.
+   Step 9 is a nice starting point.
+   For more advanced usage, see `Platformer with Physics <https://arcade.academy/tutorials/pymunk_platformer/index.html>`_.
+
 Ever wanted to create your own platformer?
 It isn't too hard! Here's an example to get started.
 

@@ -8,110 +8,238 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-11 14:00+0200\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-12 10:26+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
 "Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"Generated-By: Babel 2.8.0\n"
 
-#: ../../source/chapters/08_functions/functions.rst:2
+#: ../../source/chapters/08_functions/functions.rst:4
 msgid "Creating Functions"
 msgstr "Funktionen erstellen"
 
-#: ../../source/chapters/08_functions/functions.rst:5
+msgid ""
+".. image:: chapters\\08_functions\\../../images/video.svg\n"
+"   :alt: Video link"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:11
+msgid "Video: https://youtu.be/966lu1_Ht1o"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:12
+msgid "Slides: https://slides.com/paulcraven/deck-adf6d9"
+msgstr ""
+
+msgid ".. image:: chapters\\08_functions\\teacher.svg"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:18
+msgid ""
+"In the last chapter we learned how to create variables and use them in "
+"expressions. In this chapter we are going to build on that knowledge to "
+"create **functions**. Functions are groups of commands we give to the "
+"computer. We've already *used* functions, for example the ``print`` "
+"function and the ``draw_line`` function. Now we are going to learn to "
+"*make our own* functions."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:25
+msgid "Functions help us by:"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:27
+msgid ""
+"**Making our code easier to read.** By writing our own functions we can "
+"have functions to ``draw_tree`` and ``draw_horse`` which is a lot easier "
+"to read than long blocks of code that just draw lines and rectangles."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:30
+msgid ""
+"**Abstracting our code.** By using variables, we can abstract our code "
+"and tell a function *where* to draw a tree, *how big* to draw it, and "
+"*what color* to draw it. This is a lot more flexible than one set of code"
+" that can only draw a tree in one exact place and one exact size."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:34
+msgid ""
+"**Re-using our code.** By calling a function, I can re-use code over and "
+"over. If it takes ten lines of code to draw a horse, I can put that in a "
+"function. Then if I want to draw three horses, I don't need thirty lines "
+"of code to do it."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:38
+msgid ""
+"**Dividing a complex problem into simpler ones.** The key to programming,"
+" and a lot of things in life, is to learn how to take a large, "
+"overwhelmingly complex problem, and divide it into small problems. For "
+"example, we have functions that can display dots on the screen. Then "
+"there functions that can draw a line using those dots. Then functions "
+"that can draw triangles using those lines. Then functions that can draw "
+"trees using those triangles. Then finally a forest function that uses the"
+" trees function. Drawing a complex forest is broken down into simple "
+"functions that build off each other."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:48
+msgid ""
+"**Making code easier to maintain.** If there is a problem in your "
+"program, it is easier to find when your program is divided into parts. If"
+" your car isn't moving correctly, and there is a ``move_car`` function, "
+"that's easy to find. Plus, if all cars move using that function, I can "
+"fix a problem for every car in my game in one spot."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:55
 msgid "Creating Simple Functions"
 msgstr "Einfache Funktionen erstellen"
 
-#: ../../source/chapters/08_functions/functions.rst:7
-msgid "Defining a function is rather easy."
+#: ../../source/chapters/08_functions/functions.rst:57
+#, fuzzy
+msgid "Defining a function in Python is easy. Here's an example:"
 msgstr "Eine Funktion zu definieren ist recht einfach."
 
-#: ../../source/chapters/08_functions/functions.rst:9
+#: ../../source/chapters/08_functions/functions.rst:59
+#, fuzzy
+msgid "Defining a function."
+msgstr "Eine Funktion zu definieren ist recht einfach."
+
+#: ../../source/chapters/08_functions/functions.rst:59
+#, fuzzy
+msgid ""
+"def print_hello():\n"
+"    \"\"\" This is a comment that describes the function. \"\"\"\n"
+"    print(\"Hello!\")"
+msgstr ""
+"def print_hello():\n"
+"    \"\"\" This is a comment that describes the function. \"\"\"\n"
+"    print(\"Hello!\")\n"
+"\n"
+"\n"
+"print_hello()\n"
+"print_hello()"
+
+#: ../../source/chapters/08_functions/functions.rst:67
+msgid "To write a function:"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:69
 msgid "Start with the keyword ``def``, which is short for \"define.\""
 msgstr "Fange mit dem Schlüsselwort ``def``, kurz für *define*, an."
 
-#: ../../source/chapters/08_functions/functions.rst:10
+#: ../../source/chapters/08_functions/functions.rst:70
+#, fuzzy
 msgid ""
-"Next, give the function a name. There are rules for function names. They "
-"must:"
+"Next, give the function a name. Function names follow the same rules that"
+" variable names follow. They must:"
 msgstr ""
-"Als nächstes gib der Funktion einen Namen. Es gibt Regeln für Funktionsnamen."
+"Als nächstes gib der Funktion einen Namen. Es gibt Regeln für "
+"Funktionsnamen."
 
-#: ../../source/chapters/08_functions/functions.rst:12
-msgid "Start with a lower case letter."
+#: ../../source/chapters/08_functions/functions.rst:73
+#, fuzzy
+msgid "Start with a lower case letter. (Or in special cases, an underscore.)"
 msgstr "Sie müssen mit einem Kleinbuchstaben anfangen."
 
-#: ../../source/chapters/08_functions/functions.rst:13
+#: ../../source/chapters/08_functions/functions.rst:74
 msgid "After the first letter, only use letters, numbers, and underscores."
 msgstr ""
-"Nach dem ersten Buchstaben dürfen nur weitere Buchstaben, Ziffern und der "
-"Unterstrich folgen."
+"Nach dem ersten Buchstaben dürfen nur weitere Buchstaben, Ziffern und der"
+" Unterstrich folgen."
 
-#: ../../source/chapters/08_functions/functions.rst:14
+#: ../../source/chapters/08_functions/functions.rst:75
 msgid "Spaces are not allowed. Use underscores instead."
 msgstr "Leerzeichen sind nicht erlaubt. Verwende stattdessen Unterstriche."
 
-#: ../../source/chapters/08_functions/functions.rst:15
+#: ../../source/chapters/08_functions/functions.rst:76
 msgid ""
-"While upper-case letters can be used, function names are normally all lower-"
-"case."
+"While upper-case letters can be used, function names are normally all "
+"lower-case."
 msgstr ""
-"Obwohl Großbuchstaben erlaubt sind, bestehen Funktionsnamen normalerweise "
-"nur aus Kleinbuchstaben."
+"Obwohl Großbuchstaben erlaubt sind, bestehen Funktionsnamen normalerweise"
+" nur aus Kleinbuchstaben."
 
-#: ../../source/chapters/08_functions/functions.rst:18
+#: ../../source/chapters/08_functions/functions.rst:79
 msgid ""
 "After that, we have a set of parenthesis. Inside the parenthesis will go "
 "**parameters**. We'll explain those in a bit."
 msgstr ""
-"Danach folgt ein Klammernpaar. In das Klammernpaar kommen die **Parameter**. "
-"Wir erklären das in Kürze."
+"Danach folgt ein Klammernpaar. In das Klammernpaar kommen die "
+"**Parameter**. Wir erklären das in Kürze."
 
-#: ../../source/chapters/08_functions/functions.rst:20
+#: ../../source/chapters/08_functions/functions.rst:81
 msgid "Next, a colon."
 msgstr "Danach ein Doppelpunkt."
 
-#: ../../source/chapters/08_functions/functions.rst:21
-msgid "Everything that is part of the function will be indented four spaces."
-msgstr ""
-"Alles was Teil der Funktion ist, wird vier Leerzeichen weit eingerückt."
-
-#: ../../source/chapters/08_functions/functions.rst:22
+#: ../../source/chapters/08_functions/functions.rst:82
 msgid ""
-"Usually we start a function with a multi-line comment that explains what the "
-"function does."
+"All the code that goes in the function will be on the following lines. "
+"That code must be indented four spaces. The first line that is not "
+"indented, signifies the function is done."
 msgstr ""
-"Üblicherweise starten wir eine Funktion mit einem mehrzeiligen Kommentar, "
-"der erklärt, was die Funktion tut."
 
-#: ../../source/chapters/08_functions/functions.rst:27
+#: ../../source/chapters/08_functions/functions.rst:85
 msgid ""
-"Function definitions go *below* the ``import`` statements, and *above* the "
-"rest of the program. While you can put them somewhere else, you shouldn't."
+"Usually we start a function with a multi-line comment that explains what "
+"the function does."
 msgstr ""
-"Funktionsdefinition gehören hinter die ``import``-Anweisungen und vor den "
-"Rest des Programms. Du könntest sie auch woanders hinschreiben, aber das "
-"solltest du nicht tun."
+"Üblicherweise starten wir eine Funktion mit einem mehrzeiligen Kommentar,"
+" der erklärt, was die Funktion tut."
 
-#: ../../source/chapters/08_functions/functions.rst:30
-msgid "Below is a program that defines and uses the function twice."
+#: ../../source/chapters/08_functions/functions.rst:90
+msgid ""
+"Function definitions go *below* the ``import`` statements, and *above* "
+"the rest of the program. While you can put them somewhere else, you "
+"shouldn't."
+msgstr ""
+"Funktionsdefinition gehören hinter die ``import``-Anweisungen und vor den"
+" Rest des Programms. Du könntest sie auch woanders hinschreiben, aber das"
+" solltest du nicht tun."
+
+#: ../../source/chapters/08_functions/functions.rst:93
+msgid ""
+"Defining a function doesn't cause the computer to *do* anything. It is "
+"like giving a recipe to the computer. Give someone a recipe for banana "
+"bread and they know how to make it. They haven't actually made it yet, "
+"they just know how. You have to *tell* them to make banana bread. That "
+"is, after we **define** the function we must **call** the function before"
+" the code in it runs."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:101
+msgid ""
+"To call a function, type the function name and follow it by parenthesis. "
+"Do not use ``def``, that is only used when we define what the function "
+"does, not when we tell the computer to run it."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:105
+#, fuzzy
+msgid "Below is a program that defines ``print_hello``, then calls it twice."
 msgstr ""
 "Unten findest du ein Programm, das eine Funktion definiert und zweimal "
 "verwendet."
 
-#: ../../source/chapters/08_functions/functions.rst:33
+#: ../../source/chapters/08_functions/functions.rst:108
+msgid "Defining and calling a function."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:108
+#, fuzzy
 msgid ""
 "def print_hello():\n"
 "    \"\"\" This is a comment that describes the function. \"\"\"\n"
 "    print(\"Hello!\")\n"
 "\n"
-"\n"
+"# This calls our function twice.\n"
 "print_hello()\n"
 "print_hello()"
 msgstr ""
@@ -123,15 +251,22 @@ msgstr ""
 "print_hello()\n"
 "print_hello()"
 
-#: ../../source/chapters/08_functions/functions.rst:45
+#: ../../source/chapters/08_functions/functions.rst:121
+#, fuzzy
 msgid ""
 "You can define and use multiple functions. But all function definitions "
-"should go before the main code."
+"should go before the main code. In this example, see how we've defined "
+"two functions and then we call them in our main code."
 msgstr ""
-"Du kannst mehrere Funktionen definieren und verwenden, aber alle Funktionen "
-"sollten vor dem Hauptprogramm stehen."
+"Du kannst mehrere Funktionen definieren und verwenden, aber alle "
+"Funktionen sollten vor dem Hauptprogramm stehen."
 
-#: ../../source/chapters/08_functions/functions.rst:49
+#: ../../source/chapters/08_functions/functions.rst:125
+msgid "Defining and calling multiple functions."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:125
+#, fuzzy
 msgid ""
 "def print_hello():\n"
 "    print(\"Hello!\")\n"
@@ -140,7 +275,8 @@ msgid ""
 "def print_goodbye():\n"
 "    print(\"Bye!\")\n"
 "\n"
-"\n"
+"# Here is the main code, after all the function\n"
+"# definitions.\n"
 "print_hello()\n"
 "print_goodbye()"
 msgstr ""
@@ -155,17 +291,34 @@ msgstr ""
 "print_hello()\n"
 "print_goodbye()"
 
-#: ../../source/chapters/08_functions/functions.rst:64
+#: ../../source/chapters/08_functions/functions.rst:144
+#, fuzzy
+msgid "Creating a Main Function"
+msgstr "Funktionen erstellen"
+
+#: ../../source/chapters/08_functions/functions.rst:146
 msgid ""
-"Actually, almost *all* code should go in a function. It is a good practice "
-"to put the main starting point of your program in a function called ``main`` "
-"and call it."
+"Actually, almost *all* code should go in a function. It is a good "
+"practice to put the main starting point of your program in a function "
+"called ``main`` and call it."
 msgstr ""
 "Es sollte sogar fast der gesamte Programmcode in Funktionen stehen. Es "
 "gehört zu einer vorbildlichen Vorgehensweise, den Startpunkt deines "
 "Programms in eine Funktion namens ``main`` zu packen und aufzurufen,"
 
-#: ../../source/chapters/08_functions/functions.rst:68
+#: ../../source/chapters/08_functions/functions.rst:150
+msgid ""
+"In this next example, we do just that. See how we took the two function "
+"calls and put them in a ``main`` function. Also, note that we call "
+"``main`` at the end. Without that, our program won't do anything at all."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:154
+msgid "Using a ``main`` function."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:154
+#, fuzzy
 msgid ""
 "def print_hello():\n"
 "    print(\"Hello!\")\n"
@@ -181,7 +334,7 @@ msgid ""
 "    print_goodbye()\n"
 "\n"
 "\n"
-"# Run the main program\n"
+"# Call (run) the main function\n"
 "main()"
 msgstr ""
 "def print_hello():\n"
@@ -201,21 +354,37 @@ msgstr ""
 "# Run the main program\n"
 "main()"
 
-#: ../../source/chapters/08_functions/functions.rst:90
+#: ../../source/chapters/08_functions/functions.rst:176
 msgid ""
-"An even better way of writing this is with a check to make sure we are "
-"trying to run this file, and not import it. The statement for this looks a "
-"little weird. In fact, it is weird enough I just look it up and copy/paste "
-"it any time I want to use it. Don't worry about understanding how it works "
-"yet."
+"Remember how our drawing code always starts with ``import arcade``? That "
+"just imports a lot of functions that are defined in the Arcade library so"
+" we can use those functions ourselves. It doesn't run anything, just "
+"imports functions."
 msgstr ""
-"Eine noch bessere Vorgehensweise ist zu prüfen, ob wir die Datei ausführen "
-"und nicht importieren wollen. Die Anweisung dazu sieht etwas seltsam aus. "
-"Sie ist tatsächlich seltsam genug, dass ich sie jedes mal mit Kopieren und "
-"Einfügen verwende. Mach dir keine Sorgen, wenn du noch nicht verstehst, wie "
-"das funktioniert."
 
-#: ../../source/chapters/08_functions/functions.rst:96
+#: ../../source/chapters/08_functions/functions.rst:181
+msgid ""
+"Eventually we'll learn to write our own modules we import. Right now, we "
+"couldn't do that with our code because attempting to import the code "
+"would actually *run* it. What we want is simply to make the functions "
+"available for us to use."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:186
+msgid ""
+"With that in mind, a better habit to get into is to check if we are "
+"trying to ``import`` the file before calling the ``main`` function. The "
+"statement, in this next example, looks a little weird. In fact, it is "
+"weird enough I just look it up and copy/paste it any time I want to use "
+"it. Don't worry about understanding *how* it works yet, just realize it "
+"is a good practice and why."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:193
+msgid "Check to make sure we aren't importing the file before calling ``main``."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:193
 msgid ""
 "def print_hello():\n"
 "    print(\"Hello!\")\n"
@@ -253,29 +422,43 @@ msgstr ""
 "if __name__ == \"__main__\":\n"
 "    main()"
 
-#: ../../source/chapters/08_functions/functions.rst:120
-msgid "Taking In Data"
-msgstr "Daten übernehmen"
-
-#: ../../source/chapters/08_functions/functions.rst:122
-msgid "Functions are even more powerful if we have them take in data."
-msgstr ""
-"Funktionen sind noch leistungsfähiger, wenn wir sie Daten übernehmen lassen."
-
-#: ../../source/chapters/08_functions/functions.rst:124
+#: ../../source/chapters/08_functions/functions.rst:216
 msgid ""
-"Here is a simple example that will take in a number and print it. Notice how "
-"I've created a new variable ``my_number`` in between the parenthesis. This "
-"variable will be given whatever value is passed in. In the example below, it "
-"is given first a ``55``, then ``25``, and finally a ``5``."
+"If this is too confusing, just call the ``main()`` method instead. "
+"Eventually we'll learn about imports and ``if`` statements. Then it will "
+"make more sense."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:220
+msgid "Take in Data with Parameters"
+msgstr ""
+
+msgid ".. image:: chapters\\08_functions\\data.svg"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:226
+#, fuzzy
+msgid "Functions are even more powerful if we can feed data into them to process."
+msgstr ""
+"Funktionen sind noch leistungsfähiger, wenn wir sie Daten übernehmen "
+"lassen."
+
+#: ../../source/chapters/08_functions/functions.rst:228
+#, fuzzy
+msgid ""
+"Here is a simple example that will take in a number and print it. Notice "
+"how I've created a new variable ``my_number`` in between the parenthesis."
+" This is called a function **parameter**. It is just a variable that is "
+"given a value equal to what is passed in when called. In the example "
+"below, it is given first a ``55``, then ``25``, and finally an ``8``."
 msgstr ""
 "Hier ist ein einfaches Beispiel, das eine Zahl übernimmt und ausgibt. "
 "Beachte, dass wir zwischen den Klammern eine neue Variable ``my_number`` "
-"erstellt haben. Diese Variable bekommt den Wert, der beim Funktionsaufruf "
-"mitgegeben wird. Im Beispiel unten bekommt sie erst den Wert ``55``, dann "
-"``25`` und schließlich ``5``."
+"erstellt haben. Diese Variable bekommt den Wert, der beim Funktionsaufruf"
+" mitgegeben wird. Im Beispiel unten bekommt sie erst den Wert ``55``, "
+"dann ``25`` und schließlich ``5``."
 
-#: ../../source/chapters/08_functions/functions.rst:129
+#: ../../source/chapters/08_functions/functions.rst:235
 msgid ""
 "def print_number(my_number):\n"
 "    print(my_number)\n"
@@ -293,12 +476,14 @@ msgstr ""
 "print_number(25)\n"
 "print_number(8)"
 
-#: ../../source/chapters/08_functions/functions.rst:140
-msgid "You can pass in multiple numbers, just separate them with a comma."
-msgstr ""
-"Du kannst mehrere Zahlen übergeben, trenne sie einfach mit einem Komma."
+#: ../../source/chapters/08_functions/functions.rst:246
+#, fuzzy
+msgid ""
+"You can pass in multiple numbers, just separate them with a comma. In "
+"this case ``a`` will be 11 and ``b`` will be 7."
+msgstr "Du kannst mehrere Zahlen übergeben, trenne sie einfach mit einem Komma."
 
-#: ../../source/chapters/08_functions/functions.rst:142
+#: ../../source/chapters/08_functions/functions.rst:249
 msgid ""
 "def add_numbers(a, b):\n"
 "    print(a + b)\n"
@@ -312,20 +497,23 @@ msgstr ""
 "\n"
 "add_numbers(11, 7)"
 
-#: ../../source/chapters/08_functions/functions.rst:151
+#: ../../source/chapters/08_functions/functions.rst:258
 msgid ""
-"Occasionally, new programmers want to set the number values inside the "
-"function. This is wrong. Then the function would only work for those values. "
-"The power is in specifying the numbers outside the function. We don't want "
-"the function to be limited to only certain data values."
+"Occasionally, new programmers want to set the parameter values inside the"
+" function. This is wrong. If you do this, the function would only work "
+"for those values. The power is in specifying the numbers *outside* the "
+"function. We don't want the function to be limited to only certain data "
+"values."
 msgstr ""
-"Manchmal möchten Anfänger die Zahlenwerte innerhalb der Funktion festlegen. "
-"Das ist falsch, denn dann würde die Funktion nur mit diesen Werten "
-"funktionieren. Die Leistungsfähigkeit liegt darin, die Werte außerhalb der "
-"Funktion festlegen zu können. Wir wollen nicht, dass die Funktion nur auf "
-"bestimmte Werte beschränkt ist."
 
-#: ../../source/chapters/08_functions/functions.rst:156
+#: ../../source/chapters/08_functions/functions.rst:263
+msgid ""
+"This example works, but it is wrong. Because if we ever changed line 8 to"
+" pass in different values, the program would ignore those values because "
+"on lines 3 and 4 they are always over written with 11 and 7."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:267
 msgid ""
 "# This is wrong\n"
 "def add_numbers(a, b):\n"
@@ -345,29 +533,29 @@ msgstr ""
 "\n"
 "add_numbers(11, 7)"
 
-#: ../../source/chapters/08_functions/functions.rst:171
+#: ../../source/chapters/08_functions/functions.rst:280
 msgid "Returning and Capturing Values"
 msgstr "Werte zurückgeben und weiterverarbeiten"
 
-#: ../../source/chapters/08_functions/functions.rst:173
-msgid "Functions can not only take in values, functions can return values."
+#: ../../source/chapters/08_functions/functions.rst:282
+#, fuzzy
+msgid "Functions can not only take *in* values, functions can *return* values."
 msgstr ""
 "Funktionen können nicht nur Werte übernehmen. Sie können auch Werte "
 "zurückgeben."
 
-#: ../../source/chapters/08_functions/functions.rst:178
+#: ../../source/chapters/08_functions/functions.rst:287
 msgid "Returning values"
 msgstr "Werte zurückgeben"
 
-#: ../../source/chapters/08_functions/functions.rst:180
-msgid "For example:"
-msgstr "Zum Beispiel:"
+#: ../../source/chapters/08_functions/functions.rst:289
+msgid ""
+"For example, here is a function that returns two numbers added together. "
+"See how it uses a ``return`` statement on line four to return the result "
+"out of the function."
+msgstr ""
 
-#: ../../source/chapters/08_functions/functions.rst:182
-msgid "Function that returns two numbers added together"
-msgstr "Eine Funktion, die zwei Werte addiert"
-
-#: ../../source/chapters/08_functions/functions.rst:184
+#: ../../source/chapters/08_functions/functions.rst:293
 msgid ""
 "# Add two numbers and return the results\n"
 "def sum_two_numbers(a, b):\n"
@@ -379,25 +567,26 @@ msgstr ""
 "    result = a + b\n"
 "    return result"
 
-#: ../../source/chapters/08_functions/functions.rst:192
+#: ../../source/chapters/08_functions/functions.rst:302
+#, fuzzy
 msgid ""
-"Note: Return is not a function, and does not use parentheses. Don't do "
+"Return is not a function, and does not use parentheses. Don't do "
 "``return(result)``."
 msgstr ""
 "Beachte: ``return`` ist keine Funktion und verwendet keine Klammern. "
 "Schreibe nicht ``return(result)``."
 
-#: ../../source/chapters/08_functions/functions.rst:195
+#: ../../source/chapters/08_functions/functions.rst:305
+#, fuzzy
 msgid ""
-"This only gets us half-way there. Because if we call the function now, not "
-"much happens. The numbers get added. They get returned to us. But we do "
-"nothing with the result."
+"This only gets us half-way there. Because if we call the function now, "
+"not much happens. Take a look at this example:"
 msgstr ""
 "Das ist aber erst die Hälfte der Wahrheit. Wenn wir jetzt die Funktion "
-"aufrufen, passiert nicht viel. Die Zahlen werden addiert. Sie werden auch an "
-"uns zurückgegeben, aber wir machen nichts mit dem Ergebnis."
+"aufrufen, passiert nicht viel. Die Zahlen werden addiert. Sie werden auch"
+" an uns zurückgegeben, aber wir machen nichts mit dem Ergebnis."
 
-#: ../../source/chapters/08_functions/functions.rst:199
+#: ../../source/chapters/08_functions/functions.rst:308
 msgid ""
 "# This doesn't do much, because we don't capture the result\n"
 "sum_two_numbers(22, 15)"
@@ -405,19 +594,31 @@ msgstr ""
 "# This doesn't do much, because we don't capture the result\n"
 "sum_two_numbers(22, 15)"
 
-#: ../../source/chapters/08_functions/functions.rst:207
+#: ../../source/chapters/08_functions/functions.rst:313
+msgid ""
+"The numbers get added. They get returned to us. But we do nothing with "
+"the result. So if you run this program, nothing prints to the screen and "
+"we can't tell that anything happened."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:320
 msgid "Capturing Returned Values"
 msgstr "Zurückgegeben Wert weiterverarbeiten"
 
-#: ../../source/chapters/08_functions/functions.rst:209
-msgid ""
-"We need to capture the result. We do that by setting a variable equal to the "
-"value the function returned:"
+msgid ".. image:: chapters\\08_functions\\catch.svg"
 msgstr ""
-"Wir müssen das Ergebnis übernehmen. Wir erreichen das, indem wir eine "
-"Variable auf den zurückgegebenen Funktionswert setzen."
 
-#: ../../source/chapters/08_functions/functions.rst:212
+#: ../../source/chapters/08_functions/functions.rst:326
+msgid ""
+"We need to *capture* the result. We do that by setting a variable equal "
+"to the value the function returned. In this next code example we capture "
+"the result by putting a variable to the left of the function call and "
+"using the ``=`` (assignment) operator. Later the code prints the value, "
+"but that's not capturing! That is just *using* the result we captured and"
+" printing it."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:332
 msgid ""
 "# Capture the function's result into a variable\n"
 "# by putting \"my_result =\" in front of it.\n"
@@ -438,259 +639,301 @@ msgstr ""
 "\n"
 "# Now that I captured the result, print it.\n"
 "print(my_result) # <--- This is printing, NOT capturing."
-
-#: ../../source/chapters/08_functions/functions.rst:223
-msgid ""
-"Now the result isn't lost. It is stored in `my_result` which we can print or "
-"use some other way."
-msgstr ""
-"Jetzt geht das Ergebnis nicht mehr verloren. Es wird in ``my_result`` "
-"gespeichert, diese Variable können wir ausgeben oder in einer anderen Form "
-"verwenden."
-
-#: ../../source/chapters/08_functions/functions.rst:227
-msgid "Volume Cylinder Example"
-msgstr "Beispiel Zylindervolumen"
-
-#: ../../source/chapters/08_functions/functions.rst:229
-msgid "Function that returns the volume of a cylinder"
-msgstr "Eine Funktion, die das Volumen eines Zylinders zurückgibt"
-
-#: ../../source/chapters/08_functions/functions.rst:231
-msgid ""
-"def volume_cylinder(radius, height):\n"
-"    pi = 3.141592653589\n"
-"    volume = pi * radius ** 2 * height\n"
-"    return volume"
-msgstr ""
-"def volume_cylinder(radius, height):\n"
-"    pi = 3.141592653589\n"
-"    volume = pi * radius ** 2 * height\n"
-"    return volume"
-
-#: ../../source/chapters/08_functions/functions.rst:239
-msgid ""
-"Because of the return, this function could be used later on as part of an "
-"equation to calculate the volume of a six-pack like this:"
-msgstr ""
-"Weil sie ein ``return`` beinhaltet, kann die Funktion später als Teil einer "
-"Formel zum Berechnen des Volumens eines Six-Packs wie folgt verwendet werden:"
-
-#: ../../source/chapters/08_functions/functions.rst:242
-msgid "six_pack_volume = volume_cylinder(2.5, 5) * 6"
-msgstr "six_pack_volume = volume_cylinder(2.5, 5) * 6"
-
-#: ../../source/chapters/08_functions/functions.rst:246
-msgid ""
-"The value returned from volume_cylinder goes into the equation and is "
-"multiplied by six."
-msgstr ""
-"Der von ``volume_cylinder`` zurückgegebene Wert kommt in die Formel und wird "
-"mit sechs multipliziert."
-
-#: ../../source/chapters/08_functions/functions.rst:249
-msgid ""
-"There is a big difference between a function that prints a value and a "
-"function that returns a value. Look at the code below and try it out."
-msgstr ""
-"Es gibt einen großen Unterschied zwischen einer Funktion, die einen Wert "
-"ausgibt, und einer, die einen Wert zurück gibt. Sieh dir den Code unten an "
-"und probiere es aus."
-
-#: ../../source/chapters/08_functions/functions.rst:252
-msgid ""
-"# Function that prints the result\n"
-"def sum_print(a, b):\n"
-"    result = a + b\n"
-"    print(result)\n"
-"\n"
-"\n"
-"# Function that returns the results\n"
-"def sum_return(a, b):\n"
-"    result = a + b\n"
-"    return result\n"
-"\n"
-"\n"
-"# This prints the sum of 4+4\n"
-"sum_print(4, 4)\n"
-"\n"
-"# This does not\n"
-"sum_return(4, 4)\n"
-"\n"
-"# This will not set x1 to the sum\n"
-"# It actually gets a value of 'None'\n"
-"x1 = sum_print(4, 4)\n"
-"print(\"x1 =\", x1)\n"
-"\n"
-"# This will set x2 to the sum\n"
-"# and print it properly\n"
-"x2 = sum_return(4, 4)\n"
-"print(\"x2 =\", x2)"
-msgstr ""
-"# Function that prints the result\n"
-"def sum_print(a, b):\n"
-"    result = a + b\n"
-"    print(result)\n"
-"\n"
-"\n"
-"# Function that returns the results\n"
-"def sum_return(a, b):\n"
-"    result = a + b\n"
-"    return result\n"
-"\n"
-"\n"
-"# This prints the sum of 4+4\n"
-"sum_print(4, 4)\n"
-"\n"
-"# This does not\n"
-"sum_return(4, 4)\n"
-"\n"
-"# This will not set x1 to the sum\n"
-"# It actually gets a value of 'None'\n"
-"x1 = sum_print(4, 4)\n"
-"print(\"x1 =\", x1)\n"
-"\n"
-"# This will set x2 to the sum\n"
-"# and print it properly\n"
-"x2 = sum_return(4, 4)\n"
-"print(\"x2 =\", x2)"
-
-#: ../../source/chapters/08_functions/functions.rst:284
-msgid ""
-"When first working with functions it is not unusual to get stuck looking at "
-"code like this:"
-msgstr ""
-"Wenn man zum ersten Mal mit Funktionen arbeitet, ist es nicht ungewöhnlich, "
-"dass an Programmcode wie dem folgenden hängen bleibt."
-
-#: ../../source/chapters/08_functions/functions.rst:287
-msgid ""
-"def calculate_average(a, b):\n"
-"    \"\"\" Calculate an average of two numbers \"\"\"\n"
-"    result = (a + b) / 2\n"
-"    return result\n"
-"\n"
-"\n"
-"# Pretend you have some code here\n"
-"x = 45\n"
-"y = 56\n"
-"\n"
-"# Wait, how do I print the result of this?\n"
-"calculate_average(x, y)"
-msgstr ""
-"def calculate_average(a, b):\n"
-"    \"\"\" Calculate an average of two numbers \"\"\"\n"
-"    result = (a + b) / 2\n"
-"    return result\n"
-"\n"
-"\n"
-"# Pretend you have some code here\n"
-"x = 45\n"
-"y = 56\n"
-"\n"
-"# Wait, how do I print the result of this?\n"
-"calculate_average(x, y)"
-
-#: ../../source/chapters/08_functions/functions.rst:302
-msgid ""
-"How do we print the result of calculate_average? The program can't print "
-"result because that variable only exists inside the function. Instead, use a "
-"variable to capture the result:"
-msgstr ""
-"Wie geben wir das Ergebnis der Funktion ``calculate_average`` aus? Das "
-"Programm kann das Ergebnis nicht ausgeben, weil die Variable nur innerhalb "
-"der Funktion existiert. Verwende stattdessen eine Variable um das Ergebnis "
-"aufzunehmen."
-
-#: ../../source/chapters/08_functions/functions.rst:306
-msgid ""
-"def calculate_average(a, b):\n"
-"    \"\"\" Calculate an average of two numbers \"\"\"\n"
-"    result = (a + b) / 2\n"
-"    return result\n"
-"\n"
-"\n"
-"# Pretend you have some code here\n"
-"x = 45\n"
-"y = 56\n"
-"\n"
-"average = calculate_average(x, y)\n"
-"print(average)"
-msgstr ""
-"def calculate_average(a, b):\n"
-"    \"\"\" Calculate an average of two numbers \"\"\"\n"
-"    result = (a + b) / 2\n"
-"    return result\n"
-"\n"
-"\n"
-"# Pretend you have some code here\n"
-"x = 45\n"
-"y = 56\n"
-"\n"
-"average = calculate_average(x, y)\n"
-"print(average)"
-
-#: ../../source/chapters/08_functions/functions.rst:322
-msgid "Documenting Functions"
-msgstr "Funktionen dokumentieren"
-
-#: ../../source/chapters/08_functions/functions.rst:324
-msgid ""
-"Functions in Python typically have a comment as the first statement of the "
-"function. This comment is delimited using three double quotes, and is called "
-"a docstring. A function may look like:"
-msgstr ""
-"Funktionen in Python haben typischerweise einen Kommentar als erste "
-"Anweisung in einer Funktion. Dieser Kommentar wird durch dreifache "
-"Anführungszeichen eingefasst. Er wird Docstring genannt. Eine Funktion kann "
-"wie folgt aussehen:"
-
-#: ../../source/chapters/08_functions/functions.rst:328
-msgid ""
-"def volume_cylinder(radius, height):\n"
-"    \"\"\"Returns volume of a cylinder given radius, height.\"\"\"\n"
-"    pi = 3.141592653589\n"
-"    volume = pi * radius ** 2 * height\n"
-"    return volume"
-msgstr ""
-"def volume_cylinder(radius, height):\n"
-"    \"\"\"Returns volume of a cylinder given radius, height.\"\"\"\n"
-"    pi = 3.141592653589\n"
-"    volume = pi * radius ** 2 * height\n"
-"    return volume"
-
-#: ../../source/chapters/08_functions/functions.rst:336
-msgid ""
-"The great thing about using docstrings in functions is that the comment can "
-"be pulled out and put into a website documenting your code using a tool like "
-"Sphinx. Most languages have similar tools that can help make documenting "
-"your code a breeze. This can save a lot of time as you start working on "
-"larger programs."
-msgstr ""
-"Das Großartige an den Docstrings in Funktionen ist, dass der Kommentar mit "
-"einem Werkzeug wie Sphinx heraus geholt werden und in eine Webseite zur "
-"Dokumentation deines Programmcodes eingefügt werden kann. Die meisten "
-"Sprachen haben ähnliche Werkzeuge, die dir erleichtern deinen Programmcode "
-"zu dokumentieren. Dies kann dir eine Menge Arbeit ersparen, wenn du an "
-"größeren Programmen arbeitest."
 
 #: ../../source/chapters/08_functions/functions.rst:343
-msgid "Variable Scope"
-msgstr "Gültigkeitsbereich von Variablen"
-
-#: ../../source/chapters/08_functions/functions.rst:345
+#, fuzzy
 msgid ""
-"The use of functions introduces the concept of scope. Scope is where in the "
-"code a variable is \"alive\" and can be accessed. For example, look at the "
-"code below:"
+"Now the result isn't lost. It is stored in the ``my_result`` variable "
+"which we can print or use some other way."
 msgstr ""
-"Zur Verwendung von Funktionen gibt es die Gültigkeitsbereiche (englisch "
-"*scope*) von Variablen. Ein Gültigkeitsbereich einer Variablen ist der "
-"Abschnitt im Programmcode, in dem die Variable \"lebendig\" ist und darauf "
-"zugegriffen werden kann. Sieh dir den Programmcode unten als Beispiel an:"
+"Jetzt geht das Ergebnis nicht mehr verloren. Es wird in ``my_result`` "
+"gespeichert, diese Variable können wir ausgeben oder in einer anderen "
+"Form verwenden."
+
+#: ../../source/chapters/08_functions/functions.rst:346
+msgid ""
+"We will do this *a lot*, so pause for a second and set it sit in your "
+"mind. I'll wait."
+msgstr ""
 
 #: ../../source/chapters/08_functions/functions.rst:349
 msgid ""
+"Great, now imagine you have an instructor or co-worker watching over your"
+" shoulder. You have a function. It returns a value. The person over your "
+"shoulder says, \"Ok, now you just have to capture the value.\" The "
+"pressure is on."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:353
+msgid ""
+"Don't panic! Remember to *capture* the value returned from a function, "
+"put a variable to the left of it and use an ``=`` operator."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:358
+msgid "Volume Cylinder Example"
+msgstr "Beispiel Zylindervolumen"
+
+msgid ".. image:: chapters\\08_functions\\cans.svg"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:364
+msgid ""
+"Let's use what we learned for something more practical. Here is a "
+"function that returns the volume of a cylinder. Notice how we take in two"
+" parameters and return the result of the calculation."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:369
+msgid ""
+"def volume_cylinder(radius, height):\n"
+"    pi = 3.141592653589\n"
+"    volume = pi * radius ** 2 * height\n"
+"    return volume"
+msgstr ""
+"def volume_cylinder(radius, height):\n"
+"    pi = 3.141592653589\n"
+"    volume = pi * radius ** 2 * height\n"
+"    return volume"
+
+#: ../../source/chapters/08_functions/functions.rst:377
+#, fuzzy
+msgid ""
+"Because of the ``return``, this function could be used later on as part "
+"of an equation to calculate the volume of a six-pack like this:"
+msgstr ""
+"Weil sie ein ``return`` beinhaltet, kann die Funktion später als Teil "
+"einer Formel zum Berechnen des Volumens eines Six-Packs wie folgt "
+"verwendet werden:"
+
+#: ../../source/chapters/08_functions/functions.rst:380
+msgid "six_pack_volume = volume_cylinder(2.5, 5) * 6"
+msgstr "six_pack_volume = volume_cylinder(2.5, 5) * 6"
+
+#: ../../source/chapters/08_functions/functions.rst:384
+msgid ""
+"See how the value returned from ``volume_cylinder`` goes into the "
+"equation and is multiplied by six. We would not be able to chain together"
+" calculations like that if all we could do was ``print``, instead of "
+"``return``."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:388
+msgid ""
+"There is a big difference between a function that *prints* a value and a "
+"function that *returns* a value. Look at the code below. Pause for a bit "
+"and make sure you can follow how it works. Read the comments. This is a "
+"common source of confusion for new programmers, so spend a bit of time "
+"studying it."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:394
+#, fuzzy
+msgid ""
+"# This function will print the result\n"
+"def sum_print(a, b):\n"
+"    result = a + b\n"
+"    print(result)\n"
+"\n"
+"\n"
+"# This function will return the result\n"
+"def sum_return(a, b):\n"
+"    result = a + b\n"
+"    return result\n"
+"\n"
+"\n"
+"# This code prints the sum of 4+4, because the function has a print\n"
+"sum_print(4, 4)\n"
+"\n"
+"# This code prints nothing, because the function returns, and doesn't "
+"print\n"
+"sum_return(4, 4)\n"
+"\n"
+"# This code will not set x1 to the sum.\n"
+"# The sum_print function does not have a return statement, so it returns\n"
+"# nothing!\n"
+"# x1 actually gets a value of 'None' because nothing was returned\n"
+"x1 = sum_print(4, 4)\n"
+"print(\"x1 =\", x1)\n"
+"\n"
+"# This will set x2 to the sum and print it properly.\n"
+"x2 = sum_return(4, 4)\n"
+"print(\"x2 =\", x2)"
+msgstr ""
+"# Function that prints the result\n"
+"def sum_print(a, b):\n"
+"    result = a + b\n"
+"    print(result)\n"
+"\n"
+"\n"
+"# Function that returns the results\n"
+"def sum_return(a, b):\n"
+"    result = a + b\n"
+"    return result\n"
+"\n"
+"\n"
+"# This prints the sum of 4+4\n"
+"sum_print(4, 4)\n"
+"\n"
+"# This does not\n"
+"sum_return(4, 4)\n"
+"\n"
+"# This will not set x1 to the sum\n"
+"# It actually gets a value of 'None'\n"
+"x1 = sum_print(4, 4)\n"
+"print(\"x1 =\", x1)\n"
+"\n"
+"# This will set x2 to the sum\n"
+"# and print it properly\n"
+"x2 = sum_return(4, 4)\n"
+"print(\"x2 =\", x2)"
+
+#: ../../source/chapters/08_functions/functions.rst:426
+msgid ""
+"This next code example has a very common issue new programmers face. It "
+"is not unusual to get stuck looking at code like this example below. Your"
+" task: how would you print the result of the function? See if you can "
+"figure it out without looking ahead."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:432
+msgid ""
+"def calculate_average(a, b):\n"
+"    \"\"\" Calculate an average of two numbers \"\"\"\n"
+"    result = (a + b) / 2\n"
+"    return result\n"
+"\n"
+"\n"
+"# Pretend you have some code here\n"
+"x = 45\n"
+"y = 56\n"
+"\n"
+"# Wait, how do I print the result of this?\n"
+"calculate_average(x, y)"
+msgstr ""
+"def calculate_average(a, b):\n"
+"    \"\"\" Calculate an average of two numbers \"\"\"\n"
+"    result = (a + b) / 2\n"
+"    return result\n"
+"\n"
+"\n"
+"# Pretend you have some code here\n"
+"x = 45\n"
+"y = 56\n"
+"\n"
+"# Wait, how do I print the result of this?\n"
+"calculate_average(x, y)"
+
+#: ../../source/chapters/08_functions/functions.rst:447
+#, fuzzy
+msgid ""
+"What's the answer? How do we print the result of ``calculate_average``? "
+"In the code above, the program can't print the result because the "
+"``result`` variable only exists inside the function. Instead, use a new "
+"variable outside the function, and the ``=`` operator to capture the "
+"result:"
+msgstr ""
+"Wie geben wir das Ergebnis der Funktion ``calculate_average`` aus? Das "
+"Programm kann das Ergebnis nicht ausgeben, weil die Variable nur "
+"innerhalb der Funktion existiert. Verwende stattdessen eine Variable um "
+"das Ergebnis aufzunehmen."
+
+#: ../../source/chapters/08_functions/functions.rst:455
+msgid ""
+"def calculate_average(a, b):\n"
+"    \"\"\" Calculate an average of two numbers \"\"\"\n"
+"    result = (a + b) / 2\n"
+"    return result\n"
+"\n"
+"\n"
+"# Pretend you have some code here\n"
+"x = 45\n"
+"y = 56\n"
+"\n"
+"average = calculate_average(x, y)\n"
+"print(average)"
+msgstr ""
+"def calculate_average(a, b):\n"
+"    \"\"\" Calculate an average of two numbers \"\"\"\n"
+"    result = (a + b) / 2\n"
+"    return result\n"
+"\n"
+"\n"
+"# Pretend you have some code here\n"
+"x = 45\n"
+"y = 56\n"
+"\n"
+"average = calculate_average(x, y)\n"
+"print(average)"
+
+#: ../../source/chapters/08_functions/functions.rst:471
+msgid "Documenting Functions"
+msgstr "Funktionen dokumentieren"
+
+msgid ".. image:: chapters\\08_functions\\document.svg"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:477
+#, fuzzy
+msgid ""
+"Functions in Python typically have a comment as the first statement of "
+"the function. This comment is delimited using three double quotes, and is"
+" called a **docstring**. In this case, the docstring is on line 2:"
+msgstr ""
+"Funktionen in Python haben typischerweise einen Kommentar als erste "
+"Anweisung in einer Funktion. Dieser Kommentar wird durch dreifache "
+"Anführungszeichen eingefasst. Er wird Docstring genannt. Eine Funktion "
+"kann wie folgt aussehen:"
+
+#: ../../source/chapters/08_functions/functions.rst:481
+msgid ""
+"def volume_cylinder(radius, height):\n"
+"    \"\"\"Returns volume of a cylinder given radius, height.\"\"\"\n"
+"    pi = 3.141592653589\n"
+"    volume = pi * radius ** 2 * height\n"
+"    return volume"
+msgstr ""
+"def volume_cylinder(radius, height):\n"
+"    \"\"\"Returns volume of a cylinder given radius, height.\"\"\"\n"
+"    pi = 3.141592653589\n"
+"    volume = pi * radius ** 2 * height\n"
+"    return volume"
+
+#: ../../source/chapters/08_functions/functions.rst:491
+msgid ""
+"The great thing about using docstrings in functions is that the comment "
+"can be pulled out and put into a website. That can be part of a larger "
+"website that documents your code. For example, `here is the documentation"
+" for drawing a circle "
+"<https://arcade.academy/arcade.html#arcade.draw_circle_outline>`_, "
+"generated automatically from the function comment. In fact, everything on"
+" that page is automatically generated. Most languages have similar tools "
+"that can help make documenting a breeze. This can save a lot of time as "
+"you start working on larger programs."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:503
+msgid "Variable Scope"
+msgstr "Gültigkeitsbereich von Variablen"
+
+msgid ".. image:: chapters\\08_functions\\telescope.svg"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:509
+#, fuzzy
+msgid ""
+"The use of functions introduces the concept of **scope**. Scope is where "
+"in the code a variable is \"alive\" and can be accessed. For example, "
+"look at the code below:"
+msgstr ""
+"Zur Verwendung von Funktionen gibt es die Gültigkeitsbereiche (englisch "
+"*scope*) von Variablen. Ein Gültigkeitsbereich einer Variablen ist der "
+"Abschnitt im Programmcode, in dem die Variable \"lebendig\" ist und "
+"darauf zugegriffen werden kann. Sieh dir den Programmcode unten als "
+"Beispiel an:"
+
+#: ../../source/chapters/08_functions/functions.rst:513
+msgid ""
 "# Define a simple function that sets\n"
 "# x equal to 22\n"
 "def f():\n"
@@ -713,30 +956,35 @@ msgstr ""
 "# This fails, x only exists in f()\n"
 "print(x)"
 
-#: ../../source/chapters/08_functions/functions.rst:362
+#: ../../source/chapters/08_functions/functions.rst:526
+#, fuzzy
 msgid ""
-"The last line will generate an error because x only exists inside of the f() "
-"function. The variable is created when ``f()`` is called and the memory it "
-"uses is freed as soon as ``f()`` finishes."
+"The last line will generate an error because ``x`` only exists inside of "
+"the ``f()`` function. Every heard the phrase \"What happens in Vegas, "
+"stays in Vegas?\" Well, variables created in a function stay in the "
+"function. The variable is created when ``f()`` is called and the memory "
+"it uses is freed as soon as ``f()`` finishes."
 msgstr ""
-"Die letzte Zeile wird einen Fehler generieren, weil ``x`` nur innerhalb der "
-"Funktion ``f()`` existiert. Die Variable wird erzeugt, wenn ``f()`` "
+"Die letzte Zeile wird einen Fehler generieren, weil ``x`` nur innerhalb "
+"der Funktion ``f()`` existiert. Die Variable wird erzeugt, wenn ``f()`` "
 "aufgerufen wird und der Speicher wird freigegeben, sobald der Aufruf von "
 "``f()`` endet."
 
-#: ../../source/chapters/08_functions/functions.rst:366
+#: ../../source/chapters/08_functions/functions.rst:532
+#, fuzzy
 msgid ""
-"Here's where it gets complicated. A more confusing rule is accessing "
-"variables created outside of the ``f()`` function. In the following code, x "
-"is created before the ``f()`` function, and thus can be read from inside the "
-"``f()`` function."
+"Here's where it gets complicated. A more confusing rule is how to access "
+"variables created *outside* of the ``f()`` function. In the following "
+"code, ``x`` is created before the ``f()`` function, and thus can be read "
+"from inside the ``f()`` function."
 msgstr ""
 "Hier ist der Punkt, an dem es kompliziert wird. Eine noch verwirrendere "
-"Regel ist, wie auf Variablen, die außerhalb von ``f()`` deklariert wurden, "
-"zugegriffen wird. Im folgenden Programmcode wird ``x`` erzeugt bevor ``f()`` "
-"definiert wird und kann deshalb innerhalb von ``f()`` gelesen werden."
+"Regel ist, wie auf Variablen, die außerhalb von ``f()`` deklariert "
+"wurden, zugegriffen wird. Im folgenden Programmcode wird ``x`` erzeugt "
+"bevor ``f()`` definiert wird und kann deshalb innerhalb von ``f()`` "
+"gelesen werden."
 
-#: ../../source/chapters/08_functions/functions.rst:371
+#: ../../source/chapters/08_functions/functions.rst:537
 msgid ""
 "# Create the x variable and set to 44\n"
 "x = 44\n"
@@ -762,18 +1010,21 @@ msgstr ""
 "# Call the function\n"
 "f()"
 
-#: ../../source/chapters/08_functions/functions.rst:385
+#: ../../source/chapters/08_functions/functions.rst:551
+#, fuzzy
 msgid ""
 "Variables created ahead of a function may be read inside of the function "
-"only if the function does not change the value. This code, very similar to "
-"the code above, will fail. The computer will claim it doesn't know what x is."
+"only if the function does not *change* the value. This code, very similar"
+" to the code above, will fail. The computer will claim it doesn't know "
+"what ``x`` is."
 msgstr ""
-"Variablen, die vor einer Funktion definiert wurden, können in der Funktion "
-"gelesen werden, nur wenn die Funktion den Wert nicht ändert. Dieser "
-"Programmcode, der dem Programmcode oben sehr ähnelt, wird fehlschlagen. Der "
-"Rechner wird behaupten, dass er nicht weiß, was ``x`` ist."
+"Variablen, die vor einer Funktion definiert wurden, können in der "
+"Funktion gelesen werden, nur wenn die Funktion den Wert nicht ändert. "
+"Dieser Programmcode, der dem Programmcode oben sehr ähnelt, wird "
+"fehlschlagen. Der Rechner wird behaupten, dass er nicht weiß, was ``x`` "
+"ist."
 
-#: ../../source/chapters/08_functions/functions.rst:389
+#: ../../source/chapters/08_functions/functions.rst:555
 msgid ""
 "# Create the x variable and set to 44\n"
 "x = 44\n"
@@ -800,30 +1051,22 @@ msgstr ""
 "\n"
 "# Call the function\n"
 "f()"
-
-#: ../../source/chapters/08_functions/functions.rst:404
-msgid ""
-"Other languages have more complex rules around the creation of variables and "
-"scope than Python does. Because Python is straight-forward it is a good "
-"introductory language."
-msgstr ""
-"Andere Sprachen haben kompliziertere Regeln zur Erstellung von Variablen und "
-"deren Gültigkeitsbereiche als Python. Weil Python so geradeaus ist, ist es "
-"eine gute Anfängersprache."
 
 # I am not sure,if this is correct
-#: ../../source/chapters/08_functions/functions.rst:409
+#: ../../source/chapters/08_functions/functions.rst:571
 msgid "Pass-by-Copy"
 msgstr "Als Kopie übergeben"
 
-#: ../../source/chapters/08_functions/functions.rst:411
-msgid ""
-"Functions pass their values by creating a copy of the original. For example:"
+msgid ".. image:: chapters\\08_functions\\copy.svg"
 msgstr ""
-"Funktionen bekommen ihre Werte als Kopie des Originals übergeben. Zum "
-"Beispiel:"
 
-#: ../../source/chapters/08_functions/functions.rst:413
+#: ../../source/chapters/08_functions/functions.rst:577
+msgid ""
+"When you call a function and set a value to a function parameter, that "
+"value is a *copy* of the original. For example take a look at this code:"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:581
 msgid ""
 "# Define a simple function that prints x\n"
 "def f(x):\n"
@@ -853,348 +1096,354 @@ msgstr ""
 
 # Formatting of original.
 # Description is not correct.
-#: ../../source/chapters/08_functions/functions.rst:428
+#: ../../source/chapters/08_functions/functions.rst:596
+#, fuzzy
 msgid ""
-"The value of y does not change, even though the f() function increases the "
-"value passed to it. Each of the variables listed as a parameter in a "
-"function is a brand new variable. The value of that variable is copied from "
-"where it is called."
+"The value of ``y`` does not change, even though the ``f()`` function "
+"increases the value passed to it. Each of the variables listed as a "
+"parameter in a function is a brand new variable. The value of that "
+"variable is copied from where it is called."
 msgstr ""
-"Der Wert von ``y`` ändert sich nicht, obwohl die Funktion den übergebenen "
-"Wert erhöht. Jede der als Parameter angegeben Variablen in einer Funktion "
-"ist eine brandneue Variable. Der Wert der Variablen wird beim Aufruf kopiert."
+"Der Wert von ``y`` ändert sich nicht, obwohl die Funktion den übergebenen"
+" Wert erhöht. Jede der als Parameter angegeben Variablen in einer "
+"Funktion ist eine brandneue Variable. Der Wert der Variablen wird beim "
+"Aufruf kopiert."
 
 # Formatting.
-#: ../../source/chapters/08_functions/functions.rst:433
+#: ../../source/chapters/08_functions/functions.rst:601
+#, fuzzy
 msgid ""
 "This is reasonably straight forward in the prior example. Where it gets "
 "confusing is if both the code that calls the function and the function "
 "itself have variables named the same. The code below is identical to the "
-"prior listing, but rather than use y it uses x."
+"prior listing, but rather than use ``y`` it uses ``x``."
 msgstr ""
-"Im Beispiel oben ist das einigermaßen schlüssig. Es wird richtig verwirrend, "
-"wenn sowohl der Programmcode, der die Funktion aufruft, als auch die "
-"Funktion selbst Variablen mit gleichem Namen haben. Der Programmcode unten "
-"ist der gleiche wie oben, aber er verwendet ``y`` statt ``x``."
-
-#: ../../source/chapters/08_functions/functions.rst:438
-msgid ""
-"# Define a simple function that prints x\n"
-"def f(x):\n"
-"    x += 1\n"
-"    print(x)\n"
-"\n"
-"\n"
-"# Set x\n"
-"x = 10\n"
-"# Call the function\n"
-"f(x)\n"
-"# Print x to see if it changed\n"
-"print(x)"
-msgstr ""
-"# Define a simple function that prints x\n"
-"def f(x):\n"
-"    x += 1\n"
-"    print(x)\n"
-"\n"
-"\n"
-"# Set x\n"
-"x = 10\n"
-"# Call the function\n"
-"f(x)\n"
-"# Print x to see if it changed\n"
-"print(x)"
-
-#: ../../source/chapters/08_functions/functions.rst:453
-msgid ""
-"The output is the same as the program that uses y. Even though both the "
-"function and the surrounding code use x for a variable name, there are "
-"actually two different variables. There is the variable x that exists inside "
-"of the function, and a different variable x that exists outside the function."
-msgstr ""
-"Die Ausgabe ist die gleiche wie vorher. Obwohl die Funktion und der "
-"umgebende Code ``x`` als Variablennamen verwenden, sind es doch tatsächlich "
-"zwei verschiedene Variablen. Die eine Variable ``x`` existiert innerhalb der "
-"Funktion. Die andere Variable ``x`` existiert außerhalb der Funktion."
-
-#: ../../source/chapters/08_functions/functions.rst:460
-msgid "Functions Calling Functions"
-msgstr "Funktionen rufen Funktionen auf"
-
-#: ../../source/chapters/08_functions/functions.rst:462
-msgid ""
-"For each of the examples below, think about what would print. Check to see "
-"if you are right. If you didn't guess correctly, spend to the time to "
-"understand why."
-msgstr ""
-"Überlege dir bei jedem der Beispiele unten, was es ausgeben wird. Überprüfe, "
-"ob du recht hattest. Wenn du falsch lagst, verwende Zeit darauf zu verstehen "
-"warum."
-
-#: ../../source/chapters/08_functions/functions.rst:467
-msgid "Example 1"
-msgstr "Beispiel 1"
-
-#: ../../source/chapters/08_functions/functions.rst:469
-msgid "In this example, note that if you don't use a function, it doesn't run."
-msgstr ""
-"Beachte in diesem Beispiel, dass eine Funktion nur ausgeführt wird, wenn sie "
-"auch aufgerufen wird."
-
-#: ../../source/chapters/08_functions/functions.rst:471
-msgid ""
-"# Example 1\n"
-"def a():\n"
-"    print(\"A\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-msgstr ""
-"# Example 1\n"
-"def a():\n"
-"    print(\"A\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-
-#: ../../source/chapters/08_functions/functions.rst:489
-msgid "Example 2"
-msgstr "Beispiel 2"
-
-#: ../../source/chapters/08_functions/functions.rst:491
-msgid ""
-"# Example 2\n"
-"def a():\n"
-"    b()\n"
-"    print(\"A\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    c()\n"
-"    print(\"B\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-msgstr ""
-"# Example 2\n"
-"def a():\n"
-"    b()\n"
-"    print(\"A\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    c()\n"
-"    print(\"B\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-
-#: ../../source/chapters/08_functions/functions.rst:512
-msgid "Example 3"
-msgstr "Beispiel 3"
-
-#: ../../source/chapters/08_functions/functions.rst:514
-msgid ""
-"# Example 3\n"
-"def a():\n"
-"    print(\"A\")\n"
-"    b()\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B\")\n"
-"    c()\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-msgstr ""
-"# Example 3\n"
-"def a():\n"
-"    print(\"A\")\n"
-"    b()\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B\")\n"
-"    c()\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C\")\n"
-"\n"
-"\n"
-"a()"
-
-#: ../../source/chapters/08_functions/functions.rst:534
-msgid "Example 4"
-msgstr "Beispiel 4"
-
-#: ../../source/chapters/08_functions/functions.rst:536
-msgid ""
-"# Example 4\n"
-"def a():\n"
-"    print(\"A start\")\n"
-"    b()\n"
-"    print(\"A end\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B start\")\n"
-"    c()\n"
-"    print(\"B end\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C start and end\")\n"
-"\n"
-"\n"
-"a()"
-msgstr ""
-"# Example 4\n"
-"def a():\n"
-"    print(\"A start\")\n"
-"    b()\n"
-"    print(\"A end\")\n"
-"\n"
-"\n"
-"def b():\n"
-"    print(\"B start\")\n"
-"    c()\n"
-"    print(\"B end\")\n"
-"\n"
-"\n"
-"def c():\n"
-"    print(\"C start and end\")\n"
-"\n"
-"\n"
-"a()"
-
-#: ../../source/chapters/08_functions/functions.rst:559
-msgid "Example 5"
-msgstr "Beispiel 5"
-
-#: ../../source/chapters/08_functions/functions.rst:561
-msgid ""
-"# Example 5\n"
-"def a(x):\n"
-"    print(\"A start, x =\", x)\n"
-"    b(x + 1)\n"
-"    print(\"A end, x =\", x)\n"
-"\n"
-"\n"
-"def b(x):\n"
-"    print(\"B start, x =\", x)\n"
-"    c(x + 1)\n"
-"    print(\"B end, x =\", x)\n"
-"\n"
-"\n"
-"def c(x):\n"
-"    print(\"C start and end, x =\", x)\n"
-"\n"
-"\n"
-"a(5)"
-msgstr ""
-"# Example 5\n"
-"def a(x):\n"
-"    print(\"A start, x =\", x)\n"
-"    b(x + 1)\n"
-"    print(\"A end, x =\", x)\n"
-"\n"
-"\n"
-"def b(x):\n"
-"    print(\"B start, x =\", x)\n"
-"    c(x + 1)\n"
-"    print(\"B end, x =\", x)\n"
-"\n"
-"\n"
-"def c(x):\n"
-"    print(\"C start and end, x =\", x)\n"
-"\n"
-"\n"
-"a(5)"
-
-#: ../../source/chapters/08_functions/functions.rst:583
-msgid "Example 6"
-msgstr "Beispiel 6"
-
-#: ../../source/chapters/08_functions/functions.rst:585
-msgid ""
-"While line 3 of this example increases ``x``, the ``x`` variable in the "
-"function is a different variable than the ``x`` that is in the rest of the "
-"program. So that ``x`` never changes."
-msgstr ""
-"In Zeile 3 dieses Beispiel wird der Wert von ``x`` inkrementiert. Da aber "
-"die Variable ``x`` in der Funktion eine andere Variable ist, als ``x`` im "
-"Rest des Programms, ändert sich der angezeigte Wert nicht."
-
-#: ../../source/chapters/08_functions/functions.rst:588
-msgid ""
-"# Example 6\n"
-"def a(x):\n"
-"    x = x + 1\n"
-"\n"
-"\n"
-"x = 3\n"
-"a(x)\n"
-"\n"
-"print(x)"
-msgstr ""
-"# Example 6\n"
-"def a(x):\n"
-"    x = x + 1\n"
-"\n"
-"\n"
-"x = 3\n"
-"a(x)\n"
-"\n"
-"print(x)"
-
-#: ../../source/chapters/08_functions/functions.rst:601
-msgid "Example 7"
-msgstr "Beispiel 7"
-
-#: ../../source/chapters/08_functions/functions.rst:603
-msgid ""
-"This example is similar to the prior example, but we ``return x`` at the "
-"end. Turns out, it doesn't matter. Because we never do anything with the "
-"return value. So the global variable ``x`` still doesn't increase. See the "
-"next example."
-msgstr ""
-"In diesem Beispiel, das dem vorherigen ähnelt, geben wir ``x`` zurück. Es "
-"zeigt sich, dass das keinen Unterschied macht, da wir mit dem Rückgabewert "
-"nichts machen. Die globale Variable ``x`` erhöht sich immer noch nicht. Sieh "
-"dir das nächste Beispiel an."
+"Im Beispiel oben ist das einigermaßen schlüssig. Es wird richtig "
+"verwirrend, wenn sowohl der Programmcode, der die Funktion aufruft, als "
+"auch die Funktion selbst Variablen mit gleichem Namen haben. Der "
+"Programmcode unten ist der gleiche wie oben, aber er verwendet ``y`` "
+"statt ``x``."
 
 #: ../../source/chapters/08_functions/functions.rst:606
 msgid ""
+"# Define a simple function that prints x\n"
+"def f(x):\n"
+"    x += 1\n"
+"    print(x)\n"
+"\n"
+"\n"
+"# Set x\n"
+"x = 10\n"
+"# Call the function\n"
+"f(x)\n"
+"# Print x to see if it changed\n"
+"print(x)"
+msgstr ""
+"# Define a simple function that prints x\n"
+"def f(x):\n"
+"    x += 1\n"
+"    print(x)\n"
+"\n"
+"\n"
+"# Set x\n"
+"x = 10\n"
+"# Call the function\n"
+"f(x)\n"
+"# Print x to see if it changed\n"
+"print(x)"
+
+#: ../../source/chapters/08_functions/functions.rst:621
+msgid ""
+"The output is the same as the program that uses y. Even though both the "
+"function and the surrounding code use x for a variable name, there are "
+"actually two different variables. There is the variable x that exists "
+"inside of the function, and a different variable x that exists outside "
+"the function."
+msgstr ""
+"Die Ausgabe ist die gleiche wie vorher. Obwohl die Funktion und der "
+"umgebende Code ``x`` als Variablennamen verwenden, sind es doch "
+"tatsächlich zwei verschiedene Variablen. Die eine Variable ``x`` "
+"existiert innerhalb der Funktion. Die andere Variable ``x`` existiert "
+"außerhalb der Funktion."
+
+#: ../../source/chapters/08_functions/functions.rst:628
+msgid "Functions Calling Functions"
+msgstr "Funktionen rufen Funktionen auf"
+
+#: ../../source/chapters/08_functions/functions.rst:630
+msgid ""
+"For each of the examples below, think about what would print. Check to "
+"see if you are right. If you didn't guess correctly, spend to the time to"
+" understand why."
+msgstr ""
+"Überlege dir bei jedem der Beispiele unten, was es ausgeben wird. "
+"Überprüfe, ob du recht hattest. Wenn du falsch lagst, verwende Zeit "
+"darauf zu verstehen warum."
+
+#: ../../source/chapters/08_functions/functions.rst:635
+msgid "Example 1"
+msgstr "Beispiel 1"
+
+#: ../../source/chapters/08_functions/functions.rst:637
+msgid "In this example, note that if you don't use a function, it doesn't run."
+msgstr ""
+"Beachte in diesem Beispiel, dass eine Funktion nur ausgeführt wird, wenn "
+"sie auch aufgerufen wird."
+
+#: ../../source/chapters/08_functions/functions.rst:639
+msgid ""
+"# Example 1\n"
+"def a():\n"
+"    print(\"A\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+msgstr ""
+"# Example 1\n"
+"def a():\n"
+"    print(\"A\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+
+#: ../../source/chapters/08_functions/functions.rst:657
+msgid "Example 2"
+msgstr "Beispiel 2"
+
+#: ../../source/chapters/08_functions/functions.rst:659
+msgid ""
+"# Example 2\n"
+"def a():\n"
+"    b()\n"
+"    print(\"A\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    c()\n"
+"    print(\"B\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+msgstr ""
+"# Example 2\n"
+"def a():\n"
+"    b()\n"
+"    print(\"A\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    c()\n"
+"    print(\"B\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+
+#: ../../source/chapters/08_functions/functions.rst:680
+msgid "Example 3"
+msgstr "Beispiel 3"
+
+#: ../../source/chapters/08_functions/functions.rst:682
+msgid ""
+"# Example 3\n"
+"def a():\n"
+"    print(\"A\")\n"
+"    b()\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B\")\n"
+"    c()\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+msgstr ""
+"# Example 3\n"
+"def a():\n"
+"    print(\"A\")\n"
+"    b()\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B\")\n"
+"    c()\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C\")\n"
+"\n"
+"\n"
+"a()"
+
+#: ../../source/chapters/08_functions/functions.rst:702
+msgid "Example 4"
+msgstr "Beispiel 4"
+
+#: ../../source/chapters/08_functions/functions.rst:704
+msgid ""
+"# Example 4\n"
+"def a():\n"
+"    print(\"A start\")\n"
+"    b()\n"
+"    print(\"A end\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B start\")\n"
+"    c()\n"
+"    print(\"B end\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C start and end\")\n"
+"\n"
+"\n"
+"a()"
+msgstr ""
+"# Example 4\n"
+"def a():\n"
+"    print(\"A start\")\n"
+"    b()\n"
+"    print(\"A end\")\n"
+"\n"
+"\n"
+"def b():\n"
+"    print(\"B start\")\n"
+"    c()\n"
+"    print(\"B end\")\n"
+"\n"
+"\n"
+"def c():\n"
+"    print(\"C start and end\")\n"
+"\n"
+"\n"
+"a()"
+
+#: ../../source/chapters/08_functions/functions.rst:727
+msgid "Example 5"
+msgstr "Beispiel 5"
+
+#: ../../source/chapters/08_functions/functions.rst:729
+msgid ""
+"# Example 5\n"
+"def a(x):\n"
+"    print(\"A start, x =\", x)\n"
+"    b(x + 1)\n"
+"    print(\"A end, x =\", x)\n"
+"\n"
+"\n"
+"def b(x):\n"
+"    print(\"B start, x =\", x)\n"
+"    c(x + 1)\n"
+"    print(\"B end, x =\", x)\n"
+"\n"
+"\n"
+"def c(x):\n"
+"    print(\"C start and end, x =\", x)\n"
+"\n"
+"\n"
+"a(5)"
+msgstr ""
+"# Example 5\n"
+"def a(x):\n"
+"    print(\"A start, x =\", x)\n"
+"    b(x + 1)\n"
+"    print(\"A end, x =\", x)\n"
+"\n"
+"\n"
+"def b(x):\n"
+"    print(\"B start, x =\", x)\n"
+"    c(x + 1)\n"
+"    print(\"B end, x =\", x)\n"
+"\n"
+"\n"
+"def c(x):\n"
+"    print(\"C start and end, x =\", x)\n"
+"\n"
+"\n"
+"a(5)"
+
+#: ../../source/chapters/08_functions/functions.rst:751
+msgid "Example 6"
+msgstr "Beispiel 6"
+
+#: ../../source/chapters/08_functions/functions.rst:753
+msgid ""
+"While line 3 of this example increases ``x``, the ``x`` variable in the "
+"function is a different variable than the ``x`` that is in the rest of "
+"the program. So that ``x`` never changes."
+msgstr ""
+"In Zeile 3 dieses Beispiel wird der Wert von ``x`` inkrementiert. Da aber"
+" die Variable ``x`` in der Funktion eine andere Variable ist, als ``x`` "
+"im Rest des Programms, ändert sich der angezeigte Wert nicht."
+
+#: ../../source/chapters/08_functions/functions.rst:756
+msgid ""
+"# Example 6\n"
+"def a(x):\n"
+"    x = x + 1\n"
+"\n"
+"\n"
+"x = 3\n"
+"a(x)\n"
+"\n"
+"print(x)"
+msgstr ""
+"# Example 6\n"
+"def a(x):\n"
+"    x = x + 1\n"
+"\n"
+"\n"
+"x = 3\n"
+"a(x)\n"
+"\n"
+"print(x)"
+
+#: ../../source/chapters/08_functions/functions.rst:769
+msgid "Example 7"
+msgstr "Beispiel 7"
+
+#: ../../source/chapters/08_functions/functions.rst:771
+msgid ""
+"This example is similar to the prior example, but we ``return x`` at the "
+"end. Turns out, it doesn't matter. Because we never do anything with the "
+"return value. So the global variable ``x`` still doesn't increase. See "
+"the next example."
+msgstr ""
+"In diesem Beispiel, das dem vorherigen ähnelt, geben wir ``x`` zurück. Es"
+" zeigt sich, dass das keinen Unterschied macht, da wir mit dem "
+"Rückgabewert nichts machen. Die globale Variable ``x`` erhöht sich immer "
+"noch nicht. Sieh dir das nächste Beispiel an."
+
+#: ../../source/chapters/08_functions/functions.rst:774
+msgid ""
 "# Example 7\n"
 "def a(x):\n"
 "    x = x + 1\n"
@@ -1217,21 +1466,21 @@ msgstr ""
 "\n"
 "print(x)"
 
-#: ../../source/chapters/08_functions/functions.rst:620
+#: ../../source/chapters/08_functions/functions.rst:788
 msgid "Example 8"
 msgstr "Beispiel 8"
 
 # ``a()`` instead of ``a`` to denote function
-#: ../../source/chapters/08_functions/functions.rst:622
+#: ../../source/chapters/08_functions/functions.rst:790
 msgid ""
 "This example take the value returned from ``a`` and stores it back into "
 "``x``. How? By doing ``x = a(x)`` instead of just ``a(x)``."
 msgstr ""
 "In diesem Beispiel nehmen wir den von ``a()`` zurückgegebenen Wert und "
-"speichern ihn in der Variablen ``x``. Wie? Durch Schreiben von ``x = a(x)`` "
-"statt nur ``a(x)``."
+"speichern ihn in der Variablen ``x``. Wie? Durch Schreiben von ``x = "
+"a(x)`` statt nur ``a(x)``."
 
-#: ../../source/chapters/08_functions/functions.rst:625
+#: ../../source/chapters/08_functions/functions.rst:793
 msgid ""
 "# Example 8\n"
 "def a(x):\n"
@@ -1255,11 +1504,11 @@ msgstr ""
 "\n"
 "print(x)"
 
-#: ../../source/chapters/08_functions/functions.rst:639
+#: ../../source/chapters/08_functions/functions.rst:807
 msgid "Example 9"
 msgstr "Beispiel 9"
 
-#: ../../source/chapters/08_functions/functions.rst:641
+#: ../../source/chapters/08_functions/functions.rst:809
 msgid ""
 "# Example 9\n"
 "def a(x, y):\n"
@@ -1283,22 +1532,22 @@ msgstr ""
 "y = 20\n"
 "a(y, x)"
 
-#: ../../source/chapters/08_functions/functions.rst:655
+#: ../../source/chapters/08_functions/functions.rst:823
 msgid "Example 10"
 msgstr "Beispiel 10"
 
-#: ../../source/chapters/08_functions/functions.rst:657
+#: ../../source/chapters/08_functions/functions.rst:825
 msgid ""
-"While you can have two ``return`` statements in a function, once you hit the "
-"first ``return`` the function ends. In this case, ``return y`` never runs, "
-"because we already returned from the function in the prior line."
+"While you can have two ``return`` statements in a function, once you hit "
+"the first ``return`` the function ends. In this case, ``return y`` never "
+"runs, because we already returned from the function in the prior line."
 msgstr ""
 "Obwohl man mehrere ``return``-Anweisungen in einer Funktion haben kann, "
 "endet die Funktion mit dem ersten ``return``. In diesem Beispiel wird "
 "``return y`` niemals ausgeführt, wir von der Funktion schon in der Zeile "
 "davor zurückgekehrt sind."
 
-#: ../../source/chapters/08_functions/functions.rst:660
+#: ../../source/chapters/08_functions/functions.rst:828
 msgid ""
 "# Example 10\n"
 "def a(x, y):\n"
@@ -1328,20 +1577,20 @@ msgstr ""
 "\n"
 "print(z)"
 
-#: ../../source/chapters/08_functions/functions.rst:677
+#: ../../source/chapters/08_functions/functions.rst:845
 msgid "Example 11"
 msgstr "Beispiel 11"
 
-#: ../../source/chapters/08_functions/functions.rst:679
+#: ../../source/chapters/08_functions/functions.rst:847
 msgid ""
 "This is not something you can do in every programming language. You can "
 "return two values by using a comma and listing them."
 msgstr ""
-"Dies ist etwas, das man nicht in jeder Programmiersprache machen kann. Du "
-"kannst zwei Werte auf einmal zurückgeben, indem du sie mit einem Komma "
+"Dies ist etwas, das man nicht in jeder Programmiersprache machen kann. Du"
+" kannst zwei Werte auf einmal zurückgeben, indem du sie mit einem Komma "
 "getrennt angibst."
 
-#: ../../source/chapters/08_functions/functions.rst:681
+#: ../../source/chapters/08_functions/functions.rst:849
 msgid ""
 "# Example 11\n"
 "def a(x, y):\n"
@@ -1369,18 +1618,17 @@ msgstr ""
 "\n"
 "print(z)"
 
-#: ../../source/chapters/08_functions/functions.rst:697
+#: ../../source/chapters/08_functions/functions.rst:865
 msgid "Example 12"
 msgstr "Beispiel 12"
 
-#: ../../source/chapters/08_functions/functions.rst:699
-msgid ""
-"If you return two values out of a function, you can capture them this way."
+#: ../../source/chapters/08_functions/functions.rst:867
+msgid "If you return two values out of a function, you can capture them this way."
 msgstr ""
-"Wenn du zwei Werte aus einer Funktion zurück gibst, kannst du sie in dieser "
-"vor weiterverarbeiten."
+"Wenn du zwei Werte aus einer Funktion zurück gibst, kannst du sie in "
+"dieser vor weiterverarbeiten."
 
-#: ../../source/chapters/08_functions/functions.rst:701
+#: ../../source/chapters/08_functions/functions.rst:869
 msgid ""
 "# Example 12\n"
 "def a(x, y):\n"
@@ -1410,11 +1658,11 @@ msgstr ""
 "print(x2)\n"
 "print(y2)"
 
-#: ../../source/chapters/08_functions/functions.rst:718
+#: ../../source/chapters/08_functions/functions.rst:886
 msgid "Example 13"
 msgstr "Beispiel 13"
 
-#: ../../source/chapters/08_functions/functions.rst:720
+#: ../../source/chapters/08_functions/functions.rst:888
 msgid ""
 "# Example 13\n"
 "def a(my_data):\n"
@@ -1442,23 +1690,24 @@ msgstr ""
 "a(my_data)\n"
 "print(\"global scope, my_data =\", my_data)"
 
-#: ../../source/chapters/08_functions/functions.rst:736
+#: ../../source/chapters/08_functions/functions.rst:904
 msgid "Example 14"
 msgstr "Beispiel 14"
 
-#: ../../source/chapters/08_functions/functions.rst:738
+#: ../../source/chapters/08_functions/functions.rst:906
 msgid ""
-"We will talk more about these next two examples when we talk about \"lists\" "
-"and \"classes\" later. These examples don't operate like you might expect at "
-"first. Take a look and see what is different. We'll explain why it works "
-"differently later."
+"We will talk more about these next two examples when we talk about "
+"\"lists\" and \"classes\" later. These examples don't operate like you "
+"might expect at first. Take a look and see what is different. We'll "
+"explain why it works differently later."
 msgstr ""
-"Wir werden mehr über die nächsten beiden Beispiele reden, wenn wir \"Listen"
-"\" und \"Klassen\" behandeln. Diese Beispiele funktionieren nicht so, wie du "
-"das vielleicht zuerst erwartest. Sieh dir an, was unterschiedlich ist. Wir "
-"werden später erklären, warum dies anders funktioniert."
+"Wir werden mehr über die nächsten beiden Beispiele reden, wenn wir "
+"\"Listen\" und \"Klassen\" behandeln. Diese Beispiele funktionieren nicht"
+" so, wie du das vielleicht zuerst erwartest. Sieh dir an, was "
+"unterschiedlich ist. Wir werden später erklären, warum dies anders "
+"funktioniert."
 
-#: ../../source/chapters/08_functions/functions.rst:742
+#: ../../source/chapters/08_functions/functions.rst:910
 msgid ""
 "# Example 14\n"
 "def a(my_list):\n"
@@ -1486,11 +1735,11 @@ msgstr ""
 "a(my_list)\n"
 "print(\"global scope, list =\", my_list)"
 
-#: ../../source/chapters/08_functions/functions.rst:758
+#: ../../source/chapters/08_functions/functions.rst:926
 msgid "Example 15"
 msgstr "Beispiel 15"
 
-#: ../../source/chapters/08_functions/functions.rst:760
+#: ../../source/chapters/08_functions/functions.rst:928
 msgid ""
 "# Example 15\n"
 "# New concept!\n"
@@ -1521,3 +1770,187 @@ msgstr ""
 "print(\"global scope, list =\", my_list)\n"
 "a(my_list)\n"
 "print(\"global scope, list =\", my_list)"
+
+#: ../../source/chapters/08_functions/functions.rst:947
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:949
+msgid ""
+"This chapter was all about **functions**. We learned how to define "
+"functions using the ``def`` keyword. We can call functions just by using "
+"the function name followed by parenthesis. Functions can take in data by "
+"using **parameters**. Functions return data using the ``return`` "
+"statement. We can capture that data by setting a variable equal to the "
+"function call. Functions can be documented with comments. Variables "
+"created inside a function cannot be accessed outside the function. "
+"Parameter variables contain *copies* of the original data and can be "
+"modified without changing the original. Functions can call other "
+"functions, which can call yet more functions."
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:962
+msgid "Online Coding Problems"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:964
+msgid ""
+"Practice on-line by completing the first set of coding problems available"
+" here:"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:966
+msgid "https://repl.it/community/classrooms/174286"
+msgstr ""
+
+#: ../../source/chapters/08_functions/functions.rst:968
+msgid ""
+"All problems beginning with ``02`` can be done with the knowledge from "
+"this chapter."
+msgstr ""
+
+#~ msgid "Everything that is part of the function will be indented four spaces."
+#~ msgstr "Alles was Teil der Funktion ist, wird vier Leerzeichen weit eingerückt."
+
+#~ msgid ""
+#~ "An even better way of writing this"
+#~ " is with a check to make sure"
+#~ " we are trying to run this "
+#~ "file, and not import it. The "
+#~ "statement for this looks a little "
+#~ "weird. In fact, it is weird enough"
+#~ " I just look it up and "
+#~ "copy/paste it any time I want to"
+#~ " use it. Don't worry about "
+#~ "understanding how it works yet."
+#~ msgstr ""
+#~ "Eine noch bessere Vorgehensweise ist zu"
+#~ " prüfen, ob wir die Datei ausführen"
+#~ " und nicht importieren wollen. Die "
+#~ "Anweisung dazu sieht etwas seltsam aus."
+#~ " Sie ist tatsächlich seltsam genug, "
+#~ "dass ich sie jedes mal mit "
+#~ "Kopieren und Einfügen verwende. Mach dir"
+#~ " keine Sorgen, wenn du noch nicht "
+#~ "verstehst, wie das funktioniert."
+
+#~ msgid "Taking In Data"
+#~ msgstr "Daten übernehmen"
+
+#~ msgid ""
+#~ "Occasionally, new programmers want to "
+#~ "set the number values inside the "
+#~ "function. This is wrong. Then the "
+#~ "function would only work for those "
+#~ "values. The power is in specifying "
+#~ "the numbers outside the function. We "
+#~ "don't want the function to be "
+#~ "limited to only certain data values."
+#~ msgstr ""
+#~ "Manchmal möchten Anfänger die Zahlenwerte "
+#~ "innerhalb der Funktion festlegen. Das "
+#~ "ist falsch, denn dann würde die "
+#~ "Funktion nur mit diesen Werten "
+#~ "funktionieren. Die Leistungsfähigkeit liegt "
+#~ "darin, die Werte außerhalb der Funktion"
+#~ " festlegen zu können. Wir wollen "
+#~ "nicht, dass die Funktion nur auf "
+#~ "bestimmte Werte beschränkt ist."
+
+#~ msgid "For example:"
+#~ msgstr "Zum Beispiel:"
+
+#~ msgid "Function that returns two numbers added together"
+#~ msgstr "Eine Funktion, die zwei Werte addiert"
+
+#~ msgid ""
+#~ "We need to capture the result. We"
+#~ " do that by setting a variable "
+#~ "equal to the value the function "
+#~ "returned:"
+#~ msgstr ""
+#~ "Wir müssen das Ergebnis übernehmen. Wir"
+#~ " erreichen das, indem wir eine "
+#~ "Variable auf den zurückgegebenen Funktionswert"
+#~ " setzen."
+
+#~ msgid "Function that returns the volume of a cylinder"
+#~ msgstr "Eine Funktion, die das Volumen eines Zylinders zurückgibt"
+
+#~ msgid ""
+#~ "The value returned from volume_cylinder "
+#~ "goes into the equation and is "
+#~ "multiplied by six."
+#~ msgstr ""
+#~ "Der von ``volume_cylinder`` zurückgegebene "
+#~ "Wert kommt in die Formel und wird"
+#~ " mit sechs multipliziert."
+
+#~ msgid ""
+#~ "There is a big difference between "
+#~ "a function that prints a value and"
+#~ " a function that returns a value. "
+#~ "Look at the code below and try "
+#~ "it out."
+#~ msgstr ""
+#~ "Es gibt einen großen Unterschied "
+#~ "zwischen einer Funktion, die einen Wert"
+#~ " ausgibt, und einer, die einen Wert"
+#~ " zurück gibt. Sieh dir den Code "
+#~ "unten an und probiere es aus."
+
+#~ msgid ""
+#~ "When first working with functions it "
+#~ "is not unusual to get stuck "
+#~ "looking at code like this:"
+#~ msgstr ""
+#~ "Wenn man zum ersten Mal mit "
+#~ "Funktionen arbeitet, ist es nicht "
+#~ "ungewöhnlich, dass an Programmcode wie "
+#~ "dem folgenden hängen bleibt."
+
+#~ msgid ""
+#~ "The great thing about using docstrings"
+#~ " in functions is that the comment "
+#~ "can be pulled out and put into "
+#~ "a website documenting your code using"
+#~ " a tool like Sphinx. Most languages"
+#~ " have similar tools that can help "
+#~ "make documenting your code a breeze. "
+#~ "This can save a lot of time "
+#~ "as you start working on larger "
+#~ "programs."
+#~ msgstr ""
+#~ "Das Großartige an den Docstrings in "
+#~ "Funktionen ist, dass der Kommentar mit"
+#~ " einem Werkzeug wie Sphinx heraus "
+#~ "geholt werden und in eine Webseite "
+#~ "zur Dokumentation deines Programmcodes "
+#~ "eingefügt werden kann. Die meisten "
+#~ "Sprachen haben ähnliche Werkzeuge, die "
+#~ "dir erleichtern deinen Programmcode zu "
+#~ "dokumentieren. Dies kann dir eine Menge"
+#~ " Arbeit ersparen, wenn du an größeren"
+#~ " Programmen arbeitest."
+
+#~ msgid ""
+#~ "Other languages have more complex rules"
+#~ " around the creation of variables and"
+#~ " scope than Python does. Because "
+#~ "Python is straight-forward it is a"
+#~ " good introductory language."
+#~ msgstr ""
+#~ "Andere Sprachen haben kompliziertere Regeln"
+#~ " zur Erstellung von Variablen und "
+#~ "deren Gültigkeitsbereiche als Python. Weil "
+#~ "Python so geradeaus ist, ist es "
+#~ "eine gute Anfängersprache."
+
+#~ msgid ""
+#~ "Functions pass their values by creating"
+#~ " a copy of the original. For "
+#~ "example:"
+#~ msgstr ""
+#~ "Funktionen bekommen ihre Werte als Kopie"
+#~ " des Originals übergeben. Zum Beispiel:"
+

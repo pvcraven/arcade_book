@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 19:32+0200\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 10:16+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
-"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:2
 msgid "String Formatting"
@@ -25,29 +25,31 @@ msgstr "String-Formatierung"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:4
 msgid ""
-"Looking for an easy way to format variables for display, and mix them with "
-"other text? Add thousands separators (commas in the US) to a large number, "
-"and format decimals the way you want them? You need \"string formatting.\""
+"Looking for an easy way to format variables for display, and mix them "
+"with other text? Add thousands separators (commas in the US) to a large "
+"number, and format decimals the way you want them? You need \"string "
+"formatting.\""
 msgstr ""
 "Suchst du nach einer einfachen Möglichkeit, Variablen für die Anzeige zu "
 "formatieren und mit anderem Text zu mischen? Fügst du einer großen Zahl "
 "Tausender-Trennzeichen (Kommas in den USA) hinzu und formatierst "
-"Dezimalstellen nach deinen Wünschen? Du benötigst \"String-Formatierung\"."
+"Dezimalstellen nach deinen Wünschen? Du benötigst \"String-"
+"Formatierung\"."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:9
 msgid ""
-"Python has three ways to format strings. The `old string formatting`_ which "
-"originally came from how older languages such as C did formatting. The newer "
-"way introduced in Python 3 that was supposed to be better, but arguably "
-"wasn't. And the new way introduced in Python 3.6 with `PEP-498`_ . We'll "
-"cover the newest way."
+"Python has three ways to format strings. The `old string formatting`_ "
+"which originally came from how older languages such as C did formatting. "
+"The newer way introduced in Python 3 that was supposed to be better, but "
+"arguably wasn't. And the new way introduced in Python 3.6 with `PEP-498`_"
+" . We'll cover the newest way."
 msgstr ""
-"Python bietet drei Möglichkeiten zum Formatieren von Zeichenfolgen. Die alte "
-"Methode (`old string formatting`_), die ursprünglich aus der Formatierung "
-"älterer Sprachen wie C stammt. Der neuere Weg, der in Python 3 eingeführt "
-"wurde, sollte besser sein, war es aber wohl nicht. Und der neue Weg, der in "
-"Python 3.6 mit `PEP-498`_ eingeführt wurde. Wir werden den neuesten Weg "
-"abdecken."
+"Python bietet drei Möglichkeiten zum Formatieren von Zeichenfolgen. Die "
+"alte Methode (`old string formatting`_), die ursprünglich aus der "
+"Formatierung älterer Sprachen wie C stammt. Der neuere Weg, der in Python"
+" 3 eingeführt wurde, sollte besser sein, war es aber wohl nicht. Und der "
+"neue Weg, der in Python 3.6 mit `PEP-498`_ eingeführt wurde. Wir werden "
+"den neuesten Weg abdecken."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:20
 msgid "Quick Reference"
@@ -246,7 +248,8 @@ msgstr "Dezimalzahlen"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:83
 msgid ""
-"Try running the following program, which prints out several random numbers."
+"Try running the following program, which prints out several random "
+"numbers."
 msgstr "Führe das folgende Programm aus, das mehrere Zufallszahlen ausgibt."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:85
@@ -301,10 +304,10 @@ msgid ""
 "right-justifying them. The first step is to use the \"Literal String "
 "Interpolation\" on the string. See below:"
 msgstr ""
-"Wir können die String-Formatierung verwenden, um die Liste der Zahlen besser "
-"aussehen zu lassen, indem wir sie rechtsbündig ausrichten. Der erste Schritt "
-"besteht darin, die \"Literal String Interpolation\" für die Zeichenfolge zu "
-"verwenden. Siehe unten:"
+"Wir können die String-Formatierung verwenden, um die Liste der Zahlen "
+"besser aussehen zu lassen, indem wir sie rechtsbündig ausrichten. Der "
+"erste Schritt besteht darin, die \"Literal String Interpolation\" für die"
+" Zeichenfolge zu verwenden. Siehe unten:"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:114
 msgid ""
@@ -322,22 +325,22 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:122
 msgid ""
-"This gets our program closer to right-justifying the number, but we aren't "
-"quite there yet. See how the string starts with ``f``?"
+"This gets our program closer to right-justifying the number, but we "
+"aren't quite there yet. See how the string starts with ``f``?"
 msgstr ""
-"Dies bringt unser Programm näher an die richtige Ausrichtung der Zahl, aber "
-"wir sind noch nicht ganz da. Siehst du, wie die Zeichenfolge mit ``f`` "
-"beginnt?"
+"Dies bringt unser Programm näher an die richtige Ausrichtung der Zahl, "
+"aber wir sind noch nicht ganz da. Siehst du, wie die Zeichenfolge mit "
+"``f`` beginnt?"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:125
 msgid ""
-"The string will not print out the curly braces ``{}`` but instead replace "
-"them with the value in ``x``. The output (below) looks just like what we had "
-"before."
+"The string will not print out the curly braces ``{}`` but instead replace"
+" them with the value in ``x``. The output (below) looks just like what we"
+" had before."
 msgstr ""
-"Die Zeichenfolge gibt die geschweiften Klammern ``{}`` nicht aus, sondern "
-"ersetzt sie durch den Wert in ``x``. Die Ausgabe (unten) sieht genauso aus "
-"wie zuvor."
+"Die Zeichenfolge gibt die geschweiften Klammern ``{}`` nicht aus, sondern"
+" ersetzt sie durch den Wert in ``x``. Die Ausgabe (unten) sieht genauso "
+"aus wie zuvor."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:128
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:156
@@ -346,13 +349,13 @@ msgstr ""
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:284
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:306
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:328
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:374
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:467
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:507
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:546
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:568
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:613
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:646
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:376
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:469
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:509
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:548
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:570
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:615
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:648
 msgid "The output:"
 msgstr "Die Ausgabe:"
 
@@ -382,8 +385,8 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:142
 msgid ""
-"To right justify, we add more information about how to format the number to "
-"the curly braces ``{}``:"
+"To right justify, we add more information about how to format the number "
+"to the curly braces ``{}``:"
 msgstr ""
 "Zum rechtsbündigen Ausrichten fügen wir den geschweiften Klammern ``{}`` "
 "weitere Informationen zum Formatieren der Zahl hinzu:"
@@ -432,32 +435,32 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:170
 msgid ""
-"This is better; we have right justified numbers! But how does it work? The "
-"``:3`` that we added isn't exactly intuitive. Looks like we just added a "
-"random emoji."
+"This is better; we have right justified numbers! But how does it work? "
+"The ``:3`` that we added isn't exactly intuitive. Looks like we just "
+"added a random emoji."
 msgstr ""
-"Das ist besser. Wir haben die richtigen Zahlen! Aber wie funktioniert das? "
-"Das von uns hinzugefügte ``:3`` ist nicht ganz intuitiv. Sieht so aus, als "
-"hätten wir gerade ein zufälliges Emoji hinzugefügt."
+"Das ist besser. Wir haben die richtigen Zahlen! Aber wie funktioniert "
+"das? Das von uns hinzugefügte ``:3`` ist nicht ganz intuitiv. Sieht so "
+"aus, als hätten wir gerade ein zufälliges Emoji hinzugefügt."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:174
 msgid ""
-"Here's the breakdown: The ``{ }`` tells the computer we are going to format "
-"a number. Inside we put the variable we want to format, ``x`` in this case. "
-"After the variable, we put a ``:`` to tell the computer we are about to give "
-"it formatting information."
+"Here's the breakdown: The ``{ }`` tells the computer we are going to "
+"format a number. Inside we put the variable we want to format, ``x`` in "
+"this case. After the variable, we put a ``:`` to tell the computer we are"
+" about to give it formatting information."
 msgstr ""
-"Hier ist die Aufteilung: Das ``{ }`` teilt dem Computer mit, dass wir eine "
-"Zahl formatieren werden. Darin schreiben wir die Variable, die wir "
-"formatieren wollen, ``x`` in diesem Fall. Nach der Variablen setzen wir ein "
-"``:``, um dem Rechner mitzuteilen, dass wir ihm Formatierungsinformationen "
-"geben werden."
+"Hier ist die Aufteilung: Das ``{ }`` teilt dem Computer mit, dass wir "
+"eine Zahl formatieren werden. Darin schreiben wir die Variable, die wir "
+"formatieren wollen, ``x`` in diesem Fall. Nach der Variablen setzen wir "
+"ein ``:``, um dem Rechner mitzuteilen, dass wir ihm "
+"Formatierungsinformationen geben werden."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:179
 msgid ""
-"In this case we give it a 3 to specify a field width of three characters. "
-"The field width value tells the computer to try to fit the number into a "
-"field three characters wide. By default, it will try to right-justify "
+"In this case we give it a 3 to specify a field width of three characters."
+" The field width value tells the computer to try to fit the number into a"
+" field three characters wide. By default, it will try to right-justify "
 "numbers and left-justify text."
 msgstr ""
 "In diesem Fall geben wir eine 3 an, um eine Feldbreite von drei Zeichen "
@@ -467,16 +470,16 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:184
 msgid ""
-"Even better, the program no longer needs to call ``str( )`` to convert the "
-"number to a string! Leave the string conversions out."
+"Even better, the program no longer needs to call ``str( )`` to convert "
+"the number to a string! Leave the string conversions out."
 msgstr ""
-"Noch besser ist, dass das Programm nicht länger ``str()`` aufrufen muss, um "
-"die Zahl in einen String umzuwandeln! Lasse die String-Konvertierungen weg."
+"Noch besser ist, dass das Programm nicht länger ``str()`` aufrufen muss, "
+"um die Zahl in einen String umzuwandeln! Lasse die String-Konvertierungen"
+" weg."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:187
 msgid "What if you had large numbers? Let's make bigger random numbers:"
-msgstr ""
-"Was wäre, wenn wir große Zahlen hätten? Machen wir größere Zufallszahlen:"
+msgstr "Was wäre, wenn wir große Zahlen hätten? Machen wir größere Zufallszahlen:"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:189
 msgid "Bigger numbers that are hard to read"
@@ -528,13 +531,13 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:215
 msgid ""
-"Where are the commas? This list would look better with separators between "
-"each three digits. Take a look at the next example to see how they are added "
-"in:"
+"Where are the commas? This list would look better with separators between"
+" each three digits. Take a look at the next example to see how they are "
+"added in:"
 msgstr ""
 "Wo sind die Trennzeichen? Diese Liste würde mit Trennzeichen zwischen "
-"jeweils drei Ziffern besser aussehen. Schau dir das nächste Beispiel an, um "
-"zu sehen, wie sie hinzugefügt werden:"
+"jeweils drei Ziffern besser aussehen. Schau dir das nächste Beispiel an, "
+"um zu sehen, wie sie hinzugefügt werden:"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:218
 msgid "Adding a thousands separator"
@@ -580,24 +583,24 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:243
 msgid ""
-"We added a comma after the field width specifier, and now our numbers have "
-"commas. That comma must go after the field width specifier, not before. "
-"Commas are included in calculating the field width. For example, 1,024 has a "
-"field width of 5, not 4."
+"We added a comma after the field width specifier, and now our numbers "
+"have commas. That comma must go after the field width specifier, not "
+"before. Commas are included in calculating the field width. For example, "
+"1,024 has a field width of 5, not 4."
 msgstr ""
 "Wir haben nach dem Feldbreitenbezeichner ein Komma eingefügt, und jetzt "
-"haben unsere Zahlen Kommas. Das Komma muss nach dem Feldbreitenbezeichner "
-"stehen, nicht davor. Kommas werden bei der Berechnung der Feldbreite "
-"berücksichtigt. Beispielsweise hat 1,024 eine Feldbreite von 5 und nicht von "
-"4."
+"haben unsere Zahlen Kommas. Das Komma muss nach dem Feldbreitenbezeichner"
+" stehen, nicht davor. Kommas werden bei der Berechnung der Feldbreite "
+"berücksichtigt. Beispielsweise hat 1,024 eine Feldbreite von 5 und nicht "
+"von 4."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:248
 msgid ""
-"We can print multiple values, and combine the values with text. Run the code "
-"below."
+"We can print multiple values, and combine the values with text. Run the "
+"code below."
 msgstr ""
-"Wir können mehrere Werte ausgeben und die Werte mit Text kombinieren. Führe "
-"den folgenden Code aus."
+"Wir können mehrere Werte ausgeben und die Werte mit Text kombinieren. "
+"Führe den folgenden Code aus."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:251
 msgid "Printing more than one variable at a time"
@@ -617,8 +620,8 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:260
 msgid ""
-"The program will substitute numbers in for the curly braces, and still print "
-"out all of the other text in the string:"
+"The program will substitute numbers in for the curly braces, and still "
+"print out all of the other text in the string:"
 msgstr ""
 "Das Programm ersetzt die geschweiften Klammern durch Zahlen und gibt den "
 "gesamten anderen Text in der Zeichenfolge aus:"
@@ -671,11 +674,12 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:293
 msgid ""
-"Now try it using the format command. Note how we can put additional text and "
-"more than one value into the same line."
+"Now try it using the format command. Note how we can put additional text "
+"and more than one value into the same line."
 msgstr ""
-"Versuche es jetzt mit der ``format``-Anweisung. Beachte, wie du zusätzlichen "
-"Text und mehr als einen Wert in dieselbe Zeile einfügen kannst."
+"Versuche es jetzt mit der ``format``-Anweisung. Beachte, wie du "
+"zusätzlichen Text und mehr als einen Wert in dieselbe Zeile einfügen "
+"kannst."
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:296
 msgid "Formatting a list of fruit"
@@ -709,14 +713,14 @@ msgstr ""
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:314
 msgid ""
-"That's pretty cool, and it looks the way we want it. But what if we didn't "
-"want the numbers right justified, and the text left justified? We can use "
-"the ``<`` and ``>`` characters like the following example:"
+"That's pretty cool, and it looks the way we want it. But what if we "
+"didn't want the numbers right justified, and the text left justified? We "
+"can use the ``<`` and ``>`` characters like the following example:"
 msgstr ""
-"Das ist ziemlich cool und sieht so aus, wie wir es wollen. Was aber, wenn "
-"wir nicht wollten, dass die Zahlen rechts und der Text links ausgerichtet "
-"sind? Wir können die Zeichen ``<`` und ``>`` wie im folgenden Beispiel "
-"verwenden:"
+"Das ist ziemlich cool und sieht so aus, wie wir es wollen. Was aber, wenn"
+" wir nicht wollten, dass die Zahlen rechts und der Text links "
+"ausgerichtet sind? Wir können die Zeichen ``<`` und ``>`` wie im "
+"folgenden Beispiel verwenden:"
 
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:318
 msgid "Specifying right/left alignment"
@@ -748,19 +752,20 @@ msgstr ""
 " Grapes are 70  calories.\n"
 "  Pears are 30  calories."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:337
-msgid "Leading Zeros"
-msgstr "Führende Nullen"
-
 #: ../../source/chapters/30_print_formatting/print_formatting.rst:339
+#, fuzzy
+msgid "Clock Example with Leading Zeros"
+msgstr "Formatierung der Zeitausgabe mit führenden Nullen"
+
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:341
 msgid "This produces output that isn't right:"
 msgstr "Dies erzeugt eine Ausgabe, die nicht richtig ist:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:341
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:343
 msgid "Terrible looking clock"
 msgstr "Schrecklich aussehende Uhr"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:341
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:343
 msgid ""
 "for hours in range(1,13):\n"
 "    for minutes in range(0,60):\n"
@@ -770,11 +775,11 @@ msgstr ""
 "    for minutes in range(0,60):\n"
 "        print(f\"Time {hours}:{minutes}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:350
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:352
 msgid "The not-very-good output:"
 msgstr "Die nicht sehr gute Ausgabe:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:350
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:352
 msgid ""
 "Time 8:56\n"
 "Time 8:57\n"
@@ -792,21 +797,22 @@ msgstr ""
 "Time 9:1\n"
 "Time 9:2"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:361
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:363
 msgid ""
-"We need to use leading zeros for displaying numbers in clocks. Rather than "
-"specify a 2 for the field width, instead use 02. This will pad the field "
-"with zeros rather than spaces."
+"We need to use leading zeros for displaying numbers in clocks. Rather "
+"than specify a 2 for the field width, instead use 02. This will pad the "
+"field with zeros rather than spaces."
 msgstr ""
-"Wir müssen führende Nullen verwenden, um Zahlen in Uhren anzuzeigen. Anstatt "
-"eine 2 für die Feldbreite anzugeben, verwenden Sie stattdessen 02. Dadurch "
-"wird das Feld mit Nullen und nicht mit Leerzeichen aufgefüllt."
+"Wir müssen führende Nullen verwenden, um Zahlen in Uhren anzuzeigen. "
+"Anstatt eine 2 für die Feldbreite anzugeben, verwenden Sie stattdessen "
+"02. Dadurch wird das Feld mit Nullen und nicht mit Leerzeichen "
+"aufgefüllt."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:365
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:367
 msgid "Formatting time output with leading zeros"
 msgstr "Formatierung der Zeitausgabe mit führenden Nullen"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:365
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:367
 msgid ""
 "for hours in range(1, 13):\n"
 "    for minutes in range(0, 60):\n"
@@ -816,7 +822,7 @@ msgstr ""
 "    for minutes in range(0, 60):\n"
 "        print(f\"Time {hours:02}:{minutes:02}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:374
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:376
 msgid ""
 "Time 08:56\n"
 "Time 08:57\n"
@@ -834,23 +840,23 @@ msgstr ""
 "Time 09:01\n"
 "Time 09:02"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:386
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:388
 msgid "Floating Point Numbers"
 msgstr "Gleitkommazahlen"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:388
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:390
 msgid ""
-"We can also control floating point output. Examine the following code and "
-"its output:"
+"We can also control floating point output. Examine the following code and"
+" its output:"
 msgstr ""
 "Wir können auch die Ausgabe von Gleitkommazahlen steuern. Untersuche den "
 "folgenden Code und seine Ausgabe:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:390
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:392
 msgid "Formatting float point numbers"
 msgstr "Formatieren von Gleitkommazahlen"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:390
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:392
 msgid ""
 "x = 0.1\n"
 "y = 123.456789\n"
@@ -888,11 +894,11 @@ msgstr ""
 "print(f\"{x:.5f}  {y:.5f}\")\n"
 "print(f\"{x:.6f}  {y:.6f}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:412
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:414
 msgid "And here's the output for that code:"
 msgstr "Und hier ist die Ausgabe dieses Codes:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:412
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:414
 msgid ""
 "0.1  1e+02\n"
 "0.1  1.2e+02\n"
@@ -922,41 +928,41 @@ msgstr ""
 "0.10000  123.45679\n"
 "0.100000  123.456789"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:430
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:432
 msgid ""
-"A format of ``.2`` means to display the number with two digits of precision. "
-"Unfortunately this means if we display the number ``123`` which has three "
-"significant numbers rather than rounding it we get the number in scientific "
-"notation: ``1.2e+02``."
+"A format of ``.2`` means to display the number with two digits of "
+"precision. Unfortunately this means if we display the number ``123`` "
+"which has three significant numbers rather than rounding it we get the "
+"number in scientific notation: ``1.2e+02``."
 msgstr ""
-"Ein Format von ``.2`` bedeutet, dass die Zahl mit einer Genauigkeit von zwei "
-"Ziffern angezeigt wird. Leider bedeutet dies, wenn wir die Zahl ``123`` "
-"anzeigen, die drei signifikante Ziffern hat, erhalten wir die Zahl in "
-"wissenschaftlicher Notation ``1.2e+02`` anstatt gerundet."
+"Ein Format von ``.2`` bedeutet, dass die Zahl mit einer Genauigkeit von "
+"zwei Ziffern angezeigt wird. Leider bedeutet dies, wenn wir die Zahl "
+"``123`` anzeigen, die drei signifikante Ziffern hat, erhalten wir die "
+"Zahl in wissenschaftlicher Notation ``1.2e+02`` anstatt gerundet."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:435
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:437
 msgid ""
-"A format of ``.2f`` (note the ``f``) means to display the number with two "
-"digits after the decimal point. So the number 1 would display as ``1.00`` "
-"and the number ``1.5555`` would display as ``1.56``."
+"A format of ``.2f`` (note the ``f``) means to display the number with two"
+" digits after the decimal point. So the number 1 would display as "
+"``1.00`` and the number ``1.5555`` would display as ``1.56``."
 msgstr ""
-"Ein Format von ``.2f`` (beachte das ``f``) bedeutet, dass die Zahl mit zwei "
-"Nachkommastellen angezeigt wird. Die Zahl 1 würde also als ``1.00`` und die "
-"Zahl ``1.5555`` als ``1.56`` angezeigt."
+"Ein Format von ``.2f`` (beachte das ``f``) bedeutet, dass die Zahl mit "
+"zwei Nachkommastellen angezeigt wird. Die Zahl 1 würde also als ``1.00`` "
+"und die Zahl ``1.5555`` als ``1.56`` angezeigt."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:439
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:441
 msgid "A program can also specify a field width character:"
 msgstr "Ein Programm kann auch die Feldbreite angeben:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:441
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:490
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:519
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:586
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:632
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:443
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:492
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:521
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:588
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:634
 msgid "Specifying a field width character"
 msgstr "Angeben der Feldbreite"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:441
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:443
 msgid ""
 "x = 0.1\n"
 "y = 123.456789\n"
@@ -994,18 +1000,19 @@ msgstr ""
 "print(f\"My number: '{x:10.5f}' and '{y:10.5f}'\")\n"
 "print(f\"My number: '{x:10.6f}' and '{y:10.6f}'\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:463
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:465
 msgid ""
 "The format ``10.2f`` does not mean 10 digits before the decimal and two "
-"after. It means a total field width of 10. So there will be 7 digits before "
-"the decimal, the decimal which counts as one more, and 2 digits after."
+"after. It means a total field width of 10. So there will be 7 digits "
+"before the decimal, the decimal which counts as one more, and 2 digits "
+"after."
 msgstr ""
 "Das Format ``10.2f`` bedeutet nicht 10 Stellen und zwei Stellen nach dem "
-"Komma. Es bedeutet eine Gesamtfeldbreite von 10. Es gibt also 7 Stellen vor "
-"der Dezimalstelle, die Dezimalstelle, die als eine weitere Stelle zählt, und "
-"2 Stellen danach."
+"Komma. Es bedeutet eine Gesamtfeldbreite von 10. Es gibt also 7 Stellen "
+"vor der Dezimalstelle, die Dezimalstelle, die als eine weitere Stelle "
+"zählt, und 2 Stellen danach."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:467
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:469
 msgid ""
 "My number: '       0.1' and '     1e+02'\n"
 "My number: '       0.1' and '   1.2e+02'\n"
@@ -1035,19 +1042,19 @@ msgstr ""
 "My number: '   0.10000' and ' 123.45679'\n"
 "My number: '  0.100000' and '123.456789'"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:486
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:488
 msgid "Printing Dollars and Cents"
 msgstr "Ausgabe von Dollar und Cent"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:488
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:490
 msgid ""
 "If you want to print a floating point number for cost, you use an f. See "
 "below:"
 msgstr ""
-"Wenn du eine Gleitkommazahl für die Kosten ausgeben möchtest, verwende ein "
-"f. Siehe unten:"
+"Wenn du eine Gleitkommazahl für die Kosten ausgeben möchtest, verwende "
+"ein f. Siehe unten:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:490
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:492
 msgid ""
 "cost1 = 3.07\n"
 "tax1 = cost1 * 0.06\n"
@@ -1067,20 +1074,20 @@ msgstr ""
 "print(f\"-------------\")\n"
 "print(f\"Total: ${total1:5.2f}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:503
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:505
 #, python-format
 msgid ""
 "Remember! It would be easy to think that %5.2f would mean five digits, a "
 "decimal, followed by two digits. But it does not. It means a total field "
-"width of five, including the decimal and the two digits after. Here's the "
-"output:"
+"width of five, including the decimal and the two digits after. Here's the"
+" output:"
 msgstr ""
 "Merke! Man könnte leicht vermuten, dass ``%5.2f`` fünf Ziffern vor dem "
-"Punkt, den Punkt, gefolgt von zwei Stellen bedeutet. Aber das tut es nicht. "
-"Dies bedeutet eine Gesamtfeldbreite von fünf, einschließlich des Punkts und "
-"der zwei Nachkommastellen. Hier ist die Ausgabe:"
+"Punkt, den Punkt, gefolgt von zwei Stellen bedeutet. Aber das tut es "
+"nicht. Dies bedeutet eine Gesamtfeldbreite von fünf, einschließlich des "
+"Punkts und der zwei Nachkommastellen. Hier ist die Ausgabe:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:507
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:509
 msgid ""
 "Cost:  $ 3.07\n"
 "Tax:     0.18\n"
@@ -1092,17 +1099,17 @@ msgstr ""
 "-------------\n"
 "Total: $ 3.25"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:515
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:517
 msgid ""
-"Danger! The above code has a mistake that is very common when working with "
-"financial transactions. Can you spot it? Try spotting it with the expanded "
-"code example below:"
+"Danger! The above code has a mistake that is very common when working "
+"with financial transactions. Can you spot it? Try spotting it with the "
+"expanded code example below:"
 msgstr ""
 "Achtung! Der obige Code weist einen Fehler auf, der bei der Arbeit mit "
 "Finanztransaktionen häufig vorkommt. Findest du ihn? Versuche es mit dem "
 "folgenden erweiterten Codebeispiel:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:519
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:521
 msgid ""
 "cost1 = 3.07\n"
 "tax1 = cost1 * 0.06\n"
@@ -1150,7 +1157,7 @@ msgstr ""
 "grand_total = total1 + total2\n"
 "print(f\"Grand total: ${grand_total:5.2f}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:546
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:548
 msgid ""
 "Cost:  $ 3.07\n"
 "Tax:     0.18\n"
@@ -1176,26 +1183,27 @@ msgstr ""
 "\n"
 "Grand total: $ 8.63"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:561
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:563
 msgid ""
-"Spot the mistake? You have to watch out for rounding errors! Look at that "
-"example, it seems like the total should be ``$ 8.62`` but it isn't."
+"Spot the mistake? You have to watch out for rounding errors! Look at that"
+" example, it seems like the total should be ``$ 8.62`` but it isn't."
 msgstr ""
 "Siehst du den Fehler? Wir müssen auf Rundungsfehler achten! Schaue dir "
-"dieses Beispiel an, es scheint, als sollte die Gesamtsumme ``$ 8.62`` sein, "
-"aber das ist es nicht."
+"dieses Beispiel an, es scheint, als sollte die Gesamtsumme ``$ 8.62`` "
+"sein, aber das ist es nicht."
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:564
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:566
 msgid ""
 "Print formatting doesn't change the number, only what is output! If we "
-"changed the print formatting to include three digits after the decimal the "
-"reason for the error becomes more apparent:"
+"changed the print formatting to include three digits after the decimal "
+"the reason for the error becomes more apparent:"
 msgstr ""
-"Die Ausgabeformatierung ändert nicht die Zahl, sondern nur die Ausgabe! Wenn "
-"wir die Ausgabeformatierung dahingehend geändert haben, dass sie drei "
-"Nachkommastellen enthält, wird der Grund für den Fehler offensichtlicher:"
+"Die Ausgabeformatierung ändert nicht die Zahl, sondern nur die Ausgabe! "
+"Wenn wir die Ausgabeformatierung dahingehend geändert haben, dass sie "
+"drei Nachkommastellen enthält, wird der Grund für den Fehler "
+"offensichtlicher:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:568
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:570
 msgid ""
 "Cost:  $3.070\n"
 "Tax:    0.184\n"
@@ -1221,16 +1229,16 @@ msgstr ""
 "\n"
 "Grand total: $8.628"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:583
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:585
 msgid ""
-"Again, formatting for the display does not change the number. Use the round "
-"command to change the value and truly round. See below:"
+"Again, formatting for the display does not change the number. Use the "
+"round command to change the value and truly round. See below:"
 msgstr ""
-"Auch hier ändert die Formatierung der Anzeige nichts an der Zahl. Verwende "
-"die Anweisung ``round``, um den Wert zu ändern und wirklich zu runden. Siehe "
-"unten:"
+"Auch hier ändert die Formatierung der Anzeige nichts an der Zahl. "
+"Verwende die Anweisung ``round``, um den Wert zu ändern und wirklich zu "
+"runden. Siehe unten:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:586
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:588
 msgid ""
 "cost1 = 3.07\n"
 "tax1 = round(cost1 * 0.06, 2)\n"
@@ -1278,7 +1286,7 @@ msgstr ""
 "grand_total = total1 + total2\n"
 "print(f\"Grand total: ${grand_total:5.2f}\")"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:613
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:615
 msgid ""
 "Cost:  $ 3.07\n"
 "Tax:     0.18\n"
@@ -1304,16 +1312,17 @@ msgstr ""
 "\n"
 "Grand total: $ 8.62"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:629
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:631
 msgid ""
-"The round command controls how many digits after the decimal we round to. It "
-"returns the rounded value but does not change the original value. See below:"
+"The round command controls how many digits after the decimal we round to."
+" It returns the rounded value but does not change the original value. See"
+" below:"
 msgstr ""
-"Die Rundungsanweisung steuert, auf wie viele Stellen nach der Dezimalstelle "
-"gerundet wird. Der gerundete Wert wird zurückgegeben, der ursprüngliche Wert "
-"wird jedoch nicht geändert. Siehe unten:"
+"Die Rundungsanweisung steuert, auf wie viele Stellen nach der "
+"Dezimalstelle gerundet wird. Der gerundete Wert wird zurückgegeben, der "
+"ursprüngliche Wert wird jedoch nicht geändert. Siehe unten:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:632
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:634
 msgid ""
 "x = 1234.5678\n"
 "print(round(x, 2))\n"
@@ -1329,15 +1338,15 @@ msgstr ""
 "print(round(x, -1))\n"
 "print(round(x, -2))"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:643
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:645
 msgid ""
-"See below to figure out how feeding the round() function values like -2 for "
-"the digits after the decimal affects the output:"
+"See below to figure out how feeding the round() function values like -2 "
+"for the digits after the decimal affects the output:"
 msgstr ""
-"Siehe unten, wie sich die Eingabe der ``round()``-Funktionswerte wie -2 auf "
-"die Nachkommastellen auf die Ausgabe auswirkt:"
+"Siehe unten, wie sich die Eingabe der ``round()``-Funktionswerte wie -2 "
+"auf die Nachkommastellen auf die Ausgabe auswirkt:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:646
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:648
 msgid ""
 "1234.57\n"
 "1234.6\n"
@@ -1351,24 +1360,24 @@ msgstr ""
 "1230.0\n"
 "1200.0"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:656
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:658
 msgid "Use in Arcade Programs"
 msgstr "Verwendung in Arcade-Programmen"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:657
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:659
 msgid ""
 "We don't just have to format strings for print statements. The example "
 "`timer.py`_ uses string formatting to make an on-screen timer:"
 msgstr ""
-"Wir müssen nicht nur Zeichenfolgen für Ausgabeanweisungen formatieren. Das "
-"Beispiel `timer.py`_ verwendet die Formatierung von Zeichenfolgen, um einen "
-"On-Screen-Timer zu erstellen:"
+"Wir müssen nicht nur Zeichenfolgen für Ausgabeanweisungen formatieren. "
+"Das Beispiel `timer.py`_ verwendet die Formatierung von Zeichenfolgen, um"
+" einen On-Screen-Timer zu erstellen:"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:662
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:664
 msgid "Code from timer.py"
 msgstr "Code von timer.py"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:662
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:664
 msgid ""
 "def on_draw(self):\n"
 "    \"\"\" Use this function to draw everything to the screen. \"\"\"\n"
@@ -1420,10 +1429,14 @@ msgstr ""
 "    \"\"\"\n"
 "    self.total_time += delta_time"
 
-#: ../../source/chapters/30_print_formatting/print_formatting.rst:691
+#: ../../source/chapters/30_print_formatting/print_formatting.rst:693
 msgid ""
-"You can also use it to display the score, or any other statistics you'd like "
-"to show the player."
+"You can also use it to display the score, or any other statistics you'd "
+"like to show the player."
 msgstr ""
 "Du kannst den Programmcode auch verwenden, um die Punktzahl oder andere "
 "Statistiken anzuzeigen, die du dem Spieler anzeigen möchten."
+
+#~ msgid "Leading Zeros"
+#~ msgstr "Führende Nullen"
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 13:29-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 11:12+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -166,10 +166,35 @@ msgstr ""
 "eigene ist."
 
 #: ../../source/labs/lab_06_text_adventure/adventure.rst:92
-msgid "Create a ``main`` function and call the ``main`` function."
-msgstr "Erstelle eine ``main``-Funktion und rufe die ``main``-Funktion auf."
+msgid "Define a class called ``Room`` as shown in :ref:`define-class`."
+msgstr ""
 
 #: ../../source/labs/lab_06_text_adventure/adventure.rst:93
+msgid "Define an ``__init__`` method as shown in :ref:`define-init-method`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:94
+msgid ""
+"Define class attributes for ``description``, ``north``, ``east``, "
+"``south``, and ``west`` as shown in :ref:`define-init-method`. Default "
+"``description`` to an empty string, all others to ``0``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:97
+msgid ""
+"Customize the ``__init__`` method (also known as the constructor) to take"
+" in data for all five attributes when the ``Room`` is created. Refer back"
+" to :ref:`address-class-example-with-init` for an example."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:100
+msgid ""
+"Create a ``main`` function and call the ``main`` function as shown in "
+":ref:`create-main-function`. Make sure your ``main`` function is **not** "
+"inside the ``Room`` class."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:103
 msgid ""
 "In the ``main`` function, create an empty array called ``room_list``. If "
 "you've forgotten, see :ref:`create-an-empty-list`."
@@ -178,31 +203,20 @@ msgstr ""
 "``room_list``. Wenn du vergessen hast wie das geht, lies :ref:`create-an-"
 "empty-list`."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:95
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:105
 msgid ""
-"Create a variable called ``room``. Set it equal to an array with five "
-"elements. For the first element, create a string with a description of "
-"your first room. The last four elements will be the number of the next "
-"room if the user goes north, east, south, or west. Look at your sketch to"
-" see what numbers to use. Use ``None`` if no room hooks up in that "
-"direction. (Do not put ``None`` in quotes. Also, remember that Python is "
-"case sensitive so ``none`` won't work either. The keyword ``None`` is a "
-"special value that represents \"nothing.\" Because sometimes you need a "
-"value, other than zero, that represents )"
+"Create a variable called ``room``. Set it equal to a new instance of the "
+"``Room`` class. For the first parameter, create a string with a "
+"description of your first room. The last four elements will be the number"
+" of the next room if the user goes north, east, south, or west. Look at "
+"your sketch to see what numbers to use. Use ``None`` if no room hooks up "
+"in that direction. (Do not put ``None`` in quotes. Also, remember that "
+"Python is case sensitive so ``none`` won't work either. The keyword "
+"``None`` is a special value that represents \"nothing.\" Because "
+"sometimes you need a value, other than zero, that represents )"
 msgstr ""
-"Erstelle eine Variable namens ``room``. Setze sie auf ein Array mit fünf "
-"Elementen. Erstelle für das erste Element eine Zeichenfolge mit einer "
-"Beschreibung deines ersten Raums. Die letzten vier Elemente geben die "
-"Nummer des nächsten Raums an, wenn der Benutzer nach Norden, Osten, Süden"
-" oder Westen geht. Sehe dir deine Skizze an, um zu sehen, welche Zahlen "
-"verwendet werden sollen. Verwende ``None``, wenn sich kein Raum in dieser"
-" Richtung anschließt. (Schreibe ``None`` nicht in Anführungszeichen. "
-"Denke auch daran, dass bei Python die Groß- und Kleinschreibung beachtet "
-"wird, deshalb funktioniert auch ``none`` nicht. Das Schlüsselwort "
-"``None`` ist ein spezieller Wert, der \"nichts\" darstellt manchmal "
-"brauchst du einen anderen Wert als null.)"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:103
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:114
 msgid ""
 "Append this room to the room list. See :ref:`append_to_list` if you've "
 "forgotten how to do that."
@@ -210,36 +224,53 @@ msgstr ""
 "Hänge diesen Raum an die Raumliste an. Siehe :ref:`append_to_list`, wenn "
 "du vergessen hast, wie das geht."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:104
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:115
+#, fuzzy
 msgid ""
 "Repeat the prior two steps for each room you want to create. Just re-use "
-"the room variable."
+"the ``room`` variable."
 msgstr ""
 "Wiederhole die vorherigen beiden Schritte für jeden Raum, den du "
 "erstellen möchten. Verwende die Variable ``room`` einfach erneut."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:106
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:117
 msgid "Create a variable called ``current_room``. Set it to zero."
 msgstr "Erstelle eine Variable namens ``current_room``. Setze sie auf Null."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:107
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:118
+#, fuzzy
 msgid ""
 "Print the ``room_list`` variable. Run the program. You should see a "
-"really long list of every room in your adventure. If you don't, make sure"
-" you are calling your ``main`` function at the end of your program, and "
-"that it isn't indented."
+"really long list of every room object in your adventure that looks "
+"something like this strange line:"
 msgstr ""
 "Gib die Variable ``room_list`` aus. Führe das Programm aus. Du solltest "
 "eine wirklich lange Liste von jedem Raum in deinem Adventure sehen. Wenn "
 "dies nicht der Fall ist, stelle sicher, dass du deine ``main``-Funktion "
 "am Ende deines Programms aufrufst und dass sie nicht eingerückt ist."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:110
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:121
 msgid ""
-"Adjust your print statement to only print the first room (element zero) "
-"in the list. Note that at index 0 is the description, 1 is the room to "
-"the north, 2 is the room to the east, etc. Run the program and confirm "
-"you get output similar to::"
+"[<__main__.Room object at 0x03800520>, <__main__.Room object at "
+"0x0398F220>,"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:125
+#, fuzzy
+msgid ""
+"If you don't, make sure you are calling your ``main`` function at the end"
+" of your program, and that it isn't indented."
+msgstr ""
+"Gib die Variable ``room_list`` aus. Führe das Programm aus. Du solltest "
+"eine wirklich lange Liste von jedem Raum in deinem Adventure sehen. Wenn "
+"dies nicht der Fall ist, stelle sicher, dass du deine ``main``-Funktion "
+"am Ende deines Programms aufrufst und dass sie nicht eingerückt ist."
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:129
+#, fuzzy
+msgid ""
+"Adjust your ``print statement`` to only print the first room (element "
+"zero) in the list. Run the program and confirm you get output similar to:"
 msgstr ""
 "Passe deine ``print``-Anweisung so an, dass nur der erste Raum (Element "
 "Null) in der Liste ausgegeben wird. Beachte, dass bei Index 0 die "
@@ -247,13 +278,11 @@ msgstr ""
 "weiter. Führe das Programm aus und überprüfe, dass du eine Ausgabe "
 "ähnlich der folgenden erhältst:"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:115
-msgid ""
-"['You are in a room. There is a passage to the north.', 1, None, None, "
-"None]"
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:132
+msgid "<__main__.Room object at 0x03800520>"
 msgstr ""
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:117
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:137
 msgid ""
 "Using ``current_room`` and ``room_list``, print the current room the user"
 " is in. Since your first room is zero, the output should be the same as "
@@ -263,24 +292,19 @@ msgstr ""
 "in dem sich der Benutzer befindet. Da dein erster Raum 0 ist, sollte die "
 "Ausgabe dieselbe sein wie zuvor."
 
-# Add period
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:119
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:139
 msgid ""
 "Change the print statement so that you only print the description of the "
-"room, and not the rooms that hook up to it. Remember if you are printing "
-"a list in a list the index goes after the first index. Don't do this: "
-"``[current_room[0]]``, do ``[current_room][0]``"
+"room, and not the strange object printing we are getting now. You can do "
+"that by appending ``.description`` to what you printed in the prior step."
+" When you run it, you should get your room description:"
 msgstr ""
-"Ändere die Druckanweisung so, dass du nur die Beschreibung des Raums und "
-"nicht die Räume ausgibst, die mit ihm verbunden sind. Denke daran, wenn "
-"du eine Liste in einer Liste ausgibst, kommt der Index dem ersten Index. "
-"Schreibe nicht: ``[current_room[0]]``, sondern ``[current_room][0]``."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:124
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:144
 msgid "You are in a room. There is a passage to the north."
 msgstr ""
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:128
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:148
 msgid ""
 "Create a variable called ``done`` and set it to ``False``. Then put the "
 "printing of the room description in a ``while`` loop that repeats until "
@@ -293,7 +317,7 @@ msgstr ""
 "``True`` gesetzt ist. Wir werden ``done`` aber noch nicht auf ``True`` "
 "setzen."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:131
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:151
 msgid ""
 "Before printing the description, add a code to print a blank line. This "
 "will make it visually separate each turn when playing the game."
@@ -301,7 +325,7 @@ msgstr ""
 "Füge vor der Ausgabe der Beschreibung Code hinzu, um eine leere Zeile "
 "auszugeben, dadurch wird sie bei jedem Spielzug optisch abgetrennt."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:133
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:153
 msgid ""
 "After printing the room description, add a line of code that asks the "
 "user what they want to do. Use the ``input`` statement. Keep in mind that"
@@ -322,7 +346,7 @@ msgstr ""
 "Rückgabewert nicht zu erfassen. Siehe :ref:`capturing_returned_values`, "
 "wenn du dieses Problem hast."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:140
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:160
 msgid ""
 "Add an ``if`` statement to see if the user wants to go north. You should "
 "accept user input like \"n\" and \"N\" and \"North\" and \"NoRtH\". You "
@@ -335,39 +359,33 @@ msgstr ""
 "Folgendes wiederholen :ref:`text-comparisons` und :ref:`multi-text-"
 "comparisons`."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:144
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:164
+#, fuzzy
 msgid ""
 "If the user wants to go north, create a variable called ``next_room`` and"
-" get it equal to ``room_list[current_room][1]``, which should be the "
-"number for what room is to the north. (Remember, 0 is the description, 1 "
-"is north, 2 is east, etc.)"
+" get it equal to ``room_list[current_room].north``, which should be the "
+"number for what room is to the north."
 msgstr ""
 "Wenn der Benutzer nach Norden gehen möchte, erstelle eine Variable namens"
 " ``next_room`` und setze sie gleich ``room_list[current_room][1]``. Damit"
 " sollte in ``next_room`` die Nummer für den Raum im Norden stehen. (Denke"
 " daran, 0 ist die Beschreibung, 1 ist Norden, 2 ist Osten und so weiter.)"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:148
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:167
 msgid ""
 "Add another ``if`` statement to see if the next room is equal to "
-"``None``. If it is, print \"You can't go that way.\" *Otherwise* (how do "
-"you do 'otherwise'?) set ``current_room`` equal to ``next_room``. Note: "
-"This new ``if`` statement is part of the ``if`` statement to go north. So"
-" make sure it is indented inside that ``if``."
+"``None``. If it is, print \"You can't go that way.\" *Otherwise* set "
+"``current_room`` equal to ``next_room``. Note: This new ``if`` statement "
+"is part of the ``if`` statement to go north. So make sure it is indented "
+"inside that ``if``. Also, if you are doing one choice or another, "
+"remember to use ``else``."
 msgstr ""
-"Füge eine weitere ``if``-Anweisung hinzu, um festzustellen, ob der "
-"nächste Raum gleich ``None`` ist. Wenn dies der Fall ist, gebe \"Du "
-"kannst nicht in diese Richtung gehen\" aus. *Andernfalls* (wie "
-"programmierst du 'andernfalls'?) setze ``current_room`` auf "
-"``next_room``. Hinweis: Diese neue ``if``-Anweisung ist Teil der "
-"``if``-Anweisung nach Norden zu gehen. Stelle also sicher, dass es in das"
-" ``if`` eingerückt ist."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:153
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:172
 msgid "Test your program. Can you go north to a new room?"
 msgstr "Teste dein Programm. Kannst du nach Norden in einen neuen Raum gehen?"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:154
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:173
 msgid ""
 "Add ``elif`` statements to handle east, south, and west. Add an ``else`` "
 "statement to let the user know the program doesn't understand what she "
@@ -377,7 +395,7 @@ msgstr ""
 " eine ``else``-Anweisung hinzu, um dem Benutzer mitzuteilen, dass das "
 "Programm nicht versteht, was er eingegeben hat."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:156
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:175
 msgid ""
 "It is a great idea to put blank lines between the code that handles each "
 "direction. I don't mean to print a blank line, but actually have blank "
@@ -388,11 +406,11 @@ msgstr ""
 "auszugeben, sondern tatsächlich Leerzeilen im Programmcode. Auf diese "
 "Weise gruppierst du den Code visuell in Abschnitte."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:159
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:178
 msgid "It is a great idea to add comments too, to each section."
 msgstr "Es ist eine gute Idee, zu jedem Abschnitt auch Kommentare hinzuzufügen."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:160
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:179
 msgid ""
 "Test your program. Make sure you have enough of a description that "
 "someone running the program will know what direction to go. Don't say "
@@ -404,17 +422,17 @@ msgstr ""
 "gehen soll. Sag nicht \"Du bist in der Küche.\" Sag stattdessen \"Sie "
 "sind in der Küche. Es gibt eine Tür nach Norden.\""
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:163
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:182
 msgid "Add a quit command that ends the game."
 msgstr "Füge einen Ende-Kommando hinzu, das das Spiel beendet."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:164
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:183
 msgid "Make sure that the program works for upper and lower case commands."
 msgstr ""
 "Stelle sicher, dass das Programm für Groß- und Kleinschreibung "
 "funktioniert."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:165
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:184
 msgid ""
 "Have the program work if the user types in \"north\" or \"n\". Review "
 ":ref:`multi-text-comparisons` if needed."
@@ -422,7 +440,7 @@ msgstr ""
 "Das Programm soll funktionieren, wenn der Benutzer \"nord\" oder \"n\" "
 "eingibt. Wiederhole :ref:`multi-text-comparisons` falls nötig."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:168
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:187
 msgid ""
 "Spend a little time to make this game interesting. Don't simply create an"
 " \"East room\" and a \"West room.\" That's boring."
@@ -431,7 +449,7 @@ msgstr ""
 "nicht einfach einen \"Ostraum\" und einen \"Westraum\". Das ist "
 "langweilig."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:171
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:190
 msgid ""
 "Also spend a little time to double check spelling and grammar. Without a "
 "word processor checking your writing, it is important to be careful. Pay "
@@ -441,17 +459,19 @@ msgstr ""
 "überprüfen. Ohne ein Textverarbeitungsprogramm, das deine Texte "
 "überprüft, musst du besonders aufmerksam sein. Beachte insbesondere:"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:174
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:193
+#, fuzzy
 msgid ""
-"Students often capitalize words in this lab that should not be "
-"capitalized. In particular, see `when do you capitalize directions`_."
+"In the past I've had people capitalize words in this lab that should not "
+"be capitalized. Incorrect capitalization of direcetions are common. See "
+"`when do you capitalize directions`_."
 msgstr ""
 "Die Studierenden schreiben in dieser Übung oft Wörter in Großbuchstaben, "
 "die nicht groß geschrieben werden dürfen und umgekehrt. Siehe dir sich "
 "insbesondere an, wann du Anweisungen in Großbuchstaben schreibst. (Für "
 "Englisch: `when do you capitalize directions`_.)"
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:176
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:196
 msgid ""
 "Do not capitalize room names unless the room name is part of a title. "
 "Don't say \"You are in the Living Room,\" because the word \"living "
@@ -461,7 +481,7 @@ msgstr ""
 "im wohnzimmer\", da das Wort \"Wohnzimmer\" in Großbuchstaben geschrieben"
 " wird."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:181
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:202
 msgid ""
 "Use ``\\n`` to add carriage returns in your descriptions so they don't "
 "print all on one line. Don't put spaces around the ``\\n``, or the spaces"
@@ -472,13 +492,14 @@ msgstr ""
 "Leerzeichen um das ``\\n`` herum, sonst werden die Leerzeichen "
 "ausgegeben."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:184
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:205
+#, fuzzy
 msgid ""
 "What I like about this program is how easy it is to expand into a full "
-"game. Using all eight cardinal directions (including \"NorthWest\"), "
-"along with \"up\" and \"down\" is rather easy. Managing an inventory of "
-"objects that can exist in rooms, be picked up, and dropped is also a "
-"matter of keeping lists."
+"game. Expanding the game to use all eight cardinal directions (including "
+"\"NorthWest\"), along with \"up\" and \"down\" is rather easy. Managing "
+"an inventory of objects that can exist in rooms, be picked up, and "
+"dropped is just a matter of keeping lists."
 msgstr ""
 "Was ich an diesem Programm mag, ist, wie einfach es ist, es zu einem "
 "vollständigen Spiel zu erweitern. Es ist ziemlich einfach, alle acht "
@@ -487,7 +508,7 @@ msgstr ""
 "die in Räumen vorhanden sein, abgeholt und fallen gelassen werden können,"
 " ist auch mit Listen realisierbar."
 
-#: ../../source/labs/lab_06_text_adventure/adventure.rst:189
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:210
 msgid ""
 "Expanding this program into a full game is one of the two options for the"
 " final lab in this course."
@@ -623,4 +644,100 @@ msgstr ""
 
 #~ msgid "Du bist in einem Raum. Es gibt eine Passage nach Norden."
 #~ msgstr ""
+
+#~ msgid "Create a ``main`` function and call the ``main`` function."
+#~ msgstr "Erstelle eine ``main``-Funktion und rufe die ``main``-Funktion auf."
+
+#~ msgid ""
+#~ "Create a variable called ``room``. Set"
+#~ " it equal to an array with five"
+#~ " elements. For the first element, "
+#~ "create a string with a description "
+#~ "of your first room. The last four"
+#~ " elements will be the number of "
+#~ "the next room if the user goes "
+#~ "north, east, south, or west. Look "
+#~ "at your sketch to see what numbers"
+#~ " to use. Use ``None`` if no "
+#~ "room hooks up in that direction. "
+#~ "(Do not put ``None`` in quotes. "
+#~ "Also, remember that Python is case "
+#~ "sensitive so ``none`` won't work either."
+#~ " The keyword ``None`` is a special"
+#~ " value that represents \"nothing.\" Because"
+#~ " sometimes you need a value, other"
+#~ " than zero, that represents )"
+#~ msgstr ""
+#~ "Erstelle eine Variable namens ``room``. "
+#~ "Setze sie auf ein Array mit fünf"
+#~ " Elementen. Erstelle für das erste "
+#~ "Element eine Zeichenfolge mit einer "
+#~ "Beschreibung deines ersten Raums. Die "
+#~ "letzten vier Elemente geben die Nummer"
+#~ " des nächsten Raums an, wenn der "
+#~ "Benutzer nach Norden, Osten, Süden oder"
+#~ " Westen geht. Sehe dir deine Skizze"
+#~ " an, um zu sehen, welche Zahlen "
+#~ "verwendet werden sollen. Verwende ``None``,"
+#~ " wenn sich kein Raum in dieser "
+#~ "Richtung anschließt. (Schreibe ``None`` nicht"
+#~ " in Anführungszeichen. Denke auch daran,"
+#~ " dass bei Python die Groß- und "
+#~ "Kleinschreibung beachtet wird, deshalb "
+#~ "funktioniert auch ``none`` nicht. Das "
+#~ "Schlüsselwort ``None`` ist ein spezieller "
+#~ "Wert, der \"nichts\" darstellt manchmal "
+#~ "brauchst du einen anderen Wert als "
+#~ "null.)"
+
+#~ msgid ""
+#~ "['You are in a room. There is "
+#~ "a passage to the north.', 1, None,"
+#~ " None, None]"
+#~ msgstr ""
+
+# Add period
+#~ msgid ""
+#~ "Change the print statement so that "
+#~ "you only print the description of "
+#~ "the room, and not the rooms that"
+#~ " hook up to it. Remember if you"
+#~ " are printing a list in a list"
+#~ " the index goes after the first "
+#~ "index. Don't do this: ``[current_room[0]]``,"
+#~ " do ``[current_room][0]``"
+#~ msgstr ""
+#~ "Ändere die Druckanweisung so, dass du"
+#~ " nur die Beschreibung des Raums und"
+#~ " nicht die Räume ausgibst, die mit"
+#~ " ihm verbunden sind. Denke daran, "
+#~ "wenn du eine Liste in einer Liste"
+#~ " ausgibst, kommt der Index dem ersten"
+#~ " Index. Schreibe nicht: ``[current_room[0]]``,"
+#~ " sondern ``[current_room][0]``."
+
+#~ msgid ""
+#~ "Add another ``if`` statement to see "
+#~ "if the next room is equal to "
+#~ "``None``. If it is, print \"You "
+#~ "can't go that way.\" *Otherwise* (how"
+#~ " do you do 'otherwise'?) set "
+#~ "``current_room`` equal to ``next_room``. Note:"
+#~ " This new ``if`` statement is part"
+#~ " of the ``if`` statement to go "
+#~ "north. So make sure it is indented"
+#~ " inside that ``if``."
+#~ msgstr ""
+#~ "Füge eine weitere ``if``-Anweisung hinzu, "
+#~ "um festzustellen, ob der nächste Raum"
+#~ " gleich ``None`` ist. Wenn dies der"
+#~ " Fall ist, gebe \"Du kannst nicht "
+#~ "in diese Richtung gehen\" aus. "
+#~ "*Andernfalls* (wie programmierst du "
+#~ "'andernfalls'?) setze ``current_room`` auf "
+#~ "``next_room``. Hinweis: Diese neue "
+#~ "``if``-Anweisung ist Teil der ``if``-Anweisung"
+#~ " nach Norden zu gehen. Stelle also"
+#~ " sicher, dass es in das ``if`` "
+#~ "eingerückt ist."
 

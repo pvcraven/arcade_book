@@ -85,7 +85,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Arcade'
-copyright = '2020, Paul Vincent Craven'
+copyright = '2021, Paul Vincent Craven'
 author = 'Paul Vincent Craven'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -328,7 +328,7 @@ texinfo_documents = [
 epub_title = 'Learn to Program with Arcade'
 epub_author = 'Paul Vincent Craven'
 epub_publisher = 'Paul Vincent Craven'
-epub_copyright = 'Copyright 2020 by Paul Vincent Craven'
+epub_copyright = 'Copyright 2021 by Paul Vincent Craven'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project

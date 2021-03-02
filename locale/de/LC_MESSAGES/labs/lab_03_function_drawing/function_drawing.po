@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 10:37+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -23,24 +23,37 @@ msgstr ""
 msgid "Lab 3: Drawing with Functions"
 msgstr "Übung 3: Zeichnen mit Funktionen"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:7
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:6
+msgid ""
+"This lab uses what we learned in :ref:`creating_functions` and :ref"
+":`custom-drawing-function` to extend our ability to draw to the screen."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:10
 msgid "Requirements"
 msgstr "Anforderungen"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:8
-msgid "Your goal: Draw and animate an image."
-msgstr "Dein Ziel: Zeichne und animiere ein Bild."
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:12
+msgid "Your goal: Draw an image using functions."
+msgstr ""
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:11
+#, fuzzy
+msgid ".. image:: labs\\lab_03_function_drawing\\example.png"
+msgstr ".. image:: labs/lab_03_function_drawing/lab_03_example_01.gif"
+
+#, fuzzy
+msgid ".. image:: labs\\lab_03_function_drawing\\example_2.png"
+msgstr ".. image:: labs/lab_03_function_drawing/lab_03_example_01.gif"
+
 #, fuzzy
 msgid ".. image:: labs\\lab_03_function_drawing\\lab_03_example_01.gif"
 msgstr ".. image:: labs/lab_03_function_drawing/lab_03_example_01.gif"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:13
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:24
 msgid "Requirements for Drawing"
 msgstr "Anforderungen an die Zeichnung"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:15
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:26
 msgid ""
 "You can update your program from Lab 2, or create a new program. This lab"
 " is worth 20 points. See the point breakdown below."
@@ -49,11 +62,11 @@ msgstr ""
 "Programm erstellen. Für diese Übung gibt es 20 Punkte. Beachte die "
 "Punkteverteilung unten."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:18
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:29
 msgid "Incorporate the following items:"
 msgstr "Baue die folgenden Teile ein:"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:20
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:31
 msgid ""
 "Find the folder for Lab 03 in PyCharm and start entering your code there."
 " Feel free to use any code from Lab 02 you want, just copy it across."
@@ -62,7 +75,7 @@ msgstr ""
 "einzugeben. Wenn du willst kannst du beliebigen Code aus der Übung 2 "
 "verwenden, kopiere ihn einfach herüber."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:22
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:33
 msgid ""
 "Make sure you are putting your program in the Lab 3 folder, and not just "
 "changing Lab 2 to have Lab 3 requirements."
@@ -70,7 +83,7 @@ msgstr ""
 "Sei dir sicher, dass du dein Programm im Ordner Übung 3 schreibst und "
 "nicht einfach die Übung 2 an die Anforderungen der Übung 3 anpasst."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:24
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:35
 msgid ""
 "We are going to be following the instructions/example in :ref:`custom-"
 "drawing-function`."
@@ -78,23 +91,27 @@ msgstr ""
 "Wir werden den Anweisungen/Beispielen in :ref:`custom-drawing-function` "
 "folgen."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:25
-msgid "Put everything into a function as shown in :ref:`make_the_main_function`."
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:36
+#, fuzzy
+msgid ""
+"Put everything into a function as shown in :ref:`make_the_main_function`."
+" 1 pt."
 msgstr "Packe alles in eine Funktion wie in :ref:`make_the_main_function`."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:26
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:37
+#, fuzzy
 msgid ""
-"Create three functions that draw something. (15 pts total, up to 5 pts "
+"Create three functions that draw something. (18 pts total, up to 6 pts "
 "per function)"
 msgstr ""
 "Erzeuge drei Funktionen, die etwas zeichnen. (15 Punkte insgesamt, bis zu"
 " fünf Punkte pro Funktion)"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:29
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:40
 msgid "Define the function and successfully call it. (1 pt)"
 msgstr "Definiere die Funktion und rufe sie erfolgreich auf. (1Punkt)"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:30
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:41
 msgid ""
 "Make your drawing function complex. 0 points for a one-line function that"
 " just draws a rectangle, 0 points for copying the example from the book, "
@@ -105,7 +122,7 @@ msgstr ""
 "des Beispiels aus dem Buch. 2 Punkte gibt es für eine zusammenhängende "
 "mehrzeilige Funktion."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:33
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:44
 msgid ""
 "Pass in ``x`` and ``y`` parameters and successfully position the object "
 "as shown in :ref:`make_the_drawing_function`. (2 pts)"
@@ -113,31 +130,23 @@ msgstr ""
 "Übergebe ``x`` und ``y`` als Argumente und positioniere erfolgreich das "
 "Objekt wie in :ref:`make_the_drawing_function` gezeigt. (2 Punkte)"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:36
-msgid ""
-"Drawing with functions is worth 16 points. You can get the final 4 points"
-" by animating your image."
-msgstr ""
-"Zeichnen mit Funktionen ist 16 Punkte wert. Du kannst die letzten vier "
-"Punkte durch Animation deines Bildes bekommen."
-
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:40
-msgid "Requirements for Animation"
-msgstr "Anforderungen an die Animation"
-
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:42
-msgid ""
-"Animate an object. The movement does not need to be complex. See :ref"
-":`animate-drawing` for an example."
-msgstr ""
-"Animiere ein Objekt. Die Bewegung muss nicht komplex sein. Siehe :ref"
-":`animate-drawing` als Beispiel."
-
 #: ../../source/labs/lab_03_function_drawing/function_drawing.rst:46
+msgid ""
+"Make sure the image you draw is centered around the x and y, and not off-"
+"set. (1 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:49
+msgid ""
+"Call at least one of the functions more than once, and in a different "
+"location. (1 pt.)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:52
 msgid "Double Check"
 msgstr "Doppelcheck"
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:48
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:54
 msgid ""
 "Make sure you don't put functions inside of functions. After the "
 "``import`` statement, each function should be listed out, one ``def`` "
@@ -147,12 +156,48 @@ msgstr ""
 "Nach der ``import``-Anweisung sollte jede Funktion angegeben sein. Ein "
 "``def`` nach dem anderen, aber kein ``def`` in einem anderen ``def``."
 
-#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:51
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:58
+#, fuzzy
 msgid ""
-"Also make sure you have *three* functions that take in an ``(x, y)`` "
-"position to draw an object, not just one."
+"Make sure you have *three* functions that take in an ``(x, y)`` position "
+"to draw an object, not just one."
 msgstr ""
 "Stelle auch sicher, dass du drei Funktionen hast, die eine ``(x, "
 "y)``-Position als Parameter zum Zeichnen eines Objekts haben, nicht nur "
 "eine."
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:61
+msgid ""
+"The most frequent source of confusion on this lab, and way to lose "
+"points, is a drawing function that is not centered around the specified "
+"(x, y). You can confirm this is working by drawing a point right at the "
+"x, y as the last line of your code. If the point draws near the center of"
+" your item, you are good. If the point is nowhere near the center, you "
+"need to re-center it."
+msgstr ""
+
+#~ msgid "Your goal: Draw and animate an image."
+#~ msgstr "Dein Ziel: Zeichne und animiere ein Bild."
+
+#~ msgid ""
+#~ "Drawing with functions is worth 16 "
+#~ "points. You can get the final 4"
+#~ " points by animating your image."
+#~ msgstr ""
+#~ "Zeichnen mit Funktionen ist 16 Punkte"
+#~ " wert. Du kannst die letzten vier "
+#~ "Punkte durch Animation deines Bildes "
+#~ "bekommen."
+
+#~ msgid "Requirements for Animation"
+#~ msgstr "Anforderungen an die Animation"
+
+#~ msgid ""
+#~ "Animate an object. The movement does "
+#~ "not need to be complex. See :ref"
+#~ ":`animate-drawing` for an example."
+#~ msgstr ""
+#~ "Animiere ein Objekt. Die Bewegung muss"
+#~ " nicht komplex sein. Siehe :ref"
+#~ ":`animate-drawing` als Beispiel."
 

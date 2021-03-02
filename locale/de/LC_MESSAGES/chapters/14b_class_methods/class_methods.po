@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,10 @@ msgstr ""
 msgid "Class Methods"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:4
+msgid ".. image:: chapters\\14b_class_methods\\dog.svg"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:8
 msgid ""
 "In addition to attributes, classes may have methods. A method is a "
 "function that exists inside of a class. Expanding the earlier example of "
@@ -29,7 +32,7 @@ msgid ""
 "method for a dog barking."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:8
+#: ../../source/chapters/14b_class_methods/class_methods.rst:12
 msgid ""
 "class Dog():\n"
 "    def __init__(self):\n"
@@ -41,7 +44,7 @@ msgid ""
 "        print(\"Woof\")"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:20
+#: ../../source/chapters/14b_class_methods/class_methods.rst:24
 msgid ""
 "The method definition is contained in lines 7-8 above. Method definitions"
 " in a class look almost exactly like function definitions. The big "
@@ -50,31 +53,31 @@ msgid ""
 "required even if the function does not use it."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:26
+#: ../../source/chapters/14b_class_methods/class_methods.rst:30
 msgid ""
 "Here are the important items to keep in mind when creating methods for "
 "classes:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:28
+#: ../../source/chapters/14b_class_methods/class_methods.rst:32
 msgid "Attributes should be listed first, methods after."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:29
+#: ../../source/chapters/14b_class_methods/class_methods.rst:33
 msgid "The first parameter of any method must be self."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:30
+#: ../../source/chapters/14b_class_methods/class_methods.rst:34
 msgid "Method definitions are indented exactly one tab stop."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:32
+#: ../../source/chapters/14b_class_methods/class_methods.rst:36
 msgid ""
 "Methods may be called in a manner similar to referencing attributes from "
 "an object. See the example code below."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:35
+#: ../../source/chapters/14b_class_methods/class_methods.rst:39
 msgid ""
 "my_dog = Dog()\n"
 "\n"
@@ -85,7 +88,7 @@ msgid ""
 "my_dog.bark()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:46
+#: ../../source/chapters/14b_class_methods/class_methods.rst:50
 msgid ""
 "Line 1 creates the dog. Lines 3-5 set the attributes of the object. Line "
 "7 calls the ``bark`` function. Note that even through the ``bark`` "
@@ -95,13 +98,13 @@ msgid ""
 "like:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:52
+#: ../../source/chapters/14b_class_methods/class_methods.rst:56
 msgid ""
 "# Example, not actually legal\n"
 "Dog.bark(my_dog)"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:57
+#: ../../source/chapters/14b_class_methods/class_methods.rst:61
 msgid ""
 "If the ``bark`` function needs to make reference to any of the "
 "attributes, then it does so using the ``self`` reference variable. For "
@@ -110,46 +113,31 @@ msgid ""
 "accessed using a dot operator and the ``self`` reference."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:63
+#: ../../source/chapters/14b_class_methods/class_methods.rst:67
 msgid ""
 "def bark(self):\n"
 "    print(\"Woof says\", self.name)"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:68
-msgid ""
-"Attributes are adjectives, and methods are verbs. The drawing for the "
-"class would look like Figure 12.3."
-msgstr ""
-
 #: ../../source/chapters/14b_class_methods/class_methods.rst:72
-msgid ".. image:: chapters\\14b_class_methods\\dog_2_1.png"
-msgstr ""
-
-#: ../../source/chapters/14b_class_methods/class_methods.rst:72
-msgid "Dog Class"
+msgid "Attributes are adjectives, and methods are verbs."
 msgstr ""
 
 #: ../../source/chapters/14b_class_methods/class_methods.rst:75
 msgid "Example: Ball Class"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:76
+msgid ".. image:: chapters\\14b_class_methods\\ball.svg"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:81
 msgid ""
-"This example code could be used in Python/Arcade to draw a ball. Having "
-"all the parameters contained in a class makes data management easier. The"
-" diagram for the ``Ball`` class is shown in the figure below."
+"This example code could be used as part of a program to draw and keep "
+"track of a ball. Having all the parameters contained in a class makes "
+"data management easier."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:82
-msgid ".. image:: chapters\\14b_class_methods\\ball_2_1.png"
-msgstr ""
-
-#: ../../source/chapters/14b_class_methods/class_methods.rst:82
-msgid "Ball Class"
-msgstr ""
-
-#: ../../source/chapters/14b_class_methods/class_methods.rst:84
+#: ../../source/chapters/14b_class_methods/class_methods.rst:85
 msgid ""
 "class Ball():\n"
 "    def __init__(self):\n"
@@ -166,7 +154,7 @@ msgid ""
 "        self.size = 10\n"
 "\n"
 "        # Ball color\n"
-"        self.color = [255,255,255]\n"
+"        self.color = [255, 255, 255]\n"
 "\n"
 "    # --- Class Methods ---\n"
 "    def move(self):\n"
@@ -177,13 +165,13 @@ msgid ""
 "        arcade.draw_circle_filled(self.x, self.y, self.size, self.color )"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:112
+#: ../../source/chapters/14b_class_methods/class_methods.rst:113
 msgid ""
 "Below is the code that would go ahead of the main program loop to create "
 "a ball and set its attributes:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:115
+#: ../../source/chapters/14b_class_methods/class_methods.rst:116
 msgid ""
 "the_ball = Ball()\n"
 "the_ball.x = 100\n"
@@ -193,27 +181,27 @@ msgid ""
 "the_ball.color = [255, 0, 0]"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:125
+#: ../../source/chapters/14b_class_methods/class_methods.rst:126
 msgid "This code would go inside the main loop to move and draw the ball:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:127
+#: ../../source/chapters/14b_class_methods/class_methods.rst:128
 msgid ""
 "the_ball.move()\n"
 "the_ball.draw()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:134
+#: ../../source/chapters/14b_class_methods/class_methods.rst:135
 msgid "References"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:140
+#: ../../source/chapters/14b_class_methods/class_methods.rst:141
 msgid ""
 "Here's where we separate the true programmers from the want-to-be's. "
 "Understanding class references. Take a look at the following code:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:143
+#: ../../source/chapters/14b_class_methods/class_methods.rst:144
 msgid ""
 "class Person():\n"
 "    def __init__(self):\n"
@@ -236,26 +224,26 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:166
+#: ../../source/chapters/14b_class_methods/class_methods.rst:167
 msgid ""
 "The code above creates two instances of the ``Person()`` class, and using"
-" `www.pythontutor.com`_ we can `visualize the two classes`_ in the "
-"figure."
-msgstr ""
-
-#: ../../source/chapters/14b_class_methods/class_methods.rst:173
-msgid ".. image:: chapters\\14b_class_methods\\two_persons.png"
-msgstr ""
-
-#: ../../source/chapters/14b_class_methods/class_methods.rst:173
-msgid "Two Persons"
+" `www.pythontutor.com <https://www.pythontutor.com>`_ we can `visualize "
+"the two classes`_ in the figure."
 msgstr ""
 
 #: ../../source/chapters/14b_class_methods/class_methods.rst:175
-msgid "The code above has nothing new. But the code below does:"
+msgid ".. image:: chapters\\14b_class_methods\\two_persons.png"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:175
+msgid "Two Persons"
 msgstr ""
 
 #: ../../source/chapters/14b_class_methods/class_methods.rst:177
+msgid "The code above has nothing new. But the code below does:"
+msgstr ""
+
+#: ../../source/chapters/14b_class_methods/class_methods.rst:179
 msgid ""
 "class Person():\n"
 "    def __init__(self):\n"
@@ -278,11 +266,11 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:200
+#: ../../source/chapters/14b_class_methods/class_methods.rst:202
 msgid "See the difference on line 10?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:202
+#: ../../source/chapters/14b_class_methods/class_methods.rst:204
 msgid ""
 "A common misconception when working with objects is to assume that the "
 "variable ``bob`` *is* the ``Person`` object. This is not the case. The "
@@ -291,7 +279,7 @@ msgid ""
 "itself."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:207
+#: ../../source/chapters/14b_class_methods/class_methods.rst:209
 msgid ""
 "If ``bob`` actually was the object, then line 9 could create a *copy* of "
 "the object and there would be two objects in existence. The output of the"
@@ -299,13 +287,13 @@ msgid ""
 "the program outputs the following instead:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:214
+#: ../../source/chapters/14b_class_methods/class_methods.rst:216
 msgid ""
 "Nancy has 100 dollars.\n"
 "Nancy has 100 dollars."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:217
+#: ../../source/chapters/14b_class_methods/class_methods.rst:219
 msgid ""
 "What ``bob`` stores is a *reference* to the object. Besides reference, "
 "one may call this *address*, *pointer*, or *handle*. A reference is an "
@@ -315,33 +303,33 @@ msgid ""
 "entire object the address points to. See the figure below."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:226
+#: ../../source/chapters/14b_class_methods/class_methods.rst:229
 msgid ".. image:: chapters\\14b_class_methods\\example1.png"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:226
+#: ../../source/chapters/14b_class_methods/class_methods.rst:229
 msgid "Class References"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:228
+#: ../../source/chapters/14b_class_methods/class_methods.rst:231
 msgid ""
 "We can also run this in www.pythontutor.com to see how both of the "
 "variables `are pointing to the same object`_."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:234
+#: ../../source/chapters/14b_class_methods/class_methods.rst:238
 msgid ".. image:: chapters\\14b_class_methods\\one_person.png"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:234
+#: ../../source/chapters/14b_class_methods/class_methods.rst:238
 msgid "One Person, Two Pointers"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:237
+#: ../../source/chapters/14b_class_methods/class_methods.rst:241
 msgid "Functions and References"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:238
+#: ../../source/chapters/14b_class_methods/class_methods.rst:242
 msgid ""
 "Look at the code example below. Line 1 creates a function that takes in a"
 " number as a parameter. The variable ``money`` is a variable that "
@@ -350,7 +338,7 @@ msgid ""
 "Thus, the print statement on line 14 prints out 100, and not 200."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:244
+#: ../../source/chapters/14b_class_methods/class_methods.rst:248
 msgid ""
 "def give_money1(money):\n"
 "    money += 100\n"
@@ -373,28 +361,28 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:267
+#: ../../source/chapters/14b_class_methods/class_methods.rst:271
 msgid ""
 "`Running on PythonTutor`_ we see that there are two instances of the "
 "``money`` variable. One is a copy and local to the give_money1 function."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:274
+#: ../../source/chapters/14b_class_methods/class_methods.rst:278
 msgid ".. image:: chapters\\14b_class_methods\\function_references_1.png"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:274
-#: ../../source/chapters/14b_class_methods/class_methods.rst:297
+#: ../../source/chapters/14b_class_methods/class_methods.rst:278
+#: ../../source/chapters/14b_class_methods/class_methods.rst:302
 msgid "Function References"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:276
+#: ../../source/chapters/14b_class_methods/class_methods.rst:280
 msgid ""
 "Look at the additional code below. This code does cause ``bob.money`` to "
 "increase and the ``print`` statement to print 200."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:280
+#: ../../source/chapters/14b_class_methods/class_methods.rst:284
 msgid ""
 "def give_money2(person):\n"
 "    person.money += 100\n"
@@ -403,7 +391,7 @@ msgid ""
 "print(bob.money)"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:289
+#: ../../source/chapters/14b_class_methods/class_methods.rst:293
 msgid ""
 "Why is this? Because ``person`` contains a copy of the memory address of "
 "the object, not the actual object itself. One can think of it as a bank "
@@ -412,11 +400,11 @@ msgid ""
 "number to deposit 100 dollars causes Bob's bank account balance to go up."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:297
+#: ../../source/chapters/14b_class_methods/class_methods.rst:302
 msgid ".. image:: chapters\\14b_class_methods\\function_references_2.png"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:299
+#: ../../source/chapters/14b_class_methods/class_methods.rst:304
 msgid ""
 "Arrays work the same way. A function that takes in an array (list) as a "
 "parameter and modifies values in that array will be modifying the same "
@@ -424,24 +412,24 @@ msgid ""
 "not the entire array."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:305
-#: ../../source/chapters/14b_class_methods/class_methods.rst:390
+#: ../../source/chapters/14b_class_methods/class_methods.rst:310
+#: ../../source/chapters/14b_class_methods/class_methods.rst:395
 msgid "Review Questions"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:307
+#: ../../source/chapters/14b_class_methods/class_methods.rst:312
 msgid ""
 "Create a class called ``Cat``. Give it attributes for name, color, and "
 "weight. Give it a method called ``meow``."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:309
+#: ../../source/chapters/14b_class_methods/class_methods.rst:314
 msgid ""
 "Create an instance of the cat class, set the attributes, and call the "
 "``meow`` method."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:311
+#: ../../source/chapters/14b_class_methods/class_methods.rst:316
 msgid ""
 "Create a class called ``Monster``. Give it an attribute for name and an "
 "integer attribute for health. Create a method called ``decrease_health`` "
@@ -449,17 +437,17 @@ msgid ""
 "Inside that method, print that the animal died if health goes below zero."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:319
+#: ../../source/chapters/14b_class_methods/class_methods.rst:324
 msgid "Avoid This Mistake"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:321
+#: ../../source/chapters/14b_class_methods/class_methods.rst:326
 msgid ""
 "Put everything for a method into just one definition. Don't define it "
 "twice. For example:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:324
+#: ../../source/chapters/14b_class_methods/class_methods.rst:329
 msgid ""
 "# Wrong:\n"
 "class Dog():\n"
@@ -472,13 +460,13 @@ msgid ""
 "        print(\"New dog!\")"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:337
+#: ../../source/chapters/14b_class_methods/class_methods.rst:342
 msgid ""
 "The computer will just ignore the first ``__init__`` and go with the last"
 " definition. Instead do this:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:340
+#: ../../source/chapters/14b_class_methods/class_methods.rst:345
 msgid ""
 "# Correct:\n"
 "class Dog():\n"
@@ -489,7 +477,7 @@ msgid ""
 "        print(\"New dog!\")"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:351
+#: ../../source/chapters/14b_class_methods/class_methods.rst:356
 msgid ""
 "A constructor can be used for initializing and setting data for the "
 "object. The example Dog class above still allows the name attribute to be"
@@ -499,11 +487,11 @@ msgid ""
 "the code below:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:357
+#: ../../source/chapters/14b_class_methods/class_methods.rst:362
 msgid "Constructor that takes in data to initialize the class"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:357
+#: ../../source/chapters/14b_class_methods/class_methods.rst:362
 msgid ""
 "class Dog():\n"
 "\n"
@@ -526,7 +514,7 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:381
+#: ../../source/chapters/14b_class_methods/class_methods.rst:386
 msgid ""
 "On line 3 the constructor function now has an additional parameter named "
 "``new_name``. The value of this parameter is used to set the name "
@@ -538,69 +526,69 @@ msgid ""
 " happen."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:392
+#: ../../source/chapters/14b_class_methods/class_methods.rst:397
 msgid "Should class names begin with an upper or lower case letter?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:393
+#: ../../source/chapters/14b_class_methods/class_methods.rst:398
 msgid "Should method names begin with an upper or lower case letter?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:394
+#: ../../source/chapters/14b_class_methods/class_methods.rst:399
 msgid "Should attribute names begin with an upper or lower case letter?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:395
+#: ../../source/chapters/14b_class_methods/class_methods.rst:400
 msgid "Which should be listed first in a class, attributes or methods?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:396
+#: ../../source/chapters/14b_class_methods/class_methods.rst:401
 msgid "What are other names for a reference?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:397
+#: ../../source/chapters/14b_class_methods/class_methods.rst:402
 msgid "What is another name for instance variable?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:398
+#: ../../source/chapters/14b_class_methods/class_methods.rst:403
 msgid "What is the name for an instance of a class?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:399
+#: ../../source/chapters/14b_class_methods/class_methods.rst:404
 msgid ""
 "Create a class called Star that will print out \"A star is born!\" every "
 "time it is created."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:401
+#: ../../source/chapters/14b_class_methods/class_methods.rst:406
 msgid ""
 "Create a class called Monster with attributes for health and a name. Add "
 "a constructor to the class that sets the health and name of the object "
 "with data passed in as parameters."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:406
+#: ../../source/chapters/14b_class_methods/class_methods.rst:411
 msgid "Inheritance"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:413
+#: ../../source/chapters/14b_class_methods/class_methods.rst:418
 msgid ""
 "Another powerful feature of using classes and objects is the ability to "
 "make use of *inheritance*. It is possible to create a class and inherit "
 "all of the attributes and methods of a *parent class*."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:417
+#: ../../source/chapters/14b_class_methods/class_methods.rst:422
 msgid ""
 "For example, a program may create a class called ``Boat`` which has all "
 "the attributes needed to represent a boat in a game:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:420
+#: ../../source/chapters/14b_class_methods/class_methods.rst:425
 msgid "Class definition for a boat"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:420
+#: ../../source/chapters/14b_class_methods/class_methods.rst:425
 msgid ""
 "class Boat():\n"
 "    def __init__(self):\n"
@@ -623,15 +611,15 @@ msgid ""
 "            print(\"Undocking\")"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:444
+#: ../../source/chapters/14b_class_methods/class_methods.rst:449
 msgid "To test out our code:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:446
+#: ../../source/chapters/14b_class_methods/class_methods.rst:451
 msgid "Floating our boat"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:446
+#: ../../source/chapters/14b_class_methods/class_methods.rst:451
 msgid ""
 "b = Boat()\n"
 "\n"
@@ -642,11 +630,11 @@ msgid ""
 "b.dock()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:458
+#: ../../source/chapters/14b_class_methods/class_methods.rst:463
 msgid "The output:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:460
+#: ../../source/chapters/14b_class_methods/class_methods.rst:465
 msgid ""
 "You are already docked.\n"
 "Undocking\n"
@@ -655,7 +643,7 @@ msgid ""
 "You are already docked."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:468
+#: ../../source/chapters/14b_class_methods/class_methods.rst:473
 msgid ""
 "(If you watch the video for this section of the class, you'll note that "
 "the \"Boat\" class in the video doesn't actually run. The code above has "
@@ -664,21 +652,21 @@ msgid ""
 "code before you deliver it!)"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:474
+#: ../../source/chapters/14b_class_methods/class_methods.rst:479
 msgid ""
 "Our program also needs a submarine. Our submarine can do everything a "
 "boat can, plus we need a command for ``submerge``. Without inheritance we"
 " have two options."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:477
+#: ../../source/chapters/14b_class_methods/class_methods.rst:482
 msgid ""
 "One, add the ``submerge()`` command to our boat. This isn't a great idea "
 "because we don't want to give the impression that our boats normally "
 "submerge."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:479
+#: ../../source/chapters/14b_class_methods/class_methods.rst:484
 msgid ""
 "Two, we could create a copy of the ``Boat`` class and call it "
 "``Submarine``. In this class we'd add the ``submerge()`` command. This is"
@@ -688,7 +676,7 @@ msgid ""
 "class. Keeping this code synchronized is time consuming and error-prone."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:486
+#: ../../source/chapters/14b_class_methods/class_methods.rst:491
 msgid ""
 "Luckily, there is a better way. Our program can create *child classes* "
 "that will inherit all the attributes and methods of the *parent class*. "
@@ -696,14 +684,14 @@ msgid ""
 "their needs. For example:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:491
+#: ../../source/chapters/14b_class_methods/class_methods.rst:496
 msgid ""
 "class Submarine(Boat):\n"
 "    def submerge(self):\n"
 "        print(\"Submerge!\")"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:498
+#: ../../source/chapters/14b_class_methods/class_methods.rst:503
 msgid ""
 "Line 1 is the important part. Just by putting ``Boat`` in between the "
 "parentheses during the class declaration, we have automatically picked up"
@@ -712,23 +700,23 @@ msgid ""
 " updates. Inheritance is that easy!"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:504
+#: ../../source/chapters/14b_class_methods/class_methods.rst:509
 msgid "The next code example is diagrammed out in the figure below."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:509
+#: ../../source/chapters/14b_class_methods/class_methods.rst:514
 msgid ".. image:: chapters\\14b_class_methods\\person_1.png"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:509
+#: ../../source/chapters/14b_class_methods/class_methods.rst:514
 msgid "Class Diagram"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:511
+#: ../../source/chapters/14b_class_methods/class_methods.rst:516
 msgid "Person, Employee, Customer Classes Examples"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:511
+#: ../../source/chapters/14b_class_methods/class_methods.rst:516
 msgid ""
 "class Person():\n"
 "    def __init__(self):\n"
@@ -762,7 +750,7 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:547
+#: ../../source/chapters/14b_class_methods/class_methods.rst:552
 msgid ""
 "By placing ``Person`` between the parentheses on lines 5 and 13, the "
 "programmer has told the computer that Person is a parent class to both "
@@ -770,41 +758,41 @@ msgid ""
 "attribute on lines 19 and 22."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:552
+#: ../../source/chapters/14b_class_methods/class_methods.rst:557
 msgid ""
 "Methods are also inherited. Any method the parent has, the child class "
 "will have too. But what if we have a method in both the child and parent "
 "class?"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:555
+#: ../../source/chapters/14b_class_methods/class_methods.rst:560
 msgid ""
 "We have two options. We can run them both with ``super()`` keyword. Using"
 " ``super()`` followed by a dot operator, and then finally a method name "
 "allows you to call the parent's version of the method."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:559
+#: ../../source/chapters/14b_class_methods/class_methods.rst:564
 msgid ""
 "The code above shows the first option using ``super`` where we run not "
 "only the child constructor but also the parent constructor."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:562
+#: ../../source/chapters/14b_class_methods/class_methods.rst:567
 msgid ""
 "If you are writing a method for a child and want to call a parent method,"
 " normally it will be the first statement in the child method. Notice how "
 "it is in the example above."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:566
+#: ../../source/chapters/14b_class_methods/class_methods.rst:571
 msgid ""
 "All constructors should call the parent constructor because then you'd "
 "have a child without a parent and that is just sad. In fact, some "
 "languages force this rule, but Python doesn't."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:570
+#: ../../source/chapters/14b_class_methods/class_methods.rst:575
 msgid ""
 "The second option? Methods may be overridden by a child class to provide "
 "different functionality. The example below shows both options. The "
@@ -814,11 +802,11 @@ msgid ""
 "``Person`` functionality."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:577
+#: ../../source/chapters/14b_class_methods/class_methods.rst:582
 msgid "Overriding constructors"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:577
+#: ../../source/chapters/14b_class_methods/class_methods.rst:582
 msgid ""
 "class Person():\n"
 "    def __init__(self):\n"
@@ -870,17 +858,17 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:631
+#: ../../source/chapters/14b_class_methods/class_methods.rst:636
 msgid "Is-A and Has-A Relationships"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:633
+#: ../../source/chapters/14b_class_methods/class_methods.rst:638
 msgid ""
 "Classes have two main types of relationships. They are \"is a\" and \"has"
 " a\" relationships."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:636
+#: ../../source/chapters/14b_class_methods/class_methods.rst:641
 msgid ""
 "A parent class should always be a more general, abstract version of the "
 "child class. This type of child to parent relationship is called an *is "
@@ -889,21 +877,21 @@ msgid ""
 " a child class Poodle. The poodle *is a* dog, and *is an* animal."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:643
+#: ../../source/chapters/14b_class_methods/class_methods.rst:648
 msgid ""
 "It does not work the other way! A dolphin *is a* mammal, but a mammal is "
 "not always a dolphin. So the class ``Dolphin`` should never be a parent "
 "to a class ``Mammal``."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:647
+#: ../../source/chapters/14b_class_methods/class_methods.rst:652
 msgid ""
 "Unrelated items that do not pass the *is a* test should not form "
 "parent/child relationships. For example, a class ``Table`` should not be "
 "a parent to a class ``Chair`` because a chair is not a table."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:651
+#: ../../source/chapters/14b_class_methods/class_methods.rst:656
 msgid ""
 "The other type of relationship is the *has a* relationship. These "
 "relationships are implemented in code by class attributes. A dog has a "
@@ -913,35 +901,35 @@ msgid ""
 "not derive from ``Dog`` because that would be some kind of insult."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:658
+#: ../../source/chapters/14b_class_methods/class_methods.rst:663
 msgid "Looking at the prior code example we can see:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:660
+#: ../../source/chapters/14b_class_methods/class_methods.rst:665
 msgid "Employee is a person."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:661
+#: ../../source/chapters/14b_class_methods/class_methods.rst:666
 msgid "Customer is a person."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:662
+#: ../../source/chapters/14b_class_methods/class_methods.rst:667
 msgid "Person has a name."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:663
+#: ../../source/chapters/14b_class_methods/class_methods.rst:668
 msgid "Employee has a job title."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:664
+#: ../../source/chapters/14b_class_methods/class_methods.rst:669
 msgid "Customer has an e-mail."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:667
+#: ../../source/chapters/14b_class_methods/class_methods.rst:672
 msgid "Static Variables vs. Instance Variables"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:669
+#: ../../source/chapters/14b_class_methods/class_methods.rst:674
 msgid ""
 "The difference between static and instance variables is confusing. "
 "Thankfully it isn't necessary to completely understand the difference "
@@ -949,14 +937,14 @@ msgid ""
 "will briefly introduce it here."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:674
+#: ../../source/chapters/14b_class_methods/class_methods.rst:679
 msgid ""
 "There are also some oddities with Python that kept me confused the first "
 "several years I've made this book available. So you might see older "
 "videos and examples where I get it wrong."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:678
+#: ../../source/chapters/14b_class_methods/class_methods.rst:683
 msgid ""
 "An *instance variable* is the type of class variable we've used so far. "
 "Each instance of the class gets its own value. For example, in a room "
@@ -964,7 +952,7 @@ msgid ""
 "be the same, but we still need to track each age individually."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:683
+#: ../../source/chapters/14b_class_methods/class_methods.rst:688
 msgid ""
 "With instance variables, we can't just say \"age\" with a room full of "
 "people. We need to specify *whose* age we are talking about. Also, if "
@@ -972,7 +960,7 @@ msgid ""
 "no people to have an age makes no sense."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:688
+#: ../../source/chapters/14b_class_methods/class_methods.rst:693
 msgid ""
 "With *static variables* the value is the same for every single instance "
 "of the class. Even if there are no instances, there still is a value for "
@@ -981,13 +969,13 @@ msgid ""
 "is zero, but the count variable still exists."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:694
+#: ../../source/chapters/14b_class_methods/class_methods.rst:699
 msgid ""
 "In the example below, ``ClassA`` creates an instance variable. ``ClassB``"
 " creates a static variable."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:697
+#: ../../source/chapters/14b_class_methods/class_methods.rst:702
 msgid ""
 "# Example of an instance variable\n"
 "class ClassA():\n"
@@ -1017,7 +1005,7 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:727
+#: ../../source/chapters/14b_class_methods/class_methods.rst:732
 msgid ""
 "In the example above, lines 16 and 17 print out the static variable. Line"
 " 17 is the \"proper\" way to do so. Unlike before, we can refer to the "
@@ -1028,7 +1016,7 @@ msgid ""
 "That confusion makes line 17 the better choice."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:735
+#: ../../source/chapters/14b_class_methods/class_methods.rst:740
 msgid ""
 "Line 22 prints out the instance variable, just like we've done in prior "
 "examples. Line 23 will generate an error because each instance of y is "
@@ -1036,18 +1024,18 @@ msgid ""
 "the computer what instance of ``ClassA`` we are talking about."
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:741
+#: ../../source/chapters/14b_class_methods/class_methods.rst:746
 msgid "Instance Variables Hiding Static Variables"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:743
+#: ../../source/chapters/14b_class_methods/class_methods.rst:748
 msgid ""
 "This is one \"feature\" of Python I dislike. It is possible to have a "
 "static variable, and an instance variable *with the same name*. Look at "
 "the example below:"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:747
+#: ../../source/chapters/14b_class_methods/class_methods.rst:752
 msgid ""
 "# Class with a static variable\n"
 "class ClassB():\n"
@@ -1090,9 +1078,71 @@ msgid ""
 "main()"
 msgstr ""
 
-#: ../../source/chapters/14b_class_methods/class_methods.rst:790
+#: ../../source/chapters/14b_class_methods/class_methods.rst:795
 msgid ""
 "Allowing instance variables to hide static variable caused confusion for "
 "me for many years!"
 msgstr ""
+
+#~ msgid ""
+#~ "Attributes are adjectives, and methods "
+#~ "are verbs. The drawing for the "
+#~ "class would look like Figure 12.3."
+#~ msgstr ""
+
+#~ msgid ".. image:: chapters\\14b_class_methods\\dog_2_1.png"
+#~ msgstr ""
+
+#~ msgid "Dog Class"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This example code could be used in"
+#~ " Python/Arcade to draw a ball. Having"
+#~ " all the parameters contained in a"
+#~ " class makes data management easier. "
+#~ "The diagram for the ``Ball`` class "
+#~ "is shown in the figure below."
+#~ msgstr ""
+
+#~ msgid ".. image:: chapters\\14b_class_methods\\ball_2_1.png"
+#~ msgstr ""
+
+#~ msgid "Ball Class"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "class Ball():\n"
+#~ "    def __init__(self):\n"
+#~ "        # --- Class Attributes ---\n"
+#~ "        # Ball position\n"
+#~ "        self.x = 0\n"
+#~ "        self.y = 0\n"
+#~ "\n"
+#~ "        # Ball's vector\n"
+#~ "        self.change_x = 0\n"
+#~ "        self.change_y = 0\n"
+#~ "\n"
+#~ "        # Ball size\n"
+#~ "        self.size = 10\n"
+#~ "\n"
+#~ "        # Ball color\n"
+#~ "        self.color = [255,255,255]\n"
+#~ "\n"
+#~ "    # --- Class Methods ---\n"
+#~ "    def move(self):\n"
+#~ "        self.x += self.change_x\n"
+#~ "        self.y += self.change_y\n"
+#~ "\n"
+#~ "    def draw(self):\n"
+#~ "        arcade.draw_circle_filled(self.x, self.y, "
+#~ "self.size, self.color )"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The code above creates two instances "
+#~ "of the ``Person()`` class, and using "
+#~ "`www.pythontutor.com`_ we can `visualize the"
+#~ " two classes`_ in the figure."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 13:29-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-16 10:56+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -156,7 +156,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/labs/lab_04_camel/camel.rst:107
-msgid "This game assumes you know the material up through :ref:`guessing-games`."
+#, fuzzy
+msgid "This game assumes you know the material up through :ref:`random-numbers`."
 msgstr ""
 "Dieses Spiel setzt voraus, dass du das Material bis zu :ref:`guessing-"
 "games` kennst."

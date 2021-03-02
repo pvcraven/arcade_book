@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2020\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:4
+msgid "Random Numbers"
+msgstr ""
+
+msgid ".. image:: chapters\\11c_random_numbers\\dice_1.svg"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:11
+msgid ""
+"Now if our games do the same thing each time the game runs, that's not "
+"very interesting. At the end of this chapter we'll introduce **random "
+"numbers**. That is, we can have the computer roll the dice to change up "
+"the game each time we run it."
+msgstr ""
+
+msgid ".. image:: chapters\\11c_random_numbers\\dice_2.svg"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:20
+msgid ""
+"Random numbers are heavily used in computer science for programs that "
+"involve games or simulations."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:24
+msgid "The ``randrange`` Function"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:26
+msgid ""
+"By default, Python does not know how to make random numbers. It is "
+"necessary to have Python import a code library that can create random "
+"numbers. So to use random numbers, the first thing that should appear at "
+"the top of the program is an import statement:"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:31
+msgid "import random"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:35
+msgid ""
+"Just like with pygame, it is important not to create a file with the same"
+" name as what is being imported. Creating a file called random.py will "
+"cause Python to start importing that file instead of the system library "
+"that creates random numbers."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:40
+msgid ""
+"After this, random numbers can be created with the ``randrange`` "
+"function. For example, this code creates random numbers from 0 to 49. By "
+"default the lower bound is 0."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:44
+msgid "Random number from 0 to 49"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:44
+msgid "my_number = random.randrange(50)"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:49
+msgid ""
+"The next code example generates random numbers from 100 to 200. Just like"
+" the range function the second parameter specifies an upper-bound that is"
+" not inclusive. Therefore if you want random numbers up to and including "
+"200, specify 201."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:54
+msgid "Random number from 100 to 200"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:54
+msgid "my_number = random.randrange(100, 201)"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:62
+msgid "Random Chance"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:64
+msgid ""
+"Often in games there is a random chance of something happening. How do we"
+" program this? It isn't too hard. Here's an example where we have a 1 in "
+"5 chance of meeting a dragon:"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:67
+msgid "Random Chance of Something Happening"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:67
+msgid ""
+"import random\n"
+"\n"
+"\n"
+"# The line below will \"roll the dice\" 20 times.\n"
+"# Don't copy this 'for' loop into your program.\n"
+"# It is just here so we can try this example over and over.\n"
+"for i in range(20):\n"
+"\n"
+"    # The line below will roll a random number 0-4.\n"
+"    # If we roll a '0' then print that we encountered a dragon.\n"
+"    if random.randrange(5) == 0:\n"
+"        print(\"DRAGON!!!\")\n"
+"    else:\n"
+"        print(\"No dragon.\")"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:86
+msgid ""
+"This code repeats twenty times. Inside the loop, we \"roll the dice\" and"
+" get a number between 0 and 4. If we roll a 0, then we encounter a "
+"dragon. Otherwise we don't."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:90
+msgid "The ``random`` Function"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:92
+msgid ""
+"All of the prior code generates integer numbers. If a floating point "
+"number is desired, a programmer may use the ``random`` function."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:95
+msgid ""
+"The code below generates a random number from 0 to 1 such as "
+"0.4355991106620656."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:98
+msgid "Random floating point number from 0 to 1"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:98
+msgid "my_number = random.random()"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:103
+msgid ""
+"With some simple math, this number can be adjusted. For example, the code"
+" below generates a random floating point number between 10 and 15:"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:105
+msgid "Random floating point number between 10 and 15"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:107
+msgid "my_number = random.random() * 5 + 10"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:114
+msgid "Number Guessing Game Example"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:116
+msgid "Here is the code for the number guessing game at the start of the chapter."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:118
+msgid ""
+"\"\"\"\n"
+"Random Number Guessing Game\n"
+"\"\"\"\n"
+"import random\n"
+"\n"
+"\n"
+"def main():\n"
+"\n"
+"    print(\"Hi! I'm thinking of a random number between 1 and 100.\")\n"
+"\n"
+"    # NEW CONCEPT\n"
+"    # Create a secret number\n"
+"    secret_number = random.randrange(1, 101)\n"
+"\n"
+"    # Initialize our attempt count, we start with attempt 1.\n"
+"    user_attempt_number = 1\n"
+"\n"
+"    # Set user guess to something secret number can't be, so we can\n"
+"    # get our 'while' loop started.\n"
+"    user_guess = 0\n"
+"\n"
+"    # NEW CONCEPT\n"
+"    # Loop until user_guess our secret number, or we run out of attempts."
+"\n"
+"    while user_guess != secret_number and user_attempt_number < 8:\n"
+"\n"
+"        # Tell the user what attempt we are on, and get their guess:\n"
+"        print(\"--- Attempt\", user_attempt_number)\n"
+"        user_input_text = input(\"Guess what number I am thinking of: \")"
+"\n"
+"        user_guess = int(user_input_text)\n"
+"\n"
+"        # Print if we are too high or low, or we got it.\n"
+"        if user_guess > secret_number:\n"
+"            print(\"Too high.\")\n"
+"        elif user_guess < secret_number:\n"
+"            print(\"Too low.\")\n"
+"        else:\n"
+"            print(\"You got it!\")\n"
+"\n"
+"        # Add to the attempt count\n"
+"        user_attempt_number += 1\n"
+"\n"
+"    # Here, check to see if the user didn't guess the answer, and ran out"
+" of tries.\n"
+"    # Let her know what the number was, so she doesn't spend the rest of "
+"her life\n"
+"    # wondering.\n"
+"    if user_guess != secret_number:\n"
+"        print(\"Aw, you ran out of tries. The number was \" + "
+"str(secret_number) + \".\")\n"
+"\n"
+"# Call the main function\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:125
+msgid "Mudball Example"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:127
+msgid ""
+"This is a fun text-only game that two players can play. It uses a few "
+"concepts we haven't covered yet."
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:130
+msgid ""
+"\"\"\"\n"
+"This is a sample text-only game that demonstrates the use of functions.\n"
+"The game is called \"Mudball\" and the players take turns lobbing "
+"mudballs\n"
+"at each other until someone gets hit.\n"
+"\"\"\"\n"
+"\n"
+"import math\n"
+"import random\n"
+"\n"
+"\n"
+"def print_instructions():\n"
+"    \"\"\" This function prints the instructions. \"\"\"\n"
+"\n"
+"    # You can use the triple-quote string in a print statement to\n"
+"    # print multiple lines.\n"
+"    print(\"\"\"\n"
+"Welcome to Mudball! The idea is to hit the other player with a mudball.\n"
+"Enter your angle (in degrees) and the amount of PSI to charge your gun\n"
+"with.\n"
+"        \"\"\")\n"
+"\n"
+"\n"
+"def calculate_distance(psi, angle_in_degrees):\n"
+"    \"\"\" Calculate the distance the mudball flies. \"\"\"\n"
+"    angle_in_radians = math.radians(angle_in_degrees)\n"
+"    distance = .5 * psi ** 2 * math.sin(angle_in_radians) * "
+"math.cos(angle_in_radians)\n"
+"    return distance\n"
+"\n"
+"\n"
+"def get_user_input(name):\n"
+"    \"\"\" Get the user input for psi and angle. Return as a list of two\n"
+"    numbers. \"\"\"\n"
+"    # Later on in the 'exceptions' chapter, we will learn how to modify\n"
+"    # this code to not crash the game if the user types in something that"
+"\n"
+"    # isn't a valid number.\n"
+"    psi = float(input(name + \" charge the gun with how many psi? \"))\n"
+"    angle = float(input(name + \" move the gun at what angle? \"))\n"
+"    return psi, angle\n"
+"\n"
+"\n"
+"def get_player_names():\n"
+"    \"\"\" Get a list of names from the players. \"\"\"\n"
+"    print(\"Enter player names. Enter as many players as you like.\")\n"
+"    done = False\n"
+"    players = []\n"
+"    while not done:\n"
+"        player = input(\"Enter player (hit enter to quit): \")\n"
+"        if len(player) > 0:\n"
+"            players.append(player)\n"
+"        else:\n"
+"            done = True\n"
+"\n"
+"    print()\n"
+"    return players\n"
+"\n"
+"\n"
+"def process_player_turn(player_name, distance_apart):\n"
+"    \"\"\" The code runs the turn for each player.\n"
+"    If it returns False, keep going with the game.\n"
+"    If it returns True, someone has won, so stop. \"\"\"\n"
+"    psi, angle = get_user_input(player_name)\n"
+"\n"
+"    distance_mudball = calculate_distance(psi, angle)\n"
+"    difference = distance_mudball - distance_apart\n"
+"\n"
+"    # By looking ahead to the chapter on print formatting, these\n"
+"    # lines could be made to print the numbers is a nice formatted\n"
+"    # manner.\n"
+"    if difference > 1:\n"
+"        print(\"You went\", difference, \"yards too far!\")\n"
+"    elif difference < -1:\n"
+"        print(\"You were\", difference * -1, \"yards too short!\")\n"
+"    else:\n"
+"        print(\"Hit!\", player_name, \"wins!\")\n"
+"        return True\n"
+"\n"
+"    print()\n"
+"    return False\n"
+"\n"
+"\n"
+"def main():\n"
+"    \"\"\" Main program. \"\"\"\n"
+"\n"
+"    # Get the game started.\n"
+"    print_instructions()\n"
+"    player_names = get_player_names()\n"
+"    distance_apart = random.randrange(50, 150)\n"
+"\n"
+"    # Keep looking until someone wins\n"
+"    done = False\n"
+"    while not done:\n"
+"        # Loop for each player\n"
+"        for player_name in player_names:\n"
+"            # Process their turn\n"
+"            done = process_player_turn(player_name, distance_apart)\n"
+"            # If someone won, 'break' out of this loop and end the game.\n"
+"            if done:\n"
+"                break\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:135
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:138
+msgid "Online Coding Problems"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:140
+msgid ""
+"Practice on-line by completing the first set of coding problems available"
+" here:"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:142
+msgid "https://repl.it/community/classrooms/174286"
+msgstr ""
+
+#: ../../source/chapters/11c_random_numbers/random_numbers.rst:144
+msgid ""
+"All problems beginning with ``04`` can be done with the knowledge from "
+"this chapter."
+msgstr ""
+

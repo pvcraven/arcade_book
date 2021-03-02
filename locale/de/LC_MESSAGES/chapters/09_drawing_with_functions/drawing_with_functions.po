@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-12 10:30+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -19,19 +19,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:6
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:4
 msgid "Drawing With Functions"
 msgstr "Zeichnen mit Funktionen"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:8
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:6
 msgid ""
-"Here is a set of examples where we take a program that already exists and"
-" put everything in functions."
+"We learned how to draw in :ref:`how-to-draw`. In :ref:`lab-02` we applied"
+" that to create our own drawing. We learned how to create functions in "
+":ref:`creating_functions`. In this chapter, we'll combine all that "
+"knowledge to create our own drawing functions."
 msgstr ""
-"Hier sind ein paar Beispiele, in denen wir ein existierendes Programm "
-"nehmen und alles in Funktionen packen."
 
 #: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:11
+msgid "We'll do that by expanding on the code you wrote for :ref:`lab-02`."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:13
+msgid ""
+"To show you how, I'm going to start with a similar program and convert it"
+" to using functions."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:16
 msgid "First the original program:"
 msgstr "Hier ist erst einmal das originale Programm:"
 
@@ -39,7 +49,7 @@ msgstr "Hier ist erst einmal das originale Programm:"
 msgid ".. image:: chapters\\09_drawing_with_functions\\snowman1.png"
 msgstr ".. image:: chapters/09_drawing_with_functions/snowman1.png"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:16
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:21
 msgid ""
 "import arcade\n"
 "\n"
@@ -101,114 +111,135 @@ msgstr ""
 "arcade.finish_render()\n"
 "arcade.run()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:23
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:25
+msgid "Ok, it isn't very fancy, but that will make this process easier to follow."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:30
 msgid "Make The ``main`` Function"
 msgstr "Erstelle die Funktion ``main``"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:25
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:32
+#, fuzzy
 msgid ""
-"Next, create a ``main()`` function. Put everything in it, and call the "
-"main function."
+"After copying the code into Lab 3, we'll create a ``main()`` function. "
+"Put everything in it, and call the ``main`` function."
 msgstr ""
 "Erstelle als nächstes die ``main()``-Funktion. Steck alles in die "
 "Funktion und rufe sie auf."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:28
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:35
 msgid ""
-"import arcade\n"
-"\n"
-"SCREEN_WIDTH = 800\n"
-"SCREEN_HEIGHT = 600\n"
-"\n"
-"\n"
-"def main():\n"
-"    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing with "
-"Functions\")\n"
-"    arcade.set_background_color(arcade.color.DARK_BLUE)\n"
-"    arcade.start_render()\n"
-"\n"
-"    # Draw the ground\n"
-"    arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3,"
-" 0, arcade.color.AIR_SUPERIORITY_BLUE)\n"
-"\n"
-"    # Draw a snow person\n"
-"\n"
-"    # Snow\n"
-"    arcade.draw_circle_filled(300, 200, 60, arcade.color.WHITE)\n"
-"    arcade.draw_circle_filled(300, 280, 50, arcade.color.WHITE)\n"
-"    arcade.draw_circle_filled(300, 340, 40, arcade.color.WHITE)\n"
-"\n"
-"    # Eyes\n"
-"    arcade.draw_circle_filled(285, 350, 5, arcade.color.BLACK)\n"
-"    arcade.draw_circle_filled(315, 350, 5, arcade.color.BLACK)\n"
-"\n"
-"    # Finish and run\n"
-"    arcade.finish_render()\n"
-"    arcade.run()\n"
-"\n"
-"\n"
-"# Call the main function to get the program started.\n"
-"main()\n"
+"Are those too many lines to indent? You can indent groups of lines by "
+"selecting them, and then hitting \"tab\". If you want to un-indent a "
+"group of lines, hit shift-tab."
 msgstr ""
-"import arcade\n"
-"\n"
-"SCREEN_WIDTH = 800\n"
-"SCREEN_HEIGHT = 600\n"
-"\n"
-"\n"
-"def main():\n"
-"    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing with "
-"Functions\")\n"
-"    arcade.set_background_color(arcade.color.DARK_BLUE)\n"
-"    arcade.start_render()\n"
-"\n"
-"    # Draw the ground\n"
-"    arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3,"
-" 0, arcade.color.AIR_SUPERIORITY_BLUE)\n"
-"\n"
-"    # Draw a snow person\n"
-"\n"
-"    # Snow\n"
-"    arcade.draw_circle_filled(300, 200, 60, arcade.color.WHITE)\n"
-"    arcade.draw_circle_filled(300, 280, 50, arcade.color.WHITE)\n"
-"    arcade.draw_circle_filled(300, 340, 40, arcade.color.WHITE)\n"
-"\n"
-"    # Eyes\n"
-"    arcade.draw_circle_filled(285, 350, 5, arcade.color.BLACK)\n"
-"    arcade.draw_circle_filled(315, 350, 5, arcade.color.BLACK)\n"
-"\n"
-"    # Finish and run\n"
-"    arcade.finish_render()\n"
-"    arcade.run()\n"
-"\n"
-"\n"
-"# Call the main function to get the program started.\n"
-"main()\n"
-
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:32
-msgid ""
-"When you do this, run your program and make sure it still works before "
-"proceeding."
-msgstr ""
-"Wenn du dies getan hast, starte dein Programm, um zu prüfen, ob alles wie"
-" vorher funktioniert, bevor du weiter liest."
-
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:37
-msgid "Make The Drawing Functions"
-msgstr "Erstelle die Zeichenfunktion"
 
 #: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:39
 msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"\n"
+"def main():\n"
+"    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing with "
+"Functions\")\n"
+"    arcade.set_background_color(arcade.color.DARK_BLUE)\n"
+"    arcade.start_render()\n"
+"\n"
+"    # Draw the ground\n"
+"    arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3,"
+" 0, arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"    # Draw a snow person\n"
+"\n"
+"    # Snow\n"
+"    arcade.draw_circle_filled(300, 200, 60, arcade.color.WHITE)\n"
+"    arcade.draw_circle_filled(300, 280, 50, arcade.color.WHITE)\n"
+"    arcade.draw_circle_filled(300, 340, 40, arcade.color.WHITE)\n"
+"\n"
+"    # Eyes\n"
+"    arcade.draw_circle_filled(285, 350, 5, arcade.color.BLACK)\n"
+"    arcade.draw_circle_filled(315, 350, 5, arcade.color.BLACK)\n"
+"\n"
+"    # Finish and run\n"
+"    arcade.finish_render()\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"# Call the main function to get the program started.\n"
+"main()\n"
+msgstr ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"\n"
+"def main():\n"
+"    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing with "
+"Functions\")\n"
+"    arcade.set_background_color(arcade.color.DARK_BLUE)\n"
+"    arcade.start_render()\n"
+"\n"
+"    # Draw the ground\n"
+"    arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3,"
+" 0, arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"    # Draw a snow person\n"
+"\n"
+"    # Snow\n"
+"    arcade.draw_circle_filled(300, 200, 60, arcade.color.WHITE)\n"
+"    arcade.draw_circle_filled(300, 280, 50, arcade.color.WHITE)\n"
+"    arcade.draw_circle_filled(300, 340, 40, arcade.color.WHITE)\n"
+"\n"
+"    # Eyes\n"
+"    arcade.draw_circle_filled(285, 350, 5, arcade.color.BLACK)\n"
+"    arcade.draw_circle_filled(315, 350, 5, arcade.color.BLACK)\n"
+"\n"
+"    # Finish and run\n"
+"    arcade.finish_render()\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"# Call the main function to get the program started.\n"
+"main()\n"
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:43
+msgid ""
+"After this, run your program and make sure it still works before "
+"proceeding. If it doesn't work, stop and get help. Continuing will only "
+"make the problem harder."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:50
+msgid "Make The Drawing Functions"
+msgstr "Erstelle die Zeichenfunktion"
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:52
+msgid ""
 "Next, pick an item to move to a function. Start with an easy one if you "
-"have it. I chose grass because it was only one line of code, and I wasn't"
-" going to ever try to position it with x, y."
+"have it."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:55
+msgid "Grass Function"
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:57
+#, fuzzy
+msgid ""
+"I chose grass to start withbecause it was only one line of code, and I "
+"wasn't going to ever try to position it with an x, y coordinate."
 msgstr ""
 "Nimm dir als nächstes ein Bröckchen, das du in eine Funktion schieben "
 "willst. Starte mit einem einfachen, wenn du es hast. Ich hab das Zeichnen"
 " des Grases gewählt, weil es nur aus einer Zeile Code besteht und niemals"
 " mit x und y positioniert werden soll."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:43
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:60
 msgid ""
 "import arcade\n"
 "\n"
@@ -288,13 +319,22 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:48
-msgid "Then, I took a more complex shape and put it in a function."
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:65
+msgid "Test, and make sure it is working."
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:68
+msgid "Snow Person Function"
+msgstr ""
+
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:70
+#, fuzzy
+msgid "Now let's take the more complex snow person and put it in a function."
 msgstr ""
 "Dann habe ich eine komplexere Form gewählt und in eine Funktion "
 "ausgelagert."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:50
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:72
 msgid ""
 "import arcade\n"
 "\n"
@@ -380,7 +420,7 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:55
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:77
 msgid ""
 "But this draws the snowman only at one spot. I want to draw lots of "
 "snowmen, anywhere I put them!"
@@ -388,7 +428,7 @@ msgstr ""
 "Aber dies zeichnet den Schneemann nur an einer bestimmten Stelle. Ich "
 "will viele Schneemänner an beliebigen Orten zeichnen!"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:58
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:80
 msgid "To do this, let's add an x and y:"
 msgstr "Lass und x und y hinzufügen, um dieses Ziel zu erreichen:"
 
@@ -396,7 +436,7 @@ msgstr "Lass und x und y hinzufügen, um dieses Ziel zu erreichen:"
 msgid ".. image:: chapters\\09_drawing_with_functions\\snowman2.png"
 msgstr ".. image:: chapters/09_drawing_with_functions/snowman2.png"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:63
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:85
 msgid ""
 "import arcade\n"
 "\n"
@@ -488,7 +528,7 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:68
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:90
 msgid ""
 "But that's not perfect. If you'll note, I added a dot at the x and y. The"
 " snowman draws way off from the dot, because originally I didn't try to "
@@ -499,7 +539,7 @@ msgstr ""
 "gezeichnet, weil ich ursprünglich versucht habe ihn auf 0, 0 bezogen zu "
 "zeichnen. Ich muss den Schneemann auf dem Punkt neu zentrieren."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:72
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:94
 msgid ""
 "We need to re-center the shape onto the spot we are drawing. Typically "
 "you'll need to subtract from all the x and y values the same amount."
@@ -512,7 +552,7 @@ msgstr ""
 msgid ".. image:: chapters\\09_drawing_with_functions\\snowman3.png"
 msgstr ".. image:: chapters/09_drawing_with_functions/snowman3.png"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:78
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:100
 msgid ""
 "import arcade\n"
 "\n"
@@ -606,21 +646,21 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:86
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:108
 msgid "How To Animate A Drawing Function"
 msgstr "Wie man eine Zeichenfunktion animiert"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:88
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:110
 msgid "We can animate our drawing if we want. Here are the steps."
 msgstr ""
 "Wir können unsere erste Zeichnung animieren, wenn wir wollen. Hier sind "
 "die nötigen Schritte."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:91
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:113
 msgid "Create An ``on_draw`` Method"
 msgstr "Erstelle eine ``on_draw``-Methode"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:93
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:115
 msgid ""
 "Right now our program only draws our image once. We need to move all the "
 "drawing code in our ``main`` to an ``on_draw`` function. Then we'll tell "
@@ -631,11 +671,11 @@ msgstr ""
 "verschieben. Dann müssen wir dem Rechner sagen, das immer und immer "
 "wieder zu zeichnen."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:97
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:119
 msgid "Continuing from our last example, our program will look like:"
 msgstr "Von unserem letzten Beispiel fortgeführt, wird unser Programm so aussehen:"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:99
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:121
 msgid ""
 "import arcade\n"
 "\n"
@@ -737,17 +777,17 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:104
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:126
 msgid "Do this with your own program. Nothing will move, but it should still run."
 msgstr ""
 "Mach dies mit deinem eigenen Programm. Es wird sich nichts bewegen, aber "
 "es sollte immer noch laufen."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:107
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:129
 msgid "Add Variable To Control Where We Draw Our Item"
 msgstr "Füge Variablen hinzu, die festlegen wo wir unser Element zeichnen"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:109
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:131
 msgid ""
 "Next, we are going to create a variable inside of the ``on_draw`` "
 "function. This variable will hold our *x* value. Each time we call "
@@ -758,7 +798,7 @@ msgstr ""
 "Jedes Mal, wenn wir ``on_draw`` aufrufen, ändern wir *x*, so dass er sich"
 " nach rechts bewegt."
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:113
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:135
 msgid ""
 "import arcade\n"
 "\n"
@@ -876,7 +916,26 @@ msgstr ""
 "# Call the main function to get the program started.\n"
 "main()\n"
 
-#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:118
+#: ../../source/chapters/09_drawing_with_functions/drawing_with_functions.rst:140
 msgid "For more information, see the `Bouncing Rectangle Example`_."
 msgstr "Für weitere Information sie dir das `Bouncing Rectangle Example`_ an."
+
+#~ msgid ""
+#~ "Here is a set of examples where"
+#~ " we take a program that already "
+#~ "exists and put everything in functions."
+#~ msgstr ""
+#~ "Hier sind ein paar Beispiele, in "
+#~ "denen wir ein existierendes Programm "
+#~ "nehmen und alles in Funktionen packen."
+
+#~ msgid ""
+#~ "When you do this, run your program"
+#~ " and make sure it still works "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "Wenn du dies getan hast, starte "
+#~ "dein Programm, um zu prüfen, ob "
+#~ "alles wie vorher funktioniert, bevor du"
+#~ " weiter liest."
 

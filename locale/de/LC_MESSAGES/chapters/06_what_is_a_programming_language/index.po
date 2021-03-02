@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -271,15 +271,16 @@ msgstr ""
 
 #: ../../source/chapters/06_what_is_a_programming_language/index.rst:179
 msgid ""
-"`Third Generation Languages`_ (3GL) started with `Grace Hopper`_ creating"
-" the language COBOL_. There are many, many different third generation "
-"languages now. These languages often specialize at certain tasks. For "
-"example, the language C_ is great at creating small, fast programs that "
-"can run on minimal hardware. PHP_ is an easy-to-use language that can "
-"build websites."
+"`Third Generation Languages`_ (3GL) started with `John Backus`_ creating "
+"FORTRAN in 1954 and `Grace Hopper`_ creating FLOW-MATIC in 1955 which "
+"evolved into COBOL_ by 1959. There are many, many different third "
+"generation languages now. These languages often specialize at certain "
+"tasks. For example, the language C_ is great at creating small, fast "
+"programs that can run on minimal hardware. PHP_ is an easy-to-use "
+"language that can build websites."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:185
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:187
 msgid ""
 "Most of the original computer scientists were female. See `Grace "
 "Hopper`_, `Hedy Lamar`_, and `Ada Lovelace`_ for examples. If you want to"
@@ -289,11 +290,11 @@ msgid ""
 "<https://twitter.com/WomenWhoCode>`_."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:201
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:204
 msgid "Third generation languages usually fall into one of three categories."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:203
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:206
 msgid ""
 "**Compiled:** The computer takes the original source code, and uses a "
 "*compiler* to translate it to machine code. The user then run the machine"
@@ -302,7 +303,7 @@ msgid ""
 "language we just talked about."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:208
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:211
 msgid ""
 "**Interpreted:** The computer looks at the source code and "
 "translates/runs it line-by-line. The compile step is not needed, but the "
@@ -310,7 +311,7 @@ msgid ""
 "Python is an example of an interpreted language."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:213
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:216
 msgid ""
 "**Runtime Environment:** Languages such as Java and C# take source code, "
 "and compile the source code to a machine language. But not the language "
@@ -320,7 +321,7 @@ msgid ""
 "management."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:219
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:222
 msgid ""
 "Working with a compiled language is like taking a book in Spanish and "
 "translating it to English. You no longer need the Spanish book, and you "
@@ -328,7 +329,7 @@ msgid ""
 "book you have to re-translate everything."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:224
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:227
 msgid ""
 "Working with an interpreted language is like working with a interpreter. "
 "You can communicate back and forth with a person that knows both English "
@@ -339,7 +340,7 @@ msgid ""
 "human interpreter that says, \"You don't *really* want to say that.\""
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:232
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:235
 msgid ""
 "Using a runtime environment is hard to explain in human terms. It is a "
 "hybrid of the two systems. You need source code. You need a compiler. "
@@ -347,11 +348,11 @@ msgid ""
 " code for a **virtual machine**."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:237
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:240
 msgid "Python as a Computer Language"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:239
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:242
 msgid ""
 "Python is a great language to start programming in. Python is a Top-5 "
 "language in popularity according to the `TIOBE Index "
@@ -361,7 +362,7 @@ msgid ""
 "when you learn other popular languages, such as `C#`_ or Java_."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:251
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:254
 msgid ""
 "Python a great language for people interested in `automating boring "
 "things <https://automatetheboringstuff.com/>`_, because you can program "
@@ -371,11 +372,11 @@ msgid ""
 "Notebooks <http://jupyter.org/>`_."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:260
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:263
 msgid "Python 2.x vs. Python 3.x"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:262
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:265
 msgid ""
 "There are two main versions of Python. When Python moved to version 3, "
 "there were changes that didn't work with all the currently written Python"
@@ -384,60 +385,60 @@ msgid ""
 "simultaneously for a while."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:269
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:272
 msgid "We are using Python 3. Why does Python 2 matter to us?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:271
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:274
 msgid ""
 "If you search up examples on the web, you might find incompatible Python "
 "2 examples."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:272
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:275
 msgid "Systems such as the Mac and Linux have Python 2 installed by default."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:274
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:277
 msgid ""
 "If you see a Python example on the web that has a ``print`` statement "
 "that looks like:"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:277
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:280
 msgid ""
 "# A \"print\" statement with Python Version 2.x\n"
 "print \"Hi\""
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:282
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:285
 msgid "Instead of:"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:284
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:287
 msgid ""
 "# A \"print\" statement with Python Version 3.x\n"
 "print(\"Hi\")"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:289
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:292
 msgid ""
 "Then you have a Python 2 example and it won't run with what we install "
 "and use in this class."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:292
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:295
 msgid ""
 "In the case of the Mac and Linux, it will be important to use Python 3 "
 "and not Python 2. Since Python 2 is installed by default, it can be a bit"
 " of a hassle to make sure they use Python 3."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:297
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:300
 msgid "Review"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:299
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:302
 msgid ""
 "In this chapter we learned about what a CPU is, and that computer "
 "instructions are simply numbers fed into the CPU. We learned about first,"
@@ -447,76 +448,90 @@ msgid ""
 "interpreter to turn the source code into machine language."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:306
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:309
 msgid ""
 "Some languages compile code to a set of instructions for a virtual "
 "machine, and the virtual machine can run on multiple different types of "
 "systems."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:310
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:313
 msgid ""
 "The language we are using for this class is called Python, it is one of "
 "the top five computer languages in use today."
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:314
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:317
 msgid "Review Questions"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:316
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:319
 msgid ""
 "What do we call the main \"brain\" of the computer where all the "
 "processing happens?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:317
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:320
 msgid "Instructions for a CPU are made up of a long sequence of what?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:318
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:321
 msgid "What is the name of the native language for CPUs?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:319
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:322
 msgid "What is the difference between a CPU and a GPU?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:320
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:323
 msgid "Commands with a GPU can be processed by hundreds or thousands of what?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:321
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:324
 msgid ""
 "If machine language is a first-generation language, what is the second-"
 "generation language?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:323
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:326
 msgid "What do we call the file that programmers type commands into?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:324
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:327
 msgid ""
 "What is the name of the program that turns assembly language into machine"
 " language?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:326
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:329
 msgid "Third-generation languages usually fall into what three categories?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:327
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:330
 msgid "What is the difference between a compiler and an interpreter?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:328
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:331
 msgid "What generation of language is Python?"
 msgstr ""
 
-#: ../../source/chapters/06_what_is_a_programming_language/index.rst:329
+#: ../../source/chapters/06_what_is_a_programming_language/index.rst:332
 msgid ""
 "What are some of the most popular languages in use today, according to "
 "the TIOBE Index?"
 msgstr ""
+
+#~ msgid ""
+#~ "`Third Generation Languages`_ (3GL) started"
+#~ " with `Grace Hopper`_ creating the "
+#~ "language COBOL_. There are many, many"
+#~ " different third generation languages now."
+#~ " These languages often specialize at "
+#~ "certain tasks. For example, the language"
+#~ " C_ is great at creating small, "
+#~ "fast programs that can run on "
+#~ "minimal hardware. PHP_ is an easy-"
+#~ "to-use language that can build "
+#~ "websites."
+#~ msgstr ""
 

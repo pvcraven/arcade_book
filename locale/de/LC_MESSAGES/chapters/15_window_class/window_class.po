@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade Fall 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: 2019-07-15 07:34+0200\n"
 "Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
 "Language: de\n"
@@ -23,7 +23,11 @@ msgstr ""
 msgid "Using the Window Class"
 msgstr "Verwenden der Klasse ``Window``"
 
-#: ../../source/chapters/15_window_class/window_class.rst:6
+#, fuzzy
+msgid ".. image:: chapters\\15_window_class\\window.svg"
+msgstr ".. image:: chapters/15_window_class/draw_example.png"
+
+#: ../../source/chapters/15_window_class/window_class.rst:10
 msgid ""
 "We can use a class to represent our program. The Arcade library has a "
 "built-in class that represents a window on the screen. We can create our "
@@ -34,29 +38,29 @@ msgstr ""
 "auf dem Bildschirm darstellt. Wir können unsere eigene Kindklasse "
 "erstellen und Funktionen überschreiben, um Folgendes zu erreichen:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:10
+#: ../../source/chapters/15_window_class/window_class.rst:14
 msgid "Start-up and initialization"
 msgstr "Starten und Initialisierung"
 
-#: ../../source/chapters/15_window_class/window_class.rst:11
+#: ../../source/chapters/15_window_class/window_class.rst:15
 msgid "Drawing the items on our screen"
 msgstr "Zeichnen der Elemente auf unserem Bildschirm"
 
-#: ../../source/chapters/15_window_class/window_class.rst:12
+#: ../../source/chapters/15_window_class/window_class.rst:16
 msgid "Animating/Updating the positions of items on our screen"
 msgstr ""
 "Animieren/Aktualisieren der Positionen von Elementen auf unserem "
 "Bildschirm"
 
-#: ../../source/chapters/15_window_class/window_class.rst:13
+#: ../../source/chapters/15_window_class/window_class.rst:17
 msgid "Responding to the keyboard"
 msgstr "Auf Tastatureingaben reagieren"
 
-#: ../../source/chapters/15_window_class/window_class.rst:14
+#: ../../source/chapters/15_window_class/window_class.rst:18
 msgid "Responding to the mouse"
 msgstr "Auf die Mausaktionen reagieren"
 
-#: ../../source/chapters/15_window_class/window_class.rst:16
+#: ../../source/chapters/15_window_class/window_class.rst:20
 msgid ""
 "One of the best ways of learning to program is to look at sample code. "
 "This chapter has several examples designed to learn how to:"
@@ -65,31 +69,31 @@ msgstr ""
 "Betrachten von Beispielcode. In diesem Kapitel findest du einige "
 "Beispiele, anhand derer du Folgendes lernen kannst:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:19
+#: ../../source/chapters/15_window_class/window_class.rst:23
 msgid "Open a window using an object-oriented approach"
 msgstr "Fenster mit einem objektorientierten Ansatz öffnen"
 
-#: ../../source/chapters/15_window_class/window_class.rst:20
+#: ../../source/chapters/15_window_class/window_class.rst:24
 msgid "Animating objects"
 msgstr "Objekte animieren"
 
-#: ../../source/chapters/15_window_class/window_class.rst:21
+#: ../../source/chapters/15_window_class/window_class.rst:25
 msgid "Moving objects with the mouse"
 msgstr "Objekte mit der Maus bewegen"
 
-#: ../../source/chapters/15_window_class/window_class.rst:22
+#: ../../source/chapters/15_window_class/window_class.rst:26
 msgid "Moving objects with the keyboard"
 msgstr "Objekte mit der Tastatur verschieben"
 
-#: ../../source/chapters/15_window_class/window_class.rst:23
+#: ../../source/chapters/15_window_class/window_class.rst:27
 msgid "Moving objects with the joystick"
 msgstr "Objekte mit dem Joystick bewegen"
 
-#: ../../source/chapters/15_window_class/window_class.rst:26
+#: ../../source/chapters/15_window_class/window_class.rst:30
 msgid "Creating a Window with a Class"
 msgstr "Erstellen eines Fensters mit einer Klasse"
 
-#: ../../source/chapters/15_window_class/window_class.rst:28
+#: ../../source/chapters/15_window_class/window_class.rst:32
 msgid ""
 "Up to now, we have used a function called ``open_window`` to open a "
 "window. Here's the code:"
@@ -97,11 +101,11 @@ msgstr ""
 "Bisher haben wir die Funktion ``open_window`` verwendet, um ein Fenster "
 "zu öffnen. Hier ist der Code:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:31
+#: ../../source/chapters/15_window_class/window_class.rst:35
 msgid "open_window_with_function.py"
 msgstr "open_window_with_function.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:31
+#: ../../source/chapters/15_window_class/window_class.rst:35
 msgid ""
 "import arcade\n"
 "\n"
@@ -131,7 +135,7 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:37
+#: ../../source/chapters/15_window_class/window_class.rst:41
 msgid ""
 "We can also create an instance of a class called ``Window`` to open a "
 "window. The code is rather straight-forward:"
@@ -139,11 +143,11 @@ msgstr ""
 "Wir können auch ein Exemplar der Klasse ``Window`` erstellen, um ein "
 "Fenster zu öffnen. Der Programmcode ist ziemlich einfach:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:40
+#: ../../source/chapters/15_window_class/window_class.rst:44
 msgid "open_window_with_object.py"
 msgstr "open_window_with_object.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:40
+#: ../../source/chapters/15_window_class/window_class.rst:44
 msgid ""
 "import arcade\n"
 "\n"
@@ -175,7 +179,7 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:46
+#: ../../source/chapters/15_window_class/window_class.rst:50
 msgid ""
 "Function calls, and calls to create an instance of an object look very "
 "similar. The tell-tale clue that we are creating an instance of an object"
@@ -186,11 +190,11 @@ msgstr ""
 "Beispiel eine Instanz eines Objekts erstellen, ist die Tatsache, dass "
 "``Window`` groß geschrieben wird."
 
-#: ../../source/chapters/15_window_class/window_class.rst:51
+#: ../../source/chapters/15_window_class/window_class.rst:55
 msgid "Extending the Window Class"
 msgstr "Erweitern der Klasse ``Window``"
 
-#: ../../source/chapters/15_window_class/window_class.rst:53
+#: ../../source/chapters/15_window_class/window_class.rst:57
 msgid ""
 "Arcade's ``Window`` class has a lot of built-in methods that are "
 "automatically called when needed. Methods for drawing, for responding to "
@@ -204,7 +208,7 @@ msgstr ""
 "Methoden in der `Window Class Documentation`_ nachschlagen. Standardmäßig"
 " tun diese Methoden jedoch nichts. Das müssen wir ändern."
 
-#: ../../source/chapters/15_window_class/window_class.rst:60
+#: ../../source/chapters/15_window_class/window_class.rst:64
 msgid ""
 "As we learned from the prior chapter, we can extend the functionality of "
 "a class by creating a child class. Therefore, we can extend the "
@@ -217,11 +221,11 @@ msgstr ""
 "eine Kindklasse davon erstellen. Ich werde meine Kindklasse ``MyGame`` "
 "nennen."
 
-#: ../../source/chapters/15_window_class/window_class.rst:67
+#: ../../source/chapters/15_window_class/window_class.rst:71
 msgid "extending_window_class.py"
 msgstr "extension_window_class.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:67
+#: ../../source/chapters/15_window_class/window_class.rst:71
 msgid ""
 "import arcade\n"
 "\n"
@@ -261,11 +265,11 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:74
+#: ../../source/chapters/15_window_class/window_class.rst:78
 msgid "Drawing with the Window Class"
 msgstr "Zeichnen mit der Klasse ``Window``"
 
-#: ../../source/chapters/15_window_class/window_class.rst:76
+#: ../../source/chapters/15_window_class/window_class.rst:80
 msgid ""
 "To draw with the ``Window`` class, we need to create our own method "
 "called ``on_draw``. This will override the default ``on_draw`` method "
@@ -276,7 +280,7 @@ msgstr ""
 "``on_draw``, die in die Klasse ``Window`` eingebaut ist. Wir werden "
 "unseren Code zum Zeichnen dort einfügen."
 
-#: ../../source/chapters/15_window_class/window_class.rst:80
+#: ../../source/chapters/15_window_class/window_class.rst:84
 msgid ""
 "The ``on_draw`` method gets called about 60 times per second. We'll use "
 "this fact when we do animation."
@@ -284,7 +288,7 @@ msgstr ""
 "Die Methode ``on_draw`` wird ungefähr 60 mal pro Sekunde aufgerufen. Wir "
 "werden diese Tatsache nutzen, wenn wir die Bilder animieren."
 
-#: ../../source/chapters/15_window_class/window_class.rst:83
+#: ../../source/chapters/15_window_class/window_class.rst:87
 msgid ""
 "We also need to set the background color. Since we only need to do this "
 "once, we will do that in the ``__init__`` method. No sense setting the "
@@ -295,11 +299,11 @@ msgstr ""
 "keinen Sinn, den Hintergrund 60 Mal pro Sekunde einzustellen, wenn er "
 "sich nicht ändert."
 
-#: ../../source/chapters/15_window_class/window_class.rst:87
+#: ../../source/chapters/15_window_class/window_class.rst:91
 msgid "drawing.py"
 msgstr "drawing.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:87
+#: ../../source/chapters/15_window_class/window_class.rst:91
 msgid ""
 "import arcade\n"
 "\n"
@@ -357,20 +361,20 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:93
+#: ../../source/chapters/15_window_class/window_class.rst:97
 msgid "The result of this program just looks like:"
 msgstr "Das Ergebnis dieses Programms sieht so aus:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:96
+#: ../../source/chapters/15_window_class/window_class.rst:100
 #, fuzzy
 msgid ".. image:: chapters\\15_window_class\\draw_example.png"
 msgstr ".. image:: chapters/15_window_class/draw_example.png"
 
-#: ../../source/chapters/15_window_class/window_class.rst:98
+#: ../../source/chapters/15_window_class/window_class.rst:102
 msgid "Animating"
 msgstr "Animieren"
 
-#: ../../source/chapters/15_window_class/window_class.rst:100
+#: ../../source/chapters/15_window_class/window_class.rst:104
 msgid ""
 "By overriding the ``update`` method, we can update our ball position and "
 "animate our scene:"
@@ -378,11 +382,11 @@ msgstr ""
 "Durch Überschreiben der ``update``-Methode können wir unsere Ballposition"
 " aktualisieren und unsere Szene animieren:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:103
+#: ../../source/chapters/15_window_class/window_class.rst:107
 msgid "simple_animation.py"
 msgstr "simple_animation.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:103
+#: ../../source/chapters/15_window_class/window_class.rst:107
 msgid ""
 "import arcade\n"
 "\n"
@@ -462,11 +466,11 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:110
+#: ../../source/chapters/15_window_class/window_class.rst:114
 msgid "Encapsulating Our Animation Object"
 msgstr "Kapselung unseres Animationsobjekts"
 
-#: ../../source/chapters/15_window_class/window_class.rst:112
+#: ../../source/chapters/15_window_class/window_class.rst:116
 msgid ""
 "It doesn't take much imagination to realize that adding more parameters "
 "to the ball, getting it to bounce, or even having several balls on the "
@@ -477,7 +481,7 @@ msgstr ""
 "sogar das Anzeigen mehrerer Bälle auf dem Bildschirm unsere Klasse "
 "``MyApplication`` sehr komplex machen würde."
 
-#: ../../source/chapters/15_window_class/window_class.rst:116
+#: ../../source/chapters/15_window_class/window_class.rst:120
 msgid ""
 "If only there was a way to encapsulate all that \"ball\" stuff together. "
 "Wait! There is! Using classes!"
@@ -485,7 +489,7 @@ msgstr ""
 "Wenn es nur eine Möglichkeit gäbe, all das ``Ball``-Zeug "
 "zusammenzufassen. Warte! Es gibt sie! Verwende Klassen!"
 
-#: ../../source/chapters/15_window_class/window_class.rst:119
+#: ../../source/chapters/15_window_class/window_class.rst:123
 msgid ""
 "Here is a more complex example, but all the logic for the ball has been "
 "moved into a new ``Ball`` class."
@@ -493,11 +497,11 @@ msgstr ""
 "Hier ist ein komplexeres Beispiel, aber die gesamte Logik für den Ball "
 "wurde in eine neue Klasse ``Ball`` verschoben."
 
-#: ../../source/chapters/15_window_class/window_class.rst:122
+#: ../../source/chapters/15_window_class/window_class.rst:126
 msgid "ball_class_example.py"
 msgstr "ball_class_example.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:122
+#: ../../source/chapters/15_window_class/window_class.rst:126
 msgid ""
 "import arcade\n"
 "\n"
@@ -663,20 +667,20 @@ msgstr ""
 "\n"
 "main()\n"
 
-#: ../../source/chapters/15_window_class/window_class.rst:127
+#: ../../source/chapters/15_window_class/window_class.rst:131
 msgid "Here it is in action:"
 msgstr "Hier ist es in Aktion:"
 
-#: ../../source/chapters/15_window_class/window_class.rst:130
+#: ../../source/chapters/15_window_class/window_class.rst:134
 #, fuzzy
 msgid ".. image:: chapters\\15_window_class\\ball_class_example.gif"
 msgstr ".. image:: chapters/15_window_class/ball_class_example.gif"
 
-#: ../../source/chapters/15_window_class/window_class.rst:132
+#: ../../source/chapters/15_window_class/window_class.rst:136
 msgid "Animating a List"
 msgstr "Eine Liste animieren"
 
-#: ../../source/chapters/15_window_class/window_class.rst:134
+#: ../../source/chapters/15_window_class/window_class.rst:138
 msgid ""
 "Wouldn't it be nice to animate multiple items? How do we track multiple "
 "items? With a list! This takes our previous example and animates three "
@@ -686,11 +690,11 @@ msgstr ""
 "mehrere Objekte? Mit einer Liste! In diesem Beispiel werden drei Bälle "
 "gleichzeitig animiert."
 
-#: ../../source/chapters/15_window_class/window_class.rst:137
+#: ../../source/chapters/15_window_class/window_class.rst:141
 msgid "ball_list_example.py"
 msgstr "ball_list_example.py"
 
-#: ../../source/chapters/15_window_class/window_class.rst:137
+#: ../../source/chapters/15_window_class/window_class.rst:141
 #, fuzzy
 msgid ""
 "import arcade\n"
@@ -895,7 +899,7 @@ msgstr ""
 "\n"
 "main()"
 
-#: ../../source/chapters/15_window_class/window_class.rst:144
+#: ../../source/chapters/15_window_class/window_class.rst:148
 #, fuzzy
 msgid ".. image:: chapters\\15_window_class\\ball_list_example.gif"
 msgstr ".. image:: chapters/15_window_class/ball_list_example.gif"

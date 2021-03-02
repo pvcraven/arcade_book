@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arcade 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:51-0500\n"
+"POT-Creation-Date: 2021-03-02 14:54-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,120 +123,129 @@ msgstr ""
 
 #: ../../source/voice_overs.rst:67
 msgid ""
+"If you want to, include if you are a member of an under-represented group"
+" in technology. This can help other people feel included, and everyone to"
+" realize the world is a beautiful, diverse place."
+msgstr ""
+
+#: ../../source/voice_overs.rst:72
+msgid ""
 "If you are internet-famous and want to use your full name and link to "
 "your Twitter or website, that's great! If you are internet-private and "
 "want to use a pseudonym, we can do that too!"
 msgstr ""
 
-#: ../../source/voice_overs.rst:71
+#: ../../source/voice_overs.rst:76
 msgid ""
 "The main point is to help new programmers find people they identify with,"
 " and feel like they are part of a welcoming community when they start "
 "their journey on learning to program."
 msgstr ""
 
-#: ../../source/voice_overs.rst:75
+#: ../../source/voice_overs.rst:80
 msgid "**What is the process?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:77
-msgid "First, send me an e-mail and let me know that you are interested."
+#: ../../source/voice_overs.rst:82
+msgid ""
+"First, send me an e-mail and let me know that you are interested. My "
+"e-mail is paul@cravenfamily.com"
 msgstr ""
 
-#: ../../source/voice_overs.rst:78
+#: ../../source/voice_overs.rst:84
 msgid "Second, I'll send you a section of the text to read."
 msgstr ""
 
-#: ../../source/voice_overs.rst:79
+#: ../../source/voice_overs.rst:85
 msgid "Third, record **one paragraph** of your audio."
 msgstr ""
 
-#: ../../source/voice_overs.rst:81
+#: ../../source/voice_overs.rst:87
 msgid "Use a high-quality microphone."
 msgstr ""
 
-#: ../../source/voice_overs.rst:82
+#: ../../source/voice_overs.rst:88
 msgid "Use a recording program like Audacity."
 msgstr ""
 
-#: ../../source/voice_overs.rst:83
+#: ../../source/voice_overs.rst:89
 msgid ""
 "Adjust sound levels so that the db meter on audacity stays a bit below -6"
 " db."
 msgstr ""
 
-#: ../../source/voice_overs.rst:84
+#: ../../source/voice_overs.rst:90
 msgid "Record in an environment with minimal echo and background noise."
 msgstr ""
 
 msgid ".. image:: images/level.png"
 msgstr ""
 
-#: ../../source/voice_overs.rst:89
+#: ../../source/voice_overs.rst:95
 msgid "Read your sections for voice-over."
 msgstr ""
 
-#: ../../source/voice_overs.rst:91
+#: ../../source/voice_overs.rst:97
 msgid ""
 "Start with an short introduction. Something like \"Hi, I'm Mary. I'm "
 "using my programming as part of my work with an insurance company.\" "
 "Figure out how much identifying information you want to give out."
 msgstr ""
 
-#: ../../source/voice_overs.rst:94
+#: ../../source/voice_overs.rst:100
 msgid "Don't read out the code samples"
 msgstr ""
 
-#: ../../source/voice_overs.rst:95
+#: ../../source/voice_overs.rst:101
 msgid "Don't read the review questions or any section after that."
 msgstr ""
 
-#: ../../source/voice_overs.rst:97
+#: ../../source/voice_overs.rst:103
 msgid ""
 "Send the sample recording back to me. Once we have the recording working "
 "well, narrate the whole section."
 msgstr ""
 
-#: ../../source/voice_overs.rst:100
+#: ../../source/voice_overs.rst:106
 msgid ""
 "I'll edit the audio. If you misspeak, just pause so I can make a clean "
 "edit, then start the sentence again."
 msgstr ""
 
-#: ../../source/voice_overs.rst:102
+#: ../../source/voice_overs.rst:108
 msgid ""
 "Save the project, which should keep the audio in a loss-less format, and "
 "send to me."
 msgstr ""
 
-#: ../../source/voice_overs.rst:105
+#: ../../source/voice_overs.rst:111
 msgid "I'll edit the audio and combine it with video."
 msgstr ""
 
-#: ../../source/voice_overs.rst:106
+#: ../../source/voice_overs.rst:112
 msgid "Then I'll post it on-line."
 msgstr ""
 
-#: ../../source/voice_overs.rst:108
+#: ../../source/voice_overs.rst:114
 msgid "**How long should this take?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:110
+#: ../../source/voice_overs.rst:116
 msgid ""
 "The audio portion is about 15 minutes. As I assume it will take a while "
 "to get set up, and some sections might require a few takes, I'd guess "
 "about 45 minutes."
 msgstr ""
 
-#: ../../source/voice_overs.rst:113
+#: ../../source/voice_overs.rst:119
 msgid "**Why should I trust you with my time?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:115
+#: ../../source/voice_overs.rst:121
 msgid "I've already done something very similar before, with success."
 msgstr ""
 
-#: ../../source/voice_overs.rst:117
+#: ../../source/voice_overs.rst:123
 msgid ""
 "For my last college sabbatical from teaching six years ago, I created "
 "ProgramArcadeGames.com and accompanying videos. This site has always been"
@@ -245,28 +254,28 @@ msgid ""
 "million views."
 msgstr ""
 
-#: ../../source/voice_overs.rst:122
+#: ../../source/voice_overs.rst:128
 msgid ""
 "This Arcade Academy is an updated website using the Arcade library "
 "instead of PyGame, and will incorporate everything I've learned since "
 "creating the original website. It already gets 400-500 users per day."
 msgstr ""
 
-#: ../../source/voice_overs.rst:125
+#: ../../source/voice_overs.rst:131
 msgid "**What if I don't like what you've written?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:127
+#: ../../source/voice_overs.rst:133
 msgid ""
 "I'm open to constructive criticism of the written content. I'm happy to "
 "work with to make sure the content is as good as it can be."
 msgstr ""
 
-#: ../../source/voice_overs.rst:130
+#: ../../source/voice_overs.rst:136
 msgid "**What will the visuals be?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:132
+#: ../../source/voice_overs.rst:138
 msgid ""
 "I'll combine the audio with video of the code being written often with "
 "on-screen writing to highlight the code we are talking about in. If we "
@@ -274,23 +283,48 @@ msgid ""
 "readers understand the topic."
 msgstr ""
 
-#: ../../source/voice_overs.rst:136
+#: ../../source/voice_overs.rst:142
 msgid "**What will it look like?**"
 msgstr ""
 
-#: ../../source/voice_overs.rst:138
-msgid "Take a look at this chapter:"
-msgstr ""
-
-#: ../../source/voice_overs.rst:140
-msgid "https://learn.arcade.academy/chapters/04_print_statement/print_statement.html"
-msgstr ""
-
-#: ../../source/voice_overs.rst:142
-msgid "And this video:"
-msgstr ""
-
 #: ../../source/voice_overs.rst:144
-msgid "https://youtu.be/6KaRu3FS3AA"
+msgid "Take a look at these chapters:"
 msgstr ""
+
+#: ../../source/voice_overs.rst:146
+msgid ""
+"`Chapter 4 Text "
+"<https://learn.arcade.academy/chapters/04_print_statement/print_statement.html>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:147
+msgid "`Chapter 4 Video <https://youtu.be/6KaRu3FS3AA>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:148
+msgid ""
+"`Chapter 5 Text "
+"<https://learn.arcade.academy/chapters/05_drawing/drawing.html>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:149
+msgid ""
+"`Chapter 5 Video "
+"<https://www.youtube.com/watch?v=wYofTQaIIlQ&feature=youtu.be>`_"
+msgstr ""
+
+#~ msgid "First, send me an e-mail and let me know that you are interested."
+#~ msgstr ""
+
+#~ msgid "Take a look at this chapter:"
+#~ msgstr ""
+
+#~ msgid "https://learn.arcade.academy/chapters/04_print_statement/print_statement.html"
+#~ msgstr ""
+
+#~ msgid "And this video:"
+#~ msgstr ""
+
+#~ msgid "https://youtu.be/6KaRu3FS3AA"
+#~ msgstr ""
 
