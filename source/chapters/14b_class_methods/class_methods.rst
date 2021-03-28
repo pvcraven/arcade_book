@@ -178,6 +178,7 @@ The code above has nothing new. But the code below does:
 
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 12
 
     class Person():
         def __init__(self):
@@ -199,7 +200,7 @@ The code above has nothing new. But the code below does:
 
     main()
 
-See the difference on line 10?
+See the difference on line 12?
 
 A common misconception when working with objects is to assume that the
 variable ``bob`` *is* the ``Person`` object. This is not the case. The
