@@ -1,0 +1,577 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:4
+msgid "Array-Backed Grids"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:13
+msgid ""
+"Games like minesweeper, tic-tac-toe, and many types of adventure games keep "
+"data for the game in a grid of numbers. For example, a tic-tac-toe board:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:17
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:17
+msgid "O"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:19
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:21
+msgid "X"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:24
+msgid ""
+". . . can use a grid of numbers to represent the empty spots, the O's and "
+"the X's like this:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:28
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:30
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:30
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:32
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:32
+msgid "0"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:28
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:28
+msgid "2"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:30
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:32
+msgid "1"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:35
+msgid ""
+"This grid of numbers can also be called a *two-dimensional* array or a "
+"*matrix*. (Finally, we get to learn about The Matrix.) The values of the "
+"numbers in the grid represent what should be displayed at each board "
+"location. In the prior example, 0 represents a spot where no one has played,"
+" a 1 represents an X, and a 2 represents an O."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:43
+msgid ".. image:: chapters/25_array_backed_grids/minesweeper.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:43
+msgid "Figure 16.1: Minesweeper game, showing the backing grid of numbers"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:45
+msgid ""
+"The figure above is an example from the classic minesweeper game. This "
+"example has been modified to show both the classic display on the left, and "
+"the grid of numbers used to display the board on the right."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:49
+msgid ""
+"The number ``10`` represents a mine, the number ``0`` represents a space "
+"that has not been clicked, and the number 9 represents a cleared space. The "
+"numbers ``1`` to ``8`` represent how many mines are within the surrounding "
+"eight squares, and is only filled in when the user clicks on the square."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:54
+msgid ""
+"Minesweeper can actually have two grids. One for the regular display, and a "
+"completely separate grid of numbers that will track if the user has placed "
+"\"flags\" on the board marking where she thinks the mines are."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:58
+msgid ""
+"Classic adventure game maps are created using a tiled map editor. These are "
+"huge grids where each location is simply a number representing the type of "
+"terrain that goes there. The terrain could be things like dirt, a road, a "
+"path, green grass, brown grass, and so forth. Programs like Tiled_ shown in "
+"the figure below allow a developer to easily make these maps and write the "
+"grid to disk."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:69
+msgid ".. image:: chapters/25_array_backed_grids/qt_tiled.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:69
+msgid "Figure 16.2: Using Tiled Map Editor to create an adventure map"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:71
+msgid ""
+"Adventure games also use multiple grids of numbers, just like minesweeper "
+"has a grid for the mines, and a separate grid for the flags. One grid, or "
+"\"layer,\" in the adventure game represents terrain you can walk on; another"
+" for things you can't walk on like walls and trees; a layer for things that "
+"can instantly kill you, like lava or bottomless pits; one for objects that "
+"can be picked up and moved around; and yet another layer for initial "
+"placement of monsters."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:78
+msgid ""
+"Maps like these can be loaded in a Python program, which is shown in more "
+"detail with the Python Arcade Library documentation."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:81
+msgid ""
+"http://arcade.academy/examples/platform_tutorial/index.html#step-8-use-a"
+"-map-editor"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:84
+msgid "Application"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:86
+msgid ""
+"Enough talk, let's write some code. This example will create a grid that "
+"will trigger if we display a white or green block. We can change the grid "
+"value and make it green by clicking on it. This is a first step to a grid-"
+"based game like minesweeper, battleship, connect four, etc. (One year I had "
+"a student call me over and she had modified a program like this to show my "
+"name in flashing lights. That was . . . disturbing. So please use this "
+"knowledge only for good!)"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:94
+msgid "Start with this template:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:96
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:259
+msgid "array_backed_grid.py"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:96
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 500\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"    \"\"\"\n"
+"    Main application class.\n"
+"    \"\"\"\n"
+"\n"
+"    def __init__(self, width, height):\n"
+"        super().__init__(width, height)\n"
+"\n"
+"        arcade.set_background_color(arcade.color.WHITE)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\"\n"
+"        Render the screen.\n"
+"        \"\"\"\n"
+"\n"
+"        arcade.start_render()\n"
+"\n"
+"    def on_mouse_press(self, x, y, button, key_modifiers):\n"
+"        \"\"\"\n"
+"        Called when the user presses a mouse button.\n"
+"        \"\"\"\n"
+"        pass\n"
+"\n"
+"\n"
+"def main():\n"
+"\n"
+"    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:101
+msgid ""
+"Starting with the file above, attempt to recreate this program following the"
+" instructions here. The final program is at the end of this chapter but "
+"don't skip ahead and copy it! If you do that you'll have learned nothing. "
+"Anyone can copy and paste the code, but if you can recreate this program you"
+" have skills people are willing to pay for. If you can only copy and paste, "
+"you've wasted your time here."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:109
+msgid "Drawing the Grid"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:111
+msgid ""
+"Create variables named ``WIDTH``, ``HEIGHT``, and ``MARGIN``. Set the width "
+"and height to 20. This will represent how large each grid location is. Set "
+"the margin to 5. This represents the margin between each grid location and "
+"the edges of the screen. Create these variables at the top of the program, "
+"after the ``import`` statements. Also create variables ``ROW_COUNT`` and "
+"``COLUMN_COUNT``. Set them to 10. This will control how many rows and "
+"columns we will have."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:118
+msgid ""
+"Calculate ``SCREEN_WIDTH`` and ``SCREEN_HEIGHT`` based on the variables we "
+"created above. If we have 10 rows, and each row is 20 high, that's 200 "
+"pixels. If we have 10 rows, that's also 11 margins. (Nine between the cells "
+"and two on each edge.) That is 55 more pixels for a total of 255. Write the "
+"equation so it works with whatever we select in the constants created by "
+"step 1."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:123
+msgid ""
+"Change the background to black. Draw a white box in the lower-left corner. "
+"Draw the box drawn using the height and width variables created earlier. "
+"(Feel free to adjust the colors.) Use the `draw_rectangle_filled`_ function."
+" You will need to center the rectangle not at (0, 0) but at a coordinate "
+"that takes into account the height and width of the rectangle, such as "
+":math:`\\frac{width}{2}`. When you get done your program's window should "
+"look like:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:132
+msgid ".. image:: chapters/25_array_backed_grids/step_03.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:132
+msgid "Figure 16.3: Step 3"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:134
+msgid ""
+"Use a ``for`` loop to draw ``COLUMN_COUNT`` boxes in a row. Use ``column`` "
+"for the variable name in the ``for`` loop. The output will look like one "
+"long box until we add in the margin between boxes. See Figure 16.4."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:140
+msgid ".. image:: chapters/25_array_backed_grids/step_04.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:140
+msgid "Figure 16.4: Step 4"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:142
+msgid ""
+"Adjust the drawing of the rectangle to add in the ``MARGIN`` variable. Now "
+"there should be gaps between the rectangles. See Figure 16.5."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:147
+msgid ".. image:: chapters/25_array_backed_grids/step_05.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:147
+msgid "Figure 16.5: Step 5"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:149
+msgid ""
+"Add the margin before drawing the rectangles, in addition to between each "
+"rectangle. This should keep the box from appearing right next to the window "
+"edge. See Figure 16.6. You'll end up with an equation like: "
+":math:`(margin+width)\\cdot column+margin+\\frac{width}{2}`"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:157
+msgid ".. image:: chapters/25_array_backed_grids/step_06.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:157
+msgid "Figure 16.6: Step 6"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:159
+msgid ""
+"Add another ``for`` loop that also will loop for each row. Call the variable"
+" in this ``for`` loop ``row``. Now we should have a full grid of boxes. See "
+"Figure 16.7."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:164
+msgid ".. image:: chapters/25_array_backed_grids/step_07.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:164
+msgid "Figure 16.7: Step 7"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:167
+msgid "Populating the Grid"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:169
+msgid ""
+"Now we need to create a two-dimensional array. We need to create this once, "
+"at program start-up. So this will go in the program's ``__init__`` method. "
+"Creating a two-dimensional array in Python is, unfortunately, not as easy as"
+" it is in some other computer languages. There are some libraries that can "
+"be downloaded for Python that make it easy (like numpy), but for this "
+"example they will not be used. To create a two-dimensional array and set an "
+"example, use the code below:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:177
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:199
+msgid "Create a 10x10 array of numbers"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:177
+msgid ""
+"ROW_COUNT = 10\n"
+"COLUMN_COUNT = 10\n"
+"\n"
+"# --- Create grid of numbers\n"
+"# Create an empty list\n"
+"self.grid = []\n"
+"# Loop for each row\n"
+"for row in range(ROW_COUNT):\n"
+"    # For each row, create a list that will\n"
+"    # represent an entire row\n"
+"    self.grid.append([])\n"
+"    # Loop for each column\n"
+"    for column in range(COLUMN_COUNT):\n"
+"        # Add a the number zero to the current row\n"
+"        self.grid[row].append(0)"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:196
+msgid ""
+"A much shorter example is below, but this example uses some odd parts of "
+"Python that I don't bother to explain in this book:"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:199
+msgid "self.grid = [[0 for x in range(10)] for y in range(10)]"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:204
+msgid ""
+"Use one of these two examples and place the code to create our array ahead "
+"of your main program loop."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:207
+msgid "Set an example location in the array to 1."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:209
+msgid ""
+"Two dimensional arrays are usually represented addressed by first their row,"
+" and then the column. This is called a row-major storage. Most languages use"
+" row-major storage, with the exception of Fortran and MATLAB. Fortran and "
+"MATLAB use column-major storage."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:214
+msgid ""
+"# Set row 1, column 5 to one\n"
+"self.grid[1][5] = 1"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:219
+msgid "Place this code somewhere ahead of your main program loop."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:221
+msgid ""
+"Select the color of the rectangle based on the value of a variable named "
+"``color``. Do this by first finding the line of code where the rectangle is "
+"drawn. Ahead of it, create a variable named ``color`` and set it equal to "
+"white. Then replace the white color in the rectangle declaration with the "
+"``color`` variable."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:227
+msgid ""
+"Select the color based on the value in the grid. After setting color to "
+"white, place an if statement that looks at the value in "
+"``grid[row][column]`` and changes the color to green if the grid value is "
+"equal to 1. There should now be one green square. See Figure 16.8."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:234
+msgid ".. image:: chapters/25_array_backed_grids/step_11.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:234
+msgid "Figure 16.8: Step 11"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:236
+msgid ""
+"Print \"click\" to the screen if the user clicks the mouse button. See :ref"
+":`mouse-click` if you've forgotten how to do that."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:238
+msgid "Print the mouse coordinates when the user clicks the mouse."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:239
+msgid ""
+"Convert the mouse coordinates into grid coordinates. Print those instead. "
+"Remember to use the width and height of each grid location combined with the"
+" margin. It will be necessary to convert the final value to an integer. This"
+" can be done by using int or by using the integer division operator ``//`` "
+"instead of the normal division operator ``/``. See Figure 16.9."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:248
+msgid ".. image:: chapters/25_array_backed_grids/step_14.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:248
+msgid "Figure 16.9: Step 14"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:250
+msgid ""
+"Set the grid location at the row/column clicked to 1. See Figure 16.10."
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:254
+msgid ".. image:: chapters/25_array_backed_grids/step_15.png"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:254
+msgid "Figure 16.10: Step 15"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:257
+msgid "Resulting Program"
+msgstr ""
+
+#: ../../source/chapters/25_array_backed_grids/array_backed_grids.rst:259
+msgid ""
+"\"\"\"\n"
+"Array Backed Grid\n"
+"\n"
+"Show how to use a two-dimensional list/array to back the display of a\n"
+"grid on-screen.\n"
+"\"\"\"\n"
+"import arcade\n"
+"\n"
+"# Set how many rows and columns we will have\n"
+"ROW_COUNT = 10\n"
+"COLUMN_COUNT = 10\n"
+"\n"
+"# This sets the WIDTH and HEIGHT of each grid location\n"
+"WIDTH = 20\n"
+"HEIGHT = 20\n"
+"\n"
+"# This sets the margin between each cell\n"
+"# and on the edges of the screen.\n"
+"MARGIN = 5\n"
+"\n"
+"# Do the math to figure out our screen dimensions\n"
+"SCREEN_WIDTH = (WIDTH + MARGIN) * COLUMN_COUNT + MARGIN\n"
+"SCREEN_HEIGHT = (HEIGHT + MARGIN) * ROW_COUNT + MARGIN\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"    \"\"\"\n"
+"    Main application class.\n"
+"    \"\"\"\n"
+"\n"
+"    def __init__(self, width, height):\n"
+"        \"\"\"\n"
+"        Set up the application.\n"
+"        \"\"\"\n"
+"        super().__init__(width, height)\n"
+"        # Create a 2 dimensional array. A two dimensional\n"
+"        # array is simply a list of lists.\n"
+"        self.grid = []\n"
+"        for row in range(ROW_COUNT):\n"
+"            # Add an empty array that will hold each cell\n"
+"            # in this row\n"
+"            self.grid.append([])\n"
+"            for column in range(COLUMN_COUNT):\n"
+"                self.grid[row].append(0)  # Append a cell\n"
+"\n"
+"        arcade.set_background_color(arcade.color.BLACK)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\"\n"
+"        Render the screen.\n"
+"        \"\"\"\n"
+"\n"
+"        # This command has to happen before we start drawing\n"
+"        arcade.start_render()\n"
+"\n"
+"        # Draw the grid\n"
+"        for row in range(ROW_COUNT):\n"
+"            for column in range(COLUMN_COUNT):\n"
+"                # Figure out what color to draw the box\n"
+"                if self.grid[row][column] == 1:\n"
+"                    color = arcade.color.GREEN\n"
+"                else:\n"
+"                    color = arcade.color.WHITE\n"
+"\n"
+"                # Do the math to figure out where the box is\n"
+"                x = (MARGIN + WIDTH) * column + MARGIN + WIDTH // 2\n"
+"                y = (MARGIN + HEIGHT) * row + MARGIN + HEIGHT // 2\n"
+"\n"
+"                # Draw the box\n"
+"                arcade.draw_rectangle_filled(x, y, WIDTH, HEIGHT, color)\n"
+"\n"
+"    def on_mouse_press(self, x, y, button, modifiers):\n"
+"        \"\"\"\n"
+"        Called when the user presses a mouse button.\n"
+"        \"\"\"\n"
+"\n"
+"        # Change the x/y screen coordinates to grid coordinates\n"
+"        column = x // (WIDTH + MARGIN)\n"
+"        row = y // (HEIGHT + MARGIN)\n"
+"\n"
+"        print(f\"Click coordinates: ({x}, {y}). Grid coordinates: ({row}, {column})\")\n"
+"\n"
+"        # Make sure we are on-grid. It is possible to click in the upper right\n"
+"        # corner in the margin and go to a grid location that doesn't exist\n"
+"        if row < ROW_COUNT and column < COLUMN_COUNT:\n"
+"\n"
+"            # Flip the location between 1 and 0.\n"
+"            if self.grid[row][column] == 0:\n"
+"                self.grid[row][column] = 1\n"
+"            else:\n"
+"                self.grid[row][column] = 0\n"
+"\n"
+"\n"
+"def main():\n"
+"\n"
+"    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""

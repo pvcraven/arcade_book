@@ -1,0 +1,1208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:43+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/14_classes/classes.rst:2
+msgid "Classes, Constructors, and Attributes"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ""
+".. image:: images/video.svg\n"
+"   :alt: Video link"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:9
+msgid "Video: https://youtu.be/7BfXwcapLFQ"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:10
+msgid ""
+"Slides: https://slides.com/paulcraven/14-classes-constructors-and-"
+"attributes/"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/construction.svg"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:16
+msgid ""
+"Throughout this course we've been using variables to store *a* value. We "
+"just learned how to store *multiple* values using a list. The next step is "
+"**object-oriented programming**. This type of programming has three "
+"advantages. One, we can group multiple variables together in a single "
+"record. Two, we can associate functions with that group of data. Three, we "
+"can use something called **inheritance** which allows us to take a base set "
+"of code and extend it, without needing to rewrite it from scratch."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:26
+msgid "Using Classes and Objects to Group Data"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/character.svg"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:32
+msgid ""
+"Grouping related data together using object-oriented programming can "
+"simplify our code. For example, think of an adventure game. Each character "
+"in an adventure game needs data, such as a name, what they look like, how "
+"many hit points they have, their armor, and how fast they can move."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:39
+msgid ""
+"Without classes, our Python code to store the information might look like "
+"this:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:42
+msgid ""
+"name = \"Link\"\n"
+"outfit = \"Green\"\n"
+"max_hit_points = 50\n"
+"current_hit_points = 50\n"
+"armor_amount = 6\n"
+"max_speed = 10"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:52
+msgid ""
+"In order to do anything with this character, we'll need to pass all that "
+"data to a function. With so many parameters, that function gets complex and "
+"hard to manage."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:55
+msgid ""
+"def display_character(name, outfit, max_hit_points, current_hit_points, armor, max_speed):\n"
+"    print(name, outfit, max_hit_points, current_hit_points)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:61
+msgid ""
+"As our game expands, we might start adding more character attributes, such "
+"as weapons, magic, special abilities, and more. To do that we'd have to go "
+"through each function in our program that works with the player character "
+"and redo the parameters."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:66
+msgid ""
+"Keeping all these data points organized becomes difficult very quickly. How "
+"do we keep a monster's hit points separated from the player's hit points? "
+"Because when we add monsters to the game, they'll have their own attributes."
+" In fact, just about every item in an adventure game has attributes."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:73
+msgid ""
+"There needs to be a better way. Somehow our program needs to package up all "
+"those data fields for easy management."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:77
+msgid "Defining Classes"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:79
+msgid ""
+"A better way to manage multiple data attributes is to define a structure to "
+"hold the information. We can give that \"grouping\" of information a name, "
+"like *Character* or *Address*. This can be easily done in Python and any "
+"other modern language by using a **class**. Each data item we group into the"
+" class is called a **field**, **attribute**, or **instance variable**. These"
+" terms may be used interchangeably, as they mean the same thing."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:89
+msgid "Defining the Class"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:91
+msgid ""
+"Let's code an example using our adventure character. First, we tell the "
+"computer we are defining a class with the ``class`` keyword, and then we "
+"give the class a name that starts with a capital letter. Just like with "
+"functions and loops, we end the statement with a colon, and everything "
+"associated with the class will be indented below it:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:97
+msgid "class Character:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:102
+msgid ""
+"Unlike variables, all class names should start with a capital letter. While "
+"you *can* use a lower-case variable, you never should. Following this "
+"pattern of lower-case for variables and upper-case for classes makes it easy"
+" to tell which is which."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:107
+msgid ""
+"Next, we normally put into triple-quote comments a description of the class."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:109
+msgid ""
+"class Character:\n"
+"    \"\"\"\n"
+"    This is a class that represents the player character.\n"
+"    \"\"\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:117
+msgid ""
+"Yes, the code will run fine without any comments. It is optional. However "
+"good documentation is important to maintainable code, even if you are the "
+"only person using the code."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:121
+msgid ""
+"The cool feature about creating comments this way, is the text can be pulled"
+" out automatically to form a website for your API documentation. All the "
+"classes and functions in the Arcade library's API are created with these "
+"comments. You can see the result here:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:127
+msgid "https://arcade.academy/arcade.html"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:129
+msgid ""
+"For each of those examples, you can click on the \"source\" link and quickly"
+" go to the source code for that function or class."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:135
+msgid "Defining the Init Function"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:137
+msgid ""
+"Any time we create a new instance of a class, we need code that will create "
+"our attributes (variables) and set them to default values. In Python, this "
+"is the ``__init__`` method."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:141
+msgid "This strangely named method needs a bit of explanation."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:143
+msgid ""
+"First, any function in a class is called a **method**, rather than a "
+"function. This helps us keep straight what is in a class, and what isn't."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:146
+msgid ""
+"Second, the initialization method is a **magic method** that is called "
+"automatically. Yes, Python programmers actually call methods that are "
+"automatically invoked \"magic methods.\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:150
+msgid ""
+"Third, to signify a method is magic, Python surrounds the method name with "
+"double underscores. Two underscores in the front, and two underscores in the"
+" back. The short-name for double-underline is **dunder**, and these magic "
+"methods are also known as **dunder methods**."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:155
+msgid ""
+"class Character:\n"
+"    \"\"\"\n"
+"    This is a class that represents the player character.\n"
+"    \"\"\"\n"
+"    def __init__(self):\n"
+"        \"\"\" This is a method that sets up the variables in the object. \"\"\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:165
+msgid ""
+"The most common mistakes people make when typing this in is to use only one "
+"underscore before and after the ``init``, and to forget that there is a "
+"space between ``def`` and the first underscore."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:169
+msgid ""
+"All methods in a class have at least one parameter, and the first parameter "
+"is always ``self``. We'll explain about ``self`` in the next section."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:175
+msgid "Defining Class Attributes"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/healthbar.png"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:182
+msgid ""
+"Remember back to our chapter on functions, that any variable created inside "
+"a function is forgotten about after the function is done running? If you "
+"want to keep anything, you need to return it as a value."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:186
+msgid ""
+"Methods follow this rule too, with one exception. The ``self`` parameter "
+"refers to memory associated with each instance of the class. We can use that"
+" ``self`` to create variables that *keep* their value for as long as the "
+"object exists. We call variables that exist as part of the class either "
+"attributes, fields, or instance variables. The terms mean the same thing. "
+"Attributes must be set to a default value. That value is often 0, an empty "
+"string, or the special value ``None``."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:194
+msgid ""
+"class Character:\n"
+"    \"\"\"\n"
+"    This is a class that represents the player character.\n"
+"    \"\"\"\n"
+"    def __init__(self):\n"
+"        \"\"\" This is a method that sets up the variables in the object. \"\"\"\n"
+"        self.name = \"\"\n"
+"        self.outfit = \"\"\n"
+"        self.max_hit_points = 0\n"
+"        self.current_hit_points = 0\n"
+"        self.armor_amount = 0\n"
+"        self.max_speed = 0"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:210
+msgid ""
+"In the example above, if we had failed to put ``self.`` in front, the "
+"computer would completely forget about the variables once the ``__init__`` "
+"function was done."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:214
+msgid ""
+"Here's another example, we are defining a class called ``Address`` which has"
+" attributes for each field of a US mailing address."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:217
+msgid ""
+"class Address:\n"
+"    \"\"\" Hold all the fields for a mailing address. \"\"\"\n"
+"    def __init__(self):\n"
+"        \"\"\" Set up the address fields. \"\"\"\n"
+"        self.name = \"\"\n"
+"        self.line1 = \"\"\n"
+"        self.line2 = \"\"\n"
+"        self.city = \"\"\n"
+"        self.state = \"\"\n"
+"        self.zip = \"\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:231
+msgid ""
+"In the code above, ``Address`` is the class name. The variables in the class"
+" are the attributes."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid "Constructor?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:236
+msgid ""
+"There is some debate about calling ``__init__`` a constructor. In some "
+"languages a constructor is called *before* the computer sets aside memory "
+"for the object. In Python the ``__init__`` method is actually called *after*"
+" this happens. For our purposes, the distinction is not important."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:242
+msgid ""
+"The ``__init__`` is a special method that you may also hear referred to as a"
+" **constructor**. If you are programming in other languages, the term "
+"constructor is a generic term used to refer to whatever that language's "
+"equivalent to the ``__init__`` method is."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:247
+msgid ""
+"The ``self.`` is kind of like the pronoun *my*. When inside the class "
+"``Address`` we are talking about *my* name, *my* city, etc. We don't want to"
+" use ``self.`` outside the class. Why? Because just like the pronoun \"my,\""
+" it means someone totally different when said by a different person!"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:253
+msgid "Creating Objects"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/address.svg"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:259
+msgid ""
+"The class code *defines* a class but it does not actually create an "
+"**instance** of one. The code told the computer what fields an address has, "
+"but we don't actually have an address yet. We can define a class without "
+"creating one just like we can define a function without calling it."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:265
+msgid ""
+"To create an instance of the ``Address`` class, we use the following code:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:267
+msgid ""
+"def main():\n"
+"    # Create an address\n"
+"    home_address = Address()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:274
+msgid ""
+"We need a variable that will point to our address. In this case, we've "
+"called it ``home_address``. We'll set that variable equal to the new "
+"instance of the class we create. We create an new instance by using the name"
+" of the class (Address), followed by parentheses. This will \"magically\" "
+"call the ``__init__`` method which will set up fields/attributes for the "
+"class."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:282
+msgid ""
+"In this case, ``Address`` is a class. It defines what an address looks like."
+" The ``home_address`` variable points to an **object**. An object is an "
+"instance of a class. It is the actual address. As another example, \"Human\""
+" is a class, while \"Samantha\" and \"Pete\" are instances of the class."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:287
+msgid ""
+"You can set the object's attributes using the dot operator. First, use the "
+"variable that points to our object, immediately follow that with a period, "
+"then the attribute name."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:291
+msgid ""
+"def main():\n"
+"    # Create an address\n"
+"    home_address = Address()\n"
+"\n"
+"    # Set the fields in the address\n"
+"    home_address.name = \"John Smith\"\n"
+"    home_address.line1 = \"701 N. C Street\"\n"
+"    home_address.line2 = \"Carver Science Building\"\n"
+"    home_address.city = \"Indianola\"\n"
+"    home_address.state = \"IA\"\n"
+"    home_address.zip = \"50125\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:306
+msgid ""
+"A second variable can be created that points to a completely different "
+"instance of the ``Address`` class:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:309
+msgid ""
+"    # Create another address\n"
+"    vacation_home_address = Address()\n"
+"\n"
+"    # Set the fields in the address\n"
+"    vacation_home_address.name = \"John Smith\"\n"
+"    vacation_home_address.line1 = \"1122 Main Street\"\n"
+"    vacation_home_address.line2 = \"\"\n"
+"    vacation_home_address.city = \"Panama City Beach\"\n"
+"    vacation_home_address.state = \"FL\"\n"
+"    vacation_home_address.zip = \"32407\"\n"
+"\n"
+"    print(\"The client's main home is in \" + home_address.city)\n"
+"    print(\"His vacation home is in \" + vacation_home_address.city)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:326
+msgid ""
+"Attributes are not limited to being simple strings and numbers! If you have "
+"a class that represents a graph, you can store all the data points in an "
+"attribute that is a list. Attributes can even be other objects. An object "
+"that represents a player character in an adventure could have an attribute "
+"with another object that represents a magical hat."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:334
+msgid "Common Mistakes Creating Objects"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:336
+msgid ""
+"The first common mistake when creating an object is to forget the "
+"parentheses:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:338
+msgid ""
+"# ERROR - Forgot the parentheses after Address\n"
+"home_address = Address"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:344
+msgid ""
+"The terrible thing about this mistake is that the program won't stop or give"
+" you an error. Try running the example we just created with the two "
+"different addresses. Take out the parentheses. The program runs without "
+"error, but both the vacation home and the home address say we are in Panama "
+"City! That's because without the parentheses we don't create a new address, "
+"we just use the same block of memory and write the new information over the "
+"old, so everything points to the same address."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:352
+msgid ""
+"Another very common mistake when working with classes is to forget to "
+"specify which instance of the class you want to work with. If only one "
+"address is created, it is natural to assume the computer will know to use "
+"that address you are talking about. This is not the case."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:357
+msgid "Take a look at this code:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:359
+msgid ""
+"class Address:\n"
+"    def __init__(self):\n"
+"        self.name = \"\"\n"
+"        self.line1 = \"\"\n"
+"        self.line2 = \"\"\n"
+"        self.city = \"\"\n"
+"        self.state = \"\"\n"
+"        self.zip = \"\"\n"
+"\n"
+"def main():\n"
+"    # Create an address\n"
+"    my_address = Address()\n"
+"\n"
+"    # Alert! This does not set the address's name!\n"
+"    name = \"Dr. Smith\"\n"
+"\n"
+"    # This doesn't set the name for the address either\n"
+"    Address.name = \"Dr. Smith\"\n"
+"\n"
+"    # This runs, creates a new attribute but with the wrong name.\n"
+"    my_address.naem = \"Dr. Smith\"\n"
+"\n"
+"    # This does work:\n"
+"    my_address.name = \"Dr. Smith\"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:389
+msgid ""
+"This code will run without generating an exception, but it still isn't "
+"correct. Line 15 creates a variable called ``name``, but it is completely "
+"different than the name that is part of ``Address``. So we think we've set "
+"the name, but we haven't."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:394
+msgid ""
+"Line 18 does refer to ``Address``, but not ``my_address``. Frustratingly it "
+"runs without alerting us to an error, but the code isn't modifying "
+"``my_address``. Instead it sets something called a static variable, which "
+"we'll talk about later."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:399
+msgid ""
+"Think of it this way. If you are in a room of people, saying \"Age is 18\" "
+"is confusing. Saying \"Human's age is 18\" is also confusing. Saying "
+"\"Sally's age is 18\" is ideal, because you are saying which instance of "
+"human you are referring to. You have to do this with programming, even if "
+"there is only one human in the room."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:405
+msgid ""
+"Another mistake is on line 22. That line also runs fine, but it creates a "
+"new attribute called ``naem`` instead of setting the desired attribute "
+"``name``."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:409
+msgid "Using Objects in Functions"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:411
+msgid ""
+"Putting lots of data fields into a class makes it easy to pass data in and "
+"out of a function. In this example, the function takes in an address as a "
+"parameter and prints it out on the screen. It is not necessary to pass "
+"parameters for each field of the address."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:416
+msgid "Passing in an object as a function parameter"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:416
+msgid ""
+"def print_address(address):\n"
+"    \"\"\" Print an address to the screen \"\"\"\n"
+"\n"
+"    print(address.name)\n"
+"    # If there is a line1 in the address, print it\n"
+"    if len(address.line1) > 0:\n"
+"        print(address.line1)\n"
+"    # If there is a line2 in the address, print it\n"
+"    if len(address.line2) > 0:\n"
+"        print( address.line2 )\n"
+"    print(address.city + \", \" + address.state + \" \" + address.zip)\n"
+"\n"
+"\n"
+"def main():\n"
+"    # ... code for creating home_address and vacation_home_address\n"
+"    # goes here.\n"
+"    print_address(home_address)\n"
+"    print()\n"
+"    print_address(vacation_home_address)\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:447
+msgid "Customizing the Constructor"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/dog.svg"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:453
+msgid ""
+"Take a look at this code, where we represent a dog using a class. "
+"Unfortunately, there's a terrible problem with the code. When we create a "
+"dog, the dog has no name. Dogs should have names! `Only horses in the desert"
+" can have no name <https://en.wikipedia.org/wiki/A_Horse_with_No_Name>`_."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:459
+msgid ""
+"class Dog():\n"
+"    def __init__(self):\n"
+"        \"\"\" Constructor \"\"\"\n"
+"        self.name = \"\"\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog()\n"
+"    print(f\"The dog's name is: {my_dog.name}\")\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:477
+msgid ""
+"We can modify the code in our constructor to keep this from happening. "
+"First, let's add a ``print`` statement to our ``__init__`` just to "
+"demonstrate that it is really being called."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:481
+msgid ""
+"class Dog():\n"
+"    def __init__(self):\n"
+"        \"\"\" Constructor \"\"\"\n"
+"        self.name = \"\"\n"
+"        print(\"A new dog is born!\")\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog()\n"
+"    print(f\"The dog's name is: {my_dog.name}\")"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:497
+msgid "When the program is run, it will print this:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:499
+msgid "A new dog is born!"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:503
+msgid ""
+"When a Dog object is created on line 10, the ``__init__`` function is "
+"\"magically\" called and the message is printed to the screen."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:506
+msgid ""
+"We can add a parameter to our constructor, so that it requires us to pass in"
+" a name for the dog. Try running this code."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:509
+msgid ""
+"class Dog():\n"
+"    def __init__(self, new_name):\n"
+"        \"\"\" Constructor \"\"\"\n"
+"        self.name = new_name\n"
+"        print(\"A new dog is born!\")\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog()\n"
+"    print(f\"The dog's name is: {my_dog.name}\")\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:528
+msgid "You should get an error that looks like:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:530
+msgid ""
+"File \"c:/my_project/test.py\", line 10, in main\n"
+"  my_dog = Dog()\n"
+"TypeError: __init__() missing 1 required positional argument: 'new_name'"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:536
+msgid ""
+"The computer is saying it is missing a value for the ``new_name`` parameter."
+" It won't let the dog be created without a name. We can fix that up by "
+"adding a name when we create the dog."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:540
+msgid ""
+"class Dog():\n"
+"    def __init__(self, new_name):\n"
+"        \"\"\" Constructor \"\"\"\n"
+"        self.name = new_name\n"
+"        print(\"A new dog is born!\")\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog(\"Fluffy\")"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:555
+msgid ""
+"Notice in line 4 we take the value that was passed in as a parameter and "
+"assign ``self.name`` to have that same value. Without this line, the dog's "
+"name won't get set."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:559
+msgid ""
+"As programmers sometimes get tired of making up variable names, it is "
+"completely normal to see code like this:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:562
+msgid ""
+"class Dog():\n"
+"    def __init__(self, name):\n"
+"        \"\"\" Constructor \"\"\"\n"
+"        self.name = name\n"
+"        print(\"A new dog is born!\")\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the dog\n"
+"    my_dog = Dog(\"Fluffy\")\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:580
+msgid ""
+"Though it may seem strange at first, we have two variables at work, not one."
+" The first variable is ``name``, and that variable is assigned as a "
+"parameter when we call the ``Dog`` constructor. It goes away as soon as the "
+"``Dog`` constructor is done, and is forgotten about. The second variable is "
+"``self.name``, and that variable is complete different than ``name``. Its "
+"value will stay after the constructor is done."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:591
+msgid "Address Class With Init Parameters"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:593
+msgid ""
+"Here's another example, this time with our ``Address`` class. We supply the "
+"address attributes as part of our ``__init__`` when our address is created."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:596
+msgid ""
+"class Address():\n"
+"    def __init__(self, , line2, city, state, zip, country):\n"
+"        self.line1 = line1\n"
+"        self.line2 = line2\n"
+"        self.city = city\n"
+"        self.state = state\n"
+"        self.zip = zip\n"
+"        self.country = country\n"
+"\n"
+"\n"
+"def main():\n"
+"    # This creates the address\n"
+"    my_address = Address(\"701 N. C Street\",\n"
+"                         \"Carver Science Building\",\n"
+"                         \"Indianola\",\n"
+"                         \"IA\",\n"
+"                         \"50125\",\n"
+"                          \"USA)\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:622
+msgid "Typing Attributes"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:624
+msgid ""
+"It is possible to tell Python what *type* of data should be stored in a "
+"class attribute. This allows a programmer to use a tool like ``mypy`` and "
+"catch errors earlier in the development process."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:628
+msgid ""
+"In this example, we are adding a type definition to the ``name`` attribute "
+"on line 3. We do this by following the variable name with a colon, and "
+"adding ``str`` which is the abbreviation for the **string** data type."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:632
+msgid ""
+"class Person:\n"
+"    def __init__(self):\n"
+"        self.name: str = \"A\"\n"
+"\n"
+"\n"
+"mary = Person()\n"
+"mary.name = 22"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:644
+msgid ""
+"By assigning a number to the ``name`` attribute on line 7, we are storing "
+"the wrong kind of data. The program runs, but if we use the ``mypy`` tool, "
+"it will give us an error saying we've made a mistake:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:648
+msgid ""
+"test.py:7: error: Incompatible types in assignment (expression has type \"int\", variable has type \"str\")\n"
+"Found 1 error in 1 file (checked 1 source file)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:654
+msgid ""
+"Typing is great for large programs, and for programs where we want to make "
+"sure to catch all the errors we can before shipping to customers."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:657
+msgid ""
+"As we are just learning programming, it can be distracting to try adding "
+"typing to our programs at this stage. But we will be both looking and using,"
+" other people's code which does use typing. Therefore it is important to "
+"know what typing is, even if we don't need to use it ourselves until later."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:666
+msgid "Data Classes"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:668
+msgid ""
+"When creating a class and a constructor to define a set of fields, we end up"
+" with code that looks like this:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:671
+msgid ""
+"class Address:\n"
+"    def __init__(self,\n"
+"                 name: str = \"\",\n"
+"                 line1: str = \"\",\n"
+"                 line2: str = \"\",\n"
+"                 city: str = \"\",\n"
+"                 state: str = \"\",\n"
+"                 zip_code: str = \"\"\n"
+"                 ):\n"
+"        self.name: str = name\n"
+"        self.line1: str = line1\n"
+"        self.line2: str = line2\n"
+"        self.city: str = city\n"
+"        self.state: str = state\n"
+"        self.zip_code: str = zip_code"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:690
+msgid ""
+"This code is repetitive, as we state the fields twice. If your ``__init__`` "
+"method is only going to take in data fields and assign attribute values, you"
+" can simplify your code by using a **dataclass**."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:695
+msgid ""
+"Starting with Python 3.8, you can write the same thing using only this code:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:697
+msgid ""
+"@dataclass\n"
+"class Address:\n"
+"    name: str = \"\"\n"
+"    line1: str = \"\"\n"
+"    line2: str = \"\"\n"
+"    city: str = \"\"\n"
+"    state: str = \"\"\n"
+"    zip_code: str = \"\""
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:709
+msgid "This makes the code a lot easier to both write, and to read."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:712
+msgid "Static Variables"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rstNone
+msgid ".. image:: chapters/14_classes/cat.svg"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:718
+msgid ""
+"Class attributes are also called instance variables because they can be "
+"different for each instance of the class. If you have five instances of the "
+"``Dog`` class, each instance will have its own name."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:722
+msgid ""
+"In a few rare cases, we want to share data between *all* instances of a "
+"class. In this example with a ``Cat`` class, we have a ``population`` "
+"variable. This variable is *not* different for each cat."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:726
+msgid ""
+"class Cat:\n"
+"    population = 0\n"
+"\n"
+"    def __init__(self, name):\n"
+"        self.name = name\n"
+"        Cat.population += 1\n"
+"\n"
+"def main():\n"
+"    cat1 = Cat(\"Pat\")\n"
+"    cat2 = Cat(\"Pepper\")\n"
+"    cat3 = Cat(\"Pouncy\")\n"
+"\n"
+"    print(\"The cat population is:\", Cat.population)\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:746
+msgid ""
+"In this case we use ``Cat.population`` to keep track of our cat population, "
+"and the program will print out the correct count of 3."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:749
+msgid ""
+"Variables that *don't* change for each instance of a class, are called "
+"**class variables** or **static variables**. The terms mean the same thing "
+"and can be used interchangeably."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:753
+msgid ""
+"You refer to a static variable by using the class name ``Cat`` rather than "
+"any of the instance names like ``cat1``."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:756
+msgid ""
+"Static variables aren't used that often. The only reason we are introducing "
+"them here is that it is not unusual for students to accidentally use a "
+"static variable instead of an instance variable. In fact, Python makes it a "
+"bit too easy to 'blend' the two concepts together."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:761
+msgid ""
+"For example, we can also print a static variable not just by using the class"
+" name, but also by using the instance name:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:764
+msgid ""
+"print(\"The cat population is:\", Cat.population)\n"
+"print(\"The cat population is:\", cat1.population)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:770
+msgid ""
+"When we are reading code and come across a variable like ``Cat.population``,"
+" we immediately know it is static. How? All class names start with a capital"
+" letter, so ``Cat`` is a class. The only attributes that we can refer to "
+"with a class, rather than an instance, are static variables. So "
+"``population`` must be static. If we use ``cat1.population``, a programmer "
+"reading that code might mistakenly assume it is an instance variable rather "
+"than a static variable, so that makes debugging really hard. To reduce "
+"confusion, always refer to static variables using the class name."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:778
+msgid ""
+"In this example, I set population to 4, and each print statement says "
+"population is 4. This is confusing because I set one variable and the others"
+" change. If I just use ``Cat.population`` to refer to the population, then I"
+" remove that confusion."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:782
+msgid ""
+"Cat.population = 4\n"
+"print(\"The cat population is:\", Cat.population)\n"
+"print(\"The cat population is:\", cat2.population)\n"
+"print(\"The cat population is:\", cat1.population)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:790
+msgid ""
+"Here's where it gets really wild. As we just saw, I can print a static "
+"variable by referring to it with an instance, rather than by the class name."
+" I shouldn't, but I can."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:794
+msgid "What if, instead of printing, I assign a value that way?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:796
+msgid ""
+"Cat.population = 4\n"
+"cat3.population = 5\n"
+"print(\"The cat population is:\", Cat.population)\n"
+"print(\"The cat population is:\", cat1.population)\n"
+"print(\"The cat population is:\", cat2.population)\n"
+"print(\"The cat population is:\", cat3.population)"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:806
+msgid ""
+"In this case ``Cat.population``, ``cat1.population``, and "
+"``cat2.population`` all refer to the same static variable. But once I "
+"*assign* a value to ``cat3.population`` it creates a brand-new *instance* "
+"variable. So all the other cats use the static population value, while "
+"``cat3`` uses a new instance variable with the same exact name as the static"
+" variable. The static variable is **shadowed** by the instance variable. "
+"Therefore when we print ``cat3.population`` we get a 5. That type of bug is "
+"*very* hard to find."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:813
+msgid ""
+"For our purposes, we won't need to use static variables, we only introduce "
+"them so that you can better understand some confusing errors people "
+"occasionally run into."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:817
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:819
+msgid ""
+"In this chapter we learned how to bundle together several related data items"
+" into a **class**. We call these **class attributes**, **instance "
+"variables**, or **fields**. Each instance of a class is an **object**. "
+"Functions defined in a class are called **methods**. A special **magic "
+"method** called when an object is created is the ``__init__`` method, which "
+"is used to set up instance variables and assign them their initial values."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:826
+msgid ""
+"Inside the class we refer to instance variables by putting ``self.`` in "
+"front of them, such as ``self.name``. Outside the class, we need to use a "
+"variable that refers to the class, such as ``customer.name``."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:830
+msgid ""
+"Using classes helps simplify our code. We can use classes to represent:"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:832
+msgid ""
+"Characters in a video game, with attributes for health, speed, and armor."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:833
+msgid "Graphs, with attributes for heading, size, and data."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:834
+msgid ""
+"A customer order, with a list as an attribute for each item in the order."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:836
+msgid ""
+"**Data classes** can be used to make it easier to define a class with a lot "
+"of attributes. **Typing** can be used to make sure we don't put the wrong "
+"type of data in an attribute. **Static variables** are attributes that don't"
+" change from object to object."
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:843
+msgid "Review Questions"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:845
+msgid "What are the three main advantages of object-oriented programming?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:846
+msgid "What keyword is used to define a new class?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:847
+msgid "All class names should start with an upper-case or lower-case letter?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:848
+msgid ""
+"Where do the comments for a class go? What kind of comments do you use? Why "
+"is there a standard?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:850
+msgid "What is the difference between a function and a method?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:851
+msgid ""
+"What three different terms can be used to refer to data that is tied to a a "
+"class?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:853
+msgid "What is a magic method?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:854
+msgid "What is a dunder method?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:855
+msgid ""
+"All class methods should have start with the same parameter. What is that "
+"parameter?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:857
+msgid ""
+"What is the name of the method in a class where we define our attributes?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:858
+msgid "When defining a class attribute, what needs to go right before it?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:859
+msgid "What is a constructor?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:860
+msgid "What is the difference between a class and an object?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:861
+msgid ""
+"What are the common mistakes when creating instances (objects) of a class?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:862
+msgid ""
+"How can we make sure our attributes are assigned when the object is created?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:863
+msgid "What is the point of adding \"typing\" to a class?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:864
+msgid "What is a data class?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:865
+msgid "What are static variables?"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:868
+msgid "Lab 6: Text Adventure"
+msgstr ""
+
+#: ../../source/chapters/14_classes/classes.rst:870
+msgid ""
+"In :ref:`lab-06`, you'll use a class to represent a room in an text "
+"adventure. You'll use attributes to store the room description, and which "
+"rooms are north, south, east and west of it. You'll use a list to store all "
+"the rooms in your adventure."
+msgstr ""

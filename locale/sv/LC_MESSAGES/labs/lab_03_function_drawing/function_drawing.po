@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:4
+msgid "Lab 3: Drawing with Functions"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:6
+msgid ""
+"This lab uses what we learned in :ref:`creating_functions` and :ref:`custom-"
+"drawing-function` to extend our ability to draw to the screen."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:10
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:12
+msgid "Your goal: Draw an image using functions."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rstNone
+msgid ".. image:: labs/lab_03_function_drawing/example.png"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rstNone
+msgid ".. image:: labs/lab_03_function_drawing/example_2.png"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rstNone
+msgid ".. image:: labs/lab_03_function_drawing/lab_03_example_01.gif"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:24
+msgid "Requirements for Drawing"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:26
+msgid ""
+"You can update your program from Lab 2, or create a new program. This lab is"
+" worth 20 points. See the point breakdown below."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:29
+msgid "Incorporate the following items:"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:31
+msgid ""
+"Find the folder for Lab 03 in PyCharm and start entering your code there. "
+"Feel free to use any code from Lab 02 you want, just copy it across."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:33
+msgid ""
+"Make sure you are putting your program in the Lab 3 folder, and not just "
+"changing Lab 2 to have Lab 3 requirements."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:35
+msgid ""
+"We are going to be following the instructions/example in :ref:`custom-"
+"drawing-function`."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:36
+msgid ""
+"Put everything into a function as shown in :ref:`make_the_main_function`. 1 "
+"pt."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:37
+msgid ""
+"Create three functions that draw something. (18 pts total, up to 6 pts per "
+"function)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:40
+msgid "Define the function and successfully call it. (1 pt)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:41
+msgid ""
+"Make your drawing function complex. 0 points for a one-line function that "
+"just draws a rectangle, 0 points for copying the example from the book, 2 "
+"points for a cohesive multi-line function. (2 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:44
+msgid ""
+"Pass in ``x`` and ``y`` parameters and successfully position the object as "
+"shown in :ref:`make_the_drawing_function`. (2 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:46
+msgid ""
+"Make sure the image you draw is centered around the x and y, and not off-"
+"set. (1 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:49
+msgid ""
+"Call at least one of the functions more than once, and in a different "
+"location. (1 pt.)"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:52
+msgid "Double Check"
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:54
+msgid ""
+"Make sure you don't put functions inside of functions. After the ``import`` "
+"statement, each function should be listed out, one ``def`` after the other. "
+"But no ``def`` inside of another ``def``."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:58
+msgid ""
+"Make sure you have *three* functions that take in an ``(x, y)`` position to "
+"draw an object, not just one."
+msgstr ""
+
+#: ../../source/labs/lab_03_function_drawing/function_drawing.rst:61
+msgid ""
+"The most frequent source of confusion on this lab, and way to lose points, "
+"is a drawing function that is not centered around the specified (x, y). You "
+"can confirm this is working by drawing a point right at the x, y as the last"
+" line of your code. If the point draws near the center of your item, you are"
+" good. If the point is nowhere near the center, you need to re-center it."
+msgstr ""

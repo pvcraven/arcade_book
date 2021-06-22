@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:4
+msgid "Lab 2: Draw a Picture"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:6
+msgid "Your assignment: Draw a picture."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:8
+msgid "The goal:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:10
+msgid ""
+"Practice looking up API documentation - useful for using any code library"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:11
+msgid ""
+"Practice calling functions - a basic building block of all computer programs"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:12
+msgid ""
+"Practice working with RGB colors - used in graphics, web design, and even "
+"LED lighting"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:13
+msgid ""
+"Practice commenting and formatting code properly - required to make code "
+"maintainable"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:14
+msgid ""
+"Practice working with graphics coordinates - also used in document layout "
+"and web design"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:17
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:19
+msgid "To get full credit:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:21
+msgid ""
+"Use the same project and repository that you used for Lab 01. If you forked "
+"your repository from mine, you should already have a folder for lab 2. Use "
+"that folder, and the ``lab_02.py`` file inside. Otherwise create one."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:24
+msgid "Use several different colors."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:25
+msgid ""
+"Make a coherent picture. Don't make abstract art with random shapes, because"
+" that doesn't require a full application of what we've learned to a real "
+"use-case."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:28
+msgid ""
+"Use multiple types of graphic functions. Include circles, ellipses, "
+"rectangles, lines, polygons and more in your drawing. It is certainly "
+"possible to make great art with just squares, but the point of the lab is to"
+" practice using multiple functions."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:33
+msgid ""
+"Use a single blank line in your code to break up logical sections. For "
+"example, when drawing a tree, put a blank line ahead of, and after. See the "
+"example code below."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:36
+msgid ""
+"Use comments effectively. For example, when drawing a tree, put a comment at"
+" the start of those drawing commands that says ``# Draw a tree``. Remember "
+"to put one space after the ``#`` sign."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:39
+msgid "Put spaces after commas for proper \"style.\""
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:40
+msgid ""
+"Use PyCharm to inspect your code for warnings. Fix warnings that you "
+"encounter."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:43
+msgid "Tips"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:45
+msgid "To select new colors use: https://www.google.com/search?q=color+picker"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:47
+msgid ""
+"Copy the values for Red, Green, and Blue from the color picker. Do not worry"
+" about colors for hue, saturation, or brilliance."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:50
+msgid ""
+"Keep in mind the order of code. Shapes drawn first will be at the \"back.\" "
+"Shapes drawn later will be drawn on top of the other shapes."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:53
+msgid ""
+"Also, remember you can look up the available commands, called the \"API\" "
+"at: https://arcade.academy"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:57
+msgid "Example Lab"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:60
+msgid ".. image:: labs/lab_02_drawing/final_program.png"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:61
+msgid ""
+"\"\"\"\n"
+"This is a sample program to show how to draw using the Python programming\n"
+"language and the Arcade library.\n"
+"\"\"\"\n"
+"\n"
+"# Import the \"arcade\" library\n"
+"import arcade\n"
+"\n"
+"# Open up a window.\n"
+"# From the \"arcade\" library, use a function called \"open_window\"\n"
+"# Set the window title to \"Drawing Example\"\n"
+"# Set the and dimensions (width and height)\n"
+"arcade.open_window(800, 600, \"Drawing Example\")\n"
+"\n"
+"# Set the background color\n"
+"arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)\n"
+"\n"
+"# Get ready to draw\n"
+"arcade.start_render()\n"
+"\n"
+"# Draw the grass\n"
+"arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)\n"
+"\n"
+"# --- Draw the barn ---\n"
+"\n"
+"# Barn cement base\n"
+"arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)\n"
+"\n"
+"# Bottom half\n"
+"arcade.draw_lrtb_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)\n"
+"\n"
+"# Left-bottom window\n"
+"arcade.draw_rectangle_filled(70, 260, 30, 40, arcade.color.BONE)\n"
+"arcade.draw_rectangle_filled(70, 260, 20, 30, arcade.color.BLACK)\n"
+"\n"
+"# Right-bottom window\n"
+"arcade.draw_rectangle_filled(310, 260, 30, 40, arcade.color.BONE)\n"
+"arcade.draw_rectangle_filled(310, 260, 20, 30, arcade.color.BLACK)\n"
+"\n"
+"# Barn door\n"
+"arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)\n"
+"\n"
+"# Rail above the door\n"
+"arcade.draw_rectangle_filled(190, 280, 180, 5, arcade.color.BONE)\n"
+"\n"
+"# Draw second level of barn\n"
+"arcade.draw_polygon_filled([[20, 350],\n"
+"                            [100, 470],\n"
+"                            [280, 470],\n"
+"                            [360, 340]],\n"
+"                            arcade.color.BROWN)\n"
+"\n"
+"# Draw loft of barn\n"
+"arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color.BROWN)\n"
+"\n"
+"# Left-top window\n"
+"arcade.draw_rectangle_filled(130, 440, 30, 40, arcade.color.BONE)\n"
+"arcade.draw_rectangle_filled(130, 440, 20, 30, arcade.color.BLACK)\n"
+"\n"
+"# Right-top window\n"
+"arcade.draw_rectangle_filled(250, 440, 30, 40, arcade.color.BONE)\n"
+"arcade.draw_rectangle_filled(250, 440, 20, 30, arcade.color.BLACK)\n"
+"\n"
+"# Draw 2nd level door\n"
+"arcade.draw_rectangle_outline(190, 310, 30, 60, arcade.color.BONE, 5)\n"
+"\n"
+"# --- Draw the tractor ---\n"
+"\n"
+"# Draw the engine\n"
+"arcade.draw_rectangle_filled(600, 120, 140, 70, arcade.color.GRAY)\n"
+"arcade.draw_rectangle_filled(590, 105, 90, 40, arcade.color.BLACK)\n"
+"\n"
+"# Draw the smoke stack\n"
+"arcade.draw_rectangle_filled(580, 175, 10, 40, arcade.color.BLACK)\n"
+"\n"
+"# Back wheel\n"
+"arcade.draw_circle_filled(490, 110, 50, arcade.color.BLACK)\n"
+"arcade.draw_circle_filled(490, 110, 45, arcade.color.BLACK_OLIVE)\n"
+"arcade.draw_circle_filled(490, 110, 35, arcade.color.OLD_LACE)\n"
+"arcade.draw_circle_filled(490, 110, 10, arcade.color.RED)\n"
+"\n"
+"# Front wheel\n"
+"arcade.draw_circle_filled(650, 90, 30, arcade.color.BLACK)\n"
+"arcade.draw_circle_filled(650, 90, 25, arcade.color.BLACK_OLIVE)\n"
+"arcade.draw_circle_filled(650, 90, 18, arcade.color.OLD_LACE)\n"
+"arcade.draw_circle_filled(650, 90, 5, arcade.color.RED)\n"
+"\n"
+"# --- Finish drawing ---\n"
+"arcade.finish_render()\n"
+"\n"
+"# Keep the window up until someone closes it.\n"
+"arcade.run()\n"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:66
+msgid "Other Examples"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:68
+msgid "Here are some images from prior years:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:138
+msgid "Turn In"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:140
+msgid ""
+"Refer back to :ref:`git-quick-ref` for a reminder on how to turn in this "
+"lab. You need to do a:"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:143
+msgid "``git add *``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:144
+msgid "``git commit -m \"Lab 02\"``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:145
+msgid "``git push``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:146
+msgid "Find the lab on ``github.com``"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:147
+msgid "Copy the URL"
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:148
+msgid "Go to the class website and turn in the lab."
+msgstr ""
+
+#: ../../source/labs/lab_02_drawing/drawing.rst:150
+msgid ""
+"Remember, if there are errors on the lab that you want to correct and get "
+"full credit for, you can. Once corrected, go through all the steps above. "
+"You must resubmit the lab to the class website (not just upload to git) "
+"otherwise I don't get notified to look at the lab again. You have 7 days (to"
+" the hour and minute) to submit the lab again."
+msgstr ""

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:4
+msgid "Lab 7: User Control"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:6
+msgid ""
+"This lab gives you a chance to practice drawing an object with a function "
+"and allow the user to control it."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:10
+msgid ""
+"This lab does **NOT** use sprites. Look at :ref:`user-control` for examples "
+"relevant to this lab."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:13
+msgid "Write one program, following these steps:"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:15
+msgid ""
+"Create a ``Lab 07 - User Control`` folder for this lab, or use one that is "
+"already set up in your project."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:17
+msgid "Begin your code with the template below:"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:19
+msgid "Lab 7 Template"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:19
+msgid ""
+"\"\"\" Lab 7 - User Control \"\"\"\n"
+"\n"
+"import arcade\n"
+"\n"
+"# --- Constants ---\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"    \"\"\" Our Custom Window Class\"\"\"\n"
+"\n"
+"    def __init__(self):\n"
+"        \"\"\" Initializer \"\"\"\n"
+"\n"
+"        # Call the parent class initializer\n"
+"        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, \"Lab 7 - User Control\")\n"
+"\n"
+"    def on_draw(self):\n"
+"        arcade.start_render()\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame()\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:24
+msgid ""
+"Create a background image of some sort in the ``on_draw`` method. Feel free "
+"to use any of *your* code that *you* have written from prior labs that you "
+"have. To do this, put your code in the ``on_draw`` method. If your code used"
+" functions, move those functions as well to this program. Paste them above "
+"the ``MyGame`` class. Don't turn this in with just a solid color for the "
+"background, or you'll lose a couple points."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:30
+msgid ""
+"In :ref:`user-control`, we talked about moving graphics with the keyboard, a"
+" game controller, and the mouse. To start, pick one of these methods, and "
+"get that ball moving around in your program."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:33
+msgid ""
+"In the examples, we just moved a ball. Adjust the code so that it draws "
+"something more interesting than a ball. You can pull from the code you used "
+"in prior labs where you drew with a function, and move it to the ``on_draw``"
+" method of your class. But don't have your object be a simple one line of "
+"code shape."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:37
+msgid ""
+"Rename your class from ``Ball`` to a name that represents what you are "
+"really drawing."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:38
+msgid ""
+"After you get that object moving, pick a *different* method of control "
+"(keyboard, mouse, gamepad.) Create a *new class*, draw something "
+"*different*, and move it around the screen."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:40
+msgid ""
+"In the case of the game controller and the keyboard, make sure to add checks"
+" so that your object does not move off-screen and get lost."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:42
+msgid "Add a sound effect for when the user clicks the mouse button."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:43
+msgid ""
+"Add a different sound effect for when the user bumps into the edge of the "
+"screen. Make sure the sound only plays when you are trying to go beyond the "
+"edge of the screen, and not when you just sit at the edge of the screen. "
+"This part isn't needed for anything controlled by the mouse."
+msgstr ""
+
+#: ../../source/labs/lab_07_user_control/user_control.rst:48
+msgid ""
+"When you are done, make sure you commit your sound effects in what you turn "
+"in! Otherwise your program can't be graded."
+msgstr ""

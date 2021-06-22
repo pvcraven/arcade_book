@@ -1,0 +1,1110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:2
+msgid "Libraries and Modules"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rstNone
+msgid ".. image:: chapters/23_libraries_and_modules/library.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:7
+msgid ""
+"A *library* is a collection of code for functions and classes. Often, these "
+"libraries are written by someone else and brought into the project so that "
+"the programmer does not have to \"reinvent the wheel.\" In Python the term "
+"used to describe a library of code is module."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:12
+msgid ""
+"By using ``import arcade`` and ``import random``, the programs created so "
+"far have already used modules. A library can be made up of multiple modules "
+"that can be imported. Often a library only has one module, so these words "
+"can sometimes be used interchangeably."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:17
+msgid ""
+"Modules are often organized into groups of similar functionality. In this "
+"class programs have already used functions from the ``math`` module, the "
+"``random`` module, and the ``arcade`` library. Modules can be organized so "
+"that individual modules contain other modules. For example, the ``arcade`` "
+"module contains submodules for ``arcade.key``, and ``arcade.color``."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:23
+msgid ""
+"Modules are not loaded unless the program asks them to. This saves time and "
+"computer memory. This chapter shows how to create a module, and how to "
+"import and use that module."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:28
+msgid "Why Create a Library?"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:30
+msgid ""
+"There are three major reasons for a programmer to create his or her own "
+"libraries:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:33
+msgid "It breaks the code into smaller, easier to use parts."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:34
+msgid "It allows multiple people to work on a program at the same time."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:35
+msgid "The code written can be easily shared with other programmers."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:37
+msgid ""
+"Some of the programs already created in this book have started to get rather"
+" long. By separating a large program into several smaller programs, it is "
+"easier to manage the code. For example, in the prior chapter's sprite "
+"example, a programmer could move the sprite class into a separate file. In a"
+" complex program, each sprite might be contained in its own file."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:43
+msgid ""
+"If multiple programmers work on the same project, it is nearly impossible to"
+" do so if all the code is in one file. However, by breaking the program into"
+" multiple pieces, it becomes easier. One programmer could work on developing"
+" an \"Orc\" sprite class. Another programmer could work on the \"Goblin\" "
+"sprite class. Since the sprites are in separate files, the programmers do "
+"not run into conflict."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:50
+msgid ""
+"Modern programmers rarely build programs from scratch. Often programs are "
+"built from parts of other programs that share the same functionality. If one"
+" programmer creates code that can handle a mortgage application form, that "
+"code will ideally go into a library. Then any other program that needs to "
+"manage a mortgage application form at that bank can call on that library."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:57
+msgid "Creating Your Own Module/Library File"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:63
+msgid "Video: Libraries"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:65
+msgid ""
+"In this example we will break apart a short program into multiple files. "
+"Here we have a function in a file named ``test.py``, and a call to that "
+"function:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:68
+msgid "test.py with everything in it"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:68
+msgid ""
+"# Foo function\n"
+"def foo():\n"
+"    print(\"foo!\")\n"
+"\n"
+"def main():\n"
+"    # Foo call\n"
+"    foo()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:82
+msgid ""
+"Yes, this program is not too long to be in one file. But if both the "
+"function and the main program code were long, it would be different. If we "
+"had several functions, each 100 lines long, it would be time consuming to "
+"manage that large of a file. But for this example we will keep the code "
+"short for clarity."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:87
+msgid ""
+"We can move the ``foo`` function out of this file. Then this file would be "
+"left with only the main program code. (In this example there is no reason to"
+" separate them, aside from learning how to do so.)"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:91
+msgid ""
+"To do this, create a new file and copy the ``foo`` function into it. Save "
+"the new file with the name ``my_functions.py``. The file must be saved to "
+"the same directory as ``test.py``."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:95
+msgid "my_functions.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:95
+msgid ""
+"# Foo function\n"
+"def foo():\n"
+"    print(\"foo!\")"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:103
+msgid "test.py that doesn't work"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:103
+msgid ""
+"def main():\n"
+"    # Foo call that doesn't work\n"
+"    foo()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:113
+msgid ""
+"Unfortunately it isn't as simple as this. The file ``test.py`` does not know"
+" to go and look at the ``my_functions.py`` file and import it. We have to "
+"add the command to import it:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:117
+msgid "test.py that imports but still doesn't work"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:117
+msgid ""
+"# Import the my_functions.py file\n"
+"import my_functions\n"
+"\n"
+"def main():\n"
+"    # Foo call that still doesn't work\n"
+"    foo()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:130
+msgid ""
+"That still doesn't work. What are we missing? Just like when we import "
+"arcade, we have to put the package name in front of the function. Like this:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:133
+msgid "test.py that finally works"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:133
+msgid ""
+"# Import the my_functions.py file\n"
+"import my_functions\n"
+"\n"
+"def main():\n"
+"    # Foo call that does work\n"
+"    my_functions.foo()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:146
+msgid ""
+"This works because ``my_functions.`` is prepended to the function call."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:149
+msgid "Namespace"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:155
+msgid "Video: Namespace"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:157
+msgid ""
+"A program might have two library files that need to be used. What if the "
+"libraries had functions that were named the same? What if there were two "
+"functions named print_report, one that printed grades, and one that printed "
+"an account statement? For instance:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:162
+msgid "student_functions.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:162
+msgid ""
+"def print_report():\n"
+"    print(\"Student Grade Report:\" )"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:169
+msgid "financial_functions.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:169
+msgid ""
+"def print_report():\n"
+"    print(\"Financial Report:\" )"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:176
+msgid ""
+"How do you get a program to specify which function to call? Well, that is "
+"pretty easy. You specify the *namespace*. The namespace is the work that "
+"appears before the function name in the code below:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:180
+msgid "test.py that calls different print_report functions"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:180
+msgid ""
+"import student_functions\n"
+"import financial_functions\n"
+"\n"
+"def main():\n"
+"    student_functions.print_report()\n"
+"    financial_functions.print_report()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:193
+msgid ""
+"So now we can see why this might be needed. But what if you don't have name "
+"collisions? Typing in a namespace each and every time can be tiresome. You "
+"can get around this by importing the library into the *local namespace*. The"
+" local namespace is a list of functions, variables, and classes that you "
+"don't have to prepend with a namespace. Going back to the ``foo`` example, "
+"let's remove the original import and replace it with a new type of import:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:200
+msgid "test.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:200
+msgid ""
+"# import foo\n"
+"from my_functions import *\n"
+"\n"
+"def main():\n"
+"    foo()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:212
+msgid ""
+"This works even without ``my_functions.`` prepended to the function call. "
+"The asterisk is a wildcard that will import all functions from "
+"``my_functions``. A programmer could import individual ones if desired by "
+"specifying the function name."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:218
+msgid "Third Party Libraries"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:220
+msgid ""
+"When working with Python, it is possible to use many libraries that are "
+"built into Python. Take a look at all the libraries that are available here:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:223
+msgid "http://docs.python.org/3/py-modindex.html"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:225
+msgid ""
+"It is possible to download and install other libraries. There are libraries "
+"that work with the web, complex numbers, databases, and more."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:228
+msgid ""
+"Arcade: The library that this book uses to create games. "
+"http://arcade.academy"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:229
+msgid ""
+"Pygame: Another library used to create games, and the inspiration behind the"
+" creation of the Arcade library. http://www.pygame.org/docs/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:231
+msgid ""
+"Pymunk: A great library for running 2D physics. Also works with Arcade, see "
+"`these examples <http://arcade.academy/examples/index.html#pymunk>`_ "
+"http://www.pymunk.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:233
+msgid ""
+"wxPython: Create GUI programs, with windows, menus, and more. "
+"http://www.wxpython.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:234
+msgid ""
+"pydot: Generate complex directed and non-directed graphs "
+"http://code.google.com/p/pydot/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:235
+msgid ""
+"NumPy: Sophisticated library for working with matrices. http://numpy.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:236
+msgid "Pandas: A library for data analysis. https://pandas.pydata.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:237
+msgid "Pillow: Work with images. https://pillow.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:238
+msgid ""
+"Pyglet: Another graphics library. Arcade uses this library. "
+"http://pyglet.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:240
+msgid ""
+"You can do analysis and create your own interactive notebook using Jupyter:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:242
+msgid "Jupyter: http://jupyter.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:244
+msgid "Some libraries we give examples of in this chapter:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:246
+msgid ""
+"OpenPyXL: A library for reading and writing Excel files. "
+"https://openpyxl.readthedocs.io/en/stable/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:247
+msgid ""
+"Beautiful Soup: Grab data off websites, and create your own web bots. "
+"https://www.crummy.com/software/BeautifulSoup/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:248
+msgid "MatPlotLib: Plot data automatically: https://matplotlib.org/"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:250
+msgid ""
+"A wonderful list of Python libraries and links to installers for them is "
+"available here:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:252
+msgid ""
+"You can search up some top packages/libraries and stand alone projects to "
+"get an idea of what you can do. There are many articles like `Top 15 Python "
+"Libraries for Data Science in 2017 <https://medium.com/activewizards-"
+"machine-learning-company/top-15-python-libraries-for-data-science-in-"
+"in-2017-ab61b4f9b4a7>`_."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:257
+msgid "Examples: OpenPyXL Library"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:259
+msgid ""
+"This example uses a library called OpenPyXL to write an Excel file. It is "
+"also easy to read from an Excel file. You can install OpenPyXL from the "
+"Windows command prompt by typing ``pip install openpyxl``. If you are on the"
+" Mac or a Linux machine, you can type ``sudo pip3 install openpyxl``."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:267
+msgid ""
+"When starting the command prompt, you might need to right-click on it and "
+"select \"Run as administrator\" if you get permission errors when "
+"installing. And if you are working on a lab computer, you might not have "
+"permission to install libraries."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:271
+msgid "openpyxl_example.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:271
+msgid ""
+"\"\"\"\n"
+"Example using OpenPyXL to create an Excel worksheet\n"
+"\"\"\"\n"
+"\n"
+"from openpyxl import Workbook\n"
+"import random\n"
+"\n"
+"# Create an Excel workbook\n"
+"work_book = Workbook()\n"
+"\n"
+"# Grab the active worksheet\n"
+"work_sheet = work_book.active\n"
+"\n"
+"# Data can be assigned directly to cells\n"
+"work_sheet['A1'] = \"This is a test\"\n"
+"\n"
+"# Rows can also be appended\n"
+"for i in range(200):\n"
+"    work_sheet.append([\"Random Number:\", random.randrange(1000)])\n"
+"\n"
+"# Save the file\n"
+"work_book.save(\"sample.xlsx\")\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:276
+msgid "The output of this program is an Excel file:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:279
+msgid ".. image:: chapters/23_libraries_and_modules/excel_example.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:281
+msgid "Examples: Beautiful Soup Library"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:283
+msgid ""
+"This example grabs information off a web page. You can install Beautiful "
+"Soup from the Windows command prompt by typing ``pip install bs4``. If you "
+"are on the Mac or a Linux machine, you can type ``sudo pip3 install bs4``."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:288
+msgid "bs4_example.py"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:288
+msgid ""
+"\"\"\"\n"
+"Example showing how to read in from a web page\n"
+"\"\"\"\n"
+"\n"
+"from bs4 import BeautifulSoup\n"
+"import urllib.request\n"
+"\n"
+"# Read in the web page\n"
+"url_address = \"http://simpson.edu\"\n"
+"page = urllib.request.urlopen(url_address)\n"
+"\n"
+"# Parse the web page\n"
+"soup = BeautifulSoup(page.read(), \"html.parser\")\n"
+"\n"
+"# Get a list of level 1 headings in the page\n"
+"headings = soup.findAll(\"h1\")\n"
+"\n"
+"# Loop through each row\n"
+"for heading in headings:\n"
+"    print(heading.text)\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:294
+msgid "Examples: Matplotlib Library"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:295
+msgid ""
+"Here is an example of what you can do with the third party library "
+"\"Matplotlib.\" You can install Matplotlib from the Windows command prompt "
+"by typing ``pip install matplotlib``. If you are on the Mac or a Linux "
+"machine, you can type ``pip3 install matplotlib``."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:301
+msgid "Example 1: Simple Plot"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:303
+msgid ""
+"To start with, here is the code to create a simple line chart with four "
+"values:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:308
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_01.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:308
+msgid "Simple Line Graph"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:310
+msgid "Example 1"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:310
+msgid ""
+"\"\"\"\n"
+"Line chart with four values.\n"
+"The x-axis defaults to start at zero.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"y = [1, 3, 8, 4]\n"
+"\n"
+"plt.plot(y)\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element Number')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:315
+msgid ""
+"Note that you can zoom in, pan, and save the graph. You can even save the "
+"graph in vector formats like ps and svg that import into documents without "
+"loss of quality like raster graphics would have."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:320
+msgid "Example 2: Specify x Values"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:322
+msgid ""
+"The x value for Example 1, defaults to start at zero. You can change this "
+"default and specify your own x values to go with the y values. See Example 2"
+" below."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:329
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_02.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:329
+msgid "Specifying the x values"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:331
+msgid "Example 2"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:331
+msgid ""
+"\"\"\"\n"
+"Line chart with four values.\n"
+"The x-axis values are specified as well.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = [1, 2, 3, 4]\n"
+"y = [1, 3, 8, 4]\n"
+"\n"
+"plt.plot(x, y)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:337
+msgid "Example 3: Add A Second Data Series"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:339
+msgid "It is trivial to add another data series to the graph."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:344
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_03.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:344
+msgid "Graphing two data series"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:346
+msgid "Example 3"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:346
+msgid ""
+"\"\"\"\n"
+"This example shows graphing two different series\n"
+"on the same graph.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x =  [1, 2, 3, 4]\n"
+"y1 = [1, 3, 8, 4]\n"
+"y2 = [2, 2, 3, 3]\n"
+"\n"
+"plt.plot(x, y1)\n"
+"plt.plot(x, y2)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+"\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:352
+msgid "Example 4: Add A Legend"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:354
+msgid "You can add a legend to the graph:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:359
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_04.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:359
+msgid "Adding a legend"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:361
+msgid "Example 4"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:361
+msgid ""
+"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x =  [1, 2, 3, 4]\n"
+"y1 = [1, 3, 8, 4]\n"
+"y2 = [2, 2, 3, 3]\n"
+"\n"
+"plt.plot(x, y1, label = \"Series 1\")\n"
+"plt.plot(x, y2, label = \"Series 2\")\n"
+"\n"
+"legend = plt.legend(loc='upper center', shadow=True, fontsize='x-large')\n"
+"legend.get_frame().set_facecolor('#00FFCC')\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:367
+msgid "Example 5: Add Annotations"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:369
+msgid "You can add annotations to a graph:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:374
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_05.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:374
+msgid "Adding annotations"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:376
+msgid "Example 5"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:376
+msgid ""
+"\"\"\"\n"
+"Annotating a graph\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = [1, 2, 3, 4]\n"
+"y = [1, 3, 8, 4]\n"
+"\n"
+"plt.annotate('Here',\n"
+"             xy = (2, 3),\n"
+"             xycoords = 'data',\n"
+"             xytext = (-40, 20),\n"
+"             textcoords = 'offset points',\n"
+"             arrowprops = dict(arrowstyle=\"->\",\n"
+"                               connectionstyle=\"arc,angleA=0,armA=30,rad=10\"),\n"
+"             )\n"
+"\n"
+"plt.plot(x, y)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:382
+msgid "Example 6: Change Line Styles"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:384
+msgid ""
+"Don't like the default lines styles for the graph? That can be changed by "
+"adding a third parameter to the plot command."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:390
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_06.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:390
+msgid "Specifying the line style"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:392
+msgid "Example 6"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:392
+msgid ""
+"\"\"\"\n"
+"This shows how to set line style and markers.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x =  [1, 2, 3, 4]\n"
+"y1 = [1, 3, 8, 4]\n"
+"y2 = [2, 2, 3, 3]\n"
+"\n"
+"# First character: Line style\n"
+"# One of '-', '--',  '-.', ':', 'None', ' ', \"\n"
+"\n"
+"# Second character: color\n"
+"# http://matplotlib.org/1.4.2/api/colors_api.html\n"
+"\n"
+"# Third character: marker shape\n"
+"# http://matplotlib.org/1.4.2/api/markers_api.html\n"
+"\n"
+"plt.plot(x, y1, '-ro')\n"
+"plt.plot(x, y2, '--g^')\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:398
+msgid "Example 7: Bar Chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:400
+msgid "A bar chart is as easy as changing plot to bar."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:405
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_07.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:405
+msgid "Bar chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:407
+msgid "Example 7"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:407
+msgid ""
+"\"\"\"\n"
+"How to do a bar chart.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = [1, 2, 3, 4]\n"
+"y = [1, 3, 8, 4]\n"
+"\n"
+"plt.bar(x, y)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:413
+msgid "Example 8: Axis Labels"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:415
+msgid "You can add labels to axis values."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:420
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_08.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:420
+msgid "X-axis labels"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:422
+msgid "Example 8"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:422
+msgid ""
+"\"\"\"\n"
+"How to add x axis value labels.\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = [1, 2, 3, 4]\n"
+"y = [1, 3, 8, 4]\n"
+"\n"
+"plt.plot(x, y)\n"
+"\n"
+"labels = ['Frogs', 'Hogs', 'Bogs', 'Slogs']\n"
+"plt.xticks(x, labels)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:428
+msgid "Example 9: Graph Functions"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:430
+msgid ""
+"You can graph functions as well. This uses a different package called numpy "
+"to graph a sine function."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:436
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_09.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:436
+msgid "Graphing a sine function"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:438
+msgid "Example 9"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:438
+msgid ""
+"\"\"\"\n"
+"Using the numpy package to graph a function over\n"
+"a range of values.\n"
+"\"\"\"\n"
+"import numpy\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = numpy.arange(0.0, 2.0, 0.001)\n"
+"y = numpy.sin(2 * numpy.pi * x)\n"
+"\n"
+"plt.plot(x, y)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:444
+msgid "Example 10: Graph Functions With Fill"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:446
+msgid "You can fill in a graph if you like."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:451
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_10.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:451
+msgid "Filling in a graph"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:453
+msgid "Example 10"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:453
+msgid ""
+"\"\"\"\n"
+"Using 'fill' to fill in a graph\n"
+"\"\"\"\n"
+"import numpy\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"x = numpy.arange(0.0, 2.0, 0.001)\n"
+"y = numpy.sin(2 * numpy.pi * x)\n"
+"\n"
+"plt.plot(x, y)\n"
+"\n"
+"# 'b' means blue. 'alpha' is the transparency.\n"
+"plt.fill(x, y, 'b', alpha=0.3)\n"
+"\n"
+"plt.ylabel('Element Value')\n"
+"plt.xlabel('Element')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:459
+msgid "Example 11: Pie Chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:461
+msgid "Create a pie chart."
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:466
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_11.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:466
+msgid "Pie chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:468
+msgid "Example 11"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:468
+msgid ""
+"\"\"\"\n"
+"Create a pie chart\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"\n"
+"# Labels for the pie chart\n"
+"labels = ['C', 'Java', 'Objective-C', 'C++', 'C#', 'PHP', 'Python']\n"
+"\n"
+"# Sizes for each label. We use this to make a percent\n"
+"sizes = [17, 14, 9, 6, 5, 3, 2.5]\n"
+"\n"
+"# For list of colors, see:\n"
+"# https://matplotlib.org/examples/color/named_colors.html\n"
+"colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', 'darkcyan', 'aquamarine', 'rosybrown']\n"
+"\n"
+"# How far out to pull a slice. Normally zero.\n"
+"explode = (0, 0.0, 0, 0, 0, 0, 0.2)\n"
+"\n"
+"# Set aspect ratio to be equal so that pie is drawn as a circle.\n"
+"plt.axis('equal')\n"
+"\n"
+"# Finally, plot the chart\n"
+"plt.pie(sizes, explode=explode, labels=labels, colors=colors,\n"
+"        autopct='%1.1f%%', shadow=True, startangle=90)\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:474
+msgid "Example 12: Candlestick Chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:476
+msgid ""
+"You can do really fancy things, like pull stock data from the web and create"
+" a candlestick graph for Apple Computer:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:482
+msgid ".. image:: chapters/23_libraries_and_modules/matplotlib_12.png"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:482
+msgid "Candlestick chart"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:484
+msgid "Example 12"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:484
+msgid ""
+"\"\"\"\n"
+"Create a candlestick chart for a stock\n"
+"\"\"\"\n"
+"import matplotlib.pyplot as plt\n"
+"from matplotlib.dates import DateFormatter, WeekdayLocator,\\\n"
+"     DayLocator, MONDAY\n"
+"from matplotlib.finance import quotes_historical_yahoo_ohlc, candlestick_ohlc\n"
+"\n"
+"# Grab the stock data between these dates\n"
+"date1 = (2014, 10, 13)\n"
+"date2 = (2014, 11, 13)\n"
+"\n"
+"# Go to the web and pull the stock info\n"
+"quotes = quotes_historical_yahoo_ohlc('AAPL', date1, date2)\n"
+"if len(quotes) == 0:\n"
+"    raise SystemExit\n"
+"\n"
+"# Set up the graph\n"
+"fig, ax = plt.subplots()\n"
+"fig.subplots_adjust(bottom=0.2)\n"
+"\n"
+"# Major ticks on Mondays\n"
+"mondays = WeekdayLocator(MONDAY)\n"
+"ax.xaxis.set_major_locator(mondays)\n"
+"\n"
+"# Minor ticks on all days\n"
+"alldays = DayLocator()\n"
+"ax.xaxis.set_minor_locator(alldays)\n"
+"\n"
+"# Format the days\n"
+"weekFormatter = DateFormatter('%b %d')  # e.g., Jan 12\n"
+"ax.xaxis.set_major_formatter(weekFormatter)\n"
+"ax.xaxis_date()\n"
+"\n"
+"candlestick_ohlc(ax, quotes, width=0.6)\n"
+"\n"
+"ax.autoscale_view()\n"
+"plt.setp(plt.gca().get_xticklabels(), rotation=45, horizontalalignment='right')\n"
+"\n"
+"plt.show()\n"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:489
+msgid ""
+"There are many more things that can be done with matplotlib. Take a look at "
+"the thumbnail gallery:"
+msgstr ""
+
+#: ../../source/chapters/23_libraries_and_modules/libraries_and_modules.rst:492
+msgid "http://matplotlib.org/gallery.html"
+msgstr ""

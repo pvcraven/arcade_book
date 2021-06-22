@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/xx_venv_setup/index.rst:2
+msgid "Virtual Environments In PyCharm"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:4
+msgid ""
+"A Python virtual environment (venv) allows libraries to be installed for "
+"just a single project, rather than shared across everyone using the "
+"computer. It also does not require administrator privileges to install."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:10
+msgid "Creating a New Virtual Environment"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:12
+msgid ""
+"Assuming you already have a project, follow these steps to create a venv:"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:14
+msgid "**Step 1:** On Windows select File...Settings"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:17
+#: ../../source/chapters/xx_venv_setup/index.rst:55
+msgid ".. image:: chapters/xx_venv_setup/file_settings.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rstNone
+msgid ".. image:: chapters/xx_venv_setup/mac_settings.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:21
+msgid "On Mac, select PyCharm...Preferences."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:24
+msgid ".. image:: chapters/xx_venv_setup/click_gear.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:25
+msgid ""
+"**Step 2:** Click \"Python Interpreter\". Then find the gear icon in the "
+"upper right. click on it and select \"Add\""
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:29
+msgid ""
+"Step 3: Select Virtualenv Environment from the left. Then create a new "
+"environment. Usually it should be in a folder called ``venv`` in your main "
+"project. PyCharm does not always select the correct location by default, so "
+"carefully look at the path to make sure it is correct, then select \"Ok\"."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:35
+msgid ".. image:: chapters/xx_venv_setup/name_venv.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:36
+msgid ""
+"Now a virtual environment has been set up. The standard in Python projects "
+"is to create a file called ``requirements.txt`` and list the packages you "
+"want in there."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:40
+msgid ""
+"PyCharm will automatically ask if you want to install those packages as soon"
+" as you type them in. Go ahead and let it."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:44
+msgid ".. image:: chapters/xx_venv_setup/requirements.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:46
+msgid "Updating Libraries"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:48
+msgid ""
+"Need an updated version of Arcade, or some other library? Updating libraries"
+" is easy."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:51
+msgid "Step 1: Select File...Settings"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:56
+msgid ""
+"Step 2: Select your project (1), then the Python Interpreter (2), then "
+"select the library you want to upgrade (3), then click the upgrade arrow "
+"(4), then finally click \"Ok\"."
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:60
+msgid "Windows:"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rstNone
+msgid ".. image:: chapters/xx_venv_setup/upgrade.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rstNone
+msgid ".. image:: chapters/xx_venv_setup/mac_settings_details.png"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:68
+msgid "Mac:"
+msgstr ""
+
+#: ../../source/chapters/xx_venv_setup/index.rst:72
+msgid "Now you have the latest library!"
+msgstr ""

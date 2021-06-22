@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2021-04-07 14:23+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_13.rst:6
+msgid "Answer to Problem 13"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_13.rst:8
+msgid "Answer to Looping Problem 13"
+msgstr ""
+
+#: ../../source/chapters/12_advanced_looping/answer_problem_13.rst:8
+msgid ""
+"for i in range(10):\n"
+"    # Print leading spaces\n"
+"    for j in range(10 - i):\n"
+"        print(\" \", end=\" \")\n"
+"    # Count up\n"
+"    for j in range(1, i + 1):\n"
+"        print(j, end=\" \")\n"
+"    # Count down\n"
+"    for j in range(i - 1, 0, -1):\n"
+"        print(j, end=\" \")\n"
+"    # Next row\n"
+"    print()\n"
+"\n"
+"for i in range(10):\n"
+"    # Print leading spaces\n"
+"    for j in range(i + 2):\n"
+"        print(\" \", end=\" \")\n"
+"    # Count up\n"
+"    for j in range(1, 9 - i):\n"
+"        print(j, end=\" \")\n"
+"    # Count down\n"
+"    for j in range(7 - i, 0, -1):\n"
+"        print(j, end=\" \")\n"
+"    print()"
+msgstr ""

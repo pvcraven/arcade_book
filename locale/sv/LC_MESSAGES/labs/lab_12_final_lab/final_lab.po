@@ -1,0 +1,506 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:4
+msgid "Lab 12: Final Lab"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:6
+msgid ""
+"This is it! This is your chance to use your creativity and really show off "
+"what you can create in your own game. More than just passing a test, in this"
+" class you actually get to do something, and create something real."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:10
+msgid ""
+"There are two options for the final lab. A \"video game option\" and a "
+"\"text adventure option.\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:13
+msgid ""
+"Both options are divided into three parts. Each part should take about one "
+"week. The goals of this lab:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:16
+msgid ""
+"Get used to working on longer programs by breaking them into different "
+"functions, classes, and files."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:18
+msgid ""
+"Learn to search for code that does what you want, and adapt it into your "
+"program."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:20
+msgid ""
+"Learn to break down large programs into smaller, easier to solve parts."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:21
+msgid "Start creating a portfolio of work that you've done."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:22
+msgid "See that programming can be a fun, creative outlet."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:23
+msgid ""
+"Apply the concepts we learned, such as variables, expressions, if "
+"statements, loops, lists, arrays, and more."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:26
+msgid ""
+"This lab is worth 60 points. Each week, turn in what you have for the lab so"
+" you can \"lock in\" your score and get an idea of how you are progressing. "
+"When you get more done, resubmit the assignment."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:31
+msgid ""
+"You can wait until the end to turn in your work until the end of the "
+"semester, but that is a very risky plan."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:35
+msgid "Video Game Option"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:37
+msgid ""
+"The video game option is the most popular option. Here are some videos of "
+"what students have done in prior years:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:64
+msgid "Using Images or Sounds from Other Sources"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:66
+msgid ""
+"It is ok to use images and sounds from other sources if you cite the source."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:68
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:91
+msgid ""
+"Cite in the code comments what images and sounds you've used. So for every "
+"image or sound loaded, put a ``#`` tag in the line above with a citation on "
+"where it came from. I'll expect more than just a URL, give me a name of the "
+"website as well."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:73
+msgid ""
+"For a professionally published game this would NOT be enough. You'd need to "
+"make sure you have license to use the work."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:76
+msgid ""
+"If you create your own image or sound, state that in the comments so I can "
+"be properly impressed."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:80
+msgid "Using Code from Other Sources"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:82
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:95
+msgid ""
+"If you find code to use that doesn't come from this website or from "
+"arcade.academy, cite it. Otherwise you'll be plagiarizing, and flunked from "
+"the class."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:86
+msgid "Almost every semester I catch someone doing this. Please, just don't."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:89
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:171
+msgid "Requirements for Part 1"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:99
+msgid ""
+"Each of the three parts for the final lab raises the bar on what your game "
+"needs to be able to do."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:102
+msgid "Open up a screen."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:103
+msgid ""
+"Set up the items to be drawn on the screen. Figure out the images that you "
+"want to use."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:105
+msgid ""
+"Provide some sort of player movement or interaction via mouse, keyboard, or "
+"game controller. Get items on the screen to move, if applicable."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:107
+msgid "Have something that is at least kind-of playable."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:110
+msgid "**Tips:**"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:112
+msgid ""
+"If your program will involve things running into each other, start by using "
+"sprites. Do not start by using drawing commands, and expect to add in "
+"sprites later. It won't work and you'll need start over from scratch. This "
+"will be sad."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:116
+msgid ""
+"If you are coding a program like mine sweeper or connect four, do *not* use "
+"sprites. Since collision detection is not needed, there is no need to mess "
+"with sprites."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:119
+msgid ""
+"While you can start with and use any of the example game code from this "
+"website or `arcade.academy`_, don't just turn these in as Part 1. You'll "
+"need to add a lot before it qualifies."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:122
+msgid ""
+"A very common mistake is to make a call to "
+"``self.all_sprites_list.update()`` and ``self.physics_engine.update()``. "
+"This will cause you to warp through walls. You want to specifically update "
+"lists that don't include the player, like ``self.enemy_list.update()``."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:126
+msgid ""
+"Remember that any extra white-space around your image will throw off "
+"collision detection. Best to check and trim white space from images you use."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:128
+msgid ""
+"`OpenGameArt.org`_ has a lot of images and sounds you can use royalty-free."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:129
+msgid "`Kenney.nl`_ has many images and sounds as well."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:136
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:209
+msgid "Requirements for Part 2"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:138
+msgid ""
+"For Final Lab Part 2, your game should be functional. A person should be "
+"able to sit down and play the game for a few minutes and have it feel like a"
+" real game. Here are some things you might want to add:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:142
+msgid "Be able to collide with objects."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:143
+msgid "Players can lose the game if something bad happens."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:144
+msgid "On-screen score."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:145
+msgid "Sound effects."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:146
+msgid "Movement of other characters in the screen."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:147
+msgid "The ability to click on mines or empty spots."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:150
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:241
+msgid "Requirements for Part 3"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:152
+msgid ""
+"For the final part, add in the last polish for your game. Here are some "
+"things you might want to add:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:155
+msgid "Title and instruction screens"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:156
+msgid "Multiple levels"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:157
+msgid "Lots of Sounds"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:158
+msgid "Multiple \"lives\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:159
+msgid "More types of enemies"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:160
+msgid "Power-ups"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:161
+msgid "Heat seeking missiles"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:162
+msgid "Hidden doors"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:163
+msgid "A \"sweep\" action in a minesweeper game or the ability to place \"flags\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:166
+msgid "Text Adventure Option"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:168
+msgid ""
+"Not interested in a video game? Continue your work from the \"Adventure!\" "
+"game."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:173
+msgid ""
+"Rather than have each room be a list of ``[description, north, east, south, "
+"west]`` create a ``Room`` class. The class should have a constructor that "
+"takes in ``(description, north, east, south, west)`` and sets fields for the"
+" description and all of the directions. Get the program working with the new"
+" class. The program should be able to add rooms like:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:180
+msgid ""
+"room = Room(\"You are in the kitchen. There is a room to the east.\", None, 1, None, None)\n"
+"room_list.append(room)\n"
+"\n"
+"room = Room(\"You are in the living room. There is a room to the west.\", None, None, 0, None)\n"
+"room_list.append(room)"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:188
+msgid "Later the program should be able to refer to fields in the room:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:190
+msgid "current_room = room_list[current_room].north"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:194
+msgid ""
+"Perhaps expand the game so that a person can travel up and down. Also expand"
+" it so the person can travel northwest, southwest, northeast, and southeast."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:196
+msgid "Add a list of items in your game."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:198
+msgid "Create a class called ``Item``."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:199
+msgid ""
+"Add fields for the item's room number, a long description, and a short name."
+" The short name should only be one word long. This way the user can type "
+"``get key`` and the computer will know what object he/she is referring to. "
+"The description will be what is printed out. Like ``There is a rusty key "
+"here.``"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:204
+msgid "Create a list of items, much like you created your list of rooms."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:205
+msgid "If the item is in the user's room, print the item's description."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:206
+msgid "Test, and make sure this works."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:211
+msgid ""
+"Change your command processing, so rather than just allowing the user to "
+"only type in directions, the user will now start having other options. For "
+"example, we want the user to also be able to type in commands such as get "
+"key, inventory or wave wand."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:213
+msgid ""
+"To do this, don't ask the user What direction do you want to go? Instead ask"
+" the user something like What is your command?"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:214
+msgid ""
+"Split the user input. We need a variable that is equal to the first command "
+"they type, such as get and a different variable equal to the second word, "
+"such as key."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:216
+msgid ""
+"Use the split method that's built into Python strings. For example: "
+"``command_words = user_command.split(\" \")`` This will split what the user "
+"types into a list. Each item separated out based on spaces."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:220
+msgid ""
+"Update your code that processes the user typing in directions, to check "
+"command_words[0] instead of whatever you had before."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:223
+msgid "Add a get command."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:225
+msgid ""
+"Add a check for a get command in your if/elif chain that is now just "
+"processing directions."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:227
+msgid ""
+"Search the item list until you find an object that matches what the user is "
+"trying pick up."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:229
+msgid ""
+"If the object isn't found, or if the object isn't in the current room, print"
+" an error."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:231
+msgid ""
+"If the object is found and it is in the current room, then set the object's "
+"room number to -1."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:234
+msgid ""
+"Add a command for \"inventory\" that will print every object who's room "
+"number is equal to -1."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:236
+msgid "Add the ability to drop an object."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:237
+msgid ""
+"Add the ability to use the objects. For example \"use key\" or \"swing "
+"sword\" or \"feed bear.\""
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:243
+msgid "Expand the game some more. Try some of these ideas:"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:245
+msgid ""
+"Create a file format that allows you to load the rooms and objects from a "
+"file rather than write code for it."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:246
+msgid "Have monsters with hit points."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:247
+msgid "Split the code up into multiple files for better organization."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:248
+msgid ""
+"Remove globals using a main function as shown at the end of the chapter "
+"about functions."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:249
+msgid ""
+"Have objects with limited use. Like a bow that only has so many arrows."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:250
+msgid ""
+"Have creatures with limited health, and weapons that cause random damage and"
+" have a random chance to hit."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:253
+msgid "Tips"
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:255
+msgid ""
+"Commit and push your code often. It is not unusual for something bad to "
+"happen to the code while you are working on this assignment. Anything you "
+"commit and push we can recover. Don't work for more than a couple hours "
+"without doing this."
+msgstr ""
+
+#: ../../source/labs/lab_12_final_lab/final_lab.rst:259
+msgid ""
+"I give a lot of in-class lab time for this project. Use it. Don't leave "
+"early."
+msgstr ""

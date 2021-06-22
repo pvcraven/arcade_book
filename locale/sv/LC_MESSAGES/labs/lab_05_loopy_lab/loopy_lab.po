@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:4
+msgid "Lab 5: Loopy Lab"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:6
+msgid ""
+"The goal of this lab is to practice using nested ``for`` loops. We will "
+"create a program that makes the following image:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:10
+msgid ".. image:: labs/lab_05_loopy_lab/loopy_lab_screenshot.png"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:11
+msgid ""
+"For sanity's sake, let's give a number to each section. Then when we ask "
+"questions we can say which section we are talking about. Do **not** put the "
+"numbers in the final program. Here are the section numbers:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:16
+msgid ".. image:: labs/lab_05_loopy_lab/loopy_lab_screenshot_numbered.png"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:17
+msgid "Great! All these items can be created using nested ``for`` loops."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:20
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:22
+msgid ""
+"Below is some code to get you started. Underneath each of the comments, fill"
+" in the code required to make the pattern."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:25
+msgid ""
+"import arcade\n"
+"\n"
+"\n"
+"def draw_section_outlines():\n"
+"    # Draw squares on bottom\n"
+"    arcade.draw_rectangle_outline(150, 150, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(450, 150, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(750, 150, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(1050, 150, 300, 300, arcade.color.BLACK)\n"
+"\n"
+"    # Draw squares on top\n"
+"    arcade.draw_rectangle_outline(150, 450, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(450, 450, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(750, 450, 300, 300, arcade.color.BLACK)\n"
+"    arcade.draw_rectangle_outline(1050, 450, 300, 300, arcade.color.BLACK)\n"
+"\n"
+"\n"
+"def draw_section_1():\n"
+"    for row in range(30):\n"
+"        for column in range(30):\n"
+"            x = 0  # Instead of zero, calculate the proper x location using 'column'\n"
+"            y = 0  # Instead of zero, calculate the proper y location using 'row'\n"
+"            arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)\n"
+"\n"
+"\n"
+"def draw_section_2():\n"
+"    # Below, replace \"pass\" with your code for the loop.\n"
+"    # Use the modulus operator and an if statement to select the color\n"
+"    # Don't loop from 30 to 60 to shift everything over, just add 300 to x.\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_3():\n"
+"    # Use the modulus operator and an if/else statement to select the color.\n"
+"    # Don't use multiple 'if' statements.\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_4():\n"
+"    # Use the modulus operator and just one 'if' statement to select the color.\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_5():\n"
+"    # Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead.\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_6():\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_7():\n"
+"    pass\n"
+"\n"
+"\n"
+"def draw_section_8():\n"
+"    pass\n"
+"\n"
+"\n"
+"def main():\n"
+"    # Create a window\n"
+"    arcade.open_window(1200, 600, \"Lab 05 - Loopy Lab\")\n"
+"    arcade.set_background_color(arcade.color.AIR_FORCE_BLUE)\n"
+"\n"
+"    arcade.start_render()\n"
+"\n"
+"    # Draw the outlines for the sections\n"
+"    draw_section_outlines()\n"
+"\n"
+"    # Draw the sections\n"
+"    draw_section_1()\n"
+"    draw_section_2()\n"
+"    draw_section_3()\n"
+"    draw_section_4()\n"
+"    draw_section_5()\n"
+"    draw_section_6()\n"
+"    draw_section_7()\n"
+"    draw_section_8()\n"
+"\n"
+"    arcade.finish_render()\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:28
+msgid "Scoring"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:30
+msgid "There are 20 possible points:"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:32
+msgid "Section 1: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:33
+msgid "Section 2: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:34
+msgid "Section 3: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:35
+msgid "Section 4: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:36
+msgid "Completing any section 1-4: 1 pt"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:37
+msgid "Section 5: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:38
+msgid "Section 6: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:39
+msgid "Section 7: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:40
+msgid "Section 8: 2 pts"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:41
+msgid "Completing any section 5-8: 1 pt"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:42
+msgid ""
+"Code Style: 2 pts (Should have no yellow lines on right side of PyCharm)"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:45
+msgid "Hints"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:47
+msgid "Each little square is a 5x5 pixel square."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:48
+msgid ""
+"If the center of each square is 5 apart, you won't see an edge and it will "
+"look like one big square."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:50
+msgid ""
+"Remember, row controls up and down, so it corresponds to y. Column "
+"corresponds to x."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:52
+msgid ""
+"When working on sections 2-8, you can simple add to the x and/or y values to"
+" shift everything over. For example, just add 300 to all the x values in "
+"section 2, to put it in the second box."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:55
+msgid "Each section is 300x300 pixels."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:56
+msgid ""
+"You will only need two ``for`` loops. Do not use a third nested ``for`` "
+"loop."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:57
+msgid ""
+"Section 4 only needs one ``if`` statement. The trick is to use an ``and``."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:58
+msgid ""
+"Remember that the ``%`` sign is the modulus. It calculates the remainder. "
+"So::"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:60
+msgid ""
+"0 % 3 = 0\n"
+"1 % 3 = 1\n"
+"2 % 3 = 2\n"
+"3 % 3 = 0\n"
+"4 % 3 = 1\n"
+"5 % 3 = 2\n"
+"6 % 3 = 0"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:68
+msgid "You can count \"backwards\" by subtracting."
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:70
+msgid ""
+"print(\"Count up!\")\n"
+"for i in range(10):\n"
+"    print(i)\n"
+"\n"
+"print()\n"
+"print(\"Count down, even if i is going up\")\n"
+"for i in range(10):\n"
+"    x = 9 - i\n"
+"    print(\"i is\", i, \"and 9-i is\", x)"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:82
+msgid "This prints::"
+msgstr ""
+
+#: ../../source/labs/lab_05_loopy_lab/loopy_lab.rst:84
+msgid ""
+"Count up!\n"
+"0\n"
+"1\n"
+"2\n"
+"3\n"
+"4\n"
+"5\n"
+"6\n"
+"7\n"
+"8\n"
+"9\n"
+"\n"
+"Count down, even if i is going up\n"
+"i is 0 and 9-i is 9\n"
+"i is 1 and 9-i is 8\n"
+"i is 2 and 9-i is 7\n"
+"i is 3 and 9-i is 6\n"
+"i is 4 and 9-i is 5\n"
+"i is 5 and 9-i is 4\n"
+"i is 6 and 9-i is 3\n"
+"i is 7 and 9-i is 2\n"
+"i is 8 and 9-i is 1\n"
+"i is 9 and 9-i is 0"
+msgstr ""

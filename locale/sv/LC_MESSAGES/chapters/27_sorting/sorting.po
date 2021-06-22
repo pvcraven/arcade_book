@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/27_sorting/sorting.rst:2
+msgid "Sorting"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:4
+msgid ""
+"Binary searches only work on lists that are in order. So how do programs get"
+" a list in order? How does a program sort a list of items when the user "
+"clicks a column heading, or otherwise needs something sorted?"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:8
+msgid ""
+"There are several algorithms that do this. The two easiest algorithms for "
+"sorting are the *selection sort* and the *insertion sort*. Other sorting "
+"algorithms exist as well, such as the shell, merge, heap, and quick sorts."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:12
+msgid ""
+"The best way to get an idea on how these sorts work is to watch them. To see"
+" common sorting algorithms in action visit this excellent website:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:15
+msgid "http://www.sorting-algorithms.com"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:17
+msgid ""
+"Each sort has advantages and disadvantages. Some sort a list quickly if the "
+"list is almost in order to begin with. Some sort a list quickly if the list "
+"is in a completely random order. Other lists sort fast, but take more "
+"memory. Understanding how sorts work is important in selecting the proper "
+"sort for your program."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:24
+msgid "Swapping Values"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:30
+msgid ""
+"Before learning to sort, we need to learn how to swap values between two "
+"variables. This is a common operation in many sorting algorithms. Suppose a "
+"program has a list that looks like the following:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:34
+msgid "my_list = [15, 57, 14, 33, 72, 79, 26, 56, 42, 40]"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:38
+msgid ""
+"The developer wants to swap positions 0 and 2, which contain the numbers 15 "
+"and 14 respectively. See Figure 18.1."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:43
+msgid ".. image:: chapters/27_sorting/sortgraph1.svg"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:43
+msgid "Figure 27.1: Swapping values in an array"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:45
+msgid "A first attempt at writing this code might look something like this:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:47
+msgid ""
+"my_list[0] = my_list[2]\n"
+"my_list[2] = my_list[0]"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:54
+msgid ".. image:: chapters/27_sorting/sortgraph2.svg"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:54
+msgid "Figure 27.2: Incorrect attempt to swap array values"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:56
+msgid ""
+"See Figure 27.2 to get an idea on what would happen. This clearly does not "
+"work. The first assignment ``list[0] = list[2]`` causes the value 15 that "
+"exists in position 0 to be overwritten with the 14 in position 2 and "
+"irretrievably lost. The next line with ``list[2] = list[0]`` just copies the"
+" 14 back to cell 2 which already has a 14."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:62
+msgid ""
+"To fix this problem, swapping values in an array should be done in three "
+"steps. It is necessary to create a temporary variable to hold a value during"
+" the swap operation. See Figure 18.3. The code to do the swap looks like the"
+" following:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:67
+msgid "Swapping two values in an array"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:67
+msgid ""
+"temp = my_list[0]\n"
+"my_list[0] = my_list[2]\n"
+"my_list[2] = temp"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:74
+msgid ""
+"The first line copies the value of position 0 into the ``temp`` variable. "
+"This allows the code to write over position 0 with the value in position 2 "
+"without data being lost. The final line takes the old value of position 0, "
+"currently held in the ``temp`` variable, and places it in position 2."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:81
+msgid ".. image:: chapters/27_sorting/sortgraph1b.svg"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:81
+msgid "Figure 27.3: Correct method to swap array values"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:84
+#: ../../source/chapters/27_sorting/sorting.rst:105
+msgid "Selection Sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:90
+msgid ""
+"The selection by looking at element 0. Then code next scans the rest of the "
+"list from element 1 to n-1 to find the smallest number. The smallest number "
+"is swapped into element 0. The code then moves on to element 1, then 2, and "
+"so forth. Graphically, the sort looks like Figure 18.4."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:97
+msgid ".. image:: chapters/27_sorting/sortgraph.svg"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:97
+msgid "Figure 27.4: Selection Sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:99
+msgid ""
+"The code for a selection sort involves two nested loops. The outside loop "
+"tracks the current position that the code wants to swap the smallest value "
+"into. The inside loop starts at the current location and scans to the right "
+"in search of the smallest value. When it finds the smallest value, the swap "
+"takes place."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:105
+msgid ""
+"def selection_sort(my_list):\n"
+"    \"\"\" Sort a list using the selection sort \"\"\"\n"
+"\n"
+"    # Loop through the entire array\n"
+"    for cur_pos in range(len(my_list)):\n"
+"        # Find the position that has the smallest number\n"
+"        # Start with the current position\n"
+"        min_pos = cur_pos\n"
+"\n"
+"        # Scan left to right (end of the list)\n"
+"        for scan_pos in range(cur_pos + 1, len(my_list)):\n"
+"\n"
+"            # Is this position smallest?\n"
+"            if my_list[scan_pos] < my_list[min_pos]:\n"
+"\n"
+"                # It is, mark this position as the smallest\n"
+"                min_pos = scan_pos\n"
+"\n"
+"        # Swap the two values\n"
+"        temp = my_list[min_pos]\n"
+"        my_list[min_pos] = my_list[cur_pos]\n"
+"        my_list[cur_pos] = temp"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:132
+msgid ""
+"The outside loop will always run :math:`n` times. The inside loop will run "
+"an average of :math:`\\frac{n}{2}` times per run of the outside loop. "
+"Therefore the inside loop will run a total of :math:`n \\cdot \\frac{n}{2}` "
+"or :math:`\\frac{n^2}{2}` times."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:137
+msgid ""
+"This will be the case regardless if the list is in order or not. The loops' "
+"efficiency may be improved by checking if ``min_pos`` and ``cur_pos`` are "
+"equal before line 20. If those variables are equal, there is no need to do "
+"the three lines of swap code."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:142
+msgid ""
+"In order to test the selection sort code above, the following code may be "
+"used. The first function will print out the list. The next code will create "
+"a list of random numbers, print it, sort it, and then print it again. On "
+"line 5 the print statement right-aligns the numbers to make the column of "
+"numbers easier to read. Formatting ``print`` statements will be covered in a"
+" later chapter."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:149
+msgid "Code to create and print list to sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:149
+msgid ""
+"# Before this code, paste the selection sort and import random\n"
+"\n"
+"def print_list(my_list):\n"
+"    for item in my_list:\n"
+"        print(\"{:3}\".format(item), end=\"\")\n"
+"    print()\n"
+"\n"
+"# Create a list of random numbers\n"
+"my_list = []\n"
+"for i in range(10):\n"
+"    my_list.append(random.randrange(100))\n"
+"\n"
+"# Try out the sort\n"
+"print_list(my_list)\n"
+"selection_sort(my_list)\n"
+"print_list(my_list)"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:170
+msgid "See an animation of the selection sort at:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:172
+msgid "http://www.sorting-algorithms.com/selection-sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:174
+msgid ""
+"For a truly unique visualization of the selection sort, search YouTube for "
+"\"selection sort dance\" or use this link:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:177
+msgid "http://youtu.be/Ns4TPTC8whw"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:179
+msgid ""
+"You also can trace through the code using `Selection Sort on Python Tutor`_."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:184
+#: ../../source/chapters/27_sorting/sorting.rst:229
+msgid "Insertion Sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:190
+msgid ""
+"The insertion sort is similar to the selection sort in how the outer loop "
+"works. The insertion sort starts at the left side of the array and works to "
+"the right side. The difference is that the insertion sort does not select "
+"the smallest element and put it into place; the insertion sort selects the "
+"next element to the right of what was already sorted. Then it slides up each"
+" larger element until it gets to the correct location to insert. "
+"Graphically, it looks like Figure 18.5."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:200
+msgid ".. image:: chapters/27_sorting/sortgraph4.svg"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:200
+msgid "Figure 27.5: Insertion Sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:202
+msgid ""
+"The insertion sort breaks the list into two sections, the \"sorted\" half "
+"and the \"unsorted\" half. In each round of the outside loop, the algorithm "
+"will grab the next unsorted element and insert it into the list."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:206
+msgid ""
+"In the code below, the ``key_pos`` marks the boundary between the sorted and"
+" unsorted portions of the list. The algorithm scans to the left of "
+"``key_pos`` using the variable ``scan_pos``. Note that in the insertion "
+"sort, ``scan_pos`` goes down to the left, rather than up to the right. Each "
+"cell location that is larger than ``key_value`` gets moved up (to the right)"
+" one location."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:212
+msgid ""
+"When the loop finds a location smaller than ``key_value``, it stops and puts"
+" ``key_value`` to the left of it."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:215
+msgid ""
+"The outside loop with an insertion sort will run :math:`n` times. For each "
+"run of the outside loop, the inside loop will run an average of "
+":math:`\\frac{n}{4}` times if the loop is randomly shuffled. In total, the "
+"inside loop would run :math:`n\\cdot\\frac{n}{4}` times, or simplified,  "
+":math:`\\frac{n^2}{4}` times."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:220
+msgid ""
+"What's really important: If the loop is close to a sorted loop already, then"
+" the inside loop does not run very much, and the sort time is closer to *n*."
+" The insertion sort is the fastest sort for nearly-sorted lists. If the list"
+" is reversed, then the insertion sort is terrible."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:226
+msgid ""
+"The selection sort doesn't really care what order the list is in to begin "
+"with. It performs the same regardless."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:229
+msgid ""
+"def insertion_sort(my_list):\n"
+"    \"\"\" Sort a list using the insertion sort \"\"\"\n"
+"\n"
+"    # Start at the second element (pos 1).\n"
+"    # Use this element to insert into the\n"
+"    # list.\n"
+"    for key_pos in range(1, len(my_list)):\n"
+"\n"
+"        # Get the value of the element to insert\n"
+"        key_value = my_list[key_pos]\n"
+"\n"
+"        # Scan from right to the left (start of list)\n"
+"        scan_pos = key_pos - 1\n"
+"\n"
+"        # Loop each element, moving them up until\n"
+"        # we reach the position the\n"
+"        while (scan_pos >= 0) and (my_list[scan_pos] > key_value):\n"
+"            my_list[scan_pos + 1] = my_list[scan_pos]\n"
+"            scan_pos = scan_pos - 1\n"
+"\n"
+"        # Everything's been moved out of the way, insert\n"
+"        # the key into the correct location\n"
+"        my_list[scan_pos + 1] = key_value"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:257
+msgid "See an animation of the insertion sort at:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:259
+msgid "http://www.sorting-algorithms.com/insertion-sort"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:261
+msgid ""
+"For another dance interpretation, search YouTube for \"insertion sort "
+"dance\" or use this link:"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:264
+msgid "http://youtu.be/ROalU379l3U"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:266
+msgid ""
+"You can trace through the code using `Insertion Sort on Python Tutor`_."
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:273
+#: ../../source/chapters/27_sorting/sorting.rst:275
+msgid "Full Sorting Example"
+msgstr ""
+
+#: ../../source/chapters/27_sorting/sorting.rst:275
+msgid ""
+"import random\n"
+"\n"
+"\n"
+"def selection_sort(my_list):\n"
+"    \"\"\" Sort a list using the selection sort \"\"\"\n"
+"\n"
+"    # Loop through the entire array\n"
+"    for cur_pos in range(len(my_list)):\n"
+"        # Find the position that has the smallest number\n"
+"        # Start with the current position\n"
+"        min_pos = cur_pos\n"
+"\n"
+"        # Scan left to right (end of the list)\n"
+"        for scan_pos in range(cur_pos + 1, len(my_list)):\n"
+"\n"
+"            # Is this position smallest?\n"
+"            if my_list[scan_pos] < my_list[min_pos]:\n"
+"                # It is, mark this position as the smallest\n"
+"                min_pos = scan_pos\n"
+"\n"
+"        # Swap the two values\n"
+"        temp = my_list[min_pos]\n"
+"        my_list[min_pos] = my_list[cur_pos]\n"
+"        my_list[cur_pos] = temp\n"
+"\n"
+"\n"
+"def insertion_sort(my_list):\n"
+"    \"\"\" Sort a list using the insertion sort \"\"\"\n"
+"\n"
+"    # Start at the second element (pos 1).\n"
+"    # Use this element to insert into the\n"
+"    # list.\n"
+"    for key_pos in range(1, len(my_list)):\n"
+"\n"
+"        # Get the value of the element to insert\n"
+"        key_value = my_list[key_pos]\n"
+"\n"
+"        # Scan from right to the left (start of list)\n"
+"        scan_pos = key_pos - 1\n"
+"\n"
+"        # Loop each element, moving them up until\n"
+"        # we reach the position the\n"
+"        while (scan_pos >= 0) and (my_list[scan_pos] > key_value):\n"
+"            my_list[scan_pos + 1] = my_list[scan_pos]\n"
+"            scan_pos = scan_pos - 1\n"
+"\n"
+"        # Everything's been moved out of the way, insert\n"
+"        # the key into the correct location\n"
+"        my_list[scan_pos + 1] = key_value\n"
+"\n"
+"\n"
+"# This will point out a list\n"
+"# For more information on the print formatting {:3}\n"
+"# see the chapter on print formatting.\n"
+"def print_list(my_list):\n"
+"    for item in my_list:\n"
+"        print(f\"{item:3}\", end=\"\")\n"
+"    print()\n"
+"\n"
+"\n"
+"def main():\n"
+"    # Create two lists of the same random numbers\n"
+"    list_for_selection_sort = []\n"
+"    list_for_insertion_sort = []\n"
+"    list_size = 10\n"
+"    for i in range(list_size):\n"
+"        new_number = random.randrange(100)\n"
+"        list_for_selection_sort.append(new_number)\n"
+"        list_for_insertion_sort.append(new_number)\n"
+"\n"
+"    # Print the original list\n"
+"    print(\"Original List\")\n"
+"    print_list(list_for_selection_sort)\n"
+"\n"
+"    # Use the selection sort and print the result\n"
+"    print(\"Selection Sort\")\n"
+"    selection_sort(list_for_selection_sort)\n"
+"    print_list(list_for_selection_sort)\n"
+"\n"
+"    # Use the insertion sort and print the result\n"
+"    print(\"Insertion Sort\")\n"
+"    insertion_sort(list_for_insertion_sort)\n"
+"    print_list(list_for_insertion_sort)\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""

@@ -1,0 +1,966 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/29_recursion/recursion.rst:2
+#: ../../source/chapters/29_recursion/recursion.rst:80
+msgid "Recursion"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:4
+msgid ""
+"A child couldn't sleep, so her mother told her a story about a little frog,\n"
+"  who couldn't sleep, so the frog's mother told her a story about a little bear,\n"
+"    who couldn't sleep, so the bear's mother told her a story about a little weasel...\n"
+"      who fell asleep.\n"
+"    ...and the little bear fell asleep;\n"
+"  ...and the little frog fell asleep;\n"
+"...and the child fell asleep."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:14
+msgid "(Source: http://everything2.com/title/recursion)"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:16
+msgid ""
+"Recursion is an object or process that is defined in terms of itself. "
+"Mathematical patterns such as factorials and the Fibonacci series are "
+"recursive. Documents that can contain other documents, which themselves can "
+"contain other documents, are recursive. Fractal images, and even certain "
+"biological processes are recursive in how they work."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:23
+msgid "Where is Recursion Used?"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:25
+msgid ""
+"Documents, such as web pages, are naturally recursive. For example, Figure "
+"20.1 shows a simple web document."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:30
+msgid ".. image:: chapters/29_recursion/webpage1.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:30
+msgid "Figure 20.1: Web page"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:32
+msgid ""
+"That web document can be contained in a \"box,\" which can help layout the "
+"page as shown in Figure 20.2."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:37
+msgid ".. image:: chapters/29_recursion/webpage2.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:37
+msgid "Figure 20.2: Web page with tables"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:39
+msgid ""
+"This works recursively. Each box can contain a web page, that can have a "
+"box, which could contain another web page as shown in Figure 20.3."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:43
+msgid ".. image:: chapters/29_recursion/webpage3.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:43
+msgid "Figure 20.3: Web page with recursion"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:45
+msgid ""
+"Recursive functions are often used with advanced searching and sorting "
+"algorithms. We'll show some of that here and if you take a \"data "
+"structures\" class you will see a lot more of it."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:49
+msgid ""
+"Even if a person does not become a programmer, understanding the concept of "
+"recursive systems is important. If there is a business need for recursive "
+"table structures, documents, or something else, it is important to know how "
+"to specify this to the programmer up front."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:54
+msgid ""
+"For example, a person might specify that a web program for recipes needs the"
+" ability to support ingredients and directions. A person familiar with "
+"recursion might state that each ingredient could itself be a recipes with "
+"other ingredients (that could be recipes.) The second system is considerably"
+" more powerful."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:61
+msgid "How is Recursion Coded?"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:63
+msgid ""
+"In prior chapters, we have used functions that call other functions. For "
+"example:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:65
+msgid "Functions calling other functions"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:65
+msgid ""
+"def f():\n"
+"    g()\n"
+"    print(\"f\")\n"
+"\n"
+"def g():\n"
+"    print(\"g\")\n"
+"\n"
+"f()"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:78
+msgid ""
+"It is also possible for a function to call itself. A function that calls "
+"itself is using a concept called recursion. For example:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:80
+msgid ""
+"def f():\n"
+"    print(\"Hello\")\n"
+"    f()\n"
+"\n"
+"f()"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:90
+msgid ""
+"The example above will print Hello and then call the ``f()`` function again."
+" Which will cause another Hello to be printed out and another call to the "
+"``f()`` function. This will continue until the computer runs out of "
+"something called stack space. When this happens, Python will output a long "
+"error that ends with:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:96
+msgid "``RuntimeError: maximum recursion depth exceeded``"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:98
+msgid ""
+"The computer is telling you, the programmer, that you have gone too far down"
+" the rabbit hole."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:102
+msgid "Controlling Recursion Depth"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:104
+msgid ""
+"To successfully use recursion, there needs to be a way to prevent the "
+"function from endlessly calling itself over and over again. The example "
+"below counts how many times it has been called, and uses an if statement to "
+"exit once the function has called itself ten times."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:109
+msgid "Controlling recursion levels"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:109
+msgid ""
+"def f(level):\n"
+"    # Print the level we are at\n"
+"    print(\"Recursion call, level\",level)\n"
+"    # If we haven't reached level ten...\n"
+"    if level < 10:\n"
+"        # Call this function again\n"
+"        # and add one to the level\n"
+"        f(level+1)\n"
+"\n"
+"# Start the recursive calls at level 1\n"
+"f(1)"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:125
+#: ../../source/chapters/29_recursion/recursion.rst:221
+msgid "Output"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:125
+msgid ""
+"Recursion call, level 1\n"
+"Recursion call, level 2\n"
+"Recursion call, level 3\n"
+"Recursion call, level 4\n"
+"Recursion call, level 5\n"
+"Recursion call, level 6\n"
+"Recursion call, level 7\n"
+"Recursion call, level 8\n"
+"Recursion call, level 9\n"
+"Recursion call, level 10"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:142
+msgid "Recursion In Mathematics"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:145
+msgid "Recursion Factorial Calculation"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:147
+msgid ""
+"Any code that can be done recursively can be done without using recursion. "
+"Some programmers feel that the recursive code is easier to understand."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:151
+msgid ""
+"Calculating the factorial of a number is a classic example of using "
+"recursion. Factorials are useful in probability and statistics. For example:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:154
+msgid "Recursively, this can be described as:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:156
+msgid ""
+"Below are two example functions that calculate . The first one is non-"
+"recursive, the second is recursive."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:158
+msgid "Non-recursive factorial"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:158
+msgid ""
+"# This program calculates a factorial\n"
+"# WITHOUT using recursion\n"
+"def factorial_nonrecursive(n):\n"
+"    answer = 1\n"
+"    for i in range(2, n + 1):\n"
+"        answer = answer * i\n"
+"    return answer"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:170
+msgid "Recursive factorial"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:170
+msgid ""
+"# This program calculates a factorial\n"
+"# WITH recursion\n"
+"def factorial_recursive(n):\n"
+"    if n == 1:\n"
+"        return 1\n"
+"    elif n > 1:\n"
+"        return n * factorial_recursive(n - 1)"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:182
+msgid ""
+"The functions do nothing by themselves. Below is an example where we put it "
+"all together. This example also adds some print statements inside the "
+"function so we can see what is happening."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:184
+msgid "Trying out recursive functions"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:184
+msgid ""
+"# This program calculates a factorial\n"
+"# WITHOUT using recursion\n"
+"\n"
+"def factorial_nonrecursive(n):\n"
+"    answer = 1\n"
+"    for i in range(2, n + 1):\n"
+"        print(i, \"*\", answer, \"=\", i * answer)\n"
+"        answer = answer * i\n"
+"    return answer\n"
+"\n"
+"print(\"I can calculate a factorial!\")\n"
+"user_input = input(\"Enter a number:\")\n"
+"n = int(user_input)\n"
+"answer = factorial_nonrecursive(n)\n"
+"print(answer)\n"
+"\n"
+"# This program calculates a factorial\n"
+"# WITH recursion\n"
+"\n"
+"def factorial_recursive(n):\n"
+"    if n == 1:\n"
+"        return 1\n"
+"    else:\n"
+"        x = factorial_recursive(n - 1)\n"
+"        print( n, \"*\", x, \"=\", n * x )\n"
+"        return n * x\n"
+"\n"
+"print(\"I can calculate a factorial!\")\n"
+"user_input = input(\"Enter a number:\")\n"
+"n = int(user_input)\n"
+"answer = factorial_recursive(n)\n"
+"print(answer)"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:221
+msgid ""
+"I can calculate a factorial!\n"
+"Enter a number:7\n"
+"2 * 1 = 2\n"
+"3 * 2 = 6\n"
+"4 * 6 = 24\n"
+"5 * 24 = 120\n"
+"6 * 120 = 720\n"
+"7 * 720 = 5040\n"
+"5040\n"
+"I can calculate a factorial!\n"
+"Enter a number:7\n"
+"2 * 1 = 2\n"
+"3 * 2 = 6\n"
+"4 * 6 = 24\n"
+"5 * 24 = 120\n"
+"6 * 120 = 720\n"
+"7 * 720 = 5040\n"
+"5040"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:245
+msgid "Recursive Expressions"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:247
+msgid "Say you have a mathematical expression like this:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:249
+msgid ""
+":math:`f_{n} = \\begin{cases} 6 & \\text{if } n = 1, \\\\ "
+"\\frac{1}{2}f_{n-1}+4 & \\text{if } n > 1. \\end{cases}`"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:251
+msgid ""
+"Looks complicated, but it just means that if :math:`n=1` we are working with"
+" :math:`f_{1}`. That function returns a 6."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:253
+msgid "For :math:`f_{2}` we return :math:`\\frac{1}{2}f_{1}+4`."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:255
+msgid "The code would start with:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:257
+msgid "def f(n):"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:262
+msgid "Then we need to add that first case:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:264
+msgid ""
+"def f(n):\n"
+"    if n == 1:\n"
+"        return 6"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:271
+msgid ""
+"See how closely if follows the mathematical notation? Now for the rest:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:273
+msgid ""
+"def f(n):\n"
+"    if n == 1:\n"
+"        return 6\n"
+"    elif n > 1:\n"
+"        return (1 / 2) * f(n - 1) + 4"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:282
+msgid ""
+"Converting these types of mathematical expressions to code is straight "
+"forward. But we'd better try it out in a full example:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:285
+msgid ""
+"def f(n):\n"
+"    if n == 1:\n"
+"        return 6\n"
+"    elif n > 1:\n"
+"        return (1 / 2) * f(n - 1) + 4\n"
+"\n"
+"\n"
+"def main():\n"
+"    result = f(10)\n"
+"    print(result)\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:303
+msgid "Recursive Graphics"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:306
+msgid "Recursive Rectangles"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:308
+msgid ""
+"Recursion is great to work with structured documents that are themselves "
+"recursive. For example, a web document can have a table divided into rows "
+"and columns to help with layout. One row might be the header, another row "
+"the main body, and finally the footer. Inside a table cell, might be another"
+" table. And inside of that can exist yet another table."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:310
+msgid ""
+"Another example is e-mail. It is possible to attach another person's e-mail "
+"to a your own e-mail. But that e-mail could have another e-mail attached to "
+"it, and so on."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:312
+msgid ""
+"Can we visually see recursion in action in one of our Pygame programs? Yes! "
+"Figure 19.4 shows an example program that draws a rectangle, and recursively"
+" keeps drawing rectangles inside of it. Each rectangle is 20% smaller than "
+"the parent rectangle. Look at the code. Pay close attention to the recursive"
+" call in the recursive_draw function."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:316
+msgid ".. image:: chapters/29_recursion/rectangles.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:316
+msgid "Figure 20.4: Recursive Rectangles"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:318
+msgid "recursive_rectangles.py"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:318
+msgid ""
+"\"\"\"\n"
+"Recursive Rectangles\n"
+"\"\"\"\n"
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 500\n"
+"\n"
+"\n"
+"def draw_rectangle(x, y, width, height):\n"
+"    \"\"\" Recursively draw a rectangle, each one a percentage smaller \"\"\"\n"
+"\n"
+"    # Draw it\n"
+"    arcade.draw_rectangle_outline(x, y, width, height, arcade.color.BLACK)\n"
+"\n"
+"    # As long as we have a width bigger than 1, recursively call this function with a smaller rectangle\n"
+"    if width > 1:\n"
+"        # Draw the rectangle 90% of our current size\n"
+"        draw_rectangle(x, y, width * .9, height * .9)\n"
+"\n"
+"\n"
+"class MyWindow(arcade.Window):\n"
+"    \"\"\" Main application class. \"\"\"\n"
+"\n"
+"    def __init__(self, width, height):\n"
+"        super().__init__(width, height)\n"
+"\n"
+"        arcade.set_background_color(arcade.color.WHITE)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Render the screen. \"\"\"\n"
+"        arcade.start_render()\n"
+"\n"
+"        # Find the center of our screen\n"
+"        center_x = SCREEN_WIDTH / 2\n"
+"        center_y = SCREEN_HEIGHT / 2\n"
+"\n"
+"        # Start our recursive calls\n"
+"        draw_rectangle(center_x, center_y, SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"\n"
+"\n"
+"def main():\n"
+"\n"
+"    MyWindow(SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:325
+msgid "Fractals"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:327
+msgid ""
+"Fractals are defined recursively. Here is a very simple fractal, showing how"
+" it changes depending on how \"deep\" the recursion goes."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:332
+msgid ".. image:: chapters/29_recursion/recursive_h_00.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:332
+msgid "Figure 20.5: Recursive Fractal Level 0"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:336
+msgid ".. image:: chapters/29_recursion/recursive_h_01.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:336
+msgid "Figure 20.6: Recursive Fractal Level 1"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:340
+msgid ".. image:: chapters/29_recursion/recursive_h_02.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:340
+msgid "Figure 20.7: Recursive Fractal Level 2"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:344
+msgid ".. image:: chapters/29_recursion/recursive_h_05.png"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:344
+msgid "Figure 20.8: Recursive Fractal Level 5"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:346
+msgid "Here is the source code for the \"H\" fractal:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:348
+msgid "recursive_h.py"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:348
+msgid ""
+"\"\"\"\n"
+"Recursive H's\n"
+"\"\"\"\n"
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 500\n"
+"\n"
+"RECURSION_DEPTH = 0\n"
+"\n"
+"\n"
+"def draw_h(x, y, width, height, count):\n"
+"    \"\"\" Recursively draw an H, each one a half as big \"\"\"\n"
+"\n"
+"    # Draw the H\n"
+"    # Draw cross-bar\n"
+"    arcade.draw_line(x + width * .25, height / 2 + y,\n"
+"                     x + width * .75, height / 2 + y, arcade.color.BLACK)\n"
+"    # Draw left side\n"
+"    arcade.draw_line(x + width * .25, height * .5 / 2 + y,\n"
+"                     x + width * .25, height * 1.5 / 2 + y, arcade.color.BLACK)\n"
+"    # Draw right side\n"
+"    arcade.draw_line(x + width * .75, height * .5 / 2 + y,\n"
+"                     x + width * .75, height * 1.5 / 2 + y, arcade.color.BLACK)\n"
+"\n"
+"    # As long as we have a width bigger than 1, recursively call this function with a smaller rectangle\n"
+"    if count > 0:\n"
+"        count -= 1\n"
+"        # Draw the rectangle 90% of our current size\n"
+"        # Draw lower left\n"
+"        draw_h(x, y, width / 2, height / 2, count)\n"
+"        # Draw lower right\n"
+"        draw_h(x + width / 2, y, width / 2, height / 2, count)\n"
+"        # Draw upper left\n"
+"        draw_h(x, y + height / 2, width / 2, height / 2, count)\n"
+"        # Draw upper right\n"
+"        draw_h(x + width / 2, y + height / 2, width / 2, height / 2, count)\n"
+"\n"
+"\n"
+"class MyWindow(arcade.Window):\n"
+"    \"\"\" Main application class. \"\"\"\n"
+"\n"
+"    def __init__(self, width, height):\n"
+"        super().__init__(width, height)\n"
+"\n"
+"        arcade.set_background_color(arcade.color.WHITE)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Render the screen. \"\"\"\n"
+"        arcade.start_render()\n"
+"\n"
+"        # Start our recursive calls\n"
+"        draw_h(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, RECURSION_DEPTH)\n"
+"\n"
+"\n"
+"def main():\n"
+"    MyWindow(SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:353
+msgid "You can explore fractals on-line:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:355
+msgid "https://www.chromeexperiments.com/fractal"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:356
+msgid "http://usefuljs.net/fractals/"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:357
+msgid "http://hirnsohle.de/test/fractalLab/"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:359
+msgid ""
+"If you want to program your own fractals, you can get ideas of easy fractals"
+" by looking at Chapter 8 of `The Nature of Code`_ by Daniel Shiffman."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:366
+msgid "Recursive Mazes"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:368
+msgid ""
+"There are maze generation algorithms. Wikipedia has a nice `Maze generation "
+"algorithm`_ article that details some. One way is the *recursive division "
+"method*."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:371
+msgid "The algorithm is described below. Images are from Wikipedia."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:376
+msgid ".. image:: chapters/29_recursion/chamber.svg"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:376
+msgid ""
+"Begin with the maze's space with just the outside walls. Call this a "
+"chamber."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:381
+msgid ".. image:: chapters/29_recursion/chamber-division.svg"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:381
+msgid ""
+"Divide the chamber with one random horizontal wall, and one random vertical "
+"wall."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:386
+msgid ".. image:: chapters/29_recursion/chamber-divided.svg"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:386
+msgid ""
+"Pick three of the four walls and put a randomly position opening in it."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:391
+msgid ".. image:: chapters/29_recursion/chamber-subdivision.svg"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:391
+msgid ""
+"Subdivide each of the four sections. Call each a chamber. Recursively call "
+"this function. In this image, the top left chamber has been subdivided."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:397
+msgid ".. image:: chapters/29_recursion/chamber-finished.svg"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:397
+msgid "Finished maze."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:400
+msgid ""
+"This method results in mazes with long straight walls crossing their space, "
+"making it easier to see which areas to avoid."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:404
+msgid ".. image:: chapters/29_recursion/recursive_maze.gif"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:404
+msgid ""
+"Recursive maze generation. Source: Wikipedia `Maze generation algorithm`_."
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:408
+msgid "Here is sample Python code that creates a maze using this method:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:410
+msgid "Recursive Maze Example"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:410
+msgid ""
+"import random\n"
+"\n"
+"# These constants are used to determine what should be stored in the grid if we have an empty\n"
+"# space or a filled space.\n"
+"EMPTY = \"   \"\n"
+"WALL = \"XXX\"\n"
+"\n"
+"# Maze must have an ODD number of rows and columns.\n"
+"# Walls go on EVEN rows/columns.\n"
+"# Openings go on ODD rows/columns\n"
+"MAZE_HEIGHT = 51\n"
+"MAZE_WIDTH = 51\n"
+"\n"
+"\n"
+"def create_grid(width, height):\n"
+"    \"\"\" Create an empty grid. \"\"\"\n"
+"    grid = []\n"
+"    for row in range(height):\n"
+"        grid.append([])\n"
+"        for column in range(width):\n"
+"            grid[row].append(EMPTY)\n"
+"    return grid\n"
+"\n"
+"\n"
+"def print_maze(maze):\n"
+"    \"\"\" Print the maze. \"\"\"\n"
+"\n"
+"    # Loop each row, but do it in reverse so 0 is at the bottom like we expect\n"
+"    for row in range(len(maze) - 1, -1, -1):\n"
+"        # Print the row/y number\n"
+"        print(f\"{row:3} - \", end=\"\")\n"
+"\n"
+"        # Loop the row and print the content\n"
+"        for column in range(len(maze[row])):\n"
+"            print(f\"{maze[row][column]}\", end=\"\")\n"
+"\n"
+"        # Go down a line\n"
+"        print()\n"
+"\n"
+"    # Print the column/x at the bottom\n"
+"    print(\"     \", end=\"\")\n"
+"    for column in range(len(maze[0])):\n"
+"        print(f\"{column:3}\", end=\"\")\n"
+"    print()\n"
+"\n"
+"\n"
+"def create_outside_walls(maze):\n"
+"    \"\"\" Create outside border walls.\"\"\"\n"
+"\n"
+"    # Create left and right walls\n"
+"    for row in range(len(maze)):\n"
+"        maze[row][0] = WALL\n"
+"        maze[row][len(maze[row])-1] = WALL\n"
+"\n"
+"    # Create top and bottom walls\n"
+"    for column in range(1, len(maze[0]) - 1):\n"
+"        maze[0][column] = WALL\n"
+"        maze[len(maze[0]) - 1][column] = WALL\n"
+"\n"
+"\n"
+"def create_maze(maze, top, bottom, left, right):\n"
+"    \"\"\"\n"
+"    Recursive function to divide up the maze in four sections\n"
+"    and create three gaps.\n"
+"    Walls can only go on even numbered rows/columns.\n"
+"    Gaps can only go on odd numbered rows/columns.\n"
+"    Maze must have an ODD number of rows and columns.\n"
+"    \"\"\"\n"
+"\n"
+"    # Figure out where to divide horizontally\n"
+"    start_range = bottom + 2\n"
+"    end_range = top - 1\n"
+"    y = random.randrange(start_range, end_range, 2)\n"
+"\n"
+"    # Do the division\n"
+"    for column in range(left + 1, right):\n"
+"        maze[y][column] = WALL\n"
+"\n"
+"    # Figure out where to divide vertically\n"
+"    start_range = left + 2\n"
+"    end_range = right - 1\n"
+"    x = random.randrange(start_range, end_range, 2)\n"
+"\n"
+"    # Do the division\n"
+"    for row in range(bottom + 1, top):\n"
+"        maze[row][x] = WALL\n"
+"\n"
+"    # Now we'll make a gap on 3 of the 4 walls.\n"
+"    # Figure out which wall does NOT get a gap.\n"
+"    wall = random.randrange(4)\n"
+"    if wall != 0:\n"
+"        gap = random.randrange(left + 1, x, 2)\n"
+"        maze[y][gap] = EMPTY\n"
+"\n"
+"    if wall != 1:\n"
+"        gap = random.randrange(x + 1, right, 2)\n"
+"        maze[y][gap] = EMPTY\n"
+"\n"
+"    if wall != 2:\n"
+"        gap = random.randrange(bottom + 1, y, 2)\n"
+"        maze[gap][x] = EMPTY\n"
+"\n"
+"    if wall != 3:\n"
+"        gap = random.randrange(y + 1, top, 2)\n"
+"        maze[gap][x] = EMPTY\n"
+"\n"
+"    # Print what's going on\n"
+"    print(f\"Top/Bottom: {top}, {bottom} Left/Right: {left}, {right} Divide: {x}, {y}\")\n"
+"    print_maze(maze)\n"
+"    print()\n"
+"\n"
+"    # If there's enough space, to a recursive call.\n"
+"    if top > y + 3 and x > left + 3:\n"
+"        create_maze(maze, top, y, left, x)\n"
+"\n"
+"    if top > y + 3 and x + 3 < right:\n"
+"        create_maze(maze, top, y, x, right)\n"
+"\n"
+"    if bottom + 3 < y and x + 3 < right:\n"
+"        create_maze(maze, y, bottom, x, right)\n"
+"\n"
+"    if bottom + 3 < y and x > left + 3:\n"
+"        create_maze(maze, y, bottom, left, x)\n"
+"\n"
+"\n"
+"def main():\n"
+"\n"
+"    # Create the blank grid\n"
+"    maze = create_grid(MAZE_WIDTH, MAZE_HEIGHT)\n"
+"\n"
+"    # Fill in the outside walls\n"
+"    create_outside_walls(maze)\n"
+"\n"
+"    # Start the recursive process\n"
+"    create_maze(maze, MAZE_HEIGHT - 1, 0, 0, MAZE_WIDTH - 1)\n"
+"\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main()\n"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:417
+msgid "Recursive Binary Search"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:419
+msgid ""
+"Recursion can be also be used to perform a binary search. Here is a non-"
+"recursive binary search from Chapter 15:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:421
+msgid "Non-recursive binary search"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:421
+msgid ""
+"def binary_search_nonrecursive(search_list, key):\n"
+"    lower_bound = 0\n"
+"    upper_bound = len(search_list) - 1\n"
+"    found = False\n"
+"    while lower_bound < upper_bound and found == False:\n"
+"        middle_pos = (lower_bound + upper_bound) // 2\n"
+"        if search_list[middle_pos] < key:\n"
+"            lower_bound = middle_pos + 1\n"
+"        elif search_list[middle_pos] > key:\n"
+"            upper_bound = middle_pos\n"
+"        else:\n"
+"            found = True\n"
+"\n"
+"    if found:\n"
+"        print( \"The name is at position\",middle_pos)\n"
+"    else:\n"
+"        print( \"The name was not in the list.\" )\n"
+"\n"
+"binary_search_nonrecursive(name_list,\"Morgiana the Shrew\")"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:445
+msgid "This same binary search written in a recursive manner:"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:447
+msgid "Recursive binary search"
+msgstr ""
+
+#: ../../source/chapters/29_recursion/recursion.rst:447
+msgid ""
+"def binary_search_recursive(search_list, key, lower_bound, upper_bound):\n"
+"    middle_pos = (lower_bound + upper_bound) // 2\n"
+"    if search_list[middle_pos] < key:\n"
+"        # Recursively search top half\n"
+"        binary_search_recursive(search_list, key,\n"
+"                                middle_pos + 1, upper_bound)\n"
+"    elif search_list[middle_pos] > key:\n"
+"        # Recursively search bottom half\n"
+"        binary_search_recursive(search_list, key,\n"
+"                                lower_bound, middle_pos )\n"
+"    else:\n"
+"        print(\"Found at position\", middle_pos)\n"
+"\n"
+"lower_bound = 0\n"
+"upper_bound = len(name_list) - 1\n"
+"binary_search_recursive(name_list, \"Morgiana the Shrew\",\n"
+"                        lower_bound, upper_bound)"
+msgstr ""

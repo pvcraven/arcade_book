@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/voice_overs.rst:2
+msgid "Voice-Over Talent"
+msgstr ""
+
+#: ../../source/voice_overs.rstNone
+msgid ".. image:: images/microphone.svg"
+msgstr ""
+
+#: ../../source/voice_overs.rst:8
+msgid ""
+"Interested in helping people learning to code? I'm putting together a set of"
+" volunteers to do voice-over for introductory Python lessons. The videos "
+"will be hosted for free on YouTube with monitization turned off. The lessons"
+" will cover the free on-line text available at:"
+msgstr ""
+
+#: ../../source/voice_overs.rst:15
+msgid "https://learn.arcade.academy"
+msgstr ""
+
+#: ../../source/voice_overs.rst:17
+msgid ""
+"The point of having multiple people do voice-overs is for students find "
+"people  they identify with, to feel included in the programming community, "
+"and to realize we can learn from anyone, no matter who they are."
+msgstr ""
+
+#: ../../source/voice_overs.rst:23
+msgid "Questions and Answers"
+msgstr ""
+
+#: ../../source/voice_overs.rst:25
+msgid "**Do I get paid?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:27
+msgid ""
+"Unfortunately no. *I'm* not getting money for putting the text, video, or "
+"audio on-line. That means I have no extra money to pass along to you."
+msgstr ""
+
+#: ../../source/voice_overs.rst:30
+msgid "**Wait, you don't get paid?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:32
+msgid ""
+"Ok, full disclaimer. I *do* get paid as a Professor. Part of the my job does"
+" involve research and outreach. I *do* get paid to teach computer science at"
+" Simpson College and I use this material to do so."
+msgstr ""
+
+#: ../../source/voice_overs.rst:37
+msgid ""
+"I have gotten two paid semester-long sabbaticals (this semester and one six "
+"years ago), with the stated intent to make free programming materials "
+"available to the public."
+msgstr ""
+
+#: ../../source/voice_overs.rst:41
+msgid ""
+"I do *not* receive extra money for posting materials on-line, doing videos, "
+"or contributing to the Arcade library. I *do not* and *will not* monitize "
+"these videos by including ads or putting them behind a pay-wall."
+msgstr ""
+
+#: ../../source/voice_overs.rst:46
+msgid ""
+"At one point I did self-publish a paper copy of similar work with "
+"ProgramArcadeGames.com as a book. I did get money from that. Then I went "
+"with a publisher, sold fewer copies, and hardly got any money. I may one day"
+" sell a book version of the website, but mainly as a service to those who "
+"learn better by reading text on paper. I won't sell the videos."
+msgstr ""
+
+#: ../../source/voice_overs.rst:51
+msgid "**If there is no money, why do this?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:53
+msgid ""
+"If you've used free resources on-line to lean how to program or find "
+"solutions to programming problems, this is a great way to give back to the "
+"community. Personally, I've found online resources to be a great aid in my "
+"programming."
+msgstr ""
+
+#: ../../source/voice_overs.rst:57
+msgid "**How am I identified?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:59
+msgid "You can be credited with your contribution any way you wish."
+msgstr ""
+
+#: ../../source/voice_overs.rst:61
+msgid ""
+"As the internet is home to the occasional person who doesn't realize or care"
+" that real humans are on the other end of the network connection, my "
+"recommendation is to introduce yourself at the beginning of the video with "
+"your first name only. This will hopefully reduce the chance of doxxing."
+msgstr ""
+
+#: ../../source/voice_overs.rst:67
+msgid ""
+"If you want to, include if you are a member of an under-represented group in"
+" technology. This can help other people feel included, and everyone to "
+"realize the world is a beautiful, diverse place."
+msgstr ""
+
+#: ../../source/voice_overs.rst:72
+msgid ""
+"If you are internet-famous and want to use your full name and link to your "
+"Twitter or website, that's great! If you are internet-private and want to "
+"use a pseudonym, we can do that too!"
+msgstr ""
+
+#: ../../source/voice_overs.rst:76
+msgid ""
+"The main point is to help new programmers find people they identify with, "
+"and feel like they are part of a welcoming community when they start their "
+"journey on learning to program."
+msgstr ""
+
+#: ../../source/voice_overs.rst:80
+msgid "**What is the process?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:82
+msgid ""
+"First, send me an e-mail and let me know that you are interested. My e-mail "
+"is paul@cravenfamily.com"
+msgstr ""
+
+#: ../../source/voice_overs.rst:84
+msgid "Second, I'll send you a section of the text to read."
+msgstr ""
+
+#: ../../source/voice_overs.rst:85
+msgid "Third, record **one paragraph** of your audio."
+msgstr ""
+
+#: ../../source/voice_overs.rst:87
+msgid "Use a high-quality microphone."
+msgstr ""
+
+#: ../../source/voice_overs.rst:88
+msgid "Use a recording program like Audacity."
+msgstr ""
+
+#: ../../source/voice_overs.rst:89
+msgid ""
+"Adjust sound levels so that the db meter on audacity stays a bit below -6 "
+"db."
+msgstr ""
+
+#: ../../source/voice_overs.rst:90
+msgid "Record in an environment with minimal echo and background noise."
+msgstr ""
+
+#: ../../source/voice_overs.rstNone
+msgid ".. image:: images/level.png"
+msgstr ""
+
+#: ../../source/voice_overs.rst:95
+msgid "Read your sections for voice-over."
+msgstr ""
+
+#: ../../source/voice_overs.rst:97
+msgid ""
+"Start with an short introduction. Something like \"Hi, I'm Mary. I'm using "
+"my programming as part of my work with an insurance company.\" Figure out "
+"how much identifying information you want to give out."
+msgstr ""
+
+#: ../../source/voice_overs.rst:100
+msgid "Don't read out the code samples"
+msgstr ""
+
+#: ../../source/voice_overs.rst:101
+msgid "Don't read the review questions or any section after that."
+msgstr ""
+
+#: ../../source/voice_overs.rst:103
+msgid ""
+"Send the sample recording back to me. Once we have the recording working "
+"well, narrate the whole section."
+msgstr ""
+
+#: ../../source/voice_overs.rst:106
+msgid ""
+"I'll edit the audio. If you misspeak, just pause so I can make a clean edit,"
+" then start the sentence again."
+msgstr ""
+
+#: ../../source/voice_overs.rst:108
+msgid ""
+"Save the project, which should keep the audio in a loss-less format, and "
+"send to me."
+msgstr ""
+
+#: ../../source/voice_overs.rst:111
+msgid "I'll edit the audio and combine it with video."
+msgstr ""
+
+#: ../../source/voice_overs.rst:112
+msgid "Then I'll post it on-line."
+msgstr ""
+
+#: ../../source/voice_overs.rst:114
+msgid "**How long should this take?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:116
+msgid ""
+"The audio portion is about 15 minutes. As I assume it will take a while to "
+"get set up, and some sections might require a few takes, I'd guess about 45 "
+"minutes."
+msgstr ""
+
+#: ../../source/voice_overs.rst:119
+msgid "**Why should I trust you with my time?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:121
+msgid "I've already done something very similar before, with success."
+msgstr ""
+
+#: ../../source/voice_overs.rst:123
+msgid ""
+"For my last college sabbatical from teaching six years ago, I created "
+"ProgramArcadeGames.com and accompanying videos. This site has always been "
+"ad-free. The videos are ad-free. The site still gets about 1,800 people "
+"using it each weekday during the school year. The videos have had over a "
+"million views."
+msgstr ""
+
+#: ../../source/voice_overs.rst:128
+msgid ""
+"This Arcade Academy is an updated website using the Arcade library instead "
+"of PyGame, and will incorporate everything I've learned since creating the "
+"original website. It already gets 400-500 users per day."
+msgstr ""
+
+#: ../../source/voice_overs.rst:131
+msgid "**What if I don't like what you've written?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:133
+msgid ""
+"I'm open to constructive criticism of the written content. I'm happy to work"
+" with to make sure the content is as good as it can be."
+msgstr ""
+
+#: ../../source/voice_overs.rst:136
+msgid "**What will the visuals be?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:138
+msgid ""
+"I'll combine the audio with video of the code being written often with on-"
+"screen writing to highlight the code we are talking about in. If we aren't "
+"talking though code, I'll use slides or some other visual to help readers "
+"understand the topic."
+msgstr ""
+
+#: ../../source/voice_overs.rst:142
+msgid "**What will it look like?**"
+msgstr ""
+
+#: ../../source/voice_overs.rst:144
+msgid "Take a look at these chapters:"
+msgstr ""
+
+#: ../../source/voice_overs.rst:146
+msgid ""
+"`Chapter 4 Text "
+"<https://learn.arcade.academy/chapters/04_print_statement/print_statement.html>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:147
+msgid "`Chapter 4 Video <https://youtu.be/6KaRu3FS3AA>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:148
+msgid ""
+"`Chapter 5 Text "
+"<https://learn.arcade.academy/chapters/05_drawing/drawing.html>`_"
+msgstr ""
+
+#: ../../source/voice_overs.rst:149
+msgid ""
+"`Chapter 5 Video "
+"<https://www.youtube.com/watch?v=wYofTQaIIlQ&feature=youtu.be>`_"
+msgstr ""

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/audio_processing.rst:4
+msgid "Audio Processing"
+msgstr ""
+
+#: ../../source/audio_processing.rst:6
+msgid "Apply noise reduction"
+msgstr ""
+
+#: ../../source/audio_processing.rst:7
+msgid "Graphic Equalization 200Hz @ 6db boost, 4,000MHz @ -3db loss."
+msgstr ""
+
+#: ../../source/audio_processing.rst:8
+msgid ""
+"Compressor = Threshold -18db, Noise Floor -40db, Ratio 2:1, Attack Time "
+"0.2s, Release Time 1.0s, un-check 'Make up gain' and 'Compress based on "
+"peaks'."
+msgstr ""
+
+#: ../../source/audio_processing.rst:10
+msgid ""
+"Low Pass Filter 10,000Hz @ 24 db roll off. Reduces 'Ssssss' and other high "
+"pitched sounds."
+msgstr ""
+
+#: ../../source/audio_processing.rst:11
+msgid ""
+"High Pass Filter 30Hz @ 24 db roll off. Reduces low hums (like a fridge) and"
+" gravely voice grumbles."
+msgstr ""
+
+#: ../../source/audio_processing.rst:12
+msgid "Normalize -1db (this should ALWAYS be your last step)."
+msgstr ""

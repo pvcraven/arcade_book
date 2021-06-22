@@ -1,0 +1,441 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_04_camel/camel.rst:4
+msgid "Lab 4: Camel"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:7
+msgid ".. image:: labs/lab_04_camel/camel.png"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:9
+msgid "Description of the Camel Game"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:11
+msgid ""
+"The idea for Camel originally came from the Heath Users Group and was "
+"published in `More BASIC Computer Games`_ in 1979."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:16
+msgid ""
+"The idea is to ride your camel across the desert while being chased. You "
+"need to manage your thirst, how tired the camel is, and how far ahead of the"
+" natives you are."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:20
+msgid ""
+"This is one of the first games I programmed on the Apple //e. The game is "
+"flexible. I've had students create Star Wars themed versions of this game "
+"where you need to ride a wampa across Hoth. It is easy to add sandstorms and"
+" other random events to the game to make it more interesting. Even though it"
+" is only a text-based game, I've found some students really get into playing"
+" it. Once I had a professor come and complain when my students were too loud"
+" while playing this game on the \"big screen.\""
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:29
+msgid "Sample Run of Camel"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:31
+msgid "Here is a sample run of the game:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:33
+msgid ""
+"Welcome to Camel!\n"
+"You have stolen a camel to make your way across the great Mobi desert.\n"
+"The natives want their camel back and are chasing you down! Survive your\n"
+"desert trek and outrun the natives.\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? C\n"
+"\n"
+"You traveled 12 miles.\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? C\n"
+"\n"
+"You traveled 17 miles.\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? e\n"
+"\n"
+"Miles traveled:  29\n"
+"Drinks in canteen:  3\n"
+"The natives are 31 miles behind you.\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? b\n"
+"\n"
+"You traveled 6 miles.\n"
+"\n"
+"...and so on until...\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? C\n"
+"\n"
+"You traveled 12 miles.\n"
+"The natives are getting close!\n"
+"\n"
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop and rest.\n"
+"E. Status check.\n"
+"Q. Quit.\n"
+"Your choice? C\n"
+"\n"
+"You traveled 11 miles.\n"
+"The natives are getting close!\n"
+"You made it across the desert! You won!"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:107
+msgid ""
+"This game assumes you know the material up through :ref:`random-numbers`."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:110
+msgid "Programming Guide"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:111
+msgid ""
+"Here are the steps to complete this lab. Feel free to modify and add to the "
+"lab. Try the game with friends and family."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:114
+msgid ""
+"Create a new directory in your project for ``Lab 04 - Camel`` and a file "
+"called ``lab_04.py`` in that folder if the folder and file don't exist "
+"already."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:116
+msgid ""
+"In that file create a new ``main()`` function. Have it print the "
+"instructions to the screen. Do this with multiple ``print`` statements. "
+"Don't use one ``print`` statement and multiple ``\\n`` characters to jam "
+"everything on one line."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:121
+msgid ""
+"Welcome to Camel!\n"
+"You have stolen a camel to make your way across the great Mobi desert.\n"
+"The natives want their camel back and are chasing you down! Survive your\n"
+"desert trek and out run the natives."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:128
+msgid "Call the ``main()`` function. Run and test the program."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:130
+msgid ""
+"Continue from the prior step and create a Boolean variable called ``done`` "
+"and set to ``False``. Make sure this, and everything else, is in the "
+"``main`` function."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:133
+msgid ""
+"Create a ``while`` loop that will keep looping while ``done`` is ``False``."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:134
+msgid "Inside the loop, print out the following:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:136
+msgid ""
+"A. Drink from your canteen.\n"
+"B. Ahead moderate speed.\n"
+"C. Ahead full speed.\n"
+"D. Stop for the night.\n"
+"E. Status check.\n"
+"Q. Quit."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:145
+msgid ""
+"Ask the user for their choice. Make sure to add a space before the quote so "
+"the user input doesn't run into your text. That is, it should look like:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:148
+msgid "What is your choice? Q"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:152
+msgid "And not:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:154
+msgid "What is your choice?Q"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:159
+msgid ""
+"If the user's choice is ``Q``, then set ``done`` to ``True``. By doing "
+"something like ``user_choice.upper()`` instead of just ``user_choice`` in "
+"your ``if`` statement you can make it case-insensitive. Also, print "
+"something to the user to let her know she quit the game. Users need "
+"feedback."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:163
+msgid ""
+"Test and make sure that you can quit out of the game, and that it works for "
+"both upper and lower case."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:165
+msgid ""
+"Before your main program loop, create variables for miles traveled, thirst, "
+"camel tiredness. Set these to zero. Creating accurate, descriptive variable "
+"names will make the rest of this lab less confusing."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:168
+msgid ""
+"Create a variable for the distance the natives have traveled and set it to "
+"-20. (Twenty miles back.) Understanding how we track the player's distance, "
+"the native's distance, and the difference between the two tends to confuse "
+"some people. See the videos at the end of this lab for some hints."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:173
+msgid ""
+"Create and set an initial number of drinks in the canteen. I use three."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:174
+msgid ""
+"Go back to inside your main program loop. Add an ``elif`` to the ``if`` that"
+" is checking for the quit command. See if the user is asking for status. If "
+"so, print out the miles traveled, the drinks in the canteen, and how far the"
+" natives are behind you. If you aren't sure how to calculate that, see the "
+"videos at the end of this lab. (Seriously. This is a section where a lot of "
+"people start down the wrong path.)"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:182
+msgid ""
+"Miles traveled:  0\n"
+"Drinks in canteen:  3\n"
+"The natives are 10 miles behind you."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:189
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to "
+"stop for the night. If the user does, reset the camel's tiredness to zero. "
+"Print that the camel is happy, and move the natives up a random amount from "
+"7 to 14 or so. Note: calculate random numbers IN the loop, just before you "
+"need them. A common mistake is to calculate the random numbers you need "
+"BEFORE the main loop. Causing your random numbers to stay the same the "
+"entire game."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:196
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to go"
+" ahead full speed. If the user does, go forward a random amount between 10 "
+"and 20 inclusive. Print how many miles the user traveled. Add 1 to thirst. "
+"Add a random 1 to 3 to camel tiredness. Move the natives up 7 to 14 miles."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:201
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to go"
+" ahead moderate speed. If the user does, go forward a random amount between "
+"5 and 12 inclusive. Print how many miles the user traveled. Add 1 to thirst."
+" Add 1 to camel tiredness. Move the natives up 7 to 14 miles."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:205
+msgid ""
+"Add an ``elif`` in your main program loop and handle if the user wants to go"
+" ahead drink from the canteen. If the user does, make sure there are drinks "
+"in the canteen. If there are, subtract one drink and set the player's thirst"
+" to zero. Otherwise print an error."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:209
+msgid ""
+"In the loop, print \"You are thirsty.\" if the user's thirst is above 4. Put"
+" this after your long ``if`` ... ``elif`` chain above."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:211
+msgid ""
+"Print \"You died of thirst!\" if the user's thirst is above 6. Set ``done`` "
+"to ``True``. Make sure you create your code so that the program doesn't "
+"print both \"Your are thirsty\" and \"You died of thirst!\" Use ``elif`` as "
+"appropriate."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:215
+msgid ""
+"Print \"Your camel is getting tired.\" if the camel's tiredness is above 5."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:216
+msgid ""
+"Print \"Your camel is dead.\" if the camel's tiredness is above 8. Like the "
+"prior steps, print one or the other. It is a good idea to include a check "
+"with the done variable so t hat you don't print that your camel is getting "
+"tired after you died of thirst."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:220
+msgid ""
+"If the natives have caught up, print that they caught the player and end the"
+" game."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:222
+msgid ""
+"Else if the natives are less than 15 miles behind, print \"The natives are "
+"getting close!\""
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:224
+msgid ""
+"If the user has traveled 200 miles across the desert, print that they won "
+"and end the game. Make sure they aren't dead before declaring them a winner."
+" If they land on mile marker 201 instead of 200, make sure they still win "
+"the game. See the videos below."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:228
+msgid ""
+"Add a one-in-twenty chance of finding an oasis. Print that the user found "
+"it, refill the canteen, reset player thirst, and rest the camel. If you "
+"aren't sure how to do this, see :ref:`random_chance`. Make sure a person "
+"can't find the oasis unless they are traveling. This will require you to "
+"think about where you are putting this code."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:233
+msgid ""
+"Play the game and tune the numbers so it is challenging but not impossible. "
+"Fix any bugs you find."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:237
+msgid "Hints"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:238
+msgid ""
+"Remember that it is good idea to put blank lines between logical groupings "
+"of code in your program. For example, but a blank line after the "
+"instructions, and between each user command. Add comments where appropriate."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:241
+msgid ""
+"It is considered better style to use ``while not done:`` instead of ``while "
+"done == False:``"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:243
+msgid ""
+"Rather than setting ``done`` to ``True``, you can immediately exit the main "
+"program loop by using the ``break`` statement. Some people prefer this "
+"method because it simplifies the logic. Other people prefer not jumping out "
+"of the middle of a loop. Quite frankly, either works."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:247
+msgid ""
+"To prevent bad message combinations, such as printing \"You died of "
+"thirst.\" and \"You found an oasis!\" on the same turn, use the ``and`` "
+"operator. Such as, ``if not done and thirst > 4:``"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:250
+msgid ""
+"Make sure you add blank lines to divide up sections of code. Don't double "
+"space the code. Add comments ahead of code sections."
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:252
+msgid ""
+"Watch the English and punctuation. Don't say ``you found an Oasis!``, say "
+"``You found an oasis!``"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:253
+msgid ""
+"Occasionally people get confused about how to set a value back to zero. "
+"Study the code below:"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:255
+msgid ""
+"# Yes, these set thirst to zero, but this is NOT the way to do it.\n"
+"thirst *= 0               # No\n"
+"thirst = thirst * 0       # No\n"
+"thirst = thirst - thirst  # No\n"
+"\n"
+"# This is the correct way to set thirst to zero\n"
+"thirst = 0                # Yes"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:266
+msgid "Calculating How Far Back the Natives Are"
+msgstr ""
+
+#: ../../source/labs/lab_04_camel/camel.rst:273
+msgid "Figuring Out The End of the Game"
+msgstr ""

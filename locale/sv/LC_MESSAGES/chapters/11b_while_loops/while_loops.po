@@ -1,0 +1,404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2021-04-07 14:21+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:4
+msgid "While Loops"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rstNone
+msgid ".. image:: chapters/11b_while_loops/ferris_wheel.svg"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:10
+msgid ""
+"A ``for`` loop is used when a program knows it needs to repeat a block of "
+"code for a certain number of times. A ``while`` loop is used when a program "
+"needs to loop *until a particular condition occurs*. Use a ``for`` loop when"
+" you know how many times to loop, use a ``while`` loop when you want to loop"
+" until something happens."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:16
+msgid ""
+"Oddly enough, a ``while`` loop can be used anywhere a ``for`` loop is used "
+"because OUR \"condition\" can be a count. That is, the ``while`` loop can "
+"loop until a variable reaches a certain value. If that's the case, why have "
+"a ``for`` loop if a ``while`` loop can do everything?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:21
+msgid ""
+"Because the ``for`` loop is simpler to use and code. A ``for`` loop that "
+"looks like this:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:24
+msgid "Using a ``for`` loop to print the numbers 0 to 9"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:24
+#: ../../source/chapters/11b_while_loops/while_loops.rst:257
+msgid ""
+"for i in range(10):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:31
+msgid "...can be done with a ``while`` loop that looks like this:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:33
+msgid "Using a while loop to print the numbers 0 to 9"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:33
+msgid ""
+"i = 0\n"
+"while i < 10:\n"
+"    print(i)\n"
+"    i = i + 1"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rstNone
+msgid ".. image:: chapters/11b_while_loops/carousel.svg"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:46
+msgid ""
+"Line 1 of the while loop sets up a \"sentinel\" variable that will be used "
+"to count the number of times the loop has been executed. This happens "
+"automatically in a ``for`` loop eliminating one line of code. Line 2 "
+"contains the actual ``while`` loop. The format of the while loop is very "
+"similar to the if statement. If the condition holds, the code in the loop "
+"will repeat. Line 4 adds to the increment value. In a ``for`` loop this "
+"happens automatically, eliminating another line of code. As one can see from"
+" the code, the for loop is more compact than a ``while`` loop and is easier "
+"to read. Otherwise programs would do everything with a ``while`` loop."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:56
+msgid ""
+"A common mistake is to confuse the ``for`` loop and the ``while`` loop. The "
+"code below shows a programmer that can't quite make up his/her mind between "
+"a ``for`` loop or a ``while`` loop."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:60
+msgid "Example of a confused loop"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:60
+msgid ""
+"while range(10):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:67
+msgid "Don't use range with a ``while`` loop!"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:69
+msgid ""
+"The ``range`` function only works with the ``for`` loop. Do not use it with "
+"the ``while`` loop!"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:73
+msgid "Using Increment Operators"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rstNone
+msgid ".. image:: chapters/11b_while_loops/roller-coaster.svg"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:79
+msgid ""
+"Remember that back in Back in :ref:`increment_decrement_operators` we "
+"learned it is possible to short-hand the code:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:82
+msgid "i = i + 1"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:86
+msgid "With the following:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:88
+msgid "i += 1"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:92
+msgid "In the ``while`` loop it would look like:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:94
+msgid ""
+"i = 0\n"
+"while i < 10:\n"
+"    print(i)\n"
+"    i += 1"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:102
+msgid ""
+"This can be done with subtraction and multiplication as well. For example:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:104
+msgid "i *= 2"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:108
+msgid "Is the same as:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:110
+msgid "i = i * 2"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:114
+msgid "See if you can figure out what would this print:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:116
+msgid ""
+"i = 1\n"
+"while i <= 2 ** 32:\n"
+"    print(i)\n"
+"    i *= 2"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:125
+msgid "Common Problems With ``while`` Loops"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:127
+msgid ""
+"The programmer wants to count down from 10. What is wrong and how can it be "
+"fixed?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:129
+#: ../../source/chapters/11b_while_loops/while_loops.rst:276
+msgid ""
+"i = 10\n"
+"while i == 0:\n"
+"    print(i)\n"
+"    i -= 1"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:137
+msgid ""
+"What is wrong with this loop that tries to count to 10? What will happen "
+"when it is run? How should it be fixed?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:140
+#: ../../source/chapters/11b_while_loops/while_loops.rst:285
+msgid ""
+"i = 1\n"
+"while i < 10:\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:148
+msgid "Looping Until User Wants To Quit"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:150
+msgid ""
+"A very common operation is to loop until the user performs a request to "
+"quit. Give this code example a try."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:153
+msgid "Looping until the user wants to quit"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:153
+msgid ""
+"quit = \"n\"\n"
+"while quit == \"n\":\n"
+"    quit = input(\"Do you want to quit? \")"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:161
+msgid ""
+"It isn't perfect. It will loop if the use types \"no\", \"N\", or \"NO!\". "
+"She must type exactly \"n\". Go back and review :ref:`text-comparisons` if "
+"you want to make the match more flexible."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rstNone
+msgid ".. image:: chapters/11b_while_loops/dragon.svg"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:169
+msgid ""
+"We can expand this pattern to use a Boolean ``done`` variable to trigger an "
+"exit from the loop."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:172
+msgid ""
+"Here's an example where we can exit the game by quitting, or attacking the "
+"dragon:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:175
+#: ../../source/chapters/11b_while_loops/while_loops.rst:194
+msgid "Looping until the game is over or the user wants to quit"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:175
+msgid ""
+"done = False\n"
+"while not done:\n"
+"    quit = input(\"Do you want to quit? \")\n"
+"    if quit == \"y\":\n"
+"        done = True\n"
+"\n"
+"    attack = input(\"Does your elf attack the dragon? \")\n"
+"    if attack == \"y\":\n"
+"        print(\"Bad choice, you died.\")\n"
+"        done = True"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:190
+msgid ""
+"This isn't perfect though, because if the user says she wants to quit, the "
+"code will *still* ask if she wants to attack the dragon. How could you fix "
+"this? Take a look at this example."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:194
+msgid ""
+"done = False\n"
+"while not done:\n"
+"    quit = input(\"Do you want to quit? \")\n"
+"    if quit == \"y\":\n"
+"        done = True\n"
+"\n"
+"    if not done:\n"
+"        attack = input(\"Does your elf attack the dragon? \")\n"
+"        if attack == \"y\":\n"
+"            print(\"Bad choice, you died.\")\n"
+"            done = True\n"
+"\n"
+"    if not done:\n"
+"        attack = input(\"Does your elf attempt to steal the gold? \")\n"
+"        if attack == \"y\":\n"
+"            print(\"Bad choice, you died.\")\n"
+"            done = True"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:218
+msgid "The ``break`` And ``continue`` Statements"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rstNone
+msgid ".. image:: chapters/11b_while_loops/stop.svg"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:224
+msgid ""
+"If you are in the middle of a ``for`` or ``while`` loop, and your code "
+"encounters a ``break`` statement, you'll immediately exit the loop."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:227
+msgid ""
+"while True: # Loop forever\n"
+"    quit = input(\"Do you want to quit? \")\n"
+"    if quit == \"y\":\n"
+"        break\n"
+"\n"
+"    attack = input(\"Does your elf attack the dragon? \")\n"
+"    if attack == \"y\":\n"
+"        print(\"Bad choice, you died.\")\n"
+"        break\n"
+"\n"
+"    attack = input(\"Does your elf attempt to steal the gold? \")\n"
+"    if attack == \"y\":\n"
+"        print(\"Bad choice, you died.\")\n"
+"        break"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:245
+msgid ""
+"If you are in the middle of a loop, and your code encounters a ``continue`` "
+"statement, you'll immediately be sent back up to the top of the loop."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:250
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:253
+msgid "Review Questions"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:255
+msgid "Write a ``while`` loop that will run the same as the following code:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:262
+msgid "What will this code print, and why?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:264
+msgid ""
+"i = 1\n"
+"while i <= 2**32:\n"
+"    print(i)\n"
+"    i *= 2"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:271
+msgid ""
+"Write a simple loop that asks the user if they wants to keep looping. Loop "
+"until they says \"no\"."
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:274
+msgid ""
+"The programmer wants to count down from 10. What is wrong and how to fix it?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:283
+msgid ""
+"What is wrong with this loop that tries to count to 10? What will happen "
+"when it is run?"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:292
+msgid "On-line Review Problems"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:294
+msgid ""
+"Practice on-line by completing the ``while`` loop problems starting with "
+"``04`` available here:"
+msgstr ""
+
+#: ../../source/chapters/11b_while_loops/while_loops.rst:296
+msgid "https://repl.it/community/classrooms/174286"
+msgstr ""

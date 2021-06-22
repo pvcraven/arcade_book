@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:4
+msgid "Lab 6: Text Adventure"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:8
+msgid ".. image:: labs/lab_06_text_adventure/castle_01.png"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:10
+msgid "Description of the Adventure Game"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:11
+msgid ""
+"One of the first games I ever played was a text adventure called `Colossal "
+"Cave Adventure`_. You can play the game on-line here_ to get an idea what "
+"text adventure games are like. Seriously, give it a try. Otherwise it will "
+"be hard to understand what we are trying to do here."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:16
+msgid "Arguably the most famous of this genre of game is the Zork_ series."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:22
+msgid ""
+"The first \"large\" program I created myself was a text adventure. It is "
+"easy to start an adventure like this. It is also a great way to practice "
+"using lists. Our game for this lab will involve a list of rooms that can be "
+"navigated by going north, east, south, or west. Each room will be a list "
+"with the room description, and then what rooms are in each of the "
+"directions. See the section below for a sample run:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:30
+msgid "Sample Run"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:32
+msgid ""
+"You are in a dusty castle room.\n"
+"Passages lead to the north and south.\n"
+"What direction? n\n"
+"\n"
+"You are in the armory.\n"
+"There is a room off to the south.\n"
+"What direction? s\n"
+"\n"
+"You are in a dusty castle room.\n"
+"Passages lead to the north and south.\n"
+"What direction? s\n"
+"\n"
+"You are in a torch-lit hallway.\n"
+"There are rooms to the east and west.\n"
+"What direction? e\n"
+"\n"
+"You are in a bedroom. A window overlooks the castle courtyard.\n"
+"A hallway is to the west.\n"
+"What direction? w\n"
+"\n"
+"You are in a torch-lit hallway.\n"
+"There are rooms to the east and west.\n"
+"What direction? w\n"
+"\n"
+"You are in the kitchen. It looks like a roast is being made for supper.\n"
+"A hallway is to the east.\n"
+"What direction? w\n"
+"\n"
+"Can't go that way.\n"
+"You are in the kitchen. It looks like a roast is being made for supper.\n"
+"A hallway is to the east.\n"
+"What direction?"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:67
+msgid ""
+"This game assumes you know the material up through :ref:`intro-to-lists`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:70
+msgid "Creating Your Dungeon"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:71
+msgid ""
+"Before you start, sketch out the dungeon that you want to create. It might "
+"look something like this:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:75
+msgid ".. image:: labs/lab_06_text_adventure/castle_map_01.png"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:76
+msgid "Next, number all of the rooms starting at zero."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:79
+msgid ".. image:: labs/lab_06_text_adventure/castle_map_02.png"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:80
+msgid ""
+"Use this sketch to figure out how all the rooms connect. For example, room 0"
+" connects to room 3 to the north, room 1 to the east, and no room to the "
+"south and west."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:85
+msgid "Step-by-step Instructions"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:87
+msgid ""
+"As a reminder, at the end of the year I do scan for duplicate homework. I "
+"keep all homework assignments from prior semesters, and assignments from "
+"non-Simpson students that I find on-line. I run a program that scans for "
+"duplicates. Make sure your work is your own."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:92
+msgid "Define a class called ``Room`` as shown in :ref:`define-class`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:93
+msgid "Define an ``__init__`` method as shown in :ref:`define-init-method`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:94
+msgid ""
+"Define class attributes for ``description``, ``north``, ``east``, ``south``,"
+" and ``west`` as shown in :ref:`define-init-method`. Default ``description``"
+" to an empty string, all others to ``0``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:97
+msgid ""
+"Customize the ``__init__`` method (also known as the constructor) to take in"
+" data for all five attributes when the ``Room`` is created. Refer back to "
+":ref:`address-class-example-with-init` for an example."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:100
+msgid ""
+"Create a ``main`` function and call the ``main`` function as shown in :ref"
+":`create-main-function`. Make sure your ``main`` function is **not** inside "
+"the ``Room`` class."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:103
+msgid ""
+"In the ``main`` function, create an empty array called ``room_list``. If "
+"you've forgotten, see :ref:`create-an-empty-list`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:105
+msgid ""
+"Create a variable called ``room``. Set it equal to a new instance of the "
+"``Room`` class. For the first parameter, create a string with a description "
+"of your first room. The last four elements will be the number of the next "
+"room if the user goes north, east, south, or west. Look at your sketch to "
+"see what numbers to use. Use ``None`` if no room hooks up in that direction."
+" (Do not put ``None`` in quotes. Also, remember that Python is case "
+"sensitive so ``none`` won't work either. The keyword ``None`` is a special "
+"value that represents \"nothing.\" Because sometimes you need a value, other"
+" than zero, that represents )"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:114
+msgid ""
+"Append this room to the room list. See :ref:`append_to_list` if you've "
+"forgotten how to do that."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:115
+msgid ""
+"Repeat the prior two steps for each room you want to create. Just re-use the"
+" ``room`` variable."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:117
+msgid "Create a variable called ``current_room``. Set it to zero."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:118
+msgid ""
+"Print the ``room_list`` variable. Run the program. You should see a really "
+"long list of every room object in your adventure that looks something like "
+"this strange line:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:121
+msgid ""
+"[<__main__.Room object at 0x03800520>, <__main__.Room object at 0x0398F220>,"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:125
+msgid ""
+"If you don't, make sure you are calling your ``main`` function at the end of"
+" your program, and that it isn't indented."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:129
+msgid ""
+"Adjust your ``print statement`` to only print the first room (element zero) "
+"in the list. Run the program and confirm you get output similar to:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:132
+msgid "<__main__.Room object at 0x03800520>"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:137
+msgid ""
+"Using ``current_room`` and ``room_list``, print the current room the user is"
+" in. Since your first room is zero, the output should be the same as before."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:139
+msgid ""
+"Change the print statement so that you only print the description of the "
+"room, and not the strange object printing we are getting now. You can do "
+"that by appending ``.description`` to what you printed in the prior step. "
+"When you run it, you should get your room description:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:144
+msgid "You are in a room. There is a passage to the north."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:148
+msgid ""
+"Create a variable called ``done`` and set it to ``False``. Then put the "
+"printing of the room description in a ``while`` loop that repeats until "
+"``done`` is set to ``True``. We won't set ``done`` to ``True`` yet though."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:151
+msgid ""
+"Before printing the description, add a code to print a blank line. This will"
+" make it visually separate each turn when playing the game."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:153
+msgid ""
+"After printing the room description, add a line of code that asks the user "
+"what they want to do. Use the ``input`` statement. Keep in mind that you "
+"will be entering letters, therefore you will *not* want to convert what the "
+"user enters to an integer or floating point number. This will be similar to "
+"how we got input in :ref:`lab-04`. The most frequent mistake I've seen "
+"students make is to have an ``input`` statement and not capture the return "
+"value. See :ref:`capturing_returned_values` if you have this issue."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:160
+msgid ""
+"Add an ``if`` statement to see if the user wants to go north. You should "
+"accept user input like \"n\" and \"N\" and \"North\" and \"NoRtH\". You may "
+"need to review :ref:`text-comparisons` and :ref:`multi-text-comparisons`."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:164
+msgid ""
+"If the user wants to go north, create a variable called ``next_room`` and "
+"get it equal to ``room_list[current_room].north``, which should be the "
+"number for what room is to the north."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:167
+msgid ""
+"Add another ``if`` statement to see if the next room is equal to ``None``. "
+"If it is, print \"You can't go that way.\" *Otherwise* set ``current_room`` "
+"equal to ``next_room``. Note: This new ``if`` statement is part of the "
+"``if`` statement to go north. So make sure it is indented inside that "
+"``if``. Also, if you are doing one choice or another, remember to use "
+"``else``."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:172
+msgid "Test your program. Can you go north to a new room?"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:173
+msgid ""
+"Add ``elif`` statements to handle east, south, and west. Add an ``else`` "
+"statement to let the user know the program doesn't understand what she "
+"typed."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:175
+msgid ""
+"It is a great idea to put blank lines between the code that handles each "
+"direction. I don't mean to print a blank line, but actually have blank lines"
+" in the code. That way you visually group the code into sections."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:178
+msgid "It is a great idea to add comments too, to each section."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:179
+msgid ""
+"Test your program. Make sure you have enough of a description that someone "
+"running the program will know what direction to go. Don't say \"You are in "
+"the kitchen.\" Instead say \"You are in the kitchen. There is a door to the "
+"north.\""
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:182
+msgid "Add a quit command that ends the game."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:183
+msgid "Make sure that the program works for upper and lower case commands."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:184
+msgid ""
+"Have the program work if the user types in \"north\" or \"n\". Review :ref"
+":`multi-text-comparisons` if needed."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:187
+msgid ""
+"Spend a little time to make this game interesting. Don't simply create an "
+"\"East room\" and a \"West room.\" That's boring."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:190
+msgid ""
+"Also spend a little time to double check spelling and grammar. Without a "
+"word processor checking your writing, it is important to be careful. Pay "
+"particular note to:"
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:193
+msgid ""
+"In the past I've had people capitalize words in this lab that should not be "
+"capitalized. Incorrect capitalization of direcetions are common. See `when "
+"do you capitalize directions`_."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:196
+msgid ""
+"Do not capitalize room names unless the room name is part of a title. Don't "
+"say \"You are in the Living Room,\" because the word \"living room\" isn't "
+"normally capitalized."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:202
+msgid ""
+"Use ``\\n`` to add carriage returns in your descriptions so they don't print"
+" all on one line. Don't put spaces around the ``\\n``, or the spaces will "
+"print."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:205
+msgid ""
+"What I like about this program is how easy it is to expand into a full game."
+" Expanding the game to use all eight cardinal directions (including "
+"\"NorthWest\"), along with \"up\" and \"down\" is rather easy. Managing an "
+"inventory of objects that can exist in rooms, be picked up, and dropped is "
+"just a matter of keeping lists."
+msgstr ""
+
+#: ../../source/labs/lab_06_text_adventure/adventure.rst:210
+msgid ""
+"Expanding this program into a full game is one of the two options for the "
+"final lab in this course."
+msgstr ""

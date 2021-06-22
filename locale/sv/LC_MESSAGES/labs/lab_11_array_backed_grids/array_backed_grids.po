@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:4
+msgid "Lab 11: Array-Backed Grids"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:7
+msgid "Part 1"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:9
+msgid ""
+"Start with the program at the end of :ref:`array-backed-grids`. Modify it so"
+" that rather than just changing the block the user clicks on, also change "
+"the blocks of the squares next to the user's click. (5 pts) If the user "
+"clicks on an edge, make sure the program doesn't crash and still handles the"
+" click appropriately. (5 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:17
+msgid ".. image:: labs/lab_11_array_backed_grids/lab_11_sample.gif"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:17
+msgid "Example of working Lab 11"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:20
+msgid "Part 2"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:22
+msgid ""
+"Create another program, again starting with the code at the end of :ref"
+":`array-backed-grids`."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:25
+msgid ""
+"Write a loop that will count all of the cells that are selected in the grid "
+"and print them out. Put this code at the end of your ``on_mouse_press`` "
+"function. (2 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:29
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:47
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:77
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:115
+msgid "Sample Output"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:29
+msgid ""
+"Total of 1 cells are selected.\n"
+"Total of 2 cells are selected.\n"
+"Total of 3 cells are selected.\n"
+"Total of 2 cells are selected.\n"
+"Total of 3 cells are selected.\n"
+"Total of 4 cells are selected.\n"
+"Total of 5 cells are selected.\n"
+"Total of 6 cells are selected.\n"
+"Total of 7 cells are selected.\n"
+"Total of 8 cells are selected.\n"
+"Total of 9 cells are selected."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:44
+msgid ""
+"Write another loop that will print how many cells are selected in each row: "
+"(3 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:47
+msgid ""
+"Total of 7 cells are selected.\n"
+"Row 0 has 0 cells selected.\n"
+"Row 1 has 0 cells selected.\n"
+"Row 2 has 2 cells selected.\n"
+"Row 3 has 2 cells selected.\n"
+"Row 4 has 1 cells selected.\n"
+"Row 5 has 2 cells selected.\n"
+"Row 6 has 0 cells selected.\n"
+"Row 7 has 0 cells selected.\n"
+"Row 8 has 0 cells selected.\n"
+"Row 9 has 0 cells selected.\n"
+"\n"
+"Total of 8 cells are selected.\n"
+"Row 0 has 0 cells selected.\n"
+"Row 1 has 0 cells selected.\n"
+"Row 2 has 3 cells selected.\n"
+"Row 3 has 2 cells selected.\n"
+"Row 4 has 1 cells selected.\n"
+"Row 5 has 2 cells selected.\n"
+"Row 6 has 0 cells selected.\n"
+"Row 7 has 0 cells selected.\n"
+"Row 8 has 0 cells selected.\n"
+"Row 9 has 0 cells selected."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:74
+msgid ""
+"Update the code so that it prints the count in both rows and columns: (1 pt)"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:77
+msgid ""
+"Total of 5 cells are selected.\n"
+"Row 0 has 1 cells selected.\n"
+"Row 1 has 1 cells selected.\n"
+"Row 2 has 1 cells selected.\n"
+"Row 3 has 1 cells selected.\n"
+"Row 4 has 1 cells selected.\n"
+"Row 5 has 0 cells selected.\n"
+"Row 6 has 0 cells selected.\n"
+"Row 7 has 0 cells selected.\n"
+"Row 8 has 0 cells selected.\n"
+"Row 9 has 0 cells selected.\n"
+"Column 0 has 5 cells selected.\n"
+"Column 1 has 0 cells selected.\n"
+"Column 2 has 0 cells selected.\n"
+"Column 3 has 0 cells selected.\n"
+"Column 4 has 0 cells selected.\n"
+"Column 5 has 0 cells selected.\n"
+"Column 6 has 0 cells selected.\n"
+"Column 7 has 0 cells selected.\n"
+"Column 8 has 0 cells selected.\n"
+"Column 9 has 0 cells selected."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:102
+msgid ""
+"Update the code so that the program will also print how many cells are "
+"continuously selected in a row, if that number is greater than 2. (4 pts)"
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:106
+msgid ""
+"To do this, create a new variable (like ``continuous_count``) that is reset "
+"to zero for each row. If the current grid location is one, then add one to "
+"``continuous_count``. If it is zero, check if ``continuous_count`` is "
+"greater than 2. If so, print the count. Regardless, reset it back to zero."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:111
+msgid ""
+"You'll also need to do the same ``if`` after the loop with the row is done. "
+"If the row goes up to the grid-edge, then the blocks-in-a-row won't trigger "
+"without this second check."
+msgstr ""
+
+#: ../../source/labs/lab_11_array_backed_grids/array_backed_grids.rst:115
+msgid ""
+"Total of 18 cells are selected.\n"
+"Row 0 has 0 cells selected.\n"
+"There are 7 continuous blocks selected on row 1.\n"
+"Row 1 has 7 cells selected.\n"
+"Row 2 has 0 cells selected.\n"
+"There are 4 continuous blocks selected on row 3.\n"
+"Row 3 has 4 cells selected.\n"
+"Row 4 has 0 cells selected.\n"
+"There are 4 continuous blocks selected on row 5.\n"
+"Row 5 has 4 cells selected.\n"
+"There are 3 continuous blocks selected on row 6.\n"
+"Row 6 has 3 cells selected.\n"
+"Row 7 has 0 cells selected.\n"
+"Row 8 has 0 cells selected.\n"
+"Row 9 has 0 cells selected.\n"
+"Column 0 has 1 cells selected.\n"
+"Column 1 has 3 cells selected.\n"
+"Column 2 has 3 cells selected.\n"
+"Column 3 has 3 cells selected.\n"
+"Column 4 has 3 cells selected.\n"
+"Column 5 has 1 cells selected.\n"
+"Column 6 has 1 cells selected.\n"
+"Column 7 has 1 cells selected.\n"
+"Column 8 has 1 cells selected.\n"
+"Column 9 has 1 cells selected."
+msgstr ""

@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:4
+msgid "Lab 10: Spell Check"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:6
+msgid ""
+"This lab shows how to create a spell checker. To prepare for the lab, "
+"download the files listed below."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:9
+msgid "`AliceInWonderLand200.txt`_ - First chapter of \"Alice In Wonderland\""
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:10
+msgid "`dictionary.txt`_ - A list of words"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:16
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:18
+msgid ""
+"Write a single program in Python that checks the spelling of the first "
+"chapter of \"Alice In Wonderland.\" First use a linear search, then use a "
+"binary search. Print the line number along with the word that does not exist"
+" in the dictionary."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:22
+msgid ""
+"Follow the steps below carefully. If you don't know how to accomplish one "
+"step, ask before moving on to the next step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:26
+msgid "Steps to complete"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:28
+msgid "Find or create a directory for your project."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:29
+msgid "Download the dictionary to the directory."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:30
+msgid "Download first 200 lines of Alice In Wonderland to your directory."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:31
+msgid "Start a Python file for your project."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:32
+msgid ""
+"It is necessary to split apart the words in the story so that they may be "
+"checked individually. It is also necessary to remove extra punctuation and "
+"white-space. Unfortunately, there is not any good way of doing this with "
+"what the book has covered so far. The code to do this is short, but a full "
+"explanation is beyond the scope of this class. Include the following "
+"function in your program. Remember, function definitions should go at the "
+"top of your program just after the imports. We'll call this function in a "
+"later step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:41
+msgid "Function to split apart words in a string and return them as a list"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:41
+msgid ""
+"import re\n"
+"\n"
+"# This function takes in a line of text and returns\n"
+"# a list of words in the line.\n"
+"def split_line(line):\n"
+"    return re.findall('[A-Za-z]+(?:\\'[A-Za-z]+)?',line)"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:51
+msgid ""
+"This code uses a *regular expression* to split the text apart. Regular "
+"expressions are very powerful and relatively easy to learn. If you'd like to"
+" know more about regular expressions, see:"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:55
+msgid "http://regexone.com/"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:57
+msgid ""
+"Read the file ``dictionary.txt`` into an array. Go back to "
+":ref:`reading_into_an_array` for example code on how to do this. This does "
+"*not* have anything to do with the ``import`` command, libraries, or "
+"modules. Don't call the dictionary ``word_list`` or something generic "
+"because that will be confusing. Call it ``dictionary_list`` or a different "
+"term that is specific."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:63
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:88
+msgid "Close the file."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:64
+msgid "Print ``--- Linear Search ---``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:65
+msgid "Open the file ``AliceInWonderLand200.txt``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:66
+msgid ""
+"We are *not* going to read the story into a list. Do not create a new list "
+"here like you did with the dictionary."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:68
+msgid "Start a ``for`` loop to iterate through each line."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:69
+msgid ""
+"Call the ``split_line`` function to split apart the line of text in the "
+"story that was just read in. Store the list that the function returns in a "
+"new variable named ``word_list``. Remember, just calling the function won't "
+"do anything useful. You need to assign a variable equal (``word_list``) to "
+"the result. If you've forgotten now to capture the return value from a "
+"function, see :ref:`capturing_returned_values`."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:75
+msgid ""
+"Start a nested ``for`` loop to iterate through each word in the words list. "
+"This should be inside the ``for`` loop that runs through each line in the "
+"file. (One loop for each line, another loop for each word in the line.)"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:78
+msgid ""
+"Using a linear search, check the current word against the words in the "
+"dictionary. See :ref:`linear_search` for example code on how to do this. The"
+" linear search is just three lines long. When comparing to the word to the "
+"other words in the dictionary, convert the word to uppercase. In your "
+"``while`` loop just use ``word.upper()`` instead of ``word`` for the key. "
+"This linear search will exist inside the ``for`` loop created in the prior "
+"step. We are looping through each word in the dictionary, looking for the "
+"current word in the line that we just read in."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:86
+msgid ""
+"If the word was not found, print the word. Don't print anything if you do "
+"find the word, that would just be annoying."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:89
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:92
+msgid ""
+"Make sure the program runs successfully before moving on to the next step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:90
+msgid ""
+"Create a new variable that will track the line number that you are on. Print"
+" this line number along with the misspelled from the prior step."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:93
+msgid "Print ``--- Binary Search ---``"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:94
+msgid ""
+"The linear search takes quite a while to run. To temporarily disable it, it "
+"may be commented out by using three quotes before and after that block of "
+"code. Ask if you are unsure how to do this."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:97
+msgid ""
+"Repeat the same pattern of code as before, but this time use a binary "
+"search. For the binary search, go back to :ref:`binary_search`. Much of the "
+"code from the linear search may be copied, and it is only necessary to "
+"replace the lines of code that represent the linear search with the binary "
+"search."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:103
+msgid "Note the speed difference between the two searches."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:104
+msgid ""
+"Make sure the linear search is re-enabled, if it was disabled while working "
+"on the binary search."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:106
+msgid "Upload the final program or check in the final program."
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:109
+msgid "Example Run"
+msgstr ""
+
+#: ../../source/labs/lab_10_spell_check/spell_check.rst:111
+msgid ""
+"--- Linear Search ---\n"
+"Line 3  possible misspelled word: Lewis\n"
+"Line 3  possible misspelled word: Carroll\n"
+"Line 46  possible misspelled word: labelled\n"
+"Line 46  possible misspelled word: MARMALADE\n"
+"Line 58  possible misspelled word: centre\n"
+"Line 59  possible misspelled word: learnt\n"
+"Line 69  possible misspelled word: Antipathies\n"
+"Line 73  possible misspelled word: curtsey\n"
+"Line 73  possible misspelled word: CURTSEYING\n"
+"Line 79  possible misspelled word: Dinah'll\n"
+"Line 80  possible misspelled word: Dinah\n"
+"Line 81  possible misspelled word: Dinah\n"
+"Line 89  possible misspelled word: Dinah\n"
+"Line 89  possible misspelled word: Dinah\n"
+"Line 149  possible misspelled word: flavour\n"
+"Line 150  possible misspelled word: toffee\n"
+"Line 186  possible misspelled word: croquet\n"
+"--- Binary Search ---\n"
+"Line 3  possible misspelled word: Lewis\n"
+"Line 3  possible misspelled word: Carroll\n"
+"Line 46  possible misspelled word: labelled\n"
+"Line 46  possible misspelled word: MARMALADE\n"
+"Line 58  possible misspelled word: centre\n"
+"Line 59  possible misspelled word: learnt\n"
+"Line 69  possible misspelled word: Antipathies\n"
+"Line 73  possible misspelled word: curtsey\n"
+"Line 73  possible misspelled word: CURTSEYING\n"
+"Line 79  possible misspelled word: Dinah'll\n"
+"Line 80  possible misspelled word: Dinah\n"
+"Line 81  possible misspelled word: Dinah\n"
+"Line 89  possible misspelled word: Dinah\n"
+"Line 89  possible misspelled word: Dinah\n"
+"Line 149  possible misspelled word: flavour\n"
+"Line 150  possible misspelled word: toffee\n"
+"Line 186  possible misspelled word: croquet"
+msgstr ""

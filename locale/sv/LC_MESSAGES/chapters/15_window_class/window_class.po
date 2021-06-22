@@ -1,0 +1,540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:43+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/15_window_class/window_class.rst:4
+msgid "Using the Window Class"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rstNone
+msgid ".. image:: chapters/15_window_class/window.svg"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:10
+msgid ""
+"We can use a class to represent our program. The Arcade library has a built-"
+"in class that represents a window on the screen. We can create our own child"
+" class and override functions to handle:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:14
+msgid "Start-up and initialization"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:15
+msgid "Drawing the items on our screen"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:16
+msgid "Animating/Updating the positions of items on our screen"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:17
+msgid "Responding to the keyboard"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:18
+msgid "Responding to the mouse"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:20
+msgid ""
+"One of the best ways of learning to program is to look at sample code. This "
+"chapter has several examples designed to learn how to:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:23
+msgid "Open a window using an object-oriented approach"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:24
+msgid "Animating objects"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:25
+msgid "Moving objects with the mouse"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:26
+msgid "Moving objects with the keyboard"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:27
+msgid "Moving objects with the joystick"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:30
+msgid "Creating a Window with a Class"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:32
+msgid ""
+"Up to now, we have used a function called ``open_window`` to open a window. "
+"Here's the code:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:35
+msgid "open_window_with_function.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:35
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 640\n"
+"SCREEN_HEIGHT = 480\n"
+"\n"
+"\n"
+"def main():\n"
+"    arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:41
+msgid ""
+"We can also create an instance of a class called ``Window`` to open a "
+"window. The code is rather straight-forward:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:44
+msgid "open_window_with_object.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:44
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 640\n"
+"SCREEN_HEIGHT = 480\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:50
+msgid ""
+"Function calls, and calls to create an instance of an object look very "
+"similar. The tell-tale clue that we are creating an instance of an object in"
+" the second example is the fact that ``Window`` is capitalized."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:55
+msgid "Extending the Window Class"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:57
+msgid ""
+"Arcade's ``Window`` class has a lot of built-in methods that are "
+"automatically called when needed. Methods for drawing, for responding to the"
+" keyboard, the mouse, and more. You can see all the methods by looking at "
+"the `Window Class Documentation`_. But by default, these methods don't do "
+"anything. We need to change that."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:64
+msgid ""
+"As we learned from the prior chapter, we can extend the functionality of a "
+"class by creating a child class. Therefore, we can extend the ``Window`` "
+"class by creating a child class of it. I'm going to call my child class "
+"``MyGame``."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:71
+msgid "extending_window_class.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:71
+msgid ""
+"import arcade\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"\n"
+"    def __init__(self, width, height, title):\n"
+"\n"
+"        # Call the parent class's init function\n"
+"        super().__init__(width, height, title)\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame(640, 480, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:78
+msgid "Drawing with the Window Class"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:80
+msgid ""
+"To draw with the ``Window`` class, we need to create our own method called "
+"``on_draw``. This will override the default ``on_draw`` method built into "
+"the ``Window`` class. We will put our drawing code in there."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:84
+msgid ""
+"The ``on_draw`` method gets called about 60 times per second. We'll use this"
+" fact when we do animation."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:87
+msgid ""
+"We also need to set the background color. Since we only need to do this "
+"once, we will do that in the ``__init__`` method. No sense setting the "
+"background 60 times per second when it isn't changing."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:91
+msgid "drawing.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:91
+msgid ""
+"import arcade\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"\n"
+"    def __init__(self, width, height, title):\n"
+"\n"
+"        # Call the parent class's init function\n"
+"        super().__init__(width, height, title)\n"
+"\n"
+"        # Set the background color\n"
+"        arcade.set_background_color(arcade.color.ASH_GREY)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Called whenever we need to draw the window. \"\"\"\n"
+"        arcade.start_render()\n"
+"\n"
+"        arcade.draw_circle_filled(50, 50, 15, arcade.color.AUBURN)\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame(640, 480, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:97
+msgid "The result of this program just looks like:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:100
+msgid ".. image:: chapters/15_window_class/draw_example.png"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:102
+msgid "Animating"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:104
+msgid ""
+"By overriding the ``update`` method, we can update our ball position and "
+"animate our scene:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:107
+msgid "simple_animation.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:107
+msgid ""
+"import arcade\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"\n"
+"    def __init__(self, width, height, title):\n"
+"\n"
+"        # Call the parent class's init function\n"
+"        super().__init__(width, height, title)\n"
+"\n"
+"        # Set the background color\n"
+"        arcade.set_background_color(arcade.color.ASH_GREY)\n"
+"\n"
+"        # Attributes to store where our ball is\n"
+"        self.ball_x = 50\n"
+"        self.ball_y = 50\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Called whenever we need to draw the window. \"\"\"\n"
+"        arcade.start_render()\n"
+"\n"
+"        arcade.draw_circle_filled(self.ball_x, self.ball_y, 15, arcade.color.AUBURN)\n"
+"\n"
+"    def update(self, delta_time):\n"
+"        \"\"\" Called to update our objects. Happens approximately 60 times per second.\"\"\"\n"
+"        self.ball_x += 1\n"
+"        self.ball_y += 1\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame(640, 480, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:114
+msgid "Encapsulating Our Animation Object"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:116
+msgid ""
+"It doesn't take much imagination to realize that adding more parameters to "
+"the ball, getting it to bounce, or even having several balls on the screen "
+"would make our ``MyApplication`` class very complex."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:120
+msgid ""
+"If only there was a way to encapsulate all that \"ball\" stuff together. "
+"Wait! There is! Using classes!"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:123
+msgid ""
+"Here is a more complex example, but all the logic for the ball has been "
+"moved into a new ``Ball`` class."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:126
+msgid "ball_class_example.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:126
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 640\n"
+"SCREEN_HEIGHT = 480\n"
+"\n"
+"\n"
+"class Ball:\n"
+"    \"\"\" This class manages a ball bouncing on the screen. \"\"\"\n"
+"\n"
+"    def __init__(self, position_x, position_y, change_x, change_y, radius, color):\n"
+"        \"\"\" Constructor. \"\"\"\n"
+"\n"
+"        # Take the parameters of the init function above, and create instance variables out of them.\n"
+"        self.position_x = position_x\n"
+"        self.position_y = position_y\n"
+"        self.change_x = change_x\n"
+"        self.change_y = change_y\n"
+"        self.radius = radius\n"
+"        self.color = color\n"
+"\n"
+"    def draw(self):\n"
+"        \"\"\" Draw the balls with the instance variables we have. \"\"\"\n"
+"        arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)\n"
+"\n"
+"    def update(self):\n"
+"        \"\"\" Code to control the ball's movement. \"\"\"\n"
+"\n"
+"        # Move the ball\n"
+"        self.position_y += self.change_y\n"
+"        self.position_x += self.change_x\n"
+"\n"
+"        # See if the ball hit the edge of the screen. If so, change direction\n"
+"        if self.position_x < self.radius:\n"
+"            self.change_x *= -1\n"
+"\n"
+"        if self.position_x > SCREEN_WIDTH - self.radius:\n"
+"            self.change_x *= -1\n"
+"\n"
+"        if self.position_y < self.radius:\n"
+"            self.change_y *= -1\n"
+"\n"
+"        if self.position_y > SCREEN_HEIGHT - self.radius:\n"
+"            self.change_y *= -1\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"    \"\"\" My window class. \"\"\"\n"
+"\n"
+"    def __init__(self, width, height, title):\n"
+"        \"\"\" Constructor. \"\"\"\n"
+"\n"
+"        # Call the parent class's init function\n"
+"        super().__init__(width, height, title)\n"
+"        arcade.set_background_color(arcade.color.ASH_GREY)\n"
+"\n"
+"        # Create our ball\n"
+"        self.ball = Ball(50, 50, 3, 3, 15, arcade.color.AUBURN)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Called whenever we need to draw the window. \"\"\"\n"
+"        arcade.start_render()\n"
+"        self.ball.draw()\n"
+"\n"
+"    def update(self, delta_time):\n"
+"        \"\"\" Called to update our objects. Happens approximately 60 times per second.\"\"\"\n"
+"        self.ball.update()\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame(640, 480, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:131
+msgid "Here it is in action:"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:134
+msgid ".. image:: chapters/15_window_class/ball_class_example.gif"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:136
+msgid "Animating a List"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:138
+msgid ""
+"Wouldn't it be nice to animate multiple items? How do we track multiple "
+"items? With a list! This takes our previous example and animates three balls"
+" at once."
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:141
+msgid "ball_list_example.py"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:141
+msgid ""
+"import arcade\n"
+"\n"
+"SCREEN_WIDTH = 640\n"
+"SCREEN_HEIGHT = 480\n"
+"\n"
+"\n"
+"class Ball:\n"
+"    \"\"\" This class manages a ball bouncing on the screen. \"\"\"\n"
+"\n"
+"    def __init__(self, position_x, position_y, change_x, change_y, radius, color):\n"
+"        \"\"\" Constructor. \"\"\"\n"
+"\n"
+"        # Take the parameters of the init function above, and create instance variables out of them.\n"
+"        self.position_x = position_x\n"
+"        self.position_y = position_y\n"
+"        self.change_x = change_x\n"
+"        self.change_y = change_y\n"
+"        self.radius = radius\n"
+"        self.color = color\n"
+"\n"
+"    def draw(self):\n"
+"        \"\"\" Draw the balls with the instance variables we have. \"\"\"\n"
+"        arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)\n"
+"\n"
+"    def update(self):\n"
+"        \"\"\" Code to control the ball's movement. \"\"\"\n"
+"\n"
+"        # Move the ball\n"
+"        self.position_y += self.change_y\n"
+"        self.position_x += self.change_x\n"
+"\n"
+"        # See if the ball hit the edge of the screen. If so, change direction\n"
+"        if self.position_x < self.radius:\n"
+"            self.change_x *= -1\n"
+"\n"
+"        if self.position_x > SCREEN_WIDTH - self.radius:\n"
+"            self.change_x *= -1\n"
+"\n"
+"        if self.position_y < self.radius:\n"
+"            self.change_y *= -1\n"
+"\n"
+"        if self.position_y > SCREEN_HEIGHT - self.radius:\n"
+"            self.change_y *= -1\n"
+"\n"
+"\n"
+"class MyGame(arcade.Window):\n"
+"\n"
+"    def __init__(self, width, height, title):\n"
+"\n"
+"        # Call the parent class's init function\n"
+"        super().__init__(width, height, title)\n"
+"        arcade.set_background_color(arcade.color.ASH_GREY)\n"
+"\n"
+"        # Create a list for the balls\n"
+"        self.ball_list = []\n"
+"\n"
+"        # Add three balls to the list\n"
+"        ball = Ball(50, 50, 3, 3, 15, arcade.color.AUBURN)\n"
+"        self.ball_list.append(ball)\n"
+"\n"
+"        ball = Ball(100, 150, 2, 3, 15, arcade.color.PURPLE_MOUNTAIN_MAJESTY)\n"
+"        self.ball_list.append(ball)\n"
+"\n"
+"        ball = Ball(150, 250, -3, -1, 15, arcade.color.FOREST_GREEN)\n"
+"        self.ball_list.append(ball)\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\" Called whenever we need to draw the window. \"\"\"\n"
+"        arcade.start_render()\n"
+"\n"
+"        # Use a \"for\" loop to pull each ball from the list, then call the draw\n"
+"        # method on that ball.\n"
+"        for ball in self.ball_list:\n"
+"            ball.draw()\n"
+"\n"
+"    def update(self, delta_time):\n"
+"        \"\"\" Called to update our objects. Happens approximately 60 times per second.\"\"\"\n"
+"\n"
+"        # Use a \"for\" loop to pull each ball from the list, then call the update\n"
+"        # method on that ball.\n"
+"        for ball in self.ball_list:\n"
+"            ball.update()\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyGame(640, 480, \"Drawing Example\")\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/15_window_class/window_class.rst:148
+msgid ".. image:: chapters/15_window_class/ball_list_example.gif"
+msgstr ""

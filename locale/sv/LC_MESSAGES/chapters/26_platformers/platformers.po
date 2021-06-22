@@ -1,0 +1,648 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/26_platformers/platformers.rst:4
+msgid "Platformers"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:8
+msgid ""
+"This chapter is out-dated. See the `Simple Platformer Tutorial "
+"<https://arcade.academy/examples/platform_tutorial/index.html>`_. Step 9 is "
+"a nice starting point. For more advanced usage, see `Platformer with Physics"
+" <https://arcade.academy/tutorials/pymunk_platformer/index.html>`_."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:13
+msgid ""
+"Ever wanted to create your own platformer? It isn't too hard! Here's an "
+"example to get started."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:17
+msgid "Map File"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:20
+msgid "Creating The Map"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:22
+msgid ""
+"First, we need a map. This is a \"map\" file created with the Tiled_ "
+"program. The program is free. You can download it and use it to create your "
+"map file."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:25
+msgid "In this map file the numbers represent:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:30
+msgid "Number"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:30
+msgid "Item"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:32
+msgid "-1"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:32
+msgid "Empty square"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:33
+msgid "0"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:33
+msgid "Crate"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:34
+msgid "1"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:34
+msgid "Left grass corner"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:35
+msgid "2"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:35
+msgid "Middle grass corner"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:36
+msgid "3"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:36
+msgid "Right grass corner"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:39
+msgid "You can download these tiles (originally from kenney.nl) here:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:42
+msgid ".. image:: chapters/26_platformers/boxCrate_double.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:44
+msgid ".. image:: chapters/26_platformers/grassLeft.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:46
+msgid ".. image:: chapters/26_platformers/grassMid.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:48
+msgid ".. image:: chapters/26_platformers/grassRight.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:49
+msgid "Of course, you'll need a character to jump around the map:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:52
+msgid ".. image:: chapters/26_platformers/character.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:53
+msgid "Here is the map file:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:55
+msgid "map.csv"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:55
+msgid ""
+"-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,2,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,2,3,-1,-1,-1,-1,-1,-1,-1,1,2,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0\n"
+"0,-1,-1,-1,1,2,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,0\n"
+"0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1,-1,-1,-1,1,2,3,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,-1,-1,-1,-1,-1,0\n"
+"0,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,0,-1,-1,-1,-1,-1,0,0,0,0,0,-1,-1,-1,-1,0\n"
+"1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3\n"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:60
+msgid ""
+"The Tiled_ program takes some getting used to. You start off with a screen "
+"like this, and you can create a new map here:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/tiled_new_map.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:66
+msgid ""
+"Then set up your map like this, adjusting the size of the map and the size "
+"of your images accordingly. (All your images need to be the same size. Don't"
+" guess this number, look at the properties of the image and find how big it "
+"is.)"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/tiled_new_file.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:73
+msgid ""
+"Most of the tiles from kenney.nl are 128x128 pixels. In the image above I've"
+" got a 7 tile high, by 50 pixel wide side-scroll map."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:76
+msgid ""
+"After this, you have to create a new \"tile set.\" Find the button for that:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/tiled_new_tileset_button.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:81
+msgid "I use these settings:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/new_tileset.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:86
+msgid ""
+"You can add the images as tiles to your tileset. I don't find this obvious, "
+"but you click the wrench icon, then the plus icon:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/edit_tileset.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:93
+msgid ""
+"These \"tiles\" will be all the images for your map, and the numbers they "
+"associate with:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/tiled_new_tileset.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:99
+msgid ""
+"The numbers of the tiles correspond to the order you added the tiles. I "
+"don't think you can change the mapping after you create the tileset."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:102
+msgid "Next, you \"paint\" your map:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rstNone
+msgid ".. image:: chapters/26_platformers/tiled_make_map.png"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:107
+msgid "When you are done, you can \"Export as\" a CSV file."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:110
+msgid "Reading The Map"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:112
+msgid ""
+"Next, we want to read in this grid of numbers where each number is separated"
+" by a comma. We know how to read in a file, but how do you process a comma "
+"delimited file?"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:116
+msgid "We've learned how to take a string and use the functions:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:118
+msgid "``upper()``"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:119
+msgid "``lower()``"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:120
+msgid "``strip()``"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:122
+msgid ""
+"There's another function called ``split()``. This function will split apart "
+"a string into a list based on a delimiter. For example:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:125
+msgid ""
+"# A comma delimited string of numbers\n"
+"my_text_string = \"23,34,1,3,5,10\"\n"
+"\n"
+"# Split the string into a list, based on the comma as a delimiter\n"
+"my_list = my_text_string.split(\",\")\n"
+"\n"
+"# Print the result\n"
+"print(my_list)"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:137
+msgid "This prints:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:139
+msgid "['23', '34', '1', '3', '5', '10']"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:143
+msgid ""
+"Which is close to what we want, except the list is a list of text, not "
+"numbers."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:145
+msgid "We can convert the list by:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:147
+msgid ""
+"# Convert from list of strings to list of integers\n"
+"for i in range(len(my_list)):\n"
+"    my_list[i] = int(my_list[i])"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:153
+msgid ""
+"We haven't covered it a lot, but you can also use ``enumerate`` to do the "
+"same thing:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:156
+msgid ""
+"# Convert from list of strings to list of integers\n"
+"for index, item in enumerate(my_list):\n"
+"    my_list[index] = int(item)"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:162
+msgid "Or use a list comprehension:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:164
+msgid ""
+"# Convert from list of strings to list of integers\n"
+"my_list = [int(item) for item in my_list]"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:169
+msgid ""
+"Python does have built-in code for working with csv files. If you want, you "
+"can read about the `csv library` in the official documentation."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:175
+msgid "Platformer Physics Engine"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:177
+msgid ""
+"In prior chapters, we've used the ``PhysicsEngineSimple`` to keep from "
+"running through walls. There's another engine called "
+"``PhysicsEnginePlatformer`` for platformers."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:181
+msgid "This engine has two important additions:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:183
+#: ../../source/chapters/26_platformers/platformers.rst:187
+msgid "Gravity"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:184
+msgid "``can_jump`` method"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:189
+msgid ""
+"Creating the platformer physics engine requires a gravity constant. I "
+"recommend 0.5 to start with. This is your acceleration in pixels per frame."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:192
+msgid ""
+"self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,\n"
+"                                                     self.wall_list,\n"
+"                                                     gravity_constant=GRAVITY)"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:199
+msgid "Jumping"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:201
+msgid ""
+"Also, you often need to know if there is ground beneath your character to "
+"know if she can jump. The physics engine has a method for this:"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:204
+msgid ""
+"if self.physics_engine.can_jump():\n"
+"    self.player_sprite.change_y = JUMP_SPEED"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:211
+msgid "Python Program"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:213
+msgid ""
+"In the highlighted code for the listing below, see how we've implemented "
+"these concepts to create a platformer"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:217
+msgid "Platformer example, simple"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:217
+msgid ""
+"\"\"\"\n"
+"Load a map stored in csv format, as exported by the program 'Tiled.'\n"
+"\n"
+"Artwork from: http://kenney.nl\n"
+"Tiled available from: http://www.mapeditor.org/\n"
+"\"\"\"\n"
+"import arcade\n"
+"\n"
+"SPRITE_SCALING = 0.5\n"
+"\n"
+"SCREEN_WIDTH = 800\n"
+"SCREEN_HEIGHT = 600\n"
+"\n"
+"# How many pixels to keep as a minimum margin between the character\n"
+"# and the edge of the screen.\n"
+"VIEWPORT_MARGIN = 40\n"
+"RIGHT_MARGIN = 150\n"
+"\n"
+"TILE_SIZE = 128\n"
+"SCALED_TILE_SIZE = TILE_SIZE * SPRITE_SCALING\n"
+"MAP_HEIGHT = 7\n"
+"\n"
+"# Physics\n"
+"MOVEMENT_SPEED = 5\n"
+"JUMP_SPEED = 14\n"
+"GRAVITY = 0.5\n"
+"\n"
+"\n"
+"def get_map(filename):\n"
+"    \"\"\"\n"
+"    This function loads an array based on a map stored as a list of\n"
+"    numbers separated by commas.\n"
+"    \"\"\"\n"
+"\n"
+"    # Open the file\n"
+"    map_file = open(filename)\n"
+"\n"
+"    # Create an empty list of rows that will hold our map\n"
+"    map_array = []\n"
+"\n"
+"    # Read in a line from the file\n"
+"    for line in map_file:\n"
+"\n"
+"        # Strip the whitespace, and \\n at the end\n"
+"        line = line.strip()\n"
+"\n"
+"        # This creates a list by splitting line everywhere there is a comma.\n"
+"        map_row = line.split(\",\")\n"
+"\n"
+"        # The list currently has all the numbers stored as text, and we want it\n"
+"        # as a number. (e.g. We want 1 not \"1\"). So loop through and convert\n"
+"        # to an integer.\n"
+"        for index, item in enumerate(map_row):\n"
+"            map_row[index] = int(item)\n"
+"\n"
+"        # Now that we've completed processing the row, add it to our map array.\n"
+"        map_array.append(map_row)\n"
+"\n"
+"    # Done, return the map.\n"
+"    return map_array\n"
+"\n"
+"\n"
+"class MyWindow(arcade.Window):\n"
+"    \"\"\" Main application class. \"\"\"\n"
+"\n"
+"    def __init__(self):\n"
+"        \"\"\"\n"
+"        Initializer\n"
+"        \"\"\"\n"
+"        # Call the parent class\n"
+"        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT)\n"
+"\n"
+"        # Sprite lists\n"
+"        self.player_list = None\n"
+"        self.wall_list = None\n"
+"\n"
+"        # Set up the player\n"
+"        self.player_sprite = None\n"
+"\n"
+"        # Physics engine\n"
+"        self.physics_engine = None\n"
+"\n"
+"        # Used for scrolling map\n"
+"        self.view_left = 0\n"
+"        self.view_bottom = 0\n"
+"\n"
+"    def setup(self):\n"
+"        \"\"\" Set up the game and initialize the variables. \"\"\"\n"
+"\n"
+"        # Sprite lists\n"
+"        self.player_list = arcade.SpriteList()\n"
+"        self.wall_list = arcade.SpriteList()\n"
+"\n"
+"        # Set up the player\n"
+"        self.player_sprite = arcade.Sprite(\"character.png\", SPRITE_SCALING)\n"
+"\n"
+"        # Starting position of the player\n"
+"        self.player_sprite.center_x = 90\n"
+"        self.player_sprite.center_y = 270\n"
+"        self.player_list.append(self.player_sprite)\n"
+"\n"
+"        # Get a 2D array made of numbers based on the map\n"
+"        map_array = get_map(\"map.csv\")\n"
+"\n"
+"        # Now that we've got the map, loop through and create the sprites\n"
+"        for row_index in range(len(map_array)):\n"
+"            for column_index in range(len(map_array[row_index])):\n"
+"\n"
+"                item = map_array[row_index][column_index]\n"
+"\n"
+"                # For this map, the numbers represent:\n"
+"                # -1 = empty\n"
+"                # 0  = box\n"
+"                # 1  = grass left edge\n"
+"                # 2  = grass middle\n"
+"                # 3  = grass right edge\n"
+"                if item == 0:\n"
+"                    wall = arcade.Sprite(\"boxCrate_double.png\", SPRITE_SCALING)\n"
+"                elif item == 1:\n"
+"                    wall = arcade.Sprite(\"grassLeft.png\", SPRITE_SCALING)\n"
+"                elif item == 2:\n"
+"                    wall = arcade.Sprite(\"grassMid.png\", SPRITE_SCALING)\n"
+"                elif item == 3:\n"
+"                    wall = arcade.Sprite(\"grassRight.png\", SPRITE_SCALING)\n"
+"\n"
+"                if item >= 0:\n"
+"                    # Calculate where the sprite goes\n"
+"                    wall.left = column_index * SCALED_TILE_SIZE\n"
+"                    wall.top = (MAP_HEIGHT - row_index) * SCALED_TILE_SIZE\n"
+"\n"
+"                    # Add the sprite\n"
+"                    self.wall_list.append(wall)\n"
+"\n"
+"        # Create out platformer physics engine with gravity\n"
+"        self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,\n"
+"                                                             self.wall_list,\n"
+"                                                             gravity_constant=GRAVITY)\n"
+"\n"
+"        # Set the background color\n"
+"        arcade.set_background_color(arcade.color.AMAZON)\n"
+"\n"
+"        # Set the view port boundaries\n"
+"        # These numbers set where we have 'scrolled' to.\n"
+"        self.view_left = 0\n"
+"        self.view_bottom = 0\n"
+"\n"
+"    def on_draw(self):\n"
+"        \"\"\"\n"
+"        Render the screen.\n"
+"        \"\"\"\n"
+"\n"
+"        # This command has to happen before we start drawing\n"
+"        arcade.start_render()\n"
+"\n"
+"        # Draw all the sprites.\n"
+"        self.wall_list.draw()\n"
+"        self.player_list.draw()\n"
+"\n"
+"    def on_key_press(self, key, modifiers):\n"
+"        \"\"\"\n"
+"        Called whenever the mouse moves.\n"
+"        \"\"\"\n"
+"        if key == arcade.key.UP:\n"
+"            # This line below is new. It checks to make sure there is a platform underneath\n"
+"            # the player. Because you can't jump if there isn't ground beneath your feet.\n"
+"            if self.physics_engine.can_jump():\n"
+"                self.player_sprite.change_y = JUMP_SPEED\n"
+"        elif key == arcade.key.LEFT:\n"
+"            self.player_sprite.change_x = -MOVEMENT_SPEED\n"
+"        elif key == arcade.key.RIGHT:\n"
+"            self.player_sprite.change_x = MOVEMENT_SPEED\n"
+"\n"
+"    def on_key_release(self, key, modifiers):\n"
+"        \"\"\"\n"
+"        Called when the user presses a mouse button.\n"
+"        \"\"\"\n"
+"        if key == arcade.key.LEFT or key == arcade.key.RIGHT:\n"
+"            self.player_sprite.change_x = 0\n"
+"\n"
+"    def update(self, delta_time):\n"
+"        \"\"\" Movement and game logic \"\"\"\n"
+"\n"
+"        self.physics_engine.update()\n"
+"\n"
+"        # --- Manage Scrolling ---\n"
+"\n"
+"        # Track if we need to change the view port\n"
+"\n"
+"        changed = False\n"
+"\n"
+"        # Scroll left\n"
+"        left_bndry = self.view_left + VIEWPORT_MARGIN\n"
+"        if self.player_sprite.left < left_bndry:\n"
+"            self.view_left -= left_bndry - self.player_sprite.left\n"
+"            changed = True\n"
+"\n"
+"        # Scroll right\n"
+"        right_bndry = self.view_left + SCREEN_WIDTH - RIGHT_MARGIN\n"
+"        if self.player_sprite.right > right_bndry:\n"
+"            self.view_left += self.player_sprite.right - right_bndry\n"
+"            changed = True\n"
+"\n"
+"        # Scroll up\n"
+"        top_bndry = self.view_bottom + SCREEN_HEIGHT - VIEWPORT_MARGIN\n"
+"        if self.player_sprite.top > top_bndry:\n"
+"            self.view_bottom += self.player_sprite.top - top_bndry\n"
+"            changed = True\n"
+"\n"
+"        # Scroll down\n"
+"        bottom_bndry = self.view_bottom + VIEWPORT_MARGIN\n"
+"        if self.player_sprite.bottom < bottom_bndry:\n"
+"            self.view_bottom -= bottom_bndry - self.player_sprite.bottom\n"
+"            changed = True\n"
+"\n"
+"        # If we need to scroll, go ahead and do it.\n"
+"        if changed:\n"
+"            arcade.set_viewport(self.view_left,\n"
+"                                SCREEN_WIDTH + self.view_left,\n"
+"                                self.view_bottom,\n"
+"                                SCREEN_HEIGHT + self.view_bottom)\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyWindow()\n"
+"    window.setup()\n"
+"\n"
+"    arcade.run()\n"
+"\n"
+"\n"
+"main()\n"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:224
+msgid "Other Examples"
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:226
+msgid ""
+"If you are looking for platforms that move, see `Sprite Moving Platforms`_."
+msgstr ""
+
+#: ../../source/chapters/26_platformers/platformers.rst:227
+msgid ""
+"If you are looking to be able to create ramps you can run up and down, see "
+"`Sprite Ramps`_."
+msgstr ""

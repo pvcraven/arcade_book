@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:4
+msgid "Lab 9: Sprites and Walls"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:6
+msgid ""
+"Goal: Create a landscape of wall objects that the user must navigate around "
+"to collect coins. This will help practice using ``for`` loops to create and "
+"position multiple items."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:11
+msgid ".. image:: labs/lab_09_sprites_and_walls/lab9.gif"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:12
+msgid "Step 1: Start with one these examples:"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:14
+msgid "`Move with Walls`_ (easiest, no scrolling)"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:15
+msgid "`Move with a Scrolling Screen`_ (recommended)"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:16
+msgid "`Move Between Different Rooms`_ (more complex)"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:18
+msgid ""
+"Step 2: If you start with the examples, delete the current wall placement "
+"code. You want to create your own."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:20
+msgid ""
+"Step 3: Create a more complex arrangement of walls. Make sure the walls "
+"don't allow the user to go off-screen. This is worth 6 points, based on how "
+"complex the arrangement. See :ref:`individual_wall_placement`, "
+":ref:`loop_wall_placement`, and :ref:`list_wall_placement` for ideas. Just "
+"DON'T do the same thing as examples. Make it your own."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:26
+msgid ""
+"Step 4: Update the graphics. Use multiple types of blocks for the walls. "
+"(See note below.) Change the character. This is worth 4 points, one point "
+"for each graphic used that wasn't part of the base example. Remember to put "
+"a quick citation in your program just before you load graphics or sounds."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:34
+msgid ""
+"If you have more than one type of wall block, that's great. But you don't "
+"need more than one wall list. The physics engine requires all walls be kept "
+"in the same list."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:39
+msgid ""
+"Step 5: Add coins (or something) for the user to collect. 4 points, based on"
+" the complexity of the coin layout. Remember, you can place coins like we "
+"placed wall blocks. If you randomly place coins, you might end up with coins"
+" on top of walls. See the \"Important Part\" around line 83 or so of the "
+"example `sprite_no_coins_on_walls.py "
+"<http://arcade.academy/examples/sprite_no_coins_on_walls.html>`_ for how to "
+"avoid this."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:46
+msgid ""
+"Step 6: Keep score of how many coins were collected, and display on-screen. "
+"4 points."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:48
+msgid ""
+"Step 7: Add a sound to play each time the user collects a coin. 2 points."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:51
+msgid "Don't move the player twice!"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:53
+msgid ""
+"The command ``self.physics_engine.update()`` moves the player while checking"
+" for walls. The command ``self.all_sprites_list.update()`` will move the "
+"player WITHOUT checking for walls. Don't do both commands. You'll end up "
+"\"walking through walls.\" If you have other sprites to update, update only "
+"those sprites. For example: ``self.coin_list.update()``."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:61
+msgid "Additional Challenges"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:63
+msgid ""
+"These aren't required for the lab, but I've had students ask in prior years "
+"how to do these:"
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:66
+msgid ""
+"If you are interested in having the player be able to face left or right, "
+"see the `Sprite Face Left or Right "
+"<http://arcade.academy/examples/sprite_face_left_or_right.html>`_ example."
+msgstr ""
+
+#: ../../source/labs/lab_09_sprites_and_walls/sprites_and_walls.rst:70
+msgid ""
+"Want to animate walking? Look at the `Animate your sprites "
+"<http://arcade.academy/examples/sprite_move_animation.html>`_. example."
+msgstr ""

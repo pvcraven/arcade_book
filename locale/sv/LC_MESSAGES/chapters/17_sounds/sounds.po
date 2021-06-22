@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:44+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/17_sounds/sounds.rst:4
+msgid "Sound Effects"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rstNone
+msgid ".. image:: chapters/17_sounds/sounds.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:10
+msgid "Adding sound to your game isn't too hard. There are two steps:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:12
+msgid "Load the sound"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:13
+msgid "Play the sound"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:15
+msgid ""
+"For these examples, I'm using a sound file called ``laser.ogg`` that you can"
+" `download here <../../_static/laser.ogg>`_. Make sure you save the file in "
+"the same directory as any Python program that tries to use it."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:20
+msgid "Loading Sounds"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rstNone
+msgid ".. image:: chapters/17_sounds/loading_sound.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:26
+msgid ""
+"The code below creates a new variable called ``laser_sound``. It calls "
+"arcades ``load_sound`` function. It passes the filename of our sound."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:29
+msgid "laser_sound = arcade.load_sound(\"laser.ogg\")"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:33
+msgid ""
+"For this to work, you need to have a sound downloaded and named "
+"``laser.ogg`` in the same directory as your Python file. The computer will "
+"not find the sound if it is in a different directory."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:37
+msgid ""
+"This loads the sound, but does not play it. We only want to load the sound "
+"once. We don't want to load the sound off the disk every time we play it. It"
+" can be kept in memory."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:42
+msgid "Playing Sounds"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rstNone
+msgid ".. image:: chapters/17_sounds/headphones.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:48
+msgid ""
+"The code to play sounds is straight-forward. Just call the ``play_sound`` "
+"function, and pass in the variable that we set equal to the sound we loaded:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:51
+msgid "arcade.play_sound(laser_sound)"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:55
+msgid ""
+"Putting the two together, you might think we could do this to play sounds:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:57
+msgid ""
+"import arcade\n"
+"\n"
+"laser_sound = arcade.load_sound(\"laser.ogg\")\n"
+"arcade.play_sound(laser_sound)"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:64
+msgid ""
+"But that doesn't work. The program ends before the sound has a chance to "
+"play. The ``play_sound`` button doesn't pause while the sound plays, it "
+"returns right away and keeps going. This was a similar issue that we had "
+"when we opened a window, and we can solve it the same way:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:69
+msgid ""
+"import arcade\n"
+"\n"
+"arcade.open_window(300, 300, \"Sound Demo\")\n"
+"laser_sound = arcade.load_sound(\"laser.ogg\")\n"
+"arcade.play_sound(laser_sound)\n"
+"arcade.run()"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:79
+msgid ""
+"For this reason, I recommend loading the sound in the ``__init__`` method of"
+" the class that will play the sound."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:83
+msgid "Triggering Sounds"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rstNone
+msgid ".. image:: chapters/17_sounds/switch.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:89
+msgid ""
+"We want to play the sound when something happens. So this example loads the "
+"sound once during the ``__init__``. When the user hits the space bar, that "
+"is when we trigger the sound to play."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:93
+msgid ""
+"import arcade\n"
+"\n"
+"\n"
+"class MyApplication(arcade.Window):\n"
+"\n"
+"    def __init__(self, width, height):\n"
+"        super().__init__(width, height, \"Trigger Sound With Key\")\n"
+"\n"
+"        # Load the sound when the application starts\n"
+"        self.laser_sound = arcade.load_sound(\"laser.ogg\")\n"
+"\n"
+"    def on_key_press(self, key, modifiers):\n"
+"\n"
+"        # If the user hits  the space bar, play the sound that we loaded\n"
+"        if key == arcade.key.SPACE:\n"
+"            arcade.play_sound(self.laser_sound)\n"
+"\n"
+"\n"
+"def main():\n"
+"    window = MyApplication(300, 300)\n"
+"    arcade.run()\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:122
+msgid "Finding Sounds"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:124
+msgid "Great places to find free sounds to use in your program:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:126
+msgid ""
+"`OpenGameArt.org <http://opengameart.org/art-search-"
+"advanced?keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:127
+msgid ""
+"`www.freesound.org <http://www.freesound.org/>`_ is ok, but requires a "
+"login, which is a pain."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:129
+msgid ""
+"`Kenney.nl <http://kenney.nl/assets?q=audio>`_ has a few free sound packs "
+"you can download, and several that are cheap."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:133
+msgid "Sound File Formats"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rstNone
+msgid ".. image:: chapters/17_sounds/waves.svg"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:139
+msgid ""
+"There are several types of `sound file formats`_ that you can find sounds "
+"in:"
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:143
+msgid ""
+"``.wav`` - This is a raw \"wave\" format. The sound is not compressed at "
+"all. You do not need a special library to decompress the sound, but the "
+"sound file itself can be rather large."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:145
+msgid ""
+"``.mp3`` - MPEG Layer III Audio (mp3) is one of the most popular compressed "
+"sound file formats. This file format is what enabled on-line music to become"
+" popular. However some of the compression algorithms have patents on them, "
+"making it not as suitable for free software."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:148
+msgid "``.m4a`` - Apple's file format for compressed, but unprotected audio."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:149
+msgid ""
+"``.ogg`` - A open-source sound file that uses Ogg-Vorbis for compression. A "
+"less popular but patent-free method of sound storage."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:152
+msgid ""
+"Arcade should be able to play files in either the mp3 or ogg format. If you "
+"have issues getting it to work, try converting the sound to a raw wav "
+"format."
+msgstr ""
+
+#: ../../source/chapters/17_sounds/sounds.rst:155
+msgid ""
+"If you need to convert file formats, or trim a sound file, I suggest using "
+"the program Audacity_."
+msgstr ""

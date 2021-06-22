@@ -1,0 +1,917 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2021-04-07 14:21+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:4
+#: ../../source/chapters/11a_for_loops/for_loops.rst:124
+msgid "For Loops"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ""
+".. image:: images/video.svg\n"
+"   :alt: Video link"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:11
+msgid "Video: https://youtu.be/pwl02EpuQSw"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:12
+msgid "Slides: https://slides.com/paulcraven/11-for-loops"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/loop2.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:18
+msgid ""
+"In the last chapter, we added the ``if`` statement to our skill set, "
+"enabling the computer to choose which set of code to run. In this chapter we"
+" learn how to **loop**. Rather than have our programs run straight though, "
+"we can run a section of code however many times we like."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:24
+msgid ""
+"This chapter covers ``for`` loops which allow us to  loop a certain *number*"
+" of times. The next chapter covers ``while`` loops which will loop until a "
+"certain *condition* (such as game over) occurs."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:30
+msgid "Introduction to Looping"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:32
+msgid ""
+"Most games loop. Most programs of *any* kind loop. Take for example a simple"
+" number guessing game. The computer thinks of a number from 1 to 100, and "
+"the player tries to guess it."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:37
+msgid ""
+"This is an easy game to program on the computer using loops. Start with code"
+" that will take in a guess from the user, and then tell the user if they are"
+" too high, too low, or correct using the ``if`` statements we learned about "
+"in the last chapter. Then, we just need to loop that code until the user "
+"guess correctly, or runs out of guesses."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:44
+msgid "Here's an example run of just such a program:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:46
+msgid ""
+"Hi! I'm thinking of a random number between 1 and 100.\n"
+"--- Attempt 1\n"
+"Guess what number I am thinking of: 50\n"
+"Too high.\n"
+"--- Attempt 2\n"
+"Guess what number I am thinking of: 25\n"
+"Too high.\n"
+"--- Attempt 3\n"
+"Guess what number I am thinking of: 17\n"
+"Too high.\n"
+"--- Attempt 4\n"
+"Guess what number I am thinking of: 9\n"
+"Too low.\n"
+"--- Attempt 5\n"
+"Guess what number I am thinking of: 14\n"
+"Too high.\n"
+"--- Attempt 6\n"
+"Guess what number I am thinking of: 12\n"
+"Too high.\n"
+"--- Attempt 7\n"
+"Guess what number I am thinking of: 10\n"
+"Too low.\n"
+"Aw, you ran out of tries. The number was 11."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:72
+msgid "(The code for this program: :ref:`number-guessing-game-code`)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:74
+msgid ""
+"Wait, what does this simple text game have to do with advanced graphical "
+"games? A lot. You may be familiar with the frames-per-second (FPS) statistic"
+" that games show. The FPS represents the number of times the computer "
+"updates the screen each second. Each *frame* in a video game is one time "
+"through a loop.  The higher the rate, the smoother the game. (Although an "
+"FPS rate past 60 is faster than most screens can update, so there's not much"
+" point to go faster.) The figure below shows the game Eve Online and a graph"
+" showing how many frames per second the computer displaying."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:87
+msgid ".. image:: chapters/11a_for_loops/fps.png"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:87
+msgid "FPS in video games"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:89
+msgid "The loop in these games works like the flowchart this figure:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:93
+msgid ".. image:: chapters/11a_for_loops/game_loop.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:93
+msgid "Game loop"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:95
+msgid "The inside of these loops have three common steps:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:97
+msgid "Get user input."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:98
+msgid "Perform calculations."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:99
+msgid "Output the result."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:101
+msgid ""
+"Then we loop this 60 times per second until the user asks to close the "
+"program."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:103
+msgid ""
+"There can even be loops *inside* of loops. Take a look at the \"Draw "
+"Everything Loop\" flowchart below. This set of code loops through and draws "
+"each object in the game. You can put this loop inside the larger loop that "
+"draws each frame of the game."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:111
+msgid ".. image:: chapters/11a_for_loops/draw_everything.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:111
+msgid "Draw Everything Loop"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:113
+msgid ""
+"There are two major types of loops in Python, ``for`` loops and ``while`` "
+"loops. If you want to repeat a certain number of times, use a ``for`` loop. "
+"If you want to repeat until something happens (like the user hits the quit "
+"button) then use a ``while`` loop."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:118
+msgid ""
+"For example, a ``for`` loop can be used to print all student records, since "
+"the computer knows how many students there are. We could wait for the user "
+"to click the mouse button with a ``while`` loop, because we don't know how "
+"many times we'll have to loop before that happens."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/loop.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:130
+msgid ""
+"This ``for`` loop example runs the ``print`` statement five times. It could "
+"just as easily run 100 or 1,000,000 times by changing the 5 to the desired "
+"number. Note the similarities of how the ``for`` loop is written to the "
+"``if`` statement. Both end in a colon, and both use indentation to specify "
+"which lines are affected by the statement."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:136
+msgid "Loop to print five times"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:136
+msgid ""
+"for i in range(5):\n"
+"    print(\"I will not chew gum in class.\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:143
+msgid ""
+"Go ahead and enter it into the computer. You should get output like this. "
+"Try adjusting the number of times that it loops."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:146
+msgid ""
+"I will not chew gum in class.\n"
+"I will not chew gum in class.\n"
+"I will not chew gum in class.\n"
+"I will not chew gum in class.\n"
+"I will not chew gum in class."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:154
+msgid ""
+"The ``i`` on line 1 is a variable that keeps track of how many times the "
+"program has looped, sometimes called the **counter** variable. It is a "
+"regular variable, and can be named any legal variable name. Programmers "
+"sometimes use ``i`` as for the variable name, because the ``i`` is short for"
+" *increment* and that's often what the variable does. This variable helps "
+"track when the loop should end."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:161
+msgid ""
+"The ``range`` function controls how many times the code in the loop is run. "
+"In this case, five times."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:164
+msgid ""
+"The next example code will print \"Please,\" five times and \"Can I go to "
+"the mall?\" only once. \"Can I go to the mall?\" is not indented so it is "
+"not part of the ``for`` loop and will not print until the ``for`` loop "
+"completes."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:168
+msgid ""
+"for i in range(5):\n"
+"    print(\"Please,\")\n"
+"print(\"Can I go to the mall?\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:175
+msgid "Go ahead and enter the code and verify its output."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:177
+msgid ""
+"Please,\n"
+"Please,\n"
+"Please,\n"
+"Please,\n"
+"Please,\n"
+"Can I go to the mall?"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:186
+msgid ""
+"This next code example takes the prior example and *indents* line 3. This "
+"change will cause the program to print *both* \"Please,\" and \"Can I go to "
+"the mall?\" five times. Since the statement has been indented \"Can I go to "
+"the mall?\" is now part of the ``for`` loop and will repeat five times just "
+"like the word \"Please,\"."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:191
+msgid ""
+"for i in range(5):\n"
+"    print(\"Please,\")\n"
+"    print(\"Can I go to the mall?\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:198
+msgid "Here's the output of that program:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:200
+msgid ""
+"Please,\n"
+"Can I go to the mall?\n"
+"Please,\n"
+"Can I go to the mall?\n"
+"Please,\n"
+"Can I go to the mall?\n"
+"Please,\n"
+"Can I go to the mall?\n"
+"Please,\n"
+"Can I go to the mall?"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:213
+msgid ""
+"You aren't stuck using a specific number with the ``range`` function. This "
+"next example asks the *user* how many times to print using the ``input`` "
+"function we talked about last chapter in :ref:`input-function`. Go ahead and"
+" try the program out."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:218
+msgid "Loop according to the user input"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:218
+msgid ""
+"# Ask the user how many times to print\n"
+"repetitions = int(input(\"How many times should I repeat? \"))\n"
+"\n"
+"# Loop that many times\n"
+"for i in range(repetitions):\n"
+"    print(\"I will not chew gum in class.\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:229
+msgid ""
+"You could also use what we learned about functions, and take in the value by"
+" a parameter as shown in this example:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:232
+msgid "Loop according to a function parameter"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:232
+msgid ""
+"def print_about_gum(repetitions):\n"
+"\n"
+"    # Loop that many times\n"
+"    for i in range(repetitions):\n"
+"        print(\"I will not chew gum in class.\")\n"
+"\n"
+"\n"
+"def main():\n"
+"    print_about_gum(10)\n"
+"\n"
+"\n"
+"main()"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:250
+msgid "Using the Counter Variable"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:252
+msgid ""
+"You can use the counter variable in the ``for`` loop to track your loop. Try"
+" running this code, which prints the value stored in ``i``."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:255
+#: ../../source/chapters/11a_for_loops/for_loops.rst:590
+msgid "Print the numbers 0 to 9"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:255
+msgid ""
+"for i in range(10):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:262
+msgid ""
+"With a range of 10, you might expect that the code prints the numbers 1 to "
+"10. It doesn't. It prints the numbers 0 to 9. It is natural to assume that "
+"``range(10)`` would include 10, but it doesn't."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/numbers.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:270
+msgid ""
+"0\n"
+"1\n"
+"2\n"
+"3\n"
+"4\n"
+"5\n"
+"6\n"
+"7\n"
+"8\n"
+"9"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/mug.png"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:287
+msgid ""
+"In computer programming, we typically start counting at zero rather than "
+"one. Most computer languages use this convention. An old computer joke is to"
+" get your friend a mug that says \"World's #1 programmer.\" Then get "
+"yourself a mug that says \"World's #0 programmer.\""
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:293
+msgid ""
+"If a programmer wants to go from 1 to 10 instead of 0 to 9, there are a "
+"couple ways to do it. The first way is to send the ``range`` function two "
+"numbers instead of one. The first number is the starting value, the second "
+"value we'll count up to, but not equal to. Here's an example:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:298
+msgid "Print the numbers 1 to 10, version 1"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:298
+msgid ""
+"for i in range(1, 11):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:305
+msgid "Give it a try. It should print the numbers 1 to 10 like so."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:307
+msgid ""
+"1\n"
+"2\n"
+"3\n"
+"4\n"
+"5\n"
+"6\n"
+"7\n"
+"8\n"
+"9\n"
+"10"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:320
+msgid ""
+"It does take some practice to get used to the idea that the for loop *will* "
+"include the first number, but *will not* include the second. The example "
+"specifies a range of (1, 11), and the numbers 1 to 10 are printed. The "
+"starting number 1 is included, but *not* the ending number of 11."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:325
+msgid ""
+"Another way to print the numbers 1 to 10 is to still use ``range(10)`` and "
+"have the variable ``i`` go from 0 to 9. But just before printing out the "
+"variable, add one to it. This also works to print the numbers 1 to 10, as "
+"shown in our next example."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:330
+msgid "Print the numbers 1 to 10, version 2"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:330
+msgid ""
+"# Print the numbers 1 to 10.\n"
+"for i in range(10):\n"
+"    # Add one to i, just before printing\n"
+"    print(i + 1)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:340
+msgid "Counting By Numbers Other Than One"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/counting.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:346
+msgid ""
+"If the program needs to count by 2's or use some other increment, that is "
+"easy. Just like before there are two ways to do it. The easiest is to supply"
+" a third number to the ``range`` function that tells it to count by 2's. See"
+" this code example:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:351
+msgid ""
+"# One way to print the even numbers 2 to 10\n"
+"for i in range(2, 12, 2):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:358
+msgid ""
+"The second way to do it is to go ahead and count by 1's, but multiply the "
+"variable by 2 as shown in the next example."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:362
+msgid ""
+"# Another way to print the numbers 2 to 10\n"
+"for i in range(5):\n"
+"    print((i + 1) * 2)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:369
+msgid "Both examples will output the numbers 2 to 10::"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:371
+msgid ""
+"2\n"
+"4\n"
+"6\n"
+"8\n"
+"10"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/rocket.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:381
+msgid ""
+"It is also possible to count *backwards*--for example 10 down to zero. This "
+"is done by giving the ``range`` function a *negative* step. In the example "
+"below we start at 10 and go down to, but not including, zero. (To include "
+"zero, the second number would need to be a -1.) We do this by an increment "
+"of -1."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:387
+msgid "Count down from 10 to 1"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:387
+msgid ""
+"for i in range(10, 0, -1):\n"
+"    print(i)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:394
+msgid ""
+"The hardest part of creating these backwards-counting loops is to "
+"accidentally switch the start and end numbers. Normal ``for`` loops that "
+"count *up* start with the *smallest* value. When you count *down* the "
+"program starts at the *largest* value."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:400
+msgid "Output::"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:402
+msgid ""
+"10\n"
+"9\n"
+"8\n"
+"7\n"
+"6\n"
+"5\n"
+"4\n"
+"3\n"
+"2\n"
+"1"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:413
+msgid ""
+"If the numbers that a program needs to iterate through don't form an easy "
+"pattern, it is possible to pull numbers out of a list as shown in the next "
+"example. A full discussion of lists will be covered in the :ref:`intro-to-"
+"lists` chapter."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:417
+#: ../../source/chapters/11a_for_loops/for_loops.rst:594
+msgid "Print numbers out of a list"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:417
+msgid ""
+"for item in [2, 6, 4, 2, 4, 6, 7, 4]:\n"
+"    print(item)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:424
+msgid "This prints::"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:426
+msgid ""
+"2\n"
+"6\n"
+"4\n"
+"2\n"
+"4\n"
+"6\n"
+"7\n"
+"4"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:436
+msgid "Nesting Loops"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/nesting.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:442
+msgid ""
+"By nesting one loop *inside* another loop, we can expand our processing "
+"beyond one dimension."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:445
+msgid ""
+"Try to predict what the following code, which is not nested, will print. "
+"Then enter the code and see if you are correct."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:448
+msgid ""
+"# What does this print? Why?\n"
+"for i in range(3):\n"
+"    print(\"a\")\n"
+"for j in range(3):\n"
+"    print(\"b\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:457
+msgid "Did you guess right? It will print three a's and 3 b's."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:459
+msgid ""
+"This next block of code is almost identical to the one above. The second "
+"``for`` loop has been indented one tab stop so that it is now nested "
+"*inside* of the first ``for`` loop. It is a **nested** loop. This changes "
+"how the code runs significantly. Look at it and see if you can guess how the"
+" output will change."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:465
+msgid ""
+"# What does this print? Why?\n"
+"for i in range(3):\n"
+"    print(\"a\")\n"
+"    for j in range(3):\n"
+"        print(\"b\")\n"
+"\n"
+"print(\"Done\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:476
+msgid ""
+"Did you guess right? We still get three a's, but now we get *nine* b's. For "
+"each a, we get three b's. The outside ``for`` loop causes the inside code to"
+" be run three times. The inside ``for`` loop causes its code to be run three"
+" times, so three times three is a total of nine times to run the innermost "
+"code."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:482
+msgid ""
+"Complicated? Not really. You've already *lived* a loop like this. This is "
+"how a clock works. The 1-12 hour is the *outside* loop, and the 0-59 minute "
+"is the *inside* loop. Try this next example and see now it prints all the "
+"times between 1:00 and 12:59. (Later on in :ref:`clock-example` we'll show "
+"how to format the output and make it look good.)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:489
+msgid ""
+"# Loop from 1:00 to 12:59\n"
+"for hour in range(1, 13):\n"
+"    for minute in range(60):\n"
+"        print(hour, minute)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:498
+#: ../../source/chapters/11a_for_loops/for_loops.rst:511
+msgid "Keep a Running Total"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rstNone
+msgid ".. image:: chapters/11a_for_loops/printing_calculator.svg"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:504
+msgid ""
+"A common operation in working with loops is to keep a running total. This "
+"\"running total\" code pattern is used a lot in this book. Keep a running "
+"total of a score, total a person's account transactions, use a total to find"
+" an average, etc. You might want to bookmark this code listing because we'll"
+" refer back to it several times. In the code below, the user enters five "
+"numbers and the code totals up their values."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:511
+msgid ""
+"total = 0\n"
+"for i in range(5):\n"
+"    new_number = int(input(\"Enter a number: \" ))\n"
+"    total = total + new_number\n"
+"print(\"The total is: \", total)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:521
+msgid ""
+"Note that line 1 creates the variable ``total``, and sets it to an initial "
+"amount of zero. It is easy to forget the need to create and initialize the "
+"variable to zero. Without it the computer will complain when it hits line 4."
+" It doesn't know how to add ``new_number`` to ``total`` because ``total`` "
+"hasn't been given a value yet."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:527
+msgid ""
+"A common mistake is to use ``i`` to total instead of ``new_number``. "
+"Remember, we are keeping a running total of the values entered by the user, "
+"not a running total of the current loop count."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:531
+msgid ""
+"Speaking of the current loop count, we can use the loop count value to solve"
+" some mathematical operations. For example check out this summation "
+"equation:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:534
+msgid "s=\\sum\\limits_{n=1}^{100}n"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:538
+msgid ""
+"If you aren't familiar with this type of formula, it is just a fancy way of "
+"stating this addition problem:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:541
+msgid "s=1+2+3+4+5 \\ldots 98+99+100"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:545
+msgid ""
+"The code below finds the answer to this equation by adding all the numbers "
+"from 1 to 100. It is another demonstration of a running total is kept inside"
+" of a loop."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:549
+msgid "Sum all numbers 1 to 100"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:549
+msgid ""
+"# What is the value of sum?\n"
+"total = 0\n"
+"for i in range(1, 101):\n"
+"    total = total + i\n"
+"print(total)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:559
+msgid ""
+"Here's yet another example of keeping a running total. In this case we add "
+"in an ``if`` statement. We take five numbers from the user and count the "
+"number of times the user enters a zero:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:564
+msgid ""
+"total = 0\n"
+"for i in range(5):\n"
+"    new_number = int(input( \"Enter a number: \"))\n"
+"    if new_number == 0:\n"
+"        total += 1\n"
+"print(\"You entered a total of\", total, \"zeros\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:575
+msgid "Review"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:577
+msgid ""
+"In this chapter we talked about looping and how to use ``for`` loops to "
+"count up or down by any number. We learned how loops can be **nested**. We "
+"learned how we can use a loop to keep a running total."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:583
+msgid "Review Questions"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:585
+msgid ""
+"Open up an empty file and practice writing code that use ``for`` loops to:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:587
+msgid "Print \"Hi\" 10 times."
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:588
+msgid "Print 'Hello' 5 times and 'There' once"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:589
+msgid "Print 'Hello' and 'There' 5 times, on different lines"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:591
+msgid "Two ways to print the numbers 1 to 10"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:592
+msgid "Two ways to print the even numbers 2 to 10"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:593
+msgid "Count down from 10 down to 1 (not zero)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:596
+msgid "Answer the following:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:598
+msgid "What does this print? Why?"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:600
+msgid ""
+"for i in range(3):\n"
+"    print(\"a\")\n"
+"    for j in range(3):\n"
+"        print(\"b\")"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:607
+#: ../../source/chapters/11a_for_loops/for_loops.rst:616
+#: ../../source/chapters/11a_for_loops/for_loops.rst:627
+msgid "What is the value of a?"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:609
+msgid ""
+"a = 0\n"
+"for i in range(10):\n"
+"    a = a + 1\n"
+"print(a)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:618
+msgid ""
+"a = 0\n"
+"for i in range(10):\n"
+"    a = a + 1\n"
+"for j in range(10):\n"
+"    a = a + 1\n"
+"print(a)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:629
+msgid ""
+"a = 0\n"
+"for i in range(10):\n"
+"    a = a + 1\n"
+"    for j in range(10):\n"
+"        a = a + 1\n"
+"print(a)"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:638
+msgid "What is the value of sum?"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:640
+msgid ""
+"total = 0\n"
+"for i in range(1, 101):\n"
+"    total = total + i"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:647
+msgid "On-line Review Problems"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:649
+msgid ""
+"Practice on-line by completing the ``for`` loop problems starting with "
+"``04`` available here:"
+msgstr ""
+
+#: ../../source/chapters/11a_for_loops/for_loops.rst:651
+msgid "https://repl.it/community/classrooms/174286"
+msgstr ""

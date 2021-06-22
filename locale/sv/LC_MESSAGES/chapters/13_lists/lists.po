@@ -1,0 +1,1606 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:43+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/chapters/13_lists/lists.rst:4
+msgid "Introduction to Lists"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:7
+msgid "Data Types"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:13
+msgid "So far this book has shown four types of data:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:15
+msgid ""
+"String (a string is short for \"string of characters,\" which normal people "
+"think of as text.)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:16
+msgid "Integer"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:17
+msgid "Floating point"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:18
+msgid "Boolean"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:20
+msgid ""
+"Python can display what type of data a value is with the ``type`` function. "
+"For example, what type of data is a ``3``?"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:23
+msgid ""
+"# Print the type of data a 3 is:\n"
+"print(type(3))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:28
+msgid "<class 'int'>"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:32
+msgid ""
+"This type function isn't useful for other programming in this book, but it "
+"is good to demonstrate the types of data introduced so far."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:35
+msgid ""
+"Here we set x to the four types of data we've used so far, and call the "
+"``type`` command to see how Python classifies that data:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:38
+msgid ""
+"x = 3\n"
+"print(\"x =\", x, \"and is of type:\", type(x))\n"
+"\n"
+"x = 3.145\n"
+"print(\"x =\", x, \"and is of type:\", type(x))\n"
+"\n"
+"x = \"Hi there\"\n"
+"print(\"x =\", x, \"and is of type:\", type(x))\n"
+"\n"
+"x = True\n"
+"print(\"x =\", x, \"and is of type:\", type(x))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:52
+#: ../../source/chapters/13_lists/lists.rst:79
+#: ../../source/chapters/13_lists/lists.rst:104
+#: ../../source/chapters/13_lists/lists.rst:116
+#: ../../source/chapters/13_lists/lists.rst:158
+msgid "The output:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:54
+msgid ""
+"x = 3 and is of type: <class 'int'>\n"
+"x = 3.145 and is of type: <class 'float'>\n"
+"x = Hi there and is of type: <class 'str'>\n"
+"x = True and is of type: <class 'bool'>"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:63
+msgid "More than one coin to collect? Use a list!"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:65
+msgid ""
+"The two new types of data introduced in this chapter are Lists and Tuples. "
+"Lists are similar to another data structure called an array. A list can be "
+"resized, but an array can not. A course in data structures will teach you "
+"the details, but it that is beyond the scope of this book. Try running the "
+"following commands in the interactive Python shell and see what is "
+"displayed:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:71
+msgid ""
+"x = (2, 3, 4, 5)\n"
+"print(\"x =\", x, \"and is of type:\", type(x))\n"
+"\n"
+"x = [2, 3, 4, 5]\n"
+"print(\"x =\", x, \"and is of type:\", type(x))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:81
+msgid ""
+"x = (2, 3, 4, 5) and is of type: <class 'tuple'>\n"
+"x = [2, 3, 4, 5] and is of type: <class 'list'>"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:87
+msgid "Working With Lists"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:89
+msgid ""
+"You've created grocery lists, to-do lists, bucket lists, but how do you "
+"create a list on the computer?"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:94
+msgid ".. image:: chapters/13_lists/grocery_list.png"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:94
+msgid "Even computers use lists"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:96
+msgid "To create a list and print it out, try the following:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:99
+msgid ""
+"x = [10, 20]\n"
+"print(x)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:106
+msgid "[10, 20]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:110
+msgid "To print an individual element in a list:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:112
+msgid "print(x[0])"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:118
+msgid "10"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:122
+msgid ""
+"This number with the item's location is called the index. Note that list "
+"locations start at zero. So a list or array with 10 elements does not have "
+"an element in spot [10]. Just spots [0] through [9]. It can be very "
+"confusing to create an list of 10 items and then not have an item 10, but "
+"most computer languages start counting at 0 rather than 1."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:128
+msgid ""
+"Think of a list as an ice cube tray that holds numbers, as shown in Figure "
+"7.2. The values are stored inside each tray spot, and written on the side of"
+" the tray are numbers starting at zero that identify the location of each "
+"spot."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:134
+msgid "Don't mix the index and the value!"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:136
+msgid ""
+"Remember, there are two sets of numbers to consider when working with a list"
+" of numbers: the position and the value. The position, also known as index, "
+"refers to where a value is. The value is the actual number stored at that "
+"location. When working with a list or array, make sure to think if you need "
+"the location or the value."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:142
+msgid ""
+"It is easy to get the value given the location, but it is harder to get the "
+"location given the value. Chapter 15 is dedicated to answering how to find "
+"the location of a particular value."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:148
+msgid ".. image:: chapters/13_lists/ice_cube_tray.png"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:148
+msgid "Lists are like ice cube trays"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:150
+msgid ""
+"You can also access elements from the back-side of an array using negative "
+"numbers. (Not all languages support this.) For example:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:153
+msgid ""
+"x = [10, 20, 30]\n"
+"print(x[-1])"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:160
+msgid "30"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:165
+msgid ""
+"A program can assign new values to an individual element in a list. In the "
+"case below, the first spot at location zero (not one) is assigned the number"
+" 22."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:169
+msgid ""
+"x = [1, 2]\n"
+"print(x)\n"
+"\n"
+"x[0] = 22\n"
+"print(x)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:177
+msgid ""
+"[1, 2]\n"
+"[22, 2]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:182
+msgid ""
+"Also, a program can create a \"tuple.\" This data type works just like a "
+"list, but with two differences. First, it is created with parentheses rather"
+" than square brackets. Second, it is not possible to change the tuple once "
+"created. See below:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:186
+msgid ""
+"x = (1, 2)\n"
+"print(x)\n"
+"\n"
+"x[0] = 22\n"
+"print(x)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:194
+msgid ""
+"[1, 2]\n"
+"Traceback (most recent call last):\n"
+"  File \"<pyshell#18>\", line 4, in <module>\n"
+"    x[0] = 22\n"
+"TypeError: 'tuple' object does not support item assignment"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:202
+msgid ""
+"As can be seen from the output of the code above, we can't assign an item in"
+" the tuple a new value. Why would we want this limitation? First, the "
+"computer can run faster if it knows the value won't change. Second, some "
+"lists we don't want to change, such as a list of RGB colors for red. The "
+"color red doesn't change, therefore an immutable tuple is a better choice."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:211
+msgid "Create an Empty List"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:213
+msgid ""
+"Occasionally we need to create a list that is empty. We'll use this in a bit"
+" when we start with an empty list and build on it. How do I create an empty "
+"list? Easy:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:216
+msgid ""
+"# Create an empty list\n"
+"my_list = []"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:222
+msgid "Iterating (Looping) Through a List"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:228
+msgid ""
+"If a program needs to iterate through each item in a list, such as to print "
+"it out, there are two types of for loops that can do this."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:231
+msgid ""
+"The first method to iterate through each item in a loop is by using a \"for-"
+"each\" loop. This type of loop takes a collection of items, and loops the "
+"code once per item. It will take a copy of the item and store it in a "
+"variable for processing."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:236
+msgid "The format of the command:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:238
+msgid "for item_variable in list_name:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:242
+msgid "Here are some examples:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:244
+msgid ""
+"my_list = [101, 20, 10, 50, 60]\n"
+"for item in my_list:\n"
+"    print(item)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:251
+#: ../../source/chapters/13_lists/lists.rst:303
+msgid ""
+"101\n"
+"20\n"
+"10\n"
+"50\n"
+"60"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:259
+msgid "Programs can store strings in lists too:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:262
+msgid ""
+"my_list = [\"Spoon\", \"Fork\", \"Knife\"]\n"
+"for item in my_list:\n"
+"    print(item)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:268
+msgid ""
+"Spoon\n"
+"Knife\n"
+"Fork"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:274
+msgid ""
+"Lists can even contain other lists. This iterates through each item in the "
+"main list, but not in sublists."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:277
+msgid ""
+"my_list = [[2, 3], [4, 3], [6, 7]]\n"
+"for item in my_list:\n"
+"    print(item)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:283
+msgid ""
+"[2,3]\n"
+"[4,3]\n"
+"[6,7]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:289
+msgid ""
+"The other way to iterate through a list is to use an index variable and "
+"directly access the list rather than through a copy of each item. To use an "
+"index variable, the program counts from 0 up to the length of the list. If "
+"there are ten elements, the loop must go from 0 to 9 for a total of ten "
+"elements."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:294
+msgid ""
+"The length of a list may be found by using the len function. Combining that "
+"with the range function allows the program to loop through the entire list."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:297
+msgid ""
+"my_list = [101, 20, 10, 50, 60]\n"
+"for index in range(len(my_list)):\n"
+"    print(my_list[index])"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:311
+msgid ""
+"This method is more complex, but is also more powerful. Because we are "
+"working directly with the list elements, rather than a copy, the list can be"
+" modified. The for-each loop does not allow modification of the original "
+"list."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:316
+msgid "Looping With Both An Index And Element"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:318
+msgid ""
+"If you want both the index, like a ``for i in range`` gives you, and the "
+"element, like a ``for item in my_list`` gives you, the proper Python-ic way "
+"to use the ``enumerate`` function like this:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:321
+msgid ""
+"for index, value in enumerate(my_list):\n"
+"    print(index, value)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:329
+msgid "Adding to a List"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:331
+msgid ""
+"New items may be added to a list (but not a tuple) by using the append "
+"command. For example:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:335
+msgid ""
+"my_list = [2, 4, 5, 6]\n"
+"print(my_list)\n"
+"my_list.append(9)\n"
+"print(my_list)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:342
+msgid ""
+"[2, 4, 5, 6]\n"
+"[2, 4, 5, 6, 9]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:351
+msgid ""
+"Side note: If performance while appending is a concern, it is very important"
+" to understand how a list is being implemented. For example, if a list is "
+"implemented as an *array data type*, then appending an item to the list is a"
+" lot like adding a new egg to a full egg carton. A new egg carton must be "
+"built with thirteen spots. Then twelve eggs are moved over. Then the "
+"thirteenth egg is added. Finally the old egg carton is recycled. Because "
+"this can happen behind the scenes in a function, programmers may forget this"
+" and let the computer do all the work. It would be more efficient to simply "
+"tell the computer to make an egg carton with enough spots to begin with. "
+"Thankfully, Python does not implement a list as an array data type. But it "
+"is important to pay attention to your next semester data structures class "
+"and learn how all of this works."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:363
+msgid ""
+"To create a list from scratch, it is necessary to create a blank list and "
+"then use the ``append`` function to build it based upon user input:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:367
+msgid "Creating a list of numbers from user input"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:367
+msgid ""
+"# Create an empty list\n"
+"my_list = []\n"
+"\n"
+"for i in range(5):\n"
+"    user_input = input( \"Enter an integer: \")\n"
+"    user_input = int(user_input)\n"
+"    my_list.append(user_input)\n"
+"    print(my_list)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:379
+msgid ""
+"Enter an integer: 4\n"
+"[4]\n"
+"Enter an integer: 5\n"
+"[4, 5]\n"
+"Enter an integer: 3\n"
+"[4, 5, 3]\n"
+"Enter an integer: 1\n"
+"[4, 5, 3, 1]\n"
+"Enter an integer: 8\n"
+"[4, 5, 3, 1, 8]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:392
+msgid ""
+"If a program needs to create an array of a specific length, all with the "
+"same value, a simple trick is to use the following code:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:395
+msgid "Create an array with 100 zeros"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:395
+msgid ""
+"# Create an array with 100 zeros.\n"
+"my_list = [0] * 100"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:403
+msgid "Summing or Modifying a List"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:409
+msgid ""
+"Creating a running total of an array is a common operation. Here's how it is"
+" done:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:411
+msgid "Summing the values in a list v1"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:411
+msgid ""
+"# Copy of the array to sum\n"
+"my_list = [5, 76, 8, 5, 3, 3, 56, 5, 23]\n"
+"\n"
+"# Initial sum should be zero\n"
+"list_total = 0\n"
+"\n"
+"# Loop from 0 up to the number of elements\n"
+"# in the array:\n"
+"for index in range(len(my_list)):\n"
+"    # Add element 0, next 1, then 2, etc.\n"
+"    list_total += my_list[index]\n"
+"\n"
+"# Print the result\n"
+"print(list_total)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:430
+msgid ""
+"The same thing can be done by using a ``for`` loop to iterate the array, "
+"rather than count through a range:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:433
+msgid "Summing the values in a list v2"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:433
+msgid ""
+"# Copy of the array to sum\n"
+"my_list = [5, 76, 8, 5, 3, 3, 56, 5, 23]\n"
+"\n"
+"# Initial sum should be zero\n"
+"list_total = 0\n"
+"\n"
+"# Loop through array, copying each item in the array into\n"
+"# the variable named item.\n"
+"for item in my_list:\n"
+"    # Add each item\n"
+"    list_total += item\n"
+"\n"
+"# Print the result\n"
+"print(list_total)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:452
+msgid "Numbers in an array can also be changed by using a ``for`` loop:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:454
+msgid "Doubling all the numbers in a list"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:454
+msgid ""
+"# Copy of the array to modify\n"
+"my_list = [5, 76, 8, 5, 3, 3, 56, 5, 23]\n"
+"\n"
+"# Loop from 0 up to the number of elements\n"
+"# in the array:\n"
+"for index in range(len(my_list)):\n"
+"    # Modify the element by doubling it\n"
+"    my_list[index] = my_list[index] * 2\n"
+"\n"
+"# Print the result\n"
+"print(my_list)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:470
+msgid ""
+"However version 2 does not work at doubling the values in an array. Why? "
+"Because ``item`` is a *copy* of an element in the array. The code below "
+"doubles the copy, not the original array element."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:474
+msgid "Bad code that doesn't double all the numbers in a list"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:474
+msgid ""
+"# Copy of the array to modify\n"
+"my_list = [5, 76, 8, 5, 3, 3, 56, 5, 23]\n"
+"\n"
+"# Loop through each element in myArray\n"
+"for item in my_list:\n"
+"    # This doubles item, but does not change the array\n"
+"    # because item is a copy of a single element.\n"
+"    item = item * 2\n"
+"\n"
+"# Print the result\n"
+"print(my_list)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:491
+msgid "Slicing Strings"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:497
+msgid ""
+"Strings are actually lists of characters. They can be treated like lists "
+"with each letter a separate item. Run the following code with both versions "
+"of x:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:500
+msgid "Accessing a string as a list"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:500
+msgid ""
+"x = \"This is a sample string\"\n"
+"#x = \"0123456789\"\n"
+"\n"
+"print(\"x=\", x)\n"
+"\n"
+"# Accessing the first character (\"T\")\n"
+"print(\"x[0]=\", x[0])\n"
+"\n"
+"# Accessing the second character (\"h\")\n"
+"print(\"x[1]=\", x[1])\n"
+"\n"
+"# Accessing from the right side (\"g\")\n"
+"print(\"x[-1]=\", x[-1])\n"
+"\n"
+"# Access 0-5 (\"This \")\n"
+"print(\"x[:6]=\", x[:6])\n"
+"# Access 6 to the end (\"is a sample string\")\n"
+"print(\"x[6:]=\", x[6:])\n"
+"# Access 6-8\n"
+"print(\"x[6:9]=\", x[6:9])"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:525
+msgid ""
+"Strings in Python may be used with some of the mathematical operators. Try "
+"the following code and see what Python does:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:528
+msgid "Adding and multiplying strings"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:528
+msgid ""
+"a = \"Hi\"\n"
+"b = \"There\"\n"
+"c = \"!\"\n"
+"print(a + b)\n"
+"print(a + b + c)\n"
+"print(3 * a)\n"
+"print(a * 3)\n"
+"print((a * 2) + (b * 2))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:541
+msgid ""
+"It is possible to get a length of a string. It is also possible to do this "
+"with any type of array."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:544
+msgid "Getting the length of a string or list"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:544
+msgid ""
+"a = \"Hi There\"\n"
+"print(len(a))\n"
+"\n"
+"b = [3, 4, 5, 6, 76, 4, 3, 3]\n"
+"print(len(b))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:554
+msgid ""
+"Since a string is an array, a program can iterate through each character "
+"element just like an array:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:557
+msgid ""
+"for character in \"This is a test.\":\n"
+"    print(character)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:562
+msgid "Exercise: Starting with the following code:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:564
+msgid ""
+"months = \"JanFebMarAprMayJunJulAugSepOctNovDec\"\n"
+"n = int(input(\"Enter a month number: \"))"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:570
+msgid ""
+"Print the three month abbreviation for the month number that the user "
+"enters. (Calculate the start position in the string, then use the info we "
+"just learned to print out the correct substring.)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:575
+msgid "Secret Codes"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:577
+msgid "This code prints out every letter of a string individually:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:579
+msgid ""
+"plain_text = \"This is a test. ABC abc\"\n"
+"\n"
+"for c in plain_text:\n"
+"    print(c, end=\" \")"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:591
+msgid ""
+"Computers do not actually store letters of a string in memory; computers "
+"store a series of numbers. Each number represents a letter. The system that "
+"computers use to translate numbers to letters is called *Unicode*. The full "
+"name for the encoding is Universal Character Set Transformation Format "
+"8-bit, usually abbreviated ``UTF-8``."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:597
+msgid ""
+"The Unicode chart covers the Western alphabet using the numbers 0-127. Each "
+"Western letter is represented by one byte of memory. Other alphabets, like "
+"Cyrillic, can take multiple bytes to represent each letter. A partial copy "
+"of the Unicode chart is below:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+msgid "Value"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+#: ../../source/chapters/13_lists/lists.rst:603
+msgid "Character"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "40"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "("
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "61"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "="
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "82"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "R"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "103"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:605
+msgid "g"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "41"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid ")"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "62"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid ">"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "83"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "S"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "104"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:607
+msgid "h"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "42"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "63"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "?"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "84"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "T"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "105"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:609
+msgid "i"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "43"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "64"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "@"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "85"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "U"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "106"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:611
+msgid "j"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "44"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid ","
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "65"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "A"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "86"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "V"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "107"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:613
+msgid "k"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "45"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "66"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "B"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "87"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "W"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "108"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:615
+msgid "l"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "46"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "67"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "C"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "88"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "X"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "109"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:617
+msgid "m"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "47"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "/"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "68"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "D"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "89"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "Y"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "110"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:619
+msgid "n"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "48"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "0"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "69"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "E"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "90"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "Z"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "111"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:621
+msgid "o"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "49"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "1"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "70"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "F"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "91"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "["
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "112"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:623
+msgid "p"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "50"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "2"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "71"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "G"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "92"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "\\"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "113"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:625
+msgid "q"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "51"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "3"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "72"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "H"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "93"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "]"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "114"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:627
+msgid "r"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "52"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "4"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "73"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "I"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "94"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "^"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "115"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:629
+msgid "s"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "53"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "5"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "74"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "J"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "95"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "_"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "116"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:631
+msgid "t"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "54"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "6"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "75"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "K"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "96"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "\\`"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "117"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:633
+msgid "u"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "55"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "7"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "76"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "L"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "97"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "a"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "118"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:635
+msgid "v"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "56"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "8"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "77"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "M"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "98"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "b"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "119"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:637
+msgid "w"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "57"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "9"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "78"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "N"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "99"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "c"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "120"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:639
+msgid "x"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "58"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid ":"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "79"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "O"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "100"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "d"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "121"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:641
+msgid "y"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "59"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid ";"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "80"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "P"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "101"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "e"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "122"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:643
+msgid "z"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "60"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "<"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "81"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "Q"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "102"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:645
+msgid "f"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:648
+msgid ""
+"For more information about ASCII (which has the same values as Unicode for "
+"the Western alphabet) see:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:651
+msgid "http://en.wikipedia.org/wiki/ASCII"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:653
+msgid "For a video that explains the beauty of Unicode, see here:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:655
+msgid "http://hackaday.com/2013/09/27/utf-8-the-most-elegant-hack"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:657
+msgid ""
+"This next set of code converts each of the letters in the prior example to "
+"its ordinal value using UTF-8:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:660
+msgid ""
+"plain_text = \"This is a test. ABC abc\"\n"
+"\n"
+"for c in plain_text:\n"
+"    print(ord(c), end=\" \")"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:667
+msgid ""
+"This next program takes each UTF-8 value and adds one to it. Then it prints "
+"the new UTF-8 value, then converts the value back to a letter."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:671
+msgid ""
+"plain_text = \"This is a test. ABC abc\"\n"
+"\n"
+"for c in plain_text:\n"
+"    x = ord(c)\n"
+"    x = x + 1\n"
+"    c2 = chr(x)\n"
+"    print(c2, end=\"\")"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:681
+msgid ""
+"The next code listing takes each UTF-8 value and adds one to it, then "
+"converts the value back to a letter."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:685
+msgid ".. image:: chapters/13_lists/encrypt.png"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:686
+msgid "simple_encryption.py"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:686
+msgid ""
+"# Sample Python/Pygame Programs\n"
+"# Simpson College Computer Science\n"
+"# http://programarcadegames.com/\n"
+"# http://simpson.edu/computer-science/\n"
+"\n"
+"# Explanation video: http://youtu.be/sxFIxD8Gd3A\n"
+"\n"
+"plain_text = \"This is a test. ABC abc\"\n"
+"\n"
+"encrypted_text = \"\"\n"
+"for c in plain_text:\n"
+"    x = ord(c)\n"
+"    x = x + 1\n"
+"    c2 = chr(x)\n"
+"    encrypted_text = encrypted_text + c2\n"
+"print(encrypted_text)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:707
+msgid ""
+"Finally, the last code takes each UTF-8 value and subtracts one from it, "
+"then converts the value back to a letter. By feeding this program the output"
+" of the previous program, it serves as a decoder for text encoded by the "
+"prior example."
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:712
+msgid ".. image:: chapters/13_lists/decrypt.png"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:713
+msgid "simple_decryption.py"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:713
+msgid ""
+"# Sample Python/Pygame Programs\n"
+"# Simpson College Computer Science\n"
+"# http://programarcadegames.com/\n"
+"# http://simpson.edu/computer-science/\n"
+"\n"
+"# Explanation video: http://youtu.be/sxFIxD8Gd3A\n"
+"\n"
+"encrypted_text = \"Uijt!jt!b!uftu/!BCD!bcd\"\n"
+"\n"
+"plain_text = \"\"\n"
+"for c in encrypted_text:\n"
+"    x = ord(c)\n"
+"    x = x - 1\n"
+"    c2 = chr(x)\n"
+"    plain_text = plain_text + c2\n"
+"print(plain_text)"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:735
+msgid "Associative Arrays"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:737
+msgid ""
+"Python is not limited to using numbers as an array index. It is also "
+"possible to use an associative array. An associative array works like this:"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:740
+msgid ""
+"# Create an empty associative array\n"
+"# (Note the curly braces.)\n"
+"x = {}\n"
+"\n"
+"# Add some stuff to it\n"
+"x[\"fred\"] = 2\n"
+"x[\"scooby\"] = 8\n"
+"x[\"wilma\"] = 1\n"
+"\n"
+"# Fetch and print an item\n"
+"print(x[\"fred\"])"
+msgstr ""
+
+#: ../../source/chapters/13_lists/lists.rst:755
+msgid ""
+"You won't really need associative arrays for this class, but I think it is "
+"important to point out that it is possible."
+msgstr ""

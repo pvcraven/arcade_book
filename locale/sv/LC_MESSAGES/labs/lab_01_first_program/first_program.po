@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Paul Vincent Craven
+# This file is distributed under the same license as the Arcade package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arcade 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:45+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:4
+msgid "Lab 1: First Program"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:6
+msgid ""
+"Follow these step-by-step instructions. Note that a lot of the instructions "
+"link to a different site. I'd recommend opening those links in a different "
+"tab on your browser. That way you don't lose your spot on what lab step you "
+"are on."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:10
+msgid "If you are installing on your own computer:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:12
+msgid "Install Python and set up the libraries. See :ref:`installing-python`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:13
+msgid "Install PyCharm. See :ref:`installing-pycharm`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:14
+msgid "Install Git. See :ref:`installing-git`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:16
+msgid "Fork the repository. See :ref:`fork-repository`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:17
+msgid "Clone the repository. See :ref:`clone-repository`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:18
+msgid "Open your project in PyCharm. See :ref:`open-in-pycharm`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:19
+msgid "Try changing a file. See :ref:`change_file`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:20
+msgid "Commit and push the updated program to BitBucket. See :ref:`commit`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:21
+msgid ""
+"Great! Now let's try programming something. Create and run a test program "
+"that prints ``Hello``. See :ref:`print-hello-world`. Make sure you take the "
+"time to learn how to \"run\" the program and see the output."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:24
+msgid ""
+"Update your program to print something longer. Commit and push again. See "
+":ref:`print-multiple-lines`."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:25
+msgid ""
+"Examine and try out different **escape codes**. See :ref:`escape-codes`. "
+"(We'll talk more about this later, if we haven't yet.)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:27
+msgid ""
+"Commit and push the updated program to GitHub. See :ref:`commit` again."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:28
+msgid ""
+"Now is the time to work on Lab 01. Make sure you are working in the Lab 01 "
+"folder, with the ``lab_01.py`` file."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:30
+msgid ""
+"Make the lab *yours*. Figure out something of your own to print. Don't just "
+"use my examples."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:33
+msgid ""
+"Make sure what you print uses proper English. Write in complete sentences, "
+"capitalize words appropriately, use punctuation where needed."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:35
+msgid ""
+"Make it longer than one line. Use at *least* four ``print`` statements. "
+"While ``print`` statements can span more than one line, have at least four "
+"different statements."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:38
+msgid "Also include at least one escape code."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:40
+msgid ""
+"Try running your lab. If you see the old \"test\" program running instead, "
+"right click on your program and tell it you want it to run ``lab_01.py`` not"
+" the other program."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:43
+msgid "Commit and push your lab."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:44
+msgid ""
+"Find your lab in on GitHub. Go to \"source\" and find the directory it is "
+"in. Copy the URL, submit for grading."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:47
+msgid "Before turning in your program, double-check:"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:49
+msgid "Did you put the code in ``lab_01.py`` in the Lab 1 folder?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:50
+msgid ""
+"Did you remove the sample prints shown above, and make up your own print "
+"statements? At least four lines?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:52
+msgid ""
+"Does the program use proper spelling, capitalization, and grammar in the "
+"text that you printed to the screen? (Seriously, make sure what you print "
+"out has periods and capital letters.)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:54
+msgid ""
+"Does the program use at least one escape code? Also, remember you don't have"
+" to put spaces around escape codes. So do this: ``\"\\tIndented with a "
+"tab\"`` not ``\"\\t Indented with a tab\"`` because the space after the t "
+"isn't needed unless you want both a tab and an extra space."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:57
+msgid ""
+"Hover over the PyCharm \"hints\" that are on the right side of your editor "
+"to see if there are suggestions on how to make your code better."
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:59
+msgid "Can you find the code in GitHub?"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:60
+msgid ""
+"Have you copied the URL and turned it in to Scholar? (Find the Lab 01 link "
+"on Scholar.)"
+msgstr ""
+
+#: ../../source/labs/lab_01_first_program/first_program.rst:62
+msgid "Congratulations, you are done!"
+msgstr ""
