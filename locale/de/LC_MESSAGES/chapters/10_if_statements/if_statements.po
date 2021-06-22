@@ -1,33 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Paul Vincent Craven
+# Copyright (C) 2021, Paul Vincent Craven
 # This file is distributed under the same license as the Arcade package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
-# derSuessmann <arcade-book-de@dersuessmann.de>, 2019.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Paul V Craven <paul@cravenfamily.com>, 2020
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Arcade Fall 2018\n"
+"Project-Id-Version: Arcade 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 14:54-0600\n"
-"PO-Revision-Date: 2019-07-16 11:10+0200\n"
-"Last-Translator: derSuessmann <arcade-book-de@dersuessmann.de>\n"
-"Language: de\n"
-"Language-Team: German <arcade-book-de@dersuessmann.de>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:43+0000\n"
+"Last-Translator: Paul V Craven <paul@cravenfamily.com>, 2020\n"
+"Language-Team: German (https://www.transifex.com/arcade-academy/teams/108729/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:2
 msgid "If Statements"
 msgstr "Wenn-dann-Anweisungen"
 
-#, fuzzy
+#: ../../source/chapters/10_if_statements/if_statements.rstNone
 msgid ""
-".. image:: chapters\\10_if_statements\\../../images/video.svg\n"
+".. image:: images/video.svg\n"
 "   :alt: Video link"
-msgstr ".. image:: chapters/10_if_statements/flowchart1.png"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:9
 msgid "Video: https://youtu.be/CXsOXI24khw"
@@ -37,49 +39,41 @@ msgstr ""
 msgid "Slides: https://slides.com/paulcraven/if-statements"
 msgstr ""
 
-#, fuzzy
-msgid ".. image:: chapters\\10_if_statements\\question_mark_1.svg"
-msgstr ".. image:: chapters/10_if_statements/flowchart1.png"
+#: ../../source/chapters/10_if_statements/if_statements.rstNone
+msgid ".. image:: chapters/10_if_statements/question_mark_1.svg"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:16
 msgid ""
-"So far we've learned to create expressions, use variables, and make our "
-"own functions."
+"So far we've learned to create expressions, use variables, and make our own "
+"functions."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:18
 msgid ""
-"Our next step is to learn how to write code that will only run based on a"
-" certain condition. For example, we may want to draw \"Game Over\" text "
-"on the screen--but only if the player has run out of lives."
+"Our next step is to learn how to write code that will only run based on a "
+"certain condition. For example, we may want to draw \"Game Over\" text on "
+"the screen--but only if the player has run out of lives."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:22
-#, fuzzy
 msgid ""
 "To do this we need to learn how to use an ``if`` statement. The ``if`` "
-"statement is also known as a *conditional statement*. (You can use the "
-"term \"conditional statement\" when you want to impress everyone how "
-"smart you are.) The ``if`` statement allows a computer to make a "
-"decision. Is it hot outside? Has the spaceship reached the edge of the "
-"screen? Has too much money been withdrawn from the account? A program can"
-" decide which block of code to run based on this statement."
+"statement is also known as a *conditional statement*. (You can use the term "
+"\"conditional statement\" when you want to impress everyone how smart you "
+"are.) The ``if`` statement allows a computer to make a decision. Is it hot "
+"outside? Has the spaceship reached the edge of the screen? Has too much "
+"money been withdrawn from the account? A program can decide which block of "
+"code to run based on this statement."
 msgstr ""
-"Was wir brauchen, ist die ``if``-Anweisung. Die ``if``-Anweisung kennt "
-"man auch als *bedingte Anweisung*. (Du kannst \"bedingte Anweisung\" "
-"gerne verwenden, um anderen zu zeigen, dass du etwas vom Programmieren "
-"verstehst.) Die ``if``-Anweisung erlaubt einem Rechner eine Entscheidung "
-"zu fällen. Ist es heiß draußen? Hat das Raumschiff die Kante des "
-"Bildschirms erreicht? Wurde zu viel Geld vom Konto abgehoben? Ein "
-"Programm kann diese Bedingungen mit der ``if``-Anweisung überprüfen."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:31
 msgid "Basic Comparisons"
 msgstr "Einfache Vergleiche"
 
-#, fuzzy
-msgid ".. image:: chapters\\10_if_statements\\scale.svg"
-msgstr ".. image:: chapters/10_if_statements/flowchart1.png"
+#: ../../source/chapters/10_if_statements/if_statements.rstNone
+msgid ".. image:: chapters/10_if_statements/scale.svg"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:37
 msgid ""
@@ -137,10 +131,10 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:66
 msgid ""
-"Since ``a`` is less than ``b``, the first statement will print out if "
-"this code is run. Flip the values, and the second statement will run. If "
-"**both** variables ``a`` and ``b`` were equal to 4, then *neither* of the"
-" two statements would print because 4 is not greater than 4."
+"Since ``a`` is less than ``b``, the first statement will print out if this "
+"code is run. Flip the values, and the second statement will run. If **both**"
+" variables ``a`` and ``b`` were equal to 4, then *neither* of the two "
+"statements would print because 4 is not greater than 4."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:71
@@ -150,23 +144,21 @@ msgid ""
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:74
-#, fuzzy
 msgid "Flowcharts"
-msgstr "Programmablaufplan"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:76
 msgid ""
 "To show the flow of a program a *flowchart* may be used. Most people can "
-"follow a flowchart even without an introduction to programming. See how "
-"the flowchart below matches with the code we just ran. ``if`` statements "
-"go in diamonds and have two possible paths out of them. Regular "
-"statements go in rectangles, and have only one exit path."
+"follow a flowchart even without an introduction to programming. See how the "
+"flowchart below matches with the code we just ran. ``if`` statements go in "
+"diamonds and have two possible paths out of them. Regular statements go in "
+"rectangles, and have only one exit path."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:85
-#, fuzzy
-msgid ".. image:: chapters\\10_if_statements\\flowchart_example.svg"
-msgstr ".. image:: chapters/10_if_statements/flowchart1.png"
+msgid ".. image:: chapters/10_if_statements/flowchart_example.svg"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:85
 msgid "Flowchart"
@@ -174,9 +166,9 @@ msgstr "Programmablaufplan"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:87
 msgid ""
-"This book skips an in-depth look at flow-charting, but if you are curious"
-" and want to learn more, Wikipedia has a great article introducing how it"
-" works:"
+"This book skips an in-depth look at flow-charting, but if you are curious "
+"and want to learn more, Wikipedia has a great article introducing how it "
+"works:"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:90
@@ -184,22 +176,22 @@ msgid "http://en.wikipedia.org/wiki/Flowchart"
 msgstr "https://de.wikipedia.org/wiki/Programmablaufplan"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:93
-#, fuzzy
 msgid "More Comparison Types"
-msgstr "Fehlerhafter Vergleich"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:95
 msgid ""
 "The prior example checked to see if variables were \"greater than\" or "
-"\"less than.\" Numbers that were *equal* would *not* pass the test. To "
-"check if values are greater than *or equal*, we use the two characters "
-"``>=`` right next to each other, with no space between. Let's adjust our "
-"prior code sample:"
+"\"less than.\" Numbers that were *equal* would *not* pass the test. To check"
+" if values are greater than *or equal*, we use the two characters ``>=`` "
+"right next to each other, with no space between. Let's adjust our prior code"
+" sample:"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:100
 msgid "Example ``if`` statements: less than or equal, greater than or equal"
-msgstr "Beispiel bedingte Anweisungen: kleiner oder gleich, größer oder gleich"
+msgstr ""
+"Beispiel bedingte Anweisungen: kleiner oder gleich, größer oder gleich"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:100
 msgid ""
@@ -217,58 +209,45 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:110
 msgid ""
-"The ``<=`` and ``>=`` symbols must be used in order, and there may not be"
-" a space between them. For example, ``=<`` will not work, nor will ``< "
-"=``."
+"The ``<=`` and ``>=`` symbols must be used in order, and there may not be a "
+"space between them. For example, ``=<`` will not work, nor will ``< =``."
 msgstr ""
 "Die Zeichen ``<=`` und ``>=`` müssen in dieser Reihenfolge stehen und es "
-"darf kein Leerzeichen zwischen ihnen stehen. Zum Beispiel wird ``=<`` und"
-" auch ``< =`` nicht funktionieren."
+"darf kein Leerzeichen zwischen ihnen stehen. Zum Beispiel wird ``=<`` und "
+"auch ``< =`` nicht funktionieren."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:113
-#, fuzzy
 msgid ""
-"When writing these statements out on actual paper, some new programmers "
-"like to use the ``≤`` symbol, because that's what we learned in math. For"
-" example:"
+"When writing these statements out on actual paper, some new programmers like"
+" to use the ``≤`` symbol, because that's what we learned in math. For "
+"example:"
 msgstr ""
-"In einer Klausur schreiben die Studenten diese Anweisungen gerne mit dem "
-"Zeichen ``≤``. Zum Beispiel:"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:116
 msgid "if a ≤ b:"
 msgstr "if a ≤ b:"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:120
-#, fuzzy
 msgid ""
-"This ``≤`` symbol doesn't actually work in a program. Plus most people "
-"don't know how to type it on the keyboard. (Just in case you are curious,"
-" to type it hold down the 'alt' key while typing 243 on the number pad.) "
-"So when writing out code, particularly on paper, remember to use the two "
-"characters ``<=`` and not the one character ``≤`` symbol. If you "
-"encounter a written test or quiz, make sure to write it out correctly and"
-" not lose points."
+"This ``≤`` symbol doesn't actually work in a program. Plus most people don't"
+" know how to type it on the keyboard. (Just in case you are curious, to type"
+" it hold down the 'alt' key while typing 243 on the number pad.) So when "
+"writing out code, particularly on paper, remember to use the two characters "
+"``<=`` and not the one character ``≤`` symbol. If you encounter a written "
+"test or quiz, make sure to write it out correctly and not lose points."
 msgstr ""
-"Das Zeichen ``≤`` funktioniert tatsächlich nicht in einem Programm. "
-"Außerdem wissen die meisten nicht, wie man einfach dieses Zeichen auf der"
-" Tastatur eingibt. (Nur falls du neugierig bist, drücke die 'alt'-Taste, "
-"während du 243 auf dem Tastenfeld eingibst.) Also merke dir ``<=`` und "
-"nicht ``≤``, wenn du Code eingibst. Viele verlieren an dieser Stelle "
-"Punkte in Klausuren. Vermeide zu diesen zu gehören."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:127
 msgid ""
-"The next set of code checks to see if two items are equal or not. If we "
-"want to check for equality, we use two equals signs in a row: ``==``. The"
-" operator for not equal is ``!=``. Here they are in action. Add them to "
-"the bottom of the other code we were working on, and try them out."
+"The next set of code checks to see if two items are equal or not. If we want"
+" to check for equality, we use two equals signs in a row: ``==``. The "
+"operator for not equal is ``!=``. Here they are in action. Add them to the "
+"bottom of the other code we were working on, and try them out."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:132
-#, fuzzy
 msgid "Example ``if`` statements: \"equal\" and \"not equal\""
-msgstr "Beispiel bedingte Anweisungen: gleich, nicht gleich"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:132
 msgid ""
@@ -293,20 +272,15 @@ msgid "Learn when to use = and ==."
 msgstr "Lerne wann ``=`` und wann ``==`` verwendet werden müssen."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:146
-#, fuzzy
 msgid ""
-"It is very easy to mix up when to use ``==`` and ``=``. Use ``==`` if you"
-" are *asking* if they are equal, use ``=`` if you are *assigning* a "
-"value."
+"It is very easy to mix up when to use ``==`` and ``=``. Use ``==`` if you "
+"are *asking* if they are equal, use ``=`` if you are *assigning* a value."
 msgstr ""
-"Es ist leicht ``==`` und ``=`` zu verwechseln. Verwende ``==``, wenn du "
-"fragst, ob sie gleich sind. Verwende ``=``, wenn du einen Wert zuweisen "
-"willst."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:149
 msgid ""
-"The two most common mistakes in mixing the ``=`` and ``==`` operators are"
-" demonstrated below:"
+"The two most common mistakes in mixing the ``=`` and ``==`` operators are "
+"demonstrated below:"
 msgstr ""
 "Die beiden häufigsten Fehler beim Vertauschen der Operatoren ``=`` und "
 "``==``, werden unten gezeigt:"
@@ -329,14 +303,14 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:162
 msgid ""
-"Stop! Please take a moment to go back and carefully study the last two "
-"code examples. Save time later by making sure you understand when to use "
-"``=`` and ``==``. Don't guess."
+"Stop! Please take a moment to go back and carefully study the last two code "
+"examples. Save time later by making sure you understand when to use ``=`` "
+"and ``==``. Don't guess."
 msgstr ""
 "Halt! Nimm dir noch etwas Zeit, gehe zurück und sieh dir sorgfältig die "
 "letzten beiden Programmbeispiele an. Spare später Zeit dadurch, dass du "
-"sicher verstehst, wann du ``=`` und wann ``==`` verwenden musst. Rate "
-"nicht einfach."
+"sicher verstehst, wann du ``=`` und wann ``==`` verwenden musst. Rate nicht "
+"einfach."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:167
 msgid "Indentation"
@@ -344,11 +318,11 @@ msgstr "Einrückung"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:169
 msgid ""
-"Indentation matters. Each line under the ``if`` statement that is "
-"indented will only be executed ``if`` the statement is ``True``. In this "
-"example, the three lines indented under the ``if`` statement will run "
-"*only* if true, the fourth print statement will *always* run because it "
-"is *not* indented under an ``if`` statement."
+"Indentation matters. Each line under the ``if`` statement that is indented "
+"will only be executed ``if`` the statement is ``True``. In this example, the"
+" three lines indented under the ``if`` statement will run *only* if true, "
+"the fourth print statement will *always* run because it is *not* indented "
+"under an ``if`` statement."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:174
@@ -368,11 +342,9 @@ msgstr ""
 "print(\"This will always print because it is not indented.\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:184
-#, fuzzy
-msgid "The indentation amount must be the same. This wandering code doesn't work."
+msgid ""
+"The indentation amount must be the same. This wandering code doesn't work."
 msgstr ""
-"Die Einrückung muss gleich tief sein (gleiche Anzahl von Leerzeichen). "
-"Dieser Code funktioniert nicht."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:186
 msgid ""
@@ -387,15 +359,11 @@ msgstr ""
 "   print(\"The computer will want you to make up your mind.\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:194
-#, fuzzy
 msgid ""
-"Once an ``if`` statement has been finished, it is not possible to re-"
-"indent to go back to it. The test has to be performed again. So this code"
-" example doesn't work at all:"
+"Once an ``if`` statement has been finished, it is not possible to re-indent "
+"to go back to it. The test has to be performed again. So this code example "
+"doesn't work at all:"
 msgstr ""
-"Sobald eine bedingte Anweisung beendet wurde, kann man nicht wieder den "
-"Text einrücken, um zur bedingten Anweisung zurückzukehren. Die "
-"Überprüfung muss erneut ausgeführt werden."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:198
 msgid ""
@@ -430,7 +398,6 @@ msgid "Using And/Or"
 msgstr "Verwendung von und/oder"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:220
-#, fuzzy
 msgid ""
 "An ``if`` statement can check multiple conditions by chaining together "
 "comparisons with ``and`` and ``or``. These are also considered to be "
@@ -438,10 +405,6 @@ msgid ""
 "create a third variable ``c`` and try using these two new operators "
 "yourself."
 msgstr ""
-"Die bedingte Anweisung kann mehrere Bedingungen durch Verbinden der "
-"Vergleiche mit ``and`` (deutsch und) und ``or`` (deutsch oder) "
-"überprüfen. Diese werden also als *Operatoren*, wie ``+`` oder ``-``, "
-"betrachtet. "
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:226
 msgid "Example ``if`` statements, using \"and\" and \"or\""
@@ -472,10 +435,10 @@ msgstr "Wiederhole bitte selbst."
 #: ../../source/chapters/10_if_statements/if_statements.rst:240
 msgid ""
 "A common mistake is to omit a variable when checking it against multiple "
-"conditions. You cannot write ``if a < b or c``. Neither will ``if a < b "
-"or < c`` work. The computer does not know what to check against the "
-"variable ``c``. It will not assume to check it against ``a``. You need "
-"the full ``if a < b or a < c`` for it to work correctly."
+"conditions. You cannot write ``if a < b or c``. Neither will ``if a < b or <"
+" c`` work. The computer does not know what to check against the variable "
+"``c``. It will not assume to check it against ``a``. You need the full ``if "
+"a < b or a < c`` for it to work correctly."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:246
@@ -508,15 +471,15 @@ msgid ""
 "comparisons if a variable already evaluates to ``True`` or ``False``."
 msgstr ""
 "Eine bedingte Anweisung benötigt einen Ausdruck, der zu ``True`` oder "
-"``False`` ausgewertet wird. Was etwas merkwürdig erscheinen kann, ist, "
-"dass wir keine Vergleiche anstellen müssen, wenn die Variable schon zu "
-"``True`` oder ``False`` ausgewertet wird."
+"``False`` ausgewertet wird. Was etwas merkwürdig erscheinen kann, ist, dass "
+"wir keine Vergleiche anstellen müssen, wenn die Variable schon zu ``True`` "
+"oder ``False`` ausgewertet wird."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:269
 msgid ""
-"For example, in this code we set the variable ``a`` to ``True``. Our "
-"``if`` statement does't need a comparison. If ``a`` is True it will "
-"execute the statement, if it is ``False`` it will not."
+"For example, in this code we set the variable ``a`` to ``True``. Our ``if`` "
+"statement does't need a comparison. If ``a`` is True it will execute the "
+"statement, if it is ``False`` it will not."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:273
@@ -539,8 +502,8 @@ msgstr ""
 msgid ""
 "Another operator we can use is the ``not`` operator. You can take any "
 "statement or boolean and flip between True/False. The statement ``if a`` "
-"runs if ``a`` is ``True``, the statement ``if not a`` runs if the "
-"statement is ``False``."
+"runs if ``a`` is ``True``, the statement ``if not a`` runs if the statement "
+"is ``False``."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:286
@@ -558,13 +521,10 @@ msgstr ""
 "    print(\"a is false\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:294
-#, fuzzy
 msgid ""
 "It is also possible to use Boolean variables with the ``and`` and ``or`` "
 "operators."
 msgstr ""
-"Es ist ebenfalls möglich, Boolesche Variablen mit den ``and``- und "
-"``or``-Operatoren zu verwenden."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:296
 msgid "Using \"and\" with Boolean variables"
@@ -590,14 +550,13 @@ msgstr "Wer hätte gedacht, dass wahr/falsch so schwierig sein kann?"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:308
 msgid ""
-"It is also possible to assign a variable to the result of a comparison. "
-"In the code below, the variables ``a`` and ``b`` are compared. If they "
-"are equal, ``c`` will be ``True``, otherwise ``c`` will be ``False``."
+"It is also possible to assign a variable to the result of a comparison. In "
+"the code below, the variables ``a`` and ``b`` are compared. If they are "
+"equal, ``c`` will be ``True``, otherwise ``c`` will be ``False``."
 msgstr ""
 "Es ist ebenfalls möglich das Ergebnis eines Vergleichs an eine Variable "
-"zuzuweisen. Im Code unten werden die Variablen ``a`` und ``b`` "
-"verglichen. Wenn sie gleich sind, wird ``c`` ``True`` andernfalls "
-"``False`` zugewiesen."
+"zuzuweisen. Im Code unten werden die Variablen ``a`` und ``b`` verglichen. "
+"Wenn sie gleich sind, wird ``c`` ``True`` andernfalls ``False`` zugewiesen."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:312
 msgid "Assigning values to Boolean data types"
@@ -632,21 +591,14 @@ msgid "Zero means False. Everything else is True."
 msgstr "Null bedeutet ``False``. Alles andere ist ``True``."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:329
-#, fuzzy
 msgid ""
-"It is possible to create an ``if`` statement with a condition that does "
-"not evaluate to ``True`` or ``False``. Because this is confusing, we "
-"don't use this fact a lot, but it is important to understand how the "
-"computer handles these values when searching for problems. These two "
-"examples will run, and will cause the text to be printed out because the "
-"values in the ``if`` statement are non-zero:"
+"It is possible to create an ``if`` statement with a condition that does not "
+"evaluate to ``True`` or ``False``. Because this is confusing, we don't use "
+"this fact a lot, but it is important to understand how the computer handles "
+"these values when searching for problems. These two examples will run, and "
+"will cause the text to be printed out because the values in the ``if`` "
+"statement are non-zero:"
 msgstr ""
-"Es ist möglich eine ``if``-Anweisung mit einer Bedingung zu schreiben, "
-"die nicht zu ``True`` oder ``False`` ausgewertet wird. Das ist "
-"üblicherweise nicht erwünscht, aber es ist wichtig für die Fehlersuche zu"
-" verstehen, wie der Rechner diese Werte handhabt. Die Anweisungen unten "
-"sind erlaubt und wird den Text ausgeben, weil die Werte in der "
-"``if``-Anweisung ungleich Null sind."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:336
 msgid ""
@@ -660,22 +612,22 @@ msgstr ""
 "if \"A\":\n"
 "    print(\"A\")"
 
+#: ../../source/chapters/10_if_statements/if_statements.rstNone
 msgid "What values are False?"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:346
 msgid ""
 "There are a few other values besides zero that are treated as ``False``. "
-"Namely the ``None`` keyword, an empty string ``\"\"``, and an empty list."
-" We'll cover lists and the ``None`` keyword in later chapters."
+"Namely the ``None`` keyword, an empty string ``\"\"``, and an empty list. "
+"We'll cover lists and the ``None`` keyword in later chapters."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:350
 msgid ""
-"The code below will not print out anything because the value in the "
-"``if`` statement is zero. The value zero is treated as ``False``. Any "
-"value other than zero (like 2, -1, 600, or even \"Fred\") is considered "
-"``True``."
+"The code below will not print out anything because the value in the ``if`` "
+"statement is zero. The value zero is treated as ``False``. Any value other "
+"than zero (like 2, -1, 600, or even \"Fred\") is considered ``True``."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:354
@@ -692,9 +644,9 @@ msgstr "Die ``input``-Funktion"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:365
 msgid ""
-"Rather than hard-coding values into our program, we can use the ``input``"
-" function to ask the user to type something in. The ``input`` function is"
-" reasonably simple to use:"
+"Rather than hard-coding values into our program, we can use the ``input`` "
+"function to ask the user to type something in. The ``input`` function is "
+"reasonably simple to use:"
 msgstr ""
 "Statt die Werte fest in unser Programm zu schreiben, können wir die "
 "``input``-Funktion verwenden, um den Benutzer aufzuforderen etwas "
@@ -708,14 +660,14 @@ msgstr ""
 "temperature = input(\"What is the temperature in Fahrenheit? \")\n"
 "print(\"You said the temperature was \" + temperature + \".\")"
 
-#, fuzzy
-msgid ".. image:: chapters\\10_if_statements\\keyboard.svg"
-msgstr ".. image:: chapters/10_if_statements/flowchart1.png"
+#: ../../source/chapters/10_if_statements/if_statements.rstNone
+msgid ".. image:: chapters/10_if_statements/keyboard.svg"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:379
 msgid ""
-"As a parameter to ``input``, just give it text to use as a prompt. "
-"Whatever the user types in, is stored in the variable on the left."
+"As a parameter to ``input``, just give it text to use as a prompt. Whatever "
+"the user types in, is stored in the variable on the left."
 msgstr ""
 "Gib als Argument beim Aufruf von ``input`` einfach den Text der "
 "Eingabeaufforderung an. Was immer der Benutzer eingibt, wird in der "
@@ -723,21 +675,21 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:382
 msgid ""
-"Note that there is a question mark and a space at the end of that string."
-" If you didn't have this, what the user types in will run right up next "
-"to the prompt. That looks terrible. The user is tempted to type a space "
-"as the first part of their input, which complicates things for us later."
+"Note that there is a question mark and a space at the end of that string. If"
+" you didn't have this, what the user types in will run right up next to the "
+"prompt. That looks terrible. The user is tempted to type a space as the "
+"first part of their input, which complicates things for us later."
 msgstr ""
-"Beachte, dass ein Fragezeichen und ein Leerzeichen am Ende der "
-"Zeichenkette steht. Wenn du das weg lässt, wird der Text, den der "
-"Benutzer eingibt, direkt an die Eingabeaufforderung angehängt. Das sieht "
-"aber schrecklich aus. Der Benutzer wird verführt, ein Leerzeichen als "
-"Erstes einzugeben. Das wird uns aber die Sache später erschweren."
+"Beachte, dass ein Fragezeichen und ein Leerzeichen am Ende der Zeichenkette "
+"steht. Wenn du das weg lässt, wird der Text, den der Benutzer eingibt, "
+"direkt an die Eingabeaufforderung angehängt. Das sieht aber schrecklich aus."
+" Der Benutzer wird verführt, ein Leerzeichen als Erstes einzugeben. Das wird"
+" uns aber die Sache später erschweren."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:387
 msgid ""
-"There's one more thing we have to learn. We can't take what the user "
-"types in and compare it to a number. This program:"
+"There's one more thing we have to learn. We can't take what the user types "
+"in and compare it to a number. This program:"
 msgstr ""
 "Es gibt noch etwas zu lernen. Wir können die Eingabe des Benutzers nicht "
 "direkt mit einer Zahl vergleichen. Dieses Programm:"
@@ -753,9 +705,8 @@ msgstr ""
 "    print(\"It is hot outside.\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:397
-#, fuzzy
 msgid "...will fail with a ``TypeError``:"
-msgstr "... wird mit einem Fehler enden:"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:399
 msgid "TypeError: '>' not supported between instances of 'str' and 'int'"
@@ -763,32 +714,26 @@ msgstr "TypeError: '>' not supported between instances of 'str' and 'int'"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:403
 msgid ""
-"Whatever the user types in is stored as text. We also call text a "
-"\"string\" because to the computer it is just a string of characters. "
-"This is different than a number, and the computer does not know how to "
-"compare them."
+"Whatever the user types in is stored as text. We also call text a \"string\""
+" because to the computer it is just a string of characters. This is "
+"different than a number, and the computer does not know how to compare them."
 msgstr ""
-"Was immer der Benutzer eingibt wird als Text gespeichert. Wir nennen "
-"einen Text auch Zeichenkette, weil es für den Rechner nur eine Kette von "
-"Zeichen ist. Eine Zeichenkette (englisch *string*) ist etwas anderes als "
-"eine Zahl und der Rechner weiß nicht, wie er sie vergleichen soll."
+"Was immer der Benutzer eingibt wird als Text gespeichert. Wir nennen einen "
+"Text auch Zeichenkette, weil es für den Rechner nur eine Kette von Zeichen "
+"ist. Eine Zeichenkette (englisch *string*) ist etwas anderes als eine Zahl "
+"und der Rechner weiß nicht, wie er sie vergleichen soll."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:407
-#, fuzzy
 msgid ""
-"Therefore, we need to convert the input into a number. We can do with "
-"with the ``int`` for integers. If we have floating point numbers, use the"
-" ``float`` function."
+"Therefore, we need to convert the input into a number. We can do with with "
+"the ``int`` for integers. If we have floating point numbers, use the "
+"``float`` function."
 msgstr ""
-"Wir müssen deshalb die Eingabe in eine Zahl umwandeln. Wir können das "
-"entweder mit der ``int``-Funktion für ganze Zahlen (englisch *integers*) "
-"oder der ``float``-Funktion für Gleitkommazahlen (englisch *floating "
-"point numbers*, kurz *floats*) erreichen."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:411
 msgid ""
-"In this example we get the input, convert it to an integer, and then we "
-"can use it in an ``if`` statement."
+"In this example we get the input, convert it to an integer, and then we can "
+"use it in an ``if`` statement."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:414
@@ -815,8 +760,8 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:427
 msgid ""
-"You can chain the ``input`` and ``int`` functions on one line if you "
-"like, as shown here:"
+"You can chain the ``input`` and ``int`` functions on one line if you like, "
+"as shown here:"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:429
@@ -841,16 +786,15 @@ msgstr "Andernfalls und andernfalls wenn"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:443
 msgid ""
-"So far, we've used simple ``if`` statements to run a block of code, or "
-"not run it. What if we want to select between two blocks of code? What if"
-" we want to run one of *four* different blocks? To do this, we need "
-"\"else\" and \"else if\" logic."
+"So far, we've used simple ``if`` statements to run a block of code, or not "
+"run it. What if we want to select between two blocks of code? What if we "
+"want to run one of *four* different blocks? To do this, we need \"else\" and"
+" \"else if\" logic."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:448
 msgid ""
-"Let's start with a simple ``if`` statement that prints if it is hot "
-"outside:"
+"Let's start with a simple ``if`` statement that prints if it is hot outside:"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:450
@@ -867,12 +811,11 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:458
 msgid ""
-"If the programmer wants code to be executed if it is *not* hot, she can "
-"use the ``else`` statement. As for indentation, notice how the ``else`` "
-"is lined up with the ``i`` in the ``if`` statement. Also notice how "
-"``else`` is followed by a colon just like the ``if`` statement. Try "
-"running this code. The ``if`` statement will always run one of the two "
-"blocks, but never both."
+"If the programmer wants code to be executed if it is *not* hot, she can use "
+"the ``else`` statement. As for indentation, notice how the ``else`` is lined"
+" up with the ``i`` in the ``if`` statement. Also notice how ``else`` is "
+"followed by a colon just like the ``if`` statement. Try running this code. "
+"The ``if`` statement will always run one of the two blocks, but never both."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:465
@@ -896,26 +839,18 @@ msgstr ""
 "print(\"Done\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:476
-#, fuzzy
 msgid ""
 "In the case of an if...else statement, one block of code will always be "
-"executed. The first block will be executed ``if`` the statement evaluates"
-" to ``True``, the second block if it evaluates to ``False``."
+"executed. The first block will be executed ``if`` the statement evaluates to"
+" ``True``, the second block if it evaluates to ``False``."
 msgstr ""
-"Im Fall der ``if``...``else``-Anweisung (besser zweiseitige Auswahl), "
-"wird immer ein Block von Anweisungen ausgeführt. Der erste Block wird "
-"ausgeführt, wenn die Bedingung zu ``True`` ausgewertet wird. Der zweite "
-"Block wird ausgeführt, wenn sie zu ``False`` ausgewertet wird."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:480
-#, fuzzy
 msgid ""
 "It is possible to chain several ``if`` statements together using the "
-"else...if statement. Python abbreviates this as ``elif``. In this example"
-" we add a third possible combination using ``elif``."
+"else...if statement. Python abbreviates this as ``elif``. In this example we"
+" add a third possible combination using ``elif``."
 msgstr ""
-"Man kann mehrere bedingte Anweisungen mit einer "
-"``else``...``if``-Anweisung verketten. Python kürzt dies mit ``elif`` ab."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:484
 msgid "Example if/elif/else statement"
@@ -942,15 +877,11 @@ msgstr ""
 "print(\"Done\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:497
-#, fuzzy
 msgid ""
-"In this next example, we've made a mistake. The program will output \"It "
-"is hot outside\" even if the user types in 120 degrees. Why? How can the "
-"code be fixed?"
+"In this next example, we've made a mistake. The program will output \"It is "
+"hot outside\" even if the user types in 120 degrees. Why? How can the code "
+"be fixed?"
 msgstr ""
-"Der Code unten wird \"It is hot outside\" ausgeben, wenn der Benutzer "
-"eine Temperatur von 120 Grad Fahrenheit eingibt. Warum? Wie kann das "
-"Programm repariert werden?"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:501
 #: ../../source/chapters/10_if_statements/if_statements.rst:520
@@ -983,13 +914,12 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:516
 msgid ""
-"The computer doesn't do a \"best-fit\", it looks at the ``if`` statement "
-"in order. As 120 is greater than 90, it will run the first condition and "
-"skip the rest. To fix this code, we need to reorder it."
+"The computer doesn't do a \"best-fit\", it looks at the ``if`` statement in "
+"order. As 120 is greater than 90, it will run the first condition and skip "
+"the rest. To fix this code, we need to reorder it."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:520
-#, fuzzy
 msgid ""
 "temperature = int(input(\"What is the temperature in Fahrenheit? \"))\n"
 "if temperature > 110:\n"
@@ -1002,29 +932,16 @@ msgid ""
 "    print(\"It is ok outside\")\n"
 "print(\"Done\")"
 msgstr ""
-"temperature = int(input(\"What is the temperature in Fahrenheit? \"))\n"
-"if temperature > 90:\n"
-"    print(\"It is hot outside\")\n"
-"elif temperature > 110:\n"
-"    print(\"Oh man, you could fry eggs on the pavement!\")\n"
-"elif temperature < 30:\n"
-"    print(\"It is cold outside\")\n"
-"else:\n"
-"    print(\"It is ok outside\")\n"
-"print(\"Done\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:538
 msgid "Text Comparisons"
 msgstr "Textvergleiche"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:540
-#, fuzzy
 msgid ""
-"It is possible to use an ``if`` statement to check text, as shown in this"
-" example."
+"It is possible to use an ``if`` statement to check text, as shown in this "
+"example."
 msgstr ""
-"Es ist möglich eine bedingte Anweisung zum Überprüfen von Text zu "
-"verwenden."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:542
 msgid "Case sensitive text comparison"
@@ -1045,28 +962,24 @@ msgstr ""
 "    print(\"Your name is ok.\")"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:552
-#, fuzzy
 msgid ""
-"The prior example will only match if the user enters \"Paul\" with a "
-"capital P. It will not work if the user enters lower-case \"paul\" or "
-"upper-case \"PAUL\"."
+"The prior example will only match if the user enters \"Paul\" with a capital"
+" P. It will not work if the user enters lower-case \"paul\" or upper-case "
+"\"PAUL\"."
 msgstr ""
-"Nur wenn der Benutzer im Beispiel oben \"Paul\" eingibt, wird es passen. "
-"Es wird nicht funktionieren, wenn der Benutzer \"paul\" oder \"PAUL\" "
-"eingibt."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:555
 msgid ""
-"A common mistake is to forget the quotes around the string being "
-"compared. In the example below, the computer will think that Paul is a "
-"variable that stores a value. It will flag an error because it has no "
-"idea what is stored in the variable Paul."
+"A common mistake is to forget the quotes around the string being compared. "
+"In the example below, the computer will think that Paul is a variable that "
+"stores a value. It will flag an error because it has no idea what is stored "
+"in the variable Paul."
 msgstr ""
-"Ein üblicher Fehler ist, die Anführungszeichen um die Zeichenkette, mit "
-"der verglichen werden soll, zu vergessen. Im Beispiel unten wird der "
-"Rechner annehmen, dass Paul eine Variable ist, die einen Wert speichert. "
-"Er wird einen Fehler anzeigen, weil er keine Ahnung hat, was in der "
-"Variablen Paul gespeichert ist."
+"Ein üblicher Fehler ist, die Anführungszeichen um die Zeichenkette, mit der "
+"verglichen werden soll, zu vergessen. Im Beispiel unten wird der Rechner "
+"annehmen, dass Paul eine Variable ist, die einen Wert speichert. Er wird "
+"einen Fehler anzeigen, weil er keine Ahnung hat, was in der Variablen Paul "
+"gespeichert ist."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:560
 msgid "Incorrect comparison"
@@ -1091,15 +1004,11 @@ msgid "Multiple Text Possibilities"
 msgstr "Mehrfache Textvergleiche"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:575
-#, fuzzy
 msgid ""
 "When comparing a variable to multiple possible strings of text, it is "
-"important to remember that the comparison *must* include the variable. "
-"For example:"
+"important to remember that the comparison *must* include the variable. For "
+"example:"
 msgstr ""
-"Wenn man eine Variable mit mehreren möglichen Zeichenketten vergleicht, "
-"ist es wichtig daran zu denken, dass jeder Vergleich die Variable "
-"beinhalten muss. Zum Beispiel:"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:578
 msgid ""
@@ -1118,30 +1027,24 @@ msgid ""
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:590
-#, fuzzy
 msgid ""
-"Confusingly, the first example will run, but it will *always* trigger the"
-" ``if`` statement even if the name isn't Paul or Mary. This is because "
-"for any value other than zero, the computer assumes to mean ``True``. "
-"\"Mary\" isn't zero. So to the computer \"Mary\" is the same thing as "
-"``True`` and so it will run the code in the ``if`` statement."
+"Confusingly, the first example will run, but it will *always* trigger the "
+"``if`` statement even if the name isn't Paul or Mary. This is because for "
+"any value other than zero, the computer assumes to mean ``True``. \"Mary\" "
+"isn't zero. So to the computer \"Mary\" is the same thing as ``True`` and so"
+" it will run the code in the ``if`` statement."
 msgstr ""
-"Dies ist so, weil für jeden von Null verschiedenen Wert der Rechner "
-"annimmt, dass ``True`` gemeint ist. Für den Rechner bedeutet in diesem "
-"Fall \"Mary\" also ``True`` und er führt den Code in der ``if``-Anweisung"
-" aus."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:598
-#, fuzzy
 msgid "Case-Insensitive Comparisons"
-msgstr "Groß-/Kleinschreibungsunabhängige Textvergleiche"
+msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:600
 msgid ""
 "If the program needs to match text, and we don't care if it is upper or "
 "lower case, we need a case-insensitive comparison. The easiest way to do "
-"that is to convert everything to lower-case, then compare. This can be "
-"done with the ``lower()`` command."
+"that is to convert everything to lower-case, then compare. This can be done "
+"with the ``lower()`` command."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:605
@@ -1149,18 +1052,11 @@ msgid "Learn to be insensitive."
 msgstr "Lerne unabhängig zu sein."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:607
-#, fuzzy
 msgid ""
-"The example below will take whatever the user enters, convert it to "
-"lower-case, and then do the comparison. Important: Don't convert to "
-"lower-case and compare it against a string that has uppercase! Then "
-"you'll never match."
+"The example below will take whatever the user enters, convert it to lower-"
+"case, and then do the comparison. Important: Don't convert to lower-case and"
+" compare it against a string that has uppercase! Then you'll never match."
 msgstr ""
-"Das Beispiel unten wird den Text, den der Benutzer eingibt, in "
-"Kleinbuchstaben umwandeln und dann vergleichen. Wichtig: Vergleiche ihn "
-"nicht mit einer Zeichenkette, die Großbuchstaben enthält. Wenn die "
-"Eingabe in Kleinbuchstaben umgewandelt wurde, wird sie niemals auf eine "
-"Zeichenkette mit Großbuchstaben passen."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:612
 msgid "Case-insensitive text comparison"
@@ -1187,25 +1083,23 @@ msgstr ""
 #: ../../source/chapters/10_if_statements/if_statements.rst:625
 msgid ""
 "With the introduction of ``if`` statements we've learned how to run code "
-"only if a condition is true. By adding in ``elif`` and ``else`` "
-"statements we can run one of multiple possible code blocks depending upon"
-" a condition."
+"only if a condition is true. By adding in ``elif`` and ``else`` statements "
+"we can run one of multiple possible code blocks depending upon a condition."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:629
 msgid ""
-"We've learned that we write conditions using **comparison operators** "
-"like ``<`` and ``>``. We've learned that ``==`` is the comparison "
-"operator for asking if two items are equal, while ``=`` is the assignment"
-" operator used to set a variable's value. We can reverse logic using the "
-"``not`` operator."
+"We've learned that we write conditions using **comparison operators** like "
+"``<`` and ``>``. We've learned that ``==`` is the comparison operator for "
+"asking if two items are equal, while ``=`` is the assignment operator used "
+"to set a variable's value. We can reverse logic using the ``not`` operator."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:635
 msgid ""
-"Finally, we were introduced to **Boolean** values, where variables can "
-"store ``True`` or ``False``. The ``if`` statements can operate based on "
-"those values."
+"Finally, we were introduced to **Boolean** values, where variables can store"
+" ``True`` or ``False``. The ``if`` statements can operate based on those "
+"values."
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:639
@@ -1213,14 +1107,10 @@ msgid "Example if Statements"
 msgstr "Beispiel bedingte Anweisungen"
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:641
-#, fuzzy
 msgid ""
 "The next set of example code below runs through all the concepts talked "
 "about earlier."
 msgstr ""
-"Das folgende Beispielprogramm führt alle oben dargestellten Konzepte aus."
-" Das Video online geht durch alle Codezeilen und erklärt, wie sie "
-"funktionieren."
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:644
 msgid ""
@@ -1348,8 +1238,7 @@ msgid ""
 "print(\"Done\")\n"
 "\n"
 "# Comparisons using string/text\n"
-"# The input statement will ask the user for input and put it in "
-"user_name.\n"
+"# The input statement will ask the user for input and put it in user_name.\n"
 "user_name = input(\"What is your name? \")\n"
 "if user_name == \"Paul\":\n"
 "    print(\"You have a nice name.\")\n"
@@ -1480,8 +1369,7 @@ msgstr ""
 "print(\"Done\")\n"
 "\n"
 "# Comparisons using string/text\n"
-"# The input statement will ask the user for input and put it in "
-"user_name.\n"
+"# The input statement will ask the user for input and put it in user_name.\n"
 "user_name = input(\"What is your name? \")\n"
 "if user_name == \"Paul\":\n"
 "    print(\"You have a nice name.\")\n"
@@ -1494,8 +1382,8 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:651
 msgid ""
-"Practice on-line by completing the first set of coding problems available"
-" here:"
+"Practice on-line by completing the first set of coding problems available "
+"here:"
 msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:653
@@ -1504,304 +1392,6 @@ msgstr ""
 
 #: ../../source/chapters/10_if_statements/if_statements.rst:655
 msgid ""
-"All problems beginning with ``03`` can be done with the knowledge from "
-"this chapter."
+"All problems beginning with ``03`` can be done with the knowledge from this "
+"chapter."
 msgstr ""
-
-#~ msgid ""
-#~ "# This does not work! It will always be true\n"
-#~ "if user_name == \"Paul\" or \"Mary\":"
-#~ msgstr ""
-#~ "# This does not work! It will always be true\n"
-#~ "if user_name == \"Paul\" or \"Mary\":"
-
-#~ msgid "Instead, the code should read:"
-#~ msgstr "Stattdessen sollte im Code stehen:"
-
-#~ msgid ""
-#~ "# This does work\n"
-#~ "if user_name == \"Paul\" or user_name == \"Mary\":"
-#~ msgstr ""
-#~ "# This does work\n"
-#~ "if user_name == \"Paul\" or user_name == \"Mary\":"
-
-#~ msgid ""
-#~ "How do we tell if a player "
-#~ "has beat the high score? How can"
-#~ " we tell if he has run out "
-#~ "of lives? How can we tell if "
-#~ "she has the key required to open"
-#~ " the locked door?"
-#~ msgstr ""
-#~ "Wie stellen wir fest, ob eine "
-#~ "Spielerin den Highscore gebrochen hat? "
-#~ "Wie können wir feststellen, ob sie "
-#~ "alle Leben aufgebraucht hat? Wie können"
-#~ " wir feststellen, ob sie den "
-#~ "Schlüssel besitzt, um die verschlossene "
-#~ "Tür zu öffnen?"
-
-#~ msgid ""
-#~ "Here are a few examples of ``if``"
-#~ " statements. The first section sets "
-#~ "up two variables (a and b) for "
-#~ "use in the ``if`` statements. Then "
-#~ "two ``if`` statements show how to "
-#~ "compare the variables to see if "
-#~ "one is greater than the other."
-#~ msgstr ""
-#~ "Hier folgen ein paar Beispiele von "
-#~ "bedingten Anweisungen. Der erste Abschnitt "
-#~ "besteht aus zwei Variablen (``a`` und"
-#~ " ``b``) zur Verwendung in bedingten "
-#~ "Anweisungen. Danach folgen zwei "
-#~ "``if``-Anweisungen, die zeigen wie man "
-#~ "die beiden Variablen vergleicht, um "
-#~ "festzustellen ob eine größer als die "
-#~ "andere ist."
-
-#~ msgid ""
-#~ "Since ``a`` is less than ``b``, "
-#~ "the first statement will print out "
-#~ "if this code is run. If the "
-#~ "variables ``a`` and ``b`` were both "
-#~ "equal to 4, then neither of the"
-#~ " two ``if`` statements above would "
-#~ "print anything out. The number 4 "
-#~ "is not greater than 4, so the "
-#~ "``if`` statement would fail."
-#~ msgstr ""
-#~ "Da ``a`` kleiner als ``b`` ist, "
-#~ "sorgt die erste bedingte Anweisung "
-#~ "dafür, dass dies ausgegeben wird. Wenn"
-#~ " die beiden Variablen beide gleich 4"
-#~ " wären, würde keine der beiden "
-#~ "bedingten Anweisungen oben etwas ausgeben. "
-#~ "Die Zahl 4 ist nicht größer als"
-#~ " 4, also wird die ``if``-Anweisung "
-#~ "fehlschlagen."
-
-#~ msgid ""
-#~ "To show the flow of a program "
-#~ "a *flowchart* may be used. Most "
-#~ "people can follow a flowchart even "
-#~ "without an introduction to programming. "
-#~ "See how well you can understand "
-#~ "the figure below."
-#~ msgstr ""
-#~ "Um den Ablauf eines Programms "
-#~ "darzustellen, kann man einen "
-#~ "*Programmablaufplan* verwenden. Die meisten "
-#~ "Leute können einem Programmablaufplan folgen,"
-#~ " auch wenn sie noch gar keine "
-#~ "Einführung ins Programmieren hatten. Probiere"
-#~ " aus, wie gut du die Abbildung "
-#~ "unten verstehst."
-
-#~ msgid ""
-#~ "This book skips an in-depth look"
-#~ " at flowcharting because it is "
-#~ "boring. But if you want to be "
-#~ "a superstar programmer, please read more"
-#~ " about it at:"
-#~ msgstr ""
-#~ "In diesem Buch überspringen wir die "
-#~ "Erstellung von Programmablaufplänen, weil es"
-#~ " langweilig ist. Wenn du aber ein "
-#~ "Spitzenprogrammierer werden willst, dann lies"
-#~ " bitte hier weiter:"
-
-#~ msgid ""
-#~ "The prior example checked for greater"
-#~ " than or less than. Numbers that "
-#~ "were equal would not pass the "
-#~ "test. To check for a values "
-#~ "greater than or equal, the following "
-#~ "examples show how to do this:"
-#~ msgstr ""
-#~ "Das vorige Beispiel hat auf größer "
-#~ "oder kleiner als überprüft. Zahlen die"
-#~ " gleich groß sind, würden diesen Test"
-#~ " nicht bestehen. Das folgende Beispiel "
-#~ "zeigt dir, wie man überprüft, ob "
-#~ "Werte größer oder gleich sind:"
-
-#~ msgid ""
-#~ "The next set of code checks to "
-#~ "see if two items are equal or "
-#~ "not. The operator for equal is "
-#~ "``==`` and the operator for not "
-#~ "equal is ``!=``. Here they are in"
-#~ " action."
-#~ msgstr ""
-#~ "Der nächste Programmschnipsel überprüft, ob"
-#~ " zwei Elemente gleich sind oder "
-#~ "nicht. Der Operator für Gleichheit ist"
-#~ " ``==`` und der Operator für "
-#~ "Ungleichheit ist ``!=``. Hier sind sie"
-#~ " in Aktion."
-
-#~ msgid ""
-#~ "Indentation matters. Each line under the"
-#~ " ``if`` statement that is indented "
-#~ "will only be executed ``if`` the "
-#~ "statement is ``True``:"
-#~ msgstr ""
-#~ "Die Einrückung ist entscheidend. Jede "
-#~ "Zeile unter der ``if``-Anweisung, die "
-#~ "eingerückt ist, wird nur ausgeführt, "
-#~ "wenn die Bedingung wahr ist (``True``"
-#~ " ergibt):"
-
-#~ msgid ""
-#~ "A common mistake is to omit a "
-#~ "variable when checking it against "
-#~ "multiple conditions. The code below does"
-#~ " not work because the computer does"
-#~ " not know what to check against "
-#~ "the variable ``c``. It will not "
-#~ "assume to check it against ``a``."
-#~ msgstr ""
-#~ "Ein häufiger Fehler ist, eine Variable"
-#~ " auszulassen, wenn sie gegen mehrere "
-#~ "Werte verglichen werden soll. Der Code"
-#~ " unten wird nicht funktionieren, da "
-#~ "der Rechner nicht weiß, womit er "
-#~ "die Variable ``c`` vergleichen soll. Er"
-#~ " wird nicht annehmen, dass er sie "
-#~ "mit ``a`` vergleichen soll."
-
-#~ msgid ""
-#~ "Python supports Boolean variables. What "
-#~ "are Boolean variables? Boolean variables "
-#~ "can store either a ``True`` or a"
-#~ " value of ``False``. `Boolean algebra`_ "
-#~ "was developed by `George Boole`_ back"
-#~ " in 1854. If only he knew how"
-#~ " important his work would become as"
-#~ " the basis for modern computer logic!"
-#~ msgstr ""
-#~ "Python unterstützt Boolesche Variablen. Was"
-#~ " sind Boolesche Variablen? Boolesche "
-#~ "Variablen können entweder den Wert "
-#~ "``True`` (deutsch wahr) oder ``False`` "
-#~ "(deutsch falsch) speichern. Die `Boolean "
-#~ "algebra`_ wurde von `George Boole`_ "
-#~ "schon 1854 entwickelt. Wenn er gewusst"
-#~ " hätte, dass seine Arbeit die "
-#~ "Grundlage der modernen Rechnerlogik werden "
-#~ "würde."
-
-#~ msgid ""
-#~ "Back when I was in school it "
-#~ "was popular to say some false "
-#~ "statement. Wait three seconds, then "
-#~ "shout \"NOT!\" Well, even your computer"
-#~ " thinks that is lame. If you "
-#~ "are going to do that, you have "
-#~ "to start with the not operator. "
-#~ "The following code uses the not to"
-#~ " flip the value of a between "
-#~ "true and false."
-#~ msgstr ""
-#~ "Als ich noch zur Schule ging, war"
-#~ " es in Mode etwas Falsches zu "
-#~ "sagen, drei Sekunden zu warten und "
-#~ "dann \"NICHT!\" zu rufen. Nun gut, "
-#~ "selbst dein Rechner wird das für "
-#~ "einen lahmen Witz halten. Wenn du "
-#~ "das machen willst, musst du mit "
-#~ "den ``not``-Operator anfangen. Der folgende"
-#~ " Code verwendet den ``not``-Operator, um"
-#~ " den Wert zwischen wahr und falsch"
-#~ " zu invertieren."
-
-#~ msgid ""
-#~ "Because not is an operator and not"
-#~ " a function, parentheses aren't necessary."
-#~ msgstr ""
-#~ "Da ``not`` ein Operator und keine "
-#~ "Funktion ist, sind keine Klammern nötig."
-
-#~ msgid ""
-#~ "The code below will not print out"
-#~ " anything because the value in the"
-#~ " ``if`` statement is zero which is"
-#~ " treated as ``False``. Any value "
-#~ "other than zero is considered ``True``."
-#~ msgstr ""
-#~ "Der Code unten wird nichts ausgeben, "
-#~ "weil der Wert in der ``if``-Anweisung"
-#~ " Null ist und damit als ``False`` "
-#~ "behandelt wird. Jeder von Null "
-#~ "verschiedenen Wert wird als ``True`` "
-#~ "betrachtet."
-
-#~ msgid "For example:"
-#~ msgstr "Zum Beispiel:"
-
-#~ msgid "You can also do it in one step by nesting the functions:"
-#~ msgstr "Du kannst die Funktionen auch in einem Schritt verschachteln:"
-
-#~ msgid ""
-#~ "Below is code that will get the"
-#~ " temperature from the user and print"
-#~ " if it is hot."
-#~ msgstr ""
-#~ "Unten ist der Code, der die "
-#~ "Temperatur vom Benutzer abfragt und "
-#~ "ausgibt, ob es heiß ist."
-
-#~ msgid ""
-#~ "If the programmer wants code to be"
-#~ " executed if it is not hot, she"
-#~ " can use the else statement. Notice"
-#~ " how the else is lined up with"
-#~ " the ``i`` in the ``if`` statement,"
-#~ " and how it is followed by a"
-#~ " colon just like the ``if`` "
-#~ "statement."
-#~ msgstr ""
-#~ "Wenn die Programmiererin Code ausführen "
-#~ "möchten, wenn es nicht heiß ist, "
-#~ "kann sie die ``else``-Anweisung verwenden. "
-#~ "Beachte wie das ``else`` genau so "
-#~ "weit eingerückt ist wie das ``if`` "
-#~ "und von einem Doppelpunkt gefolgt wird,"
-#~ " wie bei der ``if``-Anweisung."
-
-#~ msgid "If you can't figure it out, see the video."
-#~ msgstr "Wenn du nicht drauf kommst, sieh dir das Video an."
-
-#~ msgid ""
-#~ "# This does not work! It will always be true\n"
-#~ "if user_name == \"Paul\" or \"Mary\":\n"
-#~ "Instead, the code should read:\n"
-#~ "\n"
-#~ "# This does work\n"
-#~ "if user_name == \"Paul\" or user_name == \"Mary\":"
-#~ msgstr ""
-#~ "# This does not work! It will always be true\n"
-#~ "if user_name == \"Paul\" or \"Mary\":\n"
-#~ "Instead, the code should read:\n"
-#~ "\n"
-#~ "# This does work\n"
-#~ "if user_name == \"Paul\" or user_name == \"Mary\":"
-
-#~ msgid "Case Insensitive Comparisons"
-#~ msgstr "Groß-/Kleinschreibungsunabhängige Vergleiche"
-
-#~ msgid ""
-#~ "If the program needs to match "
-#~ "regardless as to the case of the"
-#~ " text entered, the easiest way to "
-#~ "do that is to convert everything "
-#~ "to lower case. This can be done"
-#~ " with the lower command."
-#~ msgstr ""
-#~ "Wenn der Vergleich unabhängig von "
-#~ "Groß-/Kleinschreibung passen soll, ist es "
-#~ "am einfachsten alles in Kleinbuchstaben "
-#~ "umzuwandeln. Dies macht die "
-#~ "``lower``-Funktion."
-

@@ -1,28 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Paul Vincent Craven
+# Copyright (C) 2021, Paul Vincent Craven
 # This file is distributed under the same license as the Arcade package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Gans Hünther <yang.ambrosius@igs-buchholz.de>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Arcade 2020\n"
+"Project-Id-Version: Arcade 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 14:54-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Last-Translator: Gans Hünther <yang.ambrosius@igs-buchholz.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/arcade-academy/teams/108729/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/chapters/02_setup/setup.rst:4
 msgid "Setting Up Your System"
-msgstr ""
+msgstr "Einrichten Deines Systems"
 
-msgid ".. image:: chapters\\02_setup\\computer_screen_checkbox.svg"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/computer_screen_checkbox.svg"
+msgstr ".. image:: chapters/02_setup/computer_screen_checkbox.svg"
 
 #: ../../source/chapters/02_setup/setup.rst:10
 msgid ""
@@ -31,267 +36,255 @@ msgid ""
 "through this part, as you might need to set up your own system in the "
 "future."
 msgstr ""
+"Bevor du mit dem Programmieren beginnst, müssen wir ein paar Dinge "
+"installieren. Benutzen du einen Schulcomputer? gut! Eventuell ist auf diesem"
+" bereits alles installiert. Trotzdem solltest du dir dieses Kapitel "
+"durchlesen, da du in Zukunft vielleicht dein eigenes System einrichten "
+"willst oder musst."
 
 #: ../../source/chapters/02_setup/setup.rst:15
 msgid ""
 "Getting a system set up and ready to program can be a bit frustrating. "
-"**Don't give up.** Once you've got a system set up for programming you "
-"don't need to think about it again. You can concentrate on the "
-"programming part. It is normal to get stuck during setup, so don't "
-"hesitate to reach out and get help."
+"**Don't give up.** Once you've got a system set up for programming you don't"
+" need to think about it again. You can concentrate on the programming part. "
+"It is normal to get stuck during setup, so don't hesitate to reach out and "
+"get help."
 msgstr ""
+"Ein System einzurichten und zu programmieren kann ein wenig frustrierend "
+"sein. ``Gib nicht auf``. Sobald ein System zum Programmieren eingerichtet "
+"ist , musst du dir keine Gedanken mehr machen . Du kannst dich nun voll und "
+"ganz auf das Programmieren konzentrieren. Es ist normal, dass man beim "
+"Einrichten mal nicht weiterkommt, also zögere nicht, dir Hilfe zu holen."
 
 #: ../../source/chapters/02_setup/setup.rst:21
 msgid "Setup the Programming Environment"
-msgstr ""
+msgstr "Einrichten der Programmierumgebung"
 
-msgid ".. image:: chapters\\02_setup\\laptop.svg"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/laptop.svg"
+msgstr ".. image:: chapters/02_setup/laptop.svg"
 
 #: ../../source/chapters/02_setup/setup.rst:27
 msgid "In this chapter we'll show you how to:"
-msgstr ""
+msgstr "In diesem Kapitel zeigen wir dir, wie :"
 
 #: ../../source/chapters/02_setup/setup.rst:29
 msgid ""
 "Install an \"IDE\" to type in your programs. (We'll use a program called "
 "PyCharm_. You can use the community edition for free, or if you have an "
-"email address that ends in ``.edu`` get can get a free `student license`_"
-" for the professional version.)"
+"email address that ends in ``.edu`` get can get a free `student license`_ "
+"for the professional version.)"
 msgstr ""
+"Eine \"IDE\", installieren um Ihre Programme einzugeben. (Wir werden ein "
+"Programm namens PyCharm_ verwenden. Du kannst die Community-Edition "
+"kostenlos benutzen, oder wenn du eine E-Mail-Adresse haben, die auf ``.edu``"
+" endet, kannst du eine kostenlose `Studentenlizenz`_ für die Professional-"
+"Version bekommen)."
 
 #: ../../source/chapters/02_setup/setup.rst:33
 msgid "Install the Python_ programming language."
-msgstr ""
+msgstr "Installiere die Programmiersprache Python_."
 
 #: ../../source/chapters/02_setup/setup.rst:34
 msgid "A minor configuration tweak so we can see file extensions."
 msgstr ""
+"Eine kleine Konfigurationsanpassung, damit wir Dateierweiterungen sehen "
+"können."
 
 #: ../../source/chapters/02_setup/setup.rst:36
 msgid "In the next chapter we'll cover:"
-msgstr ""
+msgstr "Im nächsten Kapitel werden wir behandeln:"
 
 #: ../../source/chapters/02_setup/setup.rst:38
 msgid "A version control system to track and turn in your work. (Git_)"
 msgstr ""
+"Ein Versionskontrollsystem, um deine Arbeit zu verfolgen und einzureichen. "
+"(Git_)"
 
 #: ../../source/chapters/02_setup/setup.rst:39
 msgid "Setup with the Arcade_ code library and a template project."
 msgstr ""
+"Die Einrichtung mit der Arcade_-Codebibliothek und einem Vorlagenprojekt."
 
 #: ../../source/chapters/02_setup/setup.rst:43
 msgid "Let's go through these items in detail."
-msgstr ""
+msgstr "Lass uns diese Punkte im Detail durchgehen."
 
 #: ../../source/chapters/02_setup/setup.rst:52
 msgid "Installing an IDE"
-msgstr ""
+msgstr "Installieren einer IDE"
 
-msgid ".. image:: chapters\\02_setup\\pycharm_logo.png"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/pycharm_logo.png"
+msgstr ".. image:: chapters/02_setup/pycharm_logo.png"
 
 #: ../../source/chapters/02_setup/setup.rst:58
 msgid ""
-"We need an **editor**. Python comes with an editor called IDLE, but it is"
-" awful and not worth using. We'll use an editor called **PyCharm**."
+"We need an **editor**. Python comes with an editor called IDLE, but it is "
+"awful and not worth using. We'll use an editor called **PyCharm**."
 msgstr ""
+"Wir brauchen einen **Editor**. Python wird mit einem Editor namens IDLE "
+"ausgeliefert, aber er ist schrecklich und es lohnt sich nicht, ihn zu "
+"benutzen. Wir werden einen Editor namens PyCharm verwenden."
 
 #: ../../source/chapters/02_setup/setup.rst:61
 msgid ""
 "PyCharm is a powerful program that lets you do more than just edit the "
-"program, it also includes a large set of tools that programmers need. "
-"This type of environment is called an **Integrated Development "
-"Environment**, or **IDE** for short."
+"program, it also includes a large set of tools that programmers need. This "
+"type of environment is called an **Integrated Development Environment**, or "
+"**IDE** for short."
 msgstr ""
+"PyCharm ist ein mächtiges Programm, mit dem du mehr tun kannst als nur das "
+"Programm zu bearbeiten, es enthält auch einen großen Satz von Werkzeugen, "
+"die Programmierer brauchen. Diese Art von Umgebung wird als **Integrierte "
+"Entwicklungsumgebung**, kurz **IDE**, bezeichnet."
 
 #: ../../source/chapters/02_setup/setup.rst:66
 msgid ""
-"Download and install PyCharm_. You can use their community edition for "
-"free. We won't use the features in the professional edition. If you "
-"decide to pick the professional edition anyway, you'll need a license to "
-"use it. But licenses are free for educational use! If you have an e-mail "
-"that ends in ``.edu`` you can ask for a `student license`_. It can be "
-"used on a school computer, or on your own computer."
+"Download and install PyCharm_. You can use their community edition for free."
+" We won't use the features in the professional edition. If you decide to "
+"pick the professional edition anyway, you'll need a license to use it. But "
+"licenses are free for educational use! If you have an e-mail that ends in "
+"``.edu`` you can ask for a `student license`_. It can be used on a school "
+"computer, or on your own computer."
 msgstr ""
+"Lade dir PyCharm_ herunter und installiere es. Du kannst deren Community-"
+"Edition kostenlos nutzen. Wir werden die Funktionen der Professional Edition"
+" nicht nutzen. Wenn du dir trotzdem für die Professional Edition "
+"entscheiden, benötigst du eine Lizenz, um sie zu nutzen. Aber Lizenzen sind "
+"für die Verwendung zu Ausbildungszwecken kostenlos! Wenn du eine E-Mail "
+"hast, die auf ``.edu`` endet, kannst du nach einer `Studentenlizenz`_ "
+"fragen. Diese kann sowohl auf einem Schulcomputer als auch auf deinem "
+"eigenen Computer verwendet werden."
 
 #: ../../source/chapters/02_setup/setup.rst:81
 msgid "Installing Python"
-msgstr ""
+msgstr "Installieren von Python"
 
-msgid ".. image:: chapters\\02_setup\\python-logo.svg"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/python-logo.svg"
+msgstr ".. image:: chapters/02_setup/python-logo.svg"
 
 #: ../../source/chapters/02_setup/setup.rst:87
 msgid ""
-"We will be using the \"Python_\" computer programming language. (We'll "
-"learn more about what a computer language is in the :ref:`what-is-a"
-"-programming-language` chapter. Also, the creator of Python was a fan of "
-"`Monty Python`_, hence the name.)"
+"We will be using the \"Python_\" computer programming language. (We'll learn"
+" more about what a computer language is in the :ref:`what-is-a-programming-"
+"language` chapter. Also, the creator of Python was a fan of `Monty Python`_,"
+" hence the name.)"
 msgstr ""
+"Wir werden die Computerprogrammiersprache \"Python_\" verwenden. (Mehr "
+"darüber, was eine Computersprache ist, erfahren Sie im Kapitel :ref:`Was ist"
+" eine Programmiersprache?` Außerdem war der Erfinder von Python ein Fan von "
+"`Monty Python`_, daher der Name.)"
 
 #: ../../source/chapters/02_setup/setup.rst:94
 msgid "Download Python from the official Python website:"
-msgstr ""
+msgstr "Lade Python von der offiziellen Python-Website herunter:"
 
 #: ../../source/chapters/02_setup/setup.rst:95
 msgid "https://www.python.org/downloads/"
-msgstr ""
+msgstr "https://www.python.org/downloads/"
 
 #: ../../source/chapters/02_setup/setup.rst:97
 msgid ""
 "When installing Python, make sure to add Python to the path (1) before "
 "clicking the Install button (2)."
 msgstr ""
+"Stell bei der Installation von Python sicher, dass Sie Python zum Pfad "
+"hinzufügen (1), bevor Sie auf die Schaltfläche Installieren (2) klicken."
 
-msgid ".. image:: chapters\\02_setup\\setup_windows_1.png"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/setup_windows_1.png"
+msgstr ".. image:: chapters/02_setup/setup_windows_1.png"
 
 #: ../../source/chapters/02_setup/setup.rst:103
 msgid ""
-"After that, you can just close the dialog. There's no need to increase "
-"the path length, although it doesn't hurt anything if you do."
+"After that, you can just close the dialog. There's no need to increase the "
+"path length, although it doesn't hurt anything if you do."
 msgstr ""
+"Danach kannst du den Dialog einfach schließen. Es ist nicht nötig, die "
+"Pfadlänge zu erhöhen, obwohl es nicht schadet, wenn du es tust."
 
-msgid ".. image:: chapters\\02_setup\\setup_windows_5.png"
-msgstr ""
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/setup_windows_5.png"
+msgstr ".. image:: chapters/02_setup/setup_windows_5.png"
 
 #: ../../source/chapters/02_setup/setup.rst:110
 msgid "Viewing File Extensions"
-msgstr ""
+msgstr "Anzeigen von Datenerweiterungen"
 
 #: ../../source/chapters/02_setup/setup.rst:112
 msgid ""
 "It is a great idea to change your windows configuration to show file "
-"extensions. A file usually has a name like Book ``report.docx`` where the"
-" ``.docx`` tells the computer it is a Microsoft Word compatible document."
-" By default Windows hides the ``.docx`` extension if there is a program "
-"installed to handle it. If you are programming, this hiding part of the "
-"file name can be annoying."
+"extensions. A file usually has a name like Book ``report.docx`` where the "
+"``.docx`` tells the computer it is a Microsoft Word compatible document. By "
+"default Windows hides the ``.docx`` extension if there is a program "
+"installed to handle it. If you are programming, this hiding part of the file"
+" name can be annoying."
 msgstr ""
+"Es ist eine gute Idee, deine Windows-Konfiguration so zu ändern, dass "
+"Dateierweiterungen angezeigt werden. Eine Datei hat normalerweise einen "
+"Namen wie ``Buchbericht.docx``, wobei das ``.docx`` dem Computer mitteilt, "
+"dass es sich um ein Microsoft Word-kompatibles Dokument handelt. "
+"Standardmäßig blendet Windows die ``.docx``-Erweiterung aus, wenn ein "
+"Programm installiert ist, das mit ihr umgehen kann. Wenn du programmierst, "
+"kann dieses Ausblenden eines Teils des Dateinamens störend sein."
 
 #: ../../source/chapters/02_setup/setup.rst:118
 msgid ""
-"For Windows 8 and 10, bring up a file explorer by hitting the Windows-E "
-"key. Then click the \"view\" tab and make sure \"File name extensions\" "
-"has been checked."
+"For Windows 8 and 10, bring up a file explorer by hitting the Windows-E key."
+" Then click the \"view\" tab and make sure \"File name extensions\" has been"
+" checked."
 msgstr ""
+"Unter Windows 8 und 10 rufst du einen Datei-Explorer auf, indem du die "
+"Windows-E-Taste drücken. Klick dann auf die Registerkarte \"Ansicht\" und "
+"stell sicher, dass \"Dateinamenerweiterungen\" aktiviert ist."
 
-msgid ".. image:: chapters\\02_setup\\win_10.png"
+#: ../../source/chapters/02_setup/setup.rstNone
+msgid ".. image:: chapters/02_setup/win_10.png"
 msgstr ""
+" \n"
+".. image:: chapters/02_setup/win_10.png"
 
 #: ../../source/chapters/02_setup/setup.rst:124
 msgid ""
-"We'll need to see the full filename for our programs. Our Python language"
-" programs will end in ``.py`` and we need to see the extensions of the "
-"image and sound files we'll load into our games."
+"We'll need to see the full filename for our programs. Our Python language "
+"programs will end in ``.py`` and we need to see the extensions of the image "
+"and sound files we'll load into our games."
 msgstr ""
+"Wir müssen den vollständigen Dateinamen für unsere Programme sehen. Unsere "
+"Python-Programme werden auf ``.py`` enden und wir müssen die Erweiterungen "
+"der Bild- und Sounddateien sehen, die wir in unsere Spiele laden werden."
 
 #: ../../source/chapters/02_setup/setup.rst:129
 msgid "Review"
-msgstr ""
+msgstr "Review"
 
 #: ../../source/chapters/02_setup/setup.rst:132
 msgid "Review Questions"
-msgstr ""
+msgstr "Wiederholungsfragen"
 
 #: ../../source/chapters/02_setup/setup.rst:134
 msgid "Chapter 2"
-msgstr ""
+msgstr "Kapitel 2"
 
 #: ../../source/chapters/02_setup/setup.rst:136
 msgid ""
-"What is the generic name of an editor that integrates a lot of tools for "
-"a developer to use when writing programs? (I'm not looking for a brand-"
-"name like PyCharm here.)"
+"What is the generic name of an editor that integrates a lot of tools for a "
+"developer to use when writing programs? (I'm not looking for a brand-name "
+"like PyCharm here.)"
 msgstr ""
+"Wie lautet der allgemeine Name eines Editors, der eine Menge Werkzeuge "
+"integriert, die ein Entwickler beim Schreiben von Programmen verwenden kann?"
+" (Ich suche hier nicht nach einem Markennamen wie PyCharm.)"
 
 #: ../../source/chapters/02_setup/setup.rst:139
 msgid ""
-"What does a computer use to tell the type of a file? (Word, Excel, image,"
-" etc.)"
+"What does a computer use to tell the type of a file? (Word, Excel, image, "
+"etc.)"
 msgstr ""
+"Woran erkennt ein Computer den Typ einer Datei? (Word, Excel, Bild, etc.)"
 
 #: ../../source/chapters/02_setup/setup.rst:141
 msgid "All Python source code file names should end with what extension?"
-msgstr ""
-
-#~ msgid "Your development computer will need:"
-#~ msgstr ""
-
-#~ msgid "The Python_ programming language and the Arcade_ code library."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "An editor to type in your "
-#~ "programs. (We'll use a program called"
-#~ " PyCharm_. You can use the community"
-#~ " edition for free, or if you "
-#~ "have an email address that ends in"
-#~ " ``.edu`` get can get a free "
-#~ "`student license`_ for the professional "
-#~ "version.)"
-#~ msgstr ""
-
-#~ msgid "Let's go through these four items in detail."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To get your computer ready for "
-#~ "programming we need to install the "
-#~ "Python computer language, and an editor"
-#~ " you can type your programs into."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We will be using the \"Python_\" "
-#~ "computer programming language. The creator "
-#~ "of Python was a fan of `Monty "
-#~ "Python`_, hence the name."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In addition to the Python language, "
-#~ "we are going to use a library "
-#~ "of commands for drawing on the "
-#~ "screen. This is called the \"Arcade\""
-#~ " library."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Installation for installing Python and "
-#~ "the Arcade library are available below:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "`Windows Installation "
-#~ "<http://arcade.academy/installation_windows.html>`_ (Make "
-#~ "sure to read the instructions carefully."
-#~ " Do not skip the \"Add Python "
-#~ "to Path\" step. This seems to be"
-#~ " the most frequent issue.)"
-#~ msgstr ""
-
-#~ msgid "`Mac Installation <http://arcade.academy/installation_mac.html>`_"
-#~ msgstr ""
-
-#~ msgid "`Linux Installation <http://arcade.academy/installation_linux.html>`_"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We also need an editor. Python "
-#~ "comes with an editor called IDLE, "
-#~ "but it is awful and not worth "
-#~ "using. We'll use an editor called "
-#~ "PyCharm."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "What is a text editor? What is "
-#~ "an IDE? Read more at `Understanding "
-#~ "and Choosing Text Editors`_."
-#~ msgstr ""
-
-#~ msgid "Installing Arcade"
-#~ msgstr ""
-
+msgstr "Alle Python-Quellcode-Dateinamen sollten mit welcher Endung enden?"

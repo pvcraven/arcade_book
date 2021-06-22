@@ -1,183 +1,264 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Paul Vincent Craven
+# Copyright (C) 2021, Paul Vincent Craven
 # This file is distributed under the same license as the Arcade package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Gans Hünther <yang.ambrosius@igs-buchholz.de>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Arcade 2020\n"
+"Project-Id-Version: Arcade 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 14:54-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Last-Translator: Gans Hünther <yang.ambrosius@igs-buchholz.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/arcade-academy/teams/108729/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:4
 msgid "The Print Function"
-msgstr ""
+msgstr "Die Print Funktion"
 
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
 msgid ""
-".. image:: chapters\\04_print_statement\\../../images/video.svg\n"
+".. image:: images/video.svg\n"
 "   :alt: Video link"
 msgstr ""
+".. image:: images/video.svg\n"
+" :alt: Video link"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:11
 msgid "`Link to video for this chapter. <https://youtu.be/6KaRu3FS3AA>`_"
-msgstr ""
+msgstr "`Video Link für dieses Kapitel. <https://youtu.be/6KaRu3FS3AA>`_"
 
-msgid ".. image:: chapters\\04_print_statement\\print_snake.svg"
-msgstr ""
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+msgid ".. image:: chapters/04_print_statement/print_snake.svg"
+msgstr ".. image:: chapters/04_print_statement/print_snake.svg"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:17
 msgid ""
 "Prior to this chapter we got our computer ready to start coding in :ref"
-":`chapter-setup`. We did that by installing the Python programming "
-"language and an integrated development environment (IDE) called PyCharm. "
-"You can think of Python as the engine, and PyCharm as the interface to "
-"the engine."
+":`chapter-setup`. We did that by installing the Python programming language "
+"and an integrated development environment (IDE) called PyCharm. You can "
+"think of Python as the engine, and PyCharm as the interface to the engine."
 msgstr ""
+"Vor diesem Kapitel haben wir in :ref`Einrichten Deines Systems` unseren "
+"Computer für die Programmierung vorbereitet. Dazu haben wir die "
+"Programmiersprache Python und eine integrierte Entwicklungsumgebung (IDE) "
+"namens PyCharm installiert. Du kannst dir Python als den Motor und PyCharm "
+"als die Schnittstelle zum Motor vorstellen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:22
 msgid ""
-"In :ref:`version-control` we began learning `git`. Version control "
-"systems allow us to share code, work on code in groups, and track changes"
-" to the code. We'll use that tool to track and share your code for every "
-"lab you write in this book."
+"In :ref:`version-control` we began learning `git`. Version control systems "
+"allow us to share code, work on code in groups, and track changes to the "
+"code. We'll use that tool to track and share your code for every lab you "
+"write in this book."
 msgstr ""
+"Im Bereich :ref:`Versionskontrollsystem` haben wir begonnen, `git` zu "
+"lernen. Versionskontrollsysteme ermöglichen es uns, Codes gemeinsam zu "
+"nutzen, in Gruppen an Codes zu arbeiten und Änderungen am Code zu verfolgen."
+" Wir werden dieses Werkzeug verwenden, um deinen Code für jedes Labor, das "
+"du in diesem Buch schreiben, zu verfolgen und zu teilen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:27
 msgid ""
-"In this chapter we'll write our first programs using the most fundamental"
-" of all tools in the programmer's toolbox, the ``print`` function. This "
+"In this chapter we'll write our first programs using the most fundamental of"
+" all tools in the programmer's toolbox, the ``print`` function. This "
 "function does exactly what you'd expect--it prints to the screen."
 msgstr ""
+"In diesem Kapitel werden wir unsere ersten Programme schreiben und dabei das"
+" grundlegendste aller Werkzeuge im Werkzeugkasten des Programmierers "
+"verwenden, die ``print`` Funktion. Diese Funktion tut genau das, was du "
+"erwarten würdest--sie druckt auf den Bildschirm."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:31
 msgid ""
 "While a lot of programs are graphics-based, text-only programs are still "
-"quite common with people that manage computers, or who do data analytics."
-" Even for the graphics-based games we develop in this book, the ``print``"
-" function will be a vital aid in understanding and debugging our games."
+"quite common with people that manage computers, or who do data analytics. "
+"Even for the graphics-based games we develop in this book, the ``print`` "
+"function will be a vital aid in understanding and debugging our games."
 msgstr ""
+"Während viele Programme grafikbasiert sind, sind reine Textprogramme bei "
+"Leuten, die Computer verwalten oder sich mit Datenanalyse beschäftigen, "
+"immer noch recht häufig. Selbst für die grafikbasierten Spiele, die wir in "
+"diesem Buch entwickeln, wird die ``print`` Funktion ein wichtiges "
+"Hilfsmittel sein, um unsere Spiele zu verstehen und Fehler zu beseitigen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:36
 msgid ""
-"We aren't limited to printing to the screen. Later on in :ref:`saving-"
-"high-score` we'll show how to print to a file so we can save data. "
-"Programs can even print over a network connection, which is the start of "
-"what's needed to learn how to do web programming."
+"We aren't limited to printing to the screen. Later on in :ref:`saving-high-"
+"score` we'll show how to print to a file so we can save data. Programs can "
+"even print over a network connection, which is the start of what's needed to"
+" learn how to do web programming."
 msgstr ""
+"Wir sind nicht auf das Drucken auf den Bildschirm beschränkt. Später in "
+":ref: `Beispiel: Highscore speichern` werden wir zeigen, wie wir in eine "
+"Datei drucken können, um Daten zu speichern. Programme können sogar über "
+"eine Netzwerkverbindung drucken, was der Anfang dessen ist, was man braucht,"
+" um zu lernen, wie man Web-Programmierung macht."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:44
 msgid "Printing \"Hello World\""
-msgstr ""
+msgstr "Ein \"Hello World\" Programm drucken"
 
-msgid ".. image:: chapters\\04_print_statement\\hello_world.svg"
-msgstr ""
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+msgid ".. image:: chapters/04_print_statement/hello_world.svg"
+msgstr ".. image:: chapters/04_print_statement/hello_world.svg"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:55
 msgid ""
-"We are going to use a **function** to output text to the screen. If "
-"you've taken a geometry class, you've already used the sine (**sin**) and"
-" cosine (**cos**) functions. In this chapter, we are going to use the "
-"**print** function."
+"We are going to use a **function** to output text to the screen. If you've "
+"taken a geometry class, you've already used the sine (**sin**) and cosine "
+"(**cos**) functions. In this chapter, we are going to use the **print** "
+"function."
 msgstr ""
+"Wir werden eine **Funktion** verwenden, um Text auf dem Bildschirm "
+"auszugeben. Wenn du einen Geometriekurs belegt hast, hast du bereits die "
+"Funktionen Sinus (**sin**) und Kosinus (**cos**) verwendet. In diesem "
+"Kapitel werden wir die Funktion **print** verwenden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:60
 msgid ""
 "In programming, we use functions *a lot*. Functions are a basic building "
-"block in any computer program. Just like in math, when we use functions "
-"in programming we start with a **function name**, such as sin, cos, and "
-"print. Immediately after the function name is a pair of parentheses: ``( "
-")``. We put any function **parameter** inside the parentheses."
+"block in any computer program. Just like in math, when we use functions in "
+"programming we start with a **function name**, such as sin, cos, and print. "
+"Immediately after the function name is a pair of parentheses: ``( )``. We "
+"put any function **parameter** inside the parentheses."
 msgstr ""
+"In der Programmierung verwenden wir Funktionen *sehr häufig*. Funktionen "
+"sind ein grundlegender Baustein in jedem Computerprogramm. Genau wie in der "
+"Mathematik beginnen wir bei der Verwendung von Funktionen in der "
+"Programmierung mit einem **Funktionsnamen**, wie z. B. sin, cos und print. "
+"Unmittelbar nach dem Funktionsnamen folgt ein Paar Klammern: ``( )``. Wir "
+"setzen jeden Funktions**parameter** innerhalb der Klammern."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:67
-msgid "In the example below, we have a function, parenthesis, and a parameter:"
+msgid ""
+"In the example below, we have a function, parenthesis, and a parameter:"
 msgstr ""
+"Im folgenden Beispiel haben wir eine Funktion, eine Klammer und einen "
+"Parameter:"
 
-msgid ".. image:: chapters\\04_print_statement\\function_math.svg"
-msgstr ""
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+msgid ".. image:: chapters/04_print_statement/function_math.svg"
+msgstr ".. image:: chapters/04_print_statement/function_math.svg"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:73
 msgid ""
 "With a ``sin`` function, we put in an angle as our parameter. With the "
 "``print`` function, we put the text we want to print as a parameter:"
 msgstr ""
+"Bei einer ``sin``-Funktion geben wir einen Winkel als Parameter ein. Bei der"
+" ``print`` Funktion geben wir als Parameter den Text an, den wir ausdrucken "
+"wollen:"
 
-msgid ".. image:: chapters\\04_print_statement\\function_python.svg"
-msgstr ""
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+msgid ".. image:: chapters/04_print_statement/function_python.svg"
+msgstr ".. image:: chapters/04_print_statement/function_python.svg"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:79
 msgid ""
 "Text *must* be enclosed in quotes, we'll explain why later in the "
 ":ref:`expressions` chapter."
 msgstr ""
+"Text *muss* in Anführungszeichen eingeschlossen werden, wir werden später im"
+" Kapitel :ref:`Variablen und Ausdrücke` erklären, warum."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:84
 msgid "Entering Our Program"
-msgstr ""
+msgstr "Einstieg in unser Programm"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:92
 msgid ""
-"Now that we've seen what the ``print`` function looks like, let's use it "
-"to enter our first program."
+"Now that we've seen what the ``print`` function looks like, let's use it to "
+"enter our first program."
 msgstr ""
+"Nachdem wir nun gesehen haben, wie die ``print`` Funktion aussieht, wollen "
+"wir sie benutzen, um unser erstes Programm zu starten."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:95
 msgid ""
 "The `Hello World`_ program is a simple program that just prints \"Hello "
-"World\" to the screen. It is often the first program any programmer "
-"creates in a new computer language."
+"World\" to the screen. It is often the first program any programmer creates "
+"in a new computer language."
 msgstr ""
+"Das Programm `Hello World`_  ist ein einfaches Programm, das nur \"Hello "
+"World\" auf den Bildschirm ausgibt. Es ist oft das erste Programm, das ein "
+"Programmierer in einer neuen Computersprache erstellt."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:101
 msgid ""
 "First, open PyCharm. From our work in :ref:`chapter-setup` and :ref"
-":`version-control` we should already have our PyCharm and our project "
-"ready to go. You should be able to run PyCharm, and see a window like "
-"this:"
+":`version-control` we should already have our PyCharm and our project ready "
+"to go. You should be able to run PyCharm, and see a window like this:"
 msgstr ""
+"Öffne zunächst PyCharm. Durch unsere Arbeit in :ref:`Einrichten deines "
+"Systems` und :ref:`Versionskontrollsysteme` sollten wir PyCharm und unser "
+"Projekt bereits einsatzbereit haben. Du solltest in der Lage sein, PyCharm "
+"zu starten und ein Fenster wie dieses zu sehen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:108
-msgid ".. image:: chapters\\04_print_statement\\pycharm_1.png"
-msgstr ""
+msgid ".. image:: chapters/04_print_statement/pycharm_1.png"
+msgstr ".. image:: chapters/04_print_statement/pycharm_1.png"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:108
 msgid "PyCharm window ready for coding."
-msgstr ""
+msgstr "PyCharm-Fenster bereit für die Codierung."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:110
 msgid ""
 "First click the triangle next to your project name (1), then find "
 "``Testing``, (2) then finally ``test.py`` (3)."
 msgstr ""
+"Klick zuerst auf das Dreieck neben deinem Projektnamen (1), dann auf "
+"``Testing``, (2) und schließlich auf ``test.py`` (3)."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:115
 msgid ""
 "The most frequent mistake here is to have PyCharm opened to the wrong "
-"folder. Make sure your all lab folders appear inside the ``learn_arcade``"
-" folder. If they don't, select the File...Open menu and reselect your "
-"project folder as shown in :ref:`open-in-pycharm`. Once selected you "
-"should not have to do a File...Open again for the rest of the book."
+"folder. Make sure your all lab folders appear inside the ``learn_arcade`` "
+"folder. If they don't, select the File...Open menu and reselect your project"
+" folder as shown in :ref:`open-in-pycharm`. Once selected you should not "
+"have to do a File...Open again for the rest of the book."
 msgstr ""
+"Der häufigste Fehler ist hier, dass PyCharm im falschen Ordner geöffnet ist."
+" Vergewissern Sie sich, dass alle Lab-Ordner innerhalb des "
+"``learn_arcade``-Ordners erscheinen. Wenn das nicht der Fall ist, dann wähl "
+"das Menü File...Open und wähl deinen Projektordner erneut aus, wie in "
+":ref:`Projekt in PyCharm öffnen` gezeigt. Einmal ausgewählt, solltest du für"
+" den Rest des Buches kein File...Open mehr machen müssen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:121
-msgid "Once you've selected ``test.py``, go ahead and type in your first program:"
+msgid ""
+"Once you've selected ``test.py``, go ahead and type in your first program:"
 msgstr ""
+"Sobald du ``test.py`` ausgewählt hast, kannst du dein erstes Programm "
+"eintippen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:124
 msgid "print(\"Hello World!\")"
-msgstr ""
+msgstr "print(\"Hello World!\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:130
 msgid "Running Our Program"
-msgstr ""
+msgstr "Unser Programm ausführen"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:137
 msgid ""
@@ -185,468 +266,606 @@ msgid ""
 "``print_statements.py`` or anywhere in the code window and select ``Run "
 "'print_statements.py'``"
 msgstr ""
+"Nachdem du dein Programm eingegeben hast, klick mit der rechten Maustaste "
+"entweder auf ``print_statements.py`` oder auf eine beliebige Stelle im "
+"Codefenster und wähl ``Run 'print_statements.py'``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:142
-msgid ".. image:: chapters\\04_print_statement\\pycharm_2.png"
-msgstr ""
+msgid ".. image:: chapters/04_print_statement/pycharm_2.png"
+msgstr ".. image:: chapters/04_print_statement/pycharm_2.png"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:142
 msgid "Right click on your program, then select run."
-msgstr ""
+msgstr "Klick mit der rechten Maustaste auf dein Programm und wähl dann run."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:144
 msgid ""
-"You should see the output from your program appear in a window at the "
-"bottom of your computer:"
+"You should see the output from your program appear in a window at the bottom"
+" of your computer:"
 msgstr ""
+"Du solltest die Ausgabe deines Programms in einem Fenster am unteren Rand "
+"deines Computers erscheinen sehen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:149
-msgid ".. image:: chapters\\04_print_statement\\pycharm_3.png"
-msgstr ""
+msgid ".. image:: chapters/04_print_statement/pycharm_3.png"
+msgstr ".. image:: chapters/04_print_statement/pycharm_3.png"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:149
 msgid "Output of our Hello World program."
-msgstr ""
+msgstr "Ausgabe unseres Hello World-Programms."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:152
 msgid "Errors and Warnings"
-msgstr ""
+msgstr "Fehler und Warnungen"
 
-msgid ".. image:: chapters\\04_print_statement\\crash.svg"
-msgstr ""
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
+msgid ".. image:: chapters/04_print_statement/crash.svg"
+msgstr ".. image:: chapters/04_print_statement/crash.svg"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:163
 msgid ""
 "Programs don't always work on the first try. In fact, they rarely do. As "
 "programmers, we run programs over and over until we find the right code."
 msgstr ""
+"Programme funktionieren nicht immer beim ersten Versuch. Tatsächlich tun sie"
+" das selten. Als Programmierer führen wir Programme immer und immer wieder "
+"aus, bis wir den richtigen Code finden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:166
 msgid ""
-"If the computer runs into an error that it doesn't know how to handle, it"
-" will generate an error and stop. Don't panic, it's no big deal. We'll "
-"fix it."
+"If the computer runs into an error that it doesn't know how to handle, it "
+"will generate an error and stop. Don't panic, it's no big deal. We'll fix "
+"it."
 msgstr ""
+"Wenn der Computer auf einen Fehler stößt, von dem er nicht weiß, wie er ihn "
+"beheben kann, wird er eine Fehlermeldung erzeugen und anhalten. Keine Panik,"
+" das ist keine große Sache. Wir werden es beheben."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:170
 msgid ""
-"In addition to errors where the program doesn't run at all, Python can "
-"show us *warnings*. Warnings occur when the code runs, but something "
-"isn't \"perfect.\""
+"In addition to errors where the program doesn't run at all, Python can show "
+"us *warnings*. Warnings occur when the code runs, but something isn't "
+"\"perfect.\""
 msgstr ""
+"Zusätzlich zu Fehlern, bei denen das Programm überhaupt nicht läuft, kann "
+"Python uns *Warnungen* anzeigen. Warnungen treten auf, wenn der Code zwar "
+"läuft, aber etwas nicht \"perfekt\" ist."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:174
 msgid "Errors"
-msgstr ""
+msgstr "Fehler"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:181
 msgid ""
-"Let's create an error. Change the ``print`` function to use a capital "
-"``P``: ``Print``."
+"Let's create an error. Change the ``print`` function to use a capital ``P``:"
+" ``Print``."
 msgstr ""
+"Lass uns einen Fehler erzeugen. Ändere die ``print`` Funktion so, dass ein "
+"großes ``P`` verwendet wird: ``Print``."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:183
 msgid "Print(\"Hello World!\")"
-msgstr ""
+msgstr "Print(\"Hello World!\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:187
 msgid "Run the program. You should get something like this:"
-msgstr ""
+msgstr "Führ das Programm aus. Du solltest so etwas erhalten:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:189
 msgid ""
 "Traceback (most recent call last):\n"
-"  File \"C:/Users/myusername/Documents/learn_arcade/Scratch "
-"Work/print_statements.py\", line 1, in <module>\n"
+"  File \"C:/Users/myusername/Documents/learn_arcade/Scratch Work/print_statements.py\", line 1, in <module>\n"
 "    Print(\"Hello World!\")\n"
 "NameError: name 'Print' is not defined\n"
 "\n"
 "Process finished with exit code 1"
 msgstr ""
+"Traceback (most recent call last): File "
+"\"C:/Users/myusername/Documents/learn_arcade/Scratch "
+"Work/print_statements.py\", line 1, in Print(\"Hello World!\")NameError: "
+"name 'Print' is not definedProcess finished with exit code 1"
 
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
 msgid "Exit Codes"
-msgstr ""
+msgstr "Exit Codes"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:200
 msgid ""
-"All computer programs return a number called an *exit code* when they are"
-" done running. An exit code of 0 means the program ran without an error, "
-"any other number is a signal something went wrong. It is possible to "
-"write a program that runs other programs automatically, and this exit "
-"code is used to track if there was an error."
+"All computer programs return a number called an *exit code* when they are "
+"done running. An exit code of 0 means the program ran without an error, any "
+"other number is a signal something went wrong. It is possible to write a "
+"program that runs other programs automatically, and this exit code is used "
+"to track if there was an error."
 msgstr ""
+"Alle Computerprogramme geben eine Zahl zurück, die *Exit-Code* genannt wird,"
+" wenn sie fertig gelaufen sind. Ein Exit-Code von 0 bedeutet, dass das "
+"Programm ohne Fehler gelaufen ist, jede andere Zahl ist ein Signal, dass "
+"etwas schief gelaufen ist. Es ist möglich, ein Programm zu schreiben, das "
+"andere Programme automatisch ausführt, und dieser Exit-Code wird verwendet, "
+"um zu verfolgen, ob es einen Fehler gab."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:205
 msgid ""
-"While it may look confusing, Python is telling you that on line 1 of your"
-" ``print_statements.py`` program it encountered a function named "
-"``Print`` with a capital ``P``. But that function has not yet been "
-"\"defined.\""
+"While it may look confusing, Python is telling you that on line 1 of your "
+"``print_statements.py`` program it encountered a function named ``Print`` "
+"with a capital ``P``. But that function has not yet been \"defined.\""
 msgstr ""
+"Es mag verwirrend aussehen, aber Python teilt dir mit, dass es in Zeile 1 "
+"deines Programms ``print_statements.py`` auf eine Funktion namens ``Print`` "
+"mit einem großen ``P`` gestoßen ist, die aber noch nicht \"definiert\" "
+"wurde."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:209
 msgid ""
-"Python is case-sensitive, which means ``print`` with a lower-case ``p`` "
-"and ``Print`` with an upper-case ``P`` are as different as apples and "
-"oranges to the computer. The lower-case ``print`` function is built into "
-"the language, and Python knows exactly what to do with it. The upper-case"
-" ``Print`` function is not built into the language, and Python complains "
-"with a ``NameError`` that it doesn't know what this function is."
+"Python is case-sensitive, which means ``print`` with a lower-case ``p`` and "
+"``Print`` with an upper-case ``P`` are as different as apples and oranges to"
+" the computer. The lower-case ``print`` function is built into the language,"
+" and Python knows exactly what to do with it. The upper-case ``Print`` "
+"function is not built into the language, and Python complains with a "
+"``NameError`` that it doesn't know what this function is."
 msgstr ""
+"Python unterscheidet zwischen Groß- und Kleinschreibung, was bedeutet, dass "
+"``print`` mit einem kleinen ``p`` und ``Print`` mit einem großen ``P`` für "
+"den Computer so unterschiedlich sind wie Äpfel und Birnen. Die Funktion "
+"``print`` mit Kleinbuchstaben ist in die Sprache eingebaut, und Python weiß "
+"genau, was damit zu tun ist. Die ``Print`` Funktion mit Großbuchstaben ist "
+"nicht in die Sprache eingebaut, und Python beschwert sich mit einem "
+"``NameError``, dass es nicht weiß, was diese Funktion ist."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:216
 msgid ""
-"Let's try a different error. Go back to using ``print`` with a lower case"
-" ``p``, but remove the parentheses:"
+"Let's try a different error. Go back to using ``print`` with a lower case "
+"``p``, but remove the parentheses:"
 msgstr ""
+"Versuchen wir einen anderen Fehler. Geh zurück zur Verwendung von ``print`` "
+"mit einem kleingeschriebenen ``p``, aber entferne die Klammern:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:218
 msgid "print \"Hello World\""
-msgstr ""
+msgstr "print \"Hello World\""
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:222
 msgid "When you run the program now, you'll get:"
-msgstr ""
+msgstr "Wenn du das Programm jetzt ausführst, erhältst du:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:224
 msgid ""
-"File \"C:/Users/myusername/Documents/learn_arcade/Scratch "
-"Work/print_statements.py\", line 1\n"
+"File \"C:/Users/myusername/Documents/learn_arcade/Scratch Work/print_statements.py\", line 1\n"
 "    print \"Hello World!\"\n"
 "                       ^\n"
-"SyntaxError: Missing parentheses in call to 'print'. Did you mean "
-"print(\"Hello World!\")?"
+"SyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"Hello World!\")?"
 msgstr ""
+"File \"C:/Users/myusername/Documents/learn_arcade/Scratch "
+"Work/print_statements.py\", line 1 print \"Hello World!\" ^SyntaxError: "
+"Missing parentheses in call to 'print'. Did you mean print(\"Hello "
+"World!\")?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:231
 msgid ""
 "This is a different type of error, a *syntax error*. The term *syntax* "
 "originates with human languages, not computer languages. Both human and "
 "computer languages have an expected structure to them. A statement in "
-"English can take the form of a noun followed by a verb. \"Rob runs.\" is "
-"a valid statement, while \"Runs Rob.\" is not. The computer expects a "
-"function name to be followed by parentheses. If your program doesn't "
-"follow that pattern, it generates a syntax error."
+"English can take the form of a noun followed by a verb. \"Rob runs.\" is a "
+"valid statement, while \"Runs Rob.\" is not. The computer expects a function"
+" name to be followed by parentheses. If your program doesn't follow that "
+"pattern, it generates a syntax error."
 msgstr ""
+"Dies ist eine andere Art von Fehler, ein *Syntaxfehler*. Der Begriff "
+"*Syntax* stammt von menschlichen Sprachen, nicht von Computersprachen. "
+"Sowohl menschliche Sprachen als auch Computersprachen weisen eine erwartete "
+"Struktur auf. Eine Aussage im Englischen kann die Form eines Substantivs "
+"gefolgt von einem Verb haben. \"Rob läuft.\" ist eine gültige Anweisung, "
+"während \"Läuft Rob.\" keine ist. Der Computer erwartet, dass ein "
+"Funktionsname von Klammern gefolgt wird. Wenn dein Programm diesem Muster "
+"nicht folgt, erzeugt es einen Syntaxfehler."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:238
 msgid ""
 "The type of error and the line number are both important clues on how to "
 "solve the mystery what caused the bug."
 msgstr ""
+"Die Art des Fehlers und die Zeilennummer sind beides wichtige Anhaltspunkte,"
+" um das Rätsel zu lösen, was den Fehler verursacht hat."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:242
 msgid "Warnings"
-msgstr ""
+msgstr "Warnungen"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:250
 msgid ""
 "It can be possible to write code that runs, but isn't quite perfect. For "
 "example, let's take our Hello World program and add some extra spaces:"
 msgstr ""
+"Es kann möglich sein, einen Code zu schreiben, der zwar läuft, aber nicht "
+"ganz perfekt ist. Nehmen wir zum Beispiel unser Hello World-Programm und "
+"fügen ein paar zusätzliche Leerzeichen hinzu:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:253
 msgid "print  (\"Hello World!\")"
-msgstr ""
+msgstr "print (\"Hello World!\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:257
 msgid "Go ahead and run the program. It should run without any errors."
-msgstr ""
+msgstr "Fahre fort und führ das Programm aus. Es sollte ohne Fehler laufen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:259
 msgid ""
-"The Python standard is to have *no* spaces between the function name and "
-"the opening parenthesis. However, this code is \"close enough\" that the "
-"computer can run fine with no errors. In English, if we go to a store and"
-" ask \"I'd like to buy one apples please,\" our sentence isn't "
-"grammatically correct. It is close enough anyone could figure out the "
-"intent."
+"The Python standard is to have *no* spaces between the function name and the"
+" opening parenthesis. However, this code is \"close enough\" that the "
+"computer can run fine with no errors. In English, if we go to a store and "
+"ask \"I'd like to buy one apples please,\" our sentence isn't grammatically "
+"correct. It is close enough anyone could figure out the intent."
 msgstr ""
+"Der Python-Standard ist es, *keine* Leerzeichen zwischen dem Funktionsnamen "
+"und der öffnenden Klammer zu haben. Dieser Code ist jedoch \"nah genug "
+"dran\", dass der Computer das Programm ohne Fehler ausführen kann. Wenn wir "
+"im Englischen in einen Laden gehen und fragen: \"I'd like to buy one apples "
+"please\", ist unser Satz grammatikalisch nicht korrekt. Er ist aber nahe "
+"genug, dass jeder die Absicht herausfinden kann."
 
+#: ../../source/chapters/04_print_statement/print_statement.rstNone
 msgid "PEP-8"
-msgstr ""
+msgstr "PEP-8"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:267
 msgid ""
-"Python has a *style-guide* which lays out how to format your code "
-"properly. This style-guide is called `PEP-8`_."
+"Python has a *style-guide* which lays out how to format your code properly. "
+"This style-guide is called `PEP-8`_."
 msgstr ""
+"Python hat einen *Style-Guide*, der festlegt, wie man seinen Code richtig "
+"formatiert. Dieser Style-Guide heißt ``PEP-8``_."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:272
 msgid ""
-"Why fix warnings? When finding errors in code, programmers spend a lot of"
-" time looking for things that are out of place. If all code is formatted "
-"the same way it is easier to scan looking for problems. Any inconsistency"
-" forces a programmer's brain to stop and figure out if it is important. "
-"Removing those inconsistencies makes debugging easier."
+"Why fix warnings? When finding errors in code, programmers spend a lot of "
+"time looking for things that are out of place. If all code is formatted the "
+"same way it is easier to scan looking for problems. Any inconsistency forces"
+" a programmer's brain to stop and figure out if it is important. Removing "
+"those inconsistencies makes debugging easier."
 msgstr ""
+"Warum Warnungen beheben? Beim Finden von Fehlern im Code verbringen "
+"Programmierer viel Zeit damit, nach Dingen zu suchen, die nicht passen. Wenn"
+" der gesamte Code gleich formatiert ist, ist es einfacher, ihn auf der Suche"
+" nach Problemen zu durchsuchen. Jede Inkonsistenz zwingt das Gehirn eines "
+"Programmierers dazu, innezuhalten und herauszufinden, ob sie wichtig ist. "
+"Die Beseitigung dieser Inkonsistenzen erleichtert die Fehlerbehebung."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:278
 msgid ""
 "You can find warnings in your code using PyCharm by looking at the right "
-"margin. Any yellow line is a warning. You can hover over it with your "
-"mouse to find the details."
+"margin. Any yellow line is a warning. You can hover over it with your mouse "
+"to find the details."
 msgstr ""
+"Du kannst Warnungen in deinem Code mit PyCharm finden, indem du dir den "
+"rechten Rand ansiehst. Jede gelbe Linie ist eine Warnung. Du kannst mit der "
+"Maus darüber fahren, um die Details zu erfahren."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:285
-msgid ".. image:: chapters\\04_print_statement\\pycharm_4.png"
-msgstr ""
+msgid ".. image:: chapters/04_print_statement/pycharm_4.png"
+msgstr ".. image:: chapters/04_print_statement/pycharm_4.png"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:285
-msgid "Warnings are highlighted by yellow lines on the right side of the screen."
+msgid ""
+"Warnings are highlighted by yellow lines on the right side of the screen."
 msgstr ""
+"Warnungen werden durch gelbe Linien auf der rechten Seite des Bildschirms "
+"hervorgehoben."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:287
 msgid ""
 "Another warning you might encounter in your first program is the Python "
-"style guide states all programs are supposed to have exactly one blank "
-"line at the end of the file. If you get into the habit of fixing these "
-"warnings, you'll learn to write code that will be easier to maintain."
+"style guide states all programs are supposed to have exactly one blank line "
+"at the end of the file. If you get into the habit of fixing these warnings, "
+"you'll learn to write code that will be easier to maintain."
 msgstr ""
+"Eine weitere Warnung, auf die du in deinem ersten Programm stoßen könntest, "
+"ist, dass der Python-Styleguide besagt, dass alle Programme genau eine "
+"Leerzeile am Ende der Datei haben sollen. Wenn du es dir angewöhnst, diese "
+"Warnungen zu beheben, wirst du lernen, einen Code zu schreiben, der leichter"
+" beizubehalten sein wird."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:294
 msgid ""
 "Warnings are not just about style. You might also get a warning about an "
-"error that could occur before you run the program. For example, if "
-"instead of passing a number to the ``sin()`` function, you might have "
-"written code that passes in text."
+"error that could occur before you run the program. For example, if instead "
+"of passing a number to the ``sin()`` function, you might have written code "
+"that passes in text."
 msgstr ""
+"Warnungen beziehen sich nicht nur auf den Style. Sie könnten auch eine "
+"Warnung über einen Fehler erhalten, der auftreten könnte, bevor Sie das "
+"Programm ausführen. Wenn du zum Beispiel eine Zahl an die ``sin()``-Funktion"
+" weitergibst, könntest du Code geschrieben haben, der Text statt Zahlen "
+"weitergibt."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:298
 msgid ""
-"*Weak warnings* are warnings that are mostly just about style or aren't "
-"as likely to end up being errors. *Strong warnings* are code the computer"
-" feels probably points to a bug that will end up being an error."
+"*Weak warnings* are warnings that are mostly just about style or aren't as "
+"likely to end up being errors. *Strong warnings* are code the computer feels"
+" probably points to a bug that will end up being an error."
 msgstr ""
+"*Schwache Warnungen* sind Warnungen, bei denen es meist nur um den Style "
+"geht oder die nicht so wahrscheinlich sind, dass sie sich als Fehler "
+"herausstellen. *Starke Warnungen* sind Codes, von denen der Computer glaubt,"
+" dass sie wahrscheinlich auf einen Bug hinweisen, der sich als Fehler "
+"herausstellen wird."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:305
 msgid "Multiple Print Lines"
-msgstr ""
+msgstr "Mehrere Druckzeilen"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:312
 msgid ""
-"We aren't limited to one ``print`` statement. We can print multiple lines"
-" of text with multiple lines of code. Let's change our Hello World "
-"program to the cliché opener for melodramatic fiction:"
+"We aren't limited to one ``print`` statement. We can print multiple lines of"
+" text with multiple lines of code. Let's change our Hello World program to "
+"the cliché opener for melodramatic fiction:"
 msgstr ""
+"Wir sind nicht auf eine ``print`` Anweisung beschränkt. Wir können mehrere "
+"Textzeilen mit mehreren Codezeilen drucken. Lass uns unser \"Hello "
+"World\"-Programm in den klischeehaften Einstieg einer melodramatische "
+"Fiktion verwandeln:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:316
 msgid ""
 "print(\"It was a dark and stormy night.\")\n"
 "print(\"Suddenly a shot rang out!\")"
 msgstr ""
+"print(\"Es war eine dunkle und stürmige Nacht.\")\n"
+"print(\"Plötzlich ertönte ein Schuss!\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:321
 msgid "Your output should look like:"
-msgstr ""
+msgstr "Deine Ausgabe sollte wie folgt aussehen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:323
 msgid ""
 "It was a dark and stormy night.\n"
 "Suddenly a shot rang out!"
 msgstr ""
+"Es war eine dunkle und stürmige Nacht.\n"
+"Plötzlich ertönte ein Schuss"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:331
 msgid "Escape Codes"
-msgstr ""
+msgstr "Escape Codes"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:338
 msgid ""
-"If quotes are used to tell the computer the start and end of the string "
-"of text you wish to print, how does a program print out a set of double "
-"quotes?"
+"If quotes are used to tell the computer the start and end of the string of "
+"text you wish to print, how does a program print out a set of double quotes?"
 msgstr ""
+"Wenn Anführungszeichen verwendet werden, um dem Computer den Anfang und das "
+"Ende der zu druckenden Textzeichenfolge mitzuteilen, wie druckt ein Programm"
+" dann eine Reihe von doppelten Anführungszeichen aus?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:343
 msgid "A double-quote is not two quote marks."
-msgstr ""
+msgstr "Ein doppeltes Anführungszeichen sind nicht zwei Anführungszeichen."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:345
 msgid "This is a double quote: ``\"``"
-msgstr ""
+msgstr "Dies ist ein doppeltes Anführungszeichen: ``\"``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:346
 msgid "This is a single quote: ``'``"
-msgstr ""
+msgstr "Das ist ein einfaches Anführungszeichen: ``'``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:347
 msgid "This is two double quote marks: ``\" \"``"
-msgstr ""
+msgstr "Dies sind zwei doppelte Anführungszeichen: ``\" \"``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:349
 msgid "This code doesn't work:"
-msgstr ""
+msgstr "Dieser Code funktioniert nicht:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:351
 msgid "print(\"Hi! This is a double quote mark: \" We use it for printing.\")"
 msgstr ""
+"print(\"Hi! Das ist ein doppeltes Anführungszeichen: \" Wir benutzen es zum "
+"drucken.\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:355
 msgid "If we try to run it, we get a syntax error:"
-msgstr ""
+msgstr "Wenn wir versuchen, es auszuführen, erhalten wir einen Syntaxfehler:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:357
 msgid ""
 "File \"S:/Webserver/arcade_book/test.py\", line 1\n"
-"    print(\"Hi! This is a double quote mark: \" We use it for "
-"printing.\")\n"
+"    print(\"Hi! This is a double quote mark: \" We use it for printing.\")\n"
 "                                              ^\n"
 "SyntaxError: invalid syntax"
 msgstr ""
+"File \"S:/Webserver/arcade_book/test.py\", line 1 print(\"Hi! Das ist ein "
+"doppeltes Anführungszeichen: \" Wir benutzen es zum drucken.\") "
+"^SyntaxError: invalid syntax"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:364
 msgid ""
-"The computer looks at the quote in the middle of the string and thinks "
-"that is the end of the text. Then it has no idea what to do with the text"
-" after the quote. It doesn't expect text after a closing quote, so we end"
-" up with an error."
+"The computer looks at the quote in the middle of the string and thinks that "
+"is the end of the text. Then it has no idea what to do with the text after "
+"the quote. It doesn't expect text after a closing quote, so we end up with "
+"an error."
 msgstr ""
+"Der Computer sieht sich das Anführungszeichen in der Mitte der Zeichenfolge "
+"an und denkt, dass dies das Ende des Textes ist. Dann hat er keine Ahnung, "
+"was er mit dem Text nach dem Anführungszeichen machen soll. Er erwartet "
+"keinen Text nach einem schließenden Anführungszeichen, so dass wir mit einem"
+" Fehler enden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:368
 msgid ""
 "It is necessary to tell the computer that we want to treat that middle "
-"double quote as text, not as a quote ending the string. To do this, we "
-"need to use an **escape code**. An escape code is a sequence of "
-"characters that can be used to print an otherwise unprintable characters."
+"double quote as text, not as a quote ending the string. To do this, we need "
+"to use an **escape code**. An escape code is a sequence of characters that "
+"can be used to print an otherwise unprintable characters."
 msgstr ""
+"Es ist notwendig, dem Computer mitzuteilen, dass wir das mittlere doppelte "
+"Anführungszeichen als Text behandeln wollen und nicht als ein "
+"Anführungszeichen, das die Zeichenkette beendet. Um dies zu tun, müssen wir "
+"einen **Escape-Code** verwenden. Ein Escape-Code ist eine Folge von Zeichen,"
+" die verwendet werden kann, um ein ansonsten nicht druckbares Zeichen "
+"auszugeben."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:373
 msgid ""
 "All escape codes in Python start with a backslash: ``\\``. (A backslash "
-"leans backwards. A forward slash ``/`` leans forward.) The escape code "
-"for a double quote is ``\\\"``:"
+"leans backwards. A forward slash ``/`` leans forward.) The escape code for a"
+" double quote is ``\\\"``:"
 msgstr ""
+"Alle Escape-Codes in Python beginnen mit einem Backslash: ``\\``. (Ein "
+"Backslash lehnt sich nach hinten, ein Schrägstrich ``/`` lehnt sich nach "
+"vorne.) Der Escape-Code für ein doppeltes Anführungszeichen ist ``\\\"``:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:376
 msgid "print(\"Hi! This is a double quote mark: \\\" We use it for printing.\")"
 msgstr ""
+"print(\"Hallo! Dies ist ein doppeltes Anführungszeichen: \\\" Wir verwenden "
+"es zum Drucken.\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:380
 msgid ""
-"If we run this code, it does not print the backslash, nor does it error. "
-"We get:"
+"If we run this code, it does not print the backslash, nor does it error. We "
+"get:"
 msgstr ""
+"Wenn wir diesen Code ausführen, wird der Backslash nicht gedruckt, und es "
+"tritt auch kein Fehler auf. Wir erhalten:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:382
 msgid "Hi! This is a double quote mark: \" We use it for printing."
 msgstr ""
+"Hallo! Dies ist ein doppeltes Anführungszeichen: \" Wir verwenden es zum "
+"Drucken."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:387
 msgid ""
-"Almost every language has escape codes, and many of them (C, C#, Java) "
-"use backslashes just like Python."
+"Almost every language has escape codes, and many of them (C, C#, Java) use "
+"backslashes just like Python."
 msgstr ""
+"Fast jede Sprache hat Escape-Codes, und viele von ihnen (C, C#, Java) "
+"verwenden Backslashes genau wie Python."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:390
 msgid "Here's another example:"
-msgstr ""
+msgstr "Hier ist ein weiteres Beispiel:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:392
 msgid ""
-"print(\"Audrey Hepburn once said \\\"Nothing is impossible. The word "
-"itself says 'I'm Possible!'.\\\"\")"
+"print(\"Audrey Hepburn once said \\\"Nothing is impossible. The word itself "
+"says 'I'm Possible!'.\\\"\")"
 msgstr ""
+"print(\"Audrey Hepburn sagte einmal \\\"Nothing is impossible. The word "
+"itself says 'I'm Possible!'.\\\"\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:396
 msgid "This will print:"
-msgstr ""
+msgstr "Das wird folgendes drucken:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:398
 msgid ""
-"Audrey Hepburn once said \"Nothing is impossible. The word itself says "
-"'I'm Possible!'.\""
+"Audrey Hepburn once said \"Nothing is impossible. The word itself says 'I'm "
+"Possible!'.\""
 msgstr ""
+"Audrey Hepburn sagt einmal \"Nothing is impossible. The word itself says "
+"'I'm Possible!'.\""
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:402
 msgid ""
 "Because the backslash is used as part of an escape code, the backslash "
-"itself must be escaped if you want to use one. For example, this code "
-"does not work correctly:"
+"itself must be escaped if you want to use one. For example, this code does "
+"not work correctly:"
 msgstr ""
+"Da der Backslash als Teil eines Escape-Codes verwendet wird, muss der "
+"Backslash selbst escaped werden, wenn Sie einen verwenden möchten. Dieser "
+"Code funktioniert zum Beispiel nicht korrekt:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:405
 msgid "print(\"The file is stored in C:\\new folder\")"
-msgstr ""
+msgstr "print(\"Die Datei ist in C:\\new folder gespeichert\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:409
 msgid ""
 "Why? Because ``\\n`` is an escape code. To print the backslash it is "
 "necessary to escape it like so:"
 msgstr ""
+"Warum? Weil ``\\n`` ein Escape-Code ist. Um den Backslash zu drucken, ist es"
+" notwendig, ihn wie folgt zu escapen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:411
 msgid "print(\"The file is stored in C:\\\\new folder\")"
-msgstr ""
+msgstr "print(\"Die Datei ist im Ordner C:\\\\new gespeichert\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:415
 msgid ""
-"There are a few other important escape codes to know. Here is a table of "
-"the important escape codes:"
+"There are a few other important escape codes to know. Here is a table of the"
+" important escape codes:"
 msgstr ""
+"Es gibt noch ein paar andere wichtige Escape-Codes, die du kennen solltest. "
+"Hier findest du eine Tabelle mit den wichtigen Escape-Codes:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:418
 #: ../../source/chapters/04_print_statement/print_statement.rst:448
 msgid "Escape code"
-msgstr ""
+msgstr "Escape Code"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:418
 #: ../../source/chapters/04_print_statement/print_statement.rst:448
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:420
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:420
 msgid "Single Quote"
-msgstr ""
+msgstr "Einzelnes Zitat"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:421
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:421
 msgid "Double Quote"
-msgstr ""
+msgstr "Doppeltes Zitat"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:422
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:422
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:423
 #: ../../source/chapters/04_print_statement/print_statement.rst:452
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:423
 msgid "Carriage Return (Abbreviated as CR, move cursor to the left)"
-msgstr ""
+msgstr "Carriage Return (Abgekürzt als CR, Cursor nach links bewegen)"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:424
 #: ../../source/chapters/04_print_statement/print_statement.rst:451
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:424
 msgid "Linefeed (Abbreviated as LF, move cursor down)"
-msgstr ""
+msgstr "Linefeed (Abgekürzt als LF, Cursor nach unten bewegen)"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:427
 msgid "What is a \"Carriage Return\" and a \"Linefeed\"? Try this example:"
 msgstr ""
+"Was ist ein \"Carriage Return\" und ein \"Linefeed\"? Versuchen Sie dieses "
+"Beispiel:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:429
 msgid "print(\"This\\nis\\nmy\\nsample.\")"
-msgstr ""
+msgstr "print(\"Das\\nist\\nmein\\nBeispiel.\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:433
 msgid "The output from this command is:"
-msgstr ""
+msgstr "Die Ausgabe dieses Befehls ist:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:435
 msgid ""
@@ -655,56 +874,73 @@ msgid ""
 "my\n"
 "sample."
 msgstr ""
+"Das\n"
+"ist\n"
+"mein\n"
+"Beispiel"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:442
 msgid ""
-"The ``\\n`` is a linefeed. It moves \"cursor\" where the computer will "
-"print text down one line. The computer stores all text in one big long "
-"line. It knows to display the text on different lines because of the "
-"placement of ``\\n`` characters."
+"The ``\\n`` is a linefeed. It moves \"cursor\" where the computer will print"
+" text down one line. The computer stores all text in one big long line. It "
+"knows to display the text on different lines because of the placement of "
+"``\\n`` characters."
 msgstr ""
+"Das ``\\n`` ist ein Zeilenvorschub. Es bewegt den \"Cursor\" an die Stelle, "
+"an der der Computer den Text eine Zeile nach unten drucken wird. Der "
+"Computer speichert den gesamten Text in einer großen, langen Zeile. Er weiß "
+"aufgrund der Platzierung der ``\\n``-Zeichen, dass er den Text in "
+"verschiedenen Zeilen anzeigen muss."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:445
 msgid ""
 "Before the Internet became commonplace, computers didn't agree on what "
 "characters to use for line endings:"
 msgstr ""
+"Bevor das Internet alltäglich wurde, waren sich die Computer nicht einig, "
+"welche Zeichen sie für Zeilenenden verwenden sollten:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:450
 msgid "``\\r\\n``"
-msgstr ""
+msgstr "``\\r\\n``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:450
 msgid "CR+LF: Microsoft Windows"
-msgstr ""
+msgstr "CR+LF: Microsoft Windows"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:451
 msgid "LF: UNIX based systems, and newer Macs."
-msgstr ""
+msgstr "LF: UNIX-basierte Systeme und neuere Macs."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:452
 msgid "CR: Older Mac based systems"
-msgstr ""
+msgstr "CR: Ältere Mac-basierte Systeme"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:455
 msgid ""
-"Having different standards was annoying when computers were connected on "
-"a network. The post-internet standard is to use ``\\n`` for line endings."
+"Having different standards was annoying when computers were connected on a "
+"network. The post-internet standard is to use ``\\n`` for line endings."
 msgstr ""
+"Unterschiedliche Standards zu haben, war lästig, wenn Computer in einem "
+"Netzwerk verbunden waren. Der Post-Internet-Standard ist, ``\\n`` für "
+"Zeilenenden zu verwenden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:458
 msgid ""
-"If you use an escape code, don't put spaces around it. Don't, unless, you"
-" want spaces to be there. For example, this code might look better:"
+"If you use an escape code, don't put spaces around it. Don't, unless, you "
+"want spaces to be there. For example, this code might look better:"
 msgstr ""
+"Wenn du einen Escape-Code verwendest, setze keine Leerzeichen darum. Tun es "
+"nicht, es sei denn, du möchtest, dass Leerzeichen vorhanden sind. Zum "
+"Beispiel könnte dieser Code besser aussehen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:462
 msgid "print(\"This \\n is \\n my \\n sample.\")"
-msgstr ""
+msgstr "print(\"Das \\n ist \\n mein \\n Beispiel.\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:466
 msgid "But it will print with extra spaces before the words:"
-msgstr ""
+msgstr "Aber es wird mit zusätzlichen Leerzeichen vor den Wörtern gedruckt:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:468
 msgid ""
@@ -713,24 +949,36 @@ msgid ""
 " my\n"
 " sample."
 msgstr ""
+"Das\n"
+" ist\n"
+" mein\n"
+" Beispiel"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:475
 msgid ""
 "Just because you *can* use a ``\\n`` to print multiple lines in a single "
-"``print`` statement doesn't mean you should. Often it is easier to read "
-"two short ``print`` statements rather than one super-long ``print`` "
-"statement with a bunch of ``\\n`` escape codes crammed into it."
+"``print`` statement doesn't mean you should. Often it is easier to read two "
+"short ``print`` statements rather than one super-long ``print`` statement "
+"with a bunch of ``\\n`` escape codes crammed into it."
 msgstr ""
+"Nur weil du ein ``\\n`` verwenden *kannst*, um mehrere Zeilen in einer "
+"einzigen ``print`` Anweisung zu drucken, heißt das nicht, dass du das auch "
+"tun solltest. Oft ist es einfacher, zwei kurze ``print`` Anweisungen zu "
+"lesen als eine superlange ``print`` Anweisung mit einem Haufen ``\\n"
+"``-Escape-Codes, die darin eingepfercht sind."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:480
 msgid "Triple Quotes"
-msgstr ""
+msgstr "Dreifache Zitate"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:487
 msgid ""
-"If you have a block of text and don't want to spend a lot of time putting"
-" quotes around each line, you can use triple quotes."
+"If you have a block of text and don't want to spend a lot of time putting "
+"quotes around each line, you can use triple quotes."
 msgstr ""
+"Wenn du einen Textblock hast und nicht viel Zeit damit verbringen möchtest, "
+"Anführungszeichen um jede Zeile zu setzen, kannst du dreifache "
+"Anführungszeichen verwenden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:490
 msgid ""
@@ -740,10 +988,15 @@ msgid ""
 "triple\n"
 "quotes.\"\"\")"
 msgstr ""
+"print(\"\"\"Du kannst\n"
+"mit dreifachen Anführungszeichen\n"
+"auf mehreren\n"
+"Zeilen\n"
+"drucken.\"\"\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:498
 msgid "This code will run and print out like this:"
-msgstr ""
+msgstr "Dieser Code wird ausgeführt und wie folgt ausgedruckt:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:500
 msgid ""
@@ -753,13 +1006,22 @@ msgid ""
 "triple\n"
 "quotes."
 msgstr ""
+"Du kannst\n"
+"mit dreifachen Anführungszeichen\n"
+"auf mehreren\n"
+"Zeilen\n"
+"drucken."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:508
 msgid ""
-"It is tempting to put in extra blank lines and indents. Don't do this "
-"unless you want them in the final output. For example, the code in this "
-"example looks better than the code in the previous example:"
+"It is tempting to put in extra blank lines and indents. Don't do this unless"
+" you want them in the final output. For example, the code in this example "
+"looks better than the code in the previous example:"
 msgstr ""
+"Es ist verlockend, zusätzliche Leerzeilen und Einzüge einzufügen. Tu das "
+"nicht, es sei denn, du möchtest sie in der endgültigen Ausgabe haben. Der "
+"Code in diesem Beispiel sieht zum Beispiel besser aus als der Code im "
+"vorherigen Beispiel:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:512
 msgid ""
@@ -769,10 +1031,15 @@ msgid ""
 "        triple\n"
 "        quotes.\"\"\")"
 msgstr ""
+"print(\"\"\"Du kannst\n"
+"         mit dreifachen Anführungszeichen\n"
+"         auf mehrere\n"
+"         Zeilen\n"
+"         drucken.\"\"\")"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:520
 msgid "But the output will include all those extra spaces:"
-msgstr ""
+msgstr "Aber die Ausgabe enthält all diese zusätzlichen Leerzeichen:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:522
 msgid ""
@@ -782,122 +1049,136 @@ msgid ""
 "         triple\n"
 "         quotes."
 msgstr ""
+"Du kannst\n"
+"         mit dreifachen Anführungszeichen\n"
+"         auf mehrere\n"
+"         Zeilen\n"
+"         drucken."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:531
 msgid "Review"
-msgstr ""
+msgstr "Review"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:538
 msgid ""
 "In this chapter we learned one of the most basic building blocks of a "
 "computer program is the **function**. The first function we are learning "
-"about is the ``print`` function, used to output information to the "
-"screen. We learned how to use that function by entering and running our "
-"first program. As programs don't always work the first try, we learned "
-"about **name errors** and **syntax errors**. We learned that code has a "
-"style guide called **PEP-8** that defines how code should be formatted. "
-"Printing multiple lines is possible using three techniques: multiple "
-"print statements, **escape codes**, and **triple-quotes**. We learned "
-"that escape codes can also be used to print quotes and tab characters."
+"about is the ``print`` function, used to output information to the screen. "
+"We learned how to use that function by entering and running our first "
+"program. As programs don't always work the first try, we learned about "
+"**name errors** and **syntax errors**. We learned that code has a style "
+"guide called **PEP-8** that defines how code should be formatted. Printing "
+"multiple lines is possible using three techniques: multiple print "
+"statements, **escape codes**, and **triple-quotes**. We learned that escape "
+"codes can also be used to print quotes and tab characters."
 msgstr ""
+"In diesem Kapitel haben wir gelernt, dass einer der grundlegendsten "
+"Bausteine eines Computerprogramms die **Funktion** ist. Die erste Funktion, "
+"die wir kennenlernen, ist die ``print`` Funktion, mit der Informationen auf "
+"dem Bildschirm ausgegeben werden. Wir haben gelernt, wie man diese Funktion "
+"verwendet, indem wir unser erstes Programm eingegeben und ausgeführt haben. "
+"Da Programme nicht immer beim ersten Versuch funktionieren, haben wir etwas "
+"über **Namensfehler** und **Syntaxfehler** gelernt. Wir haben gelernt, dass "
+"es für Codes einen Styleguide namens **PEP-8** gibt, der festlegt, wie der "
+"Code formatiert werden sollte. Das Drucken mehrerer Zeilen ist mit drei "
+"Techniken möglich: mehrere Druckanweisungen, **Escape-Codes** und "
+"**dreifache Anführungszeichen**. Wir haben gelernt, dass Escape-Codes auch "
+"zum Drucken von Anführungszeichen und Tabulatorzeichen verwendet werden "
+"können."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:551
 msgid "Review Questions"
-msgstr ""
+msgstr "Review Fragen"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:553
 msgid ""
 "What type of error (looking for one word) are we likely to get, if we "
 "mistype a function name?"
 msgstr ""
+"Welche Art von Fehler (Suche nach einem Wort) erhalten wir wahrscheinlich, "
+"wenn wir einen Funktionsnamen falsch schreiben?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:555
 msgid ""
-"If you forget to use parentheses when using a function, what type of "
-"error will you get (looking for one word)?"
+"If you forget to use parentheses when using a function, what type of error "
+"will you get (looking for one word)?"
 msgstr ""
+"Welche Art von Fehler (Suche nach einem Wort) erhältst du, wenn du bei der "
+"Verwendung einer Funktion vergisst, Klammern zu verwenden?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:557
 msgid "What term refers to the values between the parentheses in function?"
 msgstr ""
+"Welcher Begriff bezieht sich auf die Werte zwischen den Klammern in einer "
+"Funktion?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:558
 msgid "What is the escape code for a double quote?"
-msgstr ""
+msgstr "Wie lautet der Escape-Code für ein doppeltes Anführungszeichen?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:559
 msgid "What escape code is most commonly used to go to a new line?"
 msgstr ""
+"Welcher Escape-Code wird am häufigsten verwendet, um zu einer neuen Zeile zu"
+" wechseln?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:560
 msgid "What will this print? ``print(\"Escape codes: \\\\\\\\\")``"
-msgstr ""
+msgstr "Was wird damit gedruckt? ``print(\"Escape-Codes: \\\\\\\\\")``"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:561
 msgid ""
 "What do you use to print a block of text without using multiple print "
 "statements or ``\\n``?"
 msgstr ""
+"Was verwendest du, um einen Textblock zu drucken, ohne mehrere "
+"Druckanweisungen oder ``\\n`` zu verwenden?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:563
 msgid "Write code to print ``Hello``."
-msgstr ""
+msgstr "Schreiben Sie einen Code, um ``Hallo`` zu drucken."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:564
 msgid "What is the name of the style-guide for Python?"
-msgstr ""
+msgstr "Wie lautet der Name des Style-Guides für Python?"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:567
 msgid "Online Coding Problems"
-msgstr ""
+msgstr "Online-Kodierprobleme"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:569
 msgid ""
-"Practice on-line by completing the first set of coding problems available"
-" here:"
+"Practice on-line by completing the first set of coding problems available "
+"here:"
 msgstr ""
+"Übe on-line, indem du den ersten Satz von Kodierproblemen erledigst, der "
+"hier verfügbar ist:"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:571
 msgid "https://repl.it/community/classrooms/174286"
-msgstr ""
+msgstr "https://repl.it/community/classrooms/174286"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:573
 msgid ""
-"All problems beginning with ``01`` can be done with the knowledge from "
-"this chapter."
+"All problems beginning with ``01`` can be done with the knowledge from this "
+"chapter."
 msgstr ""
+"Alle Probleme, die mit ``01`` beginnen, können mit dem Wissen aus diesem "
+"Kapitel bearbeitet werden."
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:577
 msgid "Lab 1: First Program"
-msgstr ""
+msgstr "Übung 1: Erstes Programm"
 
 #: ../../source/chapters/04_print_statement/print_statement.rst:579
 msgid ""
-"Use the computer that you've set up in :ref:`chapter-setup` and the set "
-"of files you cloned in :ref:`version-control` to create your first "
-"program in :ref:`lab-01`. Then learn to commit the code to the version "
-"control system and turn it in."
+"Use the computer that you've set up in :ref:`chapter-setup` and the set of "
+"files you cloned in :ref:`version-control` to create your first program in "
+":ref:`lab-01`. Then learn to commit the code to the version control system "
+"and turn it in."
 msgstr ""
-
-#~ msgid ""
-#~ "First click the triangle next to "
-#~ "your project name (1), then find "
-#~ "``Scratch Work``, (2) then finally "
-#~ "``print_statements.py`` (3)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once you've selected ``print_statements.py``, "
-#~ "go ahead and type in your first"
-#~ " program:"
-#~ msgstr ""
-
-#~ msgid "What type of error are we likely to get, if we mistype a function name?"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you forget to use parentheses "
-#~ "when using a function, what type "
-#~ "of error will you get?"
-#~ msgstr ""
-
+"Verwende den Computer, den du in :ref:`Einrichten des Systems` eingerichtet "
+"hast, und den Satz von Dateien, den du in :ref:`Versionskontrollsysteme` "
+"geklont haben, um Ihr erstes Programm in :ref:`Übung 1: Ein erstes "
+"Programm`zu erstellen. Lern dann, den Code an das Versionskontrollsystem zu "
+"übertragen und ihn abzugeben."

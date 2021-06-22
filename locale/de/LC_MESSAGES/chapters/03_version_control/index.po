@@ -1,470 +1,616 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Paul Vincent Craven
+# Copyright (C) 2021, Paul Vincent Craven
 # This file is distributed under the same license as the Arcade package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Gans Hünther <yang.ambrosius@igs-buchholz.de>, 2021
+# Felix_Engelke <felix.engelke@igs-buchholz.de>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Arcade 2020\n"
+"Project-Id-Version: Arcade 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 14:54-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-04-13 15:19-0500\n"
+"PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Last-Translator: Felix_Engelke <felix.engelke@igs-buchholz.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/arcade-academy/teams/108729/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/chapters/03_version_control/index.rst:4
 msgid "Version Control Systems"
-msgstr ""
+msgstr "Versionskontrollsysteme"
 
-msgid ".. image:: chapters\\03_version_control\\versions.svg"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/versions.svg"
+msgstr ".. image:: chapters/03_version_control/versions.svg"
 
 #: ../../source/chapters/03_version_control/index.rst:9
 msgid ""
 "We will use a `version control system` to track your work, and allow the "
-"instructor to give feedback. Odds are, this will be the same exact system"
-" you'd use in a large company."
+"instructor to give feedback. Odds are, this will be the same exact system "
+"you'd use in a large company."
 msgstr ""
+"Du wirst ein \"Versionskontrollsystem\" verwenden, um deine Arbeit zu "
+"verfolgen und deinem Ausbilder die Möglichkeit zu geben, Feedback zu geben. "
+"Die Chancen stehen gut, dass du ein solches System, in einem großen "
+"Unternehmen verwenden würdest."
 
 #: ../../source/chapters/03_version_control/index.rst:16
 msgid "Quick Reference"
-msgstr ""
+msgstr "Kurzreferenz"
 
 #: ../../source/chapters/03_version_control/index.rst:18
 msgid ""
-"This is a quick reference, come back to this when you want to turn in "
-"your work. We'll go over a detailed explanation later."
+"This is a quick reference, come back to this when you want to turn in your "
+"work. We'll go over a detailed explanation later."
 msgstr ""
+"Dies ist eine Kurzreferenz, komme wieder wenn du deine Arbeit abgeben "
+"willst. wir werden uns später einer detaillierten Erklärung widmen."
 
 #: ../../source/chapters/03_version_control/index.rst:22
 msgid "Commit and Upload"
-msgstr ""
+msgstr "Bestätigen und Hochladen"
 
 #: ../../source/chapters/03_version_control/index.rst:24
 msgid "Do this whenever you are done with a session of programming:"
 msgstr ""
+"Erledige dies wann immer du mit einer Programmier Session fertig bist:"
 
 #: ../../source/chapters/03_version_control/index.rst:26
 msgid "Open either the \"command prompt\" on Windows, or \"terminal\" on MacOS."
 msgstr ""
+"Öffne entweder die \"Eingabeaufforderung\" unter Windows oder das "
+"\"Terminal\" unter MacOS."
 
 #: ../../source/chapters/03_version_control/index.rst:27
 msgid ""
-"Type ``cd mydirectoryname`` to navigate to your directory. For most "
-"people, this works with ``cd Desktop`` followed by ``cd learn-arcade-"
-"work``. If you have OneDrive installed, you may need to first type ``cd "
-"OneDrive``. You can usually type in the first few letters and hit <tab> "
-"to fill in the rest of the directory name."
+"Type ``cd mydirectoryname`` to navigate to your directory. For most people, "
+"this works with ``cd Desktop`` followed by ``cd learn-arcade-work``. If you "
+"have OneDrive installed, you may need to first type ``cd OneDrive``. You can"
+" usually type in the first few letters and hit <tab> to fill in the rest of "
+"the directory name."
 msgstr ""
+"Gebe  dafür ``cd meinVerzeichnisname`` ein, um zu deinem Verzeichnis zu "
+"navigieren. Meistens funktioniert das mit ``cd Desktop`` gefolgt von ``cd "
+"learn-arcade-work``. Wenn du OneDrive installiert haben, musst du eventuell "
+"zuerst ``cd OneDrive`` eingeben. Normalerweise kannst du die ersten paar "
+"Buchstaben eintippen und dann auf  <tab> drücken, um den Rest des "
+"Verzeichnisnamens einzugeben."
 
 #: ../../source/chapters/03_version_control/index.rst:31
 msgid "Type ``git add *``"
-msgstr ""
+msgstr "Gib  ``git add *`` ein"
 
 #: ../../source/chapters/03_version_control/index.rst:32
 msgid ""
 "Type ``git commit -m \"Work on lab 1\"`` Update the comment between the "
 "quotes to whatever you did."
 msgstr ""
+"Gefolgt von ``git commit -m \"Work on lab 1\"`` um den Kommentar auf den "
+"aktuellsten Stand zu bringen."
 
 #: ../../source/chapters/03_version_control/index.rst:34
 msgid "Type ``git push``"
-msgstr ""
+msgstr "und noch ``git push``"
 
 #: ../../source/chapters/03_version_control/index.rst:36
 msgid "If you get an error while pushing, see :ref:`cant-push`"
-msgstr ""
+msgstr "Falls du eine Fehlermeldung erhältst, siehe :ref:`cant-push`"
 
 #: ../../source/chapters/03_version_control/index.rst:39
 msgid "Turn In Your Work"
-msgstr ""
+msgstr "Gebe deine Ergebnisse ab "
 
 #: ../../source/chapters/03_version_control/index.rst:41
 msgid "Go to `GitHub <https://github.com/>`_"
-msgstr ""
+msgstr "Gehe auf `GitHub <https://github.com/>`_"
 
 #: ../../source/chapters/03_version_control/index.rst:42
 msgid "Sign in if needed (Upper right corner. Don't try to sign up again.)"
 msgstr ""
+"Registriere dich falls nötig (In der oberen rechten Ecke. achte darauf dich "
+"nicht nochmal zu registrieren)  "
 
 #: ../../source/chapters/03_version_control/index.rst:43
 msgid "Click on your repository on the left side"
-msgstr ""
+msgstr "Klicke auf dein Repository auf der linken Seite "
 
 #: ../../source/chapters/03_version_control/index.rst:44
 msgid "Find the folder with your lab"
-msgstr ""
+msgstr "Suche den Ordner mit deinen Lab"
 
 #: ../../source/chapters/03_version_control/index.rst:45
 msgid "Copy link"
-msgstr ""
+msgstr "Kopier den Link"
 
 #: ../../source/chapters/03_version_control/index.rst:46
 msgid "Go to Scholar/Moodle for the lab"
-msgstr ""
+msgstr "Öffne dass Scholar/Moodle für dein lab"
 
 #: ../../source/chapters/03_version_control/index.rst:47
 msgid "Paste link, and turn in"
-msgstr ""
+msgstr "Füge den Link ein, und gebe deine Ergebnisse ab"
 
 #: ../../source/chapters/03_version_control/index.rst:49
 msgid "For more commands, see the :ref:`git_command_reference`."
-msgstr ""
+msgstr "für mehr befehle schaue unter :ref:`git_command_reference` nach."
 
 #: ../../source/chapters/03_version_control/index.rst:52
 msgid "What is a Distributed Version Control System"
-msgstr ""
+msgstr "Was ist ein verteiltes Versionskontrollsystem"
 
-msgid ".. image:: chapters\\03_version_control\\git.svg"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/git.svg"
+msgstr ".. image:: chapters/03_version_control/git.svg"
 
 #: ../../source/chapters/03_version_control/index.rst:58
 msgid ""
 "No serious development should be done without version control. In fact, "
-"version control is so important, many developers would argue that almost "
-"no development should be done without version control. Even all my notes "
-"for class I keep in version control."
+"version control is so important, many developers would argue that almost no "
+"development should be done without version control. Even all my notes for "
+"class I keep in version control."
 msgstr ""
+"Keine ernsthafte Entwicklung sollte ohne Versionskontrolle durchgeführt "
+"werden. In der Tat ist ein Versionskontrolle so wichtig, dass viele "
+"Entwickler argumentieren würden, dass fast keine Entwicklung ohne "
+"Versionskontrolle durchgeführt werden sollte. Sogar alle meine Notizen für "
+"den Unterricht bewahre ich in der Versionskontrolle auf."
 
 #: ../../source/chapters/03_version_control/index.rst:63
 msgid "Version control allows developers to:"
-msgstr ""
+msgstr "Die Versionskontrolle erlaubt Entwicklern :"
 
 #: ../../source/chapters/03_version_control/index.rst:65
 msgid "Get any prior version of a project."
-msgstr ""
+msgstr "Jede vergangene Version eines Projektes wiederherzustellen.   "
 
 #: ../../source/chapters/03_version_control/index.rst:67
 msgid ""
-"Released version 1.5 of your program, and now it is crashing? Quick! Go "
-"back to version 1.4."
+"Released version 1.5 of your program, and now it is crashing? Quick! Go back"
+" to version 1.4."
 msgstr ""
+"Du veröffentlichts Version 1.5 deines programes und  nun Stürzt es ab? "
+"Schnell! Gehe einfach wieder zurück zu Version 1.4."
 
 #: ../../source/chapters/03_version_control/index.rst:69
 msgid "Did the 'new guy' mess up the project? Revert back!"
 msgstr ""
+"Hat der 'Neue' das Projekt vermasselt? Kehre einfach zu einer alten Version "
+"zurück!"
 
 #: ../../source/chapters/03_version_control/index.rst:71
 msgid ""
-"Know exactly what changed in the code, when, and by who. See who is "
-"actually doing the work. If a mistake gets added in, see when it was "
-"added and by whom."
+"Know exactly what changed in the code, when, and by who. See who is actually"
+" doing the work. If a mistake gets added in, see when it was added and by "
+"whom."
 msgstr ""
+"Wisse genau, was im Code geändert wurde, wann und von wem. Sehe, wer "
+"tatsächlich die Arbeit macht. Wenn ein Fehler eingefügt wird siehst du, wann"
+" und von wem er eingefügt wurde."
 
 #: ../../source/chapters/03_version_control/index.rst:73
 msgid "Easily share code between developers."
-msgstr ""
+msgstr "Einfacher Austausch von Code zwischen Entwicklern."
 
 #: ../../source/chapters/03_version_control/index.rst:74
 msgid "Easily work independently of other developers."
-msgstr ""
+msgstr "Einfaches Arbeiten unabhängig von anderen Entwicklern."
 
 #: ../../source/chapters/03_version_control/index.rst:75
 msgid "Recover an accidentally deleted or overwritten file."
 msgstr ""
+"Stelle aus Versehen gelöschte oder überschriebende Dateien wieder her.  "
 
 #: ../../source/chapters/03_version_control/index.rst:76
 msgid "Go back and create a bug-fix release on prior versions of a program."
 msgstr ""
+"Geh zurück und erstelle einen bug-fix für frühere Versionen eines Programms."
 
 #: ../../source/chapters/03_version_control/index.rst:77
 msgid "Work on multiple computers and keep files in sync."
-msgstr ""
+msgstr "Arbeite an mehreren Computern und behalte deine Dateien synchron."
 
 #: ../../source/chapters/03_version_control/index.rst:79
 msgid ""
-"Version control saves untold time and headaches. It used to be that "
-"version control had enough of a learning curve that some developers "
-"refused to use it. Thankfully today's version control tools are so easy "
-"to use there's no excuse not to."
+"Version control saves untold time and headaches. It used to be that version "
+"control had enough of a learning curve that some developers refused to use "
+"it. Thankfully today's version control tools are so easy to use there's no "
+"excuse not to."
 msgstr ""
+"Versionskontrolle spart unsagbar viel Zeit und Kopfzerbrechen. Früher war "
+"die Versionskontrolle so lernintensiv, dass sich einige Entwickler "
+"weigerten, sie zu benutzen. Zum Glück sind die heutigen Tools zur "
+"Versionskontrolle so einfach zu bedienen, dass es keine Ausrede mehr gibt, "
+"es nicht zu tun."
 
 #: ../../source/chapters/03_version_control/index.rst:83
 msgid ""
-"There are two main types of version control. The original version control"
-" systems were \"centralized\" which required a central server. Currently "
-"we use \"Distributed Version Control Systems\" (DVCS) which don't require"
-" a central server. The software program Git_ is one of the most popular "
-"types of DVCS available today."
+"There are two main types of version control. The original version control "
+"systems were \"centralized\" which required a central server. Currently we "
+"use \"Distributed Version Control Systems\" (DVCS) which don't require a "
+"central server. The software program Git_ is one of the most popular types "
+"of DVCS available today."
 msgstr ""
+"Es gibt zwei Haupttypen der Versionskontrolle. Die ursprünglichen "
+"Versionskontrollsysteme waren \"zentralisiert\" und erforderten einen "
+"zentralen Server. Heutzutage verwenden wir \"verteilte "
+"Versionskontrollsysteme\" (DVCS), die keinen zentralen Server benötigen. Das"
+" Softwareprogramm Git_ ist eine der beliebtesten Arten von DVCS, die heute "
+"verfügbar sind."
 
 #: ../../source/chapters/03_version_control/index.rst:94
 msgid "Installing Git"
-msgstr ""
+msgstr "Installation von Git"
 
-msgid ".. image:: chapters\\03_version_control\\install.svg"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/install.svg"
+msgstr ".. image:: chapters/03_version_control/install.svg"
 
 #: ../../source/chapters/03_version_control/index.rst:100
 msgid ""
-"Let's install ``git`` on your computer. If you are using a school "
-"computer with ``git`` pre-installed, you can skip this step."
+"Let's install ``git`` on your computer. If you are using a school computer "
+"with ``git`` pre-installed, you can skip this step."
 msgstr ""
+"Lass uns ``git`` auf deinem Computer installieren. Wenn du einen "
+"Schulcomputer verwendest, auf dem ``git`` vorinstalliert ist, kannst du "
+"diesen Schritt überspringen."
 
 #: ../../source/chapters/03_version_control/index.rst:104
 msgid ""
 "If you are in Windows, click the link below and download and install the "
 "64-bit version of the ``git``:"
 msgstr ""
+"Wenn du mit Windows arbeitest, klicke auf den untenstehenden Link und lade "
+"die 64-Bit-Version von ``git`` herunter und installieren sie:"
 
 #: ../../source/chapters/03_version_control/index.rst:106
 msgid "`Windows Git DVCS <https://git-scm.com/download/win>`_"
-msgstr ""
+msgstr "`Windows Git DVCS <https://git-scm.com/download/win>`_"
 
 #: ../../source/chapters/03_version_control/index.rst:108
 msgid "If you are on the Mac:"
-msgstr ""
+msgstr "Arbeitest du mit einem Mac:"
 
 #: ../../source/chapters/03_version_control/index.rst:110
 msgid ""
 "Open the \"Terminal\" window. (Under the 'Utilities' folder in "
 "Applications.)"
 msgstr ""
+"Öffnen das Fenster \"Terminal\". (Unter dem Ordner \"Dienstprogramme\" in "
+"Anwendungen.)"
 
 #: ../../source/chapters/03_version_control/index.rst:111
 msgid "Type ``git`` at the command prompt."
-msgstr ""
+msgstr "Geben Sie ``git`` an der Eingabeaufforderung ein."
 
 #: ../../source/chapters/03_version_control/index.rst:112
 msgid ""
-"You should now be prompted to install some developer tools, which "
-"includes ``git``."
+"You should now be prompted to install some developer tools, which includes "
+"``git``."
 msgstr ""
+"Sie sollten nun aufgefordert werden, einige Entwicklerwerkzeuge zu "
+"installieren, zu denen auch ``git`` gehört."
 
 #: ../../source/chapters/03_version_control/index.rst:117
 msgid "Forking the Repository"
-msgstr ""
+msgstr "Ein Fork des Repository Erstellen "
 
 #: ../../source/chapters/03_version_control/index.rst:120
 msgid ""
-"You should only have to fork the code **once** during class. If you do it"
-" more than once, something is wrong. Stop before you do this and see the "
+"You should only have to fork the code **once** during class. If you do it "
+"more than once, something is wrong. Stop before you do this and see the "
 "instructor. It is a big headache for everyone if you fork more than once."
 msgstr ""
+"Du solltest nur **einmal** während des Kurses einen Fork vom Code anlegen "
+"müssen. Wenn du es mehr als einmal tust, ist etwas nicht in Ordnung. Höre "
+"auf, bevor du das tust und wende dich an den Dozenten. Es bereitet allen "
+"Beteiligten große Kopfschmerzen, wenn du mehr als einmal ein Fork anlegst."
 
 #: ../../source/chapters/03_version_control/index.rst:124
 msgid ""
-"We are going to store our programs on-line with a website called GitHub. "
-"Get started by signing up for their website: https://github.com As this "
-"may become a \"portfolio\" for your work, choose an account name that "
-"would work in a professional environment. Feel free to keep it anonymous,"
-" just avoid something too silly."
+"We are going to store our programs on-line with a website called GitHub. Get"
+" started by signing up for their website: https://github.com As this may "
+"become a \"portfolio\" for your work, choose an account name that would work"
+" in a professional environment. Feel free to keep it anonymous, just avoid "
+"something too silly."
 msgstr ""
+"Wir werden unsere Programme online auf einer Website namens GitHub "
+"speichern. Fang an, indem du dich auf der Website anmeldest: "
+"https://github.com Da dies ein \"Portfolio\" für deine Arbeit werden könnte,"
+" solltest du einen Kontonamen, der in einer professionellen Umgebung "
+"funktionieren würde, nehmen. Du kannst ihn gerne anonym halten, vermeide nur"
+" etwas zu Albernes."
 
 #: ../../source/chapters/03_version_control/index.rst:129
 msgid ""
 "Go to this web address which has a template for the labs we'll create in "
 "class: https://github.com/pythonarcade/learn-arcade-work"
 msgstr ""
+"Rufe diese Webadresse auf, die eine Vorlage für die labs enthält, die wir im"
+" Unterricht erstellen werden: https://github.com/pythonarcade/learn-arcade-"
+"work"
 
-msgid ".. image:: chapters\\03_version_control\\fork.svg"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/fork.svg"
+msgstr ".. image:: chapters/03_version_control/fork.svg"
 
 #: ../../source/chapters/03_version_control/index.rst:136
 msgid ""
-"We need to \"fork\" the repository. This will create your own copy of the"
-" repository that will be independent of mine. Changes you make to a "
-"\"fork\" aren't automatically sent to the original. Fork the repository "
-"by clicking on the fork button in the upper-right corner:"
+"We need to \"fork\" the repository. This will create your own copy of the "
+"repository that will be independent of mine. Changes you make to a \"fork\" "
+"aren't automatically sent to the original. Fork the repository by clicking "
+"on the fork button in the upper-right corner:"
 msgstr ""
+"Wir müssen ein \"Fork\" des Repositorys erstellen. Dadurch wird deine eigene"
+" Kopie des Repositorys erstellt, die unabhängig von meiner ist. Fork das "
+"Repository, indem du auf die Schaltfläche fork in der oberen rechten Ecke "
+"klicken:"
 
 #: ../../source/chapters/03_version_control/index.rst:144
-msgid ".. image:: chapters\\03_version_control\\fork.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/fork.png"
+msgstr ".. image:: chapters/03_version_control/fork.png"
 
 #: ../../source/chapters/03_version_control/index.rst:144
 msgid "Forking the repository"
-msgstr ""
+msgstr "Forken des Repositorys"
 
 #: ../../source/chapters/03_version_control/index.rst:146
 msgid ""
-"After grinding away a bit, you should have your own fork. Make sure you "
-"are on your own fork, and not the original, by looking for your account "
-"name:"
+"After grinding away a bit, you should have your own fork. Make sure you are "
+"on your own fork, and not the original, by looking for your account name:"
 msgstr ""
+"Nach einigen Änderung, solltest du deinen eigenen Fork haben. Vergewissere "
+"dich, dass du in deinem eigenen Fork bist und nicht auf dem Original, indem "
+"du nach deinem Kontonamen suchst:"
 
 #: ../../source/chapters/03_version_control/index.rst:152
-msgid ".. image:: chapters\\03_version_control\\fork_2.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/fork_2.png"
+msgstr ".. image:: chapters/03_version_control/fork_2.png"
 
 #: ../../source/chapters/03_version_control/index.rst:152
 msgid "Verify you are working on your own fork, not the original"
 msgstr ""
+"Verifiziere, dass du an deinem Fork arbeitest und nicht an dem Original Code"
+" "
 
 #: ../../source/chapters/03_version_control/index.rst:154
 msgid ""
-"Now you have your own fork, but it exists on the GitHub server and not "
-"your computer. We'll fix that in the next section."
+"Now you have your own fork, but it exists on the GitHub server and not your "
+"computer. We'll fix that in the next section."
 msgstr ""
+"Jetzt hast du deinen eigenen Fork, aber er existiert auf dem GitHub-Server "
+"und nicht auf deinem Computer. Wir werden das im nächsten Abschnitt beheben."
 
 #: ../../source/chapters/03_version_control/index.rst:160
 msgid "Cloning the Repository"
+msgstr "Klonen des Repositorys"
+
+#: ../../source/chapters/03_version_control/index.rst:162
+#: ../../source/chapters/03_version_control/index.rst:162
+msgid ""
+".. image:: chapters/03_version_control/code_button.png\n"
+"   :alt: Code Button"
 msgstr ""
+".. image:: chapters/03_version_control/code_button.png\n"
+"   :alt: Code Button"
 
 #: ../../source/chapters/03_version_control/index.rst:167
 msgid ""
 "Every time you start working on a new computer, you'll need to create a "
 "clone. (Unless you use a flash drive.)"
 msgstr ""
+"Jedes Mal, wenn du auf einem neuen Computer zu arbeiten beginnst, musst du "
+"einen neuen Klon erstellen. (Es sei denn, du verwendest ein Flash-Laufwerk.)"
 
 #: ../../source/chapters/03_version_control/index.rst:170
 msgid ""
-"Run the program \"Command Prompt\" on Windows. Or, if you are on MacOS, "
-"go under \"Applications\", find \"Utilities\" and run \"Terminal\". You "
-"should get something like one of the figures below:"
+"Run the program \"Command Prompt\" on Windows. Or, if you are on MacOS, go "
+"under \"Applications\", find \"Utilities\" and run \"Terminal\". You should "
+"get something like one of the figures below:"
 msgstr ""
+"Führe unter Windows das Programm \"Command Prompt\" aus. Oder, wenn du unter"
+" MacOS bist, dann geh unter \"Programme\", such nach \"Dienstprogramme\" und"
+" führ \"Terminal\" aus. Du solltest so etwas wie in einer der folgenden "
+"Abbildungen erhalten:"
 
 #: ../../source/chapters/03_version_control/index.rst:177
-msgid ".. image:: chapters\\03_version_control\\command_prompt.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/command_prompt.png"
+msgstr ".. image:: chapters/03_version_control/command_prompt.png"
 
 #: ../../source/chapters/03_version_control/index.rst:177
 msgid "Windows Command Prompt"
-msgstr ""
+msgstr "Windows Eingabeaufforderung"
 
 #: ../../source/chapters/03_version_control/index.rst:182
-msgid ".. image:: chapters\\03_version_control\\terminal_window.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/terminal_window.png"
+msgstr ".. image:: chapters/03_version_control/terminal_window.png"
 
 #: ../../source/chapters/03_version_control/index.rst:182
 msgid "MacOS Terminal Window"
-msgstr ""
+msgstr "MacOS Terminal Fenster"
 
 #: ../../source/chapters/03_version_control/index.rst:184
 msgid ""
-"Figure out where you want to store your files. You might want to store "
-"the files on your laptop, a flash drive, or a networked drive. If you "
-"aren't sure, let's just put them on the Desktop."
+"Figure out where you want to store your files. You might want to store the "
+"files on your laptop, a flash drive, or a networked drive. If you aren't "
+"sure, let's just put them on the Desktop."
 msgstr ""
+"Überlege dir, wo du deine Dateien speichern möchten. Vielleicht möchtest du "
+"sie auf deinem Laptop, einem Flash-Laufwerk oder einem Netzwerklaufwerk "
+"speichern. Wenn du dir nicht sicher bist, leg sie einfach auf dem Desktop "
+"ab."
 
 #: ../../source/chapters/03_version_control/index.rst:187
 msgid ""
-"We need to change our \"working directory\" to where we want to store our"
-" files. If you are saving to your desktop, just type ``cd Desktop``. It "
-"is case-sensitive on MacOS."
+"We need to change our \"working directory\" to where we want to store our "
+"files. If you are saving to your desktop, just type ``cd Desktop``. It is "
+"case-sensitive on MacOS."
 msgstr ""
+"Wir müssen unser \"Arbeitsverzeichnis\" dorthin ändern, wo wir unsere "
+"Dateien speichern wollen. Wenn du es auf deinem Desktop speicherst, gib "
+"einfach ``cd Desktop`` ein. Unter MacOS wird zwischen Groß- und "
+"Kleinschreibung unterschieden."
 
 #: ../../source/chapters/03_version_control/index.rst:193
 msgid ""
-"You can change directories using the ``cd`` (change directory) command. "
-"By default, when you open a terminal or command prompt you are working in"
-" your \"home\" directory. Let's use the There's a lot to the ``cd`` "
-"command, but there are a few variations you need to know:"
+"You can change directories using the ``cd`` (change directory) command. By "
+"default, when you open a terminal or command prompt you are working in your "
+"\"home\" directory. Let's use the There's a lot to the ``cd`` command, but "
+"there are a few variations you need to know:"
 msgstr ""
+"Sie können Verzeichnisse mit dem Befehl ``cd`` (change directory) wechseln. "
+"Wenn du ein Terminal oder eine Eingabeaufforderung öffnen, arbeitest du "
+"standardmäßig in dein \"Home\"-Verzeichnis. Lass uns den Befehl ``cd`` "
+"verwenden. Es gibt viele Varianten, aber es gibt einige Variationen, die Sie"
+" kennen müssen:"
 
 #: ../../source/chapters/03_version_control/index.rst:200
 msgid "``cd`` - Change to your \"home\" directory."
-msgstr ""
+msgstr "``cd`` - Wechsel in dein \"Home\"-Verzeichnis."
 
 #: ../../source/chapters/03_version_control/index.rst:201
 msgid ""
-"``cd mydir`` - Change to ``mydir`` directory. That directory must be in "
-"the same directory you are in now. Also, if you don't want to type the "
-"full directory name, you can type the first few letters and hit <tab>."
+"``cd mydir`` - Change to ``mydir`` directory. That directory must be in the "
+"same directory you are in now. Also, if you don't want to type the full "
+"directory name, you can type the first few letters and hit <tab>."
 msgstr ""
+"``cd mydir`` - Wechsel in das Verzeichnis ``mydir``. Dieses Verzeichnis muss"
+" im gleichen Verzeichnis sein, in dem Sie sich jetzt befinden. Wenn Sie "
+"nicht den ganzen Verzeichnisnamen eingeben wollen, können Sie auch die "
+"ersten Buchstaben eingeben und dann <tab> drücken."
 
 #: ../../source/chapters/03_version_control/index.rst:204
 msgid ""
 "``cd ..`` - Go up one directory. So if you are in "
 "``C:\\home\\user\\Desktop`` you'll go up to ``C:\\home\\user``"
 msgstr ""
+"``cd ..`` - Geht ein Verzeichnis nach oben. Wenn du also in "
+"``C:\\home\\user\\Desktop`` sind, gehe nach oben zu ``C:\\home\\user``."
 
 #: ../../source/chapters/03_version_control/index.rst:207
 msgid ""
-"We want to copy the repository you created to your computer. We'll call "
-"this a \"clone.\" A clone is a copy we normally try to keep synced up, "
-"which is different than a \"fork.\" Click the |code_button| button and "
-"see the figure below. 1) Make sure you are cloning using \"HTTPS\". 2) "
-"Make sure the account shown is yours, and not mine or \"pythonarcade\". "
-"3) Click the copy link button."
+"We want to copy the repository you created to your computer. We'll call this"
+" a \"clone.\" A clone is a copy we normally try to keep synced up, which is "
+"different than a \"fork.\" Click the |code_button| button and see the figure"
+" below. 1) Make sure you are cloning using \"HTTPS\". 2) Make sure the "
+"account shown is yours, and not mine or \"pythonarcade\". 3) Click the copy "
+"link button."
 msgstr ""
+"Wir wollen das von dir erstellte Repository auf deinem Computer kopieren. "
+"Wir werden dies einen \"Klon\" nennen. Ein Klon ist eine Kopie, die wir "
+"normalerweise versuchen, synchron zu halten, was etwas anderes ist als ein "
+"\"Fork\". Klicken Sie auf die Schaltfläche |code_button| und sehen Sie die "
+"Abbildung unten. 1) Stelle sicher, dass Sie mit \"HTTPS\" klonen. 2) Stellen"
+" Sie sicher, dass das angezeigte Konto Ihres ist und nicht meines oder "
+"\"pythonarcade\". 3) Klicken Sie auf die  auf die Schaltfläche \"Link "
+"kopieren\"."
 
-#: ../../source/chapters/03_version_control/index.rst:162
-msgid ""
-".. image:: chapters\\03_version_control\\code_button.png\n"
-"   :alt: Code Button"
-msgstr ""
-
-msgid ".. image:: chapters\\03_version_control\\github_clone.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/github_clone.png"
+msgstr ".. image:: chapters/03_version_control/github_clone.png"
 
 #: ../../source/chapters/03_version_control/index.rst:218
 msgid ""
 "Type ``git clone`` followed by a space. Finally, paste the address you "
-"copied. You might need to use the mouse to paste, as ctrl-v doesn't "
-"always paste on the command prompt. It should look like this:"
+"copied. You might need to use the mouse to paste, as ctrl-v doesn't always "
+"paste on the command prompt. It should look like this:"
 msgstr ""
+"Gebe``git clone`` gefolgt von einem Leerzeichen ein. Zum Schluss füge die "
+"kopierte Adresse ein. Möglicherweise müssen Sie die Maus zum Einfügen "
+"benutzen, da ctrl-v nicht immer in der Eingabeaufforderung eingefügt wird. "
+"Es sollte so aussehen:"
 
 #: ../../source/chapters/03_version_control/index.rst:223
-msgid ".. image:: chapters\\03_version_control\\after_clone.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/after_clone.png"
+msgstr ".. image:: chapters/03_version_control/after_clone.png"
 
 #: ../../source/chapters/03_version_control/index.rst:224
 msgid "Done! You now have a directory set up where you can do your work."
 msgstr ""
+"Erledigt! nun hast du ein Verzeichnis eingerichtet, in dem du deine Arbeit "
+"erledigen kannst."
 
 #: ../../source/chapters/03_version_control/index.rst:230
 msgid "Open Project in Pycharm"
-msgstr ""
+msgstr "Ein Projekt in Pycharm öffnen "
 
 #: ../../source/chapters/03_version_control/index.rst:232
 msgid ""
-"Go ahead and start PyCharm, then select \"File...Open\". You can select "
-"your Desktop with the non-very-intuitive icon shown in (1) below. Then "
-"find the folder and select it to open as a project as shown in (2)."
+"Go ahead and start PyCharm, then select \"File...Open\". You can select your"
+" Desktop with the non-very-intuitive icon shown in (1) below. Then find the "
+"folder and select it to open as a project as shown in (2)."
 msgstr ""
+"Starte PyCharm und wähle dann \"Datei...Öffnen\". Du kannst dein Desktop mit"
+" dem nicht sehr intuitiven Symbol auswählen, das in (1) unten gezeigt wird. "
+"Suchen Sie dann den Ordner und wählen Sie ihn aus, um ihn als Projekt zu "
+"öffnen, wie in (2) gezeigt."
 
-msgid ".. image:: chapters\\03_version_control\\open_in_pycharm.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/open_in_pycharm.png"
+msgstr ".. image:: chapters/03_version_control/open_in_pycharm.png"
 
 #: ../../source/chapters/03_version_control/index.rst:239
 msgid ""
-"Your project should look like the image below. If this isn't what you "
-"have, you might have opened the wrong folder. Hit \"File...Open\" and try"
-" again."
+"Your project should look like the image below. If this isn't what you have, "
+"you might have opened the wrong folder. Hit \"File...Open\" and try again."
 msgstr ""
+"Dein Projekt sollte wie das folgende Bild aussehen. Wenn dies nicht der Fall"
+" ist, hast du möglicherweise den falschen Ordner geöffnet. Klicke auf "
+"\"Datei...Öffnen\" und versuchen Sie es erneut."
 
-msgid ".. image:: chapters\\03_version_control\\open_in_pycharm2.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/open_in_pycharm2.png"
+msgstr ".. image:: chapters/03_version_control/open_in_pycharm2.png"
 
 #: ../../source/chapters/03_version_control/index.rst:245
 msgid ""
-"If you click the arrow next to the folder name, you can see all the "
-"folders in the project folder."
+"If you click the arrow next to the folder name, you can see all the folders "
+"in the project folder."
 msgstr ""
+"Wenn du auf den Pfeil neben dem Ordnernamen klicken, Kannst du alle Ordner "
+"im Projektordner sehen."
 
-msgid ".. image:: chapters\\03_version_control\\open_in_pycharm3.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/open_in_pycharm3.png"
+msgstr ".. image:: chapters/03_version_control/open_in_pycharm3.png"
 
 #: ../../source/chapters/03_version_control/index.rst:251
 msgid ""
 "If you plan on moving from computer to computer, try saving onto a flash "
-"drive instead of the desktop. Then you can reopen your project by just "
-"doing \"File...Open\"."
+"drive instead of the desktop. Then you can reopen your project by just doing"
+" \"File...Open\"."
 msgstr ""
+"Wenn du vorhast, von Computer zu Computer zu wechseln, versuche, auf einem "
+"Flash-Drive anstatt auf dem Desktop zu speichern. Dann kannst du dein "
+"Projekt imer wieder öffnen, indem Sie einfach \"Datei...Öffnen\" wählen."
 
 #: ../../source/chapters/03_version_control/index.rst:258
 msgid "Change a File"
-msgstr ""
+msgstr "Änderrung von Datein"
 
 #: ../../source/chapters/03_version_control/index.rst:260
 msgid ""
-"Let's practice making a quick change to one of our files. Open your "
-"project folder, open the lab 1 folder, then open lab one. Type in \"Hi\" "
-"or something similar."
+"Let's practice making a quick change to one of our files. Open your project "
+"folder, open the lab 1 folder, then open lab one. Type in \"Hi\" or "
+"something similar."
 msgstr ""
+"Lass uns üben, eine schnelle Änderung an einer unserer Dateien vorzunehmen. "
+"Öffnen dein Projektordner, öffne den Ordner \"Lab 1\" und öffne dann \"Lab "
+"1\". Geben Sie \"Hi\" oder etwas Ähnliches ein."
 
-msgid ".. image:: chapters\\03_version_control\\select_lab_file.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/select_lab_file.png"
+msgstr ".. image:: chapters/03_version_control/select_lab_file.png"
 
 #: ../../source/chapters/03_version_control/index.rst:266
 msgid "The file will automatically save."
-msgstr ""
+msgstr "die Datei wird automatisch gespeichert."
 
 #: ../../source/chapters/03_version_control/index.rst:271
 msgid "Installing Arcade"
@@ -472,18 +618,17 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:273
 msgid ""
-"While editing the file, you will likely get a message that looks like "
-"this:"
+"While editing the file, you will likely get a message that looks like this:"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:276
-msgid ".. image:: chapters\\03_version_control\\package_not_installed.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/package_not_installed.png"
+msgstr ".. image:: chapters/03_version_control/package_not_installed.png"
 
 #: ../../source/chapters/03_version_control/index.rst:277
 msgid ""
-"Go ahead and install the 'arcade' library. PyCharm will get everything "
-"set up for you."
+"Go ahead and install the 'arcade' library. PyCharm will get everything set "
+"up for you."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:283
@@ -491,14 +636,15 @@ msgid "Commit Your Code"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:285
-msgid "It is time to commit. Wait! You are young and don't want to commit yet?"
+msgid ""
+"It is time to commit. Wait! You are young and don't want to commit yet?"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:287
 msgid ""
-"The cool thing with version control, is that every time you commit, you "
-"can go back to the code at that point in time. Version control lets you "
-"take it all back! It is the best type of commitment ever!"
+"The cool thing with version control, is that every time you commit, you can "
+"go back to the code at that point in time. Version control lets you take it "
+"all back! It is the best type of commitment ever!"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:291
@@ -513,6 +659,8 @@ msgid ""
 "\n"
 "C:\\Users\\craven\\Desktop\\learn-arcade-work>"
 msgstr ""
+"C:\\Users\\craven\\Desktop>cd learn-arcade-workC:\\Users\\craven\\Desktop"
+"\\learn-arcade-work>"
 
 #: ../../source/chapters/03_version_control/index.rst:299
 msgid "Optionally, we can use ``git status`` to see what files have changed:"
@@ -526,8 +674,7 @@ msgid ""
 "\n"
 "Changes not staged for commit:\n"
 "  (use \"git add <file>...\" to update what will be committed)\n"
-"  (use \"git checkout -- <file>...\" to discard changes in working "
-"directory)\n"
+"  (use \"git checkout -- <file>...\" to discard changes in working directory)\n"
 "\n"
 "        modified:   Lab 01 - First Program/lab_01.py\n"
 "\n"
@@ -544,7 +691,7 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:320
 msgid "C:\\Users\\craven\\Desktop\\learn-arcade-work> git add *"
-msgstr ""
+msgstr "C:\\Users\\craven\\Desktop\\learn-arcade-work> git add *"
 
 #: ../../source/chapters/03_version_control/index.rst:324
 msgid "Commit the changes:"
@@ -552,17 +699,16 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:326
 msgid ""
-"C:\\Users\\craven\\Desktop\\learn-arcade-work>git commit -m \"Work on lab"
-" 1\"\n"
+"C:\\Users\\craven\\Desktop\\learn-arcade-work>git commit -m \"Work on lab 1\"\n"
 "[master 5105a0c] Work on lab 1\n"
 " 1 file changed, 1 insertion(+)"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:332
 msgid ""
-"You might get an error, if the computer doesn't know who you are yet. If "
-"you get this error, it will tell you the commands you need to run. They "
-"will look like:"
+"You might get an error, if the computer doesn't know who you are yet. If you"
+" get this error, it will tell you the commands you need to run. They will "
+"look like:"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:335
@@ -573,9 +719,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:340
 msgid ""
-"Then you can re-run your commit command. You can use the \"up\" arrow to "
-"get commands you typed in previously so you don't need to retype "
-"anything."
+"Then you can re-run your commit command. You can use the \"up\" arrow to get"
+" commands you typed in previously so you don't need to retype anything."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:346
@@ -600,10 +745,10 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:361
 msgid ""
-"Look to see if the message says that there is an \"error.\" The message "
-"will probably look a little different than what you see above, with other"
-" objects or threads, but there should not be any errors. If there are "
-"errors, skip down to :ref:`cant-push`."
+"Look to see if the message says that there is an \"error.\" The message will"
+" probably look a little different than what you see above, with other "
+"objects or threads, but there should not be any errors. If there are errors,"
+" skip down to :ref:`cant-push`."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:368
@@ -612,17 +757,18 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:370
 msgid ""
-"When it comes time to turn in one of your programs, go back to GitHub. "
-"Click on \"source\", find the lab file, copy the URL:"
+"When it comes time to turn in one of your programs, go back to GitHub. Click"
+" on \"source\", find the lab file, copy the URL:"
 msgstr ""
 
-msgid ".. image:: chapters\\03_version_control\\copy_url.png"
-msgstr ""
+#: ../../source/chapters/03_version_control/index.rstNone
+msgid ".. image:: chapters/03_version_control/copy_url.png"
+msgstr ".. image:: chapters/03_version_control/copy_url.png"
 
 #: ../../source/chapters/03_version_control/index.rst:376
 msgid ""
-"Now go to Scholar and paste the link into the text field for the lab you "
-"are are working on."
+"Now go to Scholar and paste the link into the text field for the lab you are"
+" are working on."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:381
@@ -640,23 +786,18 @@ msgid ""
 "  C:\\Users\\craven\\Desktop\\learn-arcade-work> git push\n"
 "  To bitbucket.org:pcraven/arcade-games-work2.git\n"
 "   ! [rejected]        master -> master (fetch first)\n"
-"  error: failed to push some refs to 'git@bitbucket.org:pcraven/arcade-"
-"games-work2.git'\n"
-"  hint: Updates were rejected because the remote contains work that you "
-"do\n"
-"  hint: not have locally. This is usually caused by another repository "
-"pushing\n"
-"  hint: to the same ref. You may want to first integrate the remote "
-"changes\n"
+"  error: failed to push some refs to 'git@bitbucket.org:pcraven/arcade-games-work2.git'\n"
+"  hint: Updates were rejected because the remote contains work that you do\n"
+"  hint: not have locally. This is usually caused by another repository pushing\n"
+"  hint: to the same ref. You may want to first integrate the remote changes\n"
 "  hint: (e.g., 'git pull ...') before pushing again.\n"
-"  hint: See the 'Note about fast-forwards' in 'git push --help' for "
-"details."
+"  hint: See the 'Note about fast-forwards' in 'git push --help' for details."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:400
 msgid ""
-"You are getting an error because there are changes on the server that "
-"aren't on your computer. You need to pull and merge those changes."
+"You are getting an error because there are changes on the server that aren't"
+" on your computer. You need to pull and merge those changes."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:406
@@ -673,8 +814,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:414
 msgid ""
-"Normally, this will work fine and you'll be done. If so, you can do a "
-"``git push`` and your code will be pushed to the server."
+"Normally, this will work fine and you'll be done. If so, you can do a ``git "
+"push`` and your code will be pushed to the server."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:418
@@ -683,23 +824,23 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:420
 msgid ""
-"If you get a screen like the image below, the computer automatically "
-"merged your code bases but it now wants you to type in a comment for the "
-"merge. We'll take the default comment. Hold down the shift key and type "
-"``ZZ``. If that doesn't work, hit escape, and then try again."
+"If you get a screen like the image below, the computer automatically merged "
+"your code bases but it now wants you to type in a comment for the merge. "
+"We'll take the default comment. Hold down the shift key and type ``ZZ``. If "
+"that doesn't work, hit escape, and then try again."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:426
 msgid ""
 "(You are in an editor called **vim** and it is asking you for a comment "
-"about merging the files. Unfortunately vim is really hard to learn. "
-"Shift-ZZ is the command to save, and all we want to do is get out of it "
-"and move on.)"
+"about merging the files. Unfortunately vim is really hard to learn. Shift-ZZ"
+" is the command to save, and all we want to do is get out of it and move "
+"on.)"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:431
-msgid ".. image:: chapters\\03_version_control\\vi_merge.png"
-msgstr ""
+msgid ".. image:: chapters/03_version_control/vi_merge.png"
+msgstr ".. image:: chapters/03_version_control/vi_merge.png"
 
 #: ../../source/chapters/03_version_control/index.rst:432
 msgid "It should finish with something that looks like:"
@@ -718,8 +859,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:456
 msgid ""
-"Then we edited the same file in the same spot. We have to tell the "
-"computer if we want our changes, or the changes on the other computer."
+"Then we edited the same file in the same spot. We have to tell the computer "
+"if we want our changes, or the changes on the other computer."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:461
@@ -763,8 +904,7 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:492
 msgid ""
-"If instead you want **their** copy (or the copy on the other computer) "
-"type"
+"If instead you want **their** copy (or the copy on the other computer) type"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:495
@@ -814,8 +954,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:537
 msgid ""
-"In my experience with 300 level group-project classes, these commands "
-"seem to capture most of what students need to do."
+"In my experience with 300 level group-project classes, these commands seem "
+"to capture most of what students need to do."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:541
@@ -914,8 +1054,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:563
 msgid ""
-"Remove all your changes, go back to what was last committed. Untracked "
-"files are kept."
+"Remove all your changes, go back to what was last committed. Untracked files"
+" are kept."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:565
@@ -932,8 +1072,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:567
 msgid ""
-"Find the hash of a check-in, and you can go back to that check in. (Don't"
-" use 44fd, but replace with the has you want.)"
+"Find the hash of a check-in, and you can go back to that check in. (Don't "
+"use 44fd, but replace with the has you want.)"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:569
@@ -950,8 +1090,8 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:571
 msgid ""
-"Commit your work. Use a descriptive message or the other people in the "
-"class will be irritated with you."
+"Commit your work. Use a descriptive message or the other people in the class"
+" will be irritated with you."
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:573
@@ -972,9 +1112,9 @@ msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:582
 msgid ""
-"What is the *type* of program that allows you to synchronize code between"
-" multiple people, systems that you are working on, and keep prior "
-"versions of your work?"
+"What is the *type* of program that allows you to synchronize code between "
+"multiple people, systems that you are working on, and keep prior versions of"
+" your work?"
 msgstr ""
 
 #: ../../source/chapters/03_version_control/index.rst:585
@@ -986,413 +1126,6 @@ msgstr ""
 #: ../../source/chapters/03_version_control/index.rst:587
 msgid ""
 "If you are using a version control system, and get an error trying to "
-"\"push\" your code to the central repository, what do you likely need to "
-"do before you can try pushing again?"
+"\"push\" your code to the central repository, what do you likely need to do "
+"before you can try pushing again?"
 msgstr ""
-
-#~ msgid "Open \"git bash\" on Windows, or \"terminal\" on MacOS."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Type ``cd mydirectoryname`` where the "
-#~ "name of the directory will be the"
-#~ " same as the name of your "
-#~ "repository on BitBucket. You can usually"
-#~ " type in the first few letters "
-#~ "and hit <tab> to fill in the "
-#~ "rest of the directory name."
-#~ msgstr ""
-
-#~ msgid "Go to BitBucket"
-#~ msgstr ""
-
-#~ msgid "Click on \"Source\""
-#~ msgstr ""
-
-#~ msgid "Go to Scholar for the lab"
-#~ msgstr ""
-
-#~ msgid "Paste link, and turn in."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There are two main types of "
-#~ "version control. The original version "
-#~ "control systems were \"centralized.\" "
-#~ "Subversion_ (SVN) is a very popular "
-#~ "piece of software that supports this "
-#~ "type of version control. The other "
-#~ "type is a \"Distributed Version Control"
-#~ " Systems\" (DVCS). There are two "
-#~ "popular versions of DVCS in use "
-#~ "today, Git_ and Mercurial_. Mercurial is"
-#~ " sometimes also known as Hg. Get "
-#~ "it? Hg is the symbol for Mercury."
-#~ " Either Git or Hg works fine, "
-#~ "but for this tutorial we will "
-#~ "standardize on Git."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Click the link below and download "
-#~ "and install the 64-bit version of "
-#~ "the ``git``."
-#~ msgstr ""
-
-#~ msgid "`MacOS Git DVCS <https://git-scm.com/download/mac>`_"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We are going to store our programs"
-#~ " on-line with a website called "
-#~ "BitBucket. BitBucket and a program "
-#~ "called SourceTree are owned by a "
-#~ "company called Atlassian. They offer "
-#~ "enhanced accounts for e-mail addresses "
-#~ "ending in ``.edu``. To use BitBucket,"
-#~ " create an account "
-#~ "https://bitbucket.org/account/signup/"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Go to this web address which has"
-#~ " a template for the labs we'll "
-#~ "create in class: https://bitbucket.org/pcraven"
-#~ "/arcade-games-work"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We need to \"fork\" the repository. "
-#~ "This will create your own copy of"
-#~ " the repository that will be "
-#~ "independent of mine. Changes you make"
-#~ " to a \"fork\" aren't automatically "
-#~ "sent to the original. Fork the "
-#~ "repository by clicking on the plus "
-#~ "button:"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\bitbucket_plus.png"
-#~ msgstr ""
-
-#~ msgid "Then select \"Fork\":"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\bitbucket_fork_01.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Next, select a name for your fork."
-#~ " Use your last name and first "
-#~ "name. Also, select that your repository"
-#~ " is private, so that you don't "
-#~ "share your homework answers with the "
-#~ "world."
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\bitbucket_fork_02.png"
-#~ msgstr ""
-
-#~ msgid "Now you have your own fork. It exists on the BitBucket server only."
-#~ msgstr ""
-
-#~ msgid "Share the Repository"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Give read permission to the instructor"
-#~ " ``paul@cravenfamily.com`` for your fork so"
-#~ " he can grade your assignments."
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\invite_1.png"
-#~ msgstr ""
-
-#~ msgid "Then"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\invite_2.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check the feedback on your homework. "
-#~ "If the instructor can't get to "
-#~ "your homework, you'll get a zero. "
-#~ "You need to correct this and "
-#~ "resubmit ASAP."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Run the program \"Git Bash\" on "
-#~ "Windows. Or, if you are on the "
-#~ "mac, go under \"Applications\", find "
-#~ "\"Utilities\" and in that run "
-#~ "\"Terminal\"."
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\git_bash.png"
-#~ msgstr ""
-
-#~ msgid "Git Bash Window"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Figure out where you want to store"
-#~ " your files. You might want to "
-#~ "store the files on your laptop, a"
-#~ " flash drive, or a networked drive."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Figure out what directory your \"Bash\""
-#~ " window is in. Do this by "
-#~ "typing ``pwd``, which is short for "
-#~ "\"print working directory\"."
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\pwd.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You can see what files are in "
-#~ "the directory by typing ``ls``, short"
-#~ " for \"list files\"."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You can change directories using the "
-#~ "``cd`` command. You should default to"
-#~ " your \"home\" directory, which is a"
-#~ " great place to put your files. "
-#~ "But if you want them in a "
-#~ "different location, change to that "
-#~ "location now. There's a lot to the"
-#~ " ``cd`` command, but there are a "
-#~ "few variations you need to know:"
-#~ msgstr ""
-
-#~ msgid "``cd`` Change to your \"home\" directory."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "``cd mydir`` Change to ``mydir`` "
-#~ "directory. That directory must be in "
-#~ "the same directory you are in now."
-#~ " Also, if you don't want to "
-#~ "type the full directory name, you "
-#~ "can type the first few letters and"
-#~ " hit <tab>."
-#~ msgstr ""
-
-#~ msgid "``cd ..`` Go up one directory."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We want to copy the repository you"
-#~ " created to your computer. We'll call"
-#~ " this a \"clone.\" A \"clone\" is "
-#~ "a copy we normally try to keep "
-#~ "synced up, which is different than "
-#~ "a \"fork.\" To clone the repository, "
-#~ "hit the \"plus\" and then select "
-#~ "\"Clone Repository\""
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\bitbucket_clone.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Copy the address that it gives "
-#~ "you. It should have **your** name, "
-#~ "and **not** my name. If you get"
-#~ " this wrong, you'll have to restart"
-#~ " everything back at the clone "
-#~ "section. (Not the fork section.)"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\get_clone_address.png"
-#~ msgstr ""
-
-#~ msgid "Paste the command it gives you in your command prompt:"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\git_clone.png"
-#~ msgstr ""
-
-#~ msgid "Then..."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There you go! You now have a "
-#~ "directory set up where you can do"
-#~ " your work."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Go ahead and start PyCharm, then "
-#~ "select \"File...Open\" and select that "
-#~ "directory."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you move from computer to "
-#~ "computer hand have a flash drive, "
-#~ "you can reopen your project be "
-#~ "just doing \"File...Open\". If you don't"
-#~ " have your flash drive, you'll need"
-#~ " to re-clone your repository."
-#~ msgstr ""
-
-#~ msgid "Hit Ctrl-S to save."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "First, open Git Bash, and switch "
-#~ "to the directory with your project "
-#~ "using the ``cd`` command:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~\n"
-#~ "$ cd arcade-games-work2/"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$ git status\n"
-#~ "On branch master\n"
-#~ "Your branch is up-to-date with 'origin/master'.\n"
-#~ "Changes not staged for commit:\n"
-#~ "  (use \"git add <file>...\" to update what will be committed)\n"
-#~ "  (use \"git checkout -- <file>...\" "
-#~ "to discard changes in working directory)"
-#~ "\n"
-#~ "\n"
-#~ "        modified:   Lab 01 - First Program/lab_01.py\n"
-#~ "\n"
-#~ "no changes added to commit (use \"git add\" and/or \"git commit -a\")"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$ git add *"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$ git commit -m \"Work on lab 1\"\n"
-#~ "[master 45028a5] Work on lab 1\n"
-#~ " 1 file changed, 1 insertion(+)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$ git push\n"
-#~ "Counting objects: 4, done.\n"
-#~ "Delta compression using up to 8 threads.\n"
-#~ "Compressing objects: 100% (2/2), done.\n"
-#~ "Writing objects: 100% (4/4), 329 bytes | 0 bytes/s, done.\n"
-#~ "Total 4 (delta 1), reused 0 (delta 0)\n"
-#~ "To bitbucket.org:pcraven/arcade-games-work2.git\n"
-#~ "   519c361..45028a5  master -> master\n"
-#~ "\n"
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "When it comes time to turn in "
-#~ "one of your programs, go back to"
-#~ " BitBucket. Click on \"source\", find "
-#~ "the lab file, copy the URL:"
-#~ msgstr ""
-
-#~ msgid ".. image:: chapters\\03_version_control\\bitbucket_copy_url.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "  $ git push\n"
-#~ "  To bitbucket.org:pcraven/arcade-games-work2.git\n"
-#~ "   ! [rejected]        master -> master (fetch first)\n"
-#~ "  error: failed to push some refs"
-#~ " to 'git@bitbucket.org:pcraven/arcade-games-"
-#~ "work2.git'\n"
-#~ "  hint: Updates were rejected because"
-#~ " the remote contains work that you"
-#~ " do\n"
-#~ "  hint: not have locally. This is"
-#~ " usually caused by another repository "
-#~ "pushing\n"
-#~ "  hint: to the same ref. You "
-#~ "may want to first integrate the "
-#~ "remote changes\n"
-#~ "  hint: (e.g., 'git pull ...') before pushing again.\n"
-#~ "  hint: See the 'Note about "
-#~ "fast-forwards' in 'git push --help' "
-#~ "for details."
-#~ msgstr ""
-
-#~ msgid "$ git pull"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "Merge made by the 'recursive' strategy.\n"
-#~ " Lab 01 - First Program/lab_01.py | 3 ++-\n"
-#~ " 1 file changed, 2 insertions(+), 1 deletion(-)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "$ git status\n"
-#~ "On branch master\n"
-#~ "Your branch and 'origin/master' have diverged,\n"
-#~ "and have 1 and 1 different commits each, respectively.\n"
-#~ "  (use \"git pull\" to merge the remote branch into yours)\n"
-#~ "You have unmerged paths.\n"
-#~ "  (fix conflicts and run \"git commit\")\n"
-#~ "  (use \"git merge --abort\" to abort the merge)\n"
-#~ "\n"
-#~ "Unmerged paths:\n"
-#~ "  (use \"git add <file>...\" to mark resolution)\n"
-#~ "\n"
-#~ "        both modified:   Lab 01 - First Program/lab_01.py\n"
-#~ "\n"
-#~ "no changes added to commit (use \"git add\" and/or \"git commit -a\")"
-#~ msgstr ""
-
-#~ msgid "$ git checkout --ours \"Lab 01 - First Program/lab_01.py\""
-#~ msgstr ""
-
-#~ msgid "$ git checkout --theirs \"Lab 01 - First Program/lab_01.py\""
-#~ msgstr ""
-
-#~ msgid ""
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)\n"
-#~ "$ git add *\n"
-#~ "\n"
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master|MERGING)\n"
-#~ "$ git commit -m\"Merged\"\n"
-#~ "[master e083f36] Merged\n"
-#~ "\n"
-#~ "craven@DESKTOP-RAUFKMA MINGW64 ~/arcade-games-work2 (master)\n"
-#~ "$ git push\n"
-#~ "Counting objects: 5, done.\n"
-#~ "Delta compression using up to 8 threads.\n"
-#~ "Compressing objects: 100% (5/5), done.\n"
-#~ "Writing objects: 100% (5/5), 531 bytes | 0 bytes/s, done.\n"
-#~ "Total 5 (delta 2), reused 0 (delta 0)\n"
-#~ "To bitbucket.org:pcraven/arcade-games-work2.git\n"
-#~ "   6a8f398..e083f36  master -> master"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "$ git push\n"
-#~ "Counting objects: 6, done.\n"
-#~ "Delta compression using up to 8 threads.\n"
-#~ "Compressing objects: 100% (4/4), done.\n"
-#~ "Writing objects: 100% (6/6), 604 bytes | 0 bytes/s, done.\n"
-#~ "Total 6 (delta 2), reused 0 (delta 0)\n"
-#~ "To bitbucket.org:pcraven/arcade-games-work2.git\n"
-#~ "   d66b008..aeb9cf3  master -> master"
-#~ msgstr ""
-
