@@ -91,9 +91,21 @@ source_file = build/locale/chapters/10_if_statements/if_statements.pot
 source_lang = en
 type = PO
 
-[learn-with-arcade-academy.chapters--11_loops_and_random_numbers--loops_and_random_numbers]
-file_filter = locale/<lang>/LC_MESSAGES/chapters/11_loops_and_random_numbers/loops_and_random_numbers.po
-source_file = build/locale/chapters/11_loops_and_random_numbers/loops_and_random_numbers.pot
+[learn-with-arcade-academy.chapters--11a_for_loops--for_loops]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/11a_for_loops/for_loops.po
+source_file = build/locale/chapters/11a_for_loops/for_loops.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--11b_while_loops--while_loops]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/11b_while_loops/while_loops.po
+source_file = build/locale/chapters/11b_while_loops/while_loops.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--11c_random_numbers--random_numbers]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/11c_random_numbers/random_numbers.po
+source_file = build/locale/chapters/11c_random_numbers/random_numbers.pot
 source_lang = en
 type = PO
 
@@ -103,21 +115,99 @@ source_file = build/locale/chapters/12_advanced_looping/advanced_looping.pot
 source_lang = en
 type = PO
 
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_01]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_01.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_01.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_02]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_02.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_02.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_03]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_03.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_03.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_04]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_04.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_04.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_05]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_05.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_05.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_06]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_06.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_06.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_07]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_07.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_07.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_08]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_08.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_08.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_09]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_09.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_09.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_10]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_10.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_10.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_11]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_11.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_11.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_12]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_12.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_12.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--12_advanced_looping--answer_problem_13]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/12_advanced_looping/answer_problem_13.po
+source_file = build/locale/chapters/12_advanced_looping/answer_problem_13.pot
+source_lang = en
+type = PO
+
 [learn-with-arcade-academy.chapters--13_lists--lists]
 file_filter = locale/<lang>/LC_MESSAGES/chapters/13_lists/lists.po
 source_file = build/locale/chapters/13_lists/lists.pot
 source_lang = en
 type = PO
 
-[learn-with-arcade-academy.chapters--14b_class_methods--class_methods]
-file_filter = locale/<lang>/LC_MESSAGES/chapters/14b_class_methods/class_methods.po
-source_file = build/locale/chapters/14b_class_methods/class_methods.pot
-source_lang = en
-type = PO
-
 [learn-with-arcade-academy.chapters--14_classes--classes]
 file_filter = locale/<lang>/LC_MESSAGES/chapters/14_classes/classes.po
 source_file = build/locale/chapters/14_classes/classes.pot
+source_lang = en
+type = PO
+
+[learn-with-arcade-academy.chapters--14b_class_methods--class_methods]
+file_filter = locale/<lang>/LC_MESSAGES/chapters/14b_class_methods/class_methods.po
+source_file = build/locale/chapters/14b_class_methods/class_methods.pot
 source_lang = en
 type = PO
 
