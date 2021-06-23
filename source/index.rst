@@ -14,3 +14,4 @@ the `Arcade library <https://arcade.academy>`_.
    chapters/index
    labs/index
    voice_overs
+   languages
