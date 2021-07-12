@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Arcade package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Magnus K <magnuskindblom@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-13 15:19-0500\n"
 "PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Last-Translator: Magnus K <magnuskindblom@gmail.com>, 2021\n"
 "Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: ../../source/chapters/02_setup/setup.rst:4
 msgid "Setting Up Your System"
-msgstr ""
+msgstr "Hur du skapar din miljö"
 
 #: ../../source/chapters/02_setup/setup.rstNone
 msgid ".. image:: chapters/02_setup/computer_screen_checkbox.svg"
@@ -32,6 +36,10 @@ msgid ""
 "through this part, as you might need to set up your own system in the "
 "future."
 msgstr ""
+"Innan du börjar programmera behöver vi installera några saker. Använder du "
+"en skoldator? Yay! Då kanske allt redan är installerat. Läs igenom den här "
+"delen oavsett, för du kan behöva skapa en miljö på din egen dator i "
+"framtiden."
 
 #: ../../source/chapters/02_setup/setup.rst:15
 msgid ""
@@ -41,6 +49,10 @@ msgid ""
 "It is normal to get stuck during setup, so don't hesitate to reach out and "
 "get help."
 msgstr ""
+"Att få till sin miljö så att du kan börja kan kräva en del tålamod. **Ge "
+"inte upp.** När det är klart behöver du inte tänka på det i fortsättningen, "
+"utan kan fokusera på själva programmeringen. Det är vanligt att fastna vid "
+"något installationssteg, så tveka inte att be om hjälp."
 
 #: ../../source/chapters/02_setup/setup.rst:21
 msgid "Setup the Programming Environment"
@@ -52,7 +64,7 @@ msgstr ""
 
 #: ../../source/chapters/02_setup/setup.rst:27
 msgid "In this chapter we'll show you how to:"
-msgstr ""
+msgstr "I det här kapitlet visar vi hur du:"
 
 #: ../../source/chapters/02_setup/setup.rst:29
 msgid ""
@@ -61,14 +73,18 @@ msgid ""
 "email address that ends in ``.edu`` get can get a free `student license`_ "
 "for the professional version.)"
 msgstr ""
+"Installerar en \"IDE\" där du skriver in dina program. (Vi använder ett "
+"program som heter PyCharm_. Du kan använda versionen \"Community Edition\" "
+"gratis, och om du har en e-post som slutar med ``.edu`` kan du få en gratis "
+"studentlicens_ för \"Professional Edition\".)"
 
 #: ../../source/chapters/02_setup/setup.rst:33
 msgid "Install the Python_ programming language."
-msgstr ""
+msgstr "installerar programspråket Python_."
 
 #: ../../source/chapters/02_setup/setup.rst:34
 msgid "A minor configuration tweak so we can see file extensions."
-msgstr ""
+msgstr "gör en enkel inställning så att vi kan se filändelser."
 
 #: ../../source/chapters/02_setup/setup.rst:36
 msgid "In the next chapter we'll cover:"

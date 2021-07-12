@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Arcade package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Magnus K <magnuskindblom@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-13 15:19-0500\n"
 "PO-Revision-Date: 2020-04-03 18:42+0000\n"
+"Last-Translator: Magnus K <magnuskindblom@gmail.com>, 2021\n"
 "Language-Team: Swedish (https://www.transifex.com/arcade-academy/teams/108729/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: ../../source/chapters/01_foreword/foreword.rst:2
 msgid "Foreword"
-msgstr ""
+msgstr "Förord"
 
 #: ../../source/chapters/01_foreword/foreword.rstNone
 msgid ".. image:: chapters/01_foreword/screen1.png"
@@ -40,6 +44,10 @@ msgid ""
 "projects are games. Video games provide great visual feedback for your code."
 " Furthermore, programming can be *fun*."
 msgstr ""
+"I den här boken lär du dig programmera genom att skapa datorspel i 2D. Den "
+"behandlar samma delar som en vanlig grundkurs på gymnasiet, men övningarna "
+"handlar om spel. Datorspel ger dig utmärkt feedback på din programkod och "
+"gör programmeringen roligare."
 
 #: ../../source/chapters/01_foreword/foreword.rstNone
 msgid ".. image:: chapters/01_foreword/top_majors.png"
@@ -51,6 +59,9 @@ msgid ""
 "It is also one of the most flexible majors you can get. You can take your "
 "programming skills to almost any industry, and any location."
 msgstr ""
+"Programmering ligger stabilt i toppskiktet av listor över välbetalda jobb. "
+"Det är också en väldigt användbar kompetens som du har nytta av i nästan "
+"vilken bransch och arbetsplats som helst."
 
 #: ../../source/chapters/01_foreword/foreword.rst:29
 msgid ""
@@ -60,6 +71,12 @@ msgid ""
 "results? Maybe you want your home to automatically e-mail you if the garage "
 "door is left open? Learning programming, be able to do this and more."
 msgstr ""
+"Även om programmering inte ska bli ditt huvudsakliga arbete, kan "
+"programmeringskunskaper hjälpa din karriär. Behöver du en interaktiv "
+"webbsida? Behöver du räkna på försäljningen? Eller få data och grafer från "
+"dina experiment att sparas automatiskt? Kanske vill du att ditt hem mejlar "
+"dig när du glömt stänga garagedörren? Med programmering kan du göra detta "
+"och mycket annat."
 
 #: ../../source/chapters/01_foreword/foreword.rst:37
 msgid "Programming Is For Everyone"
