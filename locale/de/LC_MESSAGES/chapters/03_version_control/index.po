@@ -614,12 +614,14 @@ msgstr "die Datei wird automatisch gespeichert."
 
 #: ../../source/chapters/03_version_control/index.rst:271
 msgid "Installing Arcade"
-msgstr ""
+msgstr "Instarlire Arcade"
 
 #: ../../source/chapters/03_version_control/index.rst:273
 msgid ""
 "While editing the file, you will likely get a message that looks like this:"
 msgstr ""
+"Während des bearbeiten der Datei, wirst du eine Benachrichtigung die wie "
+"folgt aussieht:"
 
 #: ../../source/chapters/03_version_control/index.rst:276
 msgid ".. image:: chapters/03_version_control/package_not_installed.png"
@@ -630,10 +632,11 @@ msgid ""
 "Go ahead and install the 'arcade' library. PyCharm will get everything set "
 "up for you."
 msgstr ""
+"Instalire die 'arcade' library.  PyCharm würd den rest für dich übernehmen."
 
 #: ../../source/chapters/03_version_control/index.rst:283
 msgid "Commit Your Code"
-msgstr ""
+msgstr "Lege deinen  Code fest"
 
 #: ../../source/chapters/03_version_control/index.rst:285
 msgid ""
