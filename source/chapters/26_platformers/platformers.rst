@@ -6,9 +6,9 @@ Platformers
 .. warning::
 
    This chapter is out-dated. See the
-   `Simple Platformer Tutorial <https://arcade.academy/examples/platform_tutorial/index.html>`_.
+   `Simple Platformer Tutorial <https://api.arcade.academy/en/latest/examples/platform_tutorial/index.html>`_.
    Step 9 is a nice starting point.
-   For more advanced usage, see `Platformer with Physics <https://arcade.academy/tutorials/pymunk_platformer/index.html>`_.
+   For more advanced usage, see `Platformer with Physics <https://api.arcade.academy/en/latest/tutorials/pymunk_platformer/index.html>`_.
 
 Ever wanted to create your own platformer?
 It isn't too hard! Here's an example to get started.
@@ -226,7 +226,5 @@ Other Examples
 * If you are looking for platforms that move, see `Sprite Moving Platforms`_.
 * If you are looking to be able to create ramps you can run up and down, see `Sprite Ramps`_.
 
-.. _Sprite Moving Platforms: http://arcade.academy/examples/sprite_moving_platforms.html
+.. _Sprite Moving Platforms: https://api.arcade.academy/en/latest/examples/sprite_moving_platforms.html
 
-
-.. _Sprite Ramps: http://arcade.academy/examples/sprite_ramps.html#sprite-ramps

@@ -124,7 +124,7 @@ for your API documentation.
 All the classes and functions in the Arcade library's API are
 created with these comments. You can see the result here:
 
-https://arcade.academy/arcade.html
+https://api.arcade.academy/en/latest/arcade.html
 
 For each of those examples, you can click on the "source" link and quickly
 go to the source code for that function or class.

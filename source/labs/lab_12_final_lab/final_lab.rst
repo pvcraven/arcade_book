@@ -130,7 +130,7 @@ game needs to be able to do.
 
 .. _OpenGameArt.org: http://opengameart.org
 .. _Kenney.nl: http://kenney.nl
-.. _arcade.academy: http://arcade.academy/examples/index.html
+.. _arcade.academy: https://api.arcade.academy/en/latest/examples/index.html
 
 Requirements for Part 2
 ^^^^^^^^^^^^^^^^^^^^^^^

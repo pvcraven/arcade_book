@@ -139,4 +139,4 @@ Each time we call ``on_draw``, we'll change *x* so that it moves to the right.
 
 For more information, see the `Bouncing Rectangle Example`_.
 
-.. _Bouncing Rectangle Example: http://arcade.academy/examples/bouncing_rectangle.html
+.. _Bouncing Rectangle Example: https://api.arcade.academy/en/latest/examples/bouncing_rectangle.html

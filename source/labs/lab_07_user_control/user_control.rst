@@ -48,4 +48,4 @@ Write one program, following these steps:
 When you are done, make sure you commit your sound effects in what you turn in!
 Otherwise your program can't be graded.
 
-.. _Arcade Starting Template: http://arcade.academy/examples/starting_template.html
+.. _Arcade Starting Template: https://api.arcade.academy/en/latest/examples/starting_template.html

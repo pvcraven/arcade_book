@@ -659,7 +659,7 @@ Use in Arcade Programs
 We don't just have to format strings for print statements. The example `timer.py`_
 uses string formatting to make an on-screen timer:
 
-.. _timer.py: http://arcade.academy/examples/timer.html
+.. _timer.py: https://api.arcade.academy/en/latest/examples/timer.html
 
 .. code-block:: python
     :linenos:

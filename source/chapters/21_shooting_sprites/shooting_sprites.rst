@@ -240,11 +240,11 @@ Here's the full example:
 Other Examples
 --------------
 
-Here are some other examples from `Arcade Academy <http://arcade.academy>`_
-and its `Example List <http://arcade.academy/examples/index.html>`_:
+Here are some other examples from `Arcade Academy <https://api.arcade.academy/en/latest/>`_
+and its `Example List <https://api.arcade.academy/en/latest/examples/index.html>`_:
 
-* `Aim bullets with mouse <http://arcade.academy/examples/sprite_bullets_aimed.html>`_
-* `Enemies shoot periodically <http://arcade.academy/examples/sprite_bullets_periodic.html>`_
-* `Enemies shoot at random times <http://arcade.academy/examples/sprite_bullets_random.html>`_
-* `Enemies aim at player <http://arcade.academy/examples/sprite_bullets_enemy_aims.html>`_
-* `Explosions <http://arcade.academy/examples/sprite_explosion.html>`_
+* `Aim bullets with mouse <https://api.arcade.academy/en/latest/examples/sprite_bullets_aimed.html>`_
+* `Enemies shoot periodically <hhttps://api.arcade.academy/en/latest/examples/sprite_bullets_periodic.html>`_
+* `Enemies shoot at random times <https://api.arcade.academy/en/latest/examples/sprite_bullets_random.html>`_
+* `Enemies aim at player <https://api.arcade.academy/en/latest/examples/sprite_bullets_enemy_aims.html>`_
+* `Explosions <https://api.arcade.academy/en/latest/examples/sprite_explosion.html>`_

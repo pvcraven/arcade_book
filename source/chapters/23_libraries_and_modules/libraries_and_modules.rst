@@ -225,11 +225,11 @@ http://docs.python.org/3/py-modindex.html
 It is possible to download and install other libraries. There are libraries
 that work with the web, complex numbers, databases, and more.
 
-* Arcade: The library that this book uses to create games. http://arcade.academy
+* Arcade: The library that this book uses to create games. https://api.arcade.academy
 * Pygame: Another library used to create games, and the inspiration behind
   the creation of the Arcade library. http://www.pygame.org/docs/
 * Pymunk: A great library for running 2D physics. Also works with Arcade, see
-  `these examples <http://arcade.academy/examples/index.html#pymunk>`_ http://www.pymunk.org/
+  `these examples <https://api.arcade.academy/en/latest/examples/index.html#pymunk>`_ http://www.pymunk.org/
 * wxPython: Create GUI programs, with windows, menus, and more. http://www.wxpython.org/
 * pydot: Generate complex directed and non-directed graphs http://code.google.com/p/pydot/
 * NumPy: Sophisticated library for working with matrices. http://numpy.org/

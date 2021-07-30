@@ -492,7 +492,7 @@ The great thing about using docstrings in functions is that the comment can be
 pulled out and put into a website.
 That can be part of a larger website that documents your code.
 For example,
-`here is the documentation for drawing a circle <https://arcade.academy/arcade.html#arcade.draw_circle_outline>`_,
+`here is the documentation for drawing a circle <https://api.arcade.academy/en/latest/arcade.html#arcade.draw_circle_outline>`_,
 generated
 automatically from the function comment. In fact, everything on that page is
 automatically generated.

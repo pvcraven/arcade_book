@@ -43,7 +43,7 @@ In the next chapter we'll cover:
 Let's go through these items in detail.
 
 .. _Python: https://www.python.org/
-.. _Arcade: http://arcade.academy/
+.. _Arcade: https://api.arcade.academy/
 .. _PyCharm: https://www.jetbrains.com/pycharm/
 .. _GitHub: https://github.com/
 .. _installing-pycharm:

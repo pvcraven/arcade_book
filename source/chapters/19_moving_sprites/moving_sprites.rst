@@ -41,6 +41,10 @@ Now, how do we get the coin to move?
 Moving Sprites Down
 -------------------
 
+.. image:: down.svg
+    :width: 25%
+    :class: right-image
+
 To get the sprites to "fall" down the screen, we need to make their y location
 smaller. This is easy. Over-ride ``update`` in the sprite and subtract from
 y each frame:

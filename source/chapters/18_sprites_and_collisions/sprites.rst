@@ -89,7 +89,7 @@ that is a character image
 controlled by the mouse as shown in the figure below. The program keeps "score"
 on how many coins have been collected. The code for this example may be found at:
 
-http://arcade.academy/examples/sprite_collect_coins.html
+https://api.arcade.academy/en/latest/examples/sprite_collect_coins.html
 
 In this chapter, we'll step through that example.
 
@@ -184,7 +184,7 @@ For more information, check out the SpriteList_ documentation.
 So instead of creating an empty list with
 ``[]``, we will create a new instance of the ``SpriteList`` class:
 
-.. _SpriteList: http://arcade.academy/arcade.html#arcade.sprite.SpriteList
+.. _SpriteList: https://api.arcade.academy/en/latest/arcade.html#arcade.sprite.SpriteList
 
 .. code-block:: Python
 
@@ -215,7 +215,7 @@ using, and how big to scale it.
 
 For class, please source the image right before you load it. If you drew your own image, please note that as well.
 
-.. _Sprite: http://arcade.academy/arcade.html#arcade.sprite.Sprite
+.. _Sprite: https://api.arcade.academy/en/latest/arcade.html#arcade.sprite.Sprite
 
 
 .. code-block:: Python

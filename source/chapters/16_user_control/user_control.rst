@@ -10,6 +10,10 @@ We can do this with the mouse, with the keyboard, or with the game controller.
 Move with the Mouse
 -------------------
 
+.. image:: mouse.svg
+    :width: 25%
+    :class: right-image
+
 The key to managing mouse motion to override the ``on_mouse_motion`` in the
 ``arcade.Window`` class. That method is called every time the mouse moves.
 The method definition looks like this:
@@ -58,6 +62,10 @@ You can also process mouse clicks by defining an ``on_mouse_press`` method:
 Move with the Keyboard
 ----------------------
 
+.. image:: keyboard.svg
+    :width: 25%
+    :class: right-image
+
 Moving with the game controller is similar to our bouncing ball example. There
 are just two differences:
 
@@ -71,7 +79,7 @@ for two events. Releasing a key is controlled by ``on_key_release``.
 
 These methods have a  ``key`` variable as a parameter that can be compared with
 an ``if`` statement to the values in
-the `arcade.key library <http://arcade.academy/arcade.key.html>`_.
+the `arcade.key library <https://api.arcade.academy/en/latest/arcade.key.html>`_.
 
 .. code-block:: python
 
@@ -92,6 +100,10 @@ lines in the program below:
 
 Keep From Moving Off Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: screen.svg
+    :width: 25%
+    :class: right-image
 
 Unfortunately in the prior program, there is nothing that keeps the player
 from moving off-screen. If we want to stop the player from moving off-screen
@@ -130,6 +142,10 @@ Here's a full example:
 
 Moving with the Game Controller
 -------------------------------
+
+.. image:: controller.svg
+    :width: 25%
+    :class: right-image
 
 Working with game controllers is a bit more complex. A computer might not
 have any game controllers, or it might have five controllers plugged in.

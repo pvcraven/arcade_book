@@ -154,7 +154,7 @@ The first Arcade function we are going to learn is open_window_. This
 command opens a window with a given size and title.
 The code looks like the following:
 
-.. _open_window: https://arcade.academy/arcade.html#arcade.open_window
+.. _open_window: https://api.arcade.academy/en/latest/arcade.html#arcade.open_window
 
 .. code-block:: python
 
@@ -215,10 +215,10 @@ parameters, is the **Application Program Interface** or "API" for short. You can
 click here for the entire `Arcade API`_ or go straight to the documentation
 for open_window_. Any decent library will have API
 documentation, and
-`example code <https://arcade.academy/examples/index.html>`_
+`example code <https://api.arcade.academy/en/latest/examples/index.html>`_
 to show how to use the library.
 
-.. _Arcade API: http://arcade.academy/quick_index.html
+.. _Arcade API: https://api.arcade.academy/en/latest/quick_index.html
 
 Below is an example program that will open up a window:
 
@@ -375,8 +375,8 @@ you will see some of the items behind the square. An alpha of 0 is completely
 transparent and you'll see nothing of the square.
 
 .. _color chart: http://www.colorpicker.com/color-chart/
-.. _arcade.csscolor API documentation: http://arcade.academy/arcade.csscolor.html
-.. _arcade.color API documentation: http://arcade.academy/arcade.color.html
+.. _arcade.csscolor API documentation: https://api.arcade.academy/en/latest/arcade.csscolor.html
+.. _arcade.color API documentation: https://api.arcade.academy/en/latest/arcade.color.html
 
 What is a Byte?
 ^^^^^^^^^^^^^^^
@@ -501,7 +501,7 @@ The function
 we will use is draw_lrtb_rectangle_filled_. It stands for "draw
 left-right-top-bottom rectangle".
 
-.. _draw_lrtb_rectangle_filled: https://arcade.academy/arcade.html#arcade.draw_lrtb_rectangle_filled
+.. _draw_lrtb_rectangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_lrtb_rectangle_filled
 
 To make the bottom half of our screen green grass, we'll start
 with a left of 0, a right of 599, a top of 300, and a bottom of zero.
@@ -523,7 +523,7 @@ There is also an option to specify it by center x, center y, width, and height u
 draw_rectangle_filled_ function. For example
 this code displays a tree trunk:
 
-.. _draw_rectangle_filled: https://arcade.academy/arcade.html#arcade.draw_rectangle_filled
+.. _draw_rectangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_rectangle_filled
 
 .. code-block:: python
 
@@ -540,7 +540,7 @@ There's also a function to draw the outline of a rectangle called
 draw_rectangle_outline_. Both of these functions (and many others)
 have an optional parameter to tilt the rectangle to a desired angle.
 
-.. _draw_rectangle_outline: https://arcade.academy/arcade.html#arcade.draw_rectangle_outline
+.. _draw_rectangle_outline: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_rectangle_outline
 
 
 Drawing Circles
@@ -554,7 +554,7 @@ Drawing Circles
 We can draw a circle with draw_circle_filled_. This code will draw a circle
 with a center of 100, 350 and a radius of 30 pixels.
 
-.. _draw_circle_filled: https://arcade.academy/arcade.html#arcade.draw_circle_filled
+.. _draw_circle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_circle_filled
 
 .. code-block:: python
 
@@ -613,7 +613,7 @@ Drawing Arcs
 You can draw an arc with draw_arc_filled_. Drawing an arc works just like an
 ellipse, with the additional parameters for a start angle and an end angle.
 
-.. _draw_arc_filled: https://arcade.academy/arcade.html#arcade.draw_arc_filled
+.. _draw_arc_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_arc_filled
 
 .. code-block:: python
 
@@ -639,7 +639,7 @@ That requires
 a bit of thought about where each point goes. I often end up sketching it
 out on paper to get it straight. This can be used to make a pine tree.
 
-.. _draw_triangle_filled: https://arcade.academy/arcade.html#arcade.draw_triangle_filled
+.. _draw_triangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_triangle_filled
 
 .. code-block:: python
 
@@ -664,7 +664,7 @@ Polygons
 Polygons are drawn with a list of points and the draw_polygon_filled_ function.
 In this example we use five points to create a tree-top.
 
-.. _draw_polygon_filled: https://arcade.academy/arcade.html#arcade.draw_polygon_filled
+.. _draw_polygon_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_polygon_filled
 
 .. code-block:: python
 
@@ -693,8 +693,8 @@ Line drawing with the draw_line_ function involves specifying a start point and 
 Optionally, you can specify the line width. You can also use
 draw_line_strip_ to draw a continuous multi-point line.
 
-.. _draw_line: https://arcade.academy/arcade.html#arcade.draw_line
-.. _draw_line_strip: https://arcade.academy/arcade.html#arcade.draw_line_strip
+.. _draw_line: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_line
+.. _draw_line_strip: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_line_strip
 
 In our sample image, we'll use several lines to draw rays coming out of a sun:
 
@@ -731,7 +731,7 @@ Just like with the ``print`` function, text must be enclosed in quotes.
 The text to draw is the first parameter. The x, y location of the text is
 are next two. Finally the color and font size come next.
 
-.. _draw_text: https://arcade.academy/arcade.html#arcade.draw_text
+.. _draw_text: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_text
 
 .. code-block:: python
 
@@ -768,7 +768,7 @@ Specifying Parameters By Name
 It can be confusing to track a lot of parameters given to a function.
 For example, here's a call to draw_arc_outline_.
 
-.. _draw_arc_outline: https://arcade.academy/arcade.html#arcade.draw_arc_outline
+.. _draw_arc_outline: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_arc_outline
 
 .. code-block:: python
 
@@ -922,5 +922,5 @@ Lab 2: Draw a Picture
 Apply what you've learned here and use the drawing commands to create
 your own artwork in :ref:`lab-02`.
 
-.. _Drawing Primitives: http://arcade.academy/examples/drawing_primitives.html
-.. _Quick Index: http://arcade.academy/quick_index.html#id1
+.. _Drawing Primitives: https://api.arcade.academy/en/latest/examples/drawing_primitives.html
+.. _Quick Index: https://api.arcade.academy/en/latest/quick_index.html#id1

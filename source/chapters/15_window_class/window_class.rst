@@ -66,7 +66,7 @@ by creating a child class.
 Therefore, we can extend the ``Window`` class by creating
 a child class of it. I'm going to call my child class ``MyGame``.
 
-.. _Window Class Documentation: http://arcade.academy/arcade.html#arcade.application.Window
+.. _Window Class Documentation: https://api.arcade.academy/en/latest/arcade.html#arcade.application.Window
 
 .. literalinclude:: extending_window_class.py
     :caption: extending_window_class.py

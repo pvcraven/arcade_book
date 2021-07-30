@@ -3,12 +3,30 @@
 Introduction to Lists
 =====================
 
+.. image:: list.svg
+    :width: 25%
+    :class: right-image
+
+Sometimes you want to store a lot of data, not just one value.
+We can do this with a **list**.
+We can use a list to store multiple characters on the
+screen of a game, or a list of items in a customer's shopping cart.
+Text is stored in a computer as a list of characters, so all the
+same skills you learn working with lists can be applied to processing text.
+
+If you prefer learning by video, for this section I have several
+from an older version of this text (back when this was Chapter 7)
+that cover the topics in this chapter.
+
+* `Lists and tuples <https://www.youtube.com/embed/yi67wRWH_mc>`_.
+* `Iterating through a list <https://www.youtube.com/embed/t8isonIrfRM>`_.
+* `Appending to a list <https://www.youtube.com/embed/L0FnUlifwWQ>`_.
+* `Summing or modifying a list <https://www.youtube.com/embed/JKiW4K4Dm0c>`_.
+* `Splitting strings <https://www.youtube.com/embed/06hozIAwNc4>`_.
+* `Secret codes <https://www.youtube.com/embed/sxFIxD8Gd3A>`_.
+
 Data Types
 ----------
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yi67wRWH_mc" frameborder="0" allowfullscreen></iframe>
 
 So far this book has shown four types of data:
 
@@ -221,9 +239,9 @@ we start with an empty list and build on it. How do I create an empty list? Easy
 Iterating (Looping) Through a List
 ----------------------------------
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t8isonIrfRM?ecver=1" frameborder="0" allowfullscreen></iframe>
+.. image:: santa_list.svg
+    :width: 25%
+    :class: right-image
 
 If a program needs to iterate through each item in a list, such as to print it
 out, there are two types of for loops that can do this.
@@ -328,9 +346,12 @@ gives you, the proper Python-ic way to use the ``enumerate`` function like this:
 Adding to a List
 ----------------
 
+.. image:: list_with_pencil.svg
+    :width: 25%
+    :class: right-image
+
 New items may be added to a list (but not a tuple) by using the append command.
 For example:
-
 
 .. code-block:: python
 
@@ -343,10 +364,6 @@ For example:
 
     [2, 4, 5, 6]
     [2, 4, 5, 6, 9]
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/L0FnUlifwWQ?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Side note: If performance while appending is a concern, it is very important to
 understand how a list is being implemented. For example, if a list is
@@ -402,9 +419,9 @@ value, a simple trick is to use the following code:
 Summing or Modifying a List
 ---------------------------
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/JKiW4K4Dm0c?ecver=1" frameborder="0" allowfullscreen></iframe>
+.. image:: 10key.svg
+    :width: 25%
+    :class: right-image
 
 Creating a running total of an array is a common operation. Here's how it is done:
 
@@ -490,9 +507,9 @@ copy, not the original array element.
 Slicing Strings
 ---------------
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/06hozIAwNc4?ecver=1" frameborder="0" allowfullscreen></iframe>
+.. image:: slice.svg
+    :width: 25%
+    :class: right-image
 
 Strings are actually lists of characters. They can be treated like lists with
 each letter a separate item. Run the following code with both versions of x:
@@ -574,7 +591,16 @@ to print out the correct substring.)
 Secret Codes
 ------------
 
-This code prints out every letter of a string individually:
+.. image:: caesar_cipher.svg
+    :width: 35%
+    :class: right-image
+
+Computer store text as a list. We can use this fact to manipulate the text.
+We can learn to do this by creating a simple Caesar Cipher to encrypt
+our text.
+
+To start with, this code prints out every letter of a string individually,
+and works just like iterating through a list:
 
 .. code-block:: python
     :linenos:
@@ -583,10 +609,6 @@ This code prints out every letter of a string individually:
 
     for c in plain_text:
         print(c, end=" ")
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sxFIxD8Gd3A?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 Computers do not actually store letters of a string in memory; computers store
 a series of numbers. Each number represents a letter. The system that computers
