@@ -212,13 +212,12 @@ is really 602x632 if you count the title bar and borders.
 How do we know ``open_window`` is the name of the function to call? How did
 we know what parameters to use? The names of the functions, the order of the
 parameters, is the **Application Program Interface** or "API" for short. You can
-click here for the entire `Arcade API`_ or go straight to the documentation
-for open_window_. Any decent library will have API
+click here for the entire `Arcade API <https://api.arcade.academy/en/latest/quick_index.html>`_
+or go straight to the documentation
+for :func:`arcade.open_window`. Any decent library will have API
 documentation, and
 `example code <https://api.arcade.academy/en/latest/examples/index.html>`_
 to show how to use the library.
-
-.. _Arcade API: https://api.arcade.academy/en/latest/quick_index.html
 
 Below is an example program that will open up a window:
 
@@ -258,7 +257,7 @@ Clearing the screen
     :alt: Video link
 
 Right now we have default white as our background.
-How do we get a different color? Use the ``set_background_color`` command.
+How do we get a different color? Use the :func:`arcade.set_background_color` command.
 
 Before we can see the color, we need two more commands. These commands
 tell the Arcade library when you are about to start drawing (``start_render``),
@@ -498,10 +497,8 @@ Our screen currently has a sky-blue color. Let's draw a rectangle in the bottom
 half of the screen and make that a grass color.
 
 The function
-we will use is draw_lrtb_rectangle_filled_. It stands for "draw
+we will use is :func:`arcade.draw_lrtb_rectangle_filled`. It stands for "draw
 left-right-top-bottom rectangle".
-
-.. _draw_lrtb_rectangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_lrtb_rectangle_filled
 
 To make the bottom half of our screen green grass, we'll start
 with a left of 0, a right of 599, a top of 300, and a bottom of zero.
@@ -520,10 +517,8 @@ Your window should look like this:
 
 Sometimes we don't want to specify a rectangle by left-right-top-bottom.
 There is also an option to specify it by center x, center y, width, and height using the
-draw_rectangle_filled_ function. For example
+:func:`arcade.draw_rectangle_filled` function. For example
 this code displays a tree trunk:
-
-.. _draw_rectangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_rectangle_filled
 
 .. code-block:: python
 
@@ -537,11 +532,8 @@ this code displays a tree trunk:
    :width: 35%
 
 There's also a function to draw the outline of a rectangle called
-draw_rectangle_outline_. Both of these functions (and many others)
+:func:`arcade.draw_rectangle_outline`. Both of these functions (and many others)
 have an optional parameter to tilt the rectangle to a desired angle.
-
-.. _draw_rectangle_outline: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_rectangle_outline
-
 
 Drawing Circles
 ^^^^^^^^^^^^^^^
@@ -551,10 +543,8 @@ Drawing Circles
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=966s
     :alt: Video link
 
-We can draw a circle with draw_circle_filled_. This code will draw a circle
+We can draw a circle with :func:`arcade.draw_circle_filled`. This code will draw a circle
 with a center of 100, 350 and a radius of 30 pixels.
-
-.. _draw_circle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_circle_filled
 
 .. code-block:: python
 
@@ -590,7 +580,7 @@ Now look at what it draws to understand the relation between the rectangle and e
 .. image:: ellipse_example.png
    :width: 35%
 
-With the ``draw_ellipse_filled`` function we can make a tree out of a tall
+With the :func:`arcade.draw_ellipse_filled` function we can make a tree out of a tall
 ellipse for the top:
 
 .. code-block:: python
@@ -610,10 +600,8 @@ Drawing Arcs
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1066s
     :alt: Video link
 
-You can draw an arc with draw_arc_filled_. Drawing an arc works just like an
+You can draw an arc with :func:`arcade.draw_arc_filled`. Drawing an arc works just like an
 ellipse, with the additional parameters for a start angle and an end angle.
-
-.. _draw_arc_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_arc_filled
 
 .. code-block:: python
 
@@ -634,12 +622,9 @@ Triangles
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1107s
     :alt: Video link
 
-Triangles are drawn by specifying the coordinates of each point with draw_triangle_filled_.
-That requires
-a bit of thought about where each point goes. I often end up sketching it
+Triangles are drawn by specifying the coordinates of each point with :func:`draw_triangle_filled`.
+That requires a bit of thought about where each point goes. I often end up sketching it
 out on paper to get it straight. This can be used to make a pine tree.
-
-.. _draw_triangle_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_triangle_filled
 
 .. code-block:: python
 
@@ -661,10 +646,8 @@ Polygons
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1140
     :alt: Video link
 
-Polygons are drawn with a list of points and the draw_polygon_filled_ function.
+Polygons are drawn with a list of points and the :func:`arcade.draw_polygon_filled` function.
 In this example we use five points to create a tree-top.
-
-.. _draw_polygon_filled: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_polygon_filled
 
 .. code-block:: python
 
@@ -689,12 +672,9 @@ Lines
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1176
     :alt: Video link
 
-Line drawing with the draw_line_ function involves specifying a start point and and end point.
+Line drawing with the :func:`arcade.draw_line` function involves specifying a start point and and end point.
 Optionally, you can specify the line width. You can also use
-draw_line_strip_ to draw a continuous multi-point line.
-
-.. _draw_line: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_line
-.. _draw_line_strip: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_line_strip
+:func:`arcade.draw_line_strip` to draw a continuous multi-point line.
 
 In our sample image, we'll use several lines to draw rays coming out of a sun:
 
@@ -726,12 +706,10 @@ Text
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=1202
     :alt: Video link
 
-Text can be drawn with the draw_text_ command.
+Text can be drawn with the :func:`arcade.draw_text` command.
 Just like with the ``print`` function, text must be enclosed in quotes.
 The text to draw is the first parameter. The x, y location of the text is
 are next two. Finally the color and font size come next.
-
-.. _draw_text: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_text
 
 .. code-block:: python
 
@@ -766,9 +744,7 @@ Specifying Parameters By Name
     :alt: Video link
 
 It can be confusing to track a lot of parameters given to a function.
-For example, here's a call to draw_arc_outline_.
-
-.. _draw_arc_outline: https://api.arcade.academy/en/latest/arcade.html#arcade.draw_arc_outline
+For example, here's a call to :func:`arcade.draw_arc_outline`.
 
 .. code-block:: python
 
@@ -896,6 +872,7 @@ Review Questions
 ^^^^^^^^^^^^^^^^
 
 #. In Python, a library of code is called what?
+#. What do we call a line of code in Python which includes the function name, parentheses,
 #. What do we call a line of code in Python which includes the function name, parentheses,
    numbers, text and everything else required perform an operation?
 #. When we call a function that is inside a library,  what character do we use

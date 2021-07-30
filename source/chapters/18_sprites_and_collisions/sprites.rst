@@ -180,11 +180,9 @@ we need to prepend it with ``self.``.
 
 However, the Arcade library has a class especially for handling sprite lists.
 This class is called ``SpriteList``.
-For more information, check out the SpriteList_ documentation.
+For more information, check out the :class:`arcade.SpriteList` documentation.
 So instead of creating an empty list with
 ``[]``, we will create a new instance of the ``SpriteList`` class:
-
-.. _SpriteList: https://api.arcade.academy/en/latest/arcade.html#arcade.sprite.SpriteList
 
 .. code-block:: Python
 
@@ -208,15 +206,12 @@ need to reset our score to 0.
     self.score = 0
 
 Now we need to create our sprites. The name of the class that represents sprites
-is called ``Sprite``. You can read more about it by looking at the Sprite_
+is called ``Sprite``. You can read more about it by looking at the :class:`arcade.Sprite`
 documentation.
 The Sprite constructor takes two parameters. A path to the image we will be
 using, and how big to scale it.
 
 For class, please source the image right before you load it. If you drew your own image, please note that as well.
-
-.. _Sprite: https://api.arcade.academy/en/latest/arcade.html#arcade.sprite.Sprite
-
 
 .. code-block:: Python
 
@@ -259,9 +254,9 @@ put the score on the screen:
     output = "Score: " + str(self.score)
     arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
-Rather than do that ``"Score: " + str(self.score)`` it is possible to do
-print formatting if you are using Python 3.6 or later. We'll talk more about
-print formatting later, but that code would look like:
+Rather than do that ``"Score: " + str(self.score)`` it is possible to use
+string formatting . We'll talk more about
+this in the :ref:`string_formatting` chapter. That code would look like:
 
 .. code-block:: Python
 
@@ -269,8 +264,6 @@ print formatting later, but that code would look like:
     output = f"Score: {self.score}"
     arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
-There are three standards for how to format strings in Python, so that whole
-subject is a bit confusing.
 
 The On Mouse Motion Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -316,7 +309,7 @@ on each sprite in the list. Therefore, just calling ``update`` with our
     self.coin_list.update()
 
 How do we detect what coins are touching the player? We call the
-``check_for_collision_with_list`` method. Pass it in our player sprite,
+:func:`arcade.check_for_collision_with_list` method. Pass it in our player sprite,
 along with a list of all the coins. That function will return a list of
 all colliding sprites. If no sprites collide, the list will be empty.
 
@@ -329,7 +322,7 @@ What do we do with this ``hit_list`` we get back? We loop through it. We add one
 to the score for each sprite hit.
 
 We also need to get rid of the sprite. The sprite class has a method called
-``remove_from_sprite_lists``. This method will remove the sprite from existence.
+:meth:`arcade.Sprite.remove_from_sprite_lists`. This method will remove the sprite from existence.
 
 .. code-block:: Python
 

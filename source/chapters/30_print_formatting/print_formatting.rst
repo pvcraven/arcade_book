@@ -1,3 +1,5 @@
+.. _string_formatting:
+
 String Formatting
 =================
 

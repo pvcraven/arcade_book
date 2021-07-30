@@ -68,10 +68,18 @@ code, .rst-content tt, .rst-content code {
 .headerlink {
     visibility: hidden;
 }
+
 .rst-content code.literal {
 	color: black;
     font-weight: bold;
+    background-color: transparent;
+    border: none;
 }
+.rst-content code.xref {
+	color: #2980B9;
+    font-size: 90%;
+}
+
 .wy-menu-vertical a {
     font-size: 75%;
 }

@@ -29,7 +29,7 @@ chapter has several examples designed to learn how to:
 Creating a Window with a Class
 ------------------------------
 
-Up to now, we have used a function called ``open_window`` to open a window.
+Up to now, we have used a function called :func:`arcade.open_window` to open a window.
 Here's the code:
 
 .. literalinclude:: open_window_with_function.py
@@ -38,7 +38,7 @@ Here's the code:
     :emphasize-lines: 8
     :linenos:
 
-We can also create an instance of a class called ``Window`` to open a window.
+We can also create an instance of a class called :class:`arcade.Window` to open a window.
 The code is rather straight-forward:
 
 .. literalinclude:: open_window_with_object.py

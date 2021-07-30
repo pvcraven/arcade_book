@@ -151,7 +151,7 @@ Working with game controllers is a bit more complex. A computer might not
 have any game controllers, or it might have five controllers plugged in.
 
 We can get a list of all game pads that are plugged in with the
-``get_joysticks`` function. This will either return a list, or it will return
+:func:`arcade.get_joysticks` function. This will either return a list, or it will return
 nothing at all if there are no game pads.
 
 Below is a block of code that can be put in an ``__init__`` method for your

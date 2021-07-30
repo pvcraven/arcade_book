@@ -24,7 +24,7 @@ Loading Sounds
     :class: right-image
 
 The code below creates a new variable called ``laser_sound``. It calls
-arcades ``load_sound`` function. It passes the filename of our sound.
+Arcade`s :func:`arcade.load_sound` function. It passes the filename of our sound.
 
 .. code-block:: python
 
@@ -45,7 +45,7 @@ Playing Sounds
     :width: 25%
     :class: right-image
 
-The code to play sounds is straight-forward. Just call the ``play_sound``
+The code to play sounds is straight-forward. Just call the :func:`play_sound`
 function, and pass in the variable that we set equal to the sound we loaded:
 
 .. code-block:: python
