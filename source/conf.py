@@ -39,6 +39,9 @@ def _warn_node(self, msg, node):
 
 sphinx.environment.BuildEnvironment.warn_node = _warn_node
 
+# Fix line numbers on code listings until the RTD theme updates to sphinx 4+
+html_codeblock_linenos_style = 'table'
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.

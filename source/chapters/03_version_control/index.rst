@@ -28,7 +28,7 @@ Do this whenever you are done with a session of programming:
    this works with ``cd Desktop`` followed by ``cd learn-arcade-work``.
    If you have OneDrive installed, you may need to first type ``cd OneDrive``.
    You can usually type in the first few letters and hit <tab> to fill in the rest of the directory name.
-3. Type ``git add *``
+3. Type ``git add -A``
 4. Type ``git commit -m "Work on lab 1"`` Update the comment between the quotes
    to whatever you did.
 5. Type ``git push``
@@ -313,13 +313,13 @@ Optionally, we can use ``git status`` to see what files have changed:
     no changes added to commit (use "git add" and/or "git commit -a")
 
 
-Now, add all the files that have changed. The asterisk (``*``) is a wild card character
-that means get all changes. Optionally, we could list out each file, but that's a lot
+Now, add all the files that have changed. The ``-A`` option means all files.
+Optionally, we could list out each file, but that's a lot
 of work and we don't want to leave anything behind anyway.
 
 .. code-block:: text
 
-    C:\Users\craven\Desktop\learn-arcade-work> git add *
+    C:\Users\craven\Desktop\learn-arcade-work> git add -A
 
 Commit the changes:
 
@@ -572,18 +572,3 @@ capture most of what students need to do.
 +------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 | ``git push``                                   | Push commit up to the server.                                                                                           |
 +------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
-
-Review
-------
-
-Review Questions
-^^^^^^^^^^^^^^^^
-
-#. What is the *type* of program that allows you to synchronize code between
-   multiple people, systems that you are working on, and keep prior versions of
-   your work?
-#. What is the name of the program for version control we are using in the
-   class? (The program, not the website we store the code in.)
-#. If you are using a version control system, and get an error trying to "push"
-   your code to the central repository, what do you likely need to do before you
-   can try pushing again?

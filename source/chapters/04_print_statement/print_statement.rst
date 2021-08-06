@@ -547,32 +547,6 @@ Printing multiple lines is possible using three techniques: multiple print state
 **escape codes**, and **triple-quotes**. We learned that escape codes can also be used to
 print quotes and tab characters.
 
-Review Questions
-^^^^^^^^^^^^^^^^
-
-#. What type of error (looking for one word) are we likely to get, if we mistype
-   a function name?
-#. If you forget to use parentheses when using a function, what type of error
-   will you get (looking for one word)?
-#. What term refers to the values between the parentheses in function?
-#. What is the escape code for a double quote?
-#. What escape code is most commonly used to go to a new line?
-#. What will this print? ``print("Escape codes: \\\\")``
-#. What do you use to print a block of text without using multiple print statements
-   or ``\n``?
-#. Write code to print ``Hello``.
-#. What is the name of the style-guide for Python?
-
-Online Coding Problems
-^^^^^^^^^^^^^^^^^^^^^^
-
-Practice on-line by completing the first set of coding problems available here:
-
-https://repl.it/community/classrooms/174286
-
-All problems beginning with ``01`` can be done with the knowledge from this
-chapter.
-
 Lab 1: First Program
 ^^^^^^^^^^^^^^^^^^^^
 

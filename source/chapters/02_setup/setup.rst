@@ -124,18 +124,3 @@ Then click the "view" tab and make sure "File name extensions" has been checked.
 We'll need to see the full filename for our programs. Our Python language
 programs will end in ``.py`` and we need to see the extensions of the image
 and sound files we'll load into our games.
-
-Review
-------
-
-Review Questions
-^^^^^^^^^^^^^^^^
-
-Chapter 2
-
-#. What is the generic name of an editor that integrates a lot of tools for a
-   developer to use when writing programs? (I'm not looking for a brand-name
-   like PyCharm here.)
-#. What does a computer use to tell the type of a file?
-   (Word, Excel, image, etc.)
-#. All Python source code file names should end with what extension?
