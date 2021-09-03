@@ -150,11 +150,9 @@ How to Open a Window for Drawing
     :target: https://www.youtube.com/watch?v=wYofTQaIIlQ&t=239s
     :alt: Video link
 
-The first Arcade function we are going to learn is open_window_. This
+The first Arcade function we are going to learn is :func:`arcade.open_window`. This
 command opens a window with a given size and title.
 The code looks like the following:
-
-.. _open_window: https://api.arcade.academy/en/latest/api/window.html#arcade.open_window
 
 .. code-block:: python
 
@@ -793,6 +791,12 @@ In :ref:`expressions` we'll learn to use variables to store our parameter values
 which will enhance the readability of our program, while giving us more
 flexibility to update our item's positioning. In :ref:`custom-drawing-function` we'll
 create our own functions. That will allow us to create a function like ``draw_tree``.
+
+We can also examine all the drawing commands available to us in the API:
+
+https://api.arcade.academy/en/latest/quick_index.html
+
+We can sort by "Group" to identify which are drawing commands.
 
 Improving Graphics Performance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
