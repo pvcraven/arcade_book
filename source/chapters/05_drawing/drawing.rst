@@ -154,7 +154,7 @@ The first Arcade function we are going to learn is open_window_. This
 command opens a window with a given size and title.
 The code looks like the following:
 
-.. _open_window: https://api.arcade.academy/en/latest/arcade.html#arcade.open_window
+.. _open_window: https://api.arcade.academy/en/latest/api/window.html#arcade.open_window
 
 .. code-block:: python
 
