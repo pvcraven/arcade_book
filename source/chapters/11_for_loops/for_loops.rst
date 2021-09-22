@@ -643,11 +643,3 @@ Answer the following:
     for i in range(1, 101):
         total = total + i
 
-On-line Review Problems
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Practice on-line by completing the ``for`` loop problems starting with ``04`` available here:
-
-https://repl.it/community/classrooms/174286
-
-

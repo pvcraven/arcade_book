@@ -644,13 +644,3 @@ earlier.
 .. literalinclude:: if_statement_examples.py
     :language: python
     :linenos:
-
-Online Coding Problems
-^^^^^^^^^^^^^^^^^^^^^^
-
-Practice on-line by completing the first set of coding problems available here:
-
-https://repl.it/community/classrooms/174286
-
-All problems beginning with ``03`` can be done with the knowledge from this
-chapter.
