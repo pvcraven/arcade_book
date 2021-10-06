@@ -9,14 +9,15 @@ Lab 6: Text Adventure
 Description of the Adventure Game
 ---------------------------------
 One of the first games I ever played was a text adventure called
-`Colossal Cave Adventure`_. You can play the game on-line here_ to get an idea
+`Colossal Cave Adventure`_. You can play the game on-line
+`here (1) <http://rickadams.org/adventure/advent/>`_ or
+`here (2) <http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure>`_ to get an idea
 what text adventure games are like. Seriously, give it a try. Otherwise it will
 be hard to understand what we are trying to do here.
 
 Arguably the most famous of this genre of game is the Zork_ series.
 
 .. _Colossal Cave Adventure: https://en.wikipedia.org/wiki/Colossal_Cave_Adventure
-.. _here: http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure
 .. _Zork: https://en.wikipedia.org/wiki/Zork
 
 The first "large" program I created myself was a text adventure. It is easy to
