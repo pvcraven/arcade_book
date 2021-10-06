@@ -10,8 +10,9 @@ Description of the Adventure Game
 ---------------------------------
 One of the first games I ever played was a text adventure called
 `Colossal Cave Adventure`_. You can play the game on-line
-`here (1) <http://rickadams.org/adventure/advent/>`_ or
-`here (2) <http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure>`_ to get an idea
+`here (1) <http://rickadams.org/adventure/advent/>`_,
+`here (2) <https://grack.com/demos/adventure/>`_ or
+`here (3) <http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure>`_ to get an idea
 what text adventure games are like. Seriously, give it a try. Otherwise it will
 be hard to understand what we are trying to do here.
 
