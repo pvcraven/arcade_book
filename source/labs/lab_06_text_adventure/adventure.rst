@@ -66,7 +66,8 @@ Sample Run
     A hallway is to the east.
     What direction?
 
-This game assumes you know the material up through :ref:`intro-to-lists`.
+This game assumes you know the material up through :ref:`intro-to-lists` and
+:ref:`classes_chapter`.
 
 Creating Your Dungeon
 ---------------------

@@ -1,3 +1,5 @@
+.. _classes_chapter:
+
 Classes, Constructors, and Attributes
 =====================================
 
