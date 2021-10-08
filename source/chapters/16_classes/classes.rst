@@ -598,8 +598,8 @@ the address attributes as part of our ``__init__`` when our address is created.
 .. code-block:: python
     :linenos:
 
-    class Address():
-        def __init__(self, , line2, city, state, zip, country):
+    class Address:
+        def __init__(self, line1, line2, city, state, zip, country):
             self.line1 = line1
             self.line2 = line2
             self.city = city
@@ -615,7 +615,7 @@ the address attributes as part of our ``__init__`` when our address is created.
                              "Indianola",
                              "IA",
                              "50125",
-                              "USA)
+                              "USA")
 
 
     main()
