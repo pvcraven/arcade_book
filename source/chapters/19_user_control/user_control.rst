@@ -6,6 +6,12 @@ User Control
 How do we interact with the user? Get the user to move an object on the screen?
 
 We can do this with the mouse, with the keyboard, or with the game controller.
+Let's start with a template with a static ball on the screen:
+
+.. literalinclude:: starting_template.py
+    :caption: starting_template.py
+    :language: python
+    :linenos:
 
 Move with the Mouse
 -------------------
@@ -40,7 +46,7 @@ the mouse.
     :caption: move_with_mouse.py
     :language: python
     :linenos:
-    :emphasize-lines: 30, 42-45
+    :emphasize-lines: 32-34, 46-50
 
 .. _mouse-click:
 
@@ -96,7 +102,7 @@ lines in the program below:
     :caption: move_with_keyboard_simple.py
     :language: python
     :linenos:
-    :emphasize-lines: 5, 53-62, 64-69
+    :emphasize-lines: 5, 27-30, 57-66, 68-73
 
 Keep From Moving Off Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -138,7 +144,7 @@ Here's a full example:
     :caption: move_with_keyboard_edge_detect.py
     :language: python
     :linenos:
-    :emphasize-lines: 28-39
+    :emphasize-lines: 32-43
 
 Moving with the Game Controller
 -------------------------------
@@ -181,7 +187,7 @@ Try this, combined with the initialization code from above:
     :caption: move_with_game_controller_print.py
     :language: python
     :linenos:
-    :emphasize-lines: 62-69, 77-81
+    :emphasize-lines: 66-73, 81-85
 
 Run the program and see the values it prints out for your game controller
 as you move the joystick on it around.
@@ -273,5 +279,5 @@ See the highlighted lines for how we take care of the dead zone:
     :caption: move_with_game_controller.py
     :language: python
     :linenos:
-    :emphasize-lines: 6, 82-92
+    :emphasize-lines: 6, 86-96
 

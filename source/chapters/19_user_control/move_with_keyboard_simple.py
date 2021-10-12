@@ -8,7 +8,8 @@ MOVEMENT_SPEED = 3
 class Ball:
     def __init__(self, position_x, position_y, change_x, change_y, radius, color):
 
-        # Take the parameters of the init function above, and create instance variables out of them.
+        # Take the parameters of the init function above,
+        # and create instance variables out of them.
         self.position_x = position_x
         self.position_y = position_y
         self.change_x = change_x
@@ -18,7 +19,10 @@ class Ball:
 
     def draw(self):
         """ Draw the balls with the instance variables we have. """
-        arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
+        arcade.draw_circle_filled(self.position_x,
+                                  self.position_y,
+                                  self.radius,
+                                  self.color)
 
     def update(self):
         # Move the ball
