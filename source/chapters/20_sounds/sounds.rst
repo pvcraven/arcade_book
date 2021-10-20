@@ -121,6 +121,11 @@ is when we trigger the sound to play.
 Finding Sounds
 --------------
 
+There are a few sounds built into Arcade. You can load ``:resources:sounds/explosion2.wav`` or
+one of the other sounds found near the bottom of the resources page:
+
+https://api.arcade.academy/en/latest/resources.html
+
 Great places to find free sounds to use in your program:
 
 * `OpenGameArt.org <http://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=13&sort_by=count&sort_order=DESC>`_
