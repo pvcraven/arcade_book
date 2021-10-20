@@ -54,6 +54,12 @@ That's where the following images come from that we will use in our examples:
 
     coin_01.png
 
+There are also some sprites that come with the Arcade library. A list of those sprites is available at:
+
+https://api.arcade.academy/en/latest/resources.html
+
+You cal load these using a filename pattern such as: ``:resources:images/topdown_tanks/tank_red.png``
+
 Where to Save Images
 ^^^^^^^^^^^^^^^^^^^^
 
