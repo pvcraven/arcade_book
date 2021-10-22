@@ -12,8 +12,8 @@ Adding sound to your game isn't too hard. There are two steps:
 1. Load the sound
 2. Play the sound
 
-For these examples, I'm using a sound file called ``laser.ogg`` that you can
-`download here <../../_static/laser.ogg>`_. Make sure you save the file in
+For these examples, I'm using a sound file called ``laser.wav`` that you can
+`download here <../../_static/laser.wav>`_. Make sure you save the file in
 the same directory as any Python program that tries to use it.
 
 Loading Sounds
@@ -28,9 +28,9 @@ Arcade`s :func:`arcade.load_sound` function. It passes the filename of our sound
 
 .. code-block:: python
 
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
 
-For this to work, you need to have a sound downloaded and named ``laser.ogg``
+For this to work, you need to have a sound downloaded and named ``laser.wav``
 in the same directory as your Python file. The computer will not find the
 sound if it is in a different directory.
 
@@ -58,7 +58,7 @@ Putting the two together, you might think we could do this to play sounds:
 
     import arcade
 
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
     arcade.play_sound(laser_sound)
 
 But that doesn't work. The program ends before the sound has a chance to play.
@@ -72,7 +72,7 @@ a window, and we can solve it the same way:
     import arcade
 
     arcade.open_window(300, 300, "Sound Demo")
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
     arcade.play_sound(laser_sound)
     arcade.run()
 
@@ -103,7 +103,7 @@ is when we trigger the sound to play.
             super().__init__(width, height, "Trigger Sound With Key")
 
             # Load the sound when the application starts
-            self.laser_sound = arcade.load_sound("laser.ogg")
+            self.laser_sound = arcade.load_sound("laser.wav")
 
         def on_key_press(self, key, modifiers):
 
