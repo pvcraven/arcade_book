@@ -118,6 +118,32 @@ is when we trigger the sound to play.
 
     main()
 
+Seeing If a Sound is Playing
+----------------------------
+
+Sometimes we want to know if a sound is playing. For example, if the user is bumping the edge of the screen,
+we may want to play the bump sound once, and not 60 times per second. Because that sounds weird.
+
+This complicates our code just a little bit. Not only do we need an attribute for the sound file, we need an
+attribute for the sound *player*. We'll use this to check if the sound is playing or not.
+
+The pattern for this code looks like the following. In the ``__init__`` where we load the sound, also
+create a sound player attribute:
+
+.. code-block:: python
+
+        self.explosion_sound = arcade.load_sound(":resources:sounds/explosion2.wav")
+        self.explosion_sound_player = None
+
+Then, when we play the sound, check to see if the sound is playing. If there is no player, or the
+``playing`` boolean is false, we'll play the sound. We'll also capture the sound player that is
+returned by the function.
+
+.. code-block::
+
+    if not self.explosion_sound_player or not self.explosion_sound_player.playing:
+        self.explosion_sound_player = arcade.play_sound(self.explosion_sound)
+
 Finding Sounds
 --------------
 
