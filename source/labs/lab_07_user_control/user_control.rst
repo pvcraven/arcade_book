@@ -35,17 +35,26 @@ Write one program, following these steps:
   prior labs where you drew with a function, and move it to the ``on_draw`` method
   of your class. But don't have your object be a simple one line of code shape.
 * Rename your class from ``Ball`` to a name that represents what you are really drawing.
-* After you get that object moving, pick a *different* method of control (keyboard, mouse,
-  gamepad.) Create a *new class*, draw something *different*, and move it around the screen.
+* After you get that object moving, do it again:
+
+  * Pick a *different* method of control (keyboard, mouse, gamepad.)
+  * Create a *new class*
+  * Draw something *different* with that class, and move it around the screen.
+
+.. note:: Stop!
+
+   Make sure you have two completely different items.
+
 * In the case of the game controller and the keyboard, make sure to add checks
   so that your object does not move off-screen and get lost.
-* Add a sound effect for when the user clicks the mouse button.
-* Add a different sound effect for when the user bumps into the edge of the screen.
-  Make sure the sound only plays when you are trying to go beyond the edge of the
-  screen, and not when you just sit at the edge of the screen. This part isn't
-  needed for anything controlled by the mouse.
+* Add sound effects
 
-When you are done, make sure you commit your sound effects in what you turn in!
-Otherwise your program can't be graded.
+  * Add a sound effect for when the user clicks the mouse button.
+  * Add a different sound effect for when the user bumps into the edge of the screen.
+    Make sure the sound only plays when you are trying to go beyond the edge of the
+    screen, and not when you just sit at the edge of the screen. This part isn't
+    needed for anything controlled by the mouse.
+
+That's it! Commit and turn in your work.
 
 .. _Arcade Starting Template: https://api.arcade.academy/en/latest/examples/starting_template.html

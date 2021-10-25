@@ -58,7 +58,7 @@ There are also some sprites that come with the Arcade library. A list of those s
 
 https://api.arcade.academy/en/latest/resources.html
 
-You cal load these using a filename pattern such as: ``:resources:images/topdown_tanks/tank_red.png``
+You can load these using a filename pattern such as: ``:resources:images/topdown_tanks/tank_red.png``
 
 Where to Save Images
 ^^^^^^^^^^^^^^^^^^^^
