@@ -258,101 +258,81 @@ Here's the full example:
     :language: python
     :linenos:
 
-Using a View Port for Scrolling
--------------------------------
+Using a Camera for Scrolling
+----------------------------
 
 What if one screen isn't enough to hold your maze of walls? We can have a
-world that is larger than just our window. We do this by adjusting the
-*view port*. Normally coordinate (0, 0) is the lower left corner of our screen.
+world that is larger than just our window.
+Then we simply move a **camera** that defines what part of the world we
+want to see.
+
+Normally coordinate (0, 0) is the lower left corner of our screen.
 We can change that! We could have an entire world stretch from (0, 0) to
-(3000, 3000), and have a smaller view port that was 800x640 that scrolled
-around that.
+(3000, 3000), and have a smaller camera view that is 800x600, which we scrolled
+around that large view.
 
-The command for using the view port is ``set_viewport``. This command takes
-four arguments. The first two are the left and bottom boundaries of the window.
-By default these are zero. That is why (0, 0) is in the lower left of the
-screen. The next two commands are the top and right coordinates of the screen.
-By default these are the screen width and height, minus one. So an 800
-pixel-wide window would have x-coordinates from 0 - 799.
+There is also part of the view that we typically *don't* want to have scroll
+around the screen. For example, we may want the score to show in the lower left
+corner of the screen. We want it fixed there no matter where our view into
+the world is. To do that, we'll have not one, but *two* cameras. One for the
+larger world, and one for our score (or anything in the heads-up-display.)
 
-A command like this would shift the whole "view" of the window 200 pixels to
-the right:
-
-.. code-block:: python
-
-    # Specify viewport size by (left, right, bottom, top)
-    arcade.set_viewport(200, 200 + SCREEN_WIDTH - 1, 0, SCREEN_HEIGHT - 1)
-
-So with a 800 wide pixel window, we would show x-coordinates 200 - 999 instead
-of 0 - 799.
-
-Instead of hard-coding the shift at 200 pixels, we need to use a variable
-and have rules around when to shift the view. In our next example, we will
-create two new instance variables in our application class that hold the left
-and bottom coordinates for our view port. We'll default to zero.
+To do this, let's create two cameras in our Window class's ``__init__`` method.
+Both of these cameras will have a field-of-view set to the same size as the window.
 
 .. code-block:: python
 
-    self.view_left = 0
-    self.view_bottom = 0
+    # Create the cameras. One for the GUI, one for the sprites.
+    # We scroll the 'sprite world' but not the GUI.
+    self.camera_for_sprites = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+    self.camera_for_gui = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
 
-
-We are also going to create two new constants. We don't want the player to
-reach the edge of the screen before we start scrolling. Because then the player
-would have no idea where she is going. In our example we will set a "margin" of
-150 pixels. When the player is 150 pixels from the edge of the screen, we'll move
-the view port so she can see at least 150 pixels around her.
+Now we have cameras. We just need to use the cameras. In the Window's ``draw`` method,
+select which camera we want to use before we draw.
 
 .. code-block:: python
 
-    VIEWPORT_MARGIN = 150
+    def on_draw(self):
+        arcade.start_render()
 
-Next, in our update method, we need to see if the user has moved too close to
-the edge of the screen and we need to update the boundaries.
+        # Select the scrolled camera for our sprites
+        self.camera_for_sprites.use()
+
+        # Draw the sprites
+        self.wall_list.draw()
+        self.player_list.draw()
+
+        # Select the (unscrolled) camera for our GUI
+        self.camera_for_gui.use()
+        arcade.draw_text(f"Score: {self.score}", 10, 10, arcade.color.WHITE, 24)
+
+At this point the program should run, but since we haven't moved the camera, it will still look
+the same.
+
+To scroll the camera, we'll add code to calculate the coordinates of the lower-left corner of our camera.
+Then call the camera's ``move_to`` method to scroll there.
 
 .. code-block:: python
 
-        # Keep track of if we changed the boundary. We don't want to call the
-        # set_viewport command if we didn't change the view port.
-        changed = False
+    def on_update(self, delta_time):
+        """ Movement and game logic """
 
-        # Scroll left
-        left_boundary = self.view_left + VIEWPORT_MARGIN
-        if self.player_sprite.left < left_boundary:
-            self.view_left -= left_boundary - self.player_sprite.left
-            changed = True
+        # Call update on all sprites (The sprites don't do much in this
+        # example though.)
+        self.physics_engine.update()
 
-        # Scroll right
-        right_boundary = self.view_left + SCREEN_WIDTH - VIEWPORT_MARGIN
-        if self.player_sprite.right > right_boundary:
-            self.view_left += self.player_sprite.right - right_boundary
-            changed = True
+        # Scroll the screen to the player
+        self.scroll_to_player()
 
-        # Scroll up
-        top_boundary = self.view_bottom + SCREEN_HEIGHT - VIEWPORT_MARGIN
-        if self.player_sprite.top > top_boundary:
-            self.view_bottom += self.player_sprite.top - top_boundary
-            changed = True
-
-        # Scroll down
-        bottom_boundary = self.view_bottom + VIEWPORT_MARGIN
-        if self.player_sprite.bottom < bottom_boundary:
-            self.view_bottom -= bottom_boundary - self.player_sprite.bottom
-            changed = True
-
-        # Make sure our boundaries are integer values. While the view port does
-        # support floating point numbers, for this application we want every pixel
-        # in the view port to map directly onto a pixel on the screen. We don't want
-        # any rounding errors.
-        self.view_left = int(self.view_left)
-        self.view_bottom = int(self.view_bottom)
-
-        # If we changed the boundary values, update the view port to match
-        if changed:
-            arcade.set_viewport(self.view_left,
-                                SCREEN_WIDTH + self.view_left - 1,
-                                self.view_bottom,
-                                SCREEN_HEIGHT + self.view_bottom - 1)
+        # Scroll the window to the player.
+        #
+        # If CAMERA_SPEED is 1, the camera will immediately move to the desired position.
+        # Anything between 0 and 1 will have the camera move to the location with a smoother
+        # pan.
+        CAMERA_SPEED = 1
+        lower_left_corner = (self.player_sprite.center_x - self.width / 2,
+                             self.player_sprite.center_y - self.height / 2)
+        self.camera_for_sprites.move_to(lower_left_corner, CAMERA_SPEED)
 
 The full example is below:
 
@@ -360,3 +340,7 @@ The full example is below:
     :caption: sprite_move_scrolling.py
     :language: python
     :linenos:
+
+Another example is to just keep the user in a "box" and allow her to move inside that box without scrolling.
+
+https://api.arcade.academy/en/latest/examples/sprite_move_scrolling_box.html
