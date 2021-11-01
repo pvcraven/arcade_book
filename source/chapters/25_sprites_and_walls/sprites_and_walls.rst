@@ -3,11 +3,19 @@
 Sprites and Walls
 =================
 
-Setup
------
 
 Many games with sprites often have "walls" that the character can't move
-through. There are rather straight-forward to create.
+through. This can be for a top-down game where the player moves around
+obstacles, or a side-view platformer game.
+
+We need to learn:
+
+1. How to create and place the walls.
+2. How to keep the user from moving through a wall.
+3. How to "scroll" the screen so that we can have a large world to move through.
+
+Setup
+-----
 
 To begin with, let's get a couple images. Our character, and a box that will
 act as a blocking wall. Both images are from `kenney.nl`_.
@@ -268,8 +276,10 @@ want to see.
 
 Normally coordinate (0, 0) is the lower left corner of our screen.
 We can change that! We could have an entire world stretch from (0, 0) to
-(3000, 3000), and have a smaller camera view that is 800x600, which we scrolled
+(3000, 2000), and have a smaller camera view that is 800x600, which we scrolled
 around that large view.
+
+.. image:: scrolling_window.svg
 
 There is also part of the view that we typically *don't* want to have scroll
 around the screen. For example, we may want the score to show in the lower left
@@ -341,6 +351,13 @@ The full example is below:
     :language: python
     :linenos:
 
+Additional Examples
+-------------------
+
 Another example is to just keep the user in a "box" and allow her to move inside that box without scrolling.
 
-https://api.arcade.academy/en/latest/examples/sprite_move_scrolling_box.html
+* https://api.arcade.academy/en/latest/examples/sprite_move_scrolling_box.html
+
+Instead of scrolling, you can also move between rooms:
+
+* https://api.arcade.academy/en/latest/examples/sprite_rooms.html
