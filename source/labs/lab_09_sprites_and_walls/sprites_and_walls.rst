@@ -41,7 +41,7 @@ and position multiple items.
   wall blocks. If you randomly place coins, you might end up with coins on
   top of walls. See the "Important Part" around line 83 or so of
   the example
-  `sprite_no_coins_on_walls.py <https://api.arcade.academy/en/latest/sprite_no_coins_on_walls.html>`_
+  `sprite_no_coins_on_walls.py <https://api.arcade.academy/en/latest/examples/sprite_no_coins_on_walls.html>`_
   for how to avoid this.
 * Step 6: Keep score of how many coins were collected, and display on-screen.
   4 points.
