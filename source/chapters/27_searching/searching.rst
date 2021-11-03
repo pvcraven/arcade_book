@@ -82,11 +82,71 @@ and the new variable line will be set to each of those lines as the program
 runs through the loop.
 
 Try running the program. One of the problems with the it is that the text is
-printed double-spaced. The reason for this is that each line pulled out of the
+printed double-spaced:
+
+.. code-block:: text
+
+    Adolphus of Helborne
+
+    Aldric Foxe
+
+    Amanita Maleficant
+
+    Aphra the Vicious
+
+    Arachne the Gruesome
+
+    (etc...)
+
+The reason for this is that each line pulled out of the
 file and stored in the variable line includes the carriage return as part of
 the string. Remember the carriage return and line feed introduced back in
 Chapter 1? The ``print`` statement adds yet another carriage return and the result
 is double-spaced output.
+
+.. code-block:: python
+    :linenos:
+    :caption: Read in a file
+    :emphasize-lines: 11
+
+    def main():
+        """ Read in lines from a file """
+
+        # Open the file for reading, and store a pointer to it in the new
+        # variable "file"
+        my_file = open("super_villains.txt")
+
+        # Loop through each line in the file like a list
+        for line in my_file:
+            # Remove any line feed, carriage returns or spaces at the end of the line
+            line = line.strip()
+            print(line)
+
+
+    main()
+
+The listing above works better. It has one new addition. On line 11 is a call
+to the ``strip`` method built into every ``String`` class. This function returns a new
+string without the trailing spaces and carriage returns of the original string.
+The method does not alter the original string but instead creates a new one.
+Now when we run the program the lines are not double-spaced:
+
+.. code-block:: text
+
+    Adolphus of Helborne
+    Aldric Foxe
+    Amanita Maleficant
+    Aphra the Vicious
+    Arachne the Gruesome
+    (etc...)
+
+This line of code would not work:
+
+.. code-block:: python
+
+    line.strip()
+
+Just like ``x = x + 1`` increases ``x``, but not ``x + 1``.
 
 The second problem is that the file is opened, but not closed. This problem
 isn't as obvious as the double-spacing issue, but it is important. The Windows
@@ -101,7 +161,7 @@ it is a bad habit to program like that, let's update the code:
 .. code-block:: python
     :linenos:
     :caption: Read in a file
-    :emphasize-lines: 11, 14
+    :emphasize-lines: 14
 
     def main():
         """ Read in lines from a file """
@@ -121,22 +181,34 @@ it is a bad habit to program like that, let's update the code:
 
     main()
 
-The listing above works better. It has two new additions. On line 11 is a call
-to the ``strip`` method built into every ``String`` class. This function returns a new
-string without the trailing spaces and carriage returns of the original string.
-The method does not alter the original string but instead creates a new one.
-This line of code would not work:
-
-.. code-block:: python
-
-    line.strip()
-
-If the programmer wants the original variable to reference the new string,
-she must assign it to the new returned string as shown on line 11.
-
-The second addition is on line 14. This closes the file so that the operating
+The listing above works better. Line 14 closes the file so that the operating
 system doesn't have to go around later and clean up open files after the
 program ends.
+
+However, what if there is an error reading in the file? We might not hit the ``close()``
+command. In that case, Python has a command called ``with`` that will automatically close
+the file once we leave the block of code inside ``with``:
+
+.. code-block:: python
+    :linenos:
+    :caption: Read in a file using 'with'
+    :emphasize-lines: 4-5
+
+    def main():
+        """ Read in lines from a file """
+
+        # Open file, and automatically close when we exit this block.
+        with open("super_villains.txt") as my_file:
+
+            # Loop through each line in the file like a list
+            for line in my_file:
+                line = line.strip()
+                print(line)
+
+
+    main()
+
+This is considered the safer, and more "modern" way of reading in files.
 
 .. _reading_into_an_array:
 
