@@ -11,8 +11,6 @@ SCREEN_HEIGHT = 600
 
 MOVEMENT_SPEED = 5
 
-VIEWPORT_MARGIN = 150
-
 
 class MyGame(arcade.Window):
     """ This class represents the main window of the game. """
@@ -32,18 +30,15 @@ class MyGame(arcade.Window):
         # This variable holds our simple "physics engine"
         self.physics_engine = None
 
-        # Manage the view port
-        self.view_left = 0
-        self.view_bottom = 0
+        # Create the cameras. One for the GUI, one for the sprites.
+        # We scroll the 'sprite world' but not the GUI.
+        self.camera_for_sprites = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+        self.camera_for_gui = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
 
     def setup(self):
 
         # Set the background color
         arcade.set_background_color(arcade.color.AMAZON)
-
-        # Reset the view port
-        self.view_left = 0
-        self.view_bottom = 0
 
         # Sprite lists
         self.player_list = arcade.SpriteList()
@@ -98,58 +93,40 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         arcade.start_render()
+
+        # Select the scrolled camera for our sprites
+        self.camera_for_sprites.use()
+
+        # Draw the sprites
         self.wall_list.draw()
         self.player_list.draw()
 
-    def update(self, delta_time):
+        # Select the (unscrolled) camera for our GUI
+        self.camera_for_gui.use()
+        arcade.draw_text(f"Score: {self.score}", 10, 10, arcade.color.WHITE, 24)
+
+    def on_update(self, delta_time):
+        """ Movement and game logic """
+
+        # Call update on all sprites (The sprites don't do much in this
+        # example though.)
         self.physics_engine.update()
 
-        # --- Manage Scrolling ---
+        # Scroll the screen to the player
+        self.scroll_to_player()
 
-        # Keep track of if we changed the boundary. We don't want to call the
-        # set_viewport command if we didn't change the view port.
-        changed = False
-
-        # Scroll left
-        left_boundary = self.view_left + VIEWPORT_MARGIN
-        if self.player_sprite.left < left_boundary:
-            self.view_left -= left_boundary - self.player_sprite.left
-            changed = True
-
-        # Scroll right
-        right_boundary = self.view_left + SCREEN_WIDTH - VIEWPORT_MARGIN
-        if self.player_sprite.right > right_boundary:
-            self.view_left += self.player_sprite.right - right_boundary
-            changed = True
-
-        # Scroll up
-        top_boundary = self.view_bottom + SCREEN_HEIGHT - VIEWPORT_MARGIN
-        if self.player_sprite.top > top_boundary:
-            self.view_bottom += self.player_sprite.top - top_boundary
-            changed = True
-
-        # Scroll down
-        bottom_boundary = self.view_bottom + VIEWPORT_MARGIN
-        if self.player_sprite.bottom < bottom_boundary:
-            self.view_bottom -= bottom_boundary - self.player_sprite.bottom
-            changed = True
-
-        # Make sure our boundaries are integer values. While the view port does
-        # support floating point numbers, for this application we want every pixel
-        # in the view port to map directly onto a pixel on the screen. We don't want
-        # any rounding errors.
-        self.view_left = int(self.view_left)
-        self.view_bottom = int(self.view_bottom)
-
-        # If we changed the boundary values, update the view port to match
-        if changed:
-            arcade.set_viewport(self.view_left,
-                                SCREEN_WIDTH + self.view_left - 1,
-                                self.view_bottom,
-                                SCREEN_HEIGHT + self.view_bottom - 1)
+        # Scroll the window to the player.
+        #
+        # If CAMERA_SPEED is 1, the camera will immediately move to the desired position.
+        # Anything between 0 and 1 will have the camera move to the location with a smoother
+        # pan.
+        CAMERA_SPEED = 1
+        lower_left_corner = (self.player_sprite.center_x - self.width / 2,
+                             self.player_sprite.center_y - self.height / 2)
+        self.camera_for_sprites.move_to(lower_left_corner, CAMERA_SPEED)
 
     def on_key_press(self, key, modifiers):
-        """ Called whenever a key is pressed. """
+        """Called whenever a key is pressed. """
 
         if key == arcade.key.UP:
             self.player_sprite.change_y = MOVEMENT_SPEED

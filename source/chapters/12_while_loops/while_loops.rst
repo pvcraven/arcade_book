@@ -288,9 +288,3 @@ Review Questions
     while i < 10:
         print(i)
 
-On-line Review Problems
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Practice on-line by completing the ``while`` loop problems starting with ``04`` available here:
-
-https://repl.it/community/classrooms/174286

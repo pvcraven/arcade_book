@@ -61,10 +61,16 @@ Lab 8: Sprites
   own. Try a sine-waves!
 * Move the bad sprites. Move them differently than the good ones.
 * If the length of the good sprite list is zero, then don't move any of the
-  sprites or the character. "Freeze" the game. To do this, note what line of
-  the ``update`` method in the main window class causes the sprites to move.
-  Then only run that line if you have sprites. (Check the length of the sprite
-  list.) If you get that to work, the do something similar ``on_mouse_motion``.
+  sprites or the character. "Freeze" the game.
+
+  * Fine where in the the ``update`` method in the main window class causes the sprites to move.
+  * Only run that line if you have good sprites. (Check the length of the sprite
+    list. The logic is kind of opposite you you think. Instead of freezing at zero, you are
+    not moving things if the length is bigger than zero.)
+  * Remember, the ``len`` gets the length of the list. Compare the length of the list to 0, not
+    the list itself.
+  * If you get that to work, the do something similar ``on_mouse_motion``.
+
 * If the length of the good sprite list is zero, draw "Game Over" on the screen.
 * Add, commit, and push via ``git``.
 * Turn in a URL to your project.

@@ -877,7 +877,6 @@ Review Questions
 
 #. In Python, a library of code is called what?
 #. What do we call a line of code in Python which includes the function name, parentheses,
-#. What do we call a line of code in Python which includes the function name, parentheses,
    numbers, text and everything else required perform an operation?
 #. When we call a function that is inside a library,  what character do we use
    to separate the library name and the function name?

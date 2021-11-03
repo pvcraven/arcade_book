@@ -12,8 +12,8 @@ Adding sound to your game isn't too hard. There are two steps:
 1. Load the sound
 2. Play the sound
 
-For these examples, I'm using a sound file called ``laser.ogg`` that you can
-`download here <../../_static/laser.ogg>`_. Make sure you save the file in
+For these examples, I'm using a sound file called ``laser.wav`` that you can
+`download here <../../_static/laser.wav>`_. Make sure you save the file in
 the same directory as any Python program that tries to use it.
 
 Loading Sounds
@@ -28,9 +28,9 @@ Arcade`s :func:`arcade.load_sound` function. It passes the filename of our sound
 
 .. code-block:: python
 
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
 
-For this to work, you need to have a sound downloaded and named ``laser.ogg``
+For this to work, you need to have a sound downloaded and named ``laser.wav``
 in the same directory as your Python file. The computer will not find the
 sound if it is in a different directory.
 
@@ -58,7 +58,7 @@ Putting the two together, you might think we could do this to play sounds:
 
     import arcade
 
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
     arcade.play_sound(laser_sound)
 
 But that doesn't work. The program ends before the sound has a chance to play.
@@ -72,7 +72,7 @@ a window, and we can solve it the same way:
     import arcade
 
     arcade.open_window(300, 300, "Sound Demo")
-    laser_sound = arcade.load_sound("laser.ogg")
+    laser_sound = arcade.load_sound("laser.wav")
     arcade.play_sound(laser_sound)
     arcade.run()
 
@@ -103,7 +103,7 @@ is when we trigger the sound to play.
             super().__init__(width, height, "Trigger Sound With Key")
 
             # Load the sound when the application starts
-            self.laser_sound = arcade.load_sound("laser.ogg")
+            self.laser_sound = arcade.load_sound("laser.wav")
 
         def on_key_press(self, key, modifiers):
 
@@ -118,8 +118,39 @@ is when we trigger the sound to play.
 
     main()
 
+Seeing If a Sound is Playing
+----------------------------
+
+Sometimes we want to know if a sound is playing. For example, if the user is bumping the edge of the screen,
+we may want to play the bump sound once, and not 60 times per second. Because that sounds weird.
+
+This complicates our code just a little bit. Not only do we need an attribute for the sound file, we need an
+attribute for the sound *player*. We'll use this to check if the sound is playing or not.
+
+The pattern for this code looks like the following. In the ``__init__`` where we load the sound, also
+create a sound player attribute:
+
+.. code-block:: python
+
+        self.explosion_sound = arcade.load_sound(":resources:sounds/explosion2.wav")
+        self.explosion_sound_player = None
+
+Then, when we play the sound, check to see if the sound is playing. If there is no player, or the
+``playing`` boolean is false, we'll play the sound. We'll also capture the sound player that is
+returned by the function.
+
+.. code-block::
+
+    if not self.explosion_sound_player or not self.explosion_sound_player.playing:
+        self.explosion_sound_player = arcade.play_sound(self.explosion_sound)
+
 Finding Sounds
 --------------
+
+There are a few sounds built into Arcade. You can load ``:resources:sounds/explosion2.wav`` or
+one of the other sounds found near the bottom of the resources page:
+
+https://api.arcade.academy/en/latest/resources.html
 
 Great places to find free sounds to use in your program:
 

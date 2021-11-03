@@ -9,14 +9,16 @@ Lab 6: Text Adventure
 Description of the Adventure Game
 ---------------------------------
 One of the first games I ever played was a text adventure called
-`Colossal Cave Adventure`_. You can play the game on-line here_ to get an idea
+`Colossal Cave Adventure`_. You can play the game on-line
+`here (1) <http://rickadams.org/adventure/advent/>`_,
+`here (2) <https://grack.com/demos/adventure/>`_ or
+`here (3) <http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure>`_ to get an idea
 what text adventure games are like. Seriously, give it a try. Otherwise it will
 be hard to understand what we are trying to do here.
 
 Arguably the most famous of this genre of game is the Zork_ series.
 
 .. _Colossal Cave Adventure: https://en.wikipedia.org/wiki/Colossal_Cave_Adventure
-.. _here: http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure
 .. _Zork: https://en.wikipedia.org/wiki/Zork
 
 The first "large" program I created myself was a text adventure. It is easy to
@@ -64,7 +66,8 @@ Sample Run
     A hallway is to the east.
     What direction?
 
-This game assumes you know the material up through :ref:`intro-to-lists`.
+This game assumes you know the material up through :ref:`intro-to-lists` and
+:ref:`classes_chapter`.
 
 Creating Your Dungeon
 ---------------------
@@ -90,13 +93,17 @@ students that I find on-line. I run a program that scans for duplicates.
 Make sure your work is your own.
 
 #.  Define a class called ``Room`` as shown in :ref:`define-class`.
-#.  Define an ``__init__`` method as shown in :ref:`define-init-method`.
+#.  Define an ``__init__`` (also known as the constructor) method as shown in
+    :ref:`define-init-method`.
 #.  Define class attributes for ``description``, ``north``, ``east``, ``south``,
     and ``west`` as shown in :ref:`define-init-method`. Default ``description``
     to an empty string, all others to ``0``.
-#.  Customize the ``__init__`` method (also known as the constructor) to take
+#.  Update the ``__init__`` method to take
     in data for all five attributes when the ``Room`` is created.
-    Refer back to :ref:`address-class-example-with-init` for an example.
+    So instead of defaulting to zero, now set  the elements to the parameters
+    passed in.
+    Refer back to :ref:`address-class-example-with-init` for an example
+    of what we are looking for.
 #.  Create a ``main`` function and call the ``main`` function as shown in
     :ref:`create-main-function`. Make sure your ``main`` function is **not**
     inside the ``Room`` class.
@@ -180,9 +187,6 @@ Make sure your work is your own.
     running the program will know what direction to go. Don't say "You are in the
     kitchen." Instead say "You are in the kitchen. There is a door to the north."
 #.  Add a quit command that ends the game.
-#.  Make sure that the program works for upper and lower case commands.
-#.  Have the program work if the user types in "north" or "n". Review
-    :ref:`multi-text-comparisons` if needed.
 
 Spend a little time to make this game interesting. Don't simply create an
 "East room" and a "West room." That's boring.
@@ -191,7 +195,7 @@ Also spend a little time to double check spelling and grammar. Without a word
 processor checking your writing, it is important to be careful. Pay particular note to:
 
 * In the past I've had people capitalize words in this lab that should not be
-  capitalized. Incorrect capitalization of direcetions are common.
+  capitalized. Incorrect capitalization of directions are common.
   See `when do you capitalize directions`_.
 * Do not capitalize room names unless the room name is part of a title. Don't
   say "You are in the Living Room," because
