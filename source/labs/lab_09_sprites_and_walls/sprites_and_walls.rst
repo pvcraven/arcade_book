@@ -63,6 +63,9 @@ Additional Challenges
 These aren't required for the lab, but I've had students ask in prior
 years how to do these:
 
+* This is a *great* project to use the
+  `Move Better <https://api.arcade.academy/en/latest/examples/sprite_move_keyboard_better.html>`_ example, as
+  you'll find player movement is a lot more predictable.
 * If you are interested in having the player be able to face left or right,
   see the
   `Sprite Face Left or Right <https://api.arcade.academy/en/latest/examples/sprite_face_left_or_right.html>`_
