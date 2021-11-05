@@ -21,8 +21,8 @@ and position multiple items.
   allow the user to go off-screen. This is worth 6 points, based on how complex the
   arrangement. See :ref:`individual_wall_placement`, :ref:`loop_wall_placement`,
   and :ref:`list_wall_placement` for ideas. Just DON'T do the same thing as
-  examples. Make it your own.
-
+  examples. Make it your own. Specifically, do NOT just copy the random wall-gap
+  algorithm in the scrolling screen example.
 * Step 4: Update the graphics. Use multiple types of blocks for the walls.
   (See note below.)
   Change the character. This is worth 4 points, one point for each graphic used
