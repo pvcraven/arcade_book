@@ -40,9 +40,8 @@ In your setup, you can load a map like this:
         arcade.set_background_color(self.tile_map.background_color)
 
     # Keep player from running through the wall_list layer
-    walls = [self.wall_list, ]
     self.physics_engine = arcade.PhysicsEnginePlatformer(
-        self.player_sprite, walls, gravity_constant=GRAVITY
+        self.player_sprite, self.wall_list, gravity_constant=GRAVITY
     )
 
     # Set the background color
