@@ -62,3 +62,14 @@ Then
             self.player_sprite.change_x = -PLAYER_MOVEMENT_SPEED
         elif key == arcade.key.RIGHT:
             self.player_sprite.change_x = PLAYER_MOVEMENT_SPEED
+
+
+.. literalinclude:: main.py
+    :caption: main.py
+    :language: python
+    :linenos:
+
+.. literalinclude:: main_better.py
+    :caption: main_better.py
+    :language: python
+    :linenos:
