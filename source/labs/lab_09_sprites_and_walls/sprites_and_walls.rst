@@ -21,8 +21,8 @@ and position multiple items.
   allow the user to go off-screen. This is worth 6 points, based on how complex the
   arrangement. See :ref:`individual_wall_placement`, :ref:`loop_wall_placement`,
   and :ref:`list_wall_placement` for ideas. Just DON'T do the same thing as
-  examples. Make it your own.
-
+  examples. Make it your own. Specifically, do NOT just copy the random wall-gap
+  algorithm in the scrolling screen example.
 * Step 4: Update the graphics. Use multiple types of blocks for the walls.
   (See note below.)
   Change the character. This is worth 4 points, one point for each graphic used
@@ -63,6 +63,9 @@ Additional Challenges
 These aren't required for the lab, but I've had students ask in prior
 years how to do these:
 
+* This is a *great* project to use the
+  `Move Better <https://api.arcade.academy/en/latest/examples/sprite_move_keyboard_better.html>`_ example, as
+  you'll find player movement is a lot more predictable.
 * If you are interested in having the player be able to face left or right,
   see the
   `Sprite Face Left or Right <https://api.arcade.academy/en/latest/examples/sprite_face_left_or_right.html>`_
