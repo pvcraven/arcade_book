@@ -4,35 +4,91 @@ Platformers
 ===========
 
 In :ref:`sprites-and-walls` we learned how to keep sprites from moving through walls. How can we expand on that
-to create a side-scrolling platformer game? We'd need an easier way to position our tiles, a way to add in gravity,
-and a way to jump.
+to create a side-scrolling platformer game? This chapter has three goals to aid in that:
 
-For full tutorials on how to do this, see:
-
-* See the `Simple Platformer Tutorial <https://api.arcade.academy/en/latest/examples/platform_tutorial/index.html>`_.
-* For more advanced usage, see `Platformer with Physics <https://api.arcade.academy/en/latest/tutorials/pymunk_platformer/index.html>`_.
+* Get an easier way to position our tiles and create a level
+* Add in gravity
+* Find a way to jump
 
 Using the Tiled Map Editor
 --------------------------
 
-Download/install tiled from here:
+We learned how to lay out sprite walls via code, but wouldn't it be better to do that visually?
+There's a great editor called Tiled. Arcade can load in files that Tiled saves and easily make
+a ``SpriteList`` out of them.
+
+To get started, download and install Tiled from here:
 https://www.mapeditor.org/
 
-Create a new map:
+Next, start up the program and create a new map. From the menu File...New...New Map.
 
 .. image:: new_map.png
+   :width: 50%
 
-Use your own same-sized tiles, or download from resources tab on class website.
-I highly recommend the resource packs from Kenney.nl. Most of his resources are 128x128 pixels.
+When you create your map, make sure that you set the tile size to be the same as the size of your tiles.
+All your tiles need to be teh same size.
+Use your own same-sized tiles.
+I highly recommend the Game Asset packs from
+`Kenney.nl <https://kenney.nl/assets?q=2d>`_. Those tile resources are 128x128 pixels.
+
+To get started, create a small map. You can always make it bigger after you get things working.
 
 Make sure tileset and map are stored in JSON format. Currently the Tiled program defaults to the .tmx
 format both for the map and the tileset.
 
 .. image:: save_as_map.png
+   :width: 75%
 
-Before you can do anything with your map, you'll ned a set of tiles to put them down.
+So great! We've got a map now. But we can't really draw on the map.
+Before you can start drawing anything with your map, you'll need a **tile set**.
+This is a set of tiles that you can 'paint' onto your map.
 
-.. image:: noew_tileset.png
+It is a little hidden, but there are a couple buttons in the lower right
+that will create a new tileset.
+
+.. image:: new_tileset.png
+   :width: 75%
+
+Once you've selected that, you can either have a tileset made out of one
+image that has all the tiles, or a collection of individual images. I usually
+manage the sprites as individual files.
+
+You can embed the tileset into your map file, or keep it as a separate file.
+Keeping it as a separate file will allow you to reuse the tileset across multiple maps.
+
+.. image:: new_tileset2.png
+   :width: 50%
+
+When you save the tileset, make sure you save it in JSON format:
+
+.. image:: new_tileset3.png
+   :width: 75%
+
+You should have two tabs now. One for your map, one for your tileset.
+Now we need to add our individual tile images to our tileset. Click the plus button:
+
+.. image:: add_tiles.png
+   :width: 75%
+
+You can select all the images in a folder by clicking Ctrl-A for "All". Then you'll have
+those tiles in the tileset:
+
+.. image:: add_tiles_2.png
+   :width: 75%
+
+Next, draw out your map. Also, change the name of your layer from "Layer 1" to something like "Walls".
+(That's what we'll use in our code examples.)
+
+.. image:: draw_map.png
+   :width: 75%
+
+You should also select a background color for your map:
+
+.. image:: background_color.png
+   :width: 50%
+
+
+Once you've planned out a quick sample map, let's try to load it.
 
 Loading the Tiled Map
 ---------------------
@@ -79,9 +135,19 @@ Then
         elif key == arcade.key.LEFT:
             self.player_sprite.change_x = -PLAYER_MOVEMENT_SPEED
         elif key == arcade.key.RIGHT:
-            self.player_sprite.change_x = PLAYER_MOVEMENT_SPEED
+            self.player_sprite.
+            change_x = PLAYER_MOVEMENT_SPEED
+
+A full listing:
 
 .. literalinclude:: main_better.py
     :caption: platformer_example.py
     :language: python
     :linenos:
+
+Additional Information
+----------------------
+
+* See the `Simple Platformer Tutorial <https://api.arcade.academy/en/latest/examples/platform_tutorial/index.html>`_.
+* For more advanced usage, see `Platformer with Physics <https://api.arcade.academy/en/latest/tutorials/pymunk_platformer/index.html>`_.
+

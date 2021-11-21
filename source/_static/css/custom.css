@@ -1,3 +1,19 @@
+ul.simple li {
+    list-style: disc;
+    line-height: 30px;
+    margin-left: 24px;
+}
+
+ul {
+    margin-bottom: 30px;
+}
+
+li p {
+    margin-bottom: 0;
+}
+
+
+
 p, li {
     font-size: 18px;
     line-height: 33px;
