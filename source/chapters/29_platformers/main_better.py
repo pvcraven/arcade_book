@@ -1,4 +1,3 @@
-import random
 import arcade
 
 SPRITE_SCALING = 0.5
@@ -26,9 +25,7 @@ class MyGame(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width, height, title):
-        """
-        Initializer
-        """
+        """ Initializer """
         super().__init__(width, height, title, resizable=True)
 
         # Sprite lists
@@ -44,8 +41,6 @@ class MyGame(arcade.Window):
         # Track the current state of what key is pressed
         self.left_pressed = False
         self.right_pressed = False
-        self.up_pressed = False
-        self.down_pressed = False
 
         # Store our tile map
         self.tile_map = None
@@ -84,8 +79,6 @@ class MyGame(arcade.Window):
         # Set the background color
         if self.tile_map.background_color:
             arcade.set_background_color(self.tile_map.background_color)
-        else:
-            arcade.set_background_color(arcade.color.AMAZON)
 
         # Keep player from running through the wall_list layer
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -95,9 +88,7 @@ class MyGame(arcade.Window):
         )
 
     def on_draw(self):
-        """
-        Render the screen.
-        """
+        """ Render the screen. """
 
         # This command has to happen before we start drawing
         arcade.start_render()
@@ -137,11 +128,7 @@ class MyGame(arcade.Window):
     def on_key_release(self, key, modifiers):
         """Called when the user releases a key. """
 
-        if key == arcade.key.UP:
-            self.up_pressed = False
-        elif key == arcade.key.DOWN:
-            self.down_pressed = False
-        elif key == arcade.key.LEFT:
+        if key == arcade.key.LEFT:
             self.left_pressed = False
         elif key == arcade.key.RIGHT:
             self.right_pressed = False
@@ -170,8 +157,8 @@ class MyGame(arcade.Window):
         Scroll the window to the player.
 
         if CAMERA_SPEED is 1, the camera will immediately move to the desired position.
-        Anything between 0 and 1 will have the camera move to the location with a smoother
-        pan.
+        Anything between 0 and 1 will have the camera move to the location with a
+        smoother pan.
         """
 
         position = self.player_sprite.center_x - self.width / 2, \

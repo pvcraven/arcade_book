@@ -12,8 +12,6 @@ li p {
     margin-bottom: 0;
 }
 
-
-
 p, li {
     font-size: 18px;
     line-height: 33px;
@@ -79,7 +77,6 @@ code, .rst-content tt, .rst-content code {
     overflow: auto;
     color: #404040;
 }
-
 
 .headerlink {
     visibility: hidden;
@@ -158,6 +155,27 @@ code, .rst-content tt, .rst-content code {
 }
 
 .rst-content .section a > img.video-image-h2 {
+    width: 50px;
+    position: absolute;
+    margin-left: 698px;
+    margin-top: -67px;
+}
+
+section > a > img.right-image {
+   float: right;
+   margin-left: 8px;
+   margin-bottom: 4px;
+   margin-top: 10px;
+}
+
+.rst-content section a > img.video-image-h1 {
+    width: 50px;
+    position: absolute;
+    margin-left: 698px;
+    margin-top: -74px;
+}
+
+.rst-content section a > img.video-image-h2 {
     width: 50px;
     position: absolute;
     margin-left: 698px;

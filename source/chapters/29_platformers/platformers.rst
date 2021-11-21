@@ -3,6 +3,10 @@
 Platformers
 ===========
 
+.. image:: platformer.png
+    :width: 35%
+    :class: right-image
+
 In :ref:`sprites-and-walls` we learned how to keep sprites from moving through walls. How can we expand on that
 to create a side-scrolling platformer game? This chapter has three goals to aid in that:
 
@@ -99,6 +103,7 @@ https://api.arcade.academy/en/latest/examples/sprite_move_scrolling.html
 Remove the code in ``setup`` that places the blocks, and replace it with code to load our map:
 
 .. code-block:: python
+    :caption: Loading tile map in the setup function
 
     # Set this to the name of your map.
     # Make sure it is saved in the same directory as your program.
@@ -120,7 +125,7 @@ Remove the code in ``setup`` that places the blocks, and replace it with code to
         self.player_sprite, self.wall_list, gravity_constant=GRAVITY
     )
 
-Then
+Then, adjust your on_key_press to support jumping:
 
 .. code-block:: python
 
