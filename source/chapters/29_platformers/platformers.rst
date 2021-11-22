@@ -1,3 +1,5 @@
+.. include:: <isonum.txt>
+
 .. _platformers:
 
 Platformers
@@ -24,38 +26,42 @@ a ``SpriteList`` out of them.
 To get started, download and install Tiled from here:
 https://www.mapeditor.org/
 
-Next, start up the program and create a new map. From the menu File...New...New Map.
+Next, start up the program and create a new map. From the menu bar select File |rarr| New |rarr| New Map
+and then you should get this window:
 
 .. image:: new_map.png
    :width: 50%
 
 When you create your map, make sure that you set the tile size to be the same as the size of your tiles.
-All your tiles need to be teh same size.
-Use your own same-sized tiles.
+All your tiles need to be the same size.
+You can use your own same-sized tiles, or find some on the web.
 I highly recommend the Game Asset packs from
 `Kenney.nl <https://kenney.nl/assets?q=2d>`_. Those tile resources are 128x128 pixels.
 
-To get started, create a small map. You can always make it bigger after you get things working.
+To get started, create a small map.
+I suggest 15 wide, by 10 high.
+You can always make it bigger after you get things working.
 
-Make sure tileset and map are stored in JSON format. Currently the Tiled program defaults to the .tmx
+Make sure tileset and map are stored in JSON format. Currently the Tiled program defaults to the TMX
 format both for the map and the tileset.
 
 .. image:: save_as_map.png
    :width: 75%
 
 So great! We've got a map now. But we can't really draw on the map.
-Before you can start drawing anything with your map, you'll need a **tile set**.
-This is a set of tiles that you can 'paint' onto your map.
+Before you can start drawing anything with your map, you'll need a **tileset**.
+A tileset is a collection of tiles that you can use to 'paint' onto your map.
 
 It is a little hidden, but there are a couple buttons in the lower right
-that will create a new tileset.
+that will create a new tileset. Either one works, but the big button only
+shows up when you don't already have a tileset loaded.
 
 .. image:: new_tileset.png
    :width: 75%
 
-Once you've selected that, you can either have a tileset made out of one
+Once you've clicked to create a tileset, you can either have a tileset made out of one
 image that has all the tiles, or a collection of individual images. I usually
-manage the sprites as individual files.
+manage the sprites as a collection of individual files.
 
 You can embed the tileset into your map file, or keep it as a separate file.
 Keeping it as a separate file will allow you to reuse the tileset across multiple maps.
@@ -92,15 +98,21 @@ You should also select a background color for your map:
    :width: 50%
 
 
-Once you've planned out a quick sample map, let's try to load it.
+Once you've planned out a quick sample map,
+make sure you save both the map and the tileset. If there is an asterisk (*)
+in the tab at the top, the file is *not* saved.
+
+Now, let's try to load it.
 
 Loading the Tiled Map
 ---------------------
 
-To get your map up and working, start with this code:
+To get your map up and working, start with this code that supports
+moving around a scrolling window:
 https://api.arcade.academy/en/latest/examples/sprite_move_scrolling.html
 
-Remove the code in ``setup`` that places the blocks, and replace it with code to load our map:
+Remove the code in ``setup`` that places the blocks, and replace it with
+this code to load our map instead:
 
 .. code-block:: python
     :caption: Loading tile map in the setup function
@@ -120,12 +132,25 @@ Remove the code in ``setup`` that places the blocks, and replace it with code to
     if self.tile_map.background_color:
         arcade.set_background_color(self.tile_map.background_color)
 
+Right after that code (still in ``setup``), we need our physics engine.
+If we want a side-scroller with gravity instead of a top-down
+view, we replace ``SimplePhysicsEngine`` with ``PhysicsEnginePlatformer``. Then we also add
+in a ``GRAVITY`` constant. Try setting it to 0.5 to start.
+
+.. code-block:: python
+    :caption: Platformer physics engine
+
     # Keep player from running through the wall_list layer
     self.physics_engine = arcade.PhysicsEnginePlatformer(
         self.player_sprite, self.wall_list, gravity_constant=GRAVITY
     )
 
-Then, adjust your on_key_press to support jumping:
+Then, adjust your ``on_key_press`` method to support jumping.
+The ``PhysicsEnginePlatformer`` has a built-in method called ``can_jump``
+that looks to see if the player has a solid block right below her. If she does,
+then the function returns true. This keeps the player from being able to jump
+in the air. Set the ``JUMP_SPEED`` constant to 10 to start with, and adjust until
+you get it where you like.
 
 .. code-block:: python
 
