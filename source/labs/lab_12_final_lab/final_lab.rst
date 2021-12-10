@@ -170,30 +170,10 @@ Not interested in a video game? Continue your work from the "Adventure!" game.
 Requirements for Part 1
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Rather than have each room be a list of ``[description, north, east, south, west]``
-   create a ``Room`` class.
-   The class should have a constructor that takes in
-   ``(description, north, east, south, west)`` and sets fields for the
-   description and all of the directions. Get the program working with the new
-   class. The program should be able to add rooms like:
-
-.. code-block:: python
-
-    room = Room("You are in the kitchen. There is a room to the east.", None, 1, None, None)
-    room_list.append(room)
-
-    room = Room("You are in the living room. There is a room to the west.", None, None, 0, None)
-    room_list.append(room)
-
-Later the program should be able to refer to fields in the room:
-
-.. code-block:: python
-
-    current_room = room_list[current_room].north
-
-2. Perhaps expand the game so that a person can travel up and down.
-   Also expand it so the person can travel northwest, southwest, northeast, and southeast.
-3. Add a list of items in your game.
+1. Start with code from :ref:`lab-06`. Create a more extensive set of rooms.
+   Add the ability to beyond the four directions we did before. For example,
+   be able to move up and down, or ne, nw, etc.
+2. Add a list of items in your game.
 
     1. Create a class called ``Item``.
     2. Add fields for the item's room number, a long description, and a short
@@ -202,7 +182,8 @@ Later the program should be able to refer to fields in the room:
        referring to. The description will be what is printed out. Like
        ``There is a rusty key here.``
     3. Create a list of items, much like you created your list of rooms.
-    4. If the item is in the user's room, print the item's description.
+    4. After your code to print the room description, loop through each item in
+       your item list. If the item is in the user's room, print the item's description.
     5. Test, and make sure this works.
 
 Requirements for Part 2
