@@ -184,6 +184,7 @@ Requirements for Part 1
     3. Create a list of items, much like you created your list of rooms.
     4. After your code to print the room description, loop through each item in
        your item list. If the item is in the user's room, print the item's description.
+       (This is a variation on the linear search.)
     5. Test, and make sure this works.
 
 Requirements for Part 2
