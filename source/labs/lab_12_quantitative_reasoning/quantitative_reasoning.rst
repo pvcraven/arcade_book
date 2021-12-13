@@ -34,7 +34,7 @@ points with proper sentences, grammar, and punctuation. Examples are encouraged.
 
 1. Describe how you used multiple quantitative methods, techniques and algorithms
    to add functionality to your program.
-   How did you decided what method to use?
+   How did you decide what method to use?
    For example, how did you use lists? "If" statements? Loops? Classes? Functions?
    Sample pieces of code?
    How did you decide which methods to apply? Feel free to give examples.
