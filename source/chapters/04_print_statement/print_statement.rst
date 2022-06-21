@@ -267,7 +267,7 @@ It is close enough anyone could figure out the intent.
     Python has a *style-guide* which lays out how to format your code properly.
     This style-guide is called `PEP-8`_.
 
-.. _PEP-8: https://www.python.org/dev/peps/pep-0008/
+.. _PEP-8: https://peps.python.org/pep-0008/
 
 Why fix warnings? When finding errors in code, programmers spend a lot of time
 looking for things that are out of place. If all code is formatted the same way
