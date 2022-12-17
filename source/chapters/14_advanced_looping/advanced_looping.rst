@@ -14,10 +14,6 @@ At the very least, make sure you can
 write out the answers for the first eight problems. That will give you enough
 knowledge to continue this book.
 
-You can try solving these on your computer, or on-line with
-`repl.it <https://repl.it/community/classrooms/174286>`_.
-Scroll down to the "05" set of problems.
-
 Print Statements and Line Endings
 ---------------------------------
 

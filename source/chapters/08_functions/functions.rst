@@ -957,13 +957,3 @@ Variables created inside a function cannot be accessed outside the function.
 Parameter variables contain *copies* of the original data and can be modified without
 changing the original.
 Functions can call other functions, which can call yet more functions.
-
-Online Coding Problems
-^^^^^^^^^^^^^^^^^^^^^^
-
-Practice on-line by completing the first set of coding problems available here:
-
-https://repl.it/community/classrooms/174286
-
-All problems beginning with ``02`` can be done with the knowledge from this
-chapter.
