@@ -83,7 +83,7 @@ class MyGame(arcade.Window):
 
 
 def main():
-    window = MyGame(640, 480, "Drawing Example")
+    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
 
     arcade.run()
 
