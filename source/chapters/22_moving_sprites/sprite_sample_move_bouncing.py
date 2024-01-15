@@ -21,7 +21,7 @@ class Coin(arcade.Sprite):
         self.change_x = 0
         self.change_y = 0
 
-    def update(self):
+    def on_update(self, delta_time: float = 1 / 60) -> None:
 
         # Move the coin
         self.center_x += self.change_x
@@ -112,12 +112,12 @@ class MyGame(arcade.Window):
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
-        self.coin_list.update()
+        self.coin_list.on_update(delta_time)
 
         # Generate a list of all sprites that collided with the player.
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,

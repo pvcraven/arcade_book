@@ -90,8 +90,8 @@ class MyGame(arcade.Window):
     def on_draw(self):
         """ Render the screen. """
 
-        # This command has to happen before we start drawing
-        arcade.start_render()
+        # Clear the screen to the background color
+        self.clear()
 
         # Select the camera we'll use to draw all our sprites
         self.camera_sprites.use()

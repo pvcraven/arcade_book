@@ -4,3 +4,4 @@ sphinx-intl
 sphinx-copybutton
 awscli
 arcade
+sphinx-sitemap

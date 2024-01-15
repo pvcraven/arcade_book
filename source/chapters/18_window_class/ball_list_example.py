@@ -22,7 +22,7 @@ class Ball:
         """ Draw the balls with the instance variables we have. """
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
-    def update(self):
+    def on_update(self):
         """ Code to control the ball's movement. """
 
         # Move the ball
@@ -73,13 +73,13 @@ class MyGame(arcade.Window):
         for ball in self.ball_list:
             ball.draw()
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
 
         # Use a "for" loop to pull each ball from the list, then call the update
         # method on that ball.
         for ball in self.ball_list:
-            ball.update()
+            ball.on_update()
 
 
 def main():
