@@ -389,7 +389,7 @@ The algorithm is described below. Images are from Wikipedia.
     :width: 25%
 
     Subdivide each of the four sections. Call each a chamber. Recursively call this function. In this image, the
-    top left chamber has been subdivided.
+    top right chamber has been subdivided.
 
 .. figure:: chamber-finished.svg
     :width: 25%
