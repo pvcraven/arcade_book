@@ -90,7 +90,7 @@ Learning to program is worth your time.
 What Can You Create By The End Of The Course?
 ---------------------------------------------
 
-Here are some videos of games students have created in prior semesters.
+Here are some videos of games students have created while taking a course with this textbook.
 Students who didn't know any programming were able to create these games
 by the time they finished the semester.
 
