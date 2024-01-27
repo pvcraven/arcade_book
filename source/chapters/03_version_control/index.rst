@@ -57,7 +57,8 @@ What is a Distributed Version Control System
 
 No serious development should be done without version control. In fact, version
 control is so important, many developers would argue that almost no development
-should be done without version control.
+should be done without version control. Even all my notes for class I keep in
+version control.
 
 Version control allows developers to:
 
