@@ -291,15 +291,15 @@ First, open the terminal, and switch to the directory with your project using th
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop>cd learn-arcade-work
+    C:\Users\craven\Desktop>cd learn-arcade-work
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work>
+    C:\Users\craven\Desktop\learn-arcade-work>
 
 Optionally, we can use ``git status`` to see what files have changed:
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work>git status
+    C:\Users\craven\Desktop\learn-arcade-work>git status
     On branch master
     Your branch is up to date with 'origin/master'.
 
@@ -318,13 +318,13 @@ of work and we don't want to leave anything behind anyway.
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git add -A
+    C:\Users\craven\Desktop\learn-arcade-work> git add -A
 
 Commit the changes:
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work>git commit -m "Work on lab 1"
+    C:\Users\craven\Desktop\learn-arcade-work>git commit -m "Work on lab 1"
     [master 5105a0c] Work on lab 1
      1 file changed, 1 insertion(+)
 
@@ -348,13 +348,13 @@ And push them to the server:
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work>git push
+    C:\Users\craven\Desktop\learn-arcade-work>git push
     Counting objects: 4, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (2/2), done.
     Writing objects: 100% (4/4), 329 bytes | 0 bytes/s, done.
     Total 4 (delta 1), reused 0 (delta 0)
-    To bitbucket.org:mbwolff/arcade-games-work2.git
+    To bitbucket.org:pcraven/arcade-games-work2.git
        519c361..45028a5  master -> master
 
 Look to see if the message says that there is an "error." The message will probably look a little different than what
@@ -385,10 +385,10 @@ What happens if you can't push to the server? If you get an error like what's be
 .. code-block:: text
   :emphasize-lines: 4,5
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git push
-    To bitbucket.org:mbwolff/arcade-games-work2.git
+    C:\Users\craven\Desktop\learn-arcade-work> git push
+    To bitbucket.org:pcraven/arcade-games-work2.git
      ! [rejected]        master -> master (fetch first)
-    error: failed to push some refs to 'git@bitbucket.org:mbwolff/arcade-games-work2.git'
+    error: failed to push some refs to 'git@bitbucket.org:pcraven/arcade-games-work2.git'
     hint: Updates were rejected because the remote contains work that you do
     hint: not have locally. This is usually caused by another repository pushing
     hint: to the same ref. You may want to first integrate the remote changes
@@ -441,12 +441,12 @@ If instead you get this:
 .. code-block: text
    :emphasize-lines: 9
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git pull
+    C:\Users\craven\Desktop\learn-arcade-work> git pull
     remote: Counting objects: 4, done.
     remote: Compressing objects: 100% (4/4), done.
     remote: Total 4 (delta 1), reused 0 (delta 0)
     Unpacking objects: 100% (4/4), done.
-    From bitbucket.org:mbwolff/arcade-games-work2
+    From bitbucket.org:pcraven/arcade-games-work2
        aeb9cf3..6a8f398  master     -> origin/master
     Auto-merging Lab 01 - First Program/lab_01.py
     CONFLICT (content): Merge conflict in Lab 01 - First Program/lab_01.py
@@ -464,7 +464,7 @@ Do a ``git status``. It should look something like this:
 .. code-block:: text
     :emphasize-lines: 13
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git status
+    C:\Users\craven\Desktop\learn-arcade-work> git status
     On branch master
     Your branch and 'origin/master' have diverged,
     and have 1 and 1 different commits each, respectively.
@@ -499,18 +499,18 @@ Then when you are all done with all merges, type:
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git add *
+    C:\Users\craven\Desktop\learn-arcade-work> git add *
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git commit -m"Merged"
+    C:\Users\craven\Desktop\learn-arcade-work> git commit -m"Merged"
     [master e083f36] Merged
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git push
+    C:\Users\craven\Desktop\learn-arcade-work> git push
     Counting objects: 5, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (5/5), done.
     Writing objects: 100% (5/5), 531 bytes | 0 bytes/s, done.
     Total 5 (delta 2), reused 0 (delta 0)
-    To bitbucket.org:mbwolff/arcade-games-work2.git
+    To bitbucket.org:pcraven/arcade-games-work2.git
        6a8f398..e083f36  master -> master
 
 
@@ -519,13 +519,13 @@ Step 4: Try Pushing Again
 
 .. code-block:: text
 
-    C:\Users\mbwolff\Desktop\learn-arcade-work> git push
+    C:\Users\craven\Desktop\learn-arcade-work> git push
     Counting objects: 6, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (4/4), done.
     Writing objects: 100% (6/6), 604 bytes | 0 bytes/s, done.
     Total 6 (delta 2), reused 0 (delta 0)
-    To bitbucket.org:mbwolff/arcade-games-work2.git
+    To bitbucket.org:pcraven/arcade-games-work2.git
        d66b008..aeb9cf3  master -> master
 
 .. _git_command_reference:
