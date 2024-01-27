@@ -43,7 +43,7 @@ Turn In Your Work
 #. Click on your repository on the left side
 #. Find the folder with your lab
 #. Copy link
-#. Go to Scholar/Moodle for the lab
+#. Go to D2L for the lab
 #. Paste link, and turn in
 
 For more commands, see the :ref:`git_command_reference`.
@@ -372,7 +372,7 @@ Click on "source", find the lab file, copy the URL:
 .. image:: copy_url.png
    :width: 80%
 
-Now go to Scholar and paste the link into the text field for the lab you are are working on.
+Now go to D2L and paste the link into the text field for the lab you are are working on.
 
 .. _cant-push:
 
