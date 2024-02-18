@@ -33,8 +33,8 @@ Incorporate the following items:
 * Make sure you are putting your program in the Lab 3 folder, and not just
   changing Lab 2 to have Lab 3 requirements.
 * We are going to be following the instructions/example in :ref:`custom-drawing-function`.
-* Put everything into a function as shown in :ref:`make_the_main_function`. 1 pt.
-* Create three functions that draw something. (18 pts total, up to 6 pts
+* Put everything into a function as shown in :ref:`make_the_main_function`. 5 pt.
+* Create three functions that draw something. (90 pts total, up to 30 pts
   per function)
 
   * Define the function and successfully call it. (5 pt)
