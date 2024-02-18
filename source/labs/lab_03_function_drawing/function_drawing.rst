@@ -24,7 +24,7 @@ Requirements for Drawing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can update your program from Lab 2, or create a new program. This lab is worth
-20 points. See the point breakdown below.
+100 points. See the point breakdown below.
 
 Incorporate the following items:
 
@@ -37,16 +37,16 @@ Incorporate the following items:
 * Create three functions that draw something. (18 pts total, up to 6 pts
   per function)
 
-  * Define the function and successfully call it. (1 pt)
+  * Define the function and successfully call it. (5 pt)
   * Make your drawing function complex. 0 points for a one-line function that
     just draws a rectangle, 0 points for copying the example from the book,
-    2 points for a cohesive multi-line function. (2 pts)
+    10 points for a cohesive multi-line function. (10 pts)
   * Pass in ``x`` and ``y`` parameters and successfully position the object
-    as shown in :ref:`make_the_drawing_function`. (2 pts)
+    as shown in :ref:`make_the_drawing_function`. (10 pts)
   * Make sure the image you draw is centered around the x and y, and not
-    off-set. (1 pts)
+    off-set. (5 pts)
 
- * Call at least one of the functions more than once, and in a different location. (1 pt.)
+ * Call at least one of the functions more than once, and in a different location. (5 pt.)
 
 Double Check
 ^^^^^^^^^^^^
