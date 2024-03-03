@@ -27,19 +27,19 @@ the code required to make the pattern.
 Scoring
 -------
 
-There are 20 possible points:
+There are 100 possible points:
 
-* Section 1: 2 pts
-* Section 2: 2 pts
-* Section 3: 2 pts
-* Section 4: 2 pts
-* Completing any section 1-4: 1 pt
-* Section 5: 2 pts
-* Section 6: 2 pts
-* Section 7: 2 pts
-* Section 8: 2 pts
-* Completing any section 5-8: 1 pt
-* Code Style: 2 pts (Should have no yellow lines on right side of PyCharm)
+* Section 1: 10 pts
+* Section 2: 10 pts
+* Section 3: 10 pts
+* Section 4: 10 pts
+* Completing any section 1-4: 5 pt
+* Section 5: 10 pts
+* Section 6: 10 pts
+* Section 7: 10 pts
+* Section 8: 10 pts
+* Completing any section 5-8: 5 pt
+* Code Style: 10 pts (Should have no yellow lines on right side of PyCharm)
 
 Hints
 -----
@@ -49,7 +49,7 @@ Hints
   look like one big square.
 * Remember, row controls up and down, so it corresponds to y. Column corresponds
   to x.
-* When working on sections 2-8, you can simple add to the x and/or y values
+* When working on sections 2-8, you can simply add to the x and/or y values
   to shift everything over. For example, just add 300 to all the x values in
   section 2, to put it in the second box.
 * Each section is 300x300 pixels.
