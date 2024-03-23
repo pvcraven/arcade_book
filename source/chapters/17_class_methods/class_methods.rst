@@ -730,16 +730,16 @@ creates a static variable.
 
     main()
 
-In the example above, lines 16 and 17 print out the static variable. Line 17
+In the example above, lines 17 and 18 print out the static variable. Line 18
 is the "proper" way to do so. Unlike before, we can refer to the class name
 when using static variables, rather than a variable that points to a particular
-instance. Because we are working with the class name, by looking at line 17
-we instantly can tell we are working with a static variable. Line 16 could be
-either an instance or static variable. That confusion makes line 17 the better
+instance. Because we are working with the class name, by looking at line 18
+we instantly can tell we are working with a static variable. Line 17 could be
+either an instance or static variable. That confusion makes line 18 the better
 choice.
 
-Line 22 prints out the instance variable, just like we've done in prior
-examples. Line 23 will generate an error because each instance of y is
+Line 23 prints out the instance variable, just like we've done in prior
+examples. Line 24 will generate an error because each instance of y is
 different (it is an instance variable after all) and we aren't telling the
 computer what instance of ``ClassA`` we are talking about.
 
