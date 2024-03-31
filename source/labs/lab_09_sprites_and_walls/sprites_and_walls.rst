@@ -18,14 +18,14 @@ and position multiple items.
 * Step 2: If you start with the examples, delete the current wall
   placement code. You want to create your own.
 * Step 3: Create a more complex arrangement of walls. Make sure the walls don't
-  allow the user to go off-screen. This is worth 6 points, based on how complex the
+  allow the user to go off-screen. This is worth 30 points, based on how complex the
   arrangement. See :ref:`individual_wall_placement`, :ref:`loop_wall_placement`,
   and :ref:`list_wall_placement` for ideas. Just DON'T do the same thing as
   examples. Make it your own. Specifically, do NOT just copy the random wall-gap
   algorithm in the scrolling screen example.
 * Step 4: Update the graphics. Use multiple types of blocks for the walls.
   (See note below.)
-  Change the character. This is worth 4 points, one point for each graphic used
+  Change the character. This is worth 20 points, five points for each graphic used
   that wasn't
   part of the base example. Remember to put a quick citation in your program just
   before you load graphics or sounds.
@@ -36,7 +36,7 @@ and position multiple items.
   requires all walls be kept in the same list.
 
 
-* Step 5: Add coins (or something) for the user to collect. 4 points, based on
+* Step 5: Add coins (or something) for the user to collect. 20 points, based on
   the complexity of the coin layout. Remember, you can place coins like we placed
   wall blocks. If you randomly place coins, you might end up with coins on
   top of walls. See the "Important Part" around line 83 or so of
@@ -44,8 +44,8 @@ and position multiple items.
   `sprite_no_coins_on_walls.py <https://api.arcade.academy/en/latest/examples/sprite_no_coins_on_walls.html>`_
   for how to avoid this.
 * Step 6: Keep score of how many coins were collected, and display on-screen.
-  4 points.
-* Step 7: Add a sound to play each time the user collects a coin. 2 points.
+  20 points.
+* Step 7: Add a sound to play each time the user collects a coin. 10 points.
 
 .. warning::
     Don't move the player twice!

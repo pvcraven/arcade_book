@@ -9,7 +9,7 @@ Lab 8: Sprites
   is great to get started with.
 * Create a player-character sprite. Pick your own image for the
   sprite, from the web or from Kenney.nl.
-* Allow the user to move the player move by the keyboard, mouse, or game pad.
+* Allow the user to move the player by the keyboard, mouse, or game pad.
   Your choice. If you use the mouse, make sure you hide the cursor.
   The :ref:`sprites` chapter uses the mouse, you can also look at the examples on
   the Arcade website for
