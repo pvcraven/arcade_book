@@ -63,7 +63,7 @@ Lab 8: Sprites
 * If the length of the good sprite list is zero, then don't move any of the
   sprites or the character. "Freeze" the game.
 
-  * Fine where in the the ``update`` method in the main window class causes the sprites to move.
+  * Find where in the the ``update`` method in the main window class causes the sprites to move.
   * Only run that line if you have good sprites. (Check the length of the sprite
     list. The logic is kind of opposite you you think. Instead of freezing at zero, you are
     not moving things if the length is bigger than zero.)
