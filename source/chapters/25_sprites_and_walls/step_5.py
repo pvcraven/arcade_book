@@ -112,9 +112,6 @@ class MyGame(arcade.Window):
         # example though.)
         self.physics_engine.update()
 
-        # Scroll the screen to the player
-        self.scroll_to_player()
-
         # Scroll the window to the player.
         #
         # If CAMERA_SPEED is 1, the camera will immediately move to the desired position.
