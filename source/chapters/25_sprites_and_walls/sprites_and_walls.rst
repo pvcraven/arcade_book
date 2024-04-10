@@ -297,7 +297,7 @@ Both of these cameras will have a field-of-view set to the same size as the wind
     self.camera_for_sprites = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
     self.camera_for_gui = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
 
-Now we have cameras. We just need to use the cameras. In the Window's ``draw`` method,
+Now we have cameras. We just need to use the cameras. In the Window's ``on_draw`` method,
 select which camera we want to use before we draw.
 
 .. code-block:: python
@@ -330,9 +330,6 @@ Then call the camera's ``move_to`` method to scroll there.
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
         self.physics_engine.update()
-
-        # Scroll the screen to the player
-        self.scroll_to_player()
 
         # Scroll the window to the player.
         #
