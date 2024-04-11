@@ -382,8 +382,8 @@ is an item in ``my_list`` that matches the value in ``key``.
             return False
 
 
-Using the ``break`` statement, which exits a loop early, we can simplify the
-code:
+We can simplify the code by using a ``return`` statement inside an ``if``
+statement:
 
 .. code-block:: python
     :linenos:
