@@ -18,7 +18,7 @@ ask before moving on to the next step.
 Steps to complete
 -----------------
 
-1.  Open the Lab 10 - Spell Check directory for your project. There you will find
+1.  Open the ``Lab 10 - Spell Check`` directory for your project. There you will find
 
     * `AliceInWonderLand200.txt` - First chapter of "Alice In Wonderland"
     * `dictionary.txt` - A list of words
