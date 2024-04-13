@@ -20,8 +20,8 @@ Steps to complete
 
 1.  Open the Lab 10 - Spell Check directory for your project. There you will find
 
-    * `AliceInWonderLand200.txt`_ - First chapter of "Alice In Wonderland"
-    * `dictionary.txt`_ - A list of words
+    * `AliceInWonderLand200.txt` - First chapter of "Alice In Wonderland"
+    * `dictionary.txt` - A list of words
     
 2.  Start a Python file for your project.
 3.  It is necessary to split apart the words in the story so that they may be
