@@ -247,12 +247,6 @@ Some libraries we give examples of in this chapter:
 * Beautiful Soup: Grab data off websites, and create your own web bots. https://www.crummy.com/software/BeautifulSoup/
 * MatPlotLib: Plot data automatically: https://matplotlib.org/
 
-A wonderful list of Python libraries and links to installers for them is available here:
-
-You can search up some top packages/libraries and stand alone projects to get an
-idea of what you can do. There are many articles like
-`Top 15 Python Libraries for Data Science in 2017 <https://medium.com/activewizards-machine-learning-company/top-15-python-libraries-for-data-science-in-in-2017-ab61b4f9b4a7>`_.
-
 Examples: OpenPyXL Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
