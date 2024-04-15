@@ -23,7 +23,7 @@ about one week. The goals of this lab:
 * Apply the concepts we learned, such as variables, expressions,
   if statements, loops, lists, arrays, and more.
 
-This lab is worth 60 points.
+This lab is worth 100 points.
 Each week, turn in what you have for the lab so you can "lock in" your score
 and get an idea of how you are progressing. When you get more done, resubmit
 the assignment.
@@ -80,8 +80,8 @@ Using Code from Other Sources
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you find code to use that doesn't come from this website or from
-arcade.academy, cite it. Otherwise you'll be plagiarizing, and flunked from
-the class.
+arcade.academy, cite it. Otherwise you'll be plagiarizing and face
+charges of academic dishonesty.
 
 Almost every semester I catch someone doing this. Please, just don't.
 
@@ -171,7 +171,7 @@ Requirements for Part 1
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Start with code from :ref:`lab-06`. Create a more extensive set of rooms.
-   Add the ability to beyond the four directions we did before. For example,
+   Add the ability to move beyond the four directions we did before. For example,
    be able to move up and down, or ne, nw, etc.
 2. Add a list of items in your game.
 
@@ -238,5 +238,5 @@ Tips
   to the code while you are working on this assignment. Anything you commit and
   push we can recover. Don't work for more than a couple hours without doing
   this.
-* I give a lot of in-class lab time for this project. Use it. Don't leave early.
+* I will give a lot of in-class lab time for this project. Use it.
 
