@@ -750,11 +750,19 @@ than a linear search:
     :caption: Binary search
     :linenos:
 
+    from random import randint
+
     # --- Binary search
-    key = "Morgiana the Shrew"
-    lower_bound = 0
-    upper_bound = len(name_list)-1
+    biggest_possible_number = 128
+    key = randint(1, biggest_possible_number)
+    lower_bound = 1
+    upper_bound = biggest_possible_number
     found = False
+
+    print("The magic number is " + str(key) + " with an upper limit of " + str(biggest_possible_number), end="")
+    print(". How many guesses does the computer need?")
+
+    guesses = []
 
     # Loop until we find the item, or our upper/lower bounds meet
     while lower_bound <= upper_bound and not found:
@@ -766,17 +774,16 @@ than a linear search:
         # move up the lower bound, or
         # move down the upper bound, or
         # we found what we are looking for
-        if name_list[middle_pos] < key:
+        guess = randint(lower_bound, upper_bound)
+        guesses.append(guess)
+        if guess < key:
             lower_bound = middle_pos + 1
-        elif name_list[middle_pos] > key:
+        elif guess > key:
             upper_bound = middle_pos - 1
         else:
             found = True
 
-    if found:
-        print( "The name is at position", middle_pos)
-    else:
-        print( "The name was not in the list." )
+    print("The computer guessed " + str(len(guesses)) + " times.")
 
 Since lists start at element zero, line 3 sets the lower bound to zero.
 Line 4 sets the upper bound to the length of the list minus one. So for a
