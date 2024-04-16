@@ -765,7 +765,7 @@ than a linear search:
     guesses = []
 
     # Loop until we find the item, or our upper/lower bounds meet
-    while lower_bound <= upper_bound and not found:
+    while not found:
 
         # Find the middle position
         middle_pos = (lower_bound + upper_bound) // 2
@@ -785,18 +785,16 @@ than a linear search:
 
     print("The computer guessed " + str(len(guesses)) + " times.")
 
-Since lists start at element zero, line 3 sets the lower bound to zero.
-Line 4 sets the upper bound to the length of the list minus one. So for a
-list of 100 elements the lower bound will be 0 and the upper bound 99.
+Line 6 sets the lower bound to one.
+Line 7 sets the upper bound to the `biggest_possible_number`. The lower bound
+will be 1 and the upper bound 128.
 
-The Boolean variable on line 5 will be used to let the while loop know that the
-element has been found.
+The Boolean variable on line 8 will be used to let the while loop know that the
+magic number has been found.
 
-Line 8 checks to see if the element has been found or if we've run out of
-elements. If we've run out of elements the lower bound will end up equaling
-the upper bound.
+Line 16 checks to see if the number has been found.
 
-Line 11 finds the middle position. It is possible to get a middle position
+Line 19 finds the middle position. It is possible to get a middle position
 of something like 64.5. It isn't possible to look up position 64.5.
 (Although J.K. Rowling was rather clever in enough coming up with Platform
 :math:`9\frac{3}{4}`, that doesn't work here.) The best way of handling
@@ -804,13 +802,13 @@ this is to use the ``//`` operator first introduced way back in Chapter 1.
 This is similar to the ``/`` operator, but will only return integer results.
 For example, ``11 // 2`` would give 5 as an answer, rather than 5.5.
 
-Starting at line 17, the program checks to see if the guess is high, low, or
+Starting at line 25, the program checks to see if the guess is high, low, or
 correct. If the guess is low, the lower bound is moved up to just past the
 guess. If the guess is too high, the upper bound is moved just below
 the guess. If the answer has been found, ``found`` is set to ``True``
 ending the search.
 
-With the a list of 100 elements, a person can reasonably guess that on
+With a number between 1 and 100, a person can reasonably guess that on
 average with the linear search, a program will have to check 50 of them
 before finding the element. With the binary search, on average you'll
 still need to do about seven guesses. In an advanced algorithms course
