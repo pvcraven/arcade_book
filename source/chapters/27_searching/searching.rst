@@ -764,7 +764,7 @@ than a linear search:
 
     guesses = []
 
-    # Loop until we find the item, or our upper/lower bounds meet
+    # Loop until we find the number
     while not found:
 
         # Find the middle position
