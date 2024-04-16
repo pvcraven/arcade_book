@@ -754,8 +754,8 @@ than a linear search:
 
     # --- Binary search
     biggest_possible_number = 128
-    lower_bound = 1
     magic_number = randint(1, biggest_possible_number)
+    lower_bound = 1
     upper_bound = biggest_possible_number
     found = False
 
@@ -766,7 +766,7 @@ than a linear search:
     guess = None
 
     # Loop until we find the number, or our upper/lower bounds meet
-    while lower_bound <= upper_bound and not found:
+    while lower_bound < upper_bound and not found:
         # Guess the middle position
         guess = lower_bound + (upper_bound - lower_bound) // 2
         guesses.append(guess)
