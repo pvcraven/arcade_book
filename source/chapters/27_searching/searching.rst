@@ -786,8 +786,8 @@ than a linear search:
     print("The computer guessed " + str(len(guesses)) + " times.")
 
 Line 6 sets the lower bound to one.
-Line 7 sets the upper bound to the ``biggest_possible_number``. The lower bound
-will be 1 and the upper bound 128.
+Line 7 sets the upper bound to the ``biggest_possible_number`` (in this case,
+128).
 
 The Boolean variable on line 8 will be used to let the while loop know that the
 magic number has been found.
