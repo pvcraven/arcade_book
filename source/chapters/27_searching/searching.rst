@@ -768,7 +768,7 @@ than a linear search:
     # Loop until we find the number, or our upper/lower bounds meet
     while lower_bound < upper_bound and not found:
         # Guess the middle position
-        guess = lower_bound + 1 + (upper_bound - 1 - (lower_bound + 1)) // 2
+        guess = lower_bound + 1 + ((upper_bound - 1) - (lower_bound + 1)) // 2
         guesses.append(guess)
         print(f"U: {upper_bound}, L: {lower_bound}, G: {guess}")
         # Figure out if we:
