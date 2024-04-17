@@ -770,7 +770,7 @@ than a linear search:
         # Guess the middle position
         guess = (lower_bound + 1) + ((upper_bound - 1) - (lower_bound + 1)) // 2
         guesses.append(guess)
-        print(f"U: {upper_bound - 1}, L: {lower_bound + 1}, G: {guess}")
+        print(f"U: {upper_bound}, L: {lower_bound}, G: {guess}")
         # Figure out if we:
         # move up the lower bound, or
         # move down the upper bound, or
