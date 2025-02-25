@@ -122,7 +122,7 @@ Drawing the Grid
    so it works with whatever we select in the constants created by step 1.
 3. Change the background to black. Draw a white box in the lower-left corner. Draw the box drawn using the
    height and width variables created earlier. (Feel free to adjust the colors.)
-   Use the `draw_rectangle_filled`_ function. You will need to center the
+   Use the `draw_rect_filled`_ function. You will need to center the
    rectangle not at (0, 0) but at a coordinate that takes into account the
    height and width of the rectangle, such as :math:`\frac{width}{2}`.
    When you get done your program's window should look like:
@@ -263,4 +263,4 @@ Resulting Program
 
 
 
-.. _draw_rectangle_filled: http://pythonhosted.org/arcade/arcade.html#arcade.draw_commands.draw_rectangle_filled
+.. _draw_rect_filled: http://pythonhosted.org/arcade/arcade.html#arcade.draw_commands.draw_rect_filled

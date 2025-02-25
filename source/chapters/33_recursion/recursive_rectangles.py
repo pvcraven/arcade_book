@@ -29,7 +29,7 @@ class MyWindow(arcade.Window):
 
     def on_draw(self):
         """ Render the screen. """
-        arcade.start_render()
+        self.clear()
 
         # Find the center of our screen
         center_x = SCREEN_WIDTH / 2

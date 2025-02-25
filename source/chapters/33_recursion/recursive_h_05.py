@@ -47,7 +47,7 @@ class MyWindow(arcade.Window):
 
     def on_draw(self):
         """ Render the screen. """
-        arcade.start_render()
+        self.clear()
 
         # Start our recursive calls
         draw_h(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, RECURSION_DEPTH)

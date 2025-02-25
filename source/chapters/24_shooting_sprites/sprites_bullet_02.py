@@ -75,7 +75,7 @@ class MyGame(arcade.Window):
         """
 
         # This command has to happen before we start drawing
-        arcade.start_render()
+        self.clear()
 
         # Draw all the sprites.
         self.coin_list.draw()
@@ -97,7 +97,7 @@ class MyGame(arcade.Window):
         """
         pass
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites

@@ -104,7 +104,7 @@ class MyGame(arcade.Window):
         self.camera_gui.use()
 
         # Draw the GUI
-        arcade.draw_rectangle_filled(self.width // 2,
+        arcade.draw_rect_filled(self.width // 2,
                                      20,
                                      self.width,
                                      40,

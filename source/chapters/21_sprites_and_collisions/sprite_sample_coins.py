@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         """ Draw everything """
-        arcade.start_render()
+        self.clear()
 
         # Draw the sprite lists here. Typically sprites are divided into
         # different groups. Other game engines might call these "sprite layers"

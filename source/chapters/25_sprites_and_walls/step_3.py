@@ -80,7 +80,7 @@ class MyGame(arcade.Window):
 
 
     def on_draw(self):
-        arcade.start_render()
+        self.clear()
         self.player_list.draw()
         self.wall_list.draw()
 

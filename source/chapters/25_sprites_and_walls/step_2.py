@@ -58,7 +58,7 @@ class MyGame(arcade.Window):
         self.wall_list.append(wall)
 
     def on_draw(self):
-        arcade.start_render()
+        self.clear()
         self.wall_list.draw()
         self.player_list.draw()
 

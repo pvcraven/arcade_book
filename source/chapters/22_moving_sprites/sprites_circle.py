@@ -28,7 +28,7 @@ class Coin(arcade.Sprite):
         self.circle_center_x = 0
         self.circle_center_y = 0
 
-    def update(self):
+    def on_update(self):
 
         """ Update the ball's position. """
         # Calculate a new x, y
@@ -100,7 +100,7 @@ class MyGame(arcade.Window):
     def on_draw(self):
 
         # This command has to happen before we start drawing
-        arcade.start_render()
+        self.clear()
 
         # Draw all the sprites.
         self.coin_list.draw()
@@ -114,7 +114,7 @@ class MyGame(arcade.Window):
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites (The sprites don't do much in this

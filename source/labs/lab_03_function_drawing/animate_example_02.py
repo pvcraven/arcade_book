@@ -18,10 +18,10 @@ def on_draw(delta_time):
     command below.
     """
 
-    arcade.start_render()
+    self.clear()
 
     # Draw a rectangle.
-    arcade.draw_rectangle_filled(on_draw.center_x, on_draw.center_y,
+    arcade.draw_rect_filled(on_draw.center_x, on_draw.center_y,
                                  RECT_WIDTH, RECT_HEIGHT,
                                  arcade.color.ALIZARIN_CRIMSON)
 

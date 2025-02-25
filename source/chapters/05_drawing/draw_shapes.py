@@ -21,16 +21,16 @@ arcade.start_render()
 # Draw a rectangle
 # Left of 5, right of 35
 # Top of 590, bottom of 570
-arcade.draw_lrtb_rectangle_filled(5, 35, 590, 570, arcade.color.BITTER_LIME)
+arcade.draw_lrbt_rectangle_filled(5, 35, 570, 590, arcade.color.BITTER_LIME)
 
 # Different way to draw a rectangle
 # Center rectangle at (100, 520) with a width of 45 and height of 25
-arcade.draw_rectangle_filled(100, 520, 45, 25, arcade.color.BLUSH)
+arcade.draw_rect_filled(arcade.XYWH(100, 520, 25, 45), arcade.color.BLUSH)
 
 # Rotate a rectangle
 # Center rectangle at (200, 520) with a width of 45 and height of 25
 # Also, rotate it 45 degrees.
-arcade.draw_rectangle_filled(200, 520, 45, 25, arcade.color.BLUSH, 45)
+arcade.draw_rect_filled(arcade.XYWH(200, 520, 45, 25), arcade.color.BLUSH, 45)
 
 
 # Draw a point at (50, 580) that is 5 pixels large
@@ -53,7 +53,7 @@ arcade.draw_circle_filled(190, 580, 18, arcade.color.WISTERIA)
 arcade.draw_ellipse_filled(240, 580, 30, 15, arcade.color.AMBER)
 
 # Draw text starting at (10, 450) with a size of 20 points.
-arcade.draw_text("Simpson College", 10, 450, arcade.color.BRICK_RED, 20)
+arcade.draw_text("Arcade Library", 10, 450, arcade.color.BRICK_RED, 20)
 
 # Finish drawing
 arcade.finish_render()

@@ -21,7 +21,7 @@ arcade.start_render()
 # Draw a rectangle
 # Left of 0, right of 599
 # Top of 300, bottom of 0
-arcade.draw_lrtb_rectangle_filled(0, 599, 300, 0, arcade.csscolor.GREEN)
+arcade.draw_lrbt_rectangle_filled(0, 599, 0, 300, arcade.csscolor.GREEN)
 
 # Finish drawing
 arcade.finish_render()

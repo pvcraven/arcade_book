@@ -40,7 +40,7 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         """ Called whenever we need to draw the window. """
-        arcade.start_render()
+        self.clear()
         self.ball.draw()
 
     def on_mouse_motion(self, x, y, dx, dy):

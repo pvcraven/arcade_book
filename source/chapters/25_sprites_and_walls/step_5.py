@@ -92,7 +92,7 @@ class MyGame(arcade.Window):
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
 
     def on_draw(self):
-        arcade.start_render()
+        self.clear()
 
         # Select the scrolled camera for our sprites
         self.camera_for_sprites.use()

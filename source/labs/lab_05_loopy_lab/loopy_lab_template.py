@@ -20,7 +20,7 @@ def draw_section_1():
         for column in range(30):
             x = 0  # Instead of zero, calculate the proper x location using 'column'
             y = 0  # Instead of zero, calculate the proper y location using 'row'
-            arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
+            arcade.draw_rect_filled(x, y, 5, 5, arcade.color.WHITE)
 
 
 def draw_section_2():
@@ -63,7 +63,7 @@ def main():
     arcade.open_window(1200, 600, "Lab 05 - Loopy Lab")
     arcade.set_background_color(arcade.color.AIR_FORCE_BLUE)
 
-    arcade.start_render()
+    self.clear()
 
     # Draw the outlines for the sections
     draw_section_outlines()

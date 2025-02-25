@@ -34,7 +34,7 @@ class MyGame(arcade.Window):
         arcade.set_background_color(arcade.color.AMAZON)
 
     def on_draw(self):
-        arcade.start_render()
+        self.clear()
 
 
 def main():

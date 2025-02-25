@@ -25,7 +25,7 @@ class Coin(arcade.Sprite):
                                          SCREEN_HEIGHT + 100)
         self.center_x = random.randrange(SCREEN_WIDTH)
 
-    def update(self):
+    def on_update(self):
 
         # Move the coin
         self.center_y -= 1
@@ -90,7 +90,7 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         """ Draw everything """
-        arcade.start_render()
+        self.clear()
         self.coin_list.draw()
         self.player_list.draw()
 
@@ -105,7 +105,7 @@ class MyGame(arcade.Window):
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites (The sprites don't do much in this

@@ -9,7 +9,7 @@ arcade.set_background_color(arcade.color.DARK_BLUE)
 arcade.start_render()
 
 # Draw the ground
-arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3, 0, arcade.color.AIR_SUPERIORITY_BLUE)
+arcade.draw_lrbt_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3, 0, arcade.color.AIR_SUPERIORITY_BLUE)
 
 # Draw a snow person
 

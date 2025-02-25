@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         """ Called whenever we need to draw the window. """
-        arcade.start_render()
+        self.clear()
 
         # Use a "for" loop to pull each ball from the list, then call the draw
         # method on that ball.

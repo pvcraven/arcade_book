@@ -35,12 +35,12 @@ def on_draw(delta_time):
 
     # Start the render. This must happen before any drawing
     # commands. We do NOT need a stop render command.
-    arcade.start_render()
+    self.clear()
 
     # Draw a rectangle.
     # For a full list of colors see:
     # http://pythonhosted.org/arcade/arcade.color.html
-    arcade.draw_rectangle_filled(on_draw.center_x, on_draw.center_y,
+    arcade.draw_rect_filled(on_draw.center_x, on_draw.center_y,
                                  RECT_WIDTH, RECT_HEIGHT,
                                  arcade.color.ALIZARIN_CRIMSON)
 

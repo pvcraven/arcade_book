@@ -87,11 +87,11 @@ class MyGame(arcade.Window):
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
 
     def on_draw(self):
-        arcade.start_render()
+        self.clear()
         self.wall_list.draw()
         self.player_list.draw()
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         self.physics_engine.update()
 
     def on_key_press(self, key, modifiers):

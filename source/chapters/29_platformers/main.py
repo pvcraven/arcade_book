@@ -101,7 +101,7 @@ class MyGame(arcade.Window):
         """
 
         # This command has to happen before we start drawing
-        arcade.start_render()
+        self.clear()
 
         # Select the camera we'll use to draw all our sprites
         self.camera_sprites.use()
@@ -114,7 +114,7 @@ class MyGame(arcade.Window):
         self.camera_gui.use()
 
         # Draw the GUI
-        arcade.draw_rectangle_filled(self.width // 2,
+        arcade.draw_rect_filled(self.width // 2,
                                      20,
                                      self.width,
                                      40,

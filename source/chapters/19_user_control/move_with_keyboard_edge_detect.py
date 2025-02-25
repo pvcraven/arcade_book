@@ -24,7 +24,7 @@ class Ball:
                                   self.radius, self.
                                   color)
 
-    def update(self):
+    def on_update(self):
         # Move the ball
         self.position_y += self.change_y
         self.position_x += self.change_x
@@ -61,10 +61,10 @@ class MyGame(arcade.Window):
 
     def on_draw(self):
         """ Called whenever we need to draw the window. """
-        arcade.start_render()
+        self.clear()
         self.ball.draw()
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         self.ball.update()
 
     def on_key_press(self, key, modifiers):
