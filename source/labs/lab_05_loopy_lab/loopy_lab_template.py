@@ -3,16 +3,16 @@ import arcade
 
 def draw_section_outlines():
     # Draw squares on bottom
-    arcade.draw_rectangle_outline(150, 150, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(450, 150, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(750, 150, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(1050, 150, 300, 300, arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(150, 150, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(450, 150, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(750, 150, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(1050, 150, 300, 300), arcade.color.BLACK)
 
     # Draw squares on top
-    arcade.draw_rectangle_outline(150, 450, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(450, 450, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(750, 450, 300, 300, arcade.color.BLACK)
-    arcade.draw_rectangle_outline(1050, 450, 300, 300, arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(150, 450, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(450, 450, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(750, 450, 300, 300), arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(1050, 450, 300, 300), arcade.color.BLACK)
 
 
 def draw_section_1():
@@ -20,7 +20,7 @@ def draw_section_1():
         for column in range(30):
             x = 0  # Instead of zero, calculate the proper x location using 'column'
             y = 0  # Instead of zero, calculate the proper y location using 'row'
-            arcade.draw_rect_filled(x, y, 5, 5, arcade.color.WHITE)
+            arcade.draw_rect_filled(arcade.XYWH(x, y, 5, 5), arcade.color.WHITE)
 
 
 def draw_section_2():
@@ -62,8 +62,7 @@ def main():
     # Create a window
     arcade.open_window(1200, 600, "Lab 05 - Loopy Lab")
     arcade.set_background_color(arcade.color.AIR_FORCE_BLUE)
-
-    self.clear()
+    arcade.start_render()
 
     # Draw the outlines for the sections
     draw_section_outlines()

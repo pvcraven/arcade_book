@@ -94,6 +94,14 @@ Also, the creator of Python was a fan of `Monty Python`_, hence the name.)
 | Download Python from the official Python website:
 | https://www.python.org/downloads/
 
+.. important::
+
+    **Python Version Requirement**: This book requires Python 3.10 or higher.
+    The Arcade library (version 3.3+) requires at least Python 3.10.
+
+    When downloading Python, make sure to get version 3.10 or newer. As of this writing,
+    Python 3.13 is the latest version and works perfectly with Arcade.
+
 When installing Python, make sure to add Python to the path (1) before clicking the Install
 button (2).
 

@@ -146,3 +146,23 @@ With a list! This takes our previous example and animates three balls at once.
 
 .. image:: ball_list_example.gif
 
+Advanced: The View Class
+-------------------------
+
+.. note::
+
+    This book teaches the ``arcade.Window`` pattern, which works great for most games.
+    For more complex games with multiple screens (like menus, gameplay, pause screens, and
+    game over screens), Arcade provides the ``arcade.View`` class.
+
+    The View class allows you to organize your game into separate "views" or "screens"
+    that can easily switch between each other. This is particularly useful for:
+
+    * Menu systems
+    * Multiple game levels
+    * Pause screens
+    * Game over screens
+    * Settings or options screens
+
+    You can learn more about Views in the `Arcade documentation <https://api.arcade.academy/en/latest/programming_guide/view.html>`_.
+

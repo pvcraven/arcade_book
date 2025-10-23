@@ -21,9 +21,7 @@ def on_draw(delta_time):
     self.clear()
 
     # Draw a rectangle.
-    arcade.draw_rect_filled(100, 50,
-                                 RECT_WIDTH, RECT_HEIGHT,
-                                 arcade.color.ALIZARIN_CRIMSON)
+    arcade.draw_rect_filled(arcade.XYWH(100, 50, RECT_WIDTH, RECT_HEIGHT), arcade.color.ALIZARIN_CRIMSON)
 
 
 # Open up our window

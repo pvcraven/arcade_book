@@ -11,7 +11,7 @@ def draw_rectangle(x, y, width, height):
     """ Recursively draw a rectangle, each one a percentage smaller """
 
     # Draw it
-    arcade.draw_rectangle_outline(x, y, width, height, arcade.color.BLACK)
+    arcade.draw_rect_outline(arcade.XYWH(x, y, width, height), arcade.color.BLACK)
 
     # As long as we have a width bigger than 1, recursively call this function with a smaller rectangle
     if width > 1:

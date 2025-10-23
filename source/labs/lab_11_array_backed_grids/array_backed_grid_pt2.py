@@ -67,7 +67,7 @@ class MyGame(arcade.Window):
                 y = (MARGIN + HEIGHT) * row + MARGIN + HEIGHT // 2
 
                 # Draw the box
-                arcade.draw_rect_filled(x, y, WIDTH, HEIGHT, color)
+                arcade.draw_rect_filled(arcade.XYWH(x, y, WIDTH, HEIGHT), color)
 
     def on_mouse_press(self, x, y, button, modifiers):
         """
@@ -75,8 +75,8 @@ class MyGame(arcade.Window):
         """
 
         # Change the x/y screen coordinates to grid coordinates
-        column = x // (WIDTH + MARGIN)
-        row = y // (HEIGHT + MARGIN)
+        column = int(x) // (WIDTH + MARGIN)
+        row = int(y) // (HEIGHT + MARGIN)
 
         # print(f"Click coordinates: ({x}, {y}). Grid coordinates: ({row}, {column})")
 

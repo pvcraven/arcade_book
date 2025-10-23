@@ -294,8 +294,8 @@ Both of these cameras will have a field-of-view set to the same size as the wind
 
     # Create the cameras. One for the GUI, one for the sprites.
     # We scroll the 'sprite world' but not the GUI.
-    self.camera_for_sprites = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
-    self.camera_for_gui = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+    self.camera_for_sprites = arcade.Camera2D()
+    self.camera_for_gui = arcade.Camera2D()
 
 Now we have cameras. We just need to use the cameras. In the Window's ``draw`` method,
 select which camera we want to use before we draw.

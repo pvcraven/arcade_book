@@ -10,11 +10,11 @@ def draw_tractor(x, y):
     """ Draw the tractor """
 
     # Draw the engine
-    arcade.draw_rect_filled(600 + x, 120 + y, 140, 70, arcade.color.GRAY)
-    arcade.draw_rect_filled(590 + x, 105 + y, 90, 40, arcade.color.BLACK)
+    arcade.draw_rect_filled(arcade.XYWH(600 + x, 120 + y, 140, 70), arcade.color.GRAY)
+    arcade.draw_rect_filled(arcade.XYWH(590 + x, 105 + y, 90, 40), arcade.color.BLACK)
 
     # Draw the smoke stack
-    arcade.draw_rect_filled(580 + x, 175 + y, 10, 40, arcade.color.BLACK)
+    arcade.draw_rect_filled(arcade.XYWH(580 + x, 175 + y, 10, 40), arcade.color.BLACK)
 
     # Back wheel
     arcade.draw_circle_filled(490 + x, 110 + y, 50, arcade.color.BLACK)
@@ -37,34 +37,34 @@ arcade.open_window(800, 600, "Drawing Example")
 
 # Set the background color
 arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
-
-# Get ready to draw
 arcade.start_render()
 
+# Get ready to draw
+
 # Draw the grass
-arcade.draw_lrbt_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
+arcade.draw_lrbt_rectangle_filled(0, 800, 0, 200, arcade.color.BITTER_LIME)
 
 # --- Draw the barn ---
 
 # Barn cement base
-arcade.draw_lrbt_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)
+arcade.draw_lrbt_rectangle_filled(30, 350, 170, 210, arcade.color.BISQUE)
 
 # Bottom half
-arcade.draw_lrbt_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)
+arcade.draw_lrbt_rectangle_filled(30, 350, 210, 350, arcade.color.BROWN)
 
 # Left-bottom window
-arcade.draw_rect_filled(70, 260, 30, 40, arcade.color.BONE)
-arcade.draw_rect_filled(70, 260, 20, 30, arcade.color.BLACK)
+arcade.draw_rect_filled(arcade.XYWH(70, 260, 30, 40), arcade.color.BONE)
+arcade.draw_rect_filled(arcade.XYWH(70, 260, 20, 30), arcade.color.BLACK)
 
 # Right-bottom window
-arcade.draw_rect_filled(310, 260, 30, 40, arcade.color.BONE)
-arcade.draw_rect_filled(310, 260, 20, 30, arcade.color.BLACK)
+arcade.draw_rect_filled(arcade.XYWH(310, 260, 30, 40), arcade.color.BONE)
+arcade.draw_rect_filled(arcade.XYWH(310, 260, 20, 30), arcade.color.BLACK)
 
 # Barn door
-arcade.draw_rect_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)
+arcade.draw_rect_filled(arcade.XYWH(190, 230, 100, 100), arcade.color.BLACK_BEAN)
 
 # Rail above the door
-arcade.draw_rect_filled(190, 280, 180, 5, arcade.color.BONE)
+arcade.draw_rect_filled(arcade.XYWH(190, 280, 180, 5), arcade.color.BONE)
 
 # Draw second level of barn
 arcade.draw_polygon_filled([[20, 350],
@@ -77,21 +77,21 @@ arcade.draw_polygon_filled([[20, 350],
 arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color.BROWN)
 
 # Left-top window
-arcade.draw_rect_filled(130, 440, 30, 40, arcade.color.BONE)
-arcade.draw_rect_filled(130, 440, 20, 30, arcade.color.BLACK)
+arcade.draw_rect_filled(arcade.XYWH(130, 440, 30, 40), arcade.color.BONE)
+arcade.draw_rect_filled(arcade.XYWH(130, 440, 20, 30), arcade.color.BLACK)
 
 # Right-top window
-arcade.draw_rect_filled(250, 440, 30, 40, arcade.color.BONE)
-arcade.draw_rect_filled(250, 440, 20, 30, arcade.color.BLACK)
+arcade.draw_rect_filled(arcade.XYWH(250, 440, 30, 40), arcade.color.BONE)
+arcade.draw_rect_filled(arcade.XYWH(250, 440, 20, 30), arcade.color.BLACK)
 
 # Draw 2nd level door
-arcade.draw_rectangle_outline(190, 310, 30, 60, arcade.color.BONE, 5)
+arcade.draw_rect_outline(arcade.XYWH(190, 310, 30, 60), arcade.color.BONE, 5)
 
 draw_tractor(0, 0)
 draw_tractor(300, 0)
 
 # --- Finish drawing ---
-arcade.finish_render()
 
 # Keep the window up until someone closes it.
+arcade.finish_render()
 arcade.run()

@@ -40,9 +40,7 @@ def on_draw(delta_time):
     # Draw a rectangle.
     # For a full list of colors see:
     # http://pythonhosted.org/arcade/arcade.color.html
-    arcade.draw_rect_filled(on_draw.center_x, on_draw.center_y,
-                                 RECT_WIDTH, RECT_HEIGHT,
-                                 arcade.color.ALIZARIN_CRIMSON)
+    arcade.draw_rect_filled(arcade.XYWH(on_draw.center_x, on_draw.center_y, RECT_WIDTH, RECT_HEIGHT), arcade.color.ALIZARIN_CRIMSON)
 
     # Modify rectangle's position based on the delta
     # vector. (Delta means change. You can also think

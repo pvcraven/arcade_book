@@ -84,8 +84,8 @@ class MyGame(arcade.Window):
         """ Called when the user presses a mouse button. """
 
         # Change the x/y screen coordinates to grid coordinates
-        column = x // (WIDTH + MARGIN)
-        row = y // (HEIGHT + MARGIN)
+        column = int(x) // (WIDTH + MARGIN)
+        row = int(y) // (HEIGHT + MARGIN)
 
         print(f"Click coordinates: ({x}, {y}). Grid coordinates: ({row}, {column})")
 

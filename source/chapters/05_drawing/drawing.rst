@@ -524,13 +524,13 @@ this code displays a tree trunk:
     # Center of 100, 320
     # Width of 20
     # Height of 60
-    arcade.draw_rect_filled(100, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_rect_filled(arcade.XYWH(100, 320, 20, 60), arcade.csscolor.SIENNA)
 
 .. image:: trunk.png
    :width: 35%
 
 There's also a function to draw the outline of a rectangle called
-:func:`arcade.draw_rectangle_outline`. Both of these functions (and many others)
+:func:`arcade.draw_rect_outline`. Both of these functions (and many others)
 have an optional parameter to tilt the rectangle to a desired angle.
 
 Drawing Circles
@@ -570,7 +570,7 @@ inside it. Examine this code sample:
     # a center of (300, 300)
     # width of 350
     # height of 200
-    arcade.draw_rectangle_outline(300, 300, 350, 200, arcade.csscolor.BLACK, 3)
+    arcade.draw_rect_outline(arcade.XYWH(300, 300, 350, 200), arcade.csscolor.BLACK, 3)
     arcade.draw_ellipse_outline(300, 300, 350, 200, arcade.csscolor.RED, 3)
 
 Now look at what it draws to understand the relation between the rectangle and ellipse.
@@ -584,7 +584,7 @@ ellipse for the top:
 .. code-block:: python
 
     # Another tree, with a trunk and ellipse for top
-    arcade.draw_rect_filled(200, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_rect_filled(arcade.XYWH(200, 320, 20, 60), arcade.csscolor.SIENNA)
     arcade.draw_ellipse_filled(200, 370, 60, 80, arcade.csscolor.DARK_GREEN)
 
 .. image:: ellipse.png
@@ -606,7 +606,7 @@ ellipse, with the additional parameters for a start angle and an end angle.
     # Another tree, with a trunk and arc for top
     # Arc is centered at (300, 340) with a width of 60 and height of 100.
     # The starting angle is 0, and ending angle is 180.
-    arcade.draw_rect_filled(300, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_rect_filled(arcade.XYWH(300, 320, 20, 60), arcade.csscolor.SIENNA)
     arcade.draw_arc_filled(300, 340, 60, 100, arcade.csscolor.DARK_GREEN, 0, 180)
 
 .. image:: arc.png
@@ -629,7 +629,7 @@ out on paper to get it straight. This can be used to make a pine tree.
     # Another tree, with a trunk and triangle for top
     # Triangle is made of these three points:
     # (400, 400), (370, 320), (430, 320)
-    arcade.draw_rect_filled(400, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_rect_filled(arcade.XYWH(400, 320, 20, 60), arcade.csscolor.SIENNA)
     arcade.draw_triangle_filled(400, 400, 370, 320, 430, 320, arcade.csscolor.DARK_GREEN)
 
 .. image:: triangle.png
@@ -650,7 +650,7 @@ In this example we use five points to create a tree-top.
 .. code-block:: python
 
     # Draw a tree using a polygon with a list of points
-    arcade.draw_rect_filled(500, 320, 20, 60, arcade.csscolor.SIENNA)
+    arcade.draw_rect_filled(arcade.XYWH(500, 320, 20, 60), arcade.csscolor.SIENNA)
     arcade.draw_polygon_filled(((500, 400),
                                 (480, 360),
                                 (470, 320),

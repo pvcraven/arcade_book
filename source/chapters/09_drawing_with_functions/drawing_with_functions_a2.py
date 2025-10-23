@@ -7,10 +7,10 @@ SCREEN_HEIGHT = 600
 def main():
     arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing with Functions")
     arcade.set_background_color(arcade.color.DARK_BLUE)
-    self.clear()
+    arcade.start_render()
 
     # Draw the ground
-    arcade.draw_lrbt_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 3, 0, arcade.color.AIR_SUPERIORITY_BLUE)
+    arcade.draw_lrbt_rectangle_filled(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT / 3, arcade.color.AIR_SUPERIORITY_BLUE)
 
     # Draw a snow person
 
@@ -23,7 +23,6 @@ def main():
     arcade.draw_circle_filled(285, 350, 5, arcade.color.BLACK)
     arcade.draw_circle_filled(315, 350, 5, arcade.color.BLACK)
 
-    # Finish and run
     arcade.finish_render()
     arcade.run()
 

@@ -47,8 +47,8 @@ class MyGame(arcade.Window):
 
         # Create the cameras. One for the GUI, one for the sprites.
         # We scroll the 'sprite world' but not the GUI.
-        self.camera_sprites = arcade.Camera(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT)
-        self.camera_gui = arcade.Camera(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT)
+        self.camera_sprites = arcade.Camera2D()
+        self.camera_gui = arcade.Camera2D()
 
     def setup(self):
         """ Set up the game and initialize the variables. """
@@ -104,11 +104,7 @@ class MyGame(arcade.Window):
         self.camera_gui.use()
 
         # Draw the GUI
-        arcade.draw_rect_filled(self.width // 2,
-                                     20,
-                                     self.width,
-                                     40,
-                                     arcade.color.ALMOND)
+        arcade.draw_rect_filled(arcade.XYWH(self.width // 2, 20, self.width, 40), arcade.color.ALMOND)
         text = f"Scroll value: ({self.camera_sprites.position[0]:5.1f}, " \
                f"{self.camera_sprites.position[1]:5.1f})"
         arcade.draw_text(text, 10, 10, arcade.color.BLACK_BEAN, 20)
@@ -170,8 +166,8 @@ class MyGame(arcade.Window):
         Resize window
         Handle the user grabbing the edge and resizing the window.
         """
-        self.camera_sprites.resize(int(width), int(height))
-        self.camera_gui.resize(int(width), int(height))
+        self.camera_sprites.match_window()
+        self.camera_gui.match_window()
 
 
 def main():
