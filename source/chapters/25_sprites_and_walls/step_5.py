@@ -48,7 +48,7 @@ class MyGame(arcade.Window):
         self.score = 0
 
         # Create the player
-        self.player_sprite = arcade.Sprite("images/character.png", SPRITE_SCALING_PLAYER)
+        self.player_sprite = arcade.Sprite(":resources:images/animated_characters/female_adventurer/femaleAdventurer_idle.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 64
         self.player_list.append(self.player_sprite)
@@ -56,20 +56,20 @@ class MyGame(arcade.Window):
         # --- Manually place walls
 
         # Manually create and position a box at 300, 200
-        wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+        wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", SPRITE_SCALING_BOX)
         wall.center_x = 300
         wall.center_y = 200
         self.wall_list.append(wall)
 
         # Manually create and position a box at 364, 200
-        wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+        wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", SPRITE_SCALING_BOX)
         wall.center_x = 364
         wall.center_y = 200
         self.wall_list.append(wall)
 
         # --- Place boxes inside a loop
         for x in range(173, 650, 64):
-            wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+            wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", SPRITE_SCALING_BOX)
             wall.center_x = x
             wall.center_y = 350
             self.wall_list.append(wall)
@@ -82,7 +82,7 @@ class MyGame(arcade.Window):
 
         # Loop through coordinates
         for coordinate in coordinate_list:
-            wall = arcade.Sprite("images/boxCrate_double.png", SPRITE_SCALING_BOX)
+            wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", SPRITE_SCALING_BOX)
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
@@ -113,14 +113,14 @@ class MyGame(arcade.Window):
         self.physics_engine.update()
 
         # Scroll the screen to the player
-        self.scroll_to_player()
+        #self.scroll_to_player()
 
         # Scroll the window to the player.
         #
         # If CAMERA_SPEED is 1, the camera will immediately move to the desired position.
         # Anything between 0 and 1 will have the camera move to the location with a smoother
         # pan.
-        CAMERA_SPEED = 1
+        CAMERA_SPEED = 0.1 # move camera slow 
         lower_left_corner = (self.player_sprite.center_x - self.width / 2,
                              self.player_sprite.center_y - self.height / 2)
         self.camera_for_sprites.move_to(lower_left_corner, CAMERA_SPEED)
