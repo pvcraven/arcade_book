@@ -14,7 +14,7 @@ SCREEN_HEIGHT = 600
 
 class Coin(arcade.Sprite):
 
-    def on_update(self):
+    def update(self, delta_time):
         self.center_y -= 1
 
 
@@ -92,7 +92,7 @@ class MyGame(arcade.Window):
 
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
-        self.coin_list.update()
+        self.coin_list.update(delta_time)
 
         # Generate a list of all sprites that collided with the player.
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,
