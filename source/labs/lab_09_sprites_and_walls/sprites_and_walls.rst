@@ -41,7 +41,7 @@ and position multiple items.
   wall blocks. If you randomly place coins, you might end up with coins on
   top of walls. See the "Important Part" around line 83 or so of
   the example
-  `sprite_no_coins_on_walls.py <https://api.arcade.academy/en/latest/examples/sprite_no_coins_on_walls.html>`_
+  `sprite_no_coins_on_walls.py <https://api.arcade.academy/en/latest/example_code/sprite_no_coins_on_walls.html>`_
   for how to avoid this.
 * Step 6: Keep score of how many coins were collected, and display on-screen.
   4 points.
@@ -64,16 +64,16 @@ These aren't required for the lab, but I've had students ask in prior
 years how to do these:
 
 * This is a *great* project to use the
-  `Move Better <https://api.arcade.academy/en/latest/examples/sprite_move_keyboard_better.html>`_ example, as
+  `Move Better <https://api.arcade.academy/en/latest/example_code/sprite_move_keyboard_better.html>`_ example, as
   you'll find player movement is a lot more predictable.
 * If you are interested in having the player be able to face left or right,
   see the
-  `Sprite Face Left or Right <https://api.arcade.academy/en/latest/examples/sprite_face_left_or_right.html>`_
+  `Sprite Face Left or Right <https://api.arcade.academy/en/latest/example_code/sprite_face_left_or_right.html>`_
   example.
 * Want to animate walking? Look at the
-  `Animate your sprites <https://api.arcade.academy/en/latest/examples/sprite_move_animation.html>`_. example.
+  `Animate your sprites <https://api.arcade.academy/en/latest/example_code/sprite_move_animation.html>`_. example.
 
 
-.. _Move with Walls: https://api.arcade.academy/en/latest/examples/sprite_move_walls.html
-.. _Move with a Scrolling Screen: https://api.arcade.academy/en/latest/examples/sprite_move_scrolling.html
-.. _Move Between Different Rooms: https://api.arcade.academy/en/latest/examples/sprite_rooms.html
+.. _Move with Walls: https://api.arcade.academy/en/latest/example_code/sprite_move_walls.html
+.. _Move with a Scrolling Screen: https://api.arcade.academy/en/latest/example_code/sprite_move_scrolling.html
+.. _Move Between Different Rooms: https://api.arcade.academy/en/latest/example_code/sprite_rooms.html
